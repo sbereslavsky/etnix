@@ -1,0 +1,984 @@
+fileFormatVersion: 2
+guid: b7a0c283904c02f4aaf515f8600f1765
+timeCreated: 1461060727
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Sirko_run0000
+    21300002: Sirko_run0001
+    21300004: Sirko_run0002
+    21300006: Sirko_run0003
+    21300008: Sirko_run0004
+    21300010: Sirko_run0005
+    21300012: Sirko_run0006
+    21300014: Sirko_run0007
+    21300016: Sirko_run0008
+    21300018: Sirko_run0009
+    21300020: Sirko_run0010
+    21300022: Sirko_run0011
+    21300024: Sirko_run0012
+    21300026: Sirko_run0013
+    21300028: Sirko_run0014
+    21300030: Sirko_run0015
+    21300032: Sirko_run0016
+    21300034: Sirko_run0017
+    21300036: Sirko_run0018
+    21300038: Sirko_run0019
+    21300040: Sirko_run0020
+    21300042: Sirko_run0021
+    21300044: Sirko_run0022
+    21300046: Sirko_run0023
+    21300048: Sirko_run0024
+    21300050: Sirko_run0025
+    21300052: Sirko_run0026
+    21300054: Sirko_run0027
+    21300056: Sirko_run0028
+    21300058: Sirko_run0029
+    21300060: Sirko_run0030
+    21300062: Sirko_run0031
+    21300064: Sirko_run0032
+    21300066: Sirko_run0033
+    21300068: Sirko_run0034
+    21300070: Sirko_run0035
+    21300072: Sirko_run0036
+    21300074: Sirko_run0037
+    21300076: Sirko_run0038
+    21300078: Sirko_run0039
+    21300080: Sirko_run instance 10000
+    21300082: Sirko_run instance 10001
+    21300084: Sirko_run instance 10002
+    21300086: Sirko_run instance 10003
+    21300088: Sirko_run instance 10004
+    21300090: Sirko_run instance 10005
+    21300092: Sirko_run instance 10006
+    21300094: Sirko_run instance 10007
+    21300096: Sirko_run instance 10008
+    21300098: Sirko_run instance 10009
+    21300100: Sirko_run instance 10010
+    21300102: Sirko_run instance 10011
+    21300104: Sirko_run instance 10012
+    21300106: Sirko_run instance 10013
+    21300108: Sirko_run instance 10014
+    21300110: Sirko_run instance 10015
+    21300112: Sirko_run instance 10016
+    21300114: Sirko_run instance 10017
+    21300116: Sirko_run instance 10018
+    21300118: Sirko_run instance 10019
+    21300120: Sirko_run instance 10020
+    21300122: Sirko_run instance 10021
+    21300124: Sirko_run instance 10022
+    21300126: Sirko_run instance 10023
+    21300128: Sirko_run instance 10024
+    21300130: Sirko_run instance 10025
+    21300132: Sirko_run instance 10026
+    21300134: Sirko_run instance 10027
+    21300136: Sirko_run instance 10028
+    21300138: Sirko_run instance 10029
+    21300140: Sirko_run instance 10030
+    21300142: Sirko_run instance 10031
+    21300144: Sirko_run instance 10032
+    21300146: Sirko_run instance 10033
+    21300148: Sirko_run instance 10034
+    21300150: Sirko_run instance 10035
+    21300152: Sirko_run instance 10036
+    21300154: Sirko_run instance 10037
+    21300156: Sirko_run instance 10038
+    21300158: Sirko_run instance 10039
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Sirko_run instance 10000
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1827
+        width: 193
+        height: 221
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -85.15, y: 212}
+        - {x: -95.15, y: 195}
+        - {x: -95.15, y: 43}
+        - {x: -80.15, y: 12}
+        - {x: -13.150002, y: 12}
+        - {x: 21.849998, y: 27}
+        - {x: 69.85, y: 49}
+        - {x: 69.85, y: 185}
+        - {x: 28.849998, y: 212}
+    - name: Sirko_run instance 10001
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 1827
+        width: 193
+        height: 221
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -75.149994, y: 199}
+        - {x: -88.149994, y: 187}
+        - {x: -88.149994, y: 10}
+        - {x: 71.850006, y: 10}
+        - {x: 71.850006, y: 193}
+        - {x: 36.850006, y: 199}
+    - name: Sirko_run instance 10002
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 1827
+        width: 193
+        height: 221
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12.850006, y: 193}
+        - {x: -17.149994, y: 193}
+        - {x: -29.149994, y: 180}
+        - {x: -53.149994, y: 193}
+        - {x: -64.149994, y: 193}
+        - {x: -80.149994, y: 154}
+        - {x: -80.149994, y: 8}
+        - {x: 1.8500061, y: 8}
+        - {x: 28.850006, y: 11}
+        - {x: 71.850006, y: 29}
+        - {x: 71.850006, y: 155}
+        - {x: 19.850006, y: 191}
+    - name: Sirko_run instance 10003
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 1827
+        width: 193
+        height: 221
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -73.150024, y: 43}
+        - {x: -54.150024, y: 11}
+        - {x: -41.150024, y: 6}
+        - {x: 22.849976, y: 6}
+        - {x: 72.849976, y: 10}
+        - {x: 72.849976, y: 153}
+        - {x: 60.849976, y: 188}
+        - {x: -54.150024, y: 188}
+        - {x: -73.150024, y: 163}
+    - name: Sirko_run instance 10004
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 1827
+        width: 193
+        height: 221
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 69.849976, y: 134}
+        - {x: 29.849976, y: 188}
+        - {x: 16.849976, y: 191}
+        - {x: -10.150024, y: 191}
+        - {x: -22.150024, y: 172}
+        - {x: -63.150024, y: 163}
+        - {x: -67.150024, y: 155}
+        - {x: -67.150024, y: 114}
+        - {x: -63.150024, y: 91}
+        - {x: -54.150024, y: 79}
+        - {x: -39.150024, y: 68}
+        - {x: -47.150024, y: 50}
+        - {x: -39.150024, y: 7}
+        - {x: 7.8499756, y: 7}
+        - {x: 62.849976, y: 31}
+        - {x: 60.849976, y: 59}
+        - {x: 69.849976, y: 88}
+    - name: Sirko_run instance 10005
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1606
+        width: 193
+        height: 221
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 36.85, y: 195}
+        - {x: -10.150002, y: 195}
+        - {x: -67.15, y: 156}
+        - {x: -67.15, y: 116}
+        - {x: -33.15, y: 6}
+        - {x: 15.849998, y: 6}
+        - {x: 53.85, y: 27}
+        - {x: 66.85, y: 70}
+        - {x: 66.85, y: 142}
+    - name: Sirko_run instance 10006
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 1606
+        width: 193
+        height: 221
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -0.1499939, y: 199}
+        - {x: -21.149994, y: 187}
+        - {x: -67.149994, y: 132}
+        - {x: -67.149994, y: 69}
+        - {x: -10.149994, y: 4}
+        - {x: 52.850006, y: 4}
+        - {x: 59.850006, y: 47}
+        - {x: 59.850006, y: 163}
+        - {x: 26.850006, y: 199}
+    - name: Sirko_run instance 10007
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 1606
+        width: 193
+        height: 221
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -49.149994, y: 206}
+        - {x: -56.149994, y: 195}
+        - {x: -56.149994, y: 75}
+        - {x: -49.149994, y: 52}
+        - {x: -4.149994, y: 11}
+        - {x: 53.850006, y: 11}
+        - {x: 53.850006, y: 174}
+        - {x: 25.850006, y: 206}
+    - name: Sirko_run instance 10008
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 1606
+        width: 193
+        height: 221
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -49.150024, y: 214}
+        - {x: -49.150024, y: 50}
+        - {x: -37.150024, y: 19}
+        - {x: 54.849976, y: 19}
+        - {x: 57.849976, y: 23}
+        - {x: 57.849976, y: 137}
+        - {x: 35.849976, y: 214}
+    - name: Sirko_run instance 10009
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 1606
+        width: 193
+        height: 221
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 24.849976, y: 221}
+        - {x: -31.150024, y: 221}
+        - {x: -58.150024, y: 156}
+        - {x: -58.150024, y: 43}
+        - {x: -51.150024, y: 35}
+        - {x: 11.849976, y: 26}
+        - {x: 61.849976, y: 26}
+        - {x: 68.849976, y: 31}
+        - {x: 68.849976, y: 79}
+        - {x: 51.849976, y: 194}
+    - name: Sirko_run instance 10010
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1385
+        width: 193
+        height: 221
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 59.85, y: 90}
+        - {x: 49.85, y: 100}
+        - {x: 50.85, y: 135}
+        - {x: 45.85, y: 178}
+        - {x: 12.849998, y: 219}
+        - {x: -37.15, y: 219}
+        - {x: -58.15, y: 162}
+        - {x: -58.15, y: 47}
+        - {x: -54.15, y: 40}
+        - {x: 26.849998, y: 26}
+        - {x: 56.85, y: 26}
+        - {x: 69.85, y: 38}
+        - {x: 69.85, y: 48}
+        - {x: 63.85, y: 83}
+    - name: Sirko_run instance 10011
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 1385
+        width: 193
+        height: 221
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 18.850006, y: 216}
+        - {x: -38.149994, y: 216}
+        - {x: -59.149994, y: 162}
+        - {x: -59.149994, y: 47}
+        - {x: -50.149994, y: 38}
+        - {x: -4.149994, y: 27}
+        - {x: 65.850006, y: 27}
+        - {x: 70.850006, y: 37}
+        - {x: 70.850006, y: 102}
+        - {x: 19.850006, y: 215}
+    - name: Sirko_run instance 10012
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 1385
+        width: 193
+        height: 221
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32.149994, y: 213}
+        - {x: -59.149994, y: 168}
+        - {x: -59.149994, y: 27}
+        - {x: 71.850006, y: 27}
+        - {x: 71.850006, y: 111}
+        - {x: 22.850006, y: 213}
+    - name: Sirko_run instance 10013
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 1385
+        width: 193
+        height: 221
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -55.150024, y: 117}
+        - {x: -59.150024, y: 92}
+        - {x: -59.150024, y: 28}
+        - {x: 68.849976, y: 28}
+        - {x: 72.849976, y: 31}
+        - {x: 72.849976, y: 79}
+        - {x: 28.849976, y: 200}
+        - {x: 11.849976, y: 211}
+        - {x: -14.150024, y: 211}
+        - {x: -37.150024, y: 199}
+    - name: Sirko_run instance 10014
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 1385
+        width: 193
+        height: 221
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12.849976, y: 208}
+        - {x: -59.150024, y: 208}
+        - {x: -59.150024, y: 29}
+        - {x: 66.849976, y: 29}
+        - {x: 72.849976, y: 44}
+        - {x: 72.849976, y: 68}
+        - {x: 46.849976, y: 148}
+    - name: Sirko_run instance 10015
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1164
+        width: 193
+        height: 221
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26.150002, y: 205}
+        - {x: -45.15, y: 192}
+        - {x: -60.15, y: 143}
+        - {x: -60.15, y: 26}
+        - {x: 73.85, y: 26}
+        - {x: 73.85, y: 134}
+        - {x: 19.849998, y: 205}
+    - name: Sirko_run instance 10016
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 1164
+        width: 193
+        height: 221
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31.149994, y: 203}
+        - {x: -43.149994, y: 190}
+        - {x: -58.149994, y: 117}
+        - {x: -61.149994, y: 72}
+        - {x: -61.149994, y: 24}
+        - {x: -57.149994, y: 21}
+        - {x: 71.850006, y: 21}
+        - {x: 74.850006, y: 25}
+        - {x: 74.850006, y: 110}
+        - {x: 20.850006, y: 203}
+    - name: Sirko_run instance 10017
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 1164
+        width: 193
+        height: 221
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -0.1499939, y: 200}
+        - {x: -24.149994, y: 200}
+        - {x: -36.149994, y: 182}
+        - {x: -43.149994, y: 166}
+        - {x: -37.149994, y: 136}
+        - {x: -30.149994, y: 140}
+        - {x: -28.149994, y: 142}
+        - {x: -32.149994, y: 134}
+        - {x: -43.149994, y: 136}
+        - {x: -59.149994, y: 126}
+        - {x: -49.149994, y: 103}
+        - {x: -63.149994, y: 74}
+        - {x: -63.149994, y: 17}
+        - {x: 75.850006, y: 17}
+        - {x: 75.850006, y: 140}
+        - {x: 12.850006, y: 195}
+    - name: Sirko_run instance 10018
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 1164
+        width: 193
+        height: 221
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5.8499756, y: 197}
+        - {x: -26.150024, y: 197}
+        - {x: -64.150024, y: 140}
+        - {x: -64.150024, y: 13}
+        - {x: 25.849976, y: 13}
+        - {x: 76.849976, y: 23}
+        - {x: 76.849976, y: 109}
+        - {x: 74.849976, y: 140}
+    - name: Sirko_run instance 10019
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 1164
+        width: 193
+        height: 221
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27.150024, y: 194}
+        - {x: -39.150024, y: 178}
+        - {x: -41.150024, y: 166}
+        - {x: -42.150024, y: 140}
+        - {x: -39.150024, y: 135}
+        - {x: -32.150024, y: 134}
+        - {x: -50.150024, y: 133}
+        - {x: -58.150024, y: 130}
+        - {x: -65.150024, y: 126}
+        - {x: -66.150024, y: 108}
+        - {x: -66.150024, y: 9}
+        - {x: 65.849976, y: 9}
+        - {x: 77.849976, y: 27}
+        - {x: 77.849976, y: 126}
+        - {x: 30.849976, y: 194}
+    - name: Sirko_run instance 10020
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 943
+        width: 193
+        height: 221
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -58.15, y: 9}
+        - {x: -54.15, y: 7}
+        - {x: 15.849998, y: 7}
+        - {x: 76.85, y: 17}
+        - {x: 76.85, y: 93}
+        - {x: 32.85, y: 194}
+        - {x: -28.150002, y: 194}
+        - {x: -58.15, y: 120}
+    - name: Sirko_run instance 10021
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 943
+        width: 193
+        height: 221
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19.149994, y: 193}
+        - {x: -41.149994, y: 164}
+        - {x: -52.149994, y: 109}
+        - {x: -52.149994, y: 5}
+        - {x: 46.850006, y: 5}
+        - {x: 80.850006, y: 26}
+        - {x: 80.850006, y: 80}
+        - {x: 30.850006, y: 193}
+    - name: Sirko_run instance 10022
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 943
+        width: 193
+        height: 221
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20.149994, y: 193}
+        - {x: -39.149994, y: 187}
+        - {x: -48.149994, y: 124}
+        - {x: -48.149994, y: 3}
+        - {x: 61.850006, y: 3}
+        - {x: 83.850006, y: 44}
+        - {x: 83.850006, y: 85}
+        - {x: 32.850006, y: 193}
+    - name: Sirko_run instance 10023
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 943
+        width: 193
+        height: 221
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.150024, y: 197}
+        - {x: -49.150024, y: 154}
+        - {x: -49.150024, y: 89}
+        - {x: -39.150024, y: 49}
+        - {x: -27.150024, y: 5}
+        - {x: 15.849976, y: 5}
+        - {x: 56.849976, y: 15}
+        - {x: 56.849976, y: 124}
+        - {x: 33.849976, y: 197}
+    - name: Sirko_run instance 10024
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 943
+        width: 193
+        height: 221
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15.150024, y: 202}
+        - {x: -55.150024, y: 165}
+        - {x: -55.150024, y: 64}
+        - {x: -31.150024, y: 38}
+        - {x: 1.8499756, y: 6}
+        - {x: 52.849976, y: 6}
+        - {x: 52.849976, y: 202}
+    - name: Sirko_run instance 10025
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 722
+        width: 193
+        height: 221
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16.849998, y: 207}
+        - {x: -9.150002, y: 207}
+        - {x: -43.15, y: 198}
+        - {x: -60.15, y: 159}
+        - {x: -60.15, y: 29}
+        - {x: -14.150002, y: 5}
+        - {x: 66.85, y: 5}
+        - {x: 66.85, y: 137}
+        - {x: 64.85, y: 156}
+    - name: Sirko_run instance 10026
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 722
+        width: 193
+        height: 221
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25.149994, y: 209}
+        - {x: -46.149994, y: 196}
+        - {x: -63.149994, y: 153}
+        - {x: -63.149994, y: 118}
+        - {x: -42.149994, y: 36}
+        - {x: 25.850006, y: 13}
+        - {x: 55.850006, y: 13}
+        - {x: 69.850006, y: 18}
+        - {x: 69.850006, y: 133}
+        - {x: 39.850006, y: 209}
+    - name: Sirko_run instance 10027
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 722
+        width: 193
+        height: 221
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14.850006, y: 212}
+        - {x: -12.149994, y: 212}
+        - {x: -42.149994, y: 197}
+        - {x: -66.149994, y: 165}
+        - {x: -66.149994, y: 37}
+        - {x: 0.8500061, y: 21}
+        - {x: 71.850006, y: 21}
+        - {x: 73.850006, y: 23}
+        - {x: 73.850006, y: 94}
+        - {x: 68.850006, y: 145}
+    - name: Sirko_run instance 10028
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 722
+        width: 193
+        height: 221
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -69.150024, y: 46}
+        - {x: -59.150024, y: 30}
+        - {x: 77.849976, y: 30}
+        - {x: 77.849976, y: 177}
+        - {x: 76.849976, y: 185}
+        - {x: 33.849976, y: 214}
+        - {x: -61.150024, y: 214}
+        - {x: -69.150024, y: 195}
+    - name: Sirko_run instance 10029
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 722
+        width: 193
+        height: 221
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 17.849976, y: 217}
+        - {x: -29.150024, y: 217}
+        - {x: -56.150024, y: 208}
+        - {x: -71.150024, y: 170}
+        - {x: -71.150024, y: 48}
+        - {x: -40.150024, y: 39}
+        - {x: 71.849976, y: 39}
+        - {x: 81.849976, y: 53}
+        - {x: 81.849976, y: 108}
+        - {x: 72.849976, y: 164}
+    - name: Sirko_run instance 10030
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 501
+        width: 193
+        height: 221
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24.150002, y: 216}
+        - {x: -36.15, y: 195}
+        - {x: -35.15, y: 149}
+        - {x: -76.15, y: 151}
+        - {x: -77.15, y: 150}
+        - {x: -77.15, y: 70}
+        - {x: -67.15, y: 40}
+        - {x: 80.85, y: 40}
+        - {x: 80.85, y: 184}
+        - {x: 29.849998, y: 216}
+    - name: Sirko_run instance 10031
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 501
+        width: 193
+        height: 221
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 39.850006, y: 215}
+        - {x: -38.149994, y: 215}
+        - {x: -83.149994, y: 173}
+        - {x: -83.149994, y: 71}
+        - {x: -80.149994, y: 56}
+        - {x: -59.149994, y: 39}
+        - {x: 65.850006, y: 39}
+        - {x: 78.850006, y: 41}
+        - {x: 78.850006, y: 129}
+    - name: Sirko_run instance 10032
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 501
+        width: 193
+        height: 221
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22.149994, y: 213}
+        - {x: -25.149994, y: 212}
+        - {x: -88.149994, y: 187}
+        - {x: -88.149994, y: 39}
+        - {x: -75.149994, y: 36}
+        - {x: 77.850006, y: 36}
+        - {x: 77.850006, y: 182}
+        - {x: 17.850006, y: 213}
+    - name: Sirko_run instance 10033
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 501
+        width: 193
+        height: 221
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 18.849976, y: 212}
+        - {x: -50.150024, y: 212}
+        - {x: -93.150024, y: 203}
+        - {x: -93.150024, y: 33}
+        - {x: 76.849976, y: 33}
+        - {x: 76.849976, y: 93}
+        - {x: 63.849976, y: 175}
+    - name: Sirko_run instance 10034
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 501
+        width: 193
+        height: 221
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 36.849976, y: 211}
+        - {x: -97.150024, y: 211}
+        - {x: -97.150024, y: 29}
+        - {x: 74.849976, y: 29}
+        - {x: 75.849976, y: 32}
+        - {x: 75.849976, y: 126}
+        - {x: 72.849976, y: 162}
+    - name: Sirko_run instance 10035
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 280
+        width: 193
+        height: 221
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 46.85, y: 109}
+        - {x: 40.85, y: 109}
+        - {x: 34.85, y: 110}
+        - {x: 26.849998, y: 115}
+        - {x: 33.85, y: 111}
+        - {x: 36.85, y: 110}
+        - {x: 42.85, y: 110}
+        - {x: 54.85, y: 112}
+        - {x: 66.85, y: 115}
+        - {x: 65.85, y: 166}
+        - {x: 18.849998, y: 209}
+        - {x: -35.15, y: 209}
+        - {x: -102.15, y: 193}
+        - {x: -102.15, y: 43}
+        - {x: -82.15, y: 25}
+        - {x: 41.85, y: 25}
+        - {x: 73.85, y: 52}
+        - {x: 73.85, y: 86}
+        - {x: 68.85, y: 95}
+    - name: Sirko_run instance 10036
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 280
+        width: 193
+        height: 221
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 42.850006, y: 109}
+        - {x: 55.850006, y: 113}
+        - {x: 70.850006, y: 123}
+        - {x: 60.850006, y: 172}
+        - {x: 33.850006, y: 208}
+        - {x: -106.149994, y: 208}
+        - {x: -106.149994, y: 43}
+        - {x: -92.149994, y: 22}
+        - {x: 38.850006, y: 22}
+        - {x: 72.850006, y: 39}
+        - {x: 72.850006, y: 83}
+        - {x: 58.850006, y: 97}
+    - name: Sirko_run instance 10037
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 280
+        width: 193
+        height: 221
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 36.850006, y: 39}
+        - {x: 39.850006, y: 40}
+        - {x: 67.850006, y: 49}
+        - {x: 70.850006, y: 55}
+        - {x: 71.850006, y: 63}
+        - {x: 71.850006, y: 80}
+        - {x: 47.850006, y: 105}
+        - {x: 25.850006, y: 116}
+        - {x: 28.850006, y: 132}
+        - {x: 28.850006, y: 115}
+        - {x: 47.850006, y: 107}
+        - {x: 71.850006, y: 121}
+        - {x: 71.850006, y: 148}
+        - {x: 62.850006, y: 187}
+        - {x: 1.8500061, y: 206}
+        - {x: -25.149994, y: 206}
+        - {x: -36.149994, y: 190}
+        - {x: -41.149994, y: 174}
+        - {x: -86.149994, y: 198}
+        - {x: -99.149994, y: 204}
+        - {x: -99.149994, y: 35}
+        - {x: -77.149994, y: 19}
+        - {x: -34.149994, y: 19}
+        - {x: -6.149994, y: 26}
+        - {x: 0.8500061, y: 41}
+        - {x: 3.850006, y: 48}
+        - {x: 20.850006, y: 40}
+    - name: Sirko_run instance 10038
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 280
+        width: 193
+        height: 221
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10.849976, y: 206}
+        - {x: -91.150024, y: 206}
+        - {x: -94.150024, y: 199}
+        - {x: -94.150024, y: 27}
+        - {x: -78.150024, y: 15}
+        - {x: -1.1500244, y: 15}
+        - {x: 69.849976, y: 39}
+        - {x: 69.849976, y: 169}
+        - {x: 67.849976, y: 180}
+    - name: Sirko_run instance 10039
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 280
+        width: 193
+        height: 221
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 47.849976, y: 102}
+        - {x: 69.849976, y: 111}
+        - {x: 69.849976, y: 176}
+        - {x: 26.849976, y: 212}
+        - {x: -68.150024, y: 212}
+        - {x: -95.150024, y: 194}
+        - {x: -95.150024, y: 16}
+        - {x: -88.150024, y: 12}
+        - {x: -26.150024, y: 12}
+        - {x: 54.849976, y: 35}
+        - {x: 67.849976, y: 53}
+        - {x: 69.849976, y: 57}
+        - {x: 69.849976, y: 83}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

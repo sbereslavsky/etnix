@@ -1,0 +1,1123 @@
+fileFormatVersion: 2
+guid: 5c808e6d4ada84f428dd3c9621f04e35
+timeCreated: 1461061220
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Sirko_battle_death_20000
+    21300002: Sirko_battle_death_20001
+    21300004: Sirko_battle_death_20002
+    21300006: Sirko_battle_death_20003
+    21300008: Sirko_battle_death_20004
+    21300010: Sirko_battle_death_20005
+    21300012: Sirko_battle_death_20006
+    21300014: Sirko_battle_death_20007
+    21300016: Sirko_battle_death_20008
+    21300018: Sirko_battle_death_20009
+    21300020: Sirko_battle_death_20010
+    21300022: Sirko_battle_death_20011
+    21300024: Sirko_battle_death_20012
+    21300026: Sirko_battle_death_20013
+    21300028: Sirko_battle_death_20014
+    21300030: Sirko_battle_death_20015
+    21300032: Sirko_battle_death_20016
+    21300034: Sirko_battle_death_20017
+    21300036: Sirko_battle_death_20018
+    21300038: Sirko_battle_death_20019
+    21300040: Sirko_battle_death_20020
+    21300042: Sirko_battle_death_20021
+    21300044: Sirko_battle_death_20022
+    21300046: Sirko_battle_death_20023
+    21300048: Sirko_battle_death_20024
+    21300050: Sirko_battle_death_20025
+    21300052: Sirko_battle_death_20026
+    21300054: Sirko_battle_death_20027
+    21300056: Sirko_battle_death_20028
+    21300058: Sirko_battle_death_20029
+    21300060: Sirko_battle_death_20030
+    21300062: Sirko_battle_death_20031
+    21300064: Sirko_battle_death_20032
+    21300066: Sirko_battle_death_20033
+    21300068: Sirko_battle_death_20034
+    21300070: Sirko_battle_death_20035
+    21300072: Sirko_battle_death_20036
+    21300074: Sirko_battle_death_20037
+    21300076: Sirko_battle_death_20038
+    21300078: Sirko_battle_death_20039
+    21300080: Sirko_battle_death_20040
+    21300082: Sirko_battle_death_20041
+    21300084: Sirko_battle_death_20042
+    21300086: Sirko_battle_death_20043
+    21300088: Sirko_battle_death_20044
+    21300090: Sirko_battle_death_20045
+    21300092: Sirko_battle_death_20046
+    21300094: Sirko_battle_death_20047
+    21300096: Sirko_battle_death_20048
+    21300098: Sirko_battle_death_20049
+    21300100: Sirko_battle_death_2 instance 10000
+    21300102: Sirko_battle_death_2 instance 10001
+    21300104: Sirko_battle_death_2 instance 10002
+    21300106: Sirko_battle_death_2 instance 10003
+    21300108: Sirko_battle_death_2 instance 10004
+    21300110: Sirko_battle_death_2 instance 10005
+    21300112: Sirko_battle_death_2 instance 10006
+    21300114: Sirko_battle_death_2 instance 10007
+    21300116: Sirko_battle_death_2 instance 10008
+    21300118: Sirko_battle_death_2 instance 10009
+    21300120: Sirko_battle_death_2 instance 10010
+    21300122: Sirko_battle_death_2 instance 10011
+    21300124: Sirko_battle_death_2 instance 10012
+    21300126: Sirko_battle_death_2 instance 10013
+    21300128: Sirko_battle_death_2 instance 10014
+    21300130: Sirko_battle_death_2 instance 10015
+    21300132: Sirko_battle_death_2 instance 10016
+    21300134: Sirko_battle_death_2 instance 10017
+    21300136: Sirko_battle_death_2 instance 10018
+    21300138: Sirko_battle_death_2 instance 10019
+    21300140: Sirko_battle_death_2 instance 10020
+    21300142: Sirko_battle_death_2 instance 10021
+    21300144: Sirko_battle_death_2 instance 10022
+    21300146: Sirko_battle_death_2 instance 10023
+    21300148: Sirko_battle_death_2 instance 10024
+    21300150: Sirko_battle_death_2 instance 10025
+    21300152: Sirko_battle_death_2 instance 10026
+    21300154: Sirko_battle_death_2 instance 10027
+    21300156: Sirko_battle_death_2 instance 10028
+    21300158: Sirko_battle_death_2 instance 10029
+    21300160: Sirko_battle_death_2 instance 10030
+    21300162: Sirko_battle_death_2 instance 10031
+    21300164: Sirko_battle_death_2 instance 10032
+    21300166: Sirko_battle_death_2 instance 10033
+    21300168: Sirko_battle_death_2 instance 10034
+    21300170: Sirko_battle_death_2 instance 10035
+    21300172: Sirko_battle_death_2 instance 10036
+    21300174: Sirko_battle_death_2 instance 10037
+    21300176: Sirko_battle_death_2 instance 10038
+    21300178: Sirko_battle_death_2 instance 10039
+    21300180: Sirko_battle_death_2 instance 10040
+    21300182: Sirko_battle_death_2 instance 10041
+    21300184: Sirko_battle_death_2 instance 10042
+    21300186: Sirko_battle_death_2 instance 10043
+    21300188: Sirko_battle_death_2 instance 10044
+    21300190: Sirko_battle_death_2 instance 10045
+    21300192: Sirko_battle_death_2 instance 10046
+    21300194: Sirko_battle_death_2 instance 10047
+    21300196: Sirko_battle_death_2 instance 10048
+    21300198: Sirko_battle_death_2 instance 10049
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Sirko_battle_death_2 instance 10000
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1822
+        width: 291
+        height: 226
+      alignment: 9
+      pivot: {x: 0.23, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33.93, y: 198.88}
+        - {x: -60.93, y: 191.88}
+        - {x: -60.93, y: 11.880005}
+        - {x: -51.93, y: 0.8800049}
+        - {x: 63.07, y: 0.8800049}
+        - {x: 63.07, y: 167.88}
+        - {x: 45.07, y: 198.88}
+    - name: Sirko_battle_death_2 instance 10001
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 1822
+        width: 291
+        height: 226
+      alignment: 9
+      pivot: {x: 0.23, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -38.929993, y: 198.88}
+        - {x: -59.929993, y: 162.88}
+        - {x: -59.929993, y: 0.8800049}
+        - {x: 64.07001, y: 0.8800049}
+        - {x: 64.07001, y: 150.88}
+        - {x: 26.070007, y: 198.88}
+    - name: Sirko_battle_death_2 instance 10002
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 1822
+        width: 291
+        height: 226
+      alignment: 9
+      pivot: {x: 0.23, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -1.9299927, y: 197.88}
+        - {x: -52.929993, y: 179.88}
+        - {x: -55.929993, y: 122.880005}
+        - {x: -35.929993, y: 107.880005}
+        - {x: -31.929993, y: 106.880005}
+        - {x: -58.929993, y: 64.880005}
+        - {x: -58.929993, y: 0.8800049}
+        - {x: 65.07001, y: 0.8800049}
+        - {x: 65.07001, y: 179.88}
+        - {x: 30.070007, y: 197.88}
+    - name: Sirko_battle_death_2 instance 10003
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 1822
+        width: 291
+        height: 226
+      alignment: 9
+      pivot: {x: 0.23, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8.929993, y: 196.88}
+        - {x: -56.929993, y: 171.88}
+        - {x: -56.929993, y: 0.8800049}
+        - {x: 63.070007, y: 0.8800049}
+        - {x: 66.07001, y: 13.880005}
+        - {x: 66.07001, y: 134.88}
+        - {x: 28.070007, y: 196.88}
+    - name: Sirko_battle_death_2 instance 10004
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 1822
+        width: 291
+        height: 226
+      alignment: 9
+      pivot: {x: 0.23, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 35.069946, y: 193.88}
+        - {x: 27.069946, y: 195.88}
+        - {x: -4.9300537, y: 195.88}
+        - {x: -55.930054, y: 167.88}
+        - {x: -55.930054, y: -0.11999512}
+        - {x: 56.069946, y: -0.11999512}
+        - {x: 58.069946, y: 3.880005}
+        - {x: 67.06995, y: 46.880005}
+        - {x: 67.06995, y: 133.88}
+    - name: Sirko_battle_death_2 instance 10005
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 1822
+        width: 291
+        height: 226
+      alignment: 9
+      pivot: {x: 0.23, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 40.069946, y: 194.88}
+        - {x: 12.069946, y: 194.88}
+        - {x: 6.0699463, y: 193.88}
+        - {x: -38.930054, y: 179.88}
+        - {x: -52.930054, y: 131.88}
+        - {x: -52.930054, y: 0.8800049}
+        - {x: 60.069946, y: 0.8800049}
+        - {x: 62.069946, y: 6.880005}
+        - {x: 62.069946, y: 149.88}
+        - {x: 44.069946, y: 193.88}
+    - name: Sirko_battle_death_2 instance 10006
+      rect:
+        serializedVersion: 2
+        x: 1746
+        y: 1822
+        width: 291
+        height: 226
+      alignment: 9
+      pivot: {x: 0.23, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.930054, y: 193.88}
+        - {x: -50.930054, y: 177.88}
+        - {x: -50.930054, y: 9.880005}
+        - {x: -48.930054, y: -0.11999512}
+        - {x: 59.069946, y: -0.11999512}
+        - {x: 59.069946, y: 193.88}
+    - name: Sirko_battle_death_2 instance 10007
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1596
+        width: 291
+        height: 226
+      alignment: 9
+      pivot: {x: 0.23, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3.9300003, y: 192.88}
+        - {x: -38.93, y: 179.88}
+        - {x: -48.93, y: 78.880005}
+        - {x: -48.93, y: 15.880005}
+        - {x: -42.93, y: -1.1199951}
+        - {x: 60.07, y: -1.1199951}
+        - {x: 60.07, y: 192.88}
+    - name: Sirko_battle_death_2 instance 10008
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 1596
+        width: 291
+        height: 226
+      alignment: 9
+      pivot: {x: 0.23, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32.929993, y: 190.88}
+        - {x: -45.929993, y: 101.880005}
+        - {x: -45.929993, y: 25.880005}
+        - {x: -33.929993, y: -1.1199951}
+        - {x: 55.070007, y: -1.1199951}
+        - {x: 62.070007, y: 12.880005}
+        - {x: 62.070007, y: 190.88}
+    - name: Sirko_battle_death_2 instance 10009
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 1596
+        width: 291
+        height: 226
+      alignment: 9
+      pivot: {x: 0.23, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -38.929993, y: 189.88}
+        - {x: -43.929993, y: 163.88}
+        - {x: -43.929993, y: -1.1199951}
+        - {x: 59.070007, y: -1.1199951}
+        - {x: 64.07001, y: -0.11999512}
+        - {x: 64.07001, y: 189.88}
+    - name: Sirko_battle_death_2 instance 10010
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 1596
+        width: 291
+        height: 226
+      alignment: 9
+      pivot: {x: 0.23, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 37.070007, y: 190.88}
+        - {x: 13.070007, y: 190.88}
+        - {x: -33.929993, y: 185.88}
+        - {x: -43.929993, y: 125.880005}
+        - {x: -43.929993, y: 8.880005}
+        - {x: -35.929993, y: -0.11999512}
+        - {x: 40.070007, y: -0.11999512}
+        - {x: 60.070007, y: 9.880005}
+        - {x: 60.070007, y: 150.88}
+        - {x: 47.070007, y: 172.88}
+    - name: Sirko_battle_death_2 instance 10011
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 1596
+        width: 291
+        height: 226
+      alignment: 9
+      pivot: {x: 0.23, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 34.069946, y: 191.88}
+        - {x: -13.930054, y: 191.88}
+        - {x: -43.930054, y: 174.88}
+        - {x: -43.930054, y: 15.880005}
+        - {x: -25.930054, y: -0.11999512}
+        - {x: 33.069946, y: -0.11999512}
+        - {x: 54.069946, y: 8.880005}
+        - {x: 54.069946, y: 155.88}
+    - name: Sirko_battle_death_2 instance 10012
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 1596
+        width: 291
+        height: 226
+      alignment: 9
+      pivot: {x: 0.23, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -46.930054, y: 190.88}
+        - {x: -49.930054, y: 189.88}
+        - {x: -49.930054, y: 6.880005}
+        - {x: -39.930054, y: -0.11999512}
+        - {x: 32.069946, y: -0.11999512}
+        - {x: 50.069946, y: 7.880005}
+        - {x: 50.069946, y: 147.88}
+        - {x: 21.069946, y: 190.88}
+    - name: Sirko_battle_death_2 instance 10013
+      rect:
+        serializedVersion: 2
+        x: 1746
+        y: 1596
+        width: 291
+        height: 226
+      alignment: 9
+      pivot: {x: 0.23, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 43.069946, y: 155.88}
+        - {x: -1.9300537, y: 189.88}
+        - {x: -32.930054, y: 189.88}
+        - {x: -58.930054, y: 170.88}
+        - {x: -58.930054, y: 16.880005}
+        - {x: -32.930054, y: -0.11999512}
+        - {x: 27.069946, y: -0.11999512}
+        - {x: 35.069946, y: 3.880005}
+        - {x: 50.069946, y: 16.880005}
+        - {x: 50.069946, y: 60.880005}
+    - name: Sirko_battle_death_2 instance 10014
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1370
+        width: 291
+        height: 226
+      alignment: 9
+      pivot: {x: 0.23, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.93, y: 188.88}
+        - {x: -48.93, y: 188.88}
+        - {x: -66.93, y: 166.88}
+        - {x: -66.93, y: 104.880005}
+        - {x: -50.93, y: 28.880005}
+        - {x: -25.93, y: -0.11999512}
+        - {x: 30.07, y: -0.11999512}
+        - {x: 51.07, y: 8.880005}
+        - {x: 51.07, y: 54.880005}
+        - {x: 35.07, y: 162.88}
+    - name: Sirko_battle_death_2 instance 10015
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 1370
+        width: 291
+        height: 226
+      alignment: 9
+      pivot: {x: 0.23, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35.929993, y: 188.88}
+        - {x: -61.929993, y: 169.88}
+        - {x: -61.929993, y: 22.880005}
+        - {x: -26.929993, y: -0.11999512}
+        - {x: 50.070007, y: -0.11999512}
+        - {x: 50.070007, y: 185.88}
+        - {x: 42.070007, y: 188.88}
+    - name: Sirko_battle_death_2 instance 10016
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 1370
+        width: 291
+        height: 226
+      alignment: 9
+      pivot: {x: 0.23, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -38.929993, y: 189.88}
+        - {x: -55.929993, y: 169.88}
+        - {x: -55.929993, y: 71.880005}
+        - {x: -45.929993, y: 30.880005}
+        - {x: -34.929993, y: -0.11999512}
+        - {x: 50.070007, y: -0.11999512}
+        - {x: 50.070007, y: 163.88}
+        - {x: 42.070007, y: 189.88}
+    - name: Sirko_battle_death_2 instance 10017
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 1370
+        width: 291
+        height: 226
+      alignment: 9
+      pivot: {x: 0.23, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26.929993, y: 190.88}
+        - {x: -48.929993, y: 178.88}
+        - {x: -48.929993, y: 15.880005}
+        - {x: -29.929993, y: -0.11999512}
+        - {x: 40.070007, y: -0.11999512}
+        - {x: 49.070007, y: 6.880005}
+        - {x: 49.070007, y: 148.88}
+        - {x: 13.070007, y: 190.88}
+    - name: Sirko_battle_death_2 instance 10018
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 1370
+        width: 291
+        height: 226
+      alignment: 9
+      pivot: {x: 0.23, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32.930054, y: -2.119995}
+        - {x: 52.069946, y: -2.119995}
+        - {x: 52.069946, y: 170.88}
+        - {x: 47.069946, y: 190.88}
+        - {x: -43.930054, y: 190.88}
+        - {x: -43.930054, y: 13.880005}
+    - name: Sirko_battle_death_2 instance 10019
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 1370
+        width: 291
+        height: 226
+      alignment: 9
+      pivot: {x: 0.23, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.930054, y: 182.88}
+        - {x: -34.930054, y: 115.880005}
+        - {x: -34.930054, y: 6.880005}
+        - {x: -33.930054, y: 2.880005}
+        - {x: -24.930054, y: -2.119995}
+        - {x: 60.069946, y: -2.119995}
+        - {x: 81.06995, y: 42.880005}
+        - {x: 81.06995, y: 152.88}
+        - {x: 58.069946, y: 182.88}
+    - name: Sirko_battle_death_2 instance 10020
+      rect:
+        serializedVersion: 2
+        x: 1746
+        y: 1370
+        width: 291
+        height: 226
+      alignment: 9
+      pivot: {x: 0.23, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24.930054, y: 24.880005}
+        - {x: -23.930054, y: 17.880005}
+        - {x: -12.930054, y: -0.11999512}
+        - {x: 64.06995, y: -0.11999512}
+        - {x: 106.06995, y: 43.880005}
+        - {x: 106.06995, y: 171.88}
+        - {x: 105.06995, y: 173.88}
+        - {x: 23.069946, y: 173.88}
+        - {x: -24.930054, y: 72.880005}
+    - name: Sirko_battle_death_2 instance 10021
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1144
+        width: 291
+        height: 226
+      alignment: 9
+      pivot: {x: 0.23, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.93, y: 68.880005}
+        - {x: -13.93, y: 9.880005}
+        - {x: -9.93, y: 0.8800049}
+        - {x: 75.07, y: 0.8800049}
+        - {x: 129.07, y: 37.880005}
+        - {x: 129.07, y: 157.88}
+        - {x: 125.07, y: 168.88}
+        - {x: 57.07, y: 168.88}
+        - {x: 18.07, y: 145.88}
+    - name: Sirko_battle_death_2 instance 10022
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 1144
+        width: 291
+        height: 226
+      alignment: 9
+      pivot: {x: 0.23, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 72.07001, y: 165.88}
+        - {x: -6.9299927, y: 95.880005}
+        - {x: -8.929993, y: 82.880005}
+        - {x: -8.929993, y: 31.880005}
+        - {x: 18.070007, y: -0.11999512}
+        - {x: 69.07001, y: -0.11999512}
+        - {x: 160.07, y: 52.880005}
+        - {x: 160.07, y: 165.88}
+    - name: Sirko_battle_death_2 instance 10023
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 1144
+        width: 291
+        height: 226
+      alignment: 9
+      pivot: {x: 0.23, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 174.07, y: 121.880005}
+        - {x: 164.07, y: 129.88}
+        - {x: 134.07, y: 141.88}
+        - {x: 104.07001, y: 141.88}
+        - {x: 7.0700073, y: 85.880005}
+        - {x: -0.9299927, y: 58.880005}
+        - {x: -0.9299927, y: 34.880005}
+        - {x: 2.0700073, y: 25.880005}
+        - {x: 25.070007, y: -1.1199951}
+        - {x: 60.070007, y: -1.1199951}
+        - {x: 170.07, y: 55.880005}
+        - {x: 175.07, y: 81.880005}
+        - {x: 175.07, y: 118.880005}
+    - name: Sirko_battle_death_2 instance 10024
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 1144
+        width: 291
+        height: 226
+      alignment: 9
+      pivot: {x: 0.23, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 117.07001, y: 116.880005}
+        - {x: 27.070007, y: 86.880005}
+        - {x: 7.0700073, y: 67.880005}
+        - {x: 7.0700073, y: 41.880005}
+        - {x: 19.070007, y: 6.880005}
+        - {x: 30.070007, y: -2.119995}
+        - {x: 150.07, y: -2.119995}
+        - {x: 190.07, y: 40.880005}
+        - {x: 190.07, y: 114.880005}
+        - {x: 155.07, y: 116.880005}
+    - name: Sirko_battle_death_2 instance 10025
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 1144
+        width: 291
+        height: 226
+      alignment: 9
+      pivot: {x: 0.23, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 31.069946, y: 92.880005}
+        - {x: 16.069946, y: 72.880005}
+        - {x: 16.069946, y: -3.119995}
+        - {x: 171.06995, y: -3.119995}
+        - {x: 206.06995, y: 34.880005}
+        - {x: 206.06995, y: 74.880005}
+        - {x: 194.06995, y: 92.880005}
+    - name: Sirko_battle_death_2 instance 10026
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 1144
+        width: 291
+        height: 226
+      alignment: 9
+      pivot: {x: 0.23, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 215.06995, y: 59.880005}
+        - {x: 94.06995, y: 86.880005}
+        - {x: 54.069946, y: 86.880005}
+        - {x: 24.069946, y: 77.880005}
+        - {x: 24.069946, y: 6.880005}
+        - {x: 30.069946, y: -4.119995}
+        - {x: 166.06995, y: -4.119995}
+        - {x: 196.06995, y: 9.880005}
+        - {x: 218.06995, y: 20.880005}
+        - {x: 218.06995, y: 49.880005}
+    - name: Sirko_battle_death_2 instance 10027
+      rect:
+        serializedVersion: 2
+        x: 1746
+        y: 1144
+        width: 291
+        height: 226
+      alignment: 9
+      pivot: {x: 0.23, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 37.069946, y: 77.880005}
+        - {x: 24.069946, y: 66.880005}
+        - {x: 24.069946, y: 10.880005}
+        - {x: 34.069946, y: -7.119995}
+        - {x: 45.069946, y: -7.119995}
+        - {x: 53.069946, y: -6.119995}
+        - {x: 64.06995, y: -7.119995}
+        - {x: 173.06995, y: -7.119995}
+        - {x: 214.06995, y: 4.880005}
+        - {x: 218.06995, y: 9.880005}
+        - {x: 218.06995, y: 53.880005}
+        - {x: 143.06995, y: 77.880005}
+    - name: Sirko_battle_death_2 instance 10028
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 918
+        width: 291
+        height: 226
+      alignment: 9
+      pivot: {x: 0.23, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 47.07, y: 68.880005}
+        - {x: 23.07, y: 42.880005}
+        - {x: 23.07, y: 16.880005}
+        - {x: 36.07, y: -1.1199951}
+        - {x: 44.07, y: -10.119995}
+        - {x: 219.07, y: -10.119995}
+        - {x: 219.07, y: 39.880005}
+        - {x: 175.07, y: 68.880005}
+    - name: Sirko_battle_death_2 instance 10029
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 918
+        width: 291
+        height: 226
+      alignment: 9
+      pivot: {x: 0.23, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 163.07, y: 61.880005}
+        - {x: 37.070007, y: 61.880005}
+        - {x: 24.070007, y: 48.880005}
+        - {x: 24.070007, y: 0.8800049}
+        - {x: 50.070007, y: -13.119995}
+        - {x: 215.07, y: -13.119995}
+        - {x: 218.07, y: -2.119995}
+        - {x: 218.07, y: 32.880005}
+        - {x: 190.07, y: 59.880005}
+    - name: Sirko_battle_death_2 instance 10030
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 918
+        width: 291
+        height: 226
+      alignment: 9
+      pivot: {x: 0.23, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 48.070007, y: 57.880005}
+        - {x: 24.070007, y: 36.880005}
+        - {x: 24.070007, y: -16.119995}
+        - {x: 219.07, y: -16.119995}
+        - {x: 219.07, y: 34.880005}
+        - {x: 178.07, y: 57.880005}
+    - name: Sirko_battle_death_2 instance 10031
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 918
+        width: 291
+        height: 226
+      alignment: 9
+      pivot: {x: 0.23, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 28.070007, y: 56.880005}
+        - {x: 25.070007, y: 46.880005}
+        - {x: 25.070007, y: 15.880005}
+        - {x: 30.070007, y: -3.119995}
+        - {x: 76.07001, y: -20.119995}
+        - {x: 189.07, y: -20.119995}
+        - {x: 220.07, y: -16.119995}
+        - {x: 220.07, y: 56.880005}
+    - name: Sirko_battle_death_2 instance 10032
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 918
+        width: 291
+        height: 226
+      alignment: 9
+      pivot: {x: 0.23, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 207.06995, y: 49.880005}
+        - {x: 149.06995, y: 55.880005}
+        - {x: 43.069946, y: 55.880005}
+        - {x: 25.069946, y: 37.880005}
+        - {x: 25.069946, y: -9.119995}
+        - {x: 105.06995, y: -25.119995}
+        - {x: 166.06995, y: -25.119995}
+        - {x: 217.06995, y: -14.119995}
+        - {x: 220.06995, y: -4.119995}
+        - {x: 220.06995, y: 34.880005}
+    - name: Sirko_battle_death_2 instance 10033
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 918
+        width: 291
+        height: 226
+      alignment: 9
+      pivot: {x: 0.23, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 216.06995, y: 46.880005}
+        - {x: 173.06995, y: 54.880005}
+        - {x: 24.069946, y: 54.880005}
+        - {x: 24.069946, y: -4.119995}
+        - {x: 68.06995, y: -22.119995}
+        - {x: 204.06995, y: -22.119995}
+        - {x: 215.06995, y: -16.119995}
+        - {x: 220.06995, y: -2.119995}
+        - {x: 220.06995, y: 40.880005}
+    - name: Sirko_battle_death_2 instance 10034
+      rect:
+        serializedVersion: 2
+        x: 1746
+        y: 918
+        width: 291
+        height: 226
+      alignment: 9
+      pivot: {x: 0.23, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 199.06995, y: 53.880005}
+        - {x: 49.069946, y: 53.880005}
+        - {x: 24.069946, y: 45.880005}
+        - {x: 24.069946, y: -1.1199951}
+        - {x: 30.069946, y: -7.119995}
+        - {x: 73.06995, y: -20.119995}
+        - {x: 215.06995, y: -20.119995}
+        - {x: 219.06995, y: -15.119995}
+        - {x: 219.06995, y: 20.880005}
+        - {x: 209.06995, y: 42.880005}
+    - name: Sirko_battle_death_2 instance 10035
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 692
+        width: 291
+        height: 226
+      alignment: 9
+      pivot: {x: 0.23, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 39.07, y: 55.880005}
+        - {x: 24.07, y: 29.880005}
+        - {x: 24.07, y: 9.880005}
+        - {x: 29.07, y: -6.119995}
+        - {x: 75.07, y: -19.119995}
+        - {x: 213.07, y: -19.119995}
+        - {x: 218.07, y: -12.119995}
+        - {x: 218.07, y: 28.880005}
+        - {x: 188.07, y: 55.880005}
+    - name: Sirko_battle_death_2 instance 10036
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 692
+        width: 291
+        height: 226
+      alignment: 9
+      pivot: {x: 0.23, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 172.07, y: 55.880005}
+        - {x: 42.070007, y: 55.880005}
+        - {x: 24.070007, y: 30.880005}
+        - {x: 24.070007, y: 8.880005}
+        - {x: 31.070007, y: -13.119995}
+        - {x: 108.07001, y: -18.119995}
+        - {x: 130.07, y: -19.119995}
+        - {x: 214.07, y: -19.119995}
+        - {x: 218.07, y: -9.119995}
+        - {x: 218.07, y: 32.880005}
+        - {x: 192.07, y: 54.880005}
+    - name: Sirko_battle_death_2 instance 10037
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 692
+        width: 291
+        height: 226
+      alignment: 9
+      pivot: {x: 0.23, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 24.070007, y: 55.880005}
+        - {x: 24.070007, y: -1.1199951}
+        - {x: 43.070007, y: -20.119995}
+        - {x: 218.07, y: -20.119995}
+        - {x: 218.07, y: 45.880005}
+        - {x: 214.07, y: 55.880005}
+    - name: Sirko_battle_death_2 instance 10038
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 692
+        width: 291
+        height: 226
+      alignment: 9
+      pivot: {x: 0.23, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 187.07, y: 55.880005}
+        - {x: 40.070007, y: 55.880005}
+        - {x: 24.070007, y: 25.880005}
+        - {x: 24.070007, y: -20.119995}
+        - {x: 218.07, y: -20.119995}
+        - {x: 218.07, y: 37.880005}
+        - {x: 214.07, y: 52.880005}
+    - name: Sirko_battle_death_2 instance 10039
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 692
+        width: 291
+        height: 226
+      alignment: 9
+      pivot: {x: 0.23, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 47.069946, y: 55.880005}
+        - {x: 24.069946, y: 26.880005}
+        - {x: 24.069946, y: 0.8800049}
+        - {x: 33.069946, y: -9.119995}
+        - {x: 83.06995, y: -20.119995}
+        - {x: 198.06995, y: -20.119995}
+        - {x: 218.06995, y: -13.119995}
+        - {x: 218.06995, y: 27.880005}
+        - {x: 209.06995, y: 44.880005}
+        - {x: 164.06995, y: 55.880005}
+    - name: Sirko_battle_death_2 instance 10040
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 692
+        width: 291
+        height: 226
+      alignment: 9
+      pivot: {x: 0.23, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 47.069946, y: 55.880005}
+        - {x: 41.069946, y: 54.880005}
+        - {x: 24.069946, y: 22.880005}
+        - {x: 24.069946, y: -20.119995}
+        - {x: 218.06995, y: -20.119995}
+        - {x: 218.06995, y: 29.880005}
+        - {x: 177.06995, y: 55.880005}
+    - name: Sirko_battle_death_2 instance 10041
+      rect:
+        serializedVersion: 2
+        x: 1746
+        y: 692
+        width: 291
+        height: 226
+      alignment: 9
+      pivot: {x: 0.23, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 30.069946, y: 55.880005}
+        - {x: 24.069946, y: 41.880005}
+        - {x: 24.069946, y: -1.1199951}
+        - {x: 27.069946, y: -14.119995}
+        - {x: 107.06995, y: -20.119995}
+        - {x: 218.06995, y: -20.119995}
+        - {x: 218.06995, y: 45.880005}
+        - {x: 167.06995, y: 55.880005}
+    - name: Sirko_battle_death_2 instance 10042
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 466
+        width: 291
+        height: 226
+      alignment: 9
+      pivot: {x: 0.23, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 44.07, y: 54.880005}
+        - {x: 24.07, y: 26.880005}
+        - {x: 24.07, y: -20.119995}
+        - {x: 218.07, y: -20.119995}
+        - {x: 218.07, y: 26.880005}
+        - {x: 173.07, y: 54.880005}
+    - name: Sirko_battle_death_2 instance 10043
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 466
+        width: 291
+        height: 226
+      alignment: 9
+      pivot: {x: 0.23, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 43.070007, y: 54.880005}
+        - {x: 24.070007, y: 48.880005}
+        - {x: 24.070007, y: -16.119995}
+        - {x: 91.07001, y: -20.119995}
+        - {x: 218.07, y: -20.119995}
+        - {x: 218.07, y: 40.880005}
+        - {x: 207.07, y: 54.880005}
+    - name: Sirko_battle_death_2 instance 10044
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 466
+        width: 291
+        height: 226
+      alignment: 9
+      pivot: {x: 0.23, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 44.070007, y: 54.880005}
+        - {x: 24.070007, y: 42.880005}
+        - {x: 24.070007, y: -20.119995}
+        - {x: 218.07, y: -20.119995}
+        - {x: 218.07, y: 27.880005}
+        - {x: 171.07, y: 54.880005}
+    - name: Sirko_battle_death_2 instance 10045
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 466
+        width: 291
+        height: 226
+      alignment: 9
+      pivot: {x: 0.23, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 39.070007, y: 54.880005}
+        - {x: 24.070007, y: 28.880005}
+        - {x: 24.070007, y: 8.880005}
+        - {x: 29.070007, y: -7.119995}
+        - {x: 83.07001, y: -20.119995}
+        - {x: 217.07, y: -20.119995}
+        - {x: 218.07, y: -18.119995}
+        - {x: 218.07, y: 26.880005}
+        - {x: 188.07, y: 54.880005}
+    - name: Sirko_battle_death_2 instance 10046
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 466
+        width: 291
+        height: 226
+      alignment: 9
+      pivot: {x: 0.23, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 47.069946, y: 54.880005}
+        - {x: 24.069946, y: 26.880005}
+        - {x: 24.069946, y: 8.880005}
+        - {x: 29.069946, y: -7.119995}
+        - {x: 60.069946, y: -20.119995}
+        - {x: 218.06995, y: -20.119995}
+        - {x: 218.06995, y: 28.880005}
+        - {x: 175.06995, y: 54.880005}
+    - name: Sirko_battle_death_2 instance 10047
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 466
+        width: 291
+        height: 226
+      alignment: 9
+      pivot: {x: 0.23, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 50.069946, y: 54.880005}
+        - {x: 24.069946, y: 25.880005}
+        - {x: 24.069946, y: 1.8800049}
+        - {x: 27.069946, y: -18.119995}
+        - {x: 54.069946, y: -20.119995}
+        - {x: 218.06995, y: -20.119995}
+        - {x: 218.06995, y: 31.880005}
+        - {x: 171.06995, y: 54.880005}
+    - name: Sirko_battle_death_2 instance 10048
+      rect:
+        serializedVersion: 2
+        x: 1746
+        y: 466
+        width: 291
+        height: 226
+      alignment: 9
+      pivot: {x: 0.23, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 44.069946, y: 54.880005}
+        - {x: 24.069946, y: 48.880005}
+        - {x: 24.069946, y: -17.119995}
+        - {x: 67.06995, y: -21.119995}
+        - {x: 218.06995, y: -21.119995}
+        - {x: 218.06995, y: 36.880005}
+        - {x: 202.06995, y: 54.880005}
+    - name: Sirko_battle_death_2 instance 10049
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 291
+        height: 226
+      alignment: 9
+      pivot: {x: 0.23, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 155.07, y: 54.880005}
+        - {x: 40.07, y: 54.880005}
+        - {x: 24.07, y: 31.880005}
+        - {x: 24.07, y: -0.11999512}
+        - {x: 50.07, y: -20.119995}
+        - {x: 58.07, y: -21.119995}
+        - {x: 198.07, y: -21.119995}
+        - {x: 218.07, y: -15.119995}
+        - {x: 218.07, y: 26.880005}
+        - {x: 184.07, y: 53.880005}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

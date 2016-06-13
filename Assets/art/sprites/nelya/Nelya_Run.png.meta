@@ -1,0 +1,689 @@
+fileFormatVersion: 2
+guid: 9252f346eb6a1c9428e29f712be043d2
+timeCreated: 1461062863
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: run0000
+    21300002: run0001
+    21300004: run0002
+    21300006: run0003
+    21300008: run0004
+    21300010: run0005
+    21300012: run0006
+    21300014: run0007
+    21300016: run0008
+    21300018: run0009
+    21300020: run0010
+    21300022: run0011
+    21300024: run0012
+    21300026: run0013
+    21300028: run0014
+    21300030: run0015
+    21300032: run0016
+    21300034: run0017
+    21300036: run0018
+    21300038: run0019
+    21300040: run0020
+    21300042: run0021
+    21300044: run0022
+    21300046: run0023
+    21300048: run0024
+    21300050: run0025
+    21300052: run0026
+    21300054: run0027
+    21300056: run0028
+    21300058: run instance 10000
+    21300060: run instance 10001
+    21300062: run instance 10002
+    21300064: run instance 10003
+    21300066: run instance 10004
+    21300068: run instance 10005
+    21300070: run instance 10006
+    21300072: run instance 10007
+    21300074: run instance 10008
+    21300076: run instance 10009
+    21300078: run instance 10010
+    21300080: run instance 10011
+    21300082: run instance 10012
+    21300084: run instance 10013
+    21300086: run instance 10014
+    21300088: run instance 10015
+    21300090: run instance 10016
+    21300092: run instance 10017
+    21300094: run instance 10018
+    21300096: run instance 10019
+    21300098: run instance 10020
+    21300100: run instance 10021
+    21300102: run instance 10022
+    21300104: run instance 10023
+    21300106: run instance 10024
+    21300108: run instance 10025
+    21300110: run instance 10026
+    21300112: run instance 10027
+    21300114: run instance 10028
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: run instance 10000
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 821
+        width: 146
+        height: 203
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 187}
+        - {x: -68, y: 178}
+        - {x: -68, y: 10}
+        - {x: -39, y: 10}
+        - {x: 70, y: 62}
+        - {x: 70, y: 141}
+        - {x: 40, y: 187}
+    - name: run instance 10001
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 821
+        width: 146
+        height: 203
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -68, y: 20}
+        - {x: -61, y: 11}
+        - {x: -23, y: 11}
+        - {x: 64, y: 58}
+        - {x: 64, y: 96}
+        - {x: 51, y: 185}
+        - {x: -58, y: 185}
+        - {x: -68, y: 165}
+    - name: run instance 10002
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 821
+        width: 146
+        height: 203
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 46, y: 184}
+        - {x: -40, y: 184}
+        - {x: -60, y: 179}
+        - {x: -69, y: 148}
+        - {x: -69, y: 43}
+        - {x: -60, y: 13}
+        - {x: -56, y: 12}
+        - {x: -31, y: 12}
+        - {x: 58, y: 41}
+        - {x: 58, y: 125}
+        - {x: 51, y: 177}
+    - name: run instance 10003
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 821
+        width: 146
+        height: 203
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -46, y: 183}
+        - {x: -58, y: 145}
+        - {x: -59, y: 140}
+        - {x: -59, y: 61}
+        - {x: -42, y: 7}
+        - {x: -20, y: 7}
+        - {x: 45, y: 35}
+        - {x: 45, y: 183}
+    - name: run instance 10004
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 821
+        width: 146
+        height: 203
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 40, y: 182}
+        - {x: -30, y: 182}
+        - {x: -55, y: 177}
+        - {x: -58, y: 141}
+        - {x: -58, y: 42}
+        - {x: -27, y: 4}
+        - {x: 0, y: 4}
+        - {x: 18, y: 12}
+        - {x: 42, y: 45}
+        - {x: 42, y: 172}
+    - name: run instance 10005
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 821
+        width: 146
+        height: 203
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -57, y: 184}
+        - {x: -57, y: 32}
+        - {x: -19, y: 6}
+        - {x: 19, y: 6}
+        - {x: 43, y: 97}
+        - {x: 43, y: 184}
+    - name: run instance 10006
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 821
+        width: 146
+        height: 203
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -50, y: 187}
+        - {x: -57, y: 141}
+        - {x: -57, y: 46}
+        - {x: -1, y: 8}
+        - {x: 26, y: 8}
+        - {x: 43, y: 21}
+        - {x: 43, y: 180}
+        - {x: 33, y: 187}
+    - name: run instance 10007
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 618
+        width: 146
+        height: 203
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 40, y: 188}
+        - {x: -59, y: 188}
+        - {x: -59, y: 56}
+        - {x: -48, y: 12}
+        - {x: -22, y: 12}
+        - {x: -5, y: 32}
+        - {x: -6, y: 40}
+        - {x: 14, y: 14}
+        - {x: 19, y: 12}
+        - {x: 29, y: 12}
+        - {x: 43, y: 20}
+        - {x: 44, y: 41}
+        - {x: 44, y: 187}
+    - name: run instance 10008
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 618
+        width: 146
+        height: 203
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -55, y: 189}
+        - {x: -61, y: 182}
+        - {x: -61, y: 30}
+        - {x: -60, y: 16}
+        - {x: 52, y: 16}
+        - {x: 52, y: 187}
+        - {x: 51, y: 189}
+    - name: run instance 10009
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 618
+        width: 146
+        height: 203
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 194}
+        - {x: -40, y: 192}
+        - {x: -63, y: 173}
+        - {x: -63, y: 26}
+        - {x: 57, y: 26}
+        - {x: 57, y: 160}
+        - {x: 38, y: 194}
+    - name: run instance 10010
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 618
+        width: 146
+        height: 203
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -60, y: 201}
+        - {x: -68, y: 166}
+        - {x: -68, y: 29}
+        - {x: 16, y: 29}
+        - {x: 56, y: 34}
+        - {x: 62, y: 48}
+        - {x: 62, y: 102}
+        - {x: 42, y: 201}
+    - name: run instance 10011
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 618
+        width: 146
+        height: 203
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 62, y: 127}
+        - {x: 44, y: 198}
+        - {x: -30, y: 198}
+        - {x: -58, y: 185}
+        - {x: -63, y: 110}
+        - {x: -58, y: 105}
+        - {x: -69, y: 76}
+        - {x: -69, y: 28}
+        - {x: -60, y: 24}
+        - {x: -26, y: 24}
+        - {x: 58, y: 41}
+        - {x: 62, y: 47}
+    - name: run instance 10012
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 618
+        width: 146
+        height: 203
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 194}
+        - {x: -53, y: 183}
+        - {x: -67, y: 122}
+        - {x: -71, y: 66}
+        - {x: -71, y: 19}
+        - {x: -25, y: 19}
+        - {x: 63, y: 31}
+        - {x: 63, y: 182}
+        - {x: 46, y: 194}
+    - name: run instance 10013
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 618
+        width: 146
+        height: 203
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 42, y: 190}
+        - {x: -56, y: 190}
+        - {x: -72, y: 102}
+        - {x: -72, y: 14}
+        - {x: -52, y: 14}
+        - {x: -47, y: 16}
+        - {x: 64, y: 49}
+        - {x: 65, y: 50}
+        - {x: 65, y: 114}
+    - name: run instance 10014
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 415
+        width: 146
+        height: 203
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 59, y: 144}
+        - {x: 40, y: 187}
+        - {x: -73, y: 187}
+        - {x: -73, y: 9}
+        - {x: -37, y: 9}
+        - {x: 68, y: 49}
+        - {x: 68, y: 70}
+        - {x: 63, y: 82}
+    - name: run instance 10015
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 415
+        width: 146
+        height: 203
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -55, y: 185}
+        - {x: -65, y: 172}
+        - {x: -65, y: 11}
+        - {x: -55, y: 8}
+        - {x: -27, y: 8}
+        - {x: 66, y: 39}
+        - {x: 66, y: 143}
+        - {x: 50, y: 185}
+    - name: run instance 10016
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 415
+        width: 146
+        height: 203
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 52, y: 182}
+        - {x: 49, y: 183}
+        - {x: -54, y: 183}
+        - {x: -67, y: 158}
+        - {x: -67, y: 7}
+        - {x: 10, y: 7}
+        - {x: 63, y: 17}
+        - {x: 63, y: 68}
+        - {x: 59, y: 69}
+    - name: run instance 10017
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 415
+        width: 146
+        height: 203
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 50, y: 25}
+        - {x: 50, y: 152}
+        - {x: 43, y: 180}
+        - {x: -59, y: 180}
+        - {x: -59, y: 50}
+        - {x: -36, y: 6}
+        - {x: -33, y: 5}
+        - {x: -20, y: 5}
+        - {x: -11, y: 11}
+        - {x: -11, y: 20}
+        - {x: 47, y: 25}
+    - name: run instance 10018
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 415
+        width: 146
+        height: 203
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 36, y: 178}
+        - {x: -54, y: 178}
+        - {x: -56, y: 170}
+        - {x: -56, y: 20}
+        - {x: -33, y: 9}
+        - {x: 20, y: 9}
+        - {x: 35, y: 12}
+        - {x: 37, y: 18}
+        - {x: 41, y: 39}
+        - {x: 41, y: 176}
+    - name: run instance 10019
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 415
+        width: 146
+        height: 203
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53, y: 182}
+        - {x: -53, y: 31}
+        - {x: -20, y: 10}
+        - {x: 28, y: 10}
+        - {x: 43, y: 59}
+        - {x: 43, y: 174}
+        - {x: 37, y: 182}
+    - name: run instance 10020
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 415
+        width: 146
+        height: 203
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -54, y: 186}
+        - {x: -58, y: 167}
+        - {x: -58, y: 21}
+        - {x: -54, y: 12}
+        - {x: 44, y: 12}
+        - {x: 44, y: 186}
+    - name: run instance 10021
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 212
+        width: 146
+        height: 203
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53, y: 188}
+        - {x: -59, y: 169}
+        - {x: -59, y: 55}
+        - {x: -43, y: 18}
+        - {x: -34, y: 18}
+        - {x: -17, y: 26}
+        - {x: -18, y: 40}
+        - {x: 4, y: 18}
+        - {x: 49, y: 18}
+        - {x: 49, y: 188}
+    - name: run instance 10022
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 212
+        width: 146
+        height: 203
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -51, y: 190}
+        - {x: -60, y: 157}
+        - {x: -60, y: 17}
+        - {x: 49, y: 17}
+        - {x: 57, y: 21}
+        - {x: 57, y: 155}
+        - {x: 38, y: 190}
+    - name: run instance 10023
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 212
+        width: 146
+        height: 203
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 35, y: 193}
+        - {x: -54, y: 193}
+        - {x: -61, y: 175}
+        - {x: -61, y: 27}
+        - {x: -59, y: 22}
+        - {x: -55, y: 21}
+        - {x: 15, y: 21}
+        - {x: 59, y: 28}
+        - {x: 59, y: 141}
+        - {x: 52, y: 174}
+    - name: run instance 10024
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 212
+        width: 146
+        height: 203
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 52, y: 29}
+        - {x: 61, y: 38}
+        - {x: 61, y: 128}
+        - {x: 59, y: 154}
+        - {x: 36, y: 196}
+        - {x: -47, y: 196}
+        - {x: -63, y: 138}
+        - {x: -63, y: 31}
+        - {x: -61, y: 22}
+        - {x: -38, y: 22}
+        - {x: -36, y: 25}
+        - {x: -34, y: 32}
+        - {x: -33, y: 36}
+    - name: run instance 10025
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 212
+        width: 146
+        height: 203
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 39, y: 200}
+        - {x: -27, y: 200}
+        - {x: -45, y: 197}
+        - {x: -63, y: 174}
+        - {x: -67, y: 152}
+        - {x: -67, y: 24}
+        - {x: -30, y: 24}
+        - {x: 63, y: 31}
+        - {x: 63, y: 95}
+        - {x: 52, y: 160}
+    - name: run instance 10026
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 212
+        width: 146
+        height: 203
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -65, y: 203}
+        - {x: -71, y: 164}
+        - {x: -71, y: 25}
+        - {x: 65, y: 25}
+        - {x: 65, y: 173}
+        - {x: 46, y: 203}
+    - name: run instance 10027
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 212
+        width: 146
+        height: 203
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 49, y: 169}
+        - {x: 33, y: 195}
+        - {x: -46, y: 195}
+        - {x: -70, y: 164}
+        - {x: -70, y: 20}
+        - {x: -67, y: 18}
+        - {x: -34, y: 18}
+        - {x: 66, y: 57}
+        - {x: 66, y: 81}
+        - {x: 59, y: 84}
+    - name: run instance 10028
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9
+        width: 146
+        height: 203
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -68, y: 187}
+        - {x: -68, y: 10}
+        - {x: -23, y: 10}
+        - {x: 70, y: 57}
+        - {x: 70, y: 153}
+        - {x: 53, y: 186}
+        - {x: 51, y: 187}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

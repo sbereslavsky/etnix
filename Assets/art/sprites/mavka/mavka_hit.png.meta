@@ -1,0 +1,721 @@
+fileFormatVersion: 2
+guid: 01c08d48d5a0e004e8fab5e628ecf12d
+timeCreated: 1461160134
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Mavka_battle_hit instance 10000
+    21300002: Mavka_battle_hit instance 10001
+    21300004: Mavka_battle_hit instance 10002
+    21300006: Mavka_battle_hit instance 10003
+    21300008: Mavka_battle_hit instance 10004
+    21300010: Mavka_battle_hit instance 10005
+    21300012: Mavka_battle_hit instance 10006
+    21300014: Mavka_battle_hit instance 10007
+    21300016: Mavka_battle_hit instance 10008
+    21300018: Mavka_battle_hit instance 10009
+    21300020: Mavka_battle_hit instance 10010
+    21300022: Mavka_battle_hit instance 10011
+    21300024: Mavka_battle_hit instance 10012
+    21300026: Mavka_battle_hit instance 10013
+    21300028: Mavka_battle_hit instance 10014
+    21300030: Mavka_battle_hit instance 10015
+    21300032: Mavka_battle_hit instance 10016
+    21300034: Mavka_battle_hit instance 10017
+    21300036: Mavka_battle_hit instance 10018
+    21300038: Mavka_battle_hit instance 10019
+    21300040: Mavka_battle_hit instance 10020
+    21300042: Mavka_battle_hit instance 10021
+    21300044: Mavka_battle_hit instance 10022
+    21300046: Mavka_battle_hit instance 10023
+    21300048: Mavka_battle_hit instance 10024
+    21300050: Mavka_battle_hit instance 10025
+    21300052: Mavka_battle_hit instance 10026
+    21300054: Mavka_battle_hit instance 10027
+    21300056: Mavka_battle_hit instance 10028
+    21300058: Mavka_battle_hit instance 10029
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Mavka_battle_hit instance 10000
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 833
+        width: 148
+        height: 191
+      alignment: 9
+      pivot: {x: 0.64, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -37.72, y: 191}
+        - {x: -37.72, y: 77}
+        - {x: -32.72, y: 20}
+        - {x: -22.720001, y: 7}
+        - {x: -20.720001, y: 5}
+        - {x: -2.7200012, y: 5}
+        - {x: 0.27999878, y: 8}
+        - {x: 1.2799988, y: 18}
+        - {x: 3.2799988, y: 7}
+        - {x: 4.279999, y: 3}
+        - {x: 43.28, y: 3}
+        - {x: 50.28, y: 31}
+        - {x: 50.28, y: 191}
+    - name: Mavka_battle_hit instance 10001
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 833
+        width: 148
+        height: 191
+      alignment: 9
+      pivot: {x: 0.64, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -43.72, y: 188}
+        - {x: -43.72, y: 7}
+        - {x: -5.720001, y: 3}
+        - {x: -0.7200012, y: 3}
+        - {x: 0.27999878, y: 8}
+        - {x: 1.2799988, y: 18}
+        - {x: 3.2799988, y: 7}
+        - {x: 4.279999, y: 3}
+        - {x: 27.279999, y: 3}
+        - {x: 46.28, y: 22}
+        - {x: 46.28, y: 174}
+        - {x: 43.28, y: 188}
+    - name: Mavka_battle_hit instance 10002
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 833
+        width: 148
+        height: 191
+      alignment: 9
+      pivot: {x: 0.64, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -38.72, y: 186}
+        - {x: -49.72, y: 184}
+        - {x: -49.72, y: 127}
+        - {x: -31.720001, y: 3}
+        - {x: -0.7200012, y: 3}
+        - {x: 0.27999878, y: 8}
+        - {x: -0.7200012, y: 4}
+        - {x: 4.279999, y: 3}
+        - {x: 29.279999, y: 3}
+        - {x: 43.28, y: 21}
+        - {x: 43.28, y: 156}
+        - {x: 37.28, y: 186}
+    - name: Mavka_battle_hit instance 10003
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 833
+        width: 148
+        height: 191
+      alignment: 9
+      pivot: {x: 0.64, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -54.71997, y: 186}
+        - {x: -54.71997, y: 56}
+        - {x: -48.71997, y: 9}
+        - {x: -31.71997, y: 3}
+        - {x: 26.28003, y: 3}
+        - {x: 39.28003, y: 12}
+        - {x: 39.28003, y: 166}
+        - {x: 33.28003, y: 186}
+    - name: Mavka_battle_hit instance 10004
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 833
+        width: 148
+        height: 191
+      alignment: 9
+      pivot: {x: 0.64, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -29.71997, y: 186}
+        - {x: -60.71997, y: 181}
+        - {x: -60.71997, y: 130}
+        - {x: -27.71997, y: 3}
+        - {x: 35.28003, y: 3}
+        - {x: 37.28003, y: 14}
+        - {x: 37.28003, y: 175}
+        - {x: 26.28003, y: 186}
+    - name: Mavka_battle_hit instance 10005
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 833
+        width: 148
+        height: 191
+      alignment: 9
+      pivot: {x: 0.64, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 15.280029, y: 186}
+        - {x: -65.71997, y: 186}
+        - {x: -65.71997, y: 105}
+        - {x: -50.71997, y: 3}
+        - {x: 32.28003, y: 3}
+        - {x: 37.28003, y: 19}
+        - {x: 37.28003, y: 55}
+        - {x: 28.28003, y: 174}
+    - name: Mavka_battle_hit instance 10006
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 642
+        width: 148
+        height: 191
+      alignment: 9
+      pivot: {x: 0.64, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -70.72, y: 186}
+        - {x: -70.72, y: 100}
+        - {x: -50.72, y: 3}
+        - {x: 37.28, y: 3}
+        - {x: 37.28, y: 184}
+        - {x: 33.28, y: 186}
+    - name: Mavka_battle_hit instance 10007
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 642
+        width: 148
+        height: 191
+      alignment: 9
+      pivot: {x: 0.64, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 15.279999, y: 186}
+        - {x: -36.72, y: 186}
+        - {x: -75.72, y: 173}
+        - {x: -75.72, y: 126}
+        - {x: -25.720001, y: 4}
+        - {x: -7.720001, y: 3}
+        - {x: -0.7200012, y: 3}
+        - {x: 0.27999878, y: 8}
+        - {x: 1.2799988, y: 18}
+        - {x: 3.2799988, y: 7}
+        - {x: 4.279999, y: 3}
+        - {x: 21.279999, y: 3}
+        - {x: 28.279999, y: 4}
+        - {x: 37.28, y: 31}
+        - {x: 37.28, y: 38}
+        - {x: 29.279999, y: 132}
+    - name: Mavka_battle_hit instance 10008
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 642
+        width: 148
+        height: 191
+      alignment: 9
+      pivot: {x: 0.64, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14.279999, y: 175}
+        - {x: 9.279999, y: 186}
+        - {x: -34.72, y: 186}
+        - {x: -40.72, y: 178}
+        - {x: -45.72, y: 164}
+        - {x: -58.72, y: 169}
+        - {x: -80.72, y: 169}
+        - {x: -80.72, y: 125}
+        - {x: -38.72, y: 3}
+        - {x: 21.279999, y: 3}
+        - {x: 26.279999, y: 5}
+        - {x: 37.28, y: 30}
+        - {x: 37.28, y: 65}
+    - name: Mavka_battle_hit instance 10009
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 642
+        width: 148
+        height: 191
+      alignment: 9
+      pivot: {x: 0.64, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -48.71997, y: 186}
+        - {x: -85.71997, y: 169}
+        - {x: -85.71997, y: 130}
+        - {x: -25.71997, y: 3}
+        - {x: 22.28003, y: 3}
+        - {x: 28.28003, y: 4}
+        - {x: 37.28003, y: 22}
+        - {x: 37.28003, y: 86}
+        - {x: 11.280029, y: 186}
+    - name: Mavka_battle_hit instance 10010
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 642
+        width: 148
+        height: 191
+      alignment: 9
+      pivot: {x: 0.64, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64.71997, y: 186}
+        - {x: -76.71997, y: 185}
+        - {x: -88.71997, y: 157}
+        - {x: -88.71997, y: 124}
+        - {x: -79.71997, y: 113}
+        - {x: -29.71997, y: 15}
+        - {x: -21.71997, y: 3}
+        - {x: 22.28003, y: 3}
+        - {x: 28.28003, y: 4}
+        - {x: 37.28003, y: 32}
+        - {x: 37.28003, y: 72}
+        - {x: 23.28003, y: 186}
+    - name: Mavka_battle_hit instance 10011
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 642
+        width: 148
+        height: 191
+      alignment: 9
+      pivot: {x: 0.64, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -85.71997, y: 186}
+        - {x: -85.71997, y: 105}
+        - {x: -82.71997, y: 102}
+        - {x: -67.71997, y: 95}
+        - {x: -29.71997, y: 15}
+        - {x: -21.71997, y: 3}
+        - {x: 22.28003, y: 3}
+        - {x: 28.28003, y: 4}
+        - {x: 37.28003, y: 32}
+        - {x: 37.28003, y: 71}
+        - {x: 23.28003, y: 186}
+    - name: Mavka_battle_hit instance 10012
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 451
+        width: 148
+        height: 191
+      alignment: 9
+      pivot: {x: 0.64, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -87.72, y: 186}
+        - {x: -88.72, y: 184}
+        - {x: -88.72, y: 83}
+        - {x: -26.720001, y: 3}
+        - {x: 31.279999, y: 3}
+        - {x: 37.28, y: 27}
+        - {x: 37.28, y: 84}
+        - {x: 28.279999, y: 186}
+    - name: Mavka_battle_hit instance 10013
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 451
+        width: 148
+        height: 191
+      alignment: 9
+      pivot: {x: 0.64, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53.72, y: 186}
+        - {x: -92.72, y: 168}
+        - {x: -92.72, y: 108}
+        - {x: -25.720001, y: 3}
+        - {x: 31.279999, y: 3}
+        - {x: 37.28, y: 17}
+        - {x: 37.28, y: 88}
+        - {x: 12.279999, y: 186}
+    - name: Mavka_battle_hit instance 10014
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 451
+        width: 148
+        height: 191
+      alignment: 9
+      pivot: {x: 0.64, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13.279999, y: 186}
+        - {x: -52.72, y: 186}
+        - {x: -76.72, y: 179}
+        - {x: -72.72, y: 154}
+        - {x: -71.72, y: 153}
+        - {x: -71.72, y: 147}
+        - {x: -70.72, y: 145}
+        - {x: -74.72, y: 154}
+        - {x: -78.72, y: 160}
+        - {x: -93.72, y: 162}
+        - {x: -94.72, y: 158}
+        - {x: -94.72, y: 99}
+        - {x: -26.720001, y: 3}
+        - {x: 31.279999, y: 3}
+        - {x: 37.28, y: 27}
+        - {x: 37.28, y: 61}
+        - {x: 14.279999, y: 185}
+    - name: Mavka_battle_hit instance 10015
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 451
+        width: 148
+        height: 191
+      alignment: 9
+      pivot: {x: 0.64, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -52.71997, y: 186}
+        - {x: -58.71997, y: 182}
+        - {x: -69.71997, y: 148}
+        - {x: -80.71997, y: 108}
+        - {x: -80.71997, y: 78}
+        - {x: -21.71997, y: 3}
+        - {x: -20.71997, y: 3}
+        - {x: -2.7199707, y: 5}
+        - {x: 1.2800293, y: 3}
+        - {x: 22.28003, y: 3}
+        - {x: 28.28003, y: 4}
+        - {x: 37.28003, y: 13}
+        - {x: 37.28003, y: 125}
+        - {x: 14.280029, y: 186}
+    - name: Mavka_battle_hit instance 10016
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 451
+        width: 148
+        height: 191
+      alignment: 9
+      pivot: {x: 0.64, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -50.71997, y: 186}
+        - {x: -75.71997, y: 154}
+        - {x: -75.71997, y: 56}
+        - {x: -47.71997, y: 3}
+        - {x: 25.28003, y: 3}
+        - {x: 28.28003, y: 4}
+        - {x: 37.28003, y: 32}
+        - {x: 37.28003, y: 64}
+        - {x: 17.28003, y: 186}
+    - name: Mavka_battle_hit instance 10017
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 451
+        width: 148
+        height: 191
+      alignment: 9
+      pivot: {x: 0.64, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -85.71997, y: 52}
+        - {x: -33.71997, y: 3}
+        - {x: 37.28003, y: 3}
+        - {x: 37.28003, y: 160}
+        - {x: 36.28003, y: 186}
+        - {x: -74.71997, y: 186}
+        - {x: -85.71997, y: 161}
+    - name: Mavka_battle_hit instance 10018
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 260
+        width: 148
+        height: 191
+      alignment: 9
+      pivot: {x: 0.64, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -88.72, y: 56}
+        - {x: -29.720001, y: 3}
+        - {x: 27.279999, y: 3}
+        - {x: 37.28, y: 21}
+        - {x: 37.28, y: 90}
+        - {x: 11.279999, y: 186}
+        - {x: -71.72, y: 186}
+        - {x: -88.72, y: 158}
+    - name: Mavka_battle_hit instance 10019
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 260
+        width: 148
+        height: 191
+      alignment: 9
+      pivot: {x: 0.64, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -48.72, y: 186}
+        - {x: -85.72, y: 169}
+        - {x: -85.72, y: 130}
+        - {x: -25.720001, y: 3}
+        - {x: 22.279999, y: 3}
+        - {x: 28.279999, y: 4}
+        - {x: 37.28, y: 22}
+        - {x: 37.28, y: 86}
+        - {x: 11.279999, y: 186}
+    - name: Mavka_battle_hit instance 10020
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 260
+        width: 148
+        height: 191
+      alignment: 9
+      pivot: {x: 0.64, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -80.72, y: 186}
+        - {x: -80.72, y: 148}
+        - {x: -71.72, y: 129}
+        - {x: -27.720001, y: 3}
+        - {x: 33.28, y: 3}
+        - {x: 38.28, y: 16}
+        - {x: 38.28, y: 101}
+        - {x: 31.279999, y: 186}
+    - name: Mavka_battle_hit instance 10021
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 260
+        width: 148
+        height: 191
+      alignment: 9
+      pivot: {x: 0.64, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -76.71997, y: 137}
+        - {x: -26.71997, y: 3}
+        - {x: 37.28003, y: 3}
+        - {x: 37.28003, y: 124}
+        - {x: 15.280029, y: 186}
+        - {x: -39.71997, y: 186}
+        - {x: -76.71997, y: 171}
+    - name: Mavka_battle_hit instance 10022
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 260
+        width: 148
+        height: 191
+      alignment: 9
+      pivot: {x: 0.64, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -38.71997, y: 186}
+        - {x: -72.71997, y: 174}
+        - {x: -72.71997, y: 127}
+        - {x: -36.71997, y: 12}
+        - {x: -19.71997, y: 3}
+        - {x: 34.28003, y: 3}
+        - {x: 37.28003, y: 6}
+        - {x: 37.28003, y: 115}
+        - {x: 21.28003, y: 186}
+    - name: Mavka_battle_hit instance 10023
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 260
+        width: 148
+        height: 191
+      alignment: 9
+      pivot: {x: 0.64, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -67.71997, y: 186}
+        - {x: -67.71997, y: 106}
+        - {x: -50.71997, y: 3}
+        - {x: 33.28003, y: 3}
+        - {x: 37.28003, y: 11}
+        - {x: 37.28003, y: 110}
+        - {x: 24.28003, y: 186}
+    - name: Mavka_battle_hit instance 10024
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 69
+        width: 148
+        height: 191
+      alignment: 9
+      pivot: {x: 0.64, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -30.720001, y: 186}
+        - {x: -62.72, y: 175}
+        - {x: -62.72, y: 146}
+        - {x: -29.720001, y: 3}
+        - {x: 28.279999, y: 3}
+        - {x: 37.28, y: 11}
+        - {x: 37.28, y: 136}
+        - {x: 31.279999, y: 186}
+    - name: Mavka_battle_hit instance 10025
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 69
+        width: 148
+        height: 191
+      alignment: 9
+      pivot: {x: 0.64, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32.72, y: 186}
+        - {x: -54.72, y: 184}
+        - {x: -57.72, y: 176}
+        - {x: -57.72, y: 131}
+        - {x: -27.720001, y: 3}
+        - {x: -0.7200012, y: 3}
+        - {x: 1.2799988, y: 13}
+        - {x: 3.2799988, y: 7}
+        - {x: 4.279999, y: 3}
+        - {x: 37.28, y: 3}
+        - {x: 37.28, y: 186}
+    - name: Mavka_battle_hit instance 10026
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 69
+        width: 148
+        height: 191
+      alignment: 9
+      pivot: {x: 0.64, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -51.72, y: 186}
+        - {x: -53.72, y: 182}
+        - {x: -53.72, y: 116}
+        - {x: -26.720001, y: 3}
+        - {x: -0.7200012, y: 3}
+        - {x: 0.27999878, y: 8}
+        - {x: 0.27999878, y: 5}
+        - {x: 3.2799988, y: 3}
+        - {x: 32.28, y: 3}
+        - {x: 40.28, y: 22}
+        - {x: 40.28, y: 159}
+        - {x: 34.28, y: 186}
+    - name: Mavka_battle_hit instance 10027
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 69
+        width: 148
+        height: 191
+      alignment: 9
+      pivot: {x: 0.64, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -42.71997, y: 186}
+        - {x: -48.71997, y: 185}
+        - {x: -48.71997, y: 120}
+        - {x: -31.71997, y: 19}
+        - {x: -24.71997, y: 5}
+        - {x: -5.7199707, y: 3}
+        - {x: -0.7199707, y: 3}
+        - {x: 0.2800293, y: 8}
+        - {x: 0.2800293, y: 5}
+        - {x: 3.2800293, y: 3}
+        - {x: 36.28003, y: 3}
+        - {x: 44.28003, y: 15}
+        - {x: 44.28003, y: 159}
+        - {x: 38.28003, y: 186}
+    - name: Mavka_battle_hit instance 10028
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 69
+        width: 148
+        height: 191
+      alignment: 9
+      pivot: {x: 0.64, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -42.71997, y: 188}
+        - {x: -42.71997, y: 88}
+        - {x: -31.71997, y: 20}
+        - {x: -21.71997, y: 4}
+        - {x: -2.7199707, y: 5}
+        - {x: 0.2800293, y: 8}
+        - {x: 1.2800293, y: 18}
+        - {x: 3.2800293, y: 7}
+        - {x: 7.2800293, y: 3}
+        - {x: 21.28003, y: 3}
+        - {x: 47.28003, y: 11}
+        - {x: 47.28003, y: 188}
+    - name: Mavka_battle_hit instance 10029
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 69
+        width: 148
+        height: 191
+      alignment: 9
+      pivot: {x: 0.64, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32.71997, y: 191}
+        - {x: -37.71997, y: 190}
+        - {x: -37.71997, y: 16}
+        - {x: -19.71997, y: 3}
+        - {x: 33.28003, y: 3}
+        - {x: 50.28003, y: 23}
+        - {x: 50.28003, y: 161}
+        - {x: 45.28003, y: 191}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

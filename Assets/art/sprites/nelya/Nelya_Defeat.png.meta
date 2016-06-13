@@ -1,0 +1,808 @@
+fileFormatVersion: 2
+guid: 43d3568a3701f644c88f5a89c2758361
+timeCreated: 1461177070
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: battle_defeat instance 10000
+    21300002: battle_defeat instance 10001
+    21300004: battle_defeat instance 10002
+    21300006: battle_defeat instance 10003
+    21300008: battle_defeat instance 10004
+    21300010: battle_defeat instance 10005
+    21300012: battle_defeat instance 10006
+    21300014: battle_defeat instance 10007
+    21300016: battle_defeat instance 10008
+    21300018: battle_defeat instance 10009
+    21300020: battle_defeat instance 10010
+    21300022: battle_defeat instance 10011
+    21300024: battle_defeat instance 10012
+    21300026: battle_defeat instance 10013
+    21300028: battle_defeat instance 10014
+    21300030: battle_defeat instance 10015
+    21300032: battle_defeat instance 10016
+    21300034: battle_defeat instance 10017
+    21300036: battle_defeat instance 10018
+    21300038: battle_defeat instance 10019
+    21300040: battle_defeat instance 10020
+    21300042: battle_defeat instance 10021
+    21300044: battle_defeat instance 10022
+    21300046: battle_defeat instance 10023
+    21300048: battle_defeat instance 10024
+    21300050: battle_defeat instance 10025
+    21300052: battle_defeat instance 10026
+    21300054: battle_defeat instance 10027
+    21300056: battle_defeat instance 10028
+    21300058: battle_defeat instance 10029
+    21300060: battle_defeat instance 10030
+    21300062: battle_defeat instance 10031
+    21300064: battle_defeat instance 10032
+    21300066: battle_defeat instance 10033
+    21300068: battle_defeat instance 10034
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: battle_defeat instance 10000
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 831
+        width: 132
+        height: 193
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -44.399998, y: 193}
+        - {x: -44.399998, y: 6}
+        - {x: 34.600002, y: 6}
+        - {x: 55.600002, y: 90}
+        - {x: 55.600002, y: 175}
+        - {x: 45.600002, y: 193}
+    - name: battle_defeat instance 10001
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 831
+        width: 132
+        height: 193
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 60.600006, y: 5}
+        - {x: 60.600006, y: 189}
+        - {x: -39.399994, y: 189}
+        - {x: -39.399994, y: 5}
+    - name: battle_defeat instance 10002
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 831
+        width: 132
+        height: 193
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4.600006, y: 185}
+        - {x: -23.399994, y: 182}
+        - {x: -41.399994, y: 135}
+        - {x: -42.399994, y: 114}
+        - {x: -42.399994, y: 42}
+        - {x: -28.399994, y: 7}
+        - {x: -21.399994, y: 5}
+        - {x: -16.399994, y: 5}
+        - {x: -5.399994, y: 10}
+        - {x: -1.3999939, y: 12}
+        - {x: -1.3999939, y: 26}
+        - {x: 2.600006, y: 6}
+        - {x: 3.600006, y: 5}
+        - {x: 52.600006, y: 5}
+        - {x: 64.600006, y: 19}
+        - {x: 64.600006, y: 182}
+        - {x: 59.600006, y: 185}
+    - name: battle_defeat instance 10003
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 831
+        width: 132
+        height: 193
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27.399994, y: 181}
+        - {x: -44.399994, y: 124}
+        - {x: -44.399994, y: 22}
+        - {x: -25.399994, y: 4}
+        - {x: -17.399994, y: 4}
+        - {x: 2.600006, y: 11}
+        - {x: 4.600006, y: 4}
+        - {x: 69.600006, y: 4}
+        - {x: 69.600006, y: 181}
+    - name: battle_defeat instance 10004
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 831
+        width: 132
+        height: 193
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7.4000244, y: 181}
+        - {x: -28.400024, y: 179}
+        - {x: -44.400024, y: 108}
+        - {x: -44.400024, y: 28}
+        - {x: -25.400024, y: 4}
+        - {x: -17.400024, y: 4}
+        - {x: 2.5999756, y: 11}
+        - {x: 4.5999756, y: 4}
+        - {x: 66.599976, y: 4}
+        - {x: 66.599976, y: 165}
+        - {x: 58.599976, y: 181}
+    - name: battle_defeat instance 10005
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 831
+        width: 132
+        height: 193
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 63.599976, y: 124}
+        - {x: 63.599976, y: 164}
+        - {x: 47.599976, y: 182}
+        - {x: -12.400024, y: 182}
+        - {x: -44.400024, y: 142}
+        - {x: -44.400024, y: 43}
+        - {x: -31.400024, y: 4}
+        - {x: 14.599976, y: 4}
+        - {x: 29.599976, y: 11}
+        - {x: 29.599976, y: 26}
+        - {x: 52.599976, y: 77}
+    - name: battle_defeat instance 10006
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 831
+        width: 132
+        height: 193
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 45.599976, y: 183}
+        - {x: -28.400024, y: 183}
+        - {x: -44.400024, y: 123}
+        - {x: -44.400024, y: 23}
+        - {x: -25.400024, y: 4}
+        - {x: -17.400024, y: 4}
+        - {x: 2.5999756, y: 11}
+        - {x: 5.5999756, y: 4}
+        - {x: 25.599976, y: 4}
+        - {x: 41.599976, y: 29}
+        - {x: 59.599976, y: 116}
+        - {x: 59.599976, y: 165}
+    - name: battle_defeat instance 10007
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 638
+        width: 132
+        height: 193
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6.3999977, y: 185}
+        - {x: -44.399998, y: 152}
+        - {x: -44.399998, y: 42}
+        - {x: -30.399998, y: 4}
+        - {x: 31.600002, y: 4}
+        - {x: 55.600002, y: 27}
+        - {x: 55.600002, y: 185}
+    - name: battle_defeat instance 10008
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 638
+        width: 132
+        height: 193
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -29.399994, y: 187}
+        - {x: -44.399994, y: 151}
+        - {x: -44.399994, y: 23}
+        - {x: -29.399994, y: 4}
+        - {x: 43.600006, y: 4}
+        - {x: 53.600006, y: 52}
+        - {x: 53.600006, y: 187}
+    - name: battle_defeat instance 10009
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 638
+        width: 132
+        height: 193
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.399994, y: 189}
+        - {x: -44.399994, y: 179}
+        - {x: -44.399994, y: 42}
+        - {x: -32.399994, y: 4}
+        - {x: 14.600006, y: 4}
+        - {x: 31.600006, y: 9}
+        - {x: 53.600006, y: 70}
+        - {x: 53.600006, y: 175}
+        - {x: 37.600006, y: 189}
+    - name: battle_defeat instance 10010
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 638
+        width: 132
+        height: 193
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -1.3999939, y: 23}
+        - {x: -1.3999939, y: 25}
+        - {x: -1.3999939, y: 24}
+        - {x: 0.6000061, y: 21}
+        - {x: 4.600006, y: 5}
+        - {x: 7.600006, y: 4}
+        - {x: 18.600006, y: 4}
+        - {x: 30.600006, y: 12}
+        - {x: 25.600006, y: 32}
+        - {x: 49.600006, y: 83}
+        - {x: 49.600006, y: 160}
+        - {x: 47.600006, y: 173}
+        - {x: 21.600006, y: 189}
+        - {x: -15.399994, y: 189}
+        - {x: -45.399994, y: 159}
+        - {x: -45.399994, y: 27}
+        - {x: -25.399994, y: 4}
+        - {x: -6.399994, y: 4}
+        - {x: 0.6000061, y: 14}
+        - {x: 0.6000061, y: 19}
+        - {x: -0.3999939, y: 22}
+    - name: battle_defeat instance 10011
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 638
+        width: 132
+        height: 193
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31.400024, y: 188}
+        - {x: -47.400024, y: 182}
+        - {x: -47.400024, y: 17}
+        - {x: -31.400024, y: 4}
+        - {x: 45.599976, y: 4}
+        - {x: 45.599976, y: 178}
+        - {x: 19.599976, y: 188}
+    - name: battle_defeat instance 10012
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 638
+        width: 132
+        height: 193
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 40.599976, y: 99}
+        - {x: 40.599976, y: 153}
+        - {x: 23.599976, y: 188}
+        - {x: -21.400024, y: 188}
+        - {x: -52.400024, y: 163}
+        - {x: -52.400024, y: 54}
+        - {x: -40.400024, y: 3}
+        - {x: 25.599976, y: 3}
+        - {x: 31.599976, y: 12}
+        - {x: 22.599976, y: 36}
+        - {x: 39.599976, y: 97}
+    - name: battle_defeat instance 10013
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 638
+        width: 132
+        height: 193
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6.5999756, y: 187}
+        - {x: -17.400024, y: 187}
+        - {x: -24.400024, y: 186}
+        - {x: -52.400024, y: 166}
+        - {x: -56.400024, y: 146}
+        - {x: -56.400024, y: 109}
+        - {x: -40.400024, y: 95}
+        - {x: -31.400024, y: 96}
+        - {x: -27.400024, y: 100}
+        - {x: -56.400024, y: 67}
+        - {x: -56.400024, y: 64}
+        - {x: -32.400024, y: 3}
+        - {x: 36.599976, y: 3}
+        - {x: 36.599976, y: 160}
+        - {x: 32.599976, y: 170}
+    - name: battle_defeat instance 10014
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 445
+        width: 132
+        height: 193
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -46.399998, y: 187}
+        - {x: -59.399998, y: 167}
+        - {x: -59.399998, y: 39}
+        - {x: -36.399998, y: 3}
+        - {x: 32.600002, y: 3}
+        - {x: 32.600002, y: 170}
+        - {x: 11.600002, y: 187}
+    - name: battle_defeat instance 10015
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 445
+        width: 132
+        height: 193
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19.399994, y: 187}
+        - {x: -56.399994, y: 180}
+        - {x: -56.399994, y: 14}
+        - {x: -35.399994, y: 3}
+        - {x: 36.600006, y: 3}
+        - {x: 36.600006, y: 180}
+        - {x: 14.600006, y: 187}
+    - name: battle_defeat instance 10016
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 445
+        width: 132
+        height: 193
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 40.600006, y: 99}
+        - {x: 40.600006, y: 153}
+        - {x: 23.600006, y: 188}
+        - {x: -21.399994, y: 188}
+        - {x: -52.399994, y: 163}
+        - {x: -52.399994, y: 54}
+        - {x: -40.399994, y: 3}
+        - {x: 25.600006, y: 3}
+        - {x: 31.600006, y: 12}
+        - {x: 22.600006, y: 36}
+        - {x: 39.600006, y: 97}
+    - name: battle_defeat instance 10017
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 445
+        width: 132
+        height: 193
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23.399994, y: 188}
+        - {x: -46.399994, y: 173}
+        - {x: -47.399994, y: 165}
+        - {x: -47.399994, y: 34}
+        - {x: -33.399994, y: 4}
+        - {x: 44.600006, y: 4}
+        - {x: 45.600006, y: 5}
+        - {x: 45.600006, y: 178}
+        - {x: 19.600006, y: 188}
+    - name: battle_defeat instance 10018
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 445
+        width: 132
+        height: 193
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -1.4000244, y: 23}
+        - {x: -1.4000244, y: 25}
+        - {x: -1.4000244, y: 24}
+        - {x: 0.5999756, y: 21}
+        - {x: 4.5999756, y: 5}
+        - {x: 7.5999756, y: 4}
+        - {x: 18.599976, y: 4}
+        - {x: 30.599976, y: 12}
+        - {x: 25.599976, y: 32}
+        - {x: 49.599976, y: 83}
+        - {x: 49.599976, y: 174}
+        - {x: 20.599976, y: 189}
+        - {x: -13.400024, y: 189}
+        - {x: -45.400024, y: 152}
+        - {x: -45.400024, y: 28}
+        - {x: -25.400024, y: 4}
+        - {x: -5.4000244, y: 4}
+        - {x: 0.5999756, y: 14}
+        - {x: 0.5999756, y: 19}
+        - {x: -0.4000244, y: 22}
+    - name: battle_defeat instance 10019
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 445
+        width: 132
+        height: 193
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.400024, y: 189}
+        - {x: -44.400024, y: 179}
+        - {x: -44.400024, y: 42}
+        - {x: -32.400024, y: 4}
+        - {x: 14.599976, y: 4}
+        - {x: 31.599976, y: 9}
+        - {x: 53.599976, y: 70}
+        - {x: 53.599976, y: 175}
+        - {x: 37.599976, y: 189}
+    - name: battle_defeat instance 10020
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 445
+        width: 132
+        height: 193
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -29.400024, y: 187}
+        - {x: -44.400024, y: 151}
+        - {x: -44.400024, y: 23}
+        - {x: -29.400024, y: 4}
+        - {x: 43.599976, y: 4}
+        - {x: 53.599976, y: 52}
+        - {x: 53.599976, y: 187}
+    - name: battle_defeat instance 10021
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 252
+        width: 132
+        height: 193
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6.3999977, y: 185}
+        - {x: -44.399998, y: 152}
+        - {x: -44.399998, y: 42}
+        - {x: -30.399998, y: 4}
+        - {x: 31.600002, y: 4}
+        - {x: 55.600002, y: 27}
+        - {x: 55.600002, y: 185}
+    - name: battle_defeat instance 10022
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 252
+        width: 132
+        height: 193
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 45.600006, y: 183}
+        - {x: -28.399994, y: 183}
+        - {x: -44.399994, y: 123}
+        - {x: -44.399994, y: 23}
+        - {x: -25.399994, y: 4}
+        - {x: -17.399994, y: 4}
+        - {x: 2.600006, y: 11}
+        - {x: 5.600006, y: 4}
+        - {x: 25.600006, y: 4}
+        - {x: 41.600006, y: 29}
+        - {x: 59.600006, y: 116}
+        - {x: 59.600006, y: 165}
+    - name: battle_defeat instance 10023
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 252
+        width: 132
+        height: 193
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 63.600006, y: 124}
+        - {x: 63.600006, y: 164}
+        - {x: 47.600006, y: 182}
+        - {x: -12.399994, y: 182}
+        - {x: -44.399994, y: 142}
+        - {x: -44.399994, y: 43}
+        - {x: -31.399994, y: 4}
+        - {x: 14.600006, y: 4}
+        - {x: 29.600006, y: 11}
+        - {x: 29.600006, y: 26}
+        - {x: 52.600006, y: 77}
+    - name: battle_defeat instance 10024
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 252
+        width: 132
+        height: 193
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7.399994, y: 181}
+        - {x: -28.399994, y: 179}
+        - {x: -44.399994, y: 108}
+        - {x: -44.399994, y: 28}
+        - {x: -25.399994, y: 4}
+        - {x: -17.399994, y: 4}
+        - {x: 2.600006, y: 11}
+        - {x: 4.600006, y: 4}
+        - {x: 66.600006, y: 4}
+        - {x: 66.600006, y: 165}
+        - {x: 58.600006, y: 181}
+    - name: battle_defeat instance 10025
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 252
+        width: 132
+        height: 193
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27.400024, y: 181}
+        - {x: -44.400024, y: 124}
+        - {x: -44.400024, y: 22}
+        - {x: -25.400024, y: 4}
+        - {x: -17.400024, y: 4}
+        - {x: 2.5999756, y: 11}
+        - {x: 4.5999756, y: 4}
+        - {x: 69.599976, y: 4}
+        - {x: 69.599976, y: 181}
+    - name: battle_defeat instance 10026
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 252
+        width: 132
+        height: 193
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27.400024, y: 185}
+        - {x: -42.400024, y: 132}
+        - {x: -42.400024, y: 22}
+        - {x: -35.400024, y: 5}
+        - {x: -14.400024, y: 5}
+        - {x: -3.4000244, y: 8}
+        - {x: -1.4000244, y: 12}
+        - {x: -1.4000244, y: 26}
+        - {x: 2.5999756, y: 5}
+        - {x: 64.599976, y: 5}
+        - {x: 64.599976, y: 183}
+        - {x: 62.599976, y: 185}
+    - name: battle_defeat instance 10027
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 252
+        width: 132
+        height: 193
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 54.599976, y: 189}
+        - {x: -39.400024, y: 189}
+        - {x: -39.400024, y: 13}
+        - {x: -35.400024, y: 5}
+        - {x: 29.599976, y: 5}
+        - {x: 32.599976, y: 9}
+        - {x: 60.599976, y: 86}
+        - {x: 60.599976, y: 183}
+    - name: battle_defeat instance 10028
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 59
+        width: 132
+        height: 193
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -44.399998, y: 193}
+        - {x: -44.399998, y: 6}
+        - {x: 34.600002, y: 6}
+        - {x: 55.600002, y: 90}
+        - {x: 55.600002, y: 175}
+        - {x: 45.600002, y: 193}
+    - name: battle_defeat instance 10029
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 59
+        width: 132
+        height: 193
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -44.399994, y: 193}
+        - {x: -44.399994, y: 6}
+        - {x: 34.600006, y: 6}
+        - {x: 55.600006, y: 90}
+        - {x: 55.600006, y: 175}
+        - {x: 45.600006, y: 193}
+    - name: battle_defeat instance 10030
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 59
+        width: 132
+        height: 193
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -44.399994, y: 193}
+        - {x: -44.399994, y: 6}
+        - {x: 34.600006, y: 6}
+        - {x: 55.600006, y: 90}
+        - {x: 55.600006, y: 175}
+        - {x: 45.600006, y: 193}
+    - name: battle_defeat instance 10031
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 59
+        width: 132
+        height: 193
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -44.399994, y: 193}
+        - {x: -44.399994, y: 6}
+        - {x: 34.600006, y: 6}
+        - {x: 55.600006, y: 90}
+        - {x: 55.600006, y: 175}
+        - {x: 45.600006, y: 193}
+    - name: battle_defeat instance 10032
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 59
+        width: 132
+        height: 193
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -44.400024, y: 193}
+        - {x: -44.400024, y: 6}
+        - {x: 34.599976, y: 6}
+        - {x: 55.599976, y: 90}
+        - {x: 55.599976, y: 175}
+        - {x: 45.599976, y: 193}
+    - name: battle_defeat instance 10033
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 59
+        width: 132
+        height: 193
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -44.400024, y: 193}
+        - {x: -44.400024, y: 6}
+        - {x: 34.599976, y: 6}
+        - {x: 55.599976, y: 90}
+        - {x: 55.599976, y: 175}
+        - {x: 45.599976, y: 193}
+    - name: battle_defeat instance 10034
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 59
+        width: 132
+        height: 193
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7.4000244, y: 193}
+        - {x: -44.400024, y: 184}
+        - {x: -44.400024, y: 81}
+        - {x: -30.400024, y: 6}
+        - {x: 47.599976, y: 6}
+        - {x: 55.599976, y: 104}
+        - {x: 55.599976, y: 179}
+        - {x: 46.599976, y: 193}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

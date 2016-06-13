@@ -1,0 +1,552 @@
+fileFormatVersion: 2
+guid: b1eeb8a0f201ec3449814e5b1895b126
+timeCreated: 1461173494
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Vodianiy_battle_hit instance 10000
+    21300002: Vodianiy_battle_hit instance 10001
+    21300004: Vodianiy_battle_hit instance 10002
+    21300006: Vodianiy_battle_hit instance 10003
+    21300008: Vodianiy_battle_hit instance 10004
+    21300010: Vodianiy_battle_hit instance 10005
+    21300012: Vodianiy_battle_hit instance 10006
+    21300014: Vodianiy_battle_hit instance 10007
+    21300016: Vodianiy_battle_hit instance 10008
+    21300018: Vodianiy_battle_hit instance 10009
+    21300020: Vodianiy_battle_hit instance 10010
+    21300022: Vodianiy_battle_hit instance 10011
+    21300024: Vodianiy_battle_hit instance 10012
+    21300026: Vodianiy_battle_hit instance 10013
+    21300028: Vodianiy_battle_hit instance 10014
+    21300030: Vodianiy_battle_hit instance 10015
+    21300032: Vodianiy_battle_hit instance 10016
+    21300034: Vodianiy_battle_hit instance 10017
+    21300036: Vodianiy_battle_hit instance 10018
+    21300038: Vodianiy_battle_hit instance 10019
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Vodianiy_battle_hit instance 10000
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 845
+        width: 224
+        height: 179
+      alignment: 9
+      pivot: {x: 0.645, y: 0.115}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -95.479996, y: 151.41498}
+        - {x: -95.479996, y: 37.414978}
+        - {x: -77.479996, y: -13.585022}
+        - {x: 68.520004, y: -13.585022}
+        - {x: 76.520004, y: -2.585022}
+        - {x: 76.520004, y: 52.414978}
+        - {x: 58.520004, y: 151.41498}
+    - name: Vodianiy_battle_hit instance 10001
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 845
+        width: 224
+        height: 179
+      alignment: 9
+      pivot: {x: 0.645, y: 0.115}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -85.47998, y: 29.414978}
+        - {x: -61.47998, y: -13.585022}
+        - {x: 69.52002, y: -13.585022}
+        - {x: 76.52002, y: -12.585022}
+        - {x: 76.52002, y: 90.41498}
+        - {x: 70.52002, y: 132.41498}
+        - {x: 37.52002, y: 151.41498}
+        - {x: -79.47998, y: 151.41498}
+        - {x: -85.47998, y: 145.41498}
+    - name: Vodianiy_battle_hit instance 10002
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 845
+        width: 224
+        height: 179
+      alignment: 9
+      pivot: {x: 0.645, y: 0.115}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 37.52002, y: 150.41498}
+        - {x: -27.47998, y: 150.41498}
+        - {x: -35.47998, y: 134.41498}
+        - {x: -56.47998, y: 148.41498}
+        - {x: -69.47998, y: 150.41498}
+        - {x: -71.47998, y: 150.41498}
+        - {x: -71.47998, y: -14.585022}
+        - {x: 53.52002, y: -14.585022}
+        - {x: 76.52002, y: -6.585022}
+        - {x: 76.52002, y: 7.414978}
+        - {x: 73.52002, y: 14.414978}
+    - name: Vodianiy_battle_hit instance 10003
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 845
+        width: 224
+        height: 179
+      alignment: 9
+      pivot: {x: 0.645, y: 0.115}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 31.52002, y: 154.41498}
+        - {x: -66.47998, y: 154.41498}
+        - {x: -66.47998, y: -14.585022}
+        - {x: 76.52002, y: -14.585022}
+        - {x: 76.52002, y: 36.414978}
+        - {x: 34.52002, y: 153.41498}
+    - name: Vodianiy_battle_hit instance 10004
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 666
+        width: 224
+        height: 179
+      alignment: 9
+      pivot: {x: 0.645, y: 0.115}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 38.520004, y: 158.41498}
+        - {x: -43.479996, y: 158.41498}
+        - {x: -45.479996, y: 153.41498}
+        - {x: -66.479996, y: 100.41498}
+        - {x: -66.479996, y: -9.585022}
+        - {x: -18.479996, y: -15.585022}
+        - {x: 56.520004, y: -15.585022}
+        - {x: 76.520004, y: -10.585022}
+        - {x: 76.520004, y: 36.414978}
+        - {x: 43.520004, y: 157.41498}
+    - name: Vodianiy_battle_hit instance 10005
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 666
+        width: 224
+        height: 179
+      alignment: 9
+      pivot: {x: 0.645, y: 0.115}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 41.52002, y: 149.41498}
+        - {x: 38.52002, y: 158.41498}
+        - {x: -54.47998, y: 158.41498}
+        - {x: -66.47998, y: 153.41498}
+        - {x: -66.47998, y: -15.585022}
+        - {x: 69.52002, y: -15.585022}
+        - {x: 76.52002, y: -12.585022}
+        - {x: 76.52002, y: 12.414978}
+        - {x: 75.52002, y: 13.414978}
+    - name: Vodianiy_battle_hit instance 10006
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 666
+        width: 224
+        height: 179
+      alignment: 9
+      pivot: {x: 0.645, y: 0.115}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.4799805, y: 155.41498}
+        - {x: -46.47998, y: 122.41498}
+        - {x: -66.47998, y: 91.41498}
+        - {x: -72.47998, y: 68.41498}
+        - {x: -72.47998, y: 51.414978}
+        - {x: -57.47998, y: 46.414978}
+        - {x: -71.47998, y: -7.585022}
+        - {x: 13.52002, y: -15.585022}
+        - {x: 76.52002, y: -15.585022}
+        - {x: 76.52002, y: 24.414978}
+        - {x: 42.52002, y: 155.41498}
+    - name: Vodianiy_battle_hit instance 10007
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 666
+        width: 224
+        height: 179
+      alignment: 9
+      pivot: {x: 0.645, y: 0.115}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19.47998, y: 149.41498}
+        - {x: -60.47998, y: 106.41498}
+        - {x: -75.47998, y: 73.41498}
+        - {x: -75.47998, y: 62.414978}
+        - {x: -69.47998, y: 59.414978}
+        - {x: -73.47998, y: -5.585022}
+        - {x: -50.47998, y: -16.585022}
+        - {x: 76.52002, y: -16.585022}
+        - {x: 76.52002, y: 31.414978}
+        - {x: 46.52002, y: 149.41498}
+    - name: Vodianiy_battle_hit instance 10008
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 487
+        width: 224
+        height: 179
+      alignment: 9
+      pivot: {x: 0.645, y: 0.115}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -1.4799957, y: 149.41501}
+        - {x: -25.479996, y: 142.41501}
+        - {x: -75.479996, y: 92.41501}
+        - {x: -75.479996, y: -8.584991}
+        - {x: -47.479996, y: -16.584991}
+        - {x: 69.520004, y: -16.584991}
+        - {x: 76.520004, y: -11.584991}
+        - {x: 76.520004, y: 54.41501}
+        - {x: 46.520004, y: 149.41501}
+    - name: Vodianiy_battle_hit instance 10009
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 487
+        width: 224
+        height: 179
+      alignment: 9
+      pivot: {x: 0.645, y: 0.115}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21.47998, y: 149.41501}
+        - {x: -72.47998, y: 123.41501}
+        - {x: -72.47998, y: -17.584991}
+        - {x: 76.52002, y: -17.584991}
+        - {x: 76.52002, y: 43.41501}
+        - {x: 58.52002, y: 119.41501}
+        - {x: 46.52002, y: 149.41501}
+    - name: Vodianiy_battle_hit instance 10010
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 487
+        width: 224
+        height: 179
+      alignment: 9
+      pivot: {x: 0.645, y: 0.115}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -50.47998, y: 158.41501}
+        - {x: -64.47998, y: 150.41501}
+        - {x: -64.47998, y: -17.584991}
+        - {x: 76.52002, y: -17.584991}
+        - {x: 76.52002, y: 135.41501}
+        - {x: 27.52002, y: 158.41501}
+    - name: Vodianiy_battle_hit instance 10011
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 487
+        width: 224
+        height: 179
+      alignment: 9
+      pivot: {x: 0.645, y: 0.115}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -38.47998, y: 149.41501}
+        - {x: -75.47998, y: 142.41501}
+        - {x: -75.47998, y: 31.415009}
+        - {x: -70.47998, y: -4.5849915}
+        - {x: 5.5200195, y: -17.584991}
+        - {x: 76.52002, y: -17.584991}
+        - {x: 76.52002, y: 43.41501}
+        - {x: 48.52002, y: 149.41501}
+    - name: Vodianiy_battle_hit instance 10012
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 308
+        width: 224
+        height: 179
+      alignment: 9
+      pivot: {x: 0.645, y: 0.115}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -96.479996, y: 55.41501}
+        - {x: -70.479996, y: -4.5849915}
+        - {x: 8.520004, y: -17.584991}
+        - {x: 76.520004, y: -17.584991}
+        - {x: 76.520004, y: 42.41501}
+        - {x: 48.520004, y: 149.41501}
+        - {x: -49.479996, y: 149.41501}
+        - {x: -96.479996, y: 124.41501}
+    - name: Vodianiy_battle_hit instance 10013
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 308
+        width: 224
+        height: 179
+      alignment: 9
+      pivot: {x: 0.645, y: 0.115}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -103.47998, y: 53.41501}
+        - {x: -77.47998, y: -16.584991}
+        - {x: -64.47998, y: -17.584991}
+        - {x: 76.52002, y: -17.584991}
+        - {x: 76.52002, y: 50.41501}
+        - {x: 48.52002, y: 149.41501}
+        - {x: -22.47998, y: 149.41501}
+        - {x: -103.47998, y: 101.41501}
+    - name: Vodianiy_battle_hit instance 10014
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 308
+        width: 224
+        height: 179
+      alignment: 9
+      pivot: {x: 0.645, y: 0.115}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.47998, y: 149.41501}
+        - {x: -28.47998, y: 125.41501}
+        - {x: -75.47998, y: 37.41501}
+        - {x: -75.47998, y: 9.415009}
+        - {x: -68.47998, y: -3.5849915}
+        - {x: -2.4799805, y: -17.584991}
+        - {x: 76.52002, y: -17.584991}
+        - {x: 76.52002, y: 43.41501}
+        - {x: 48.52002, y: 149.41501}
+      - - {x: -90.47998, y: 75.41501}
+        - {x: -106.47998, y: 75.41501}
+        - {x: -111.47998, y: 70.41501}
+        - {x: -111.47998, y: 51.41501}
+        - {x: -107.47998, y: 47.41501}
+        - {x: -89.47998, y: 47.41501}
+        - {x: -81.47998, y: 49.41501}
+        - {x: -81.47998, y: 69.41501}
+        - {x: -84.47998, y: 74.41501}
+    - name: Vodianiy_battle_hit instance 10015
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 308
+        width: 224
+        height: 179
+      alignment: 9
+      pivot: {x: 0.645, y: 0.115}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 1.5200195, y: 149.41501}
+        - {x: -17.47998, y: 144.41501}
+        - {x: -30.47998, y: 119.41501}
+        - {x: -103.47998, y: 79.41501}
+        - {x: -117.47998, y: 66.41501}
+        - {x: -117.47998, y: 42.41501}
+        - {x: -84.47998, y: 29.415009}
+        - {x: -71.47998, y: -5.5849915}
+        - {x: -2.4799805, y: -16.584991}
+        - {x: 76.52002, y: -16.584991}
+        - {x: 76.52002, y: 79.41501}
+        - {x: 69.52002, y: 136.41501}
+        - {x: 37.52002, y: 147.41501}
+        - {x: 28.52002, y: 149.41501}
+    - name: Vodianiy_battle_hit instance 10016
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 129
+        width: 224
+        height: 179
+      alignment: 9
+      pivot: {x: 0.645, y: 0.115}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -122.479996, y: -8.585007}
+        - {x: -98.479996, y: -15.585007}
+        - {x: 76.520004, y: -15.585007}
+        - {x: 76.520004, y: 47.414993}
+        - {x: 56.520004, y: 139.415}
+        - {x: 33.520004, y: 150.415}
+        - {x: -81.479996, y: 150.415}
+        - {x: -122.479996, y: 83.41499}
+      - - {x: -101.479996, y: 49.414993}
+        - {x: -103.479996, y: 51.414993}
+        - {x: -109.479996, y: 51.414993}
+        - {x: -116.479996, y: 44.414993}
+        - {x: -116.479996, y: 37.414993}
+        - {x: -112.479996, y: 33.414993}
+        - {x: -103.479996, y: 33.414993}
+        - {x: -100.479996, y: 37.414993}
+        - {x: -100.479996, y: 45.414993}
+      - - {x: -95.479996, y: 52.414993}
+        - {x: -95.479996, y: 36.414993}
+        - {x: -91.479996, y: 35.414993}
+        - {x: -79.479996, y: 35.414993}
+        - {x: -78.479996, y: 37.414993}
+        - {x: -78.479996, y: 45.414993}
+        - {x: -80.479996, y: 52.414993}
+    - name: Vodianiy_battle_hit instance 10017
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 129
+        width: 224
+        height: 179
+      alignment: 9
+      pivot: {x: 0.645, y: 0.115}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26.47998, y: 150.415}
+        - {x: -110.47998, y: 96.41499}
+        - {x: -110.47998, y: 68.41499}
+        - {x: -106.47998, y: 65.41499}
+        - {x: -99.47998, y: 65.41499}
+        - {x: -103.47998, y: 10.414993}
+        - {x: -60.47998, y: -15.585007}
+        - {x: 76.52002, y: -15.585007}
+        - {x: 76.52002, y: 27.414993}
+        - {x: 48.52002, y: 150.415}
+      - - {x: -112.47998, y: 42.414993}
+        - {x: -119.47998, y: 37.414993}
+        - {x: -119.47998, y: 28.414993}
+        - {x: -115.47998, y: 24.414993}
+        - {x: -107.47998, y: 24.414993}
+        - {x: -103.47998, y: 28.414993}
+        - {x: -103.47998, y: 38.414993}
+        - {x: -106.47998, y: 42.414993}
+      - - {x: -92.47998, y: 43.414993}
+        - {x: -92.47998, y: 27.414993}
+        - {x: -91.47998, y: 26.414993}
+        - {x: -79.47998, y: 26.414993}
+        - {x: -75.47998, y: 27.414993}
+        - {x: -75.47998, y: 41.414993}
+        - {x: -79.47998, y: 43.414993}
+      - - {x: -130.47998, y: 53.414993}
+        - {x: -129.47998, y: 52.414993}
+        - {x: -118.47998, y: 52.414993}
+        - {x: -111.47998, y: 53.414993}
+        - {x: -111.47998, y: 64.41499}
+        - {x: -112.47998, y: 66.41499}
+        - {x: -115.47998, y: 67.41499}
+        - {x: -129.47998, y: 67.41499}
+        - {x: -130.47998, y: 64.41499}
+    - name: Vodianiy_battle_hit instance 10018
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 129
+        width: 224
+        height: 179
+      alignment: 9
+      pivot: {x: 0.645, y: 0.115}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -46.47998, y: 150.415}
+        - {x: -100.47998, y: 117.41499}
+        - {x: -100.47998, y: 66.41499}
+        - {x: -71.47998, y: -14.585007}
+        - {x: 76.52002, y: -14.585007}
+        - {x: 76.52002, y: 34.414993}
+        - {x: 37.52002, y: 150.415}
+      - - {x: -116.47998, y: 33.414993}
+        - {x: -121.47998, y: 26.414993}
+        - {x: -121.47998, y: 17.414993}
+        - {x: -118.47998, y: 15.414993}
+        - {x: -109.47998, y: 15.414993}
+        - {x: -106.47998, y: 18.414993}
+        - {x: -106.47998, y: 32.414993}
+        - {x: -110.47998, y: 33.414993}
+      - - {x: -79.47998, y: 35.414993}
+        - {x: -88.47998, y: 35.414993}
+        - {x: -89.47998, y: 33.414993}
+        - {x: -89.47998, y: 19.414993}
+        - {x: -86.47998, y: 18.414993}
+        - {x: -74.47998, y: 18.414993}
+        - {x: -73.47998, y: 22.414993}
+        - {x: -73.47998, y: 31.414993}
+        - {x: -76.47998, y: 34.414993}
+      - - {x: -125.47998, y: 68.41499}
+        - {x: -136.47998, y: 68.41499}
+        - {x: -137.47998, y: 66.41499}
+        - {x: -137.47998, y: 54.414993}
+        - {x: -121.47998, y: 54.414993}
+        - {x: -119.47998, y: 58.414993}
+        - {x: -119.47998, y: 64.41499}
+      - - {x: -101.47998, y: 89.41499}
+        - {x: -112.47998, y: 89.41499}
+        - {x: -113.47998, y: 88.41499}
+        - {x: -113.47998, y: 76.41499}
+        - {x: -111.47998, y: 71.41499}
+        - {x: -100.47998, y: 71.41499}
+        - {x: -98.47998, y: 75.41499}
+        - {x: -98.47998, y: 85.41499}
+    - name: Vodianiy_battle_hit instance 10019
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 129
+        width: 224
+        height: 179
+      alignment: 9
+      pivot: {x: 0.645, y: 0.115}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -95.47998, y: 151.415}
+        - {x: -95.47998, y: 37.414993}
+        - {x: -77.47998, y: -13.585007}
+        - {x: 68.52002, y: -13.585007}
+        - {x: 76.52002, y: -2.5850067}
+        - {x: 76.52002, y: 52.414993}
+        - {x: 58.52002, y: 151.415}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

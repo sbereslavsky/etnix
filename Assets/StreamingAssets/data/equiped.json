@@ -1,0 +1,32 @@
+[
+    {
+        "equipedid": 1,
+        "ab1": 2,
+        "cost": 100,
+        "assetid": 1,
+        "info": "Hustinka"
+    },
+    {
+        "equipedid": 2,
+        "ab2": 2,
+        "ab3": 1,
+        "cost": 200,
+        "assetid": 2,
+        "info": "Gold Ring"
+    },
+    {
+        "equipedid": 3,
+        "hp": 500,
+        "cost": 100,
+        "assetid": 3,
+        "info": "Flower"
+    },
+    {
+        "equipedid": 4,
+        "str": 10,
+        "dex": 10,
+        "cost": 200,
+        "assetid": 4,
+        "info": "Red line"
+    }
+]

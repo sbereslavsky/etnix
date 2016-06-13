@@ -1,0 +1,128 @@
+[
+    {
+        "key": "buttonOk",
+        "en": "OK",
+        "ru": "ОК"
+    },
+    {
+        "key": "buttonDone",
+        "en": "DONE",
+        "ru": "Готово"
+    },
+    {
+        "key": "buttonCancel",
+        "en": "CANCEL",
+        "ru": "Отмена"
+    },
+    {
+        "key": "buttonPlay",
+        "en": "PLAY",
+        "ru": "Играть"
+    },
+    {
+        "key": "buttonHit",
+        "en": "HIT",
+        "ru": "Ударить"
+    },
+    {
+        "key": "buttonGo",
+        "en": "GO!",
+        "ru": "Вперед"
+    },
+    {
+        "key": "buttonContinue",
+        "en": "CONTINUE",
+        "ru": "Продолжить"
+    },
+    {
+        "key": "buttonRestart",
+        "en": "RESTART",
+        "ru": "Переиграть"
+    },
+    {
+        "key": "buttonMenu",
+        "en": "MENU",
+        "ru": "Меню"
+    },
+    {
+        "key": "buttonWave",
+        "en": "WAVE",
+        "ru": "Волна"
+    },
+    {
+        "key": "buttonVillage",
+        "en": "VILLAGE",
+        "ru": "Село"
+    },
+    {
+        "key": "buttonExit",
+        "en": "EXIT",
+        "ru": "Выйти"
+    },
+    {
+        "key": "buttonEdit",
+        "en": "EDIT",
+        "ru": "Редактировать"
+    },
+    {
+        "key": "buttonRemove",
+        "en": "REMOVE",
+        "ru": "Удалить"
+    },
+    {
+        "key": "buttonAdd",
+        "en": "ADD",
+        "ru": "Добавить"
+    },
+    {
+        "key": "menuTextWave",
+        "en": "Wave",
+        "ru": "Волна"
+    },
+    {
+        "key": "menuTextExp",
+        "en": "Exp",
+        "ru": "Опыт"
+    },
+    {
+        "key": "menuTextWeapon",
+        "en": "Weapon",
+        "ru": "Оружие"
+    },
+    {
+        "key": "menuTextItem1",
+        "en": "Item 2"
+    },
+    {
+        "key": "menuTextItem2",
+        "en": "Item 3"
+    },
+    {
+        "key": "menuTextEqiuped",
+        "en": "Equeped"
+    },
+    {
+        "key": "menuTextSelect",
+        "en": "Select character"
+    },
+    {
+        "key": "menuTextChooseWave",
+        "en": "Select wave"
+    },
+    {
+        "key": "menuTextWin",
+        "en": "You win!"
+    },
+    {
+        "key": "menuTextLose",
+        "en": "You lose!"
+    },
+    {
+        "key": "menuTextGamePause",
+        "en": "Pause game"
+    },
+    {
+        "key": "menuTextGameRestart",
+        "en": "Do you want to restart game or exit to main manu?"
+    }
+]

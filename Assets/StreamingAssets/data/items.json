@@ -1,0 +1,52 @@
+[
+    {
+        "itemid": 1,
+        "type": "consumable",
+        "interactiveid": "heal",
+        "actionstr": 100,
+        "assetid": 1,
+        "cost": 10,
+        "info": "Small Heal"
+    },
+    {
+        "itemid": 2,
+        "type": "consumable",
+        "interactiveid": "heal",
+        "actionstr": 500,
+        "assetid": 4,
+        "cost": 20,
+        "info": "Big Heal"
+    },
+    {
+        "itemid": 3,
+        "type": "consumable",
+        "interactiveid": "damage",
+        "actionstr": 50,
+        "assetid": 4,
+        "cost": 50,
+        "info": "Boomb"
+    },
+    {
+        "itemid": 4,
+        "type": "consumable",
+        "interactiveid": "damage",
+        "actionstr": 500,
+        "assetid": 4,
+        "cost": 100,
+        "info": "Rocket"
+    },
+    {
+        "itemid": 7,
+        "type": "drop",
+        "assetid": 7,
+        "cost": 5,
+        "info": "Salo"
+    },
+    {
+        "itemid": 8,
+        "type": "drop",
+        "assetid": 8,
+        "cost": 10,
+        "info": "Bashmak"
+    }
+]

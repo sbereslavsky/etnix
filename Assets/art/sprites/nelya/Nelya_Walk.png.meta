@@ -1,0 +1,1100 @@
+fileFormatVersion: 2
+guid: d156f233ea54b494c8ac357bc016fe50
+timeCreated: 1461062897
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: walking0000
+    21300002: walking0001
+    21300004: walking0002
+    21300006: walking0003
+    21300008: walking0004
+    21300010: walking0005
+    21300012: walking0006
+    21300014: walking0007
+    21300016: walking0008
+    21300018: walking0009
+    21300020: walking0010
+    21300022: walking0011
+    21300024: walking0012
+    21300026: walking0013
+    21300028: walking0014
+    21300030: walking0015
+    21300032: walking0016
+    21300034: walking0017
+    21300036: walking0018
+    21300038: walking0019
+    21300040: walking0020
+    21300042: walking0021
+    21300044: walking0022
+    21300046: walking0023
+    21300048: walking0024
+    21300050: walking0025
+    21300052: walking0026
+    21300054: walking0027
+    21300056: walking0028
+    21300058: walking0029
+    21300060: walking0030
+    21300062: walking0031
+    21300064: walking0032
+    21300066: walking0033
+    21300068: walking0034
+    21300070: walking0035
+    21300072: walking0036
+    21300074: walking0037
+    21300076: walking0038
+    21300078: walking0039
+    21300080: battle_hit_super0000
+    21300082: battle_hit_super0001
+    21300084: battle_hit_super0002
+    21300086: battle_hit_super0003
+    21300088: battle_hit_super0004
+    21300090: battle_hit_super0005
+    21300092: battle_hit_super0012
+    21300094: battle_hit_super0013
+    21300096: battle_hit_super0014
+    21300098: battle_hit_super0015
+    21300100: battle_hit_super0016
+    21300102: battle_hit_super0017
+    21300104: battle_hit_super0024
+    21300106: battle_hit_super0025
+    21300108: battle_hit_super0026
+    21300110: battle_hit_super0027
+    21300112: battle_hit_super0028
+    21300114: battle_hit_super0029
+    21300116: battle_hit_super0036
+    21300118: battle_hit_super0037
+    21300120: battle_hit_super0038
+    21300122: battle_hit_super0039
+    21300124: battle_hit_super0040
+    21300126: battle_hit_super0041
+    21300128: battle_hit_super0048
+    21300130: battle_hit_super0049
+    21300132: battle_hit_super0050
+    21300134: battle_hit_super0051
+    21300136: battle_hit_super0052
+    21300138: battle_hit_super0053
+    21300140: battle_hit_super0060
+    21300142: battle_hit_super0061
+    21300144: battle_hit_super0062
+    21300146: battle_hit_super0063
+    21300148: battle_hit_super0064
+    21300150: battle_hit_super0065
+    21300152: walking instance 10000
+    21300154: walking instance 10001
+    21300156: walking instance 10002
+    21300158: walking instance 10003
+    21300160: walking instance 10004
+    21300162: walking instance 10005
+    21300164: walking instance 10006
+    21300166: walking instance 10007
+    21300168: walking instance 10008
+    21300170: walking instance 10009
+    21300172: walking instance 10010
+    21300174: walking instance 10011
+    21300176: walking instance 10012
+    21300178: walking instance 10013
+    21300180: walking instance 10014
+    21300182: walking instance 10015
+    21300184: walking instance 10016
+    21300186: walking instance 10017
+    21300188: walking instance 10018
+    21300190: walking instance 10019
+    21300192: walking instance 10020
+    21300194: walking instance 10021
+    21300196: walking instance 10022
+    21300198: walking instance 10023
+    21300200: walking instance 10024
+    21300202: walking instance 10025
+    21300204: walking instance 10026
+    21300206: walking instance 10027
+    21300208: walking instance 10028
+    21300210: walking instance 10029
+    21300212: walking instance 10030
+    21300214: walking instance 10031
+    21300216: walking instance 10032
+    21300218: walking instance 10033
+    21300220: walking instance 10034
+    21300222: walking instance 10035
+    21300224: walking instance 10036
+    21300226: walking instance 10037
+    21300228: walking instance 10038
+    21300230: walking instance 10039
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: walking instance 10000
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 832
+        width: 113
+        height: 192
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 51.8, y: 192}
+        - {x: -45.2, y: 192}
+        - {x: -45.2, y: 8}
+        - {x: -43.2, y: 6}
+        - {x: 49.8, y: 6}
+        - {x: 65.8, y: 55}
+        - {x: 65.8, y: 185}
+        - {x: 60.8, y: 190}
+    - name: walking instance 10001
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 832
+        width: 113
+        height: 192
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22.199997, y: 192}
+        - {x: -38.199997, y: 165}
+        - {x: -45.199997, y: 141}
+        - {x: -45.199997, y: 16}
+        - {x: -42.199997, y: 6}
+        - {x: 28.800003, y: 6}
+        - {x: 56.800003, y: 20}
+        - {x: 64.8, y: 110}
+        - {x: 64.8, y: 171}
+        - {x: 52.800003, y: 192}
+    - name: walking instance 10002
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 832
+        width: 113
+        height: 192
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -39.200012, y: 191}
+        - {x: -45.200012, y: 174}
+        - {x: -45.200012, y: 25}
+        - {x: -39.200012, y: 6}
+        - {x: 43.799988, y: 6}
+        - {x: 64.79999, y: 87}
+        - {x: 64.79999, y: 191}
+    - name: walking instance 10003
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 832
+        width: 113
+        height: 192
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33.200012, y: 191}
+        - {x: -45.200012, y: 159}
+        - {x: -45.200012, y: 6}
+        - {x: 52.799988, y: 6}
+        - {x: 64.79999, y: 67}
+        - {x: 64.79999, y: 176}
+        - {x: 56.799988, y: 191}
+    - name: walking instance 10004
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 832
+        width: 113
+        height: 192
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -28.200012, y: 190}
+        - {x: -36.200012, y: 167}
+        - {x: -44.200012, y: 133}
+        - {x: -44.200012, y: 56}
+        - {x: -37.200012, y: 3}
+        - {x: 29.799988, y: 3}
+        - {x: 55.799988, y: 10}
+        - {x: 63.799988, y: 72}
+        - {x: 63.799988, y: 190}
+    - name: walking instance 10005
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 832
+        width: 113
+        height: 192
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 38.799988, y: 28}
+        - {x: 42.799988, y: 49}
+        - {x: 20.799988, y: 81}
+        - {x: 24.799988, y: 104}
+        - {x: 23.799988, y: 125}
+        - {x: 25.799988, y: 99}
+        - {x: 32.799988, y: 89}
+        - {x: 42.799988, y: 80}
+        - {x: 63.799988, y: 125}
+        - {x: 63.799988, y: 185}
+        - {x: 52.799988, y: 190}
+        - {x: -16.200012, y: 190}
+        - {x: -33.200012, y: 184}
+        - {x: -42.200012, y: 142}
+        - {x: -42.200012, y: 53}
+        - {x: -26.200012, y: 4}
+        - {x: -1.2000122, y: 4}
+        - {x: 1.7999878, y: 5}
+        - {x: 4.799988, y: 8}
+        - {x: 3.7999878, y: 34}
+        - {x: 23.799988, y: 26}
+    - name: walking instance 10006
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 832
+        width: 113
+        height: 192
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 20.799988, y: 84}
+        - {x: 21.799988, y: 107}
+        - {x: 21.799988, y: 114}
+        - {x: 23.799988, y: 146}
+        - {x: 21.799988, y: 101}
+        - {x: 32.799988, y: 87}
+        - {x: 39.799988, y: 87}
+        - {x: 62.799988, y: 119}
+        - {x: 62.799988, y: 176}
+        - {x: 55.799988, y: 189}
+        - {x: -16.200012, y: 189}
+        - {x: -28.200012, y: 186}
+        - {x: -40.200012, y: 145}
+        - {x: -40.200012, y: 53}
+        - {x: -27.200012, y: 4}
+        - {x: 5.799988, y: 4}
+        - {x: 10.799988, y: 6}
+        - {x: 31.799988, y: 26}
+        - {x: 40.799988, y: 41}
+        - {x: 40.799988, y: 49}
+    - name: walking instance 10007
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 832
+        width: 113
+        height: 192
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 20.799988, y: 102}
+        - {x: 22.799988, y: 98}
+        - {x: 29.799988, y: 88}
+        - {x: 36.799988, y: 87}
+        - {x: 43.799988, y: 95}
+        - {x: 61.799988, y: 125}
+        - {x: 61.799988, y: 180}
+        - {x: 59.799988, y: 189}
+        - {x: -34.200012, y: 189}
+        - {x: -38.200012, y: 167}
+        - {x: -38.200012, y: 50}
+        - {x: -22.200012, y: 4}
+        - {x: 18.799988, y: 4}
+        - {x: 49.799988, y: 40}
+        - {x: 20.799988, y: 98}
+        - {x: 19.799988, y: 127}
+    - name: walking instance 10008
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 832
+        width: 113
+        height: 192
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 19.799988, y: 98}
+        - {x: 27.799988, y: 87}
+        - {x: 34.799988, y: 86}
+        - {x: 57.799988, y: 91}
+        - {x: 61.799988, y: 116}
+        - {x: 61.799988, y: 188}
+        - {x: -31.200012, y: 188}
+        - {x: -36.200012, y: 171}
+        - {x: -36.200012, y: 44}
+        - {x: -18.200012, y: 4}
+        - {x: 26.799988, y: 4}
+        - {x: 52.799988, y: 23}
+        - {x: 16.799988, y: 100}
+        - {x: 19.799988, y: 106}
+    - name: walking instance 10009
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 640
+        width: 113
+        height: 192
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16.8, y: 139}
+        - {x: 17.8, y: 109}
+        - {x: 18.8, y: 99}
+        - {x: 23.8, y: 89}
+        - {x: 25.8, y: 87}
+        - {x: 32.8, y: 84}
+        - {x: 60.8, y: 130}
+        - {x: 60.8, y: 168}
+        - {x: 59.8, y: 174}
+        - {x: 49.8, y: 185}
+        - {x: 43.8, y: 188}
+        - {x: -25.2, y: 188}
+        - {x: -34.2, y: 185}
+        - {x: -34.2, y: 37}
+        - {x: -28.2, y: 4}
+        - {x: 24.8, y: 4}
+        - {x: 46.8, y: 48}
+        - {x: 18.8, y: 97}
+        - {x: 17.8, y: 111}
+    - name: walking instance 10010
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 640
+        width: 113
+        height: 192
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14.800003, y: 106}
+        - {x: 17.800003, y: 98}
+        - {x: 22.800003, y: 88}
+        - {x: 33.800003, y: 77}
+        - {x: 60.800003, y: 122}
+        - {x: 60.800003, y: 173}
+        - {x: 59.800003, y: 175}
+        - {x: 54.800003, y: 188}
+        - {x: -24.199997, y: 188}
+        - {x: -33.199997, y: 177}
+        - {x: -33.199997, y: 43}
+        - {x: -9.199997, y: 5}
+        - {x: -7.199997, y: 4}
+        - {x: 6.800003, y: 4}
+        - {x: 15.800003, y: 5}
+        - {x: 30.800003, y: 36}
+        - {x: 26.800003, y: 74}
+        - {x: 21.800003, y: 87}
+    - name: walking instance 10011
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 640
+        width: 113
+        height: 192
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11.799988, y: 111}
+        - {x: 15.799988, y: 127}
+        - {x: 15.799988, y: 100}
+        - {x: 22.799988, y: 88}
+        - {x: 34.799988, y: 75}
+        - {x: 60.799988, y: 121}
+        - {x: 60.799988, y: 186}
+        - {x: 56.799988, y: 188}
+        - {x: -20.200012, y: 188}
+        - {x: -35.200012, y: 178}
+        - {x: -35.200012, y: 47}
+        - {x: -8.200012, y: 4}
+        - {x: 17.799988, y: 4}
+        - {x: 29.799988, y: 33}
+        - {x: 24.799988, y: 69}
+        - {x: 17.799988, y: 93}
+    - name: walking instance 10012
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 640
+        width: 113
+        height: 192
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24.200012, y: 188}
+        - {x: -37.200012, y: 160}
+        - {x: -37.200012, y: 36}
+        - {x: -19.200012, y: 4}
+        - {x: 33.799988, y: 4}
+        - {x: 60.799988, y: 58}
+        - {x: 60.799988, y: 185}
+        - {x: 58.799988, y: 188}
+    - name: walking instance 10013
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 640
+        width: 113
+        height: 192
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10.799988, y: 106}
+        - {x: 17.799988, y: 130}
+        - {x: 15.799988, y: 121}
+        - {x: 14.799988, y: 98}
+        - {x: 21.799988, y: 85}
+        - {x: 29.799988, y: 83}
+        - {x: 61.799988, y: 117}
+        - {x: 61.799988, y: 177}
+        - {x: 57.799988, y: 189}
+        - {x: -23.200012, y: 189}
+        - {x: -34.200012, y: 161}
+        - {x: -40.200012, y: 69}
+        - {x: -40.200012, y: 49}
+        - {x: -9.200012, y: 4}
+        - {x: 9.799988, y: 4}
+        - {x: 14.799988, y: 6}
+        - {x: 19.799988, y: 9}
+        - {x: 21.799988, y: 66}
+        - {x: 15.799988, y: 95}
+    - name: walking instance 10014
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 640
+        width: 113
+        height: 192
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13.799988, y: 117}
+        - {x: 16.799988, y: 119}
+        - {x: 16.799988, y: 125}
+        - {x: 16.799988, y: 109}
+        - {x: 14.799988, y: 106}
+        - {x: 13.799988, y: 98}
+        - {x: 20.799988, y: 85}
+        - {x: 28.799988, y: 82}
+        - {x: 61.799988, y: 120}
+        - {x: 61.799988, y: 176}
+        - {x: 56.799988, y: 190}
+        - {x: -21.200012, y: 190}
+        - {x: -34.200012, y: 175}
+        - {x: -42.200012, y: 116}
+        - {x: -42.200012, y: 38}
+        - {x: -15.200012, y: 4}
+        - {x: 16.799988, y: 4}
+        - {x: 24.799988, y: 8}
+        - {x: 20.799988, y: 52}
+        - {x: 16.799988, y: 92}
+        - {x: 13.799988, y: 91}
+    - name: walking instance 10015
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 640
+        width: 113
+        height: 192
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -42.200012, y: 188}
+        - {x: -42.200012, y: 6}
+        - {x: -38.200012, y: 4}
+        - {x: 30.799988, y: 4}
+        - {x: 60.799988, y: 67}
+        - {x: 60.799988, y: 184}
+        - {x: 57.799988, y: 188}
+    - name: walking instance 10016
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 640
+        width: 113
+        height: 192
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 56.799988, y: 188}
+        - {x: -32.200012, y: 188}
+        - {x: -41.200012, y: 150}
+        - {x: -41.200012, y: 28}
+        - {x: -33.200012, y: 10}
+        - {x: -12.200012, y: 13}
+        - {x: -9.200012, y: 17}
+        - {x: -9.200012, y: 40}
+        - {x: -9.200012, y: 38}
+        - {x: 0.7999878, y: 5}
+        - {x: 13.799988, y: 5}
+        - {x: 29.799988, y: 11}
+        - {x: 26.799988, y: 22}
+        - {x: 60.799988, y: 110}
+        - {x: 60.799988, y: 175}
+    - name: walking instance 10017
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 640
+        width: 113
+        height: 192
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23.200012, y: 189}
+        - {x: -41.200012, y: 171}
+        - {x: -41.200012, y: 5}
+        - {x: 46.799988, y: 5}
+        - {x: 60.799988, y: 74}
+        - {x: 60.799988, y: 169}
+        - {x: 51.799988, y: 189}
+    - name: walking instance 10018
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 448
+        width: 113
+        height: 192
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -38.2, y: 190}
+        - {x: -42.2, y: 185}
+        - {x: -42.2, y: 8}
+        - {x: -41.2, y: 6}
+        - {x: 46.8, y: 6}
+        - {x: 51.8, y: 9}
+        - {x: 60.8, y: 67}
+        - {x: 60.8, y: 177}
+        - {x: 55.8, y: 190}
+    - name: walking instance 10019
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 448
+        width: 113
+        height: 192
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 60.800003, y: 160}
+        - {x: 50.800003, y: 192}
+        - {x: 1.800003, y: 192}
+        - {x: -25.199997, y: 189}
+        - {x: -37.199997, y: 165}
+        - {x: -45.199997, y: 143}
+        - {x: -45.199997, y: 6}
+        - {x: 26.800003, y: 6}
+        - {x: 40.800003, y: 16}
+        - {x: 60.800003, y: 129}
+    - name: walking instance 10020
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 448
+        width: 113
+        height: 192
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 26.799988, y: 100}
+        - {x: 25.799988, y: 104}
+        - {x: 23.799988, y: 132}
+        - {x: 24.799988, y: 116}
+        - {x: 26.799988, y: 102}
+        - {x: 31.799988, y: 97}
+        - {x: 33.799988, y: 94}
+        - {x: 36.799988, y: 91}
+        - {x: 42.799988, y: 90}
+        - {x: 46.799988, y: 97}
+        - {x: 61.799988, y: 140}
+        - {x: 61.799988, y: 191}
+        - {x: -30.200012, y: 191}
+        - {x: -38.200012, y: 164}
+        - {x: -42.200012, y: 143}
+        - {x: -42.200012, y: 6}
+        - {x: 9.799988, y: 6}
+        - {x: 24.799988, y: 8}
+        - {x: 37.799988, y: 20}
+        - {x: 40.799988, y: 29}
+    - name: walking instance 10021
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 448
+        width: 113
+        height: 192
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8.200012, y: 41}
+        - {x: -5.200012, y: 38}
+        - {x: 14.799988, y: 13}
+        - {x: 26.799988, y: 7}
+        - {x: 43.799988, y: 32}
+        - {x: 24.799988, y: 87}
+        - {x: 22.799988, y: 132}
+        - {x: 23.799988, y: 116}
+        - {x: 26.799988, y: 102}
+        - {x: 36.799988, y: 90}
+        - {x: 45.799988, y: 82}
+        - {x: 61.799988, y: 124}
+        - {x: 61.799988, y: 191}
+        - {x: -39.200012, y: 191}
+        - {x: -39.200012, y: 6}
+        - {x: -8.200012, y: 6}
+        - {x: -5.200012, y: 33}
+        - {x: -8.200012, y: 34}
+        - {x: -8.200012, y: 43}
+    - name: walking instance 10022
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 448
+        width: 113
+        height: 192
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 62.799988, y: 190}
+        - {x: -5.200012, y: 190}
+        - {x: -35.200012, y: 184}
+        - {x: -38.200012, y: 154}
+        - {x: -38.200012, y: 18}
+        - {x: -33.200012, y: 7}
+        - {x: -29.200012, y: 6}
+        - {x: 9.799988, y: 6}
+        - {x: 28.799988, y: 9}
+        - {x: 43.799988, y: 36}
+        - {x: 62.799988, y: 72}
+    - name: walking instance 10023
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 448
+        width: 113
+        height: 192
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 52.799988, y: 190}
+        - {x: -30.200012, y: 190}
+        - {x: -36.200012, y: 174}
+        - {x: -36.200012, y: 32}
+        - {x: -32.200012, y: 5}
+        - {x: 14.799988, y: 5}
+        - {x: 45.799988, y: 30}
+        - {x: 63.799988, y: 122}
+        - {x: 63.799988, y: 169}
+    - name: walking instance 10024
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 448
+        width: 113
+        height: 192
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 44.799988, y: 85}
+        - {x: 63.799988, y: 138}
+        - {x: 63.799988, y: 176}
+        - {x: 56.799988, y: 190}
+        - {x: -24.200012, y: 190}
+        - {x: -35.200012, y: 161}
+        - {x: -35.200012, y: 33}
+        - {x: -25.200012, y: 4}
+        - {x: 6.799988, y: 4}
+        - {x: 32.799988, y: 15}
+        - {x: 39.799988, y: 34}
+        - {x: 38.799988, y: 42}
+        - {x: 26.799988, y: 54}
+    - name: walking instance 10025
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 448
+        width: 113
+        height: 192
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 63.799988, y: 190}
+        - {x: -29.200012, y: 190}
+        - {x: -34.200012, y: 183}
+        - {x: -34.200012, y: 28}
+        - {x: -30.200012, y: 4}
+        - {x: 2.7999878, y: 4}
+        - {x: 6.799988, y: 5}
+        - {x: 9.799988, y: 8}
+        - {x: 29.799988, y: 16}
+        - {x: 63.799988, y: 35}
+    - name: walking instance 10026
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 448
+        width: 113
+        height: 192
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20.200012, y: 189}
+        - {x: -34.200012, y: 182}
+        - {x: -34.200012, y: 42}
+        - {x: -19.200012, y: 4}
+        - {x: 27.799988, y: 4}
+        - {x: 32.799988, y: 5}
+        - {x: 63.799988, y: 37}
+        - {x: 63.799988, y: 189}
+    - name: walking instance 10027
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 113
+        height: 192
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26.2, y: 189}
+        - {x: -33.2, y: 188}
+        - {x: -33.2, y: 43}
+        - {x: -10.200001, y: 3}
+        - {x: 62.8, y: 3}
+        - {x: 63.8, y: 7}
+        - {x: 63.8, y: 186}
+        - {x: 59.8, y: 189}
+    - name: walking instance 10028
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 256
+        width: 113
+        height: 192
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32.199997, y: 189}
+        - {x: -32.199997, y: 26}
+        - {x: -11.199997, y: 3}
+        - {x: 27.800003, y: 3}
+        - {x: 63.800003, y: 97}
+        - {x: 63.800003, y: 175}
+        - {x: 56.800003, y: 189}
+    - name: walking instance 10029
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 256
+        width: 113
+        height: 192
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 62.799988, y: 185}
+        - {x: 58.799988, y: 189}
+        - {x: -29.200012, y: 189}
+        - {x: -31.200012, y: 187}
+        - {x: -31.200012, y: 44}
+        - {x: -3.2000122, y: 4}
+        - {x: -0.2000122, y: 3}
+        - {x: 12.799988, y: 3}
+        - {x: 21.799988, y: 9}
+        - {x: 38.799988, y: 22}
+        - {x: 62.799988, y: 134}
+    - name: walking instance 10030
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 256
+        width: 113
+        height: 192
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 21.799988, y: 100}
+        - {x: 28.799988, y: 89}
+        - {x: 37.799988, y: 86}
+        - {x: 46.799988, y: 95}
+        - {x: 62.799988, y: 144}
+        - {x: 62.799988, y: 176}
+        - {x: 51.799988, y: 189}
+        - {x: -28.200012, y: 189}
+        - {x: -33.200012, y: 187}
+        - {x: -33.200012, y: 46}
+        - {x: -1.2000122, y: 3}
+        - {x: 12.799988, y: 3}
+        - {x: 28.799988, y: 9}
+        - {x: 26.799988, y: 71}
+        - {x: 20.799988, y: 88}
+        - {x: 19.799988, y: 128}
+    - name: walking instance 10031
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 256
+        width: 113
+        height: 192
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 20.799988, y: 116}
+        - {x: 18.799988, y: 129}
+        - {x: 20.799988, y: 128}
+        - {x: 20.799988, y: 98}
+        - {x: 28.799988, y: 87}
+        - {x: 40.799988, y: 76}
+        - {x: 62.799988, y: 122}
+        - {x: 62.799988, y: 187}
+        - {x: 53.799988, y: 189}
+        - {x: -29.200012, y: 189}
+        - {x: -34.200012, y: 178}
+        - {x: -34.200012, y: 41}
+        - {x: -3.2000122, y: 4}
+        - {x: 18.799988, y: 4}
+        - {x: 29.799988, y: 10}
+        - {x: 27.799988, y: 72}
+        - {x: 18.799988, y: 94}
+        - {x: 20.799988, y: 105}
+    - name: walking instance 10032
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 256
+        width: 113
+        height: 192
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 57.799988, y: 189}
+        - {x: -22.200012, y: 189}
+        - {x: -27.200012, y: 185}
+        - {x: -35.200012, y: 146}
+        - {x: -35.200012, y: 27}
+        - {x: -9.200012, y: 5}
+        - {x: 19.799988, y: 5}
+        - {x: 29.799988, y: 12}
+        - {x: 27.799988, y: 55}
+        - {x: 62.799988, y: 121}
+        - {x: 62.799988, y: 174}
+    - name: walking instance 10033
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 256
+        width: 113
+        height: 192
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33.200012, y: 189}
+        - {x: -37.200012, y: 168}
+        - {x: -37.200012, y: 38}
+        - {x: -30.200012, y: 5}
+        - {x: 33.799988, y: 5}
+        - {x: 62.799988, y: 76}
+        - {x: 62.799988, y: 185}
+        - {x: 60.799988, y: 189}
+    - name: walking instance 10034
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 256
+        width: 113
+        height: 192
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.200012, y: 190}
+        - {x: -32.200012, y: 174}
+        - {x: -40.200012, y: 149}
+        - {x: -40.200012, y: 46}
+        - {x: -32.200012, y: 6}
+        - {x: 47.799988, y: 6}
+        - {x: 61.799988, y: 37}
+        - {x: 61.799988, y: 189}
+        - {x: 60.799988, y: 190}
+    - name: walking instance 10035
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 256
+        width: 113
+        height: 192
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 50.799988, y: 8}
+        - {x: 62.799988, y: 41}
+        - {x: 62.799988, y: 189}
+        - {x: -26.200012, y: 189}
+        - {x: -42.200012, y: 183}
+        - {x: -42.200012, y: 8}
+    - name: walking instance 10036
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 113
+        height: 192
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -43.2, y: 9}
+        - {x: 47.8, y: 9}
+        - {x: 63.8, y: 36}
+        - {x: 63.8, y: 189}
+        - {x: -27.2, y: 189}
+        - {x: -43.2, y: 178}
+    - name: walking instance 10037
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 64
+        width: 113
+        height: 192
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33.199997, y: 190}
+        - {x: -44.199997, y: 154}
+        - {x: -44.199997, y: 19}
+        - {x: -42.199997, y: 12}
+        - {x: -40.199997, y: 10}
+        - {x: 56.800003, y: 10}
+        - {x: 63.800003, y: 16}
+        - {x: 63.800003, y: 190}
+    - name: walking instance 10038
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 64
+        width: 113
+        height: 192
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 25.799988, y: 126}
+        - {x: 28.799988, y: 117}
+        - {x: 29.799988, y: 102}
+        - {x: 37.799988, y: 92}
+        - {x: 49.799988, y: 80}
+        - {x: 64.79999, y: 122}
+        - {x: 64.79999, y: 177}
+        - {x: 48.799988, y: 192}
+        - {x: -32.200012, y: 192}
+        - {x: -45.200012, y: 155}
+        - {x: -45.200012, y: 8}
+        - {x: 41.799988, y: 8}
+        - {x: 43.799988, y: 20}
+        - {x: 26.799988, y: 70}
+        - {x: 28.799988, y: 116}
+    - name: walking instance 10039
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 64
+        width: 113
+        height: 192
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 26.799988, y: 134}
+        - {x: 32.799988, y: 102}
+        - {x: 42.799988, y: 87}
+        - {x: 62.799988, y: 98}
+        - {x: 64.79999, y: 118}
+        - {x: 64.79999, y: 192}
+        - {x: -31.200012, y: 192}
+        - {x: -45.200012, y: 144}
+        - {x: -45.200012, y: 6}
+        - {x: 45.799988, y: 6}
+        - {x: 47.799988, y: 21}
+        - {x: 26.799988, y: 125}
+        - {x: 23.799988, y: 133}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

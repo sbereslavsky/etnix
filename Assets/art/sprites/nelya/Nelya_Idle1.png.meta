@@ -1,0 +1,700 @@
+fileFormatVersion: 2
+guid: 7011df7d1968e2942814dacf73aee46f
+timeCreated: 1461062816
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: stand0000
+    21300002: stand0001
+    21300004: stand0002
+    21300006: stand0003
+    21300008: stand0004
+    21300010: stand0005
+    21300012: stand0006
+    21300014: stand0007
+    21300016: stand0008
+    21300018: stand0009
+    21300020: stand0010
+    21300022: stand0011
+    21300024: stand0012
+    21300026: stand0013
+    21300028: stand0014
+    21300030: stand0015
+    21300032: stand0016
+    21300034: stand0017
+    21300036: stand0018
+    21300038: stand0019
+    21300040: stand0020
+    21300042: stand0021
+    21300044: stand0022
+    21300046: stand0023
+    21300048: stand0024
+    21300050: stand0025
+    21300052: stand0026
+    21300054: stand0027
+    21300056: stand0028
+    21300058: stand0029
+    21300060: stand instance 10000
+    21300062: stand instance 10001
+    21300064: stand instance 10002
+    21300066: stand instance 10003
+    21300068: stand instance 10004
+    21300070: stand instance 10005
+    21300072: stand instance 10006
+    21300074: stand instance 10007
+    21300076: stand instance 10008
+    21300078: stand instance 10009
+    21300080: stand instance 10010
+    21300082: stand instance 10011
+    21300084: stand instance 10012
+    21300086: stand instance 10013
+    21300088: stand instance 10014
+    21300090: stand instance 10015
+    21300092: stand instance 10016
+    21300094: stand instance 10017
+    21300096: stand instance 10018
+    21300098: stand instance 10019
+    21300100: stand instance 10020
+    21300102: stand instance 10021
+    21300104: stand instance 10022
+    21300106: stand instance 10023
+    21300108: stand instance 10024
+    21300110: stand instance 10025
+    21300112: stand instance 10026
+    21300114: stand instance 10027
+    21300116: stand instance 10028
+    21300118: stand instance 10029
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: stand instance 10000
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 833
+        width: 102
+        height: 191
+      alignment: 9
+      pivot: {x: 0.3, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 63.4, y: 187}
+        - {x: 54.4, y: 191}
+        - {x: -7.6000004, y: 191}
+        - {x: -30.6, y: 178}
+        - {x: -30.6, y: 3}
+        - {x: 27.4, y: 3}
+        - {x: 38.4, y: 10}
+        - {x: 65.4, y: 119}
+        - {x: 65.4, y: 182}
+    - name: stand instance 10001
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 833
+        width: 102
+        height: 191
+      alignment: 9
+      pivot: {x: 0.3, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4.399994, y: 191}
+        - {x: -19.600006, y: 181}
+        - {x: -26.600006, y: 176}
+        - {x: -30.600006, y: 163}
+        - {x: -30.600006, y: 5}
+        - {x: -19.600006, y: 3}
+        - {x: 35.399994, y: 3}
+        - {x: 53.399994, y: 13}
+        - {x: 65.399994, y: 96}
+        - {x: 65.399994, y: 191}
+    - name: stand instance 10002
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 833
+        width: 102
+        height: 191
+      alignment: 9
+      pivot: {x: 0.3, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3.600006, y: 190}
+        - {x: -30.600006, y: 184}
+        - {x: -30.600006, y: 4}
+        - {x: -27.600006, y: 3}
+        - {x: 46.399994, y: 3}
+        - {x: 66.399994, y: 86}
+        - {x: 66.399994, y: 190}
+    - name: stand instance 10003
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 833
+        width: 102
+        height: 191
+      alignment: 9
+      pivot: {x: 0.3, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.600006, y: 190}
+        - {x: -27.600006, y: 182}
+        - {x: -30.600006, y: 164}
+        - {x: -30.600006, y: 20}
+        - {x: -29.600006, y: 6}
+        - {x: -8.600006, y: 3}
+        - {x: 24.399994, y: 3}
+        - {x: 66.399994, y: 90}
+        - {x: 66.399994, y: 184}
+        - {x: 58.399994, y: 190}
+    - name: stand instance 10004
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 833
+        width: 102
+        height: 191
+      alignment: 9
+      pivot: {x: 0.3, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 60.399994, y: 190}
+        - {x: -3.600006, y: 190}
+        - {x: -30.600006, y: 182}
+        - {x: -30.600006, y: 19}
+        - {x: -29.600006, y: 6}
+        - {x: -16.600006, y: 3}
+        - {x: 20.399994, y: 3}
+        - {x: 26.399994, y: 4}
+        - {x: 52.399994, y: 80}
+        - {x: 66.399994, y: 129}
+        - {x: 66.399994, y: 182}
+    - name: stand instance 10005
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 833
+        width: 102
+        height: 191
+      alignment: 9
+      pivot: {x: 0.3, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 31.400024, y: 67}
+        - {x: 27.400024, y: 79}
+        - {x: 23.400024, y: 90}
+        - {x: 48.400024, y: 87}
+        - {x: 66.400024, y: 88}
+        - {x: 66.400024, y: 190}
+        - {x: -25.599976, y: 190}
+        - {x: -30.599976, y: 174}
+        - {x: -30.599976, y: 3}
+        - {x: 22.400024, y: 3}
+        - {x: 26.400024, y: 13}
+        - {x: 26.400024, y: 30}
+        - {x: 31.400024, y: 52}
+    - name: stand instance 10006
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 833
+        width: 102
+        height: 191
+      alignment: 9
+      pivot: {x: 0.3, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.599976, y: 189}
+        - {x: -30.599976, y: 168}
+        - {x: -30.599976, y: 4}
+        - {x: -24.599976, y: 3}
+        - {x: 26.400024, y: 3}
+        - {x: 66.400024, y: 105}
+        - {x: 66.400024, y: 184}
+        - {x: 59.400024, y: 189}
+    - name: stand instance 10007
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 833
+        width: 102
+        height: 191
+      alignment: 9
+      pivot: {x: 0.3, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 48.400024, y: 85}
+        - {x: 67.400024, y: 133}
+        - {x: 67.400024, y: 164}
+        - {x: 59.400024, y: 189}
+        - {x: -21.599976, y: 189}
+        - {x: -30.599976, y: 170}
+        - {x: -30.599976, y: 10}
+        - {x: -26.599976, y: 3}
+        - {x: 25.400024, y: 3}
+        - {x: 26.400024, y: 4}
+        - {x: 26.400024, y: 22}
+        - {x: 32.400024, y: 50}
+        - {x: 30.400024, y: 77}
+    - name: stand instance 10008
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 833
+        width: 102
+        height: 191
+      alignment: 9
+      pivot: {x: 0.3, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -30.599976, y: 189}
+        - {x: -30.599976, y: 4}
+        - {x: -29.599976, y: 3}
+        - {x: 23.400024, y: 3}
+        - {x: 67.400024, y: 140}
+        - {x: 67.400024, y: 169}
+        - {x: 59.400024, y: 189}
+    - name: stand instance 10009
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 833
+        width: 102
+        height: 191
+      alignment: 9
+      pivot: {x: 0.3, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -30.599976, y: 188}
+        - {x: -30.599976, y: 4}
+        - {x: -24.599976, y: 3}
+        - {x: 27.400024, y: 3}
+        - {x: 67.400024, y: 111}
+        - {x: 67.400024, y: 188}
+    - name: stand instance 10010
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 642
+        width: 102
+        height: 191
+      alignment: 9
+      pivot: {x: 0.3, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.6, y: 188}
+        - {x: -30.6, y: 161}
+        - {x: -30.6, y: 12}
+        - {x: -21.6, y: 3}
+        - {x: 30.4, y: 3}
+        - {x: 67.4, y: 25}
+        - {x: 67.4, y: 188}
+    - name: stand instance 10011
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 642
+        width: 102
+        height: 191
+      alignment: 9
+      pivot: {x: 0.3, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12.399994, y: 188}
+        - {x: -19.600006, y: 186}
+        - {x: -30.600006, y: 174}
+        - {x: -30.600006, y: 3}
+        - {x: 21.399994, y: 3}
+        - {x: 26.399994, y: 4}
+        - {x: 67.399994, y: 117}
+        - {x: 67.399994, y: 178}
+        - {x: 61.399994, y: 188}
+    - name: stand instance 10012
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 642
+        width: 102
+        height: 191
+      alignment: 9
+      pivot: {x: 0.3, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.600006, y: 187}
+        - {x: -30.600006, y: 181}
+        - {x: -30.600006, y: 17}
+        - {x: -23.600006, y: 3}
+        - {x: 22.399994, y: 3}
+        - {x: 67.399994, y: 107}
+        - {x: 67.399994, y: 177}
+        - {x: 63.399994, y: 187}
+    - name: stand instance 10013
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 642
+        width: 102
+        height: 191
+      alignment: 9
+      pivot: {x: 0.3, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -29.600006, y: 187}
+        - {x: -29.600006, y: 3}
+        - {x: 30.399994, y: 3}
+        - {x: 67.399994, y: 91}
+        - {x: 67.399994, y: 180}
+        - {x: 64.399994, y: 187}
+    - name: stand instance 10014
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 642
+        width: 102
+        height: 191
+      alignment: 9
+      pivot: {x: 0.3, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21.600006, y: 186}
+        - {x: -29.600006, y: 163}
+        - {x: -29.600006, y: 3}
+        - {x: 28.399994, y: 3}
+        - {x: 67.399994, y: 102}
+        - {x: 67.399994, y: 176}
+        - {x: 63.399994, y: 186}
+    - name: stand instance 10015
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 642
+        width: 102
+        height: 191
+      alignment: 9
+      pivot: {x: 0.3, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10.599976, y: 187}
+        - {x: -28.599976, y: 180}
+        - {x: -29.599976, y: 171}
+        - {x: -29.599976, y: 14}
+        - {x: -28.599976, y: 3}
+        - {x: 34.400024, y: 3}
+        - {x: 67.400024, y: 102}
+        - {x: 67.400024, y: 179}
+        - {x: 56.400024, y: 187}
+    - name: stand instance 10016
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 642
+        width: 102
+        height: 191
+      alignment: 9
+      pivot: {x: 0.3, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 15.400024, y: 187}
+        - {x: -29.599976, y: 184}
+        - {x: -29.599976, y: 3}
+        - {x: 39.400024, y: 3}
+        - {x: 67.400024, y: 79}
+        - {x: 67.400024, y: 178}
+        - {x: 61.400024, y: 187}
+    - name: stand instance 10017
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 642
+        width: 102
+        height: 191
+      alignment: 9
+      pivot: {x: 0.3, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7.5999756, y: 188}
+        - {x: -22.599976, y: 187}
+        - {x: -30.599976, y: 133}
+        - {x: -30.599976, y: 26}
+        - {x: -28.599976, y: 7}
+        - {x: -8.599976, y: 3}
+        - {x: 25.400024, y: 3}
+        - {x: 67.400024, y: 110}
+        - {x: 67.400024, y: 175}
+        - {x: 62.400024, y: 188}
+    - name: stand instance 10018
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 642
+        width: 102
+        height: 191
+      alignment: 9
+      pivot: {x: 0.3, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.599976, y: 188}
+        - {x: -30.599976, y: 165}
+        - {x: -30.599976, y: 3}
+        - {x: 43.400024, y: 3}
+        - {x: 67.400024, y: 33}
+        - {x: 67.400024, y: 188}
+    - name: stand instance 10019
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 642
+        width: 102
+        height: 191
+      alignment: 9
+      pivot: {x: 0.3, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4.5999756, y: 188}
+        - {x: -23.599976, y: 183}
+        - {x: -30.599976, y: 173}
+        - {x: -30.599976, y: 4}
+        - {x: -25.599976, y: 3}
+        - {x: 29.400024, y: 3}
+        - {x: 67.400024, y: 107}
+        - {x: 67.400024, y: 171}
+        - {x: 58.400024, y: 188}
+    - name: stand instance 10020
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 451
+        width: 102
+        height: 191
+      alignment: 9
+      pivot: {x: 0.3, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26.6, y: 188}
+        - {x: -30.6, y: 173}
+        - {x: -30.6, y: 4}
+        - {x: -23.6, y: 3}
+        - {x: 26.4, y: 3}
+        - {x: 67.4, y: 107}
+        - {x: 67.4, y: 173}
+        - {x: 60.4, y: 188}
+    - name: stand instance 10021
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 451
+        width: 102
+        height: 191
+      alignment: 9
+      pivot: {x: 0.3, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.600006, y: 189}
+        - {x: -13.600006, y: 187}
+        - {x: -30.600006, y: 172}
+        - {x: -30.600006, y: 3}
+        - {x: 24.399994, y: 3}
+        - {x: 67.399994, y: 95}
+        - {x: 67.399994, y: 177}
+        - {x: 58.399994, y: 189}
+    - name: stand instance 10022
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 451
+        width: 102
+        height: 191
+      alignment: 9
+      pivot: {x: 0.3, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27.600006, y: 189}
+        - {x: -30.600006, y: 176}
+        - {x: -30.600006, y: 3}
+        - {x: 43.399994, y: 3}
+        - {x: 66.399994, y: 86}
+        - {x: 66.399994, y: 189}
+    - name: stand instance 10023
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 451
+        width: 102
+        height: 191
+      alignment: 9
+      pivot: {x: 0.3, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -30.600006, y: 189}
+        - {x: -30.600006, y: 3}
+        - {x: 43.399994, y: 3}
+        - {x: 66.399994, y: 51}
+        - {x: 66.399994, y: 186}
+        - {x: 63.399994, y: 189}
+    - name: stand instance 10024
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 451
+        width: 102
+        height: 191
+      alignment: 9
+      pivot: {x: 0.3, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 51.399994, y: 84}
+        - {x: 66.399994, y: 117}
+        - {x: 66.399994, y: 173}
+        - {x: 58.399994, y: 190}
+        - {x: -20.600006, y: 190}
+        - {x: -30.600006, y: 174}
+        - {x: -30.600006, y: 4}
+        - {x: -23.600006, y: 3}
+        - {x: 25.399994, y: 3}
+        - {x: 28.399994, y: 31}
+        - {x: 30.399994, y: 51}
+        - {x: 30.399994, y: 66}
+    - name: stand instance 10025
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 451
+        width: 102
+        height: 191
+      alignment: 9
+      pivot: {x: 0.3, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23.599976, y: 190}
+        - {x: -30.599976, y: 169}
+        - {x: -30.599976, y: 6}
+        - {x: -17.599976, y: 3}
+        - {x: 32.400024, y: 3}
+        - {x: 66.400024, y: 108}
+        - {x: 66.400024, y: 179}
+        - {x: 54.400024, y: 190}
+    - name: stand instance 10026
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 451
+        width: 102
+        height: 191
+      alignment: 9
+      pivot: {x: 0.3, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0.4000244, y: 190}
+        - {x: -30.599976, y: 183}
+        - {x: -30.599976, y: 10}
+        - {x: -29.599976, y: 6}
+        - {x: -8.599976, y: 3}
+        - {x: 25.400024, y: 3}
+        - {x: 54.400024, y: 49}
+        - {x: 66.400024, y: 99}
+        - {x: 66.400024, y: 190}
+    - name: stand instance 10027
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 451
+        width: 102
+        height: 191
+      alignment: 9
+      pivot: {x: 0.3, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 56.400024, y: 191}
+        - {x: -12.599976, y: 191}
+        - {x: -17.599976, y: 190}
+        - {x: -30.599976, y: 177}
+        - {x: -30.599976, y: 3}
+        - {x: 30.400024, y: 3}
+        - {x: 66.400024, y: 95}
+        - {x: 66.400024, y: 174}
+    - name: stand instance 10028
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 451
+        width: 102
+        height: 191
+      alignment: 9
+      pivot: {x: 0.3, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -30.599976, y: 191}
+        - {x: -30.599976, y: 13}
+        - {x: -26.599976, y: 9}
+        - {x: -12.599976, y: 3}
+        - {x: 40.400024, y: 3}
+        - {x: 65.400024, y: 54}
+        - {x: 65.400024, y: 191}
+    - name: stand instance 10029
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 451
+        width: 102
+        height: 191
+      alignment: 9
+      pivot: {x: 0.3, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.599976, y: 191}
+        - {x: -30.599976, y: 174}
+        - {x: -30.599976, y: 13}
+        - {x: -29.599976, y: 6}
+        - {x: -15.599976, y: 3}
+        - {x: 28.400024, y: 3}
+        - {x: 65.400024, y: 114}
+        - {x: 65.400024, y: 179}
+        - {x: 51.400024, y: 191}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

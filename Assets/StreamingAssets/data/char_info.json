@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "name": "Harakternik",
+        "speed": 2
+    },
+    {
+        "id": 2,
+        "name": "Nelya Gantelya",
+        "speed": 1.5
+    }
+]

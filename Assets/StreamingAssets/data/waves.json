@@ -1,0 +1,27 @@
+[
+    {
+        "waveid": 1,
+        "enemyencounteridlist": "1,1,1,1,1,1",
+        "encounterspeed": 10,
+        "timersec": 600,
+        "defencehp": 100
+    },
+    {
+        "waveid": 2,
+        "enemyencounteridlist": "2,2,2,2,2,2,2,2",
+        "encounterspeed": 5,
+        "defencehp": 200,
+        "defencespeed": 5
+    },
+    {
+        "waveid": 3,
+        "enemyencounteridlist": "1,1,1,1,1,2,2,2,2,2,2",
+        "encounterspeed": 15
+    },
+    {
+        "waveid": 4,
+        "enemyencounteridlist": "1,1,1,1,1,2,2,2,2,2,2,3,3,3,3,3,4",
+        "encounterspeed": 10,
+        "timersec": 1200
+    }
+]

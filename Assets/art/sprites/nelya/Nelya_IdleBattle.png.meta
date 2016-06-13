@@ -1,0 +1,787 @@
+fileFormatVersion: 2
+guid: bab9ac36cd1822849ab9002c28e37f40
+timeCreated: 1461062829
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: stand_battle0000
+    21300002: stand_battle0001
+    21300004: stand_battle0002
+    21300006: stand_battle0003
+    21300008: stand_battle0004
+    21300010: stand_battle0005
+    21300012: stand_battle0006
+    21300014: stand_battle0007
+    21300016: stand_battle0008
+    21300018: stand_battle0009
+    21300020: stand_battle0010
+    21300022: stand_battle0011
+    21300024: stand_battle0012
+    21300026: stand_battle0013
+    21300028: stand_battle0014
+    21300030: stand_battle0015
+    21300032: stand_battle0016
+    21300034: stand_battle0017
+    21300036: stand_battle0018
+    21300038: stand_battle0019
+    21300040: stand_battle0020
+    21300042: stand_battle0021
+    21300044: stand_battle0022
+    21300046: stand_battle0023
+    21300048: stand_battle0024
+    21300050: stand_battle0025
+    21300052: stand_battle0026
+    21300054: stand_battle0027
+    21300056: stand_battle0028
+    21300058: stand_battle0029
+    21300060: stand_battle instance 10000
+    21300062: stand_battle instance 10001
+    21300064: stand_battle instance 10002
+    21300066: stand_battle instance 10003
+    21300068: stand_battle instance 10004
+    21300070: stand_battle instance 10005
+    21300072: stand_battle instance 10006
+    21300074: stand_battle instance 10007
+    21300076: stand_battle instance 10008
+    21300078: stand_battle instance 10009
+    21300080: stand_battle instance 10010
+    21300082: stand_battle instance 10011
+    21300084: stand_battle instance 10012
+    21300086: stand_battle instance 10013
+    21300088: stand_battle instance 10014
+    21300090: stand_battle instance 10015
+    21300092: stand_battle instance 10016
+    21300094: stand_battle instance 10017
+    21300096: stand_battle instance 10018
+    21300098: stand_battle instance 10019
+    21300100: stand_battle instance 10020
+    21300102: stand_battle instance 10021
+    21300104: stand_battle instance 10022
+    21300106: stand_battle instance 10023
+    21300108: stand_battle instance 10024
+    21300110: stand_battle instance 10025
+    21300112: stand_battle instance 10026
+    21300114: stand_battle instance 10027
+    21300116: stand_battle instance 10028
+    21300118: stand_battle instance 10029
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: stand_battle instance 10000
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 832
+        width: 116
+        height: 192
+      alignment: 9
+      pivot: {x: 0.36, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -41.760002, y: 192}
+        - {x: -41.760002, y: 54}
+        - {x: -38.760002, y: 5}
+        - {x: 32.239998, y: 5}
+        - {x: 58.239998, y: 104}
+        - {x: 58.239998, y: 192}
+    - name: stand_battle instance 10001
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 832
+        width: 116
+        height: 192
+      alignment: 9
+      pivot: {x: 0.36, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 46.23999, y: 191}
+        - {x: -40.76001, y: 191}
+        - {x: -40.76001, y: 30}
+        - {x: -25.76001, y: 5}
+        - {x: -7.76001, y: 7}
+        - {x: -0.76000977, y: 10}
+        - {x: -0.76000977, y: 37}
+        - {x: 1.2399902, y: 5}
+        - {x: 6.23999, y: 4}
+        - {x: 45.23999, y: 4}
+        - {x: 59.23999, y: 125}
+        - {x: 59.23999, y: 169}
+    - name: stand_battle instance 10002
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 832
+        width: 116
+        height: 192
+      alignment: 9
+      pivot: {x: 0.36, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -39.76001, y: 190}
+        - {x: -39.76001, y: 4}
+        - {x: 31.23999, y: 4}
+        - {x: 34.23999, y: 5}
+        - {x: 60.23999, y: 99}
+        - {x: 60.23999, y: 170}
+        - {x: 49.23999, y: 190}
+    - name: stand_battle instance 10003
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 832
+        width: 116
+        height: 192
+      alignment: 9
+      pivot: {x: 0.36, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 2.2399902, y: 190}
+        - {x: -38.76001, y: 184}
+        - {x: -38.76001, y: 68}
+        - {x: -37.76001, y: 50}
+        - {x: -27.76001, y: 4}
+        - {x: -22.76001, y: 4}
+        - {x: -6.76001, y: 7}
+        - {x: -2.7600098, y: 9}
+        - {x: -0.76000977, y: 11}
+        - {x: -0.76000977, y: 25}
+        - {x: 5.23999, y: 6}
+        - {x: 6.23999, y: 4}
+        - {x: 35.23999, y: 4}
+        - {x: 61.23999, y: 110}
+        - {x: 61.23999, y: 173}
+        - {x: 55.23999, y: 190}
+    - name: stand_battle instance 10004
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 832
+        width: 116
+        height: 192
+      alignment: 9
+      pivot: {x: 0.36, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -37.76001, y: 189}
+        - {x: -37.76001, y: 5}
+        - {x: -36.76001, y: 4}
+        - {x: 45.23999, y: 4}
+        - {x: 62.23999, y: 106}
+        - {x: 62.23999, y: 165}
+        - {x: 53.23999, y: 189}
+    - name: stand_battle instance 10005
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 832
+        width: 116
+        height: 192
+      alignment: 9
+      pivot: {x: 0.36, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -36.76001, y: 188}
+        - {x: -36.76001, y: 13}
+        - {x: -29.76001, y: 4}
+        - {x: 35.23999, y: 4}
+        - {x: 60.23999, y: 33}
+        - {x: 63.23999, y: 59}
+        - {x: 63.23999, y: 188}
+    - name: stand_battle instance 10006
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 832
+        width: 116
+        height: 192
+      alignment: 9
+      pivot: {x: 0.36, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23.76001, y: 187}
+        - {x: -37.76001, y: 175}
+        - {x: -37.76001, y: 7}
+        - {x: -36.76001, y: 4}
+        - {x: 50.23999, y: 4}
+        - {x: 64.23999, y: 94}
+        - {x: 64.23999, y: 187}
+    - name: stand_battle instance 10007
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 832
+        width: 116
+        height: 192
+      alignment: 9
+      pivot: {x: 0.36, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -37.76001, y: 186}
+        - {x: -37.76001, y: 10}
+        - {x: -31.76001, y: 4}
+        - {x: 65.23999, y: 4}
+        - {x: 65.23999, y: 186}
+    - name: stand_battle instance 10008
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 640
+        width: 116
+        height: 192
+      alignment: 9
+      pivot: {x: 0.36, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -0.76000214, y: 186}
+        - {x: -5.760002, y: 185}
+        - {x: -33.760002, y: 174}
+        - {x: -38.760002, y: 102}
+        - {x: -38.760002, y: 39}
+        - {x: -24.760002, y: 3}
+        - {x: 59.239998, y: 3}
+        - {x: 66.24, y: 15}
+        - {x: 66.24, y: 186}
+    - name: stand_battle instance 10009
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 640
+        width: 116
+        height: 192
+      alignment: 9
+      pivot: {x: 0.36, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35.76001, y: 185}
+        - {x: -39.76001, y: 155}
+        - {x: -39.76001, y: 21}
+        - {x: -28.76001, y: 3}
+        - {x: 44.23999, y: 3}
+        - {x: 67.23999, y: 124}
+        - {x: 67.23999, y: 169}
+        - {x: 61.23999, y: 185}
+    - name: stand_battle instance 10010
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 640
+        width: 116
+        height: 192
+      alignment: 9
+      pivot: {x: 0.36, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 20.23999, y: 80}
+        - {x: 52.23999, y: 74}
+        - {x: 68.23999, y: 86}
+        - {x: 68.23999, y: 178}
+        - {x: 66.23999, y: 184}
+        - {x: -11.76001, y: 184}
+        - {x: -31.76001, y: 175}
+        - {x: -39.76001, y: 80}
+        - {x: -39.76001, y: 34}
+        - {x: -36.76001, y: 3}
+        - {x: 27.23999, y: 3}
+        - {x: 31.23999, y: 9}
+        - {x: 30.23999, y: 18}
+        - {x: 27.23999, y: 34}
+    - name: stand_battle instance 10011
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 640
+        width: 116
+        height: 192
+      alignment: 9
+      pivot: {x: 0.36, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -28.76001, y: 183}
+        - {x: -40.76001, y: 125}
+        - {x: -40.76001, y: 24}
+        - {x: -24.76001, y: 3}
+        - {x: 33.23999, y: 3}
+        - {x: 69.23999, y: 118}
+        - {x: 69.23999, y: 183}
+    - name: stand_battle instance 10012
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 640
+        width: 116
+        height: 192
+      alignment: 9
+      pivot: {x: 0.36, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21.76001, y: 182}
+        - {x: -35.76001, y: 180}
+        - {x: -40.76001, y: 128}
+        - {x: -40.76001, y: 46}
+        - {x: -26.76001, y: 3}
+        - {x: 38.23999, y: 3}
+        - {x: 70.23999, y: 105}
+        - {x: 70.23999, y: 182}
+    - name: stand_battle instance 10013
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 640
+        width: 116
+        height: 192
+      alignment: 9
+      pivot: {x: 0.36, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -36.76001, y: 182}
+        - {x: -41.76001, y: 162}
+        - {x: -41.76001, y: 22}
+        - {x: -31.76001, y: 3}
+        - {x: -11.76001, y: 3}
+        - {x: 3.2399902, y: 11}
+        - {x: 5.23999, y: 4}
+        - {x: 9.23999, y: 3}
+        - {x: 29.23999, y: 3}
+        - {x: 41.23999, y: 6}
+        - {x: 71.23999, y: 118}
+        - {x: 71.23999, y: 182}
+    - name: stand_battle instance 10014
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 640
+        width: 116
+        height: 192
+      alignment: 9
+      pivot: {x: 0.36, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15.76001, y: 181}
+        - {x: -41.76001, y: 107}
+        - {x: -41.76001, y: 20}
+        - {x: -24.76001, y: 3}
+        - {x: -2.7600098, y: 3}
+        - {x: 2.2399902, y: 12}
+        - {x: 2.2399902, y: 18}
+        - {x: 0.23999023, y: 25}
+        - {x: 8.23999, y: 3}
+        - {x: 47.23999, y: 3}
+        - {x: 71.23999, y: 100}
+        - {x: 71.23999, y: 181}
+    - name: stand_battle instance 10015
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 640
+        width: 116
+        height: 192
+      alignment: 9
+      pivot: {x: 0.36, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 71.23999, y: 121}
+        - {x: 71.23999, y: 163}
+        - {x: 64.23999, y: 182}
+        - {x: 10.23999, y: 182}
+        - {x: -24.76001, y: 176}
+        - {x: -41.76001, y: 83}
+        - {x: -41.76001, y: 45}
+        - {x: -24.76001, y: 5}
+        - {x: -16.76001, y: 3}
+        - {x: -11.76001, y: 3}
+        - {x: 3.2399902, y: 11}
+        - {x: 5.23999, y: 4}
+        - {x: 9.23999, y: 3}
+        - {x: 22.23999, y: 3}
+        - {x: 33.23999, y: 9}
+        - {x: 28.23999, y: 36}
+        - {x: 51.23999, y: 78}
+    - name: stand_battle instance 10016
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 448
+        width: 116
+        height: 192
+      alignment: 9
+      pivot: {x: 0.36, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19.760002, y: 182}
+        - {x: -40.760002, y: 143}
+        - {x: -40.760002, y: 13}
+        - {x: -29.760002, y: 3}
+        - {x: -2.7600021, y: 3}
+        - {x: 2.2399979, y: 11}
+        - {x: 1.2399979, y: 20}
+        - {x: 0.23999786, y: 25}
+        - {x: 6.239998, y: 4}
+        - {x: 7.239998, y: 3}
+        - {x: 58.239998, y: 3}
+        - {x: 70.24, y: 100}
+        - {x: 70.24, y: 182}
+    - name: stand_battle instance 10017
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 448
+        width: 116
+        height: 192
+      alignment: 9
+      pivot: {x: 0.36, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29.23999, y: 23}
+        - {x: 27.23999, y: 34}
+        - {x: 53.23999, y: 74}
+        - {x: 69.23999, y: 104}
+        - {x: 69.23999, y: 168}
+        - {x: 59.23999, y: 183}
+        - {x: -23.76001, y: 183}
+        - {x: -40.76001, y: 109}
+        - {x: -40.76001, y: 26}
+        - {x: -25.76001, y: 3}
+        - {x: -15.76001, y: 3}
+        - {x: -0.76000977, y: 9}
+        - {x: 2.2399902, y: 11}
+        - {x: 1.2399902, y: 23}
+        - {x: 5.23999, y: 4}
+        - {x: 8.23999, y: 3}
+        - {x: 21.23999, y: 3}
+        - {x: 29.23999, y: 8}
+        - {x: 31.23999, y: 11}
+        - {x: 31.23999, y: 16}
+    - name: stand_battle instance 10018
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 448
+        width: 116
+        height: 192
+      alignment: 9
+      pivot: {x: 0.36, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26.76001, y: 184}
+        - {x: -39.76001, y: 117}
+        - {x: -39.76001, y: 24}
+        - {x: -26.76001, y: 5}
+        - {x: -22.76001, y: 3}
+        - {x: 22.23999, y: 3}
+        - {x: 53.23999, y: 22}
+        - {x: 68.23999, y: 87}
+        - {x: 68.23999, y: 184}
+    - name: stand_battle instance 10019
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 448
+        width: 116
+        height: 192
+      alignment: 9
+      pivot: {x: 0.36, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 67.23999, y: 166}
+        - {x: 55.23999, y: 184}
+        - {x: 18.23999, y: 184}
+        - {x: -13.76001, y: 178}
+        - {x: -30.76001, y: 175}
+        - {x: -39.76001, y: 95}
+        - {x: -39.76001, y: 36}
+        - {x: -24.76001, y: 3}
+        - {x: -14.76001, y: 3}
+        - {x: -10.76001, y: 4}
+        - {x: 2.2399902, y: 11}
+        - {x: 1.2399902, y: 17}
+        - {x: 6.23999, y: 3}
+        - {x: 20.23999, y: 3}
+        - {x: 34.23999, y: 7}
+        - {x: 33.23999, y: 19}
+        - {x: 58.23999, y: 86}
+        - {x: 67.23999, y: 138}
+    - name: stand_battle instance 10020
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 448
+        width: 116
+        height: 192
+      alignment: 9
+      pivot: {x: 0.36, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -36.76001, y: 185}
+        - {x: -38.76001, y: 177}
+        - {x: -38.76001, y: 16}
+        - {x: -31.76001, y: 4}
+        - {x: 28.23999, y: 4}
+        - {x: 35.23999, y: 7}
+        - {x: 66.23999, y: 117}
+        - {x: 66.23999, y: 171}
+        - {x: 55.23999, y: 185}
+    - name: stand_battle instance 10021
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 448
+        width: 116
+        height: 192
+      alignment: 9
+      pivot: {x: 0.36, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23.76001, y: 186}
+        - {x: -38.76001, y: 138}
+        - {x: -38.76001, y: 48}
+        - {x: -26.76001, y: 6}
+        - {x: -18.76001, y: 4}
+        - {x: -16.76001, y: 4}
+        - {x: -4.76001, y: 7}
+        - {x: 1.2399902, y: 10}
+        - {x: 0.23999023, y: 20}
+        - {x: -0.76000977, y: 27}
+        - {x: 6.23999, y: 4}
+        - {x: 45.23999, y: 4}
+        - {x: 65.23999, y: 50}
+        - {x: 65.23999, y: 185}
+        - {x: 64.23999, y: 186}
+    - name: stand_battle instance 10022
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 448
+        width: 116
+        height: 192
+      alignment: 9
+      pivot: {x: 0.36, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 49.23999, y: 187}
+        - {x: 16.23999, y: 187}
+        - {x: -23.76001, y: 182}
+        - {x: -37.76001, y: 152}
+        - {x: -37.76001, y: 43}
+        - {x: -28.76001, y: 5}
+        - {x: -14.76001, y: 6}
+        - {x: -5.76001, y: 8}
+        - {x: -1.7600098, y: 9}
+        - {x: 0.23999023, y: 11}
+        - {x: -0.76000977, y: 29}
+        - {x: -1.7600098, y: 36}
+        - {x: -2.7600098, y: 38}
+        - {x: 0.23999023, y: 35}
+        - {x: 0.23999023, y: 34}
+        - {x: 2.2399902, y: 4}
+        - {x: 32.23999, y: 4}
+        - {x: 34.23999, y: 22}
+        - {x: 64.23999, y: 104}
+        - {x: 64.23999, y: 179}
+    - name: stand_battle instance 10023
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 448
+        width: 116
+        height: 192
+      alignment: 9
+      pivot: {x: 0.36, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0.23999023, y: 188}
+        - {x: -18.76001, y: 182}
+        - {x: -30.76001, y: 175}
+        - {x: -36.76001, y: 131}
+        - {x: -36.76001, y: 121}
+        - {x: -26.76001, y: 102}
+        - {x: -35.76001, y: 71}
+        - {x: -36.76001, y: 65}
+        - {x: -36.76001, y: 49}
+        - {x: -27.76001, y: 7}
+        - {x: -15.76001, y: 4}
+        - {x: -14.76001, y: 4}
+        - {x: 2.2399902, y: 10}
+        - {x: 0.23999023, y: 28}
+        - {x: -1.7600098, y: 36}
+        - {x: -2.7600098, y: 38}
+        - {x: 2.2399902, y: 30}
+        - {x: 3.2399902, y: 21}
+        - {x: 5.23999, y: 6}
+        - {x: 5.23999, y: 4}
+        - {x: 38.23999, y: 4}
+        - {x: 63.23999, y: 65}
+        - {x: 63.23999, y: 179}
+        - {x: 55.23999, y: 188}
+    - name: stand_battle instance 10024
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 116
+        height: 192
+      alignment: 9
+      pivot: {x: 0.36, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2.7600021, y: 188}
+        - {x: -36.760002, y: 178}
+        - {x: -36.760002, y: 44}
+        - {x: -24.760002, y: 4}
+        - {x: -1.7600021, y: 9}
+        - {x: -0.76000214, y: 11}
+        - {x: -0.76000214, y: 27}
+        - {x: -1.7600021, y: 37}
+        - {x: 3.2399979, y: 12}
+        - {x: 5.239998, y: 4}
+        - {x: 41.239998, y: 4}
+        - {x: 62.239998, y: 98}
+        - {x: 62.239998, y: 188}
+    - name: stand_battle instance 10025
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 256
+        width: 116
+        height: 192
+      alignment: 9
+      pivot: {x: 0.36, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 40.23999, y: 88}
+        - {x: 48.23999, y: 87}
+        - {x: 61.23999, y: 89}
+        - {x: 61.23999, y: 189}
+        - {x: -37.76001, y: 189}
+        - {x: -37.76001, y: 4}
+        - {x: 25.23999, y: 4}
+        - {x: 31.23999, y: 7}
+        - {x: 28.23999, y: 35}
+        - {x: 22.23999, y: 124}
+        - {x: 29.23999, y: 99}
+    - name: stand_battle instance 10026
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 256
+        width: 116
+        height: 192
+      alignment: 9
+      pivot: {x: 0.36, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -30.76001, y: 4}
+        - {x: -16.76001, y: 4}
+        - {x: -6.76001, y: 6}
+        - {x: 0.23999023, y: 10}
+        - {x: -0.76000977, y: 30}
+        - {x: 4.23999, y: 5}
+        - {x: 3.2399902, y: 4}
+        - {x: 55.23999, y: 4}
+        - {x: 60.23999, y: 8}
+        - {x: 60.23999, y: 190}
+        - {x: -38.76001, y: 190}
+        - {x: -38.76001, y: 23}
+    - name: stand_battle instance 10027
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 256
+        width: 116
+        height: 192
+      alignment: 9
+      pivot: {x: 0.36, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 48.23999, y: 191}
+        - {x: -35.76001, y: 191}
+        - {x: -39.76001, y: 183}
+        - {x: -39.76001, y: 13}
+        - {x: -37.76001, y: 4}
+        - {x: 30.23999, y: 4}
+        - {x: 34.23999, y: 7}
+        - {x: 60.23999, y: 90}
+        - {x: 60.23999, y: 174}
+    - name: stand_battle instance 10028
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 256
+        width: 116
+        height: 192
+      alignment: 9
+      pivot: {x: 0.36, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -40.76001, y: 191}
+        - {x: -40.76001, y: 4}
+        - {x: 40.23999, y: 4}
+        - {x: 59.23999, y: 76}
+        - {x: 59.23999, y: 191}
+    - name: stand_battle instance 10029
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 256
+        width: 116
+        height: 192
+      alignment: 9
+      pivot: {x: 0.36, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -36.76001, y: 192}
+        - {x: -41.76001, y: 174}
+        - {x: -41.76001, y: 49}
+        - {x: -28.76001, y: 5}
+        - {x: 28.23999, y: 5}
+        - {x: 58.23999, y: 112}
+        - {x: 58.23999, y: 177}
+        - {x: 42.23999, y: 192}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,813 @@
+fileFormatVersion: 2
+guid: 5f9dfdd008d6a2b41b799552a88d3f6e
+timeCreated: 1461175721
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Mavka_st instance 10000
+    21300002: Mavka_st instance 10001
+    21300004: Mavka_st instance 10002
+    21300006: Mavka_st instance 10003
+    21300008: Mavka_st instance 10004
+    21300010: Mavka_st instance 10005
+    21300012: Mavka_st instance 10006
+    21300014: Mavka_st instance 10007
+    21300016: Mavka_st instance 10008
+    21300018: Mavka_st instance 10009
+    21300020: Mavka_st instance 10010
+    21300022: Mavka_st instance 10011
+    21300024: Mavka_st instance 10012
+    21300026: Mavka_st instance 10013
+    21300028: Mavka_st instance 10014
+    21300030: Mavka_st instance 10015
+    21300032: Mavka_st instance 10016
+    21300034: Mavka_st instance 10017
+    21300036: Mavka_st instance 10018
+    21300038: Mavka_st instance 10019
+    21300040: Mavka_st instance 10020
+    21300042: Mavka_st instance 10021
+    21300044: Mavka_st instance 10022
+    21300046: Mavka_st instance 10023
+    21300048: Mavka_st instance 10024
+    21300050: Mavka_st instance 10025
+    21300052: Mavka_st instance 10026
+    21300054: Mavka_st instance 10027
+    21300056: Mavka_st instance 10028
+    21300058: Mavka_st instance 10029
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Mavka_st instance 10000
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 840
+        width: 100
+        height: 184
+      alignment: 9
+      pivot: {x: 0.46, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 37, y: 184}
+        - {x: -8, y: 184}
+        - {x: -24, y: 164}
+        - {x: -41, y: 113}
+        - {x: -41, y: 45}
+        - {x: -26, y: 2}
+        - {x: -25, y: 2}
+        - {x: -2, y: 4}
+        - {x: 0, y: 6}
+        - {x: 0, y: 3}
+        - {x: 2, y: 2}
+        - {x: 33, y: 2}
+        - {x: 50, y: 35}
+        - {x: 50, y: 140}
+        - {x: 48, y: 158}
+    - name: Mavka_st instance 10001
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 840
+        width: 100
+        height: 184
+      alignment: 9
+      pivot: {x: 0.46, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 184}
+        - {x: -21, y: 181}
+        - {x: -41, y: 116}
+        - {x: -41, y: 72}
+        - {x: -31, y: 2}
+        - {x: -6, y: 2}
+        - {x: -1, y: 4}
+        - {x: 0, y: 6}
+        - {x: 0, y: 3}
+        - {x: 4, y: 2}
+        - {x: 30, y: 2}
+        - {x: 50, y: 12}
+        - {x: 50, y: 184}
+    - name: Mavka_st instance 10002
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 840
+        width: 100
+        height: 184
+      alignment: 9
+      pivot: {x: 0.46, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 184}
+        - {x: -22, y: 170}
+        - {x: -42, y: 102}
+        - {x: -42, y: 84}
+        - {x: -35, y: 77}
+        - {x: -28, y: 78}
+        - {x: -31, y: 20}
+        - {x: -21, y: 3}
+        - {x: -2, y: 4}
+        - {x: 0, y: 6}
+        - {x: 0, y: 3}
+        - {x: 2, y: 2}
+        - {x: 30, y: 2}
+        - {x: 50, y: 33}
+        - {x: 50, y: 184}
+    - name: Mavka_st instance 10003
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 840
+        width: 100
+        height: 184
+      alignment: 9
+      pivot: {x: 0.46, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 48, y: 184}
+        - {x: -31, y: 184}
+        - {x: -42, y: 154}
+        - {x: -42, y: 48}
+        - {x: -27, y: 2}
+        - {x: -7, y: 2}
+        - {x: -2, y: 4}
+        - {x: 0, y: 6}
+        - {x: 0, y: 3}
+        - {x: 4, y: 2}
+        - {x: 25, y: 2}
+        - {x: 37, y: 20}
+        - {x: 50, y: 42}
+        - {x: 50, y: 159}
+    - name: Mavka_st instance 10004
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 840
+        width: 100
+        height: 184
+      alignment: 9
+      pivot: {x: 0.46, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20, y: 184}
+        - {x: -42, y: 137}
+        - {x: -42, y: 36}
+        - {x: -30, y: 2}
+        - {x: -15, y: 2}
+        - {x: -2, y: 4}
+        - {x: 0, y: 6}
+        - {x: 0, y: 3}
+        - {x: 2, y: 2}
+        - {x: 29, y: 2}
+        - {x: 49, y: 39}
+        - {x: 49, y: 133}
+        - {x: 40, y: 184}
+    - name: Mavka_st instance 10005
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 840
+        width: 100
+        height: 184
+      alignment: 9
+      pivot: {x: 0.46, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23, y: 184}
+        - {x: -43, y: 128}
+        - {x: -43, y: 63}
+        - {x: -33, y: 19}
+        - {x: -20, y: 4}
+        - {x: -2, y: 4}
+        - {x: 0, y: 6}
+        - {x: 0, y: 3}
+        - {x: 1, y: 2}
+        - {x: 43, y: 2}
+        - {x: 49, y: 27}
+        - {x: 49, y: 181}
+        - {x: 45, y: 184}
+    - name: Mavka_st instance 10006
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 840
+        width: 100
+        height: 184
+      alignment: 9
+      pivot: {x: 0.46, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 184}
+        - {x: -43, y: 136}
+        - {x: -43, y: 7}
+        - {x: -27, y: 2}
+        - {x: 24, y: 2}
+        - {x: 46, y: 14}
+        - {x: 49, y: 17}
+        - {x: 49, y: 157}
+        - {x: 41, y: 184}
+    - name: Mavka_st instance 10007
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 840
+        width: 100
+        height: 184
+      alignment: 9
+      pivot: {x: 0.46, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26, y: 184}
+        - {x: -44, y: 149}
+        - {x: -44, y: 26}
+        - {x: -40, y: 11}
+        - {x: -16, y: 2}
+        - {x: 39, y: 2}
+        - {x: 49, y: 14}
+        - {x: 49, y: 167}
+        - {x: 45, y: 184}
+    - name: Mavka_st instance 10008
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 840
+        width: 100
+        height: 184
+      alignment: 9
+      pivot: {x: 0.46, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -44, y: 136}
+        - {x: -44, y: 56}
+        - {x: -26, y: 2}
+        - {x: -7, y: 2}
+        - {x: -2, y: 4}
+        - {x: 0, y: 6}
+        - {x: 0, y: 3}
+        - {x: 4, y: 2}
+        - {x: 33, y: 2}
+        - {x: 49, y: 8}
+        - {x: 49, y: 184}
+        - {x: -19, y: 184}
+        - {x: -21, y: 183}
+    - name: Mavka_st instance 10009
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 840
+        width: 100
+        height: 184
+      alignment: 9
+      pivot: {x: 0.46, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24, y: 184}
+        - {x: -44, y: 105}
+        - {x: -44, y: 82}
+        - {x: -38, y: 77}
+        - {x: -35, y: 18}
+        - {x: -21, y: 2}
+        - {x: -15, y: 2}
+        - {x: -2, y: 4}
+        - {x: 0, y: 6}
+        - {x: 0, y: 3}
+        - {x: 4, y: 2}
+        - {x: 26, y: 2}
+        - {x: 49, y: 33}
+        - {x: 49, y: 144}
+        - {x: 39, y: 184}
+    - name: Mavka_st instance 10010
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 656
+        width: 100
+        height: 184
+      alignment: 9
+      pivot: {x: 0.46, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21, y: 184}
+        - {x: -45, y: 109}
+        - {x: -45, y: 52}
+        - {x: -29, y: 2}
+        - {x: -16, y: 2}
+        - {x: -2, y: 4}
+        - {x: 0, y: 6}
+        - {x: 1, y: 10}
+        - {x: 3, y: 6}
+        - {x: 7, y: 2}
+        - {x: 33, y: 2}
+        - {x: 48, y: 29}
+        - {x: 48, y: 148}
+        - {x: 33, y: 184}
+    - name: Mavka_st instance 10011
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 656
+        width: 100
+        height: 184
+      alignment: 9
+      pivot: {x: 0.46, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22, y: 184}
+        - {x: -45, y: 104}
+        - {x: -45, y: 60}
+        - {x: -32, y: 19}
+        - {x: -30, y: 18}
+        - {x: -21, y: 3}
+        - {x: -2, y: 4}
+        - {x: 0, y: 6}
+        - {x: 0, y: 3}
+        - {x: 4, y: 2}
+        - {x: 26, y: 2}
+        - {x: 48, y: 30}
+        - {x: 48, y: 140}
+        - {x: 39, y: 184}
+    - name: Mavka_st instance 10012
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 656
+        width: 100
+        height: 184
+      alignment: 9
+      pivot: {x: 0.46, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -29, y: 184}
+        - {x: -46, y: 174}
+        - {x: -46, y: 6}
+        - {x: -26, y: 2}
+        - {x: -14, y: 2}
+        - {x: -2, y: 4}
+        - {x: 0, y: 6}
+        - {x: 0, y: 3}
+        - {x: 1, y: 2}
+        - {x: 38, y: 2}
+        - {x: 48, y: 47}
+        - {x: 48, y: 168}
+        - {x: 37, y: 184}
+    - name: Mavka_st instance 10013
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 656
+        width: 100
+        height: 184
+      alignment: 9
+      pivot: {x: 0.46, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26, y: 184}
+        - {x: -46, y: 129}
+        - {x: -46, y: 63}
+        - {x: -32, y: 19}
+        - {x: -21, y: 3}
+        - {x: -2, y: 4}
+        - {x: 0, y: 6}
+        - {x: 0, y: 3}
+        - {x: 2, y: 2}
+        - {x: 30, y: 2}
+        - {x: 48, y: 33}
+        - {x: 48, y: 151}
+        - {x: 42, y: 184}
+    - name: Mavka_st instance 10014
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 656
+        width: 100
+        height: 184
+      alignment: 9
+      pivot: {x: 0.46, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23, y: 184}
+        - {x: -24, y: 183}
+        - {x: -46, y: 106}
+        - {x: -46, y: 79}
+        - {x: -40, y: 77}
+        - {x: -33, y: 78}
+        - {x: -35, y: 18}
+        - {x: -24, y: 4}
+        - {x: -2, y: 4}
+        - {x: 0, y: 6}
+        - {x: 0, y: 3}
+        - {x: 1, y: 2}
+        - {x: 38, y: 2}
+        - {x: 48, y: 18}
+        - {x: 48, y: 140}
+        - {x: 37, y: 184}
+    - name: Mavka_st instance 10015
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 656
+        width: 100
+        height: 184
+      alignment: 9
+      pivot: {x: 0.46, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20, y: 184}
+        - {x: -46, y: 106}
+        - {x: -46, y: 55}
+        - {x: -35, y: 18}
+        - {x: -24, y: 4}
+        - {x: -2, y: 4}
+        - {x: 0, y: 6}
+        - {x: 0, y: 3}
+        - {x: 4, y: 2}
+        - {x: 28, y: 2}
+        - {x: 48, y: 17}
+        - {x: 48, y: 179}
+        - {x: 37, y: 184}
+    - name: Mavka_st instance 10016
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 656
+        width: 100
+        height: 184
+      alignment: 9
+      pivot: {x: 0.46, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22, y: 184}
+        - {x: -46, y: 157}
+        - {x: -46, y: 9}
+        - {x: -43, y: 2}
+        - {x: 26, y: 2}
+        - {x: 48, y: 29}
+        - {x: 48, y: 142}
+        - {x: 39, y: 184}
+    - name: Mavka_st instance 10017
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 656
+        width: 100
+        height: 184
+      alignment: 9
+      pivot: {x: 0.46, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 37, y: 183}
+        - {x: 33, y: 184}
+        - {x: -33, y: 184}
+        - {x: -45, y: 179}
+        - {x: -45, y: 2}
+        - {x: 35, y: 2}
+        - {x: 48, y: 29}
+        - {x: 48, y: 125}
+        - {x: 44, y: 149}
+    - name: Mavka_st instance 10018
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 656
+        width: 100
+        height: 184
+      alignment: 9
+      pivot: {x: 0.46, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 184}
+        - {x: -26, y: 169}
+        - {x: -45, y: 109}
+        - {x: -45, y: 51}
+        - {x: -35, y: 18}
+        - {x: -21, y: 2}
+        - {x: -16, y: 2}
+        - {x: -2, y: 4}
+        - {x: 0, y: 6}
+        - {x: 0, y: 3}
+        - {x: 2, y: 2}
+        - {x: 35, y: 2}
+        - {x: 48, y: 26}
+        - {x: 48, y: 147}
+        - {x: 33, y: 184}
+    - name: Mavka_st instance 10019
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 656
+        width: 100
+        height: 184
+      alignment: 9
+      pivot: {x: 0.46, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23, y: 184}
+        - {x: -44, y: 118}
+        - {x: -44, y: 50}
+        - {x: -29, y: 2}
+        - {x: -15, y: 2}
+        - {x: -2, y: 4}
+        - {x: 0, y: 6}
+        - {x: 1, y: 4}
+        - {x: 3, y: 2}
+        - {x: 34, y: 2}
+        - {x: 48, y: 30}
+        - {x: 48, y: 143}
+        - {x: 42, y: 184}
+    - name: Mavka_st instance 10020
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 472
+        width: 100
+        height: 184
+      alignment: 9
+      pivot: {x: 0.46, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -44, y: 156}
+        - {x: -44, y: 56}
+        - {x: -27, y: 2}
+        - {x: -7, y: 2}
+        - {x: -2, y: 4}
+        - {x: 0, y: 6}
+        - {x: 0, y: 3}
+        - {x: 4, y: 2}
+        - {x: 28, y: 2}
+        - {x: 48, y: 17}
+        - {x: 48, y: 184}
+        - {x: -24, y: 184}
+        - {x: -40, y: 171}
+    - name: Mavka_st instance 10021
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 472
+        width: 100
+        height: 184
+      alignment: 9
+      pivot: {x: 0.46, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20, y: 184}
+        - {x: -22, y: 183}
+        - {x: -24, y: 160}
+        - {x: -44, y: 104}
+        - {x: -44, y: 82}
+        - {x: -43, y: 62}
+        - {x: -30, y: 2}
+        - {x: -5, y: 2}
+        - {x: -2, y: 4}
+        - {x: 0, y: 6}
+        - {x: 0, y: 3}
+        - {x: 3, y: 2}
+        - {x: 29, y: 2}
+        - {x: 49, y: 29}
+        - {x: 49, y: 136}
+        - {x: 39, y: 184}
+    - name: Mavka_st instance 10022
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 472
+        width: 100
+        height: 184
+      alignment: 9
+      pivot: {x: 0.46, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 184}
+        - {x: -25, y: 171}
+        - {x: -43, y: 107}
+        - {x: -43, y: 57}
+        - {x: -27, y: 2}
+        - {x: -7, y: 2}
+        - {x: -2, y: 4}
+        - {x: 0, y: 6}
+        - {x: 1, y: 4}
+        - {x: 3, y: 2}
+        - {x: 39, y: 2}
+        - {x: 49, y: 14}
+        - {x: 49, y: 148}
+        - {x: 38, y: 184}
+    - name: Mavka_st instance 10023
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 472
+        width: 100
+        height: 184
+      alignment: 9
+      pivot: {x: 0.46, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23, y: 184}
+        - {x: -43, y: 138}
+        - {x: -43, y: 52}
+        - {x: -29, y: 2}
+        - {x: -15, y: 2}
+        - {x: -2, y: 4}
+        - {x: 0, y: 6}
+        - {x: 1, y: 10}
+        - {x: 3, y: 6}
+        - {x: 7, y: 2}
+        - {x: 29, y: 2}
+        - {x: 49, y: 37}
+        - {x: 49, y: 134}
+        - {x: 38, y: 184}
+    - name: Mavka_st instance 10024
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 472
+        width: 100
+        height: 184
+      alignment: 9
+      pivot: {x: 0.46, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 184}
+        - {x: -43, y: 139}
+        - {x: -43, y: 20}
+        - {x: -33, y: 2}
+        - {x: -5, y: 2}
+        - {x: -2, y: 4}
+        - {x: 0, y: 6}
+        - {x: 0, y: 3}
+        - {x: 2, y: 2}
+        - {x: 35, y: 2}
+        - {x: 49, y: 18}
+        - {x: 49, y: 161}
+        - {x: 44, y: 184}
+    - name: Mavka_st instance 10025
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 472
+        width: 100
+        height: 184
+      alignment: 9
+      pivot: {x: 0.46, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 184}
+        - {x: -28, y: 162}
+        - {x: -42, y: 119}
+        - {x: -42, y: 48}
+        - {x: -25, y: 2}
+        - {x: -9, y: 2}
+        - {x: -2, y: 4}
+        - {x: 0, y: 6}
+        - {x: 0, y: 3}
+        - {x: 3, y: 2}
+        - {x: 28, y: 2}
+        - {x: 49, y: 38}
+        - {x: 49, y: 128}
+        - {x: 43, y: 184}
+    - name: Mavka_st instance 10026
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 472
+        width: 100
+        height: 184
+      alignment: 9
+      pivot: {x: 0.46, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 184}
+        - {x: -40, y: 174}
+        - {x: -42, y: 148}
+        - {x: -42, y: 58}
+        - {x: -32, y: 20}
+        - {x: -22, y: 6}
+        - {x: -20, y: 4}
+        - {x: -2, y: 4}
+        - {x: 0, y: 6}
+        - {x: 0, y: 3}
+        - {x: 4, y: 2}
+        - {x: 30, y: 2}
+        - {x: 49, y: 13}
+        - {x: 49, y: 184}
+    - name: Mavka_st instance 10027
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 472
+        width: 100
+        height: 184
+      alignment: 9
+      pivot: {x: 0.46, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 184}
+        - {x: -19, y: 169}
+        - {x: -20, y: 144}
+        - {x: -42, y: 102}
+        - {x: -42, y: 84}
+        - {x: -35, y: 77}
+        - {x: -28, y: 78}
+        - {x: -31, y: 20}
+        - {x: -21, y: 3}
+        - {x: -2, y: 4}
+        - {x: 0, y: 6}
+        - {x: 0, y: 3}
+        - {x: 2, y: 2}
+        - {x: 29, y: 2}
+        - {x: 50, y: 44}
+        - {x: 50, y: 139}
+        - {x: 40, y: 184}
+    - name: Mavka_st instance 10028
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 472
+        width: 100
+        height: 184
+      alignment: 9
+      pivot: {x: 0.46, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 184}
+        - {x: -21, y: 181}
+        - {x: -41, y: 116}
+        - {x: -41, y: 72}
+        - {x: -31, y: 2}
+        - {x: -6, y: 2}
+        - {x: -1, y: 4}
+        - {x: 0, y: 6}
+        - {x: 0, y: 3}
+        - {x: 4, y: 2}
+        - {x: 30, y: 2}
+        - {x: 50, y: 12}
+        - {x: 50, y: 184}
+    - name: Mavka_st instance 10029
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 472
+        width: 100
+        height: 184
+      alignment: 9
+      pivot: {x: 0.46, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 184}
+        - {x: -41, y: 181}
+        - {x: -41, y: 2}
+        - {x: -1, y: 2}
+        - {x: 0, y: 7}
+        - {x: 1, y: 17}
+        - {x: 3, y: 6}
+        - {x: 4, y: 2}
+        - {x: 48, y: 2}
+        - {x: 50, y: 14}
+        - {x: 50, y: 184}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

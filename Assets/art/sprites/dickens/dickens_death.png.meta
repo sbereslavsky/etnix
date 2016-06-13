@@ -1,0 +1,1140 @@
+fileFormatVersion: 2
+guid: 88ac6ea5cc8e7eb4885f22670b747936
+timeCreated: 1461177772
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: dickens_battle_death instance 10000
+    21300002: dickens_battle_death instance 10001
+    21300004: dickens_battle_death instance 10002
+    21300006: dickens_battle_death instance 10003
+    21300008: dickens_battle_death instance 10004
+    21300010: dickens_battle_death instance 10005
+    21300012: dickens_battle_death instance 10006
+    21300014: dickens_battle_death instance 10007
+    21300016: dickens_battle_death instance 10008
+    21300018: dickens_battle_death instance 10009
+    21300020: dickens_battle_death instance 10010
+    21300022: dickens_battle_death instance 10011
+    21300024: dickens_battle_death instance 10012
+    21300026: dickens_battle_death instance 10013
+    21300028: dickens_battle_death instance 10014
+    21300030: dickens_battle_death instance 10015
+    21300032: dickens_battle_death instance 10016
+    21300034: dickens_battle_death instance 10017
+    21300036: dickens_battle_death instance 10018
+    21300038: dickens_battle_death instance 10019
+    21300040: dickens_battle_death instance 10020
+    21300042: dickens_battle_death instance 10021
+    21300044: dickens_battle_death instance 10022
+    21300046: dickens_battle_death instance 10023
+    21300048: dickens_battle_death instance 10024
+    21300050: dickens_battle_death instance 10025
+    21300052: dickens_battle_death instance 10026
+    21300054: dickens_battle_death instance 10027
+    21300056: dickens_battle_death instance 10028
+    21300058: dickens_battle_death instance 10029
+    21300060: dickens_battle_death instance 10030
+    21300062: dickens_battle_death instance 10031
+    21300064: dickens_battle_death instance 10032
+    21300066: dickens_battle_death instance 10033
+    21300068: dickens_battle_death instance 10034
+    21300070: dickens_battle_death instance 10035
+    21300072: dickens_battle_death instance 10036
+    21300074: dickens_battle_death instance 10037
+    21300076: dickens_battle_death instance 10038
+    21300078: dickens_battle_death instance 10039
+    21300080: dickens_battle_death instance 10040
+    21300082: dickens_battle_death instance 10041
+    21300084: dickens_battle_death instance 10042
+    21300086: dickens_battle_death instance 10043
+    21300088: dickens_battle_death instance 10044
+    21300090: dickens_battle_death instance 10045
+    21300092: dickens_battle_death instance 10046
+    21300094: dickens_battle_death instance 10047
+    21300096: dickens_battle_death instance 10048
+    21300098: dickens_battle_death instance 10049
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: dickens_battle_death instance 10000
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1881
+        width: 204
+        height: 167
+      alignment: 9
+      pivot: {x: 0.28, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 17.880001, y: 101.93994}
+        - {x: 18.880001, y: 82.93994}
+        - {x: 13.880001, y: 117.93994}
+        - {x: 2.880001, y: 136.93994}
+        - {x: -18.119999, y: 136.93994}
+        - {x: -57.12, y: 118.93994}
+        - {x: -57.12, y: 77.93994}
+        - {x: -34.12, y: 6.9399414}
+        - {x: -22.119999, y: 3.9399414}
+        - {x: -19.119999, y: 7.9399414}
+        - {x: -19.119999, y: 5.9399414}
+        - {x: -15.119999, y: -0.060058594}
+        - {x: -6.119999, y: -2.0600586}
+        - {x: 18.880001, y: -2.0600586}
+        - {x: 21.880001, y: -1.0600586}
+        - {x: 47.88, y: 30.939941}
+        - {x: 47.88, y: 84.93994}
+        - {x: 39.88, y: 112.93994}
+    - name: dickens_battle_death instance 10001
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 1881
+        width: 204
+        height: 167
+      alignment: 9
+      pivot: {x: 0.28, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32.119995, y: 136.93994}
+        - {x: -53.119995, y: 108.93994}
+        - {x: -53.119995, y: 54.93994}
+        - {x: -33.119995, y: 5.9399414}
+        - {x: -19.119995, y: 0.9399414}
+        - {x: -19.119995, y: 5.9399414}
+        - {x: -20.119995, y: 21.939941}
+        - {x: -19.119995, y: 4.9399414}
+        - {x: -15.119995, y: 0.9399414}
+        - {x: -5.119995, y: 0.9399414}
+        - {x: -2.119995, y: 4.9399414}
+        - {x: 3.880005, y: -3.0600586}
+        - {x: 41.880005, y: -3.0600586}
+        - {x: 53.880005, y: 29.939941}
+        - {x: 53.880005, y: 136.93994}
+    - name: dickens_battle_death instance 10002
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 1881
+        width: 204
+        height: 167
+      alignment: 9
+      pivot: {x: 0.28, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 40.880005, y: 89.93994}
+        - {x: 5.880005, y: 135.93994}
+        - {x: -17.119995, y: 135.93994}
+        - {x: -48.119995, y: 112.93994}
+        - {x: -48.119995, y: 27.939941}
+        - {x: -27.119995, y: -4.0600586}
+        - {x: 51.880005, y: -4.0600586}
+        - {x: 63.880005, y: 10.939941}
+        - {x: 63.880005, y: 103.93994}
+        - {x: 46.880005, y: 98.93994}
+    - name: dickens_battle_death instance 10003
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 1881
+        width: 204
+        height: 167
+      alignment: 9
+      pivot: {x: 0.28, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 58.880005, y: 93.93994}
+        - {x: 30.880005, y: 135.93994}
+        - {x: -19.119995, y: 135.93994}
+        - {x: -42.119995, y: 123.93994}
+        - {x: -42.119995, y: 45.93994}
+        - {x: -31.119995, y: 1.9399414}
+        - {x: -16.119995, y: -4.0600586}
+        - {x: -13.119995, y: -4.0600586}
+        - {x: -5.119995, y: -1.0600586}
+        - {x: -0.11999512, y: 7.9399414}
+        - {x: 5.880005, y: 12.939941}
+        - {x: 5.880005, y: 18.939941}
+        - {x: 8.880005, y: 16.939941}
+        - {x: 1.8800049, y: 8.939941}
+        - {x: -3.119995, y: -4.0600586}
+        - {x: 28.880005, y: -4.0600586}
+        - {x: 75.880005, y: 17.939941}
+        - {x: 75.880005, y: 91.93994}
+        - {x: 73.880005, y: 93.93994}
+    - name: dickens_battle_death instance 10004
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 1881
+        width: 204
+        height: 167
+      alignment: 9
+      pivot: {x: 0.28, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.119995, y: 134.93994}
+        - {x: -39.119995, y: 116.93994}
+        - {x: -39.119995, y: 41.93994}
+        - {x: -34.119995, y: -5.0600586}
+        - {x: -26.119995, y: -5.0600586}
+        - {x: -7.119995, y: -1.0600586}
+        - {x: -4.119995, y: 1.9399414}
+        - {x: 5.880005, y: 12.939941}
+        - {x: 5.880005, y: 19.939941}
+        - {x: 9.880005, y: 16.939941}
+        - {x: 1.8800049, y: 7.9399414}
+        - {x: 0.8800049, y: -1.0600586}
+        - {x: 0.8800049, y: -5.0600586}
+        - {x: 30.880005, y: -5.0600586}
+        - {x: 74.880005, y: 17.939941}
+        - {x: 84.880005, y: 34.93994}
+        - {x: 84.880005, y: 110.93994}
+        - {x: 19.880005, y: 134.93994}
+    - name: dickens_battle_death instance 10005
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1714
+        width: 204
+        height: 167
+      alignment: 9
+      pivot: {x: 0.28, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15.119999, y: 133.93994}
+        - {x: -35.12, y: 107.93994}
+        - {x: -35.12, y: 60.93994}
+        - {x: -31.119999, y: 10.939941}
+        - {x: -28.119999, y: 0.9399414}
+        - {x: -6.119999, y: -1.0600586}
+        - {x: 6.880001, y: 12.939941}
+        - {x: 6.880001, y: 18.939941}
+        - {x: 9.880001, y: 16.939941}
+        - {x: 0.88000107, y: 6.9399414}
+        - {x: -3.119999, y: -3.0600586}
+        - {x: -0.11999893, y: -5.0600586}
+        - {x: 38.88, y: -5.0600586}
+        - {x: 91.880005, y: 48.93994}
+        - {x: 91.880005, y: 117.93994}
+        - {x: 69.880005, y: 133.93994}
+    - name: dickens_battle_death instance 10006
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 1714
+        width: 204
+        height: 167
+      alignment: 9
+      pivot: {x: 0.28, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.119995, y: 131.93994}
+        - {x: -31.119995, y: 114.93994}
+        - {x: -31.119995, y: 21.939941}
+        - {x: -29.119995, y: -0.060058594}
+        - {x: -6.119995, y: -1.0600586}
+        - {x: 6.880005, y: 12.939941}
+        - {x: 6.880005, y: 19.939941}
+        - {x: 9.880005, y: 15.939941}
+        - {x: 1.8800049, y: 7.9399414}
+        - {x: -5.119995, y: -6.0600586}
+        - {x: 32.880005, y: -6.0600586}
+        - {x: 84.880005, y: 7.9399414}
+        - {x: 95.880005, y: 26.939941}
+        - {x: 95.880005, y: 71.93994}
+        - {x: 42.880005, y: 131.93994}
+    - name: dickens_battle_death instance 10007
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 1714
+        width: 204
+        height: 167
+      alignment: 9
+      pivot: {x: 0.28, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.119995, y: 131.93994}
+        - {x: -28.119995, y: 115.93994}
+        - {x: -28.119995, y: 47.93994}
+        - {x: -20.119995, y: -2.0600586}
+        - {x: -4.119995, y: -0.060058594}
+        - {x: -0.11999512, y: 2.9399414}
+        - {x: 5.880005, y: 11.939941}
+        - {x: 7.880005, y: 11.939941}
+        - {x: 9.880005, y: 13.939941}
+        - {x: 9.880005, y: 18.939941}
+        - {x: 11.880005, y: 15.939941}
+        - {x: 7.880005, y: 10.939941}
+        - {x: 6.880005, y: 10.939941}
+        - {x: 1.8800049, y: 5.9399414}
+        - {x: 0.8800049, y: -2.0600586}
+        - {x: 4.880005, y: -6.0600586}
+        - {x: 59.880005, y: -6.0600586}
+        - {x: 97.880005, y: 23.939941}
+        - {x: 97.880005, y: 107.93994}
+        - {x: 70.880005, y: 131.93994}
+    - name: dickens_battle_death instance 10008
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 1714
+        width: 204
+        height: 167
+      alignment: 9
+      pivot: {x: 0.28, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 24.880005, y: 130.93994}
+        - {x: 1.8800049, y: 130.93994}
+        - {x: -1.1199951, y: 129.93994}
+        - {x: -2.119995, y: 126.93994}
+        - {x: -24.119995, y: 105.93994}
+        - {x: -24.119995, y: 62.93994}
+        - {x: -19.119995, y: 3.9399414}
+        - {x: -7.119995, y: -6.0600586}
+        - {x: 26.880005, y: -6.0600586}
+        - {x: 97.880005, y: 19.939941}
+        - {x: 97.880005, y: 37.93994}
+        - {x: 93.880005, y: 43.93994}
+    - name: dickens_battle_death instance 10009
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 1714
+        width: 204
+        height: 167
+      alignment: 9
+      pivot: {x: 0.28, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.119995, y: 129.93994}
+        - {x: -21.119995, y: 121.93994}
+        - {x: -21.119995, y: -6.0600586}
+        - {x: 27.880005, y: -6.0600586}
+        - {x: 97.880005, y: 16.939941}
+        - {x: 97.880005, y: 65.93994}
+        - {x: 46.880005, y: 129.93994}
+    - name: dickens_battle_death instance 10010
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1547
+        width: 204
+        height: 167
+      alignment: 9
+      pivot: {x: 0.28, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 36.88, y: 5.9399414}
+        - {x: 58.88, y: 2.9399414}
+        - {x: 96.880005, y: 8.939941}
+        - {x: 96.880005, y: 25.939941}
+        - {x: 71.880005, y: 32.93994}
+        - {x: 49.88, y: 122.93994}
+        - {x: 40.88, y: 128.93994}
+        - {x: -0.11999893, y: 128.93994}
+        - {x: -18.119999, y: 105.93994}
+        - {x: -18.119999, y: 35.93994}
+        - {x: -11.119999, y: 4.9399414}
+        - {x: 3.880001, y: -6.0600586}
+        - {x: 14.880001, y: -6.0600586}
+        - {x: 31.880001, y: 9.939941}
+        - {x: 31.880001, y: 14.939941}
+    - name: dickens_battle_death instance 10011
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 1547
+        width: 204
+        height: 167
+      alignment: 9
+      pivot: {x: 0.28, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 47.880005, y: 115.93994}
+        - {x: 32.880005, y: 127.93994}
+        - {x: 7.880005, y: 127.93994}
+        - {x: -14.119995, y: 108.93994}
+        - {x: -14.119995, y: 20.939941}
+        - {x: -6.119995, y: 1.9399414}
+        - {x: 2.880005, y: -6.0600586}
+        - {x: 37.880005, y: -6.0600586}
+        - {x: 92.880005, y: 0.9399414}
+        - {x: 94.880005, y: 1.9399414}
+        - {x: 94.880005, y: 19.939941}
+        - {x: 69.880005, y: 24.939941}
+    - name: dickens_battle_death instance 10012
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 1547
+        width: 204
+        height: 167
+      alignment: 9
+      pivot: {x: 0.28, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 91.880005, y: 13.939941}
+        - {x: 44.880005, y: 126.93994}
+        - {x: 5.880005, y: 126.93994}
+        - {x: -11.119995, y: 114.93994}
+        - {x: -11.119995, y: -6.0600586}
+        - {x: 91.880005, y: -6.0600586}
+    - name: dickens_battle_death instance 10013
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 1547
+        width: 204
+        height: 167
+      alignment: 9
+      pivot: {x: 0.28, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6.119995, y: 118.93994}
+        - {x: -6.119995, y: -8.060059}
+        - {x: 101.880005, y: -8.060059}
+        - {x: 101.880005, y: 54.93994}
+        - {x: 70.880005, y: 118.93994}
+    - name: dickens_battle_death instance 10014
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 1547
+        width: 204
+        height: 167
+      alignment: 9
+      pivot: {x: 0.28, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.119995, y: -9.060059}
+        - {x: 109.880005, y: -9.060059}
+        - {x: 109.880005, y: 111.93994}
+        - {x: 36.880005, y: 111.93994}
+        - {x: 15.880005, y: 99.93994}
+        - {x: -5.119995, y: 67.93994}
+    - name: dickens_battle_death instance 10015
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1380
+        width: 204
+        height: 167
+      alignment: 9
+      pivot: {x: 0.28, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 36.88, y: 103.93994}
+        - {x: -4.119999, y: 27.939941}
+        - {x: -4.119999, y: -11.060059}
+        - {x: 114.880005, y: -11.060059}
+        - {x: 114.880005, y: 103.93994}
+    - name: dickens_battle_death instance 10016
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 1380
+        width: 204
+        height: 167
+      alignment: 9
+      pivot: {x: 0.28, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 100.880005, y: 33.93994}
+        - {x: 99.880005, y: 57.93994}
+        - {x: 96.880005, y: 97.93994}
+        - {x: 40.880005, y: 97.93994}
+        - {x: 0.8800049, y: 44.93994}
+        - {x: -0.11999512, y: 41.93994}
+        - {x: -0.11999512, y: -9.060059}
+        - {x: 4.880005, y: -10.060059}
+        - {x: 93.880005, y: -10.060059}
+        - {x: 114.880005, y: 7.9399414}
+        - {x: 114.880005, y: 28.939941}
+        - {x: 109.880005, y: 36.93994}
+    - name: dickens_battle_death instance 10017
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 1380
+        width: 204
+        height: 167
+      alignment: 9
+      pivot: {x: 0.28, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 97.880005, y: 39.93994}
+        - {x: 82.880005, y: 24.939941}
+        - {x: 103.880005, y: 52.93994}
+        - {x: 107.880005, y: 78.93994}
+        - {x: 103.880005, y: 88.93994}
+        - {x: 98.880005, y: 96.93994}
+        - {x: 31.880005, y: 96.93994}
+        - {x: 11.880005, y: 58.93994}
+        - {x: 0.8800049, y: 22.939941}
+        - {x: 0.8800049, y: -8.060059}
+        - {x: 28.880005, y: -10.060059}
+        - {x: 84.880005, y: -10.060059}
+        - {x: 113.880005, y: 22.939941}
+        - {x: 113.880005, y: 31.939941}
+        - {x: 105.880005, y: 37.93994}
+    - name: dickens_battle_death instance 10018
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 1380
+        width: 204
+        height: 167
+      alignment: 9
+      pivot: {x: 0.28, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 48.880005, y: 95.93994}
+        - {x: 0.8800049, y: 40.93994}
+        - {x: 0.8800049, y: -7.0600586}
+        - {x: 20.880005, y: -10.060059}
+        - {x: 88.880005, y: -10.060059}
+        - {x: 111.880005, y: 28.939941}
+        - {x: 111.880005, y: 83.93994}
+        - {x: 79.880005, y: 95.93994}
+    - name: dickens_battle_death instance 10019
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 1380
+        width: 204
+        height: 167
+      alignment: 9
+      pivot: {x: 0.28, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 94.880005, y: 79.93994}
+        - {x: 64.880005, y: 79.93994}
+        - {x: 0.8800049, y: 27.939941}
+        - {x: 0.8800049, y: -12.060059}
+        - {x: 12.880005, y: -14.060059}
+        - {x: 88.880005, y: -14.060059}
+        - {x: 126.880005, y: 35.93994}
+        - {x: 126.880005, y: 58.93994}
+        - {x: 121.880005, y: 69.93994}
+    - name: dickens_battle_death instance 10020
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1213
+        width: 204
+        height: 167
+      alignment: 9
+      pivot: {x: 0.28, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 59.88, y: 60.93994}
+        - {x: 31.880001, y: 52.93994}
+        - {x: 1.8800011, y: 18.939941}
+        - {x: 1.8800011, y: -10.060059}
+        - {x: 33.88, y: -19.060059}
+        - {x: 90.880005, y: -19.060059}
+        - {x: 136.88, y: 12.939941}
+        - {x: 136.88, y: 37.93994}
+        - {x: 113.880005, y: 60.93994}
+    - name: dickens_battle_death instance 10021
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 1213
+        width: 204
+        height: 167
+      alignment: 9
+      pivot: {x: 0.28, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32.880005, y: 41.93994}
+        - {x: 2.880005, y: 30.939941}
+        - {x: 2.880005, y: -17.060059}
+        - {x: 23.880005, y: -25.060059}
+        - {x: 124.880005, y: -25.060059}
+        - {x: 143.88, y: -19.060059}
+        - {x: 143.88, y: 26.939941}
+        - {x: 118.880005, y: 41.93994}
+    - name: dickens_battle_death instance 10022
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 1213
+        width: 204
+        height: 167
+      alignment: 9
+      pivot: {x: 0.28, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3.880005, y: -4.0600586}
+        - {x: 20.880005, y: -20.060059}
+        - {x: 28.880005, y: -25.060059}
+        - {x: 143.88, y: -25.060059}
+        - {x: 143.88, y: 9.939941}
+        - {x: 135.88, y: 40.93994}
+        - {x: 44.880005, y: 40.93994}
+        - {x: 3.880005, y: 25.939941}
+    - name: dickens_battle_death instance 10023
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 1213
+        width: 204
+        height: 167
+      alignment: 9
+      pivot: {x: 0.28, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4.880005, y: -12.060059}
+        - {x: 28.880005, y: -24.060059}
+        - {x: 142.88, y: -24.060059}
+        - {x: 142.88, y: 18.939941}
+        - {x: 140.88, y: 37.93994}
+        - {x: 133.88, y: 40.93994}
+        - {x: 45.880005, y: 40.93994}
+        - {x: 4.880005, y: 23.939941}
+    - name: dickens_battle_death instance 10024
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 1213
+        width: 204
+        height: 167
+      alignment: 9
+      pivot: {x: 0.28, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 123.880005, y: 39.93994}
+        - {x: 23.880005, y: 39.93994}
+        - {x: 6.880005, y: 11.939941}
+        - {x: 5.880005, y: 4.9399414}
+        - {x: 5.880005, y: -8.060059}
+        - {x: 15.880005, y: -16.060059}
+        - {x: 40.880005, y: -26.060059}
+        - {x: 55.880005, y: -26.060059}
+        - {x: 69.880005, y: -24.060059}
+        - {x: 98.880005, y: -26.060059}
+        - {x: 139.88, y: -26.060059}
+        - {x: 141.88, y: -20.060059}
+        - {x: 141.88, y: 9.939941}
+        - {x: 135.88, y: 37.93994}
+    - name: dickens_battle_death instance 10025
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1046
+        width: 204
+        height: 167
+      alignment: 9
+      pivot: {x: 0.28, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 130.88, y: 26.939941}
+        - {x: 113.880005, y: 41.93994}
+        - {x: 39.88, y: 41.93994}
+        - {x: 4.880001, y: 28.939941}
+        - {x: 4.880001, y: -6.0600586}
+        - {x: 21.880001, y: -23.060059}
+        - {x: 140.88, y: -23.060059}
+        - {x: 142.88, y: -21.060059}
+        - {x: 142.88, y: 1.9399414}
+    - name: dickens_battle_death instance 10026
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 1046
+        width: 204
+        height: 167
+      alignment: 9
+      pivot: {x: 0.28, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5.880005, y: 42.93994}
+        - {x: 3.880005, y: 38.93994}
+        - {x: 3.880005, y: -17.060059}
+        - {x: 21.880005, y: -22.060059}
+        - {x: 90.880005, y: -22.060059}
+        - {x: 143.88, y: -18.060059}
+        - {x: 143.88, y: 8.939941}
+        - {x: 130.88, y: 42.93994}
+    - name: dickens_battle_death instance 10027
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 1046
+        width: 204
+        height: 167
+      alignment: 9
+      pivot: {x: 0.28, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 112.880005, y: 43.93994}
+        - {x: 49.880005, y: 43.93994}
+        - {x: 4.880005, y: 26.939941}
+        - {x: 2.880005, y: 23.939941}
+        - {x: 2.880005, y: -11.060059}
+        - {x: 26.880005, y: -21.060059}
+        - {x: 118.880005, y: -21.060059}
+        - {x: 143.88, y: -10.060059}
+        - {x: 143.88, y: 14.939941}
+        - {x: 124.880005, y: 41.93994}
+    - name: dickens_battle_death instance 10028
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 1046
+        width: 204
+        height: 167
+      alignment: 9
+      pivot: {x: 0.28, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 112.880005, y: 42.93994}
+        - {x: 57.880005, y: 42.93994}
+        - {x: 43.880005, y: 39.93994}
+        - {x: 35.880005, y: 32.93994}
+        - {x: 4.880005, y: 22.939941}
+        - {x: 3.880005, y: 16.939941}
+        - {x: 3.880005, y: -7.0600586}
+        - {x: 30.880005, y: -22.060059}
+        - {x: 88.880005, y: -22.060059}
+        - {x: 143.88, y: -12.060059}
+        - {x: 143.88, y: 13.939941}
+        - {x: 121.880005, y: 39.93994}
+    - name: dickens_battle_death instance 10029
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 1046
+        width: 204
+        height: 167
+      alignment: 9
+      pivot: {x: 0.28, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32.880005, y: 41.93994}
+        - {x: 4.880005, y: 16.939941}
+        - {x: 4.880005, y: -6.0600586}
+        - {x: 27.880005, y: -23.060059}
+        - {x: 105.880005, y: -23.060059}
+        - {x: 121.880005, y: -21.060059}
+        - {x: 143.88, y: -13.060059}
+        - {x: 143.88, y: 28.939941}
+        - {x: 120.880005, y: 41.93994}
+    - name: dickens_battle_death instance 10030
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 879
+        width: 204
+        height: 167
+      alignment: 9
+      pivot: {x: 0.28, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 42.88, y: 39.940002}
+        - {x: 5.880001, y: 19.940002}
+        - {x: 5.880001, y: -23.059998}
+        - {x: 6.880001, y: -27.059998}
+        - {x: 138.88, y: -27.059998}
+        - {x: 138.88, y: 31.940002}
+        - {x: 128.88, y: 39.940002}
+    - name: dickens_battle_death instance 10031
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 879
+        width: 204
+        height: 167
+      alignment: 9
+      pivot: {x: 0.28, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 42.880005, y: 39.940002}
+        - {x: 5.880005, y: 19.940002}
+        - {x: 5.880005, y: -23.059998}
+        - {x: 6.880005, y: -27.059998}
+        - {x: 138.88, y: -27.059998}
+        - {x: 138.88, y: 31.940002}
+        - {x: 128.88, y: 39.940002}
+    - name: dickens_battle_death instance 10032
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 879
+        width: 204
+        height: 167
+      alignment: 9
+      pivot: {x: 0.28, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 42.880005, y: 39.940002}
+        - {x: 5.880005, y: 19.940002}
+        - {x: 5.880005, y: -23.059998}
+        - {x: 6.880005, y: -27.059998}
+        - {x: 138.88, y: -27.059998}
+        - {x: 138.88, y: 31.940002}
+        - {x: 128.88, y: 39.940002}
+    - name: dickens_battle_death instance 10033
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 879
+        width: 204
+        height: 167
+      alignment: 9
+      pivot: {x: 0.28, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 42.880005, y: 39.940002}
+        - {x: 5.880005, y: 19.940002}
+        - {x: 5.880005, y: -23.059998}
+        - {x: 6.880005, y: -27.059998}
+        - {x: 138.88, y: -27.059998}
+        - {x: 138.88, y: 31.940002}
+        - {x: 128.88, y: 39.940002}
+    - name: dickens_battle_death instance 10034
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 879
+        width: 204
+        height: 167
+      alignment: 9
+      pivot: {x: 0.28, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 42.880005, y: 39.940002}
+        - {x: 5.880005, y: 19.940002}
+        - {x: 5.880005, y: -23.059998}
+        - {x: 6.880005, y: -27.059998}
+        - {x: 138.88, y: -27.059998}
+        - {x: 138.88, y: 31.940002}
+        - {x: 128.88, y: 39.940002}
+    - name: dickens_battle_death instance 10035
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 712
+        width: 204
+        height: 167
+      alignment: 9
+      pivot: {x: 0.28, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 42.88, y: 39.940002}
+        - {x: 5.880001, y: 19.940002}
+        - {x: 5.880001, y: -23.059998}
+        - {x: 6.880001, y: -27.059998}
+        - {x: 138.88, y: -27.059998}
+        - {x: 138.88, y: 31.940002}
+        - {x: 128.88, y: 39.940002}
+    - name: dickens_battle_death instance 10036
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 712
+        width: 204
+        height: 167
+      alignment: 9
+      pivot: {x: 0.28, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 42.880005, y: 39.940002}
+        - {x: 5.880005, y: 19.940002}
+        - {x: 5.880005, y: -23.059998}
+        - {x: 6.880005, y: -27.059998}
+        - {x: 138.88, y: -27.059998}
+        - {x: 138.88, y: 31.940002}
+        - {x: 128.88, y: 39.940002}
+    - name: dickens_battle_death instance 10037
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 712
+        width: 204
+        height: 167
+      alignment: 9
+      pivot: {x: 0.28, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 42.880005, y: 39.940002}
+        - {x: 5.880005, y: 19.940002}
+        - {x: 5.880005, y: -23.059998}
+        - {x: 6.880005, y: -27.059998}
+        - {x: 138.88, y: -27.059998}
+        - {x: 138.88, y: 31.940002}
+        - {x: 128.88, y: 39.940002}
+    - name: dickens_battle_death instance 10038
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 712
+        width: 204
+        height: 167
+      alignment: 9
+      pivot: {x: 0.28, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 42.880005, y: 39.940002}
+        - {x: 5.880005, y: 19.940002}
+        - {x: 5.880005, y: -23.059998}
+        - {x: 6.880005, y: -27.059998}
+        - {x: 138.88, y: -27.059998}
+        - {x: 138.88, y: 31.940002}
+        - {x: 128.88, y: 39.940002}
+    - name: dickens_battle_death instance 10039
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 712
+        width: 204
+        height: 167
+      alignment: 9
+      pivot: {x: 0.28, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 42.880005, y: 39.940002}
+        - {x: 5.880005, y: 19.940002}
+        - {x: 5.880005, y: -23.059998}
+        - {x: 6.880005, y: -27.059998}
+        - {x: 138.88, y: -27.059998}
+        - {x: 138.88, y: 31.940002}
+        - {x: 128.88, y: 39.940002}
+    - name: dickens_battle_death instance 10040
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 545
+        width: 204
+        height: 167
+      alignment: 9
+      pivot: {x: 0.28, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 42.88, y: 39.940002}
+        - {x: 5.880001, y: 19.940002}
+        - {x: 5.880001, y: -23.059998}
+        - {x: 6.880001, y: -27.059998}
+        - {x: 138.88, y: -27.059998}
+        - {x: 138.88, y: 31.940002}
+        - {x: 128.88, y: 39.940002}
+    - name: dickens_battle_death instance 10041
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 545
+        width: 204
+        height: 167
+      alignment: 9
+      pivot: {x: 0.28, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 42.880005, y: 39.940002}
+        - {x: 5.880005, y: 19.940002}
+        - {x: 5.880005, y: -23.059998}
+        - {x: 6.880005, y: -27.059998}
+        - {x: 138.88, y: -27.059998}
+        - {x: 138.88, y: 31.940002}
+        - {x: 128.88, y: 39.940002}
+    - name: dickens_battle_death instance 10042
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 545
+        width: 204
+        height: 167
+      alignment: 9
+      pivot: {x: 0.28, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 42.880005, y: 39.940002}
+        - {x: 5.880005, y: 19.940002}
+        - {x: 5.880005, y: -23.059998}
+        - {x: 6.880005, y: -27.059998}
+        - {x: 138.88, y: -27.059998}
+        - {x: 138.88, y: 31.940002}
+        - {x: 128.88, y: 39.940002}
+    - name: dickens_battle_death instance 10043
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 545
+        width: 204
+        height: 167
+      alignment: 9
+      pivot: {x: 0.28, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 42.880005, y: 39.940002}
+        - {x: 5.880005, y: 19.940002}
+        - {x: 5.880005, y: -23.059998}
+        - {x: 6.880005, y: -27.059998}
+        - {x: 138.88, y: -27.059998}
+        - {x: 138.88, y: 31.940002}
+        - {x: 128.88, y: 39.940002}
+    - name: dickens_battle_death instance 10044
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 545
+        width: 204
+        height: 167
+      alignment: 9
+      pivot: {x: 0.28, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 42.880005, y: 39.940002}
+        - {x: 5.880005, y: 19.940002}
+        - {x: 5.880005, y: -23.059998}
+        - {x: 6.880005, y: -27.059998}
+        - {x: 138.88, y: -27.059998}
+        - {x: 138.88, y: 31.940002}
+        - {x: 128.88, y: 39.940002}
+    - name: dickens_battle_death instance 10045
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 378
+        width: 204
+        height: 167
+      alignment: 9
+      pivot: {x: 0.28, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 42.88, y: 39.940002}
+        - {x: 5.880001, y: 19.940002}
+        - {x: 5.880001, y: -23.059998}
+        - {x: 6.880001, y: -27.059998}
+        - {x: 138.88, y: -27.059998}
+        - {x: 138.88, y: 31.940002}
+        - {x: 128.88, y: 39.940002}
+    - name: dickens_battle_death instance 10046
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 378
+        width: 204
+        height: 167
+      alignment: 9
+      pivot: {x: 0.28, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 42.880005, y: 39.940002}
+        - {x: 5.880005, y: 19.940002}
+        - {x: 5.880005, y: -23.059998}
+        - {x: 6.880005, y: -27.059998}
+        - {x: 138.88, y: -27.059998}
+        - {x: 138.88, y: 31.940002}
+        - {x: 128.88, y: 39.940002}
+    - name: dickens_battle_death instance 10047
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 378
+        width: 204
+        height: 167
+      alignment: 9
+      pivot: {x: 0.28, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 42.880005, y: 39.940002}
+        - {x: 5.880005, y: 19.940002}
+        - {x: 5.880005, y: -23.059998}
+        - {x: 6.880005, y: -27.059998}
+        - {x: 138.88, y: -27.059998}
+        - {x: 138.88, y: 31.940002}
+        - {x: 128.88, y: 39.940002}
+    - name: dickens_battle_death instance 10048
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 378
+        width: 204
+        height: 167
+      alignment: 9
+      pivot: {x: 0.28, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 42.880005, y: 39.940002}
+        - {x: 5.880005, y: 19.940002}
+        - {x: 5.880005, y: -23.059998}
+        - {x: 6.880005, y: -27.059998}
+        - {x: 138.88, y: -27.059998}
+        - {x: 138.88, y: 31.940002}
+        - {x: 128.88, y: 39.940002}
+    - name: dickens_battle_death instance 10049
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 378
+        width: 204
+        height: 167
+      alignment: 9
+      pivot: {x: 0.28, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 93.880005, y: 39.940002}
+        - {x: 42.880005, y: 39.940002}
+        - {x: 5.880005, y: 12.940002}
+        - {x: 5.880005, y: -7.0599976}
+        - {x: 25.880005, y: -20.059998}
+        - {x: 53.880005, y: -26.059998}
+        - {x: 88.880005, y: -21.059998}
+        - {x: 116.880005, y: -27.059998}
+        - {x: 134.88, y: -27.059998}
+        - {x: 138.88, y: -24.059998}
+        - {x: 138.88, y: 21.940002}
+        - {x: 115.880005, y: 36.940002}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

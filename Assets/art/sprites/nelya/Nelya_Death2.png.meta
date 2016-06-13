@@ -1,0 +1,1211 @@
+fileFormatVersion: 2
+guid: cbcb99b8baa804a4e84d7d1dc4c59e75
+timeCreated: 1461233515
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: battle_death_20000
+    21300002: battle_death_20001
+    21300004: battle_death_20002
+    21300006: battle_death_20003
+    21300008: battle_death_20004
+    21300010: battle_death_20005
+    21300012: battle_death_20006
+    21300014: battle_death_20007
+    21300016: battle_death_20008
+    21300018: battle_death_20009
+    21300020: battle_death_20010
+    21300022: battle_death_20011
+    21300024: battle_death_20012
+    21300026: battle_death_20013
+    21300028: battle_death_20014
+    21300030: battle_death_20015
+    21300032: battle_death_20016
+    21300034: battle_death_20017
+    21300036: battle_death_20018
+    21300038: battle_death_20019
+    21300040: battle_death_20020
+    21300042: battle_death_20021
+    21300044: battle_death_20022
+    21300046: battle_death_20023
+    21300048: battle_death_20024
+    21300050: battle_death_20025
+    21300052: battle_death_20026
+    21300054: battle_death_20027
+    21300056: battle_death_20028
+    21300058: battle_death_20029
+    21300060: battle_death_20030
+    21300062: battle_death_20031
+    21300064: battle_death_20032
+    21300066: battle_death_20033
+    21300068: battle_death_20034
+    21300070: battle_death_20035
+    21300072: battle_death_20036
+    21300074: battle_death_20037
+    21300076: battle_death_20038
+    21300078: battle_death_20039
+    21300080: battle_death_20040
+    21300082: battle_death_20041
+    21300084: battle_death_20042
+    21300086: battle_death_20043
+    21300088: battle_death_20044
+    21300090: battle_death_20045
+    21300092: battle_death_20046
+    21300094: battle_death_20047
+    21300096: battle_death_20048
+    21300098: battle_death_20049
+    21300100: battle_death_2 instance 10000
+    21300102: battle_death_2 instance 10001
+    21300104: battle_death_2 instance 10002
+    21300106: battle_death_2 instance 10003
+    21300108: battle_death_2 instance 10004
+    21300110: battle_death_2 instance 10005
+    21300112: battle_death_2 instance 10006
+    21300114: battle_death_2 instance 10007
+    21300116: battle_death_2 instance 10008
+    21300118: battle_death_2 instance 10009
+    21300120: battle_death_2 instance 10010
+    21300122: battle_death_2 instance 10011
+    21300124: battle_death_2 instance 10012
+    21300126: battle_death_2 instance 10013
+    21300128: battle_death_2 instance 10014
+    21300130: battle_death_2 instance 10015
+    21300132: battle_death_2 instance 10016
+    21300134: battle_death_2 instance 10017
+    21300136: battle_death_2 instance 10018
+    21300138: battle_death_2 instance 10019
+    21300140: battle_death_2 instance 10020
+    21300142: battle_death_2 instance 10021
+    21300144: battle_death_2 instance 10022
+    21300146: battle_death_2 instance 10023
+    21300148: battle_death_2 instance 10024
+    21300150: battle_death_2 instance 10025
+    21300152: battle_death_2 instance 10026
+    21300154: battle_death_2 instance 10027
+    21300156: battle_death_2 instance 10028
+    21300158: battle_death_2 instance 10029
+    21300160: battle_death_2 instance 10030
+    21300162: battle_death_2 instance 10031
+    21300164: battle_death_2 instance 10032
+    21300166: battle_death_2 instance 10033
+    21300168: battle_death_2 instance 10034
+    21300170: battle_death_2 instance 10035
+    21300172: battle_death_2 instance 10036
+    21300174: battle_death_2 instance 10037
+    21300176: battle_death_2 instance 10038
+    21300178: battle_death_2 instance 10039
+    21300180: battle_death_2 instance 10040
+    21300182: battle_death_2 instance 10041
+    21300184: battle_death_2 instance 10042
+    21300186: battle_death_2 instance 10043
+    21300188: battle_death_2 instance 10044
+    21300190: battle_death_2 instance 10045
+    21300192: battle_death_2 instance 10046
+    21300194: battle_death_2 instance 10047
+    21300196: battle_death_2 instance 10048
+    21300198: battle_death_2 instance 10049
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: battle_death_2 instance 10000
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1831
+        width: 215
+        height: 217
+      alignment: 9
+      pivot: {x: 0.2, y: 0.13}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -43, y: 188.79004}
+        - {x: -43, y: 23.79004}
+        - {x: -34, y: 1.7900391}
+        - {x: 52, y: 1.7900391}
+        - {x: 56, y: 5.790039}
+        - {x: 56, y: 176.79004}
+        - {x: 49, y: 188.79004}
+    - name: battle_death_2 instance 10001
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 1831
+        width: 215
+        height: 217
+      alignment: 9
+      pivot: {x: 0.2, y: 0.13}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 184.79004}
+        - {x: -39, y: 179.79004}
+        - {x: -39, y: 0.79003906}
+        - {x: 48, y: 0.79003906}
+        - {x: 61, y: 30.79004}
+        - {x: 61, y: 158.79004}
+        - {x: 49, y: 184.79004}
+    - name: battle_death_2 instance 10002
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 1831
+        width: 215
+        height: 217
+      alignment: 9
+      pivot: {x: 0.2, y: 0.13}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: 180.79004}
+        - {x: -33, y: 173.79004}
+        - {x: -42, y: 126.79004}
+        - {x: -42, y: 21.79004}
+        - {x: -26, y: 0.79003906}
+        - {x: 38, y: 0.79003906}
+        - {x: 66, y: 94.79004}
+        - {x: 66, y: 160.79004}
+        - {x: 55, y: 180.79004}
+    - name: battle_death_2 instance 10003
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 1831
+        width: 215
+        height: 217
+      alignment: 9
+      pivot: {x: 0.2, y: 0.13}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 70, y: 163.79004}
+        - {x: 62, y: 176.79004}
+        - {x: 4, y: 176.79004}
+        - {x: -27, y: 166.79004}
+        - {x: -43, y: 74.79004}
+        - {x: -43, y: 33.79004}
+        - {x: -24, y: -0.20996094}
+        - {x: -20, y: -0.20996094}
+        - {x: -5, y: 2.790039}
+        - {x: 0, y: 8.790039}
+        - {x: 5, y: 0.79003906}
+        - {x: 7, y: -0.20996094}
+        - {x: 20, y: -0.20996094}
+        - {x: 28, y: 5.790039}
+        - {x: 31, y: 7.790039}
+        - {x: 70, y: 88.79004}
+    - name: battle_death_2 instance 10004
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 1831
+        width: 215
+        height: 217
+      alignment: 9
+      pivot: {x: 0.2, y: 0.13}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26, y: 172.79004}
+        - {x: -43, y: 112.79004}
+        - {x: -43, y: 19.79004}
+        - {x: -24, y: -0.20996094}
+        - {x: -20, y: -0.20996094}
+        - {x: -5, y: 2.790039}
+        - {x: 0, y: 8.790039}
+        - {x: 5, y: 0.79003906}
+        - {x: 6, y: -0.20996094}
+        - {x: 68, y: -0.20996094}
+        - {x: 70, y: 6.790039}
+        - {x: 70, y: 172.79004}
+    - name: battle_death_2 instance 10005
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 1831
+        width: 215
+        height: 217
+      alignment: 9
+      pivot: {x: 0.2, y: 0.13}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 60, y: 170.79004}
+        - {x: -15, y: 170.79004}
+        - {x: -23, y: 140.79004}
+        - {x: -18, y: 139.79004}
+        - {x: -9, y: 131.79004}
+        - {x: -12, y: 134.79004}
+        - {x: -21, y: 136.79004}
+        - {x: -33, y: 126.79004}
+        - {x: -43, y: 73.79004}
+        - {x: -43, y: 33.79004}
+        - {x: -24, y: -0.20996094}
+        - {x: -20, y: -0.20996094}
+        - {x: -5, y: 2.790039}
+        - {x: 0, y: 8.790039}
+        - {x: 5, y: 0.79003906}
+        - {x: 6, y: -0.20996094}
+        - {x: 24, y: -0.20996094}
+        - {x: 37, y: 14.790039}
+        - {x: 70, y: 101.79004}
+        - {x: 70, y: 168.79004}
+    - name: battle_death_2 instance 10006
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 1831
+        width: 215
+        height: 217
+      alignment: 9
+      pivot: {x: 0.2, y: 0.13}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 25, y: 92.79004}
+        - {x: 27, y: 100.79004}
+        - {x: 27, y: 114.79004}
+        - {x: 27, y: 89.79004}
+        - {x: 24, y: 89.79004}
+        - {x: 28, y: 65.79004}
+        - {x: 42, y: 56.79004}
+        - {x: 71, y: 94.79004}
+        - {x: 71, y: 157.79004}
+        - {x: 63, y: 169.79004}
+        - {x: -11, y: 169.79004}
+        - {x: -33, y: 131.79004}
+        - {x: -43, y: 79.79004}
+        - {x: -43, y: 31.79004}
+        - {x: -24, y: -0.20996094}
+        - {x: -20, y: -0.20996094}
+        - {x: -5, y: 2.790039}
+        - {x: 0, y: 8.790039}
+        - {x: 5, y: 0.79003906}
+        - {x: 7, y: -0.20996094}
+        - {x: 20, y: -0.20996094}
+        - {x: 28, y: 4.790039}
+        - {x: 32, y: 14.790039}
+        - {x: 17, y: 79.79004}
+    - name: battle_death_2 instance 10007
+      rect:
+        serializedVersion: 2
+        x: 1505
+        y: 1831
+        width: 215
+        height: 217
+      alignment: 9
+      pivot: {x: 0.2, y: 0.13}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 51, y: 170.79004}
+        - {x: -7, y: 170.79004}
+        - {x: -35, y: 159.79004}
+        - {x: -43, y: 116.79004}
+        - {x: -43, y: 35.79004}
+        - {x: -31, y: -0.20996094}
+        - {x: -10, y: -0.20996094}
+        - {x: -5, y: 2.790039}
+        - {x: 0, y: 8.790039}
+        - {x: 5, y: 0.79003906}
+        - {x: 7, y: -0.20996094}
+        - {x: 45, y: -0.20996094}
+        - {x: 71, y: 61.79004}
+        - {x: 71, y: 158.79004}
+    - name: battle_death_2 instance 10008
+      rect:
+        serializedVersion: 2
+        x: 1720
+        y: 1831
+        width: 215
+        height: 217
+      alignment: 9
+      pivot: {x: 0.2, y: 0.13}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27, y: 170.79004}
+        - {x: -43, y: 129.79004}
+        - {x: -43, y: 12.790039}
+        - {x: -24, y: -0.20996094}
+        - {x: -20, y: -0.20996094}
+        - {x: -5, y: 2.790039}
+        - {x: 0, y: 8.790039}
+        - {x: 5, y: 0.79003906}
+        - {x: 7, y: -0.20996094}
+        - {x: 47, y: -0.20996094}
+        - {x: 72, y: 67.79004}
+        - {x: 72, y: 170.79004}
+    - name: battle_death_2 instance 10009
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1614
+        width: 215
+        height: 217
+      alignment: 9
+      pivot: {x: 0.2, y: 0.13}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 78, y: 160.79004}
+        - {x: 41, y: 169.79004}
+        - {x: -20, y: 169.79004}
+        - {x: -42, y: 146.79004}
+        - {x: -42, y: 24.79004}
+        - {x: -37, y: -1.2099609}
+        - {x: 20, y: -1.2099609}
+        - {x: 30, y: 5.790039}
+        - {x: 30, y: 13.790039}
+        - {x: 78, y: 95.79004}
+    - name: battle_death_2 instance 10010
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 1614
+        width: 215
+        height: 217
+      alignment: 9
+      pivot: {x: 0.2, y: 0.13}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -40, y: 90.79004}
+        - {x: -40, y: 10.790039}
+        - {x: -31, y: -2.209961}
+        - {x: 39, y: -2.209961}
+        - {x: 84, y: 58.79004}
+        - {x: 84, y: 159.79004}
+        - {x: 56, y: 168.79004}
+        - {x: 15, y: 168.79004}
+        - {x: -5, y: 158.79004}
+    - name: battle_death_2 instance 10011
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 1614
+        width: 215
+        height: 217
+      alignment: 9
+      pivot: {x: 0.2, y: 0.13}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 62, y: 166.79004}
+        - {x: 22, y: 166.79004}
+        - {x: 1, y: 155.79004}
+        - {x: -38, y: 68.79004}
+        - {x: -38, y: 36.79004}
+        - {x: -29, y: 2.790039}
+        - {x: -15, y: -2.209961}
+        - {x: 30, y: -2.209961}
+        - {x: 32, y: 12.790039}
+        - {x: 90, y: 80.79004}
+        - {x: 90, y: 152.79004}
+    - name: battle_death_2 instance 10012
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 1614
+        width: 215
+        height: 217
+      alignment: 9
+      pivot: {x: 0.2, y: 0.13}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 20, y: 164.79004}
+        - {x: -36, y: 65.79004}
+        - {x: -36, y: 27.79004}
+        - {x: -25, y: -1.2099609}
+        - {x: -2, y: 6.790039}
+        - {x: 0, y: 8.790039}
+        - {x: 0, y: 20.79004}
+        - {x: 3, y: -1.2099609}
+        - {x: 2, y: -3.209961}
+        - {x: 43, y: -3.209961}
+        - {x: 96, y: 32.79004}
+        - {x: 96, y: 148.79004}
+        - {x: 58, y: 164.79004}
+    - name: battle_death_2 instance 10013
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 1614
+        width: 215
+        height: 217
+      alignment: 9
+      pivot: {x: 0.2, y: 0.13}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 21, y: 162.79004}
+        - {x: -34, y: 89.79004}
+        - {x: -34, y: 3.790039}
+        - {x: -25, y: 3.790039}
+        - {x: -1, y: 5.790039}
+        - {x: 1, y: 7.790039}
+        - {x: 3, y: -3.209961}
+        - {x: 4, y: -4.209961}
+        - {x: 67, y: -4.209961}
+        - {x: 102, y: 71.79004}
+        - {x: 102, y: 162.79004}
+    - name: battle_death_2 instance 10014
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 1614
+        width: 215
+        height: 217
+      alignment: 9
+      pivot: {x: 0.2, y: 0.13}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 38, y: 158.79004}
+        - {x: -30, y: 65.79004}
+        - {x: -30, y: 9.790039}
+        - {x: -4, y: -3.209961}
+        - {x: 25, y: -3.209961}
+        - {x: 31, y: -2.209961}
+        - {x: 107, y: 84.79004}
+        - {x: 107, y: 117.79004}
+        - {x: 74, y: 158.79004}
+    - name: battle_death_2 instance 10015
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 1614
+        width: 215
+        height: 217
+      alignment: 9
+      pivot: {x: 0.2, y: 0.13}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31, y: 52.79004}
+        - {x: -31, y: -3.209961}
+        - {x: 50, y: -3.209961}
+        - {x: 113, y: 48.79004}
+        - {x: 113, y: 133.79004}
+        - {x: 100, y: 152.79004}
+        - {x: 59, y: 152.79004}
+        - {x: 48, y: 148.79004}
+        - {x: -29, y: 64.79004}
+    - name: battle_death_2 instance 10016
+      rect:
+        serializedVersion: 2
+        x: 1505
+        y: 1614
+        width: 215
+        height: 217
+      alignment: 9
+      pivot: {x: 0.2, y: 0.13}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 64, y: 145.79004}
+        - {x: -33, y: 73.79004}
+        - {x: -33, y: -3.209961}
+        - {x: 30, y: -3.209961}
+        - {x: 120, y: 63.79004}
+        - {x: 120, y: 114.79004}
+        - {x: 110, y: 145.79004}
+    - name: battle_death_2 instance 10017
+      rect:
+        serializedVersion: 2
+        x: 1720
+        y: 1614
+        width: 215
+        height: 217
+      alignment: 9
+      pivot: {x: 0.2, y: 0.13}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 26.79004}
+        - {x: -21, y: 16.79004}
+        - {x: -12, y: 18.79004}
+        - {x: -1, y: -3.209961}
+        - {x: 39, y: -3.209961}
+        - {x: 125, y: 40.79004}
+        - {x: 125, y: 134.79004}
+        - {x: 124, y: 139.79004}
+        - {x: 69, y: 139.79004}
+        - {x: -18, y: 90.79004}
+        - {x: -35, y: 34.79004}
+    - name: battle_death_2 instance 10018
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1397
+        width: 215
+        height: 217
+      alignment: 9
+      pivot: {x: 0.2, y: 0.13}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 53, y: 133.79004}
+        - {x: -36, y: 60.79004}
+        - {x: -36, y: -2.209961}
+        - {x: -35, y: -3.209961}
+        - {x: 28, y: -3.209961}
+        - {x: 50, y: 6.790039}
+        - {x: 131, y: 43.79004}
+        - {x: 131, y: 110.79004}
+        - {x: 121, y: 133.79004}
+    - name: battle_death_2 instance 10019
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 1397
+        width: 215
+        height: 217
+      alignment: 9
+      pivot: {x: 0.2, y: 0.13}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 47, y: 41.79004}
+        - {x: 50, y: 45.79004}
+        - {x: 52, y: 45.79004}
+        - {x: 49, y: 44.79004}
+        - {x: 44, y: 33.79004}
+        - {x: 42, y: 20.79004}
+        - {x: 114, y: 21.79004}
+        - {x: 137, y: 41.79004}
+        - {x: 137, y: 124.79004}
+        - {x: 131, y: 126.79004}
+        - {x: 73, y: 126.79004}
+        - {x: 3, y: 94.79004}
+        - {x: -29, y: 61.79004}
+        - {x: -37, y: 50.79004}
+        - {x: -37, y: 24.79004}
+        - {x: 0, y: -4.209961}
+        - {x: 23, y: -4.209961}
+        - {x: 24, y: -1.2099609}
+        - {x: 28, y: 8.790039}
+        - {x: 31, y: 16.79004}
+    - name: battle_death_2 instance 10020
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 1397
+        width: 215
+        height: 217
+      alignment: 9
+      pivot: {x: 0.2, y: 0.13}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 48, y: 112.79004}
+        - {x: -8, y: 78.79004}
+        - {x: -32, y: 47.79004}
+        - {x: -32, y: 22.79004}
+        - {x: -16, y: -2.209961}
+        - {x: 80, y: -2.209961}
+        - {x: 141, y: 23.79004}
+        - {x: 141, y: 112.79004}
+    - name: battle_death_2 instance 10021
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 1397
+        width: 215
+        height: 217
+      alignment: 9
+      pivot: {x: 0.2, y: 0.13}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 145, y: 99.79004}
+        - {x: 82, y: 99.79004}
+        - {x: 11, y: 85.79004}
+        - {x: -26, y: 49.79004}
+        - {x: -26, y: 24.79004}
+        - {x: 0, y: -0.20996094}
+        - {x: 32, y: -0.20996094}
+        - {x: 144, y: 2.790039}
+        - {x: 146, y: 19.79004}
+        - {x: 146, y: 98.79004}
+    - name: battle_death_2 instance 10022
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 1397
+        width: 215
+        height: 217
+      alignment: 9
+      pivot: {x: 0.2, y: 0.13}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 53, y: 85.79004}
+        - {x: -21, y: 62.79004}
+        - {x: -21, y: 27.79004}
+        - {x: 1, y: -1.2099609}
+        - {x: 48, y: -4.209961}
+        - {x: 153, y: -4.209961}
+        - {x: 153, y: 85.79004}
+    - name: battle_death_2 instance 10023
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 1397
+        width: 215
+        height: 217
+      alignment: 9
+      pivot: {x: 0.2, y: 0.13}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 41, y: 71.79004}
+        - {x: 24, y: 68.79004}
+        - {x: -15, y: 50.79004}
+        - {x: -15, y: 29.79004}
+        - {x: -5, y: -0.20996094}
+        - {x: 62, y: -14.209961}
+        - {x: 143, y: -14.209961}
+        - {x: 160, y: -4.209961}
+        - {x: 160, y: 67.79004}
+        - {x: 147, y: 71.79004}
+    - name: battle_death_2 instance 10024
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 1397
+        width: 215
+        height: 217
+      alignment: 9
+      pivot: {x: 0.2, y: 0.13}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 147, y: 62.79004}
+        - {x: 14, y: 62.79004}
+        - {x: -9, y: 58.79004}
+        - {x: -9, y: -1.2099609}
+        - {x: 94, y: -25.20996}
+        - {x: 160, y: -25.20996}
+        - {x: 164, y: -22.20996}
+        - {x: 167, y: -1.2099609}
+        - {x: 167, y: 53.79004}
+    - name: battle_death_2 instance 10025
+      rect:
+        serializedVersion: 2
+        x: 1505
+        y: 1397
+        width: 215
+        height: 217
+      alignment: 9
+      pivot: {x: 0.2, y: 0.13}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13, y: 68.79004}
+        - {x: -9, y: 65.79004}
+        - {x: -9, y: 14.790039}
+        - {x: 75, y: -21.20996}
+        - {x: 157, y: -21.20996}
+        - {x: 167, y: -18.20996}
+        - {x: 167, y: 60.79004}
+        - {x: 162, y: 68.79004}
+    - name: battle_death_2 instance 10026
+      rect:
+        serializedVersion: 2
+        x: 1720
+        y: 1397
+        width: 215
+        height: 217
+      alignment: 9
+      pivot: {x: 0.2, y: 0.13}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 137, y: 74.79004}
+        - {x: 5, y: 74.79004}
+        - {x: -10, y: 62.79004}
+        - {x: -10, y: 18.79004}
+        - {x: 109, y: -19.20996}
+        - {x: 164, y: -19.20996}
+        - {x: 168, y: -13.209961}
+        - {x: 168, y: 61.79004}
+        - {x: 163, y: 68.79004}
+    - name: battle_death_2 instance 10027
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1180
+        width: 215
+        height: 217
+      alignment: 9
+      pivot: {x: 0.2, y: 0.13}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 22.79004}
+        - {x: 81, y: -16.20996}
+        - {x: 159, y: -16.20996}
+        - {x: 169, y: -12.209961}
+        - {x: 169, y: 63.79004}
+        - {x: 164, y: 75.79004}
+        - {x: 126, y: 80.79004}
+        - {x: 10, y: 80.79004}
+        - {x: -11, y: 71.79004}
+    - name: battle_death_2 instance 10028
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 1180
+        width: 215
+        height: 217
+      alignment: 9
+      pivot: {x: 0.2, y: 0.13}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5, y: 74.79004}
+        - {x: -10, y: 63.79004}
+        - {x: -10, y: 17.79004}
+        - {x: 104, y: -19.20996}
+        - {x: 168, y: -19.20996}
+        - {x: 168, y: 64.79004}
+        - {x: 167, y: 74.79004}
+    - name: battle_death_2 instance 10029
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 1180
+        width: 215
+        height: 217
+      alignment: 9
+      pivot: {x: 0.2, y: 0.13}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 68.79004}
+        - {x: -9, y: 64.79004}
+        - {x: -9, y: 10.790039}
+        - {x: 104, y: -21.20996}
+        - {x: 159, y: -21.20996}
+        - {x: 167, y: -6.209961}
+        - {x: 167, y: 60.79004}
+        - {x: 165, y: 68.79004}
+    - name: battle_death_2 instance 10030
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 1180
+        width: 215
+        height: 217
+      alignment: 9
+      pivot: {x: 0.2, y: 0.13}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 147, y: 62.79004}
+        - {x: 14, y: 62.79004}
+        - {x: -9, y: 58.79004}
+        - {x: -9, y: -1.2099609}
+        - {x: 94, y: -25.20996}
+        - {x: 160, y: -25.20996}
+        - {x: 164, y: -22.20996}
+        - {x: 167, y: -1.2099609}
+        - {x: 167, y: 53.79004}
+    - name: battle_death_2 instance 10031
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 1180
+        width: 215
+        height: 217
+      alignment: 9
+      pivot: {x: 0.2, y: 0.13}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 147, y: 62.79004}
+        - {x: 14, y: 62.79004}
+        - {x: -9, y: 58.79004}
+        - {x: -9, y: -1.2099609}
+        - {x: 94, y: -25.20996}
+        - {x: 160, y: -25.20996}
+        - {x: 164, y: -22.20996}
+        - {x: 167, y: -1.2099609}
+        - {x: 167, y: 53.79004}
+    - name: battle_death_2 instance 10032
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 1180
+        width: 215
+        height: 217
+      alignment: 9
+      pivot: {x: 0.2, y: 0.13}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 147, y: 62.79004}
+        - {x: 14, y: 62.79004}
+        - {x: -9, y: 58.79004}
+        - {x: -9, y: -1.2099609}
+        - {x: 94, y: -25.20996}
+        - {x: 160, y: -25.20996}
+        - {x: 164, y: -22.20996}
+        - {x: 167, y: -1.2099609}
+        - {x: 167, y: 53.79004}
+    - name: battle_death_2 instance 10033
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 1180
+        width: 215
+        height: 217
+      alignment: 9
+      pivot: {x: 0.2, y: 0.13}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 147, y: 62.79004}
+        - {x: 14, y: 62.79004}
+        - {x: -9, y: 58.79004}
+        - {x: -9, y: -1.2099609}
+        - {x: 94, y: -25.20996}
+        - {x: 160, y: -25.20996}
+        - {x: 164, y: -22.20996}
+        - {x: 167, y: -1.2099609}
+        - {x: 167, y: 53.79004}
+    - name: battle_death_2 instance 10034
+      rect:
+        serializedVersion: 2
+        x: 1505
+        y: 1180
+        width: 215
+        height: 217
+      alignment: 9
+      pivot: {x: 0.2, y: 0.13}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 147, y: 62.79004}
+        - {x: 14, y: 62.79004}
+        - {x: -9, y: 58.79004}
+        - {x: -9, y: -1.2099609}
+        - {x: 94, y: -25.20996}
+        - {x: 160, y: -25.20996}
+        - {x: 164, y: -22.20996}
+        - {x: 167, y: -1.2099609}
+        - {x: 167, y: 53.79004}
+    - name: battle_death_2 instance 10035
+      rect:
+        serializedVersion: 2
+        x: 1720
+        y: 1180
+        width: 215
+        height: 217
+      alignment: 9
+      pivot: {x: 0.2, y: 0.13}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 147, y: 62.79004}
+        - {x: 14, y: 62.79004}
+        - {x: -9, y: 58.79004}
+        - {x: -9, y: -1.2099609}
+        - {x: 94, y: -25.20996}
+        - {x: 160, y: -25.20996}
+        - {x: 164, y: -22.20996}
+        - {x: 167, y: -1.2099609}
+        - {x: 167, y: 53.79004}
+    - name: battle_death_2 instance 10036
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 963
+        width: 215
+        height: 217
+      alignment: 9
+      pivot: {x: 0.2, y: 0.13}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 147, y: 62.789978}
+        - {x: 14, y: 62.789978}
+        - {x: -9, y: 58.789978}
+        - {x: -9, y: -1.210022}
+        - {x: 94, y: -25.210022}
+        - {x: 160, y: -25.210022}
+        - {x: 164, y: -22.210022}
+        - {x: 167, y: -1.210022}
+        - {x: 167, y: 53.789978}
+    - name: battle_death_2 instance 10037
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 963
+        width: 215
+        height: 217
+      alignment: 9
+      pivot: {x: 0.2, y: 0.13}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 147, y: 62.789978}
+        - {x: 14, y: 62.789978}
+        - {x: -9, y: 58.789978}
+        - {x: -9, y: -1.210022}
+        - {x: 94, y: -25.210022}
+        - {x: 160, y: -25.210022}
+        - {x: 164, y: -22.210022}
+        - {x: 167, y: -1.210022}
+        - {x: 167, y: 53.789978}
+    - name: battle_death_2 instance 10038
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 963
+        width: 215
+        height: 217
+      alignment: 9
+      pivot: {x: 0.2, y: 0.13}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 147, y: 62.789978}
+        - {x: 14, y: 62.789978}
+        - {x: -9, y: 58.789978}
+        - {x: -9, y: -1.210022}
+        - {x: 94, y: -25.210022}
+        - {x: 160, y: -25.210022}
+        - {x: 164, y: -22.210022}
+        - {x: 167, y: -1.210022}
+        - {x: 167, y: 53.789978}
+    - name: battle_death_2 instance 10039
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 963
+        width: 215
+        height: 217
+      alignment: 9
+      pivot: {x: 0.2, y: 0.13}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 147, y: 62.789978}
+        - {x: 14, y: 62.789978}
+        - {x: -9, y: 58.789978}
+        - {x: -9, y: -1.210022}
+        - {x: 94, y: -25.210022}
+        - {x: 160, y: -25.210022}
+        - {x: 164, y: -22.210022}
+        - {x: 167, y: -1.210022}
+        - {x: 167, y: 53.789978}
+    - name: battle_death_2 instance 10040
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 963
+        width: 215
+        height: 217
+      alignment: 9
+      pivot: {x: 0.2, y: 0.13}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 147, y: 62.789978}
+        - {x: 14, y: 62.789978}
+        - {x: -9, y: 58.789978}
+        - {x: -9, y: -1.210022}
+        - {x: 94, y: -25.210022}
+        - {x: 160, y: -25.210022}
+        - {x: 164, y: -22.210022}
+        - {x: 167, y: -1.210022}
+        - {x: 167, y: 53.789978}
+    - name: battle_death_2 instance 10041
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 963
+        width: 215
+        height: 217
+      alignment: 9
+      pivot: {x: 0.2, y: 0.13}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 147, y: 62.789978}
+        - {x: 14, y: 62.789978}
+        - {x: -9, y: 58.789978}
+        - {x: -9, y: -1.210022}
+        - {x: 94, y: -25.210022}
+        - {x: 160, y: -25.210022}
+        - {x: 164, y: -22.210022}
+        - {x: 167, y: -1.210022}
+        - {x: 167, y: 53.789978}
+    - name: battle_death_2 instance 10042
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 963
+        width: 215
+        height: 217
+      alignment: 9
+      pivot: {x: 0.2, y: 0.13}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 147, y: 62.789978}
+        - {x: 14, y: 62.789978}
+        - {x: -9, y: 58.789978}
+        - {x: -9, y: -1.210022}
+        - {x: 94, y: -25.210022}
+        - {x: 160, y: -25.210022}
+        - {x: 164, y: -22.210022}
+        - {x: 167, y: -1.210022}
+        - {x: 167, y: 53.789978}
+    - name: battle_death_2 instance 10043
+      rect:
+        serializedVersion: 2
+        x: 1505
+        y: 963
+        width: 215
+        height: 217
+      alignment: 9
+      pivot: {x: 0.2, y: 0.13}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 147, y: 62.789978}
+        - {x: 14, y: 62.789978}
+        - {x: -9, y: 58.789978}
+        - {x: -9, y: -1.210022}
+        - {x: 94, y: -25.210022}
+        - {x: 160, y: -25.210022}
+        - {x: 164, y: -22.210022}
+        - {x: 167, y: -1.210022}
+        - {x: 167, y: 53.789978}
+    - name: battle_death_2 instance 10044
+      rect:
+        serializedVersion: 2
+        x: 1720
+        y: 963
+        width: 215
+        height: 217
+      alignment: 9
+      pivot: {x: 0.2, y: 0.13}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 147, y: 62.789978}
+        - {x: 14, y: 62.789978}
+        - {x: -9, y: 58.789978}
+        - {x: -9, y: -1.210022}
+        - {x: 94, y: -25.210022}
+        - {x: 160, y: -25.210022}
+        - {x: 164, y: -22.210022}
+        - {x: 167, y: -1.210022}
+        - {x: 167, y: 53.789978}
+    - name: battle_death_2 instance 10045
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 746
+        width: 215
+        height: 217
+      alignment: 9
+      pivot: {x: 0.2, y: 0.13}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 147, y: 62.789978}
+        - {x: 14, y: 62.789978}
+        - {x: -9, y: 58.789978}
+        - {x: -9, y: -1.210022}
+        - {x: 94, y: -25.210022}
+        - {x: 160, y: -25.210022}
+        - {x: 164, y: -22.210022}
+        - {x: 167, y: -1.210022}
+        - {x: 167, y: 53.789978}
+    - name: battle_death_2 instance 10046
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 746
+        width: 215
+        height: 217
+      alignment: 9
+      pivot: {x: 0.2, y: 0.13}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 147, y: 62.789978}
+        - {x: 14, y: 62.789978}
+        - {x: -9, y: 58.789978}
+        - {x: -9, y: -1.210022}
+        - {x: 94, y: -25.210022}
+        - {x: 160, y: -25.210022}
+        - {x: 164, y: -22.210022}
+        - {x: 167, y: -1.210022}
+        - {x: 167, y: 53.789978}
+    - name: battle_death_2 instance 10047
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 746
+        width: 215
+        height: 217
+      alignment: 9
+      pivot: {x: 0.2, y: 0.13}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 147, y: 62.789978}
+        - {x: 14, y: 62.789978}
+        - {x: -9, y: 58.789978}
+        - {x: -9, y: -1.210022}
+        - {x: 94, y: -25.210022}
+        - {x: 160, y: -25.210022}
+        - {x: 164, y: -22.210022}
+        - {x: 167, y: -1.210022}
+        - {x: 167, y: 53.789978}
+    - name: battle_death_2 instance 10048
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 746
+        width: 215
+        height: 217
+      alignment: 9
+      pivot: {x: 0.2, y: 0.13}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 147, y: 62.789978}
+        - {x: 14, y: 62.789978}
+        - {x: -9, y: 58.789978}
+        - {x: -9, y: -1.210022}
+        - {x: 94, y: -25.210022}
+        - {x: 160, y: -25.210022}
+        - {x: 164, y: -22.210022}
+        - {x: 167, y: -1.210022}
+        - {x: 167, y: 53.789978}
+    - name: battle_death_2 instance 10049
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 746
+        width: 215
+        height: 217
+      alignment: 9
+      pivot: {x: 0.2, y: 0.13}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10, y: 62.789978}
+        - {x: -9, y: 59.789978}
+        - {x: -9, y: 14.789978}
+        - {x: -8, y: 13.789978}
+        - {x: 88, y: -25.210022}
+        - {x: 167, y: -25.210022}
+        - {x: 167, y: 60.789978}
+        - {x: 165, y: 62.789978}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

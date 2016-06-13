@@ -1,0 +1,757 @@
+fileFormatVersion: 2
+guid: 44dda166311b61649b62d257121f4f00
+timeCreated: 1461061294
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Sirko_stand0000
+    21300002: Sirko_stand0001
+    21300004: Sirko_stand0002
+    21300006: Sirko_stand0003
+    21300008: Sirko_stand0004
+    21300010: Sirko_stand0005
+    21300012: Sirko_stand0006
+    21300014: Sirko_stand0007
+    21300016: Sirko_stand0008
+    21300018: Sirko_stand0009
+    21300020: Sirko_stand0010
+    21300022: Sirko_stand0011
+    21300024: Sirko_stand0012
+    21300026: Sirko_stand0013
+    21300028: Sirko_stand0014
+    21300030: Sirko_stand0015
+    21300032: Sirko_stand0016
+    21300034: Sirko_stand0017
+    21300036: Sirko_stand0018
+    21300038: Sirko_stand0019
+    21300040: Sirko_stand0020
+    21300042: Sirko_stand0021
+    21300044: Sirko_stand0022
+    21300046: Sirko_stand0023
+    21300048: Sirko_stand0024
+    21300050: Sirko_stand0025
+    21300052: Sirko_stand0026
+    21300054: Sirko_stand0027
+    21300056: Sirko_stand0028
+    21300058: Sirko_stand0029
+    21300060: Sirko_stand instance 10000
+    21300062: Sirko_stand instance 10001
+    21300064: Sirko_stand instance 10002
+    21300066: Sirko_stand instance 10003
+    21300068: Sirko_stand instance 10004
+    21300070: Sirko_stand instance 10005
+    21300072: Sirko_stand instance 10006
+    21300074: Sirko_stand instance 10007
+    21300076: Sirko_stand instance 10008
+    21300078: Sirko_stand instance 10009
+    21300080: Sirko_stand instance 10010
+    21300082: Sirko_stand instance 10011
+    21300084: Sirko_stand instance 10012
+    21300086: Sirko_stand instance 10013
+    21300088: Sirko_stand instance 10014
+    21300090: Sirko_stand instance 10015
+    21300092: Sirko_stand instance 10016
+    21300094: Sirko_stand instance 10017
+    21300096: Sirko_stand instance 10018
+    21300098: Sirko_stand instance 10019
+    21300100: Sirko_stand instance 10020
+    21300102: Sirko_stand instance 10021
+    21300104: Sirko_stand instance 10022
+    21300106: Sirko_stand instance 10023
+    21300108: Sirko_stand instance 10024
+    21300110: Sirko_stand instance 10025
+    21300112: Sirko_stand instance 10026
+    21300114: Sirko_stand instance 10027
+    21300116: Sirko_stand instance 10028
+    21300118: Sirko_stand instance 10029
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Sirko_stand instance 10000
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 820
+        width: 161
+        height: 204
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -83.600006, y: 204}
+        - {x: -96.600006, y: 188}
+        - {x: -96.600006, y: 51}
+        - {x: -50.600006, y: 3}
+        - {x: 50.399994, y: 3}
+        - {x: 50.399994, y: 182}
+        - {x: 25.399994, y: 204}
+    - name: Sirko_stand instance 10001
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 820
+        width: 161
+        height: 204
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7.399994, y: 204}
+        - {x: -24.600006, y: 204}
+        - {x: -56.600006, y: 199}
+        - {x: -96.600006, y: 161}
+        - {x: -96.600006, y: 81}
+        - {x: -32.600006, y: 5}
+        - {x: -13.600006, y: 3}
+        - {x: 34.399994, y: 3}
+        - {x: 51.399994, y: 31}
+        - {x: 51.399994, y: 150}
+        - {x: 20.399994, y: 202}
+    - name: Sirko_stand instance 10002
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 820
+        width: 161
+        height: 204
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15.600006, y: 204}
+        - {x: -27.600006, y: 191}
+        - {x: -92.600006, y: 159}
+        - {x: -96.600006, y: 155}
+        - {x: -96.600006, y: 110}
+        - {x: -84.600006, y: 86}
+        - {x: -47.600006, y: 3}
+        - {x: 39.399994, y: 3}
+        - {x: 51.399994, y: 33}
+        - {x: 51.399994, y: 152}
+        - {x: 30.399994, y: 204}
+    - name: Sirko_stand instance 10003
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 820
+        width: 161
+        height: 204
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 15.400024, y: 204}
+        - {x: -78.599976, y: 204}
+        - {x: -96.599976, y: 185}
+        - {x: -96.599976, y: 80}
+        - {x: -41.599976, y: 3}
+        - {x: 42.400024, y: 3}
+        - {x: 52.400024, y: 63}
+        - {x: 52.400024, y: 139}
+        - {x: 19.400024, y: 199}
+    - name: Sirko_stand instance 10004
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 820
+        width: 161
+        height: 204
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -78.599976, y: 204}
+        - {x: -95.599976, y: 195}
+        - {x: -95.599976, y: 95}
+        - {x: -57.599976, y: 3}
+        - {x: 53.400024, y: 3}
+        - {x: 53.400024, y: 193}
+        - {x: 36.400024, y: 204}
+    - name: Sirko_stand instance 10005
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 820
+        width: 161
+        height: 204
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -95.599976, y: 204}
+        - {x: -95.599976, y: 69}
+        - {x: -56.599976, y: 3}
+        - {x: -4.5999756, y: 3}
+        - {x: -2.5999756, y: 7}
+        - {x: -0.5999756, y: 16}
+        - {x: 1.4000244, y: 6}
+        - {x: 2.4000244, y: 3}
+        - {x: 36.400024, y: 3}
+        - {x: 54.400024, y: 70}
+        - {x: 54.400024, y: 204}
+    - name: Sirko_stand instance 10006
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 616
+        width: 161
+        height: 204
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15.600006, y: 204}
+        - {x: -19.600006, y: 200}
+        - {x: -42.600006, y: 143}
+        - {x: -79.600006, y: 161}
+        - {x: -90.600006, y: 165}
+        - {x: -94.600006, y: 161}
+        - {x: -94.600006, y: 98}
+        - {x: -85.600006, y: 62}
+        - {x: -40.600006, y: 3}
+        - {x: -4.600006, y: 3}
+        - {x: -2.600006, y: 7}
+        - {x: -0.6000061, y: 16}
+        - {x: 1.3999939, y: 6}
+        - {x: 2.399994, y: 3}
+        - {x: 40.399994, y: 3}
+        - {x: 54.399994, y: 72}
+        - {x: 54.399994, y: 143}
+        - {x: 25.399994, y: 204}
+    - name: Sirko_stand instance 10007
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 616
+        width: 161
+        height: 204
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -94.600006, y: 204}
+        - {x: -94.600006, y: 113}
+        - {x: -84.600006, y: 88}
+        - {x: -77.600006, y: 78}
+        - {x: -73.600006, y: 76}
+        - {x: -63.600006, y: 69}
+        - {x: -48.600006, y: 24}
+        - {x: -36.600006, y: 6}
+        - {x: -4.600006, y: 3}
+        - {x: -2.600006, y: 7}
+        - {x: -0.6000061, y: 16}
+        - {x: 1.3999939, y: 6}
+        - {x: 2.399994, y: 3}
+        - {x: 43.399994, y: 3}
+        - {x: 55.399994, y: 42}
+        - {x: 55.399994, y: 204}
+    - name: Sirko_stand instance 10008
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 616
+        width: 161
+        height: 204
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8.600006, y: 204}
+        - {x: -31.600006, y: 195}
+        - {x: -93.600006, y: 164}
+        - {x: -93.600006, y: 93}
+        - {x: -33.600006, y: 4}
+        - {x: -31.600006, y: 3}
+        - {x: 49.399994, y: 3}
+        - {x: 56.399994, y: 39}
+        - {x: 56.399994, y: 174}
+        - {x: 22.399994, y: 204}
+    - name: Sirko_stand instance 10009
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 616
+        width: 161
+        height: 204
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 15.400024, y: 204}
+        - {x: -55.599976, y: 204}
+        - {x: -93.599976, y: 166}
+        - {x: -93.599976, y: 56}
+        - {x: -45.599976, y: 3}
+        - {x: 37.400024, y: 3}
+        - {x: 57.400024, y: 72}
+        - {x: 57.400024, y: 151}
+        - {x: 27.400024, y: 201}
+    - name: Sirko_stand instance 10010
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 616
+        width: 161
+        height: 204
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 23.400024, y: 204}
+        - {x: -19.599976, y: 204}
+        - {x: -33.599976, y: 198}
+        - {x: -93.599976, y: 162}
+        - {x: -93.599976, y: 97}
+        - {x: -84.599976, y: 76}
+        - {x: -66.599976, y: 71}
+        - {x: -51.599976, y: 73}
+        - {x: -52.599976, y: 48}
+        - {x: -52.599976, y: 38}
+        - {x: -48.599976, y: 29}
+        - {x: -36.599976, y: 6}
+        - {x: -4.5999756, y: 3}
+        - {x: -2.5999756, y: 7}
+        - {x: 2.4000244, y: 3}
+        - {x: 35.400024, y: 3}
+        - {x: 54.400024, y: 32}
+        - {x: 58.400024, y: 61}
+        - {x: 58.400024, y: 140}
+    - name: Sirko_stand instance 10011
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 616
+        width: 161
+        height: 204
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -92.599976, y: 204}
+        - {x: -92.599976, y: 106}
+        - {x: -85.599976, y: 93}
+        - {x: -42.599976, y: 3}
+        - {x: 38.400024, y: 3}
+        - {x: 59.400024, y: 41}
+        - {x: 59.400024, y: 184}
+        - {x: 55.400024, y: 204}
+    - name: Sirko_stand instance 10012
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 412
+        width: 161
+        height: 204
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 46.399994, y: 204}
+        - {x: -7.600006, y: 204}
+        - {x: -22.600006, y: 187}
+        - {x: -39.600006, y: 146}
+        - {x: -75.600006, y: 166}
+        - {x: -86.600006, y: 170}
+        - {x: -92.600006, y: 165}
+        - {x: -92.600006, y: 78}
+        - {x: -75.600006, y: 18}
+        - {x: -35.600006, y: 3}
+        - {x: 34.399994, y: 3}
+        - {x: 41.399994, y: 38}
+        - {x: 60.399994, y: 51}
+        - {x: 60.399994, y: 147}
+    - name: Sirko_stand instance 10013
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 412
+        width: 161
+        height: 204
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15.600006, y: 204}
+        - {x: -28.600006, y: 200}
+        - {x: -92.600006, y: 170}
+        - {x: -92.600006, y: 82}
+        - {x: -64.600006, y: 3}
+        - {x: 54.399994, y: 3}
+        - {x: 61.399994, y: 21}
+        - {x: 61.399994, y: 162}
+        - {x: 50.399994, y: 204}
+    - name: Sirko_stand instance 10014
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 412
+        width: 161
+        height: 204
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -90.600006, y: 204}
+        - {x: -91.600006, y: 200}
+        - {x: -91.600006, y: 89}
+        - {x: -90.600006, y: 80}
+        - {x: -34.600006, y: 3}
+        - {x: 34.399994, y: 3}
+        - {x: 62.399994, y: 70}
+        - {x: 62.399994, y: 145}
+        - {x: 37.399994, y: 204}
+    - name: Sirko_stand instance 10015
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 412
+        width: 161
+        height: 204
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -70.599976, y: 204}
+        - {x: -92.599976, y: 198}
+        - {x: -92.599976, y: 54}
+        - {x: -73.599976, y: 3}
+        - {x: 53.400024, y: 3}
+        - {x: 61.400024, y: 19}
+        - {x: 61.400024, y: 204}
+    - name: Sirko_stand instance 10016
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 412
+        width: 161
+        height: 204
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 21.400024, y: 204}
+        - {x: -11.599976, y: 204}
+        - {x: -42.599976, y: 147}
+        - {x: -78.599976, y: 170}
+        - {x: -92.599976, y: 175}
+        - {x: -92.599976, y: 74}
+        - {x: -49.599976, y: 7}
+        - {x: -35.599976, y: 3}
+        - {x: 57.400024, y: 3}
+        - {x: 60.400024, y: 25}
+        - {x: 60.400024, y: 149}
+        - {x: 29.400024, y: 201}
+    - name: Sirko_stand instance 10017
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 412
+        width: 161
+        height: 204
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -69.599976, y: 204}
+        - {x: -92.599976, y: 201}
+        - {x: -92.599976, y: 75}
+        - {x: -67.599976, y: 25}
+        - {x: -33.599976, y: 3}
+        - {x: 37.400024, y: 3}
+        - {x: 60.400024, y: 37}
+        - {x: 60.400024, y: 138}
+        - {x: 34.400024, y: 204}
+    - name: Sirko_stand instance 10018
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 208
+        width: 161
+        height: 204
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -93.600006, y: 204}
+        - {x: -93.600006, y: 91}
+        - {x: -86.600006, y: 74}
+        - {x: -59.600006, y: 3}
+        - {x: 44.399994, y: 3}
+        - {x: 58.399994, y: 29}
+        - {x: 58.399994, y: 204}
+    - name: Sirko_stand instance 10019
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 208
+        width: 161
+        height: 204
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -93.600006, y: 204}
+        - {x: -93.600006, y: 35}
+        - {x: -33.600006, y: 3}
+        - {x: 57.399994, y: 3}
+        - {x: 57.399994, y: 204}
+    - name: Sirko_stand instance 10020
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 208
+        width: 161
+        height: 204
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -93.600006, y: 204}
+        - {x: -93.600006, y: 58}
+        - {x: -39.600006, y: 4}
+        - {x: -33.600006, y: 3}
+        - {x: 41.399994, y: 3}
+        - {x: 57.399994, y: 59}
+        - {x: 57.399994, y: 178}
+        - {x: 48.399994, y: 204}
+    - name: Sirko_stand instance 10021
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 208
+        width: 161
+        height: 204
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 47.400024, y: 160}
+        - {x: 26.400024, y: 201}
+        - {x: 14.400024, y: 204}
+        - {x: -11.599976, y: 204}
+        - {x: -25.599976, y: 187}
+        - {x: -44.599976, y: 139}
+        - {x: -78.599976, y: 162}
+        - {x: -92.599976, y: 170}
+        - {x: -94.599976, y: 158}
+        - {x: -94.599976, y: 100}
+        - {x: -56.599976, y: 35}
+        - {x: -36.599976, y: 6}
+        - {x: -4.5999756, y: 3}
+        - {x: -2.5999756, y: 7}
+        - {x: -0.5999756, y: 16}
+        - {x: 1.4000244, y: 6}
+        - {x: 2.4000244, y: 3}
+        - {x: 33.400024, y: 3}
+        - {x: 50.400024, y: 39}
+        - {x: 56.400024, y: 58}
+        - {x: 56.400024, y: 128}
+    - name: Sirko_stand instance 10022
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 208
+        width: 161
+        height: 204
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -57.599976, y: 204}
+        - {x: -94.599976, y: 183}
+        - {x: -94.599976, y: 73}
+        - {x: -62.599976, y: 3}
+        - {x: -4.5999756, y: 3}
+        - {x: -2.5999756, y: 7}
+        - {x: -0.5999756, y: 16}
+        - {x: 1.4000244, y: 6}
+        - {x: 2.4000244, y: 3}
+        - {x: 40.400024, y: 3}
+        - {x: 55.400024, y: 39}
+        - {x: 55.400024, y: 178}
+        - {x: 25.400024, y: 204}
+    - name: Sirko_stand instance 10023
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 208
+        width: 161
+        height: 204
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -94.599976, y: 204}
+        - {x: -94.599976, y: 98}
+        - {x: -37.599976, y: 3}
+        - {x: 38.400024, y: 3}
+        - {x: 54.400024, y: 37}
+        - {x: 54.400024, y: 204}
+    - name: Sirko_stand instance 10024
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4
+        width: 161
+        height: 204
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -49.600006, y: 204}
+        - {x: -95.600006, y: 161}
+        - {x: -95.600006, y: 116}
+        - {x: -79.600006, y: 76}
+        - {x: -48.600006, y: 3}
+        - {x: -4.600006, y: 3}
+        - {x: -2.600006, y: 7}
+        - {x: -0.6000061, y: 16}
+        - {x: 1.3999939, y: 6}
+        - {x: 2.399994, y: 3}
+        - {x: 37.399994, y: 3}
+        - {x: 54.399994, y: 41}
+        - {x: 54.399994, y: 170}
+        - {x: 21.399994, y: 204}
+    - name: Sirko_stand instance 10025
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 4
+        width: 161
+        height: 204
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -82.600006, y: 204}
+        - {x: -95.600006, y: 199}
+        - {x: -95.600006, y: 92}
+        - {x: -44.600006, y: 3}
+        - {x: 35.399994, y: 3}
+        - {x: 53.399994, y: 66}
+        - {x: 53.399994, y: 169}
+        - {x: 35.399994, y: 204}
+    - name: Sirko_stand instance 10026
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 4
+        width: 161
+        height: 204
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -96.600006, y: 204}
+        - {x: -96.600006, y: 98}
+        - {x: -56.600006, y: 3}
+        - {x: 49.399994, y: 3}
+        - {x: 52.399994, y: 12}
+        - {x: 52.399994, y: 204}
+    - name: Sirko_stand instance 10027
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 4
+        width: 161
+        height: 204
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14.400024, y: 204}
+        - {x: -96.599976, y: 204}
+        - {x: -96.599976, y: 34}
+        - {x: -47.599976, y: 3}
+        - {x: 51.400024, y: 3}
+        - {x: 51.400024, y: 181}
+        - {x: 20.400024, y: 201}
+    - name: Sirko_stand instance 10028
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 4
+        width: 161
+        height: 204
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -39.599976, y: 204}
+        - {x: -94.599976, y: 164}
+        - {x: -96.599976, y: 154}
+        - {x: -96.599976, y: 109}
+        - {x: -82.599976, y: 70}
+        - {x: -32.599976, y: 5}
+        - {x: -13.599976, y: 3}
+        - {x: 41.400024, y: 3}
+        - {x: 51.400024, y: 8}
+        - {x: 51.400024, y: 204}
+    - name: Sirko_stand instance 10029
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 4
+        width: 161
+        height: 204
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -76.599976, y: 204}
+        - {x: -96.599976, y: 191}
+        - {x: -96.599976, y: 103}
+        - {x: -84.599976, y: 66}
+        - {x: -34.599976, y: 3}
+        - {x: 34.400024, y: 3}
+        - {x: 50.400024, y: 28}
+        - {x: 50.400024, y: 182}
+        - {x: 21.400024, y: 204}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

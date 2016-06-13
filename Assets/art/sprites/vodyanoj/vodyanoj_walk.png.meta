@@ -1,0 +1,461 @@
+fileFormatVersion: 2
+guid: 95377c0ce45ba2a44ace5aff0761451c
+timeCreated: 1461173458
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Vodianiy_walking instance 10000
+    21300002: Vodianiy_walking instance 10001
+    21300004: Vodianiy_walking instance 10002
+    21300006: Vodianiy_walking instance 10003
+    21300008: Vodianiy_walking instance 10004
+    21300010: Vodianiy_walking instance 10005
+    21300012: Vodianiy_walking instance 10006
+    21300014: Vodianiy_walking instance 10007
+    21300016: Vodianiy_walking instance 10008
+    21300018: Vodianiy_walking instance 10009
+    21300020: Vodianiy_walking instance 10010
+    21300022: Vodianiy_walking instance 10011
+    21300024: Vodianiy_walking instance 10012
+    21300026: Vodianiy_walking instance 10013
+    21300028: Vodianiy_walking instance 10014
+    21300030: Vodianiy_walking instance 10015
+    21300032: Vodianiy_walking instance 10016
+    21300034: Vodianiy_walking instance 10017
+    21300036: Vodianiy_walking instance 10018
+    21300038: Vodianiy_walking instance 10019
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Vodianiy_walking instance 10000
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 857
+        width: 177
+        height: 167
+      alignment: 9
+      pivot: {x: 0.55, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -95.35, y: 90.29999}
+        - {x: -63.35, y: -9.700012}
+        - {x: -57.35, y: -13.700012}
+        - {x: 76.65, y: -13.700012}
+        - {x: 76.65, y: 41.299988}
+        - {x: 35.65, y: 150.29999}
+        - {x: -13.349998, y: 150.29999}
+        - {x: -26.349998, y: 148.29999}
+        - {x: -95.35, y: 124.29999}
+    - name: Vodianiy_walking instance 10001
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 857
+        width: 177
+        height: 167
+      alignment: 9
+      pivot: {x: 0.55, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 34.649994, y: 150.29999}
+        - {x: -59.350006, y: 150.29999}
+        - {x: -95.350006, y: 137.29999}
+        - {x: -95.350006, y: 66.29999}
+        - {x: -70.350006, y: -13.700012}
+        - {x: 59.649994, y: -13.700012}
+        - {x: 76.649994, y: -7.700012}
+        - {x: 76.649994, y: 15.299988}
+        - {x: 75.649994, y: 19.299988}
+    - name: Vodianiy_walking instance 10002
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 857
+        width: 177
+        height: 167
+      alignment: 9
+      pivot: {x: 0.55, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -96.350006, y: 150.29999}
+        - {x: -96.350006, y: 101.29999}
+        - {x: -72.350006, y: -13.700012}
+        - {x: 64.649994, y: -13.700012}
+        - {x: 76.649994, y: -8.700012}
+        - {x: 76.649994, y: 75.29999}
+        - {x: 32.649994, y: 150.29999}
+    - name: Vodianiy_walking instance 10003
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 857
+        width: 177
+        height: 167
+      alignment: 9
+      pivot: {x: 0.55, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -96.349976, y: 150.29999}
+        - {x: -96.349976, y: 31.299988}
+        - {x: -73.349976, y: -13.700012}
+        - {x: 60.650024, y: -13.700012}
+        - {x: 76.650024, y: -8.700012}
+        - {x: 76.650024, y: 18.299988}
+        - {x: 31.650024, y: 150.29999}
+    - name: Vodianiy_walking instance 10004
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 857
+        width: 177
+        height: 167
+      alignment: 9
+      pivot: {x: 0.55, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 31.650024, y: 150.29999}
+        - {x: -51.349976, y: 150.29999}
+        - {x: -97.349976, y: 136.29999}
+        - {x: -97.349976, y: 41.299988}
+        - {x: -86.349976, y: -4.700012}
+        - {x: -65.349976, y: -12.700012}
+        - {x: -58.349976, y: -13.700012}
+        - {x: 64.650024, y: -13.700012}
+        - {x: 76.650024, y: -8.700012}
+        - {x: 76.650024, y: 15.299988}
+        - {x: 75.650024, y: 19.299988}
+    - name: Vodianiy_walking instance 10005
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 690
+        width: 177
+        height: 167
+      alignment: 9
+      pivot: {x: 0.55, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -84.35, y: 150.29999}
+        - {x: -97.35, y: 147.29999}
+        - {x: -97.35, y: 61.299988}
+        - {x: -83.35, y: -13.700012}
+        - {x: 76.65, y: -13.700012}
+        - {x: 76.65, y: 62.299988}
+        - {x: 49.65, y: 150.29999}
+    - name: Vodianiy_walking instance 10006
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 690
+        width: 177
+        height: 167
+      alignment: 9
+      pivot: {x: 0.55, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -66.350006, y: -0.7000122}
+        - {x: -63.350006, y: -9.700012}
+        - {x: -56.350006, y: -13.700012}
+        - {x: 76.649994, y: -13.700012}
+        - {x: 76.649994, y: 62.299988}
+        - {x: 52.649994, y: 150.29999}
+        - {x: -97.350006, y: 150.29999}
+        - {x: -97.350006, y: 94.29999}
+    - name: Vodianiy_walking instance 10007
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 690
+        width: 177
+        height: 167
+      alignment: 9
+      pivot: {x: 0.55, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 31.649994, y: 150.29999}
+        - {x: -47.350006, y: 150.29999}
+        - {x: -97.350006, y: 122.29999}
+        - {x: -97.350006, y: 29.299988}
+        - {x: -78.350006, y: -13.700012}
+        - {x: 64.649994, y: -13.700012}
+        - {x: 76.649994, y: -8.700012}
+        - {x: 76.649994, y: 15.299988}
+        - {x: 75.649994, y: 19.299988}
+    - name: Vodianiy_walking instance 10008
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 690
+        width: 177
+        height: 167
+      alignment: 9
+      pivot: {x: 0.55, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -97.349976, y: 150.29999}
+        - {x: -97.349976, y: -1.7000122}
+        - {x: -95.349976, y: -12.700012}
+        - {x: -78.349976, y: -13.700012}
+        - {x: 60.650024, y: -13.700012}
+        - {x: 76.650024, y: -8.700012}
+        - {x: 76.650024, y: 18.299988}
+        - {x: 31.650024, y: 150.29999}
+    - name: Vodianiy_walking instance 10009
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 690
+        width: 177
+        height: 167
+      alignment: 9
+      pivot: {x: 0.55, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -76.349976, y: 150.29999}
+        - {x: -97.349976, y: 141.29999}
+        - {x: -97.349976, y: 44.299988}
+        - {x: -73.349976, y: -13.700012}
+        - {x: 60.650024, y: -13.700012}
+        - {x: 76.650024, y: -8.700012}
+        - {x: 76.650024, y: 18.299988}
+        - {x: 31.650024, y: 150.29999}
+    - name: Vodianiy_walking instance 10010
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 523
+        width: 177
+        height: 167
+      alignment: 9
+      pivot: {x: 0.55, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -86.35, y: 70.29999}
+        - {x: -66.35, y: -0.7000122}
+        - {x: -63.35, y: -9.700012}
+        - {x: -56.35, y: -13.700012}
+        - {x: 76.65, y: -13.700012}
+        - {x: 76.65, y: 60.299988}
+        - {x: 51.65, y: 150.29999}
+        - {x: -97.35, y: 150.29999}
+        - {x: -97.35, y: 96.29999}
+    - name: Vodianiy_walking instance 10011
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 523
+        width: 177
+        height: 167
+      alignment: 9
+      pivot: {x: 0.55, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24.350006, y: 150.29999}
+        - {x: -61.350006, y: 139.29999}
+        - {x: -97.350006, y: 126.29999}
+        - {x: -97.350006, y: 71.29999}
+        - {x: -71.350006, y: 0.2999878}
+        - {x: -65.350006, y: -12.700012}
+        - {x: -58.350006, y: -13.700012}
+        - {x: 64.649994, y: -13.700012}
+        - {x: 76.649994, y: -8.700012}
+        - {x: 76.649994, y: 23.299988}
+        - {x: 42.649994, y: 150.29999}
+    - name: Vodianiy_walking instance 10012
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 523
+        width: 177
+        height: 167
+      alignment: 9
+      pivot: {x: 0.55, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -68.350006, y: -13.700012}
+        - {x: 76.649994, y: -13.700012}
+        - {x: 76.649994, y: 65.29999}
+        - {x: 54.649994, y: 150.29999}
+        - {x: -72.350006, y: 150.29999}
+        - {x: -97.350006, y: 144.29999}
+        - {x: -97.350006, y: 51.299988}
+    - name: Vodianiy_walking instance 10013
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 523
+        width: 177
+        height: 167
+      alignment: 9
+      pivot: {x: 0.55, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -77.349976, y: 150.29999}
+        - {x: -97.349976, y: 143.29999}
+        - {x: -97.349976, y: 76.29999}
+        - {x: -70.349976, y: -13.700012}
+        - {x: 76.650024, y: -13.700012}
+        - {x: 76.650024, y: 90.29999}
+        - {x: 62.650024, y: 150.29999}
+    - name: Vodianiy_walking instance 10014
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 523
+        width: 177
+        height: 167
+      alignment: 9
+      pivot: {x: 0.55, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -34.349976, y: 150.29999}
+        - {x: -80.349976, y: 134.29999}
+        - {x: -97.349976, y: 125.29999}
+        - {x: -97.349976, y: 30.299988}
+        - {x: -72.349976, y: -13.700012}
+        - {x: 76.650024, y: -13.700012}
+        - {x: 76.650024, y: 67.29999}
+        - {x: 51.650024, y: 150.29999}
+    - name: Vodianiy_walking instance 10015
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 356
+        width: 177
+        height: 167
+      alignment: 9
+      pivot: {x: 0.55, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -60.35, y: -13.700012}
+        - {x: 76.65, y: -13.700012}
+        - {x: 76.65, y: 41.299988}
+        - {x: 34.65, y: 150.29999}
+        - {x: -96.35, y: 150.29999}
+        - {x: -96.35, y: 31.299988}
+    - name: Vodianiy_walking instance 10016
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 356
+        width: 177
+        height: 167
+      alignment: 9
+      pivot: {x: 0.55, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -96.350006, y: 100.29999}
+        - {x: -63.350006, y: -10.700012}
+        - {x: -58.350006, y: -13.700012}
+        - {x: 76.649994, y: -13.700012}
+        - {x: 76.649994, y: 39.299988}
+        - {x: 31.649994, y: 150.29999}
+        - {x: -24.350006, y: 150.29999}
+        - {x: -96.350006, y: 119.29999}
+    - name: Vodianiy_walking instance 10017
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 356
+        width: 177
+        height: 167
+      alignment: 9
+      pivot: {x: 0.55, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -96.350006, y: 150.29999}
+        - {x: -96.350006, y: 91.29999}
+        - {x: -71.350006, y: -13.700012}
+        - {x: 60.649994, y: -13.700012}
+        - {x: 76.649994, y: -8.700012}
+        - {x: 76.649994, y: 18.299988}
+        - {x: 31.649994, y: 150.29999}
+    - name: Vodianiy_walking instance 10018
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 356
+        width: 177
+        height: 167
+      alignment: 9
+      pivot: {x: 0.55, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 34.650024, y: 150.29999}
+        - {x: -59.349976, y: 150.29999}
+        - {x: -95.349976, y: 137.29999}
+        - {x: -95.349976, y: 66.29999}
+        - {x: -70.349976, y: -13.700012}
+        - {x: 59.650024, y: -13.700012}
+        - {x: 76.650024, y: -7.700012}
+        - {x: 76.650024, y: 15.299988}
+        - {x: 75.650024, y: 19.299988}
+    - name: Vodianiy_walking instance 10019
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 356
+        width: 177
+        height: 167
+      alignment: 9
+      pivot: {x: 0.55, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -95.349976, y: 90.29999}
+        - {x: -63.349976, y: -9.700012}
+        - {x: -57.349976, y: -13.700012}
+        - {x: 76.650024, y: -13.700012}
+        - {x: 76.650024, y: 41.299988}
+        - {x: 35.650024, y: 150.29999}
+        - {x: -13.349976, y: 150.29999}
+        - {x: -26.349976, y: 148.29999}
+        - {x: -95.349976, y: 124.29999}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

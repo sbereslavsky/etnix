@@ -1,0 +1,723 @@
+fileFormatVersion: 2
+guid: d027920ecce132d42ad02953bcde1aae
+timeCreated: 1461160300
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Mavka_walking instance 10000
+    21300002: Mavka_walking instance 10001
+    21300004: Mavka_walking instance 10002
+    21300006: Mavka_walking instance 10003
+    21300008: Mavka_walking instance 10004
+    21300010: Mavka_walking instance 10005
+    21300012: Mavka_walking instance 10006
+    21300014: Mavka_walking instance 10007
+    21300016: Mavka_walking instance 10008
+    21300018: Mavka_walking instance 10009
+    21300020: Mavka_walking instance 10010
+    21300022: Mavka_walking instance 10011
+    21300024: Mavka_walking instance 10012
+    21300026: Mavka_walking instance 10013
+    21300028: Mavka_walking instance 10014
+    21300030: Mavka_walking instance 10015
+    21300032: Mavka_walking instance 10016
+    21300034: Mavka_walking instance 10017
+    21300036: Mavka_walking instance 10018
+    21300038: Mavka_walking instance 10019
+    21300040: Mavka_walking instance 10020
+    21300042: Mavka_walking instance 10021
+    21300044: Mavka_walking instance 10022
+    21300046: Mavka_walking instance 10023
+    21300048: Mavka_walking instance 10024
+    21300050: Mavka_walking instance 10025
+    21300052: Mavka_walking instance 10026
+    21300054: Mavka_walking instance 10027
+    21300056: Mavka_walking instance 10028
+    21300058: Mavka_walking instance 10029
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Mavka_walking instance 10000
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 838
+        width: 110
+        height: 186
+      alignment: 9
+      pivot: {x: 0.54, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -59.4, y: 151}
+        - {x: -59.4, y: 43}
+        - {x: -50.4, y: 5}
+        - {x: 47.6, y: 5}
+        - {x: 47.6, y: 170}
+        - {x: 41.6, y: 186}
+        - {x: -12.400002, y: 186}
+        - {x: -21.400002, y: 166}
+    - name: Mavka_walking instance 10001
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 838
+        width: 110
+        height: 186
+      alignment: 9
+      pivot: {x: 0.54, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21.399994, y: 186}
+        - {x: -59.399994, y: 169}
+        - {x: -59.399994, y: 31}
+        - {x: -54.399994, y: 5}
+        - {x: 32.600006, y: 5}
+        - {x: 34.600006, y: 6}
+        - {x: 46.600006, y: 30}
+        - {x: 46.600006, y: 146}
+        - {x: 38.600006, y: 186}
+    - name: Mavka_walking instance 10002
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 838
+        width: 110
+        height: 186
+      alignment: 9
+      pivot: {x: 0.54, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 31.600006, y: 186}
+        - {x: -15.399994, y: 186}
+        - {x: -59.399994, y: 163}
+        - {x: -59.399994, y: 31}
+        - {x: -53.399994, y: 9}
+        - {x: -22.399994, y: 4}
+        - {x: 33.600006, y: 4}
+        - {x: 46.600006, y: 47}
+        - {x: 46.600006, y: 105}
+        - {x: 42.600006, y: 172}
+    - name: Mavka_walking instance 10003
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 838
+        width: 110
+        height: 186
+      alignment: 9
+      pivot: {x: 0.54, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 37.600006, y: 186}
+        - {x: -24.399994, y: 186}
+        - {x: -59.399994, y: 152}
+        - {x: -59.399994, y: 89}
+        - {x: -34.399994, y: 4}
+        - {x: 34.600006, y: 4}
+        - {x: 46.600006, y: 28}
+        - {x: 46.600006, y: 145}
+        - {x: 41.600006, y: 185}
+    - name: Mavka_walking instance 10004
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 838
+        width: 110
+        height: 186
+      alignment: 9
+      pivot: {x: 0.54, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.399994, y: 186}
+        - {x: -18.399994, y: 184}
+        - {x: -58.399994, y: 134}
+        - {x: -59.399994, y: 129}
+        - {x: -59.399994, y: 112}
+        - {x: -53.399994, y: 106}
+        - {x: -42.399994, y: 100}
+        - {x: -33.399994, y: 20}
+        - {x: -21.399994, y: 4}
+        - {x: -11.399994, y: 4}
+        - {x: -2.399994, y: 5}
+        - {x: 0.6000061, y: 8}
+        - {x: 0.6000061, y: 15}
+        - {x: 1.6000061, y: 16}
+        - {x: 0.6000061, y: 14}
+        - {x: 0.6000061, y: 7}
+        - {x: 1.6000061, y: 4}
+        - {x: 32.600006, y: 4}
+        - {x: 45.600006, y: 35}
+        - {x: 45.600006, y: 160}
+        - {x: 34.600006, y: 186}
+    - name: Mavka_walking instance 10005
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 838
+        width: 110
+        height: 186
+      alignment: 9
+      pivot: {x: 0.54, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.400024, y: 186}
+        - {x: -58.400024, y: 160}
+        - {x: -58.400024, y: 111}
+        - {x: -41.400024, y: 99}
+        - {x: -34.400024, y: 20}
+        - {x: -19.400024, y: 4}
+        - {x: 30.599976, y: 4}
+        - {x: 45.599976, y: 31}
+        - {x: 45.599976, y: 186}
+    - name: Mavka_walking instance 10006
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 838
+        width: 110
+        height: 186
+      alignment: 9
+      pivot: {x: 0.54, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 38.599976, y: 186}
+        - {x: -21.400024, y: 186}
+        - {x: -57.400024, y: 140}
+        - {x: -58.400024, y: 130}
+        - {x: -58.400024, y: 108}
+        - {x: -55.400024, y: 107}
+        - {x: -40.400024, y: 103}
+        - {x: -31.400024, y: 21}
+        - {x: -14.400024, y: 4}
+        - {x: 18.599976, y: 4}
+        - {x: 38.599976, y: 21}
+        - {x: 45.599976, y: 46}
+        - {x: 45.599976, y: 174}
+    - name: Mavka_walking instance 10007
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 838
+        width: 110
+        height: 186
+      alignment: 9
+      pivot: {x: 0.54, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25.400024, y: 186}
+        - {x: -57.400024, y: 156}
+        - {x: -57.400024, y: 28}
+        - {x: -51.400024, y: 9}
+        - {x: -36.400024, y: 3}
+        - {x: 23.599976, y: 3}
+        - {x: 44.599976, y: 13}
+        - {x: 44.599976, y: 183}
+        - {x: 32.599976, y: 186}
+    - name: Mavka_walking instance 10008
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 838
+        width: 110
+        height: 186
+      alignment: 9
+      pivot: {x: 0.54, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33.400024, y: 186}
+        - {x: -56.400024, y: 153}
+        - {x: -56.400024, y: 89}
+        - {x: -25.400024, y: 3}
+        - {x: 32.599976, y: 3}
+        - {x: 44.599976, y: 14}
+        - {x: 44.599976, y: 182}
+        - {x: 37.599976, y: 186}
+    - name: Mavka_walking instance 10009
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 652
+        width: 110
+        height: 186
+      alignment: 9
+      pivot: {x: 0.54, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 33.6, y: 186}
+        - {x: -31.400002, y: 186}
+        - {x: -55.4, y: 169}
+        - {x: -55.4, y: 3}
+        - {x: 29.599998, y: 3}
+        - {x: 43.6, y: 24}
+        - {x: 43.6, y: 183}
+    - name: Mavka_walking instance 10010
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 652
+        width: 110
+        height: 186
+      alignment: 9
+      pivot: {x: 0.54, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.399994, y: 186}
+        - {x: -22.399994, y: 184}
+        - {x: -54.399994, y: 138}
+        - {x: -54.399994, y: 96}
+        - {x: -51.399994, y: 92}
+        - {x: -29.399994, y: 20}
+        - {x: -13.399994, y: 4}
+        - {x: 30.600006, y: 4}
+        - {x: 43.600006, y: 19}
+        - {x: 43.600006, y: 184}
+        - {x: 42.600006, y: 186}
+    - name: Mavka_walking instance 10011
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 652
+        width: 110
+        height: 186
+      alignment: 9
+      pivot: {x: 0.54, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 31.600006, y: 186}
+        - {x: -24.399994, y: 186}
+        - {x: -53.399994, y: 154}
+        - {x: -53.399994, y: 92}
+        - {x: -25.399994, y: 4}
+        - {x: 24.600006, y: 4}
+        - {x: 43.600006, y: 31}
+        - {x: 43.600006, y: 169}
+        - {x: 42.600006, y: 176}
+    - name: Mavka_walking instance 10012
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 652
+        width: 110
+        height: 186
+      alignment: 9
+      pivot: {x: 0.54, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 42.600006, y: 186}
+        - {x: -9.399994, y: 186}
+        - {x: -26.399994, y: 169}
+        - {x: -53.399994, y: 138}
+        - {x: -53.399994, y: 126}
+        - {x: -46.399994, y: 118}
+        - {x: -41.399994, y: 116}
+        - {x: -39.399994, y: 116}
+        - {x: -37.399994, y: 114}
+        - {x: -35.399994, y: 114}
+        - {x: -37.399994, y: 113}
+        - {x: -39.399994, y: 115}
+        - {x: -46.399994, y: 116}
+        - {x: -53.399994, y: 105}
+        - {x: -48.399994, y: 89}
+        - {x: -34.399994, y: 88}
+        - {x: -35.399994, y: 27}
+        - {x: -25.399994, y: 4}
+        - {x: 14.600006, y: 4}
+        - {x: 39.600006, y: 23}
+        - {x: 43.600006, y: 31}
+        - {x: 43.600006, y: 181}
+    - name: Mavka_walking instance 10013
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 652
+        width: 110
+        height: 186
+      alignment: 9
+      pivot: {x: 0.54, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10.399994, y: 186}
+        - {x: -23.399994, y: 167}
+        - {x: -53.399994, y: 146}
+        - {x: -53.399994, y: 109}
+        - {x: -49.399994, y: 94}
+        - {x: -53.399994, y: 73}
+        - {x: -53.399994, y: 57}
+        - {x: -27.399994, y: 4}
+        - {x: 40.600006, y: 4}
+        - {x: 43.600006, y: 8}
+        - {x: 43.600006, y: 184}
+        - {x: 42.600006, y: 186}
+    - name: Mavka_walking instance 10014
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 652
+        width: 110
+        height: 186
+      alignment: 9
+      pivot: {x: 0.54, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25.400024, y: 186}
+        - {x: -53.400024, y: 163}
+        - {x: -53.400024, y: 19}
+        - {x: -37.400024, y: 5}
+        - {x: 43.599976, y: 5}
+        - {x: 43.599976, y: 182}
+        - {x: 42.599976, y: 186}
+    - name: Mavka_walking instance 10015
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 652
+        width: 110
+        height: 186
+      alignment: 9
+      pivot: {x: 0.54, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53.400024, y: 70}
+        - {x: -31.400024, y: 4}
+        - {x: 43.599976, y: 4}
+        - {x: 43.599976, y: 172}
+        - {x: 41.599976, y: 186}
+        - {x: -18.400024, y: 186}
+        - {x: -53.400024, y: 150}
+    - name: Mavka_walking instance 10016
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 652
+        width: 110
+        height: 186
+      alignment: 9
+      pivot: {x: 0.54, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25.400024, y: 186}
+        - {x: -53.400024, y: 154}
+        - {x: -53.400024, y: 125}
+        - {x: -46.400024, y: 118}
+        - {x: -41.400024, y: 117}
+        - {x: -37.400024, y: 114}
+        - {x: -34.400024, y: 114}
+        - {x: -37.400024, y: 113}
+        - {x: -39.400024, y: 115}
+        - {x: -46.400024, y: 116}
+        - {x: -53.400024, y: 103}
+        - {x: -53.400024, y: 27}
+        - {x: -33.400024, y: 4}
+        - {x: 43.599976, y: 4}
+        - {x: 43.599976, y: 186}
+    - name: Mavka_walking instance 10017
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 652
+        width: 110
+        height: 186
+      alignment: 9
+      pivot: {x: 0.54, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.400024, y: 186}
+        - {x: -24.400024, y: 164}
+        - {x: -54.400024, y: 144}
+        - {x: -54.400024, y: 46}
+        - {x: -43.400024, y: 12}
+        - {x: -15.400024, y: 4}
+        - {x: 36.599976, y: 4}
+        - {x: 43.599976, y: 13}
+        - {x: 43.599976, y: 168}
+        - {x: 38.599976, y: 186}
+    - name: Mavka_walking instance 10018
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 466
+        width: 110
+        height: 186
+      alignment: 9
+      pivot: {x: 0.54, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33.4, y: 186}
+        - {x: -54.4, y: 171}
+        - {x: -54.4, y: 56}
+        - {x: -37.4, y: 16}
+        - {x: -15.400002, y: 4}
+        - {x: 38.6, y: 4}
+        - {x: 43.6, y: 6}
+        - {x: 43.6, y: 186}
+    - name: Mavka_walking instance 10019
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 466
+        width: 110
+        height: 186
+      alignment: 9
+      pivot: {x: 0.54, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23.399994, y: 186}
+        - {x: -54.399994, y: 164}
+        - {x: -54.399994, y: 8}
+        - {x: -45.399994, y: 4}
+        - {x: 22.600006, y: 4}
+        - {x: 43.600006, y: 13}
+        - {x: 43.600006, y: 185}
+        - {x: 39.600006, y: 186}
+    - name: Mavka_walking instance 10020
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 466
+        width: 110
+        height: 186
+      alignment: 9
+      pivot: {x: 0.54, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.399994, y: 186}
+        - {x: -25.399994, y: 182}
+        - {x: -55.399994, y: 146}
+        - {x: -55.399994, y: 69}
+        - {x: -31.399994, y: 21}
+        - {x: -19.399994, y: 3}
+        - {x: 17.600006, y: 3}
+        - {x: 44.600006, y: 15}
+        - {x: 44.600006, y: 178}
+        - {x: 42.600006, y: 186}
+    - name: Mavka_walking instance 10021
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 466
+        width: 110
+        height: 186
+      alignment: 9
+      pivot: {x: 0.54, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -29.399994, y: 186}
+        - {x: -56.399994, y: 140}
+        - {x: -56.399994, y: 50}
+        - {x: -27.399994, y: 3}
+        - {x: 19.600006, y: 3}
+        - {x: 43.600006, y: 14}
+        - {x: 44.600006, y: 17}
+        - {x: 44.600006, y: 170}
+        - {x: 40.600006, y: 186}
+    - name: Mavka_walking instance 10022
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 466
+        width: 110
+        height: 186
+      alignment: 9
+      pivot: {x: 0.54, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 45.600006, y: 186}
+        - {x: -20.399994, y: 186}
+        - {x: -57.399994, y: 148}
+        - {x: -57.399994, y: 34}
+        - {x: -49.399994, y: 3}
+        - {x: 23.600006, y: 3}
+        - {x: 37.600006, y: 21}
+        - {x: 45.600006, y: 42}
+    - name: Mavka_walking instance 10023
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 466
+        width: 110
+        height: 186
+      alignment: 9
+      pivot: {x: 0.54, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.400024, y: 186}
+        - {x: -19.400024, y: 185}
+        - {x: -58.400024, y: 126}
+        - {x: -58.400024, y: 100}
+        - {x: -33.400024, y: 4}
+        - {x: 29.599976, y: 4}
+        - {x: 45.599976, y: 11}
+        - {x: 45.599976, y: 166}
+        - {x: 41.599976, y: 186}
+    - name: Mavka_walking instance 10024
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 466
+        width: 110
+        height: 186
+      alignment: 9
+      pivot: {x: 0.54, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15.400024, y: 186}
+        - {x: -59.400024, y: 156}
+        - {x: -59.400024, y: 39}
+        - {x: -51.400024, y: 12}
+        - {x: -27.400024, y: 4}
+        - {x: 38.599976, y: 4}
+        - {x: 45.599976, y: 37}
+        - {x: 45.599976, y: 175}
+        - {x: 35.599976, y: 186}
+    - name: Mavka_walking instance 10025
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 466
+        width: 110
+        height: 186
+      alignment: 9
+      pivot: {x: 0.54, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -59.400024, y: 107}
+        - {x: -45.400024, y: 98}
+        - {x: -35.400024, y: 21}
+        - {x: -24.400024, y: 5}
+        - {x: -3.4000244, y: 5}
+        - {x: -0.4000244, y: 8}
+        - {x: 0.5999756, y: 11}
+        - {x: 0.5999756, y: 19}
+        - {x: 1.5999756, y: 6}
+        - {x: 2.5999756, y: 4}
+        - {x: 28.599976, y: 4}
+        - {x: 45.599976, y: 37}
+        - {x: 45.599976, y: 186}
+        - {x: -45.400024, y: 186}
+        - {x: -59.400024, y: 180}
+    - name: Mavka_walking instance 10026
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 466
+        width: 110
+        height: 186
+      alignment: 9
+      pivot: {x: 0.54, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33.400024, y: 186}
+        - {x: -59.400024, y: 166}
+        - {x: -59.400024, y: 29}
+        - {x: -52.400024, y: 4}
+        - {x: 37.599976, y: 4}
+        - {x: 46.599976, y: 30}
+        - {x: 46.599976, y: 185}
+        - {x: 41.599976, y: 186}
+    - name: Mavka_walking instance 10027
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 280
+        width: 110
+        height: 186
+      alignment: 9
+      pivot: {x: 0.54, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.400002, y: 186}
+        - {x: -59.4, y: 139}
+        - {x: -59.4, y: 65}
+        - {x: -39.4, y: 4}
+        - {x: 30.599998, y: 4}
+        - {x: 46.6, y: 27}
+        - {x: 46.6, y: 182}
+        - {x: 31.599998, y: 186}
+    - name: Mavka_walking instance 10028
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 280
+        width: 110
+        height: 186
+      alignment: 9
+      pivot: {x: 0.54, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -59.399994, y: 186}
+        - {x: -59.399994, y: 66}
+        - {x: -38.399994, y: 5}
+        - {x: 32.600006, y: 5}
+        - {x: 47.600006, y: 38}
+        - {x: 47.600006, y: 137}
+        - {x: 42.600006, y: 186}
+    - name: Mavka_walking instance 10029
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 280
+        width: 110
+        height: 186
+      alignment: 9
+      pivot: {x: 0.54, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.399994, y: 186}
+        - {x: -21.399994, y: 166}
+        - {x: -21.399994, y: 147}
+        - {x: -40.399994, y: 154}
+        - {x: -59.399994, y: 156}
+        - {x: -59.399994, y: 81}
+        - {x: -33.399994, y: 5}
+        - {x: 45.600006, y: 5}
+        - {x: 47.600006, y: 27}
+        - {x: 47.600006, y: 181}
+        - {x: 38.600006, y: 186}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

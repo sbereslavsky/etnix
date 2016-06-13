@@ -1,0 +1,555 @@
+fileFormatVersion: 2
+guid: 2c6e3336cd1e3f94a9228c871d3ca53f
+timeCreated: 1461173521
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Vodianiy_defeat instance 10000
+    21300002: Vodianiy_defeat instance 10001
+    21300004: Vodianiy_defeat instance 10002
+    21300006: Vodianiy_defeat instance 10003
+    21300008: Vodianiy_defeat instance 10004
+    21300010: Vodianiy_defeat instance 10005
+    21300012: Vodianiy_defeat instance 10006
+    21300014: Vodianiy_defeat instance 10007
+    21300016: Vodianiy_defeat instance 10008
+    21300018: Vodianiy_defeat instance 10009
+    21300020: Vodianiy_defeat instance 10010
+    21300022: Vodianiy_defeat instance 10011
+    21300024: Vodianiy_defeat instance 10012
+    21300026: Vodianiy_defeat instance 10013
+    21300028: Vodianiy_defeat instance 10014
+    21300030: Vodianiy_defeat instance 10015
+    21300032: Vodianiy_defeat instance 10016
+    21300034: Vodianiy_defeat instance 10017
+    21300036: Vodianiy_defeat instance 10018
+    21300038: Vodianiy_defeat instance 10019
+    21300040: Vodianiy_defeat instance 10020
+    21300042: Vodianiy_defeat instance 10021
+    21300044: Vodianiy_defeat instance 10022
+    21300046: Vodianiy_defeat instance 10023
+    21300048: Vodianiy_defeat instance 10024
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Vodianiy_defeat instance 10000
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 855
+        width: 142
+        height: 169
+      alignment: 9
+      pivot: {x: 0.445, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -39.19, y: 150.40997}
+        - {x: -63.19, y: 133.40997}
+        - {x: -63.19, y: -13.590027}
+        - {x: 46.81, y: -13.590027}
+        - {x: 76.81, y: -3.5900269}
+        - {x: 76.81, y: 21.409973}
+        - {x: 27.810001, y: 150.40997}
+    - name: Vodianiy_defeat instance 10001
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 855
+        width: 142
+        height: 169
+      alignment: 9
+      pivot: {x: 0.445, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31.190002, y: 150.40997}
+        - {x: -58.190002, y: 135.40997}
+        - {x: -63.190002, y: 108.40997}
+        - {x: -63.190002, y: -14.590027}
+        - {x: 76.81, y: -14.590027}
+        - {x: 76.81, y: 28.409973}
+        - {x: 35.809998, y: 150.40997}
+    - name: Vodianiy_defeat instance 10002
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 855
+        width: 142
+        height: 169
+      alignment: 9
+      pivot: {x: 0.445, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -36.190002, y: 150.40997}
+        - {x: -53.190002, y: 141.40997}
+        - {x: -63.190002, y: 93.40997}
+        - {x: -63.190002, y: -9.590027}
+        - {x: -21.190002, y: -14.590027}
+        - {x: 76.81, y: -14.590027}
+        - {x: 76.81, y: 36.409973}
+        - {x: 36.809998, y: 150.40997}
+    - name: Vodianiy_defeat instance 10003
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 855
+        width: 142
+        height: 169
+      alignment: 9
+      pivot: {x: 0.445, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 30.809998, y: 150.40997}
+        - {x: -25.190002, y: 150.40997}
+        - {x: -47.190002, y: 137.40997}
+        - {x: -61.190002, y: 84.40997}
+        - {x: -63.190002, y: 72.40997}
+        - {x: -63.190002, y: -15.590027}
+        - {x: 76.81, y: -15.590027}
+        - {x: 76.81, y: 61.409973}
+        - {x: 55.809998, y: 130.40997}
+    - name: Vodianiy_defeat instance 10004
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 855
+        width: 142
+        height: 169
+      alignment: 9
+      pivot: {x: 0.445, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 31.809998, y: 150.40997}
+        - {x: -6.1900024, y: 150.40997}
+        - {x: -52.190002, y: 132.40997}
+        - {x: -63.190002, y: 50.409973}
+        - {x: -63.190002, y: -13.590027}
+        - {x: -30.190002, y: -15.590027}
+        - {x: 76.81, y: -15.590027}
+        - {x: 76.81, y: 37.409973}
+        - {x: 38.809998, y: 148.40997}
+    - name: Vodianiy_defeat instance 10005
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 855
+        width: 142
+        height: 169
+      alignment: 9
+      pivot: {x: 0.445, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 31.809998, y: 150.40997}
+        - {x: -6.1900024, y: 150.40997}
+        - {x: -52.190002, y: 132.40997}
+        - {x: -63.190002, y: 50.409973}
+        - {x: -63.190002, y: -13.590027}
+        - {x: -30.190002, y: -15.590027}
+        - {x: 76.81, y: -15.590027}
+        - {x: 76.81, y: 37.409973}
+        - {x: 38.809998, y: 148.40997}
+    - name: Vodianiy_defeat instance 10006
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 855
+        width: 142
+        height: 169
+      alignment: 9
+      pivot: {x: 0.445, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 31.809998, y: 150.40997}
+        - {x: -6.1900024, y: 150.40997}
+        - {x: -52.190002, y: 132.40997}
+        - {x: -63.190002, y: 50.409973}
+        - {x: -63.190002, y: -13.590027}
+        - {x: -30.190002, y: -15.590027}
+        - {x: 76.81, y: -15.590027}
+        - {x: 76.81, y: 37.409973}
+        - {x: 38.809998, y: 148.40997}
+    - name: Vodianiy_defeat instance 10007
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 686
+        width: 142
+        height: 169
+      alignment: 9
+      pivot: {x: 0.445, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 31.810001, y: 150.40997}
+        - {x: -6.1899986, y: 150.40997}
+        - {x: -52.19, y: 132.40997}
+        - {x: -63.19, y: 50.409973}
+        - {x: -63.19, y: -13.590027}
+        - {x: -30.189999, y: -15.590027}
+        - {x: 76.81, y: -15.590027}
+        - {x: 76.81, y: 37.409973}
+        - {x: 38.81, y: 148.40997}
+    - name: Vodianiy_defeat instance 10008
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 686
+        width: 142
+        height: 169
+      alignment: 9
+      pivot: {x: 0.445, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 31.809998, y: 150.40997}
+        - {x: -6.1900024, y: 150.40997}
+        - {x: -52.190002, y: 132.40997}
+        - {x: -63.190002, y: 50.409973}
+        - {x: -63.190002, y: -13.590027}
+        - {x: -30.190002, y: -15.590027}
+        - {x: 76.81, y: -15.590027}
+        - {x: 76.81, y: 37.409973}
+        - {x: 38.809998, y: 148.40997}
+    - name: Vodianiy_defeat instance 10009
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 686
+        width: 142
+        height: 169
+      alignment: 9
+      pivot: {x: 0.445, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 31.809998, y: 150.40997}
+        - {x: -6.1900024, y: 150.40997}
+        - {x: -52.190002, y: 132.40997}
+        - {x: -63.190002, y: 50.409973}
+        - {x: -63.190002, y: -13.590027}
+        - {x: -30.190002, y: -15.590027}
+        - {x: 76.81, y: -15.590027}
+        - {x: 76.81, y: 37.409973}
+        - {x: 38.809998, y: 148.40997}
+    - name: Vodianiy_defeat instance 10010
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 686
+        width: 142
+        height: 169
+      alignment: 9
+      pivot: {x: 0.445, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 76.81, y: -15.590027}
+        - {x: 76.81, y: 74.40997}
+        - {x: 56.809998, y: 150.40997}
+        - {x: -36.190002, y: 150.40997}
+        - {x: -63.190002, y: 145.40997}
+        - {x: -63.190002, y: -15.590027}
+    - name: Vodianiy_defeat instance 10011
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 686
+        width: 142
+        height: 169
+      alignment: 9
+      pivot: {x: 0.445, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -63.190002, y: 101.40997}
+        - {x: -63.190002, y: -14.590027}
+        - {x: 76.81, y: -14.590027}
+        - {x: 76.81, y: 53.409973}
+        - {x: 55.809998, y: 150.40997}
+        - {x: -13.190002, y: 150.40997}
+        - {x: -58.190002, y: 134.40997}
+    - name: Vodianiy_defeat instance 10012
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 686
+        width: 142
+        height: 169
+      alignment: 9
+      pivot: {x: 0.445, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -37.190002, y: 150.40997}
+        - {x: -63.190002, y: 146.40997}
+        - {x: -63.190002, y: -14.590027}
+        - {x: 64.81, y: -14.590027}
+        - {x: 76.81, y: -12.590027}
+        - {x: 76.81, y: 21.409973}
+        - {x: 43.809998, y: 150.40997}
+    - name: Vodianiy_defeat instance 10013
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 686
+        width: 142
+        height: 169
+      alignment: 9
+      pivot: {x: 0.445, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 35.809998, y: 150.40997}
+        - {x: -41.190002, y: 150.40997}
+        - {x: -63.190002, y: 123.40997}
+        - {x: -63.190002, y: -10.590027}
+        - {x: -11.190002, y: -13.590027}
+        - {x: 7.8099976, y: -14.590027}
+        - {x: 36.809998, y: -14.590027}
+        - {x: 76.81, y: -4.590027}
+        - {x: 76.81, y: 10.409973}
+        - {x: 74.81, y: 16.409973}
+    - name: Vodianiy_defeat instance 10014
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 517
+        width: 142
+        height: 169
+      alignment: 9
+      pivot: {x: 0.445, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.189999, y: 150.40997}
+        - {x: -56.19, y: 140.40997}
+        - {x: -63.19, y: 111.40997}
+        - {x: -63.19, y: -13.590027}
+        - {x: 60.81, y: -13.590027}
+        - {x: 76.81, y: -8.590027}
+        - {x: 76.81, y: 28.409973}
+        - {x: 35.81, y: 150.40997}
+    - name: Vodianiy_defeat instance 10015
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 517
+        width: 142
+        height: 169
+      alignment: 9
+      pivot: {x: 0.445, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.190002, y: 150.40997}
+        - {x: -56.190002, y: 140.40997}
+        - {x: -63.190002, y: 111.40997}
+        - {x: -63.190002, y: -13.590027}
+        - {x: 60.809998, y: -13.590027}
+        - {x: 76.81, y: -8.590027}
+        - {x: 76.81, y: 28.409973}
+        - {x: 35.809998, y: 150.40997}
+    - name: Vodianiy_defeat instance 10016
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 517
+        width: 142
+        height: 169
+      alignment: 9
+      pivot: {x: 0.445, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.190002, y: 150.40997}
+        - {x: -56.190002, y: 140.40997}
+        - {x: -63.190002, y: 111.40997}
+        - {x: -63.190002, y: -13.590027}
+        - {x: 60.809998, y: -13.590027}
+        - {x: 76.81, y: -8.590027}
+        - {x: 76.81, y: 28.409973}
+        - {x: 35.809998, y: 150.40997}
+    - name: Vodianiy_defeat instance 10017
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 517
+        width: 142
+        height: 169
+      alignment: 9
+      pivot: {x: 0.445, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.190002, y: 150.40997}
+        - {x: -56.190002, y: 140.40997}
+        - {x: -63.190002, y: 111.40997}
+        - {x: -63.190002, y: -13.590027}
+        - {x: 60.809998, y: -13.590027}
+        - {x: 76.81, y: -8.590027}
+        - {x: 76.81, y: 28.409973}
+        - {x: 35.809998, y: 150.40997}
+    - name: Vodianiy_defeat instance 10018
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 517
+        width: 142
+        height: 169
+      alignment: 9
+      pivot: {x: 0.445, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.190002, y: 150.40997}
+        - {x: -56.190002, y: 140.40997}
+        - {x: -63.190002, y: 111.40997}
+        - {x: -63.190002, y: -13.590027}
+        - {x: 60.809998, y: -13.590027}
+        - {x: 76.81, y: -8.590027}
+        - {x: 76.81, y: 28.409973}
+        - {x: 35.809998, y: 150.40997}
+    - name: Vodianiy_defeat instance 10019
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 517
+        width: 142
+        height: 169
+      alignment: 9
+      pivot: {x: 0.445, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.190002, y: 150.40997}
+        - {x: -56.190002, y: 140.40997}
+        - {x: -63.190002, y: 111.40997}
+        - {x: -63.190002, y: -13.590027}
+        - {x: 60.809998, y: -13.590027}
+        - {x: 76.81, y: -8.590027}
+        - {x: 76.81, y: 28.409973}
+        - {x: 35.809998, y: 150.40997}
+    - name: Vodianiy_defeat instance 10020
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 517
+        width: 142
+        height: 169
+      alignment: 9
+      pivot: {x: 0.445, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -63.190002, y: 93.40997}
+        - {x: -63.190002, y: -13.590027}
+        - {x: 76.81, y: -13.590027}
+        - {x: 76.81, y: 98.40997}
+        - {x: 67.81, y: 150.40997}
+        - {x: -27.190002, y: 150.40997}
+        - {x: -57.190002, y: 128.40997}
+    - name: Vodianiy_defeat instance 10021
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 348
+        width: 142
+        height: 169
+      alignment: 9
+      pivot: {x: 0.445, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35.19, y: 150.41}
+        - {x: -58.19, y: 131.41}
+        - {x: -63.19, y: 105.41}
+        - {x: -63.19, y: -13.589996}
+        - {x: 76.81, y: -13.589996}
+        - {x: 76.81, y: 42.410004}
+        - {x: 29.810001, y: 150.41}
+    - name: Vodianiy_defeat instance 10022
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 348
+        width: 142
+        height: 169
+      alignment: 9
+      pivot: {x: 0.445, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -48.190002, y: 150.41}
+        - {x: -63.190002, y: 113.41}
+        - {x: -63.190002, y: -10.589996}
+        - {x: -51.190002, y: -13.589996}
+        - {x: 76.81, y: -13.589996}
+        - {x: 76.81, y: 40.410004}
+        - {x: 35.809998, y: 150.41}
+    - name: Vodianiy_defeat instance 10023
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 348
+        width: 142
+        height: 169
+      alignment: 9
+      pivot: {x: 0.445, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 22.809998, y: 150.41}
+        - {x: -32.190002, y: 150.41}
+        - {x: -63.190002, y: 135.41}
+        - {x: -63.190002, y: -13.589996}
+        - {x: 68.81, y: -13.589996}
+        - {x: 76.81, y: -12.589996}
+        - {x: 76.81, y: 40.410004}
+        - {x: 43.809998, y: 134.41}
+    - name: Vodianiy_defeat instance 10024
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 348
+        width: 142
+        height: 169
+      alignment: 9
+      pivot: {x: 0.445, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35.190002, y: 150.41}
+        - {x: -63.190002, y: 138.41}
+        - {x: -63.190002, y: -13.589996}
+        - {x: 76.81, y: -13.589996}
+        - {x: 76.81, y: 45.410004}
+        - {x: 42.809998, y: 150.41}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

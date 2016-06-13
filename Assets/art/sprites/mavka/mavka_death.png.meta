@@ -1,0 +1,1064 @@
+fileFormatVersion: 2
+guid: 0d60c4691685fb24fbd658df47417a49
+timeCreated: 1461160034
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Mavka_battle_death instance 10000
+    21300002: Mavka_battle_death instance 10001
+    21300004: Mavka_battle_death instance 10002
+    21300006: Mavka_battle_death instance 10003
+    21300008: Mavka_battle_death instance 10004
+    21300010: Mavka_battle_death instance 10005
+    21300012: Mavka_battle_death instance 10006
+    21300014: Mavka_battle_death instance 10007
+    21300016: Mavka_battle_death instance 10008
+    21300018: Mavka_battle_death instance 10009
+    21300020: Mavka_battle_death instance 10010
+    21300022: Mavka_battle_death instance 10011
+    21300024: Mavka_battle_death instance 10012
+    21300026: Mavka_battle_death instance 10013
+    21300028: Mavka_battle_death instance 10014
+    21300030: Mavka_battle_death instance 10015
+    21300032: Mavka_battle_death instance 10016
+    21300034: Mavka_battle_death instance 10017
+    21300036: Mavka_battle_death instance 10018
+    21300038: Mavka_battle_death instance 10019
+    21300040: Mavka_battle_death instance 10020
+    21300042: Mavka_battle_death instance 10021
+    21300044: Mavka_battle_death instance 10022
+    21300046: Mavka_battle_death instance 10023
+    21300048: Mavka_battle_death instance 10024
+    21300050: Mavka_battle_death instance 10025
+    21300052: Mavka_battle_death instance 10026
+    21300054: Mavka_battle_death instance 10027
+    21300056: Mavka_battle_death instance 10028
+    21300058: Mavka_battle_death instance 10029
+    21300060: Mavka_battle_death instance 10030
+    21300062: Mavka_battle_death instance 10031
+    21300064: Mavka_battle_death instance 10032
+    21300066: Mavka_battle_death instance 10033
+    21300068: Mavka_battle_death instance 10034
+    21300070: Mavka_battle_death instance 10035
+    21300072: Mavka_battle_death instance 10036
+    21300074: Mavka_battle_death instance 10037
+    21300076: Mavka_battle_death instance 10038
+    21300078: Mavka_battle_death instance 10039
+    21300080: Mavka_battle_death instance 10040
+    21300082: Mavka_battle_death instance 10041
+    21300084: Mavka_battle_death instance 10042
+    21300086: Mavka_battle_death instance 10043
+    21300088: Mavka_battle_death instance 10044
+    21300090: Mavka_battle_death instance 10045
+    21300092: Mavka_battle_death instance 10046
+    21300094: Mavka_battle_death instance 10047
+    21300096: Mavka_battle_death instance 10048
+    21300098: Mavka_battle_death instance 10049
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Mavka_battle_death instance 10000
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1838
+        width: 234
+        height: 210
+      alignment: 9
+      pivot: {x: 0.18, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19.120003, y: 184.80005}
+        - {x: -42.120003, y: 128.80005}
+        - {x: -42.120003, y: 34.80005}
+        - {x: -30.120003, y: 2.8000488}
+        - {x: 27.879997, y: 2.8000488}
+        - {x: 47.879997, y: 27.800049}
+        - {x: 47.879997, y: 150.80005}
+        - {x: 41.879997, y: 184.80005}
+    - name: Mavka_battle_death instance 10001
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 1838
+        width: 234
+        height: 210
+      alignment: 9
+      pivot: {x: 0.18, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3.119995, y: 184.80005}
+        - {x: -17.119995, y: 180.80005}
+        - {x: -20.119995, y: 161.80005}
+        - {x: -37.119995, y: 107.80005}
+        - {x: -37.119995, y: 9.800049}
+        - {x: -27.119995, y: 2.8000488}
+        - {x: 24.880005, y: 2.8000488}
+        - {x: 39.880005, y: 18.800049}
+        - {x: 48.880005, y: 45.80005}
+        - {x: 48.880005, y: 171.80005}
+        - {x: 39.880005, y: 184.80005}
+    - name: Mavka_battle_death instance 10002
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 1838
+        width: 234
+        height: 210
+      alignment: 9
+      pivot: {x: 0.18, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.119995, y: 184.80005}
+        - {x: -32.119995, y: 142.80005}
+        - {x: -32.119995, y: 2.8000488}
+        - {x: 28.880005, y: 2.8000488}
+        - {x: 50.880005, y: 32.80005}
+        - {x: 50.880005, y: 184.80005}
+    - name: Mavka_battle_death instance 10003
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 1838
+        width: 234
+        height: 210
+      alignment: 9
+      pivot: {x: 0.18, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2.119995, y: 184.80005}
+        - {x: -9.119995, y: 182.80005}
+        - {x: -32.119995, y: 74.80005}
+        - {x: -32.119995, y: 8.800049}
+        - {x: -30.119995, y: 2.8000488}
+        - {x: 29.880005, y: 2.8000488}
+        - {x: 52.880005, y: 42.80005}
+        - {x: 52.880005, y: 178.80005}
+        - {x: 37.880005, y: 184.80005}
+    - name: Mavka_battle_death instance 10004
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 1838
+        width: 234
+        height: 210
+      alignment: 9
+      pivot: {x: 0.18, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 2.880005, y: 183.80005}
+        - {x: -12.119995, y: 159.80005}
+        - {x: -32.119995, y: 33.80005}
+        - {x: -32.119995, y: 19.800049}
+        - {x: -23.119995, y: 2.8000488}
+        - {x: 34.880005, y: 2.8000488}
+        - {x: 54.880005, y: 19.800049}
+        - {x: 54.880005, y: 177.80005}
+        - {x: 44.880005, y: 183.80005}
+    - name: Mavka_battle_death instance 10005
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 1838
+        width: 234
+        height: 210
+      alignment: 9
+      pivot: {x: 0.18, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0.8800049, y: 183.80005}
+        - {x: -31.119995, y: 163.80005}
+        - {x: -32.119995, y: 116.80005}
+        - {x: -32.119995, y: 2.8000488}
+        - {x: 50.880005, y: 2.8000488}
+        - {x: 57.880005, y: 34.80005}
+        - {x: 57.880005, y: 179.80005}
+        - {x: 50.880005, y: 183.80005}
+    - name: Mavka_battle_death instance 10006
+      rect:
+        serializedVersion: 2
+        x: 1404
+        y: 1838
+        width: 234
+        height: 210
+      alignment: 9
+      pivot: {x: 0.18, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 2.880005, y: 182.80005}
+        - {x: -3.119995, y: 169.80005}
+        - {x: -32.119995, y: 35.80005}
+        - {x: -32.119995, y: 19.800049}
+        - {x: -24.119995, y: 2.8000488}
+        - {x: 19.880005, y: 2.8000488}
+        - {x: 25.880005, y: 3.8000488}
+        - {x: 60.880005, y: 19.800049}
+        - {x: 60.880005, y: 182.80005}
+    - name: Mavka_battle_death instance 10007
+      rect:
+        serializedVersion: 2
+        x: 1638
+        y: 1838
+        width: 234
+        height: 210
+      alignment: 9
+      pivot: {x: 0.18, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3.119995, y: 182.80005}
+        - {x: -32.119995, y: 60.80005}
+        - {x: -32.119995, y: 8.800049}
+        - {x: -30.119995, y: 2.8000488}
+        - {x: 54.880005, y: 2.8000488}
+        - {x: 59.880005, y: 3.8000488}
+        - {x: 65.880005, y: 38.80005}
+        - {x: 65.880005, y: 170.80005}
+        - {x: 56.880005, y: 182.80005}
+    - name: Mavka_battle_death instance 10008
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1628
+        width: 234
+        height: 210
+      alignment: 9
+      pivot: {x: 0.18, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 69.88, y: 145.80005}
+        - {x: 65.88, y: 176.80005}
+        - {x: 50.879997, y: 181.80005}
+        - {x: 3.8799973, y: 181.80005}
+        - {x: -5.1200027, y: 167.80005}
+        - {x: -32.120003, y: 39.80005}
+        - {x: -32.120003, y: 18.800049}
+        - {x: -23.120003, y: 4.800049}
+        - {x: -9.120003, y: 2.8000488}
+        - {x: 22.879997, y: 2.8000488}
+        - {x: 33.879997, y: 16.800049}
+        - {x: 34.879997, y: 22.800049}
+        - {x: 69.88, y: 46.80005}
+    - name: Mavka_battle_death instance 10009
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 1628
+        width: 234
+        height: 210
+      alignment: 9
+      pivot: {x: 0.18, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.119995, y: 181.80005}
+        - {x: -21.119995, y: 177.80005}
+        - {x: -31.119995, y: 77.80005}
+        - {x: -31.119995, y: 2.8000488}
+        - {x: 44.880005, y: 2.8000488}
+        - {x: 74.880005, y: 30.800049}
+        - {x: 74.880005, y: 111.80005}
+        - {x: 60.880005, y: 181.80005}
+    - name: Mavka_battle_death instance 10010
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 1628
+        width: 234
+        height: 210
+      alignment: 9
+      pivot: {x: 0.18, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 27.880005, y: 171.80005}
+        - {x: 18.880005, y: 152.80005}
+        - {x: -29.119995, y: 63.80005}
+        - {x: -29.119995, y: -1.1999512}
+        - {x: 41.880005, y: -1.1999512}
+        - {x: 82.880005, y: 27.800049}
+        - {x: 82.880005, y: 171.80005}
+    - name: Mavka_battle_death instance 10011
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 1628
+        width: 234
+        height: 210
+      alignment: 9
+      pivot: {x: 0.18, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 45.880005, y: 161.80005}
+        - {x: -26.119995, y: 51.80005}
+        - {x: -26.119995, y: 5.800049}
+        - {x: -17.119995, y: -3.1999512}
+        - {x: 65.880005, y: -3.1999512}
+        - {x: 94.880005, y: 9.800049}
+        - {x: 100.880005, y: 48.80005}
+        - {x: 100.880005, y: 152.80005}
+        - {x: 97.880005, y: 161.80005}
+    - name: Mavka_battle_death instance 10012
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 1628
+        width: 234
+        height: 210
+      alignment: 9
+      pivot: {x: 0.18, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 86.880005, y: 9.800049}
+        - {x: 115.880005, y: 75.80005}
+        - {x: 120.880005, y: 93.80005}
+        - {x: 120.880005, y: 148.80005}
+        - {x: 107.880005, y: 151.80005}
+        - {x: 66.880005, y: 151.80005}
+        - {x: -21.119995, y: 40.80005}
+        - {x: -24.119995, y: 35.80005}
+        - {x: -24.119995, y: 8.800049}
+        - {x: -5.119995, y: -4.199951}
+        - {x: 28.880005, y: -4.199951}
+        - {x: 31.880005, y: -2.1999512}
+        - {x: 53.880005, y: 28.800049}
+        - {x: 59.880005, y: 42.80005}
+        - {x: 69.880005, y: 17.800049}
+    - name: Mavka_battle_death instance 10013
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 1628
+        width: 234
+        height: 210
+      alignment: 9
+      pivot: {x: 0.18, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 126.880005, y: 139.80005}
+        - {x: 78.880005, y: 139.80005}
+        - {x: -21.119995, y: 40.80005}
+        - {x: -21.119995, y: -3.1999512}
+        - {x: 114.880005, y: -3.1999512}
+        - {x: 136.88, y: 74.80005}
+        - {x: 141.88, y: 97.80005}
+        - {x: 141.88, y: 129.80005}
+    - name: Mavka_battle_death instance 10014
+      rect:
+        serializedVersion: 2
+        x: 1404
+        y: 1628
+        width: 234
+        height: 210
+      alignment: 9
+      pivot: {x: 0.18, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 94.880005, y: 127.80005}
+        - {x: -16.119995, y: 48.80005}
+        - {x: -16.119995, y: 9.800049}
+        - {x: -2.119995, y: -2.1999512}
+        - {x: 98.880005, y: -2.1999512}
+        - {x: 161.88, y: 73.80005}
+        - {x: 161.88, y: 113.80005}
+        - {x: 148.88, y: 127.80005}
+    - name: Mavka_battle_death instance 10015
+      rect:
+        serializedVersion: 2
+        x: 1638
+        y: 1628
+        width: 234
+        height: 210
+      alignment: 9
+      pivot: {x: 0.18, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 115.880005, y: 112.80005}
+        - {x: -12.119995, y: 64.80005}
+        - {x: -12.119995, y: 22.800049}
+        - {x: 1.8800049, y: -8.199951}
+        - {x: 111.880005, y: -8.199951}
+        - {x: 168.88, y: 61.80005}
+        - {x: 168.88, y: 112.80005}
+    - name: Mavka_battle_death instance 10016
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1418
+        width: 234
+        height: 210
+      alignment: 9
+      pivot: {x: 0.18, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 168.88, y: 96.80005}
+        - {x: 109.88, y: 96.80005}
+        - {x: -7.1200027, y: 63.80005}
+        - {x: -7.1200027, y: -8.199951}
+        - {x: 5.8799973, y: -11.199951}
+        - {x: 98.88, y: -11.199951}
+        - {x: 142.88, y: 21.800049}
+        - {x: 175.88, y: 48.80005}
+        - {x: 175.88, y: 78.80005}
+    - name: Mavka_battle_death instance 10017
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 1418
+        width: 234
+        height: 210
+      alignment: 9
+      pivot: {x: 0.18, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2.119995, y: 15.800049}
+        - {x: 7.880005, y: -12.199951}
+        - {x: 109.880005, y: -12.199951}
+        - {x: 179.88, y: 5.800049}
+        - {x: 179.88, y: 80.80005}
+        - {x: 14.880005, y: 80.80005}
+        - {x: -2.119995, y: 78.80005}
+    - name: Mavka_battle_death instance 10018
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 1418
+        width: 234
+        height: 210
+      alignment: 9
+      pivot: {x: 0.18, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 174.88, y: 64.80005}
+        - {x: 113.880005, y: 64.80005}
+        - {x: 10.880005, y: 57.80005}
+        - {x: 0.8800049, y: 32.80005}
+        - {x: 0.8800049, y: 10.800049}
+        - {x: 20.880005, y: -10.199951}
+        - {x: 106.880005, y: -10.199951}
+        - {x: 181.88, y: 2.8000488}
+        - {x: 183.88, y: 5.800049}
+        - {x: 183.88, y: 47.80005}
+        - {x: 180.88, y: 62.80005}
+    - name: Mavka_battle_death instance 10019
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 1418
+        width: 234
+        height: 210
+      alignment: 9
+      pivot: {x: 0.18, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 139.88, y: 62.80005}
+        - {x: 41.880005, y: 62.80005}
+        - {x: 17.880005, y: 56.80005}
+        - {x: 3.880005, y: 37.80005}
+        - {x: 3.880005, y: 18.800049}
+        - {x: 4.880005, y: 9.800049}
+        - {x: 23.880005, y: -11.199951}
+        - {x: 81.880005, y: -12.199951}
+        - {x: 184.88, y: -12.199951}
+        - {x: 187.88, y: -5.199951}
+        - {x: 187.88, y: 46.80005}
+    - name: Mavka_battle_death instance 10020
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 1418
+        width: 234
+        height: 210
+      alignment: 9
+      pivot: {x: 0.18, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5.880005, y: 57.80005}
+        - {x: 3.880005, y: 46.80005}
+        - {x: 3.880005, y: 1.8000488}
+        - {x: 10.880005, y: -12.199951}
+        - {x: 187.88, y: -12.199951}
+        - {x: 187.88, y: 57.80005}
+    - name: Mavka_battle_death instance 10021
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 1418
+        width: 234
+        height: 210
+      alignment: 9
+      pivot: {x: 0.18, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 169.88, y: 51.80005}
+        - {x: 14.880005, y: 51.80005}
+        - {x: 4.880005, y: 48.80005}
+        - {x: 4.880005, y: -7.199951}
+        - {x: 7.880005, y: -14.199951}
+        - {x: 187.88, y: -14.199951}
+        - {x: 187.88, y: 36.80005}
+        - {x: 171.88, y: 50.80005}
+    - name: Mavka_battle_death instance 10022
+      rect:
+        serializedVersion: 2
+        x: 1404
+        y: 1418
+        width: 234
+        height: 210
+      alignment: 9
+      pivot: {x: 0.18, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 17.880005, y: 49.80005}
+        - {x: 4.880005, y: 37.80005}
+        - {x: 4.880005, y: 5.800049}
+        - {x: 17.880005, y: -17.199951}
+        - {x: 158.88, y: -17.199951}
+        - {x: 185.88, y: -15.199951}
+        - {x: 187.88, y: -10.199951}
+        - {x: 187.88, y: 44.80005}
+        - {x: 175.88, y: 49.80005}
+    - name: Mavka_battle_death instance 10023
+      rect:
+        serializedVersion: 2
+        x: 1638
+        y: 1418
+        width: 234
+        height: 210
+      alignment: 9
+      pivot: {x: 0.18, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 75.880005, y: 49.80005}
+        - {x: 14.880005, y: 45.80005}
+        - {x: 5.880005, y: 29.800049}
+        - {x: 5.880005, y: 2.8000488}
+        - {x: 24.880005, y: -20.199951}
+        - {x: 67.880005, y: -20.199951}
+        - {x: 183.88, y: -12.199951}
+        - {x: 187.88, y: -0.19995117}
+        - {x: 187.88, y: 42.80005}
+        - {x: 173.88, y: 49.80005}
+    - name: Mavka_battle_death instance 10024
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1208
+        width: 234
+        height: 210
+      alignment: 9
+      pivot: {x: 0.18, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10.879997, y: 49.80005}
+        - {x: 6.8799973, y: 32.80005}
+        - {x: 6.8799973, y: -10.199951}
+        - {x: 11.879997, y: -22.199951}
+        - {x: 136.88, y: -22.199951}
+        - {x: 187.88, y: -12.199951}
+        - {x: 187.88, y: 49.80005}
+    - name: Mavka_battle_death instance 10025
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 1208
+        width: 234
+        height: 210
+      alignment: 9
+      pivot: {x: 0.18, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 110.880005, y: 49.80005}
+        - {x: 85.880005, y: 48.80005}
+        - {x: 18.880005, y: 43.80005}
+        - {x: 5.880005, y: 27.800049}
+        - {x: 5.880005, y: -1.1999512}
+        - {x: 24.880005, y: -22.199951}
+        - {x: 61.880005, y: -22.199951}
+        - {x: 182.88, y: -12.199951}
+        - {x: 187.88, y: -7.199951}
+        - {x: 187.88, y: 45.80005}
+        - {x: 171.88, y: 49.80005}
+    - name: Mavka_battle_death instance 10026
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 1208
+        width: 234
+        height: 210
+      alignment: 9
+      pivot: {x: 0.18, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.880005, y: 49.80005}
+        - {x: 5.880005, y: 43.80005}
+        - {x: 5.880005, y: -2.1999512}
+        - {x: 15.880005, y: -22.199951}
+        - {x: 117.880005, y: -22.199951}
+        - {x: 182.88, y: -12.199951}
+        - {x: 187.88, y: -7.199951}
+        - {x: 187.88, y: 49.80005}
+    - name: Mavka_battle_death instance 10027
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 1208
+        width: 234
+        height: 210
+      alignment: 9
+      pivot: {x: 0.18, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5.880005, y: 49.80005}
+        - {x: 4.880005, y: 44.80005}
+        - {x: 4.880005, y: -13.199951}
+        - {x: 12.880005, y: -22.199951}
+        - {x: 122.880005, y: -22.199951}
+        - {x: 187.88, y: -13.199951}
+        - {x: 187.88, y: 49.80005}
+    - name: Mavka_battle_death instance 10028
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 1208
+        width: 234
+        height: 210
+      alignment: 9
+      pivot: {x: 0.18, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5.880005, y: 49.80005}
+        - {x: 5.880005, y: -20.199951}
+        - {x: 7.880005, y: -22.199951}
+        - {x: 136.88, y: -22.199951}
+        - {x: 187.88, y: -13.199951}
+        - {x: 187.88, y: 49.80005}
+    - name: Mavka_battle_death instance 10029
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 1208
+        width: 234
+        height: 210
+      alignment: 9
+      pivot: {x: 0.18, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10.880005, y: 49.80005}
+        - {x: 6.880005, y: 32.80005}
+        - {x: 6.880005, y: -10.199951}
+        - {x: 11.880005, y: -22.199951}
+        - {x: 136.88, y: -22.199951}
+        - {x: 187.88, y: -12.199951}
+        - {x: 187.88, y: 49.80005}
+    - name: Mavka_battle_death instance 10030
+      rect:
+        serializedVersion: 2
+        x: 1404
+        y: 1208
+        width: 234
+        height: 210
+      alignment: 9
+      pivot: {x: 0.18, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 110.880005, y: 49.80005}
+        - {x: 85.880005, y: 48.80005}
+        - {x: 18.880005, y: 43.80005}
+        - {x: 5.880005, y: 27.800049}
+        - {x: 5.880005, y: -1.1999512}
+        - {x: 24.880005, y: -22.199951}
+        - {x: 61.880005, y: -22.199951}
+        - {x: 182.88, y: -12.199951}
+        - {x: 187.88, y: -7.199951}
+        - {x: 187.88, y: 45.80005}
+        - {x: 171.88, y: 49.80005}
+    - name: Mavka_battle_death instance 10031
+      rect:
+        serializedVersion: 2
+        x: 1638
+        y: 1208
+        width: 234
+        height: 210
+      alignment: 9
+      pivot: {x: 0.18, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.880005, y: 49.80005}
+        - {x: 5.880005, y: 43.80005}
+        - {x: 5.880005, y: -2.1999512}
+        - {x: 15.880005, y: -22.199951}
+        - {x: 117.880005, y: -22.199951}
+        - {x: 182.88, y: -12.199951}
+        - {x: 187.88, y: -7.199951}
+        - {x: 187.88, y: 49.80005}
+    - name: Mavka_battle_death instance 10032
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 998
+        width: 234
+        height: 210
+      alignment: 9
+      pivot: {x: 0.18, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5.8799973, y: 49.799988}
+        - {x: 4.8799973, y: 44.799988}
+        - {x: 4.8799973, y: -13.200012}
+        - {x: 12.879997, y: -22.200012}
+        - {x: 122.88, y: -22.200012}
+        - {x: 187.88, y: -13.200012}
+        - {x: 187.88, y: 49.799988}
+    - name: Mavka_battle_death instance 10033
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 998
+        width: 234
+        height: 210
+      alignment: 9
+      pivot: {x: 0.18, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5.880005, y: 49.799988}
+        - {x: 5.880005, y: -20.200012}
+        - {x: 7.880005, y: -22.200012}
+        - {x: 136.88, y: -22.200012}
+        - {x: 187.88, y: -13.200012}
+        - {x: 187.88, y: 49.799988}
+    - name: Mavka_battle_death instance 10034
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 998
+        width: 234
+        height: 210
+      alignment: 9
+      pivot: {x: 0.18, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10.880005, y: 49.799988}
+        - {x: 6.880005, y: 32.799988}
+        - {x: 6.880005, y: -10.200012}
+        - {x: 11.880005, y: -22.200012}
+        - {x: 136.88, y: -22.200012}
+        - {x: 187.88, y: -12.200012}
+        - {x: 187.88, y: 49.799988}
+    - name: Mavka_battle_death instance 10035
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 998
+        width: 234
+        height: 210
+      alignment: 9
+      pivot: {x: 0.18, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10.880005, y: 49.799988}
+        - {x: 6.880005, y: 32.799988}
+        - {x: 6.880005, y: -10.200012}
+        - {x: 11.880005, y: -22.200012}
+        - {x: 136.88, y: -22.200012}
+        - {x: 187.88, y: -12.200012}
+        - {x: 187.88, y: 49.799988}
+    - name: Mavka_battle_death instance 10036
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 998
+        width: 234
+        height: 210
+      alignment: 9
+      pivot: {x: 0.18, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10.880005, y: 49.799988}
+        - {x: 6.880005, y: 32.799988}
+        - {x: 6.880005, y: -10.200012}
+        - {x: 11.880005, y: -22.200012}
+        - {x: 136.88, y: -22.200012}
+        - {x: 187.88, y: -12.200012}
+        - {x: 187.88, y: 49.799988}
+    - name: Mavka_battle_death instance 10037
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 998
+        width: 234
+        height: 210
+      alignment: 9
+      pivot: {x: 0.18, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10.880005, y: 49.799988}
+        - {x: 6.880005, y: 32.799988}
+        - {x: 6.880005, y: -10.200012}
+        - {x: 11.880005, y: -22.200012}
+        - {x: 136.88, y: -22.200012}
+        - {x: 187.88, y: -12.200012}
+        - {x: 187.88, y: 49.799988}
+    - name: Mavka_battle_death instance 10038
+      rect:
+        serializedVersion: 2
+        x: 1404
+        y: 998
+        width: 234
+        height: 210
+      alignment: 9
+      pivot: {x: 0.18, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10.880005, y: 49.799988}
+        - {x: 6.880005, y: 32.799988}
+        - {x: 6.880005, y: -10.200012}
+        - {x: 11.880005, y: -22.200012}
+        - {x: 136.88, y: -22.200012}
+        - {x: 187.88, y: -12.200012}
+        - {x: 187.88, y: 49.799988}
+    - name: Mavka_battle_death instance 10039
+      rect:
+        serializedVersion: 2
+        x: 1638
+        y: 998
+        width: 234
+        height: 210
+      alignment: 9
+      pivot: {x: 0.18, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10.880005, y: 49.799988}
+        - {x: 6.880005, y: 32.799988}
+        - {x: 6.880005, y: -10.200012}
+        - {x: 11.880005, y: -22.200012}
+        - {x: 136.88, y: -22.200012}
+        - {x: 187.88, y: -12.200012}
+        - {x: 187.88, y: 49.799988}
+    - name: Mavka_battle_death instance 10040
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 788
+        width: 234
+        height: 210
+      alignment: 9
+      pivot: {x: 0.18, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10.879997, y: 49.799988}
+        - {x: 6.8799973, y: 32.799988}
+        - {x: 6.8799973, y: -10.200012}
+        - {x: 11.879997, y: -22.200012}
+        - {x: 136.88, y: -22.200012}
+        - {x: 187.88, y: -12.200012}
+        - {x: 187.88, y: 49.799988}
+    - name: Mavka_battle_death instance 10041
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 788
+        width: 234
+        height: 210
+      alignment: 9
+      pivot: {x: 0.18, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10.880005, y: 49.799988}
+        - {x: 6.880005, y: 32.799988}
+        - {x: 6.880005, y: -10.200012}
+        - {x: 11.880005, y: -22.200012}
+        - {x: 136.88, y: -22.200012}
+        - {x: 187.88, y: -12.200012}
+        - {x: 187.88, y: 49.799988}
+    - name: Mavka_battle_death instance 10042
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 788
+        width: 234
+        height: 210
+      alignment: 9
+      pivot: {x: 0.18, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10.880005, y: 49.799988}
+        - {x: 6.880005, y: 32.799988}
+        - {x: 6.880005, y: -10.200012}
+        - {x: 11.880005, y: -22.200012}
+        - {x: 136.88, y: -22.200012}
+        - {x: 187.88, y: -12.200012}
+        - {x: 187.88, y: 49.799988}
+    - name: Mavka_battle_death instance 10043
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 788
+        width: 234
+        height: 210
+      alignment: 9
+      pivot: {x: 0.18, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10.880005, y: 49.799988}
+        - {x: 6.880005, y: 32.799988}
+        - {x: 6.880005, y: -10.200012}
+        - {x: 11.880005, y: -22.200012}
+        - {x: 136.88, y: -22.200012}
+        - {x: 187.88, y: -12.200012}
+        - {x: 187.88, y: 49.799988}
+    - name: Mavka_battle_death instance 10044
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 788
+        width: 234
+        height: 210
+      alignment: 9
+      pivot: {x: 0.18, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10.880005, y: 49.799988}
+        - {x: 6.880005, y: 32.799988}
+        - {x: 6.880005, y: -10.200012}
+        - {x: 11.880005, y: -22.200012}
+        - {x: 136.88, y: -22.200012}
+        - {x: 187.88, y: -12.200012}
+        - {x: 187.88, y: 49.799988}
+    - name: Mavka_battle_death instance 10045
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 788
+        width: 234
+        height: 210
+      alignment: 9
+      pivot: {x: 0.18, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10.880005, y: 49.799988}
+        - {x: 6.880005, y: 32.799988}
+        - {x: 6.880005, y: -10.200012}
+        - {x: 11.880005, y: -22.200012}
+        - {x: 136.88, y: -22.200012}
+        - {x: 187.88, y: -12.200012}
+        - {x: 187.88, y: 49.799988}
+    - name: Mavka_battle_death instance 10046
+      rect:
+        serializedVersion: 2
+        x: 1404
+        y: 788
+        width: 234
+        height: 210
+      alignment: 9
+      pivot: {x: 0.18, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10.880005, y: 49.799988}
+        - {x: 6.880005, y: 32.799988}
+        - {x: 6.880005, y: -10.200012}
+        - {x: 11.880005, y: -22.200012}
+        - {x: 136.88, y: -22.200012}
+        - {x: 187.88, y: -12.200012}
+        - {x: 187.88, y: 49.799988}
+    - name: Mavka_battle_death instance 10047
+      rect:
+        serializedVersion: 2
+        x: 1638
+        y: 788
+        width: 234
+        height: 210
+      alignment: 9
+      pivot: {x: 0.18, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10.880005, y: 49.799988}
+        - {x: 6.880005, y: 32.799988}
+        - {x: 6.880005, y: -10.200012}
+        - {x: 11.880005, y: -22.200012}
+        - {x: 136.88, y: -22.200012}
+        - {x: 187.88, y: -12.200012}
+        - {x: 187.88, y: 49.799988}
+    - name: Mavka_battle_death instance 10048
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 578
+        width: 234
+        height: 210
+      alignment: 9
+      pivot: {x: 0.18, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10.879997, y: 49.799988}
+        - {x: 6.8799973, y: 32.799988}
+        - {x: 6.8799973, y: -10.200012}
+        - {x: 11.879997, y: -22.200012}
+        - {x: 136.88, y: -22.200012}
+        - {x: 187.88, y: -12.200012}
+        - {x: 187.88, y: 49.799988}
+    - name: Mavka_battle_death instance 10049
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 578
+        width: 234
+        height: 210
+      alignment: 9
+      pivot: {x: 0.18, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 80.880005, y: 49.799988}
+        - {x: 17.880005, y: 45.799988}
+        - {x: 6.880005, y: 34.799988}
+        - {x: 6.880005, y: -3.2000122}
+        - {x: 17.880005, y: -22.200012}
+        - {x: 168.88, y: -22.200012}
+        - {x: 188.88, y: -3.2000122}
+        - {x: 188.88, y: 37.799988}
+        - {x: 172.88, y: 49.799988}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
