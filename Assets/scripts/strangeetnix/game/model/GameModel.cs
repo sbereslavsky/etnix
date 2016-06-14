@@ -22,6 +22,7 @@ namespace strangeetnix.game
 			playerId = 0;
 			createEnemyId = 0;
 			playerPosX = 0;
+			roomNum = 0;
 			if (levelModel == null) {
 				levelModel = new LevelModel ();
 			}
@@ -36,6 +37,7 @@ namespace strangeetnix.game
 		public int playerId { get; set; }
 		public int createEnemyId { get; set; }
 		public int levelId { get; set; }
+		public int roomNum { get; set; }
 		public ILevelModel levelModel { get; private set; }
 		public IPlayerModel playerModel { get; set; }
 

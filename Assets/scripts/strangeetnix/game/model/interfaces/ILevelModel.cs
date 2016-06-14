@@ -12,8 +12,6 @@ namespace strangeetnix.game
 
 		int enemyCount { get; set; }
 
-		int roomNum { get; set; }
-
 		IBgAssetVO bgAssetInfo { get; set; }
 
 		IWaveVO waveVO { get; }

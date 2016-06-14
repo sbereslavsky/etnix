@@ -16,8 +16,6 @@ namespace strangeetnix.game
 
 		public IWaveVO waveVO { get; private set; }
 
-		public int roomNum { get; set; }
-
 		public List<int> enemyIdList { get; private set; }
 		private List<IEnemyModel> _enemyModelList;
 
@@ -29,11 +27,10 @@ namespace strangeetnix.game
 		{
 			score = 0;
 			enemyCount = 0;
-			roomNum = 0;
-			waveVO = null;
+			//waveVO = null;
 
-			enemyIdList = new List<int> ();
-			_enemyModelList = new List<IEnemyModel> ();
+			//enemyIdList = new List<int> ();
+			//_enemyModelList = new List<IEnemyModel> ();
 		}
 
 		public void setWaveVO(IGameConfig gameConfig, IWaveVO waveVO1)

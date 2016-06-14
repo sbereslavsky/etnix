@@ -67,7 +67,7 @@ namespace strangeetnix.game
 	//int - room number
 	public class SwitchLevelSignal : Signal<int>{}
 
-	//int - room number
+	//int - wave id
 	public class EnterRoomSignal : Signal<int>{}
 
 	public class ExitRoomSignal : Signal{}

@@ -153,7 +153,7 @@ namespace strangeetnix.ui
 
 		private void onShowRoomButton(bool value, int roomNum)
 		{
-			gameModel.levelModel.roomNum = roomNum;
+			gameModel.roomNum = roomNum;
 			view.showRoomButton (value);
 		}
 

@@ -22,9 +22,6 @@ namespace strangeetnix.ui
 		[Inject]
 		public EnterRoomSignal enterRoomSignal{ get; set; }
 
-		[Inject]
-		public CreateEnemyWaveSignal createEnemyWaveSignal{ get; set; }
-
 		private string _viewName;
 
 		public override void OnRegister()
@@ -56,8 +53,7 @@ namespace strangeetnix.ui
 		{
 			Destroy (view.gameObject);
 
-			createEnemyWaveSignal.Dispatch (waveId);
-			enterRoomSignal.Dispatch (gameModel.levelModel.roomNum);
+			enterRoomSignal.Dispatch (waveId);
 		}
 	}
 }

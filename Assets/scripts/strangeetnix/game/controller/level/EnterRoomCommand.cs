@@ -20,17 +20,21 @@ namespace strangeetnix.game
 		public DestroyGameFieldSignal destroyGameFieldSignal{ get; set; }
 
 		[Inject]
-		public UpdateGameCanvasSignal updateGameCanvasSignal{ get; set; }
+		public CreateEnemyWaveSignal createEnemyWaveSignal{ get; set; }
 
 		[Inject]
-		public int roomNum{ get; set; }
+		public IGameModel gameModel{ get; set; }
+
+		[Inject]
+		public int waveId{ get; set; }
 
 		public override void Execute ()
 		{
 			levelEndSignal.Dispatch ();
 			destroyGameFieldSignal.Dispatch ();
 
-			switchLevelSignal.Dispatch (roomNum);
+			switchLevelSignal.Dispatch (gameModel.roomNum);
+			createEnemyWaveSignal.Dispatch (waveId);
 
 			levelStartSignal.Dispatch ();
 		}

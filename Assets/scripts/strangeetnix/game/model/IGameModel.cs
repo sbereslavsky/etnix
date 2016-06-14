@@ -9,6 +9,9 @@ namespace strangeetnix.game
 		int playerId { get; set; }
 		int createEnemyId { get; set; }
 		int levelId { get; set; }
+
+		int roomNum { get; set; }
+
 		ILevelModel levelModel { get; }
 		IPlayerModel playerModel { get; set; }
 
