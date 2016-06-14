@@ -30,11 +30,11 @@ namespace strangeetnix.game
 			levelEndSignal.Dispatch ();
 			destroyGameFieldSignal.Dispatch ();
 
-			if (gameModel.isRoomLevel) {
-				gameModel.playerPosX = 0;
+			gameModel.resetPlayerPosX ();
+			if (gameModel.isRoomLevel) {				
 				switchLevelSignal.Dispatch (0);
-				resetGameCameraSignal.Dispatch (true);
 			}
+			resetGameCameraSignal.Dispatch (true);
 
 			switchCanvasSignal.Dispatch (UIStates.MAIN);
 		}

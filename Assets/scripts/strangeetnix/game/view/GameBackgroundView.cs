@@ -12,7 +12,7 @@ namespace strangeetnix.game
 
 		private Transform _cameraTransform;		// Reference to the camera's transform.
 
-		private float _width;
+		//private float _width;
 
 		public float[] steps;
 		public Transform[] layers;
@@ -20,7 +20,7 @@ namespace strangeetnix.game
 		public BoxCollider2D wallLeft;
 		public BoxCollider2D wallRight;
 
-		private float _oldPos;
+		//private float _oldPos;
 
 		private Transform _roomCheck;
 		private string IN_ROOM 	= "inRoom";
@@ -33,9 +33,9 @@ namespace strangeetnix.game
 		internal void init (IBgAssetVO bgAssetInfo)
 		{
 			_roomCheck = (transform.Find(IN_ROOM) != null) ? transform.Find(IN_ROOM).transform : null;
-			_width = bgAssetInfo.width;
+			//_width = bgAssetInfo.width;
 			_cameraTransform = Camera.main.gameObject.transform;
-			_oldPos = _cameraTransform.position.x;
+			//_oldPos = _cameraTransform.position.x;
 			_roomNum = 1;
 
 			if (layers.Length == 0 || layers.Length != steps.Length) {
@@ -54,8 +54,9 @@ namespace strangeetnix.game
 
 		void FixedUpdate ()
 		{
-			if (_cameraTransform != null && _oldPos != _cameraTransform.position.x) {
-				_oldPos = _cameraTransform.position.x;
+			//need to update vs oldPos from village to church
+			if (_cameraTransform != null) {// && _oldPos != _cameraTransform.position.x) {
+				//_oldPos = _cameraTransform.position.x;
 				for (byte i = 0; i < layers.Length; i++) {
 					updateLayerPosByStep (layers[i], steps[i]);
 				}

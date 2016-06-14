@@ -16,6 +16,7 @@ namespace strangeetnix.game
 		IPlayerModel playerModel { get; set; }
 
 		float playerPosX { get; set; }
+		void resetPlayerPosX ();
 
 		bool isRoomLevel{ get; }
 		bool levelInProgress{ get; set; }

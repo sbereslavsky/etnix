@@ -15,27 +15,23 @@ namespace strangeetnix.game
 		public Vector2 minXAndY;		// The minimum x and y coordinates the camera can have.
 
 		private Transform _playerTransform;		// Reference to the player's transform.
-		private Vector2 _playerPos = Vector2.zero;
+		private float _playerPosX = 0;
 
-		internal Signal<Vector2> updateImagesSignal = new Signal<Vector2> ();
-
-		public void updateCamera(float playerPosX, bool isDisable)
+		public void resetCamera(float playerPosX)
 		{
-			_playerTransform = null;
-			if (!isDisable) {
-				_playerPos = new Vector2 (playerPosX, _playerPos.y);
-
-				TrackPlayer (false);
-				TrackPlayer ();
-			} else {
-				transform.position = new Vector3 (playerPosX, _playerPos.y, transform.position.z);
-			}
+			_playerPosX = playerPosX;
+			updateObjects ();
+			TrackPlayer(false);
 		}
 
 		public void updateObjects()
 		{
-			if (_playerTransform == null) {
-				_playerTransform = (GameObject.FindGameObjectWithTag(PlayerView.ID) != null) ? GameObject.FindGameObjectWithTag(PlayerView.ID).transform : null;
+			GameObject playerGO = GameObject.FindGameObjectWithTag (PlayerView.ID);
+			if (playerGO == null) {
+				_playerTransform = null;
+			}
+			else if (_playerTransform == null) {
+				_playerTransform = playerGO.transform;
 			}
 		}
 
@@ -65,35 +61,32 @@ namespace strangeetnix.game
 			float targetX = transform.position.x;
 			float targetY = transform.position.y;
 
-			float playerPositionX = _playerPos.x;
-			float playerPositionY = _playerPos.y;
+			float playerPositionX = _playerPosX;
 			if (_playerTransform != null) {
 				playerPositionX = _playerTransform.position.x;
-				playerPositionY = _playerTransform.position.y;
-				_playerPos = new Vector2(playerPositionX, playerPositionY);
+				_playerPosX = playerPositionX;
+			} else if (!withSmooth) {
+				targetX = playerPositionX;
 			}
+
 			// If the player has moved beyond the x margin...
-			if (CheckXMargin ()) {
+			if (withSmooth && CheckXMargin ()) {
 				// ... the target x coordinate should be a Lerp between the camera's current x position and the player's current x position.
-				float smoothX = (withSmooth) ? xSmooth * Time.deltaTime : 0;
-				targetX = Mathf.Lerp (transform.position.x, playerPositionX, smoothX);
+				targetX = Mathf.Lerp (targetX, playerPositionX, xSmooth * Time.deltaTime);
 			}
 
 			// If the player has moved beyond the y margin...
-			if (CheckYMargin ()) {
+			/*if (withSmooth && CheckYMargin ()) {
 				// ... the target y coordinate should be a Lerp between the camera's current y position and the player's current y position.
-				float smoothY = (withSmooth) ? ySmooth * Time.deltaTime : 0;
-				targetY = Mathf.Lerp (transform.position.y, playerPositionY, smoothY);
-			}
+				targetY = Mathf.Lerp (targetY, playerPositionY, ySmooth * Time.deltaTime);
+			}*/
 
 			// The target x and y coordinates should not be larger than the maximum or smaller than the minimum.
-			targetX = Mathf.Clamp(targetX, minXAndY.x, maxXAndY.x);
-			targetY = Mathf.Clamp(targetY, minXAndY.y, maxXAndY.y);
+			targetX = Mathf.Clamp (targetX, minXAndY.x, maxXAndY.x);
+			targetY = Mathf.Clamp (targetY, minXAndY.y, maxXAndY.y);
 
 			// Set the camera's position to the target position with the same z component.
 			transform.position = new Vector3(targetX, targetY, transform.position.z);
-
-			updateImagesSignal.Dispatch (new Vector2( targetX, targetY));
 		}
 	}
 }

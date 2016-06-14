@@ -21,7 +21,7 @@ namespace strangeetnix.game
 			levelId = 1;
 			playerId = 0;
 			createEnemyId = 0;
-			playerPosX = 0;
+			resetPlayerPosX ();
 			roomNum = 0;
 			if (levelModel == null) {
 				levelModel = new LevelModel ();
@@ -32,6 +32,11 @@ namespace strangeetnix.game
 			if (playerModel != null) {
 				playerModel.resetHp ();
 			}
+		}
+
+		public void resetPlayerPosX ()
+		{
+			playerPosX = 12;
 		}
 
 		public int playerId { get; set; }

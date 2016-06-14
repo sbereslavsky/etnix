@@ -26,9 +26,8 @@ namespace strangeetnix.game
 					cameraView.ySmooth = bgAssetVO.smooth.x;
 					cameraView.minXAndY = bgAssetVO.minXAndY;
 					cameraView.maxXAndY = bgAssetVO.maxXAndY;
-					cameraView.updateObjects ();
-					cameraView.updateCamera (gameModel.playerPosX, disable);
-					if (disable) {
+					cameraView.resetCamera (gameModel.playerPosX);
+					if (disable && cameraView.enabled) {
 						cameraView.enabled = false;
 					}
 				}

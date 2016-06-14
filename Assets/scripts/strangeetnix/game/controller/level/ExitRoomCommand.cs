@@ -17,7 +17,13 @@ namespace strangeetnix.game
 		public LevelEndSignal levelEndSignal{ get; set; }
 
 		[Inject]
+		public ResetGameCameraSignal resetGameCameraSignal{ get; set; }
+
+		[Inject]
 		public DestroyGameFieldSignal destroyGameFieldSignal{ get; set; }
+
+		[Inject]
+		public IGameModel gameModel{ get; set; }
 
 		public override void Execute ()
 		{
@@ -25,6 +31,8 @@ namespace strangeetnix.game
 			destroyGameFieldSignal.Dispatch ();
 
 			switchLevelSignal.Dispatch (0);
+			gameModel.playerModel.resetHp ();
+			resetGameCameraSignal.Dispatch (false);
 
 			levelStartSignal.Dispatch ();
 		}
