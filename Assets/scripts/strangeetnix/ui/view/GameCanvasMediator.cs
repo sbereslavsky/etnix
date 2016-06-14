@@ -62,7 +62,7 @@ namespace strangeetnix.ui
 
 			_rectTransform = view.gameObject.GetComponent<RectTransform> ();
 
-			view.init ();
+			view.init (gameConfig.localizationConfig);
 			onUpdateCanvas ();
 			UpdateListeners (true);
 
@@ -217,7 +217,7 @@ namespace strangeetnix.ui
 
 		private void onUpdateCanvas()
 		{
-			view.initButtonsView (gameModel.levelModel.hasEnemy, gameConfig.localizationConfig);
+			view.initButtonsView (gameModel.levelModel.hasEnemy);
 		}
 
 		private void onUpdateHudItem(UpdateHudItemType type, int value)

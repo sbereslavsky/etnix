@@ -3,6 +3,7 @@
 
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace strangeetnix
 {
@@ -19,5 +20,7 @@ namespace strangeetnix
 		float cameraAspectRatio { get; }
 
 		Vector3 GetAnchorPosition(ScreenAnchor horizontal, ScreenAnchor vertical);
+
+		void setButtonText (Button button, string textValue);
 	}
 }

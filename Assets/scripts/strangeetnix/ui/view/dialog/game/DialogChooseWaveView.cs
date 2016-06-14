@@ -9,21 +9,24 @@ namespace strangeetnix.ui
 {
 	public class DialogChooseWaveView : TransformDialogView
 	{
+		[Inject]
+		public IScreenUtil screenUtil{ get; set; }
+
 		public Text textTitle;
 		public Button[] buttonWaves;
+		public Button buttonBack;
 
 		internal Signal<int> startWaveSignal = new Signal<int>();
-
-		private int _waveCount;
-
-		//private string WAVE_LISTENER = "WaveListener";
+		internal Signal closeDialogSignal = new Signal();
 
 		internal void init(ILocalizationConfig localizationConfig, int waveCount)
 		{
-			_waveCount = waveCount;
 			string titleText = localizationConfig.getTextByKey (LocalizationKeys.MENU_TEXT_CHOOSE_WAVE);
 			string buttonWaveText = localizationConfig.getTextByKey (LocalizationKeys.BUTTON_WAVE);
+			string buttonBackText = localizationConfig.getTextByKey (LocalizationKeys.BUTTON_EXIT);
 			textTitle.text = titleText;
+			screenUtil.setButtonText (buttonBack, buttonBackText);
+			buttonBack.onClick.AddListener (onClose);
 
 			if (buttonWaves != null) {
 				Button buttonWave;
@@ -31,7 +34,7 @@ namespace strangeetnix.ui
 					buttonWave = buttonWaves [i];
 					if (i < waveCount) {
 						int buttonId = i + 1;
-						setButtonText(buttonWave, buttonWaveText + buttonId.ToString());
+						screenUtil.setButtonText(buttonWave, buttonWaveText + buttonId.ToString());
 						buttonWave.name = buttonId.ToString();
 						buttonWave.onClick.AddListener (() => {OnChooseWave(buttonId);});
 					} else {
@@ -41,14 +44,9 @@ namespace strangeetnix.ui
 			}
 		}
 
-		private void setButtonText(Button button, string textValue)
+		private void onClose()
 		{
-			Text buttonText = button.GetComponentInChildren<Text> ();
-			if (buttonText != null) {
-				buttonText.text = textValue;
-			} else {
-				Debug.LogWarning ("Can't find text field in button "+button.name);
-			}
+			closeDialogSignal.Dispatch ();
 		}
 
 		private void OnChooseWave(int waveId)
@@ -56,8 +54,11 @@ namespace strangeetnix.ui
 			startWaveSignal.Dispatch (waveId);
 		}
 
+		//check to removeListener!!!
 		internal void destroy()
 		{
+			buttonBack.onClick.RemoveListener (onClose);
+
 			Button buttonWave;
 			for (byte i = 0; i < buttonWaves.Length; i++) {
 				buttonWave = buttonWaves [i];

@@ -18,6 +18,8 @@ namespace strangeetnix.ui
 		public GameUIButton buttonHit;
 		public GameUIButton buttonPause;
 
+		public GameUIButton buttonGo;
+
 		public GameUIButton buttonAddHp;
 
 		public Button buttonExit;
@@ -54,42 +56,30 @@ namespace strangeetnix.ui
 		internal Signal restartButtonSignal = new Signal();
 		internal Signal chooseWaveSignal = new Signal();
 
-		private bool _battleMode;
-
-		internal void init()
+		internal void init(ILocalizationConfig localizationConfig)
 		{
 			// Getting the intial scale of the healthbar (whilst the player has full health).
 			_playerHpScale = playerHpBar.transform.localScale;
 			_playerExpScale = playerHpBar.transform.localScale;
 			//_enemyHpScale = enemyHpBar.transform.localScale;
+
+			string buttonText = "";
+			buttonText = localizationConfig.getTextByKey (LocalizationKeys.BUTTON_HIT);
+			screenUtil.setButtonText (buttonHit, buttonText);
+			buttonText = localizationConfig.getTextByKey (LocalizationKeys.BUTTON_GO);
+			screenUtil.setButtonText (buttonGo, buttonText);
 		}
 
-		internal void initButtonsView(bool battleMode, ILocalizationConfig localizationConfig)
+		internal void initButtonsView(bool battleMode)
 		{
-			_battleMode = battleMode;
-			string buttonText = "";
-			if (_battleMode) {
-				buttonText = localizationConfig.getTextByKey (LocalizationKeys.BUTTON_HIT);
-			} else {
-				buttonText = localizationConfig.getTextByKey (LocalizationKeys.BUTTON_GO);
-			}
-			setButtonText (buttonHit, buttonText);
 			buttonHit.gameObject.SetActive (battleMode);
+			buttonGo.gameObject.SetActive (false);
+
 			buttonAddHp.gameObject.SetActive (battleMode);
 			//buttonPause.gameObject.SetActive (battleMode);
 
 			//GameObject.Find ("itemsImage").SetActive (battleMode);
 			//GameObject.Find ("actionButtonsImage").SetActive (battleMode);
-		}
-
-		private void setButtonText(Button button, string textValue)
-		{
-			Text buttonText = button.GetComponentInChildren<Text> ();
-			if (buttonText != null) {
-				buttonText.text = textValue;
-			} else {
-				Debug.LogWarning ("Can't find text field in button "+button.name);
-			}
 		}
 
 		internal void addButtonEvents(bool value)
@@ -101,7 +91,8 @@ namespace strangeetnix.ui
 				buttonRight.pointerDownSignal.AddListener (onRightButtonDown);
 				buttonRight.pointerUpSignal.AddListener (onButtonUp);
 
-				buttonHit.onClick.AddListener (onHitButtonClick);
+				buttonHit.onClick.AddListener (onHitButton);
+				buttonGo.onClick.AddListener (onShowChooseWave);
 
 				buttonAddHp.onClick.AddListener (onAddHp);
 
@@ -116,7 +107,8 @@ namespace strangeetnix.ui
 				buttonLeft.pointerDownSignal.RemoveListener (onLeftButtonDown);
 				buttonRight.pointerUpSignal.RemoveListener (onButtonUp);
 
-				buttonHit.onClick.RemoveListener (onHitButtonClick);
+				buttonHit.onClick.RemoveListener (onHitButton);
+				buttonGo.onClick.RemoveListener (onShowChooseWave);
 
 				buttonAddHp.onClick.RemoveListener (onAddHp);
 
@@ -189,8 +181,8 @@ namespace strangeetnix.ui
 
 		internal void showRoomButton (bool value)
 		{
-			if (buttonHit != null) {
-				buttonHit.gameObject.SetActive (value);
+			if (buttonGo != null) {
+				buttonGo.gameObject.SetActive (value);
 			}
 		}
 
@@ -242,15 +234,16 @@ namespace strangeetnix.ui
 			clickButtonSignal.Dispatch (ButtonType.RIGHT_DOWN);
 		}
 
-		private void onHitButtonClick()
+		private void onHitButton()
 		{
-			if (_battleMode) {
-				if (buttonHit.isFilled) {
-					clickButtonSignal.Dispatch (ButtonType.HIT);
-				}
-			} else {
-				chooseWaveSignal.Dispatch ();
+			if (buttonHit.isFilled) {
+				clickButtonSignal.Dispatch (ButtonType.HIT);
 			}
+		}
+
+		private void onShowChooseWave()
+		{
+			chooseWaveSignal.Dispatch ();
 		}
 	}
 }

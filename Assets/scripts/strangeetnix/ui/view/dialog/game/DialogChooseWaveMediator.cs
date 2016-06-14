@@ -44,16 +44,23 @@ namespace strangeetnix.ui
 		{
 			if (value) {
 				view.startWaveSignal.AddListener (onChooseWave);
+				view.closeDialogSignal.AddListener (onCloseDialog);
 			} else {
 				view.startWaveSignal.RemoveListener (onChooseWave);
+				view.closeDialogSignal.RemoveListener (onCloseDialog);
 			}
+		}
+
+		private void onCloseDialog()
+		{
+			view.destroy ();
+			Destroy (view.gameObject);
 		}
 
 		private void onChooseWave(int waveId)
 		{
-			Destroy (view.gameObject);
-
 			enterRoomSignal.Dispatch (waveId);
+			onCloseDialog ();
 		}
 	}
 }

@@ -2,6 +2,7 @@
 
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 using strange.extensions.injector.api;
 
 namespace strangeetnix
@@ -137,6 +138,16 @@ namespace strangeetnix
 			Vector3 retv = new Vector3 (x, y, gameCamera.transform.localPosition.y);
 			retv = gameCamera.ViewportToWorldPoint (retv);
 			return retv;
+		}
+
+		public void setButtonText(Button button, string textValue)
+		{
+			Text buttonText = button.GetComponentInChildren<Text> ();
+			if (buttonText != null) {
+				buttonText.text = textValue;
+			} else {
+				Debug.LogWarning ("Can't find text field in button "+button.name);
+			}
 		}
 	}
 }
