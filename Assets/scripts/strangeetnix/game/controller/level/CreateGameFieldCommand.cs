@@ -22,7 +22,7 @@ namespace strangeetnix.game
 				GameObject gameField = new GameObject (GameElement.GAME_FIELD.ToString());
 				gameField.AddComponent<GameFieldView> ();
 				gameField.transform.localPosition = center;
-				gameField.transform.parent = contextView.transform;
+				gameField.transform.SetParent(contextView.transform, false);
 
 				//Bind it so we can use it elsewhere
 				injectionBinder.Bind<GameObject> ().ToValue (gameField).ToName (GameElement.GAME_FIELD);

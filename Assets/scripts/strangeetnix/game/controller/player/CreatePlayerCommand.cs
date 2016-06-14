@@ -42,7 +42,7 @@ namespace strangeetnix.game
 			playerGO.tag = PlayerView.ID;
 			playerGO.transform.localPosition = new Vector3(position, gameModel.levelModel.bgAssetInfo.startPosY, -0.05f);
 			//playerGO.layer = LayerMask.NameToLayer("player");
-			playerGO.transform.parent = gameField.transform;
+			playerGO.transform.SetParent(gameField.transform, false);
 			playerGO.AddComponent<PlayerView> ();
 			PlayerView playerView = playerGO.GetComponent<PlayerView> ();
 			playerView.moveForce = 400;
