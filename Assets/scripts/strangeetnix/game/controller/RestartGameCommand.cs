@@ -30,11 +30,16 @@ namespace strangeetnix.game
 
 		[Inject]
 		public DestroyGameFieldSignal destroyGameFieldSignal{ get; set; }
+
+		[Inject]
+		public IGameModel gameModel{ get; set; }
 		
 		public override void Execute()
 		{
 			levelEndSignal.Dispatch ();
 			destroyGameFieldSignal.Dispatch ();
+
+			gameModel.playerModel.resetHp ();
 
 			gameStartSignal.Dispatch();
 		}

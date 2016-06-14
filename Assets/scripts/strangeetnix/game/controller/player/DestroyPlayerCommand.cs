@@ -69,7 +69,7 @@ namespace strangeetnix.game
 					cameraEnabledSignal.Dispatch (false);
 					moveEnemySignal.Dispatch (false);
 					stopEnemySpawnerSignal.Dispatch ();
-					gameModel.playerModel.resetHp();
+					//gameModel.playerModel.resetHp();
 				}
 				/*else
 				{
