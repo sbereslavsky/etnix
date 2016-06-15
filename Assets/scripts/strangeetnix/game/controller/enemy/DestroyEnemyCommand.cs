@@ -84,8 +84,7 @@ namespace strangeetnix.game
 			//pool.ReturnInstance (enemyView.gameObject);
 
 			//enemyView.gameObject.SetActive (false);
-			enemyView.DestroyView(delayToDestroy);
-			//GameObject.Destroy (enemyView, delayToDestroy);
+			enemyView.destroyView(delayToDestroy);
 
 			if (delayToDestroy > 0) {
 				Retain ();

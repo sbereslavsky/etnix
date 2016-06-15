@@ -104,7 +104,7 @@ namespace strangeetnix.game
 		{
 			yield return new WaitForSeconds (_enemyModel.assetVO.delayToHit);
 			if (_enemyModel.assetVO.hasExplosion) {
-				addExplosionSignal.Dispatch (view.getExplosionPos ());
+				addExplosionSignal.Dispatch (view.explosionPos);
 			}
 			hitPlayerSignal.Dispatch (transform, _damage);
 			StartCoroutine (setCanHit());

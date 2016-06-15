@@ -61,7 +61,7 @@ namespace strangeetnix.game
 			{
 				gameModel.levelInProgress = false;
 
-				GameObject.Destroy (playerView.gameObject, delayToDestroy);
+				playerView.destroyView (delayToDestroy);
 
 				//Are we at the end of the game?
 				if (gameModel.playerModel.hp <= 0)
@@ -71,12 +71,6 @@ namespace strangeetnix.game
 					stopEnemySpawnerSignal.Dispatch ();
 					//gameModel.playerModel.resetHp();
 				}
-				/*else
-				{
-					//If not, pause a couple seconds, then ask for a new ship.
-					Retain ();
-
-				}*/
 				if (delayToDestroy > 0) {
 					Retain ();
 					routineRunner.StartCoroutine (waitToShowLoseDialog ());
@@ -89,8 +83,7 @@ namespace strangeetnix.game
 			//Unbind the current instance. If we create another ship, the new instance will get
 			//re-bound (see CreatePlayerCommand).
 			if (injectionBinder.GetBinding<PlayerView> (GameElement.PLAYER) != null)
-				injectionBinder.Unbind<PlayerView> (GameElement.PLAYER);
-			
+				injectionBinder.Unbind<PlayerView> (GameElement.PLAYER);			
 		}
 
 		//Wait a couple seconds, then request another player

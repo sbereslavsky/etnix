@@ -45,6 +45,8 @@ namespace strangeetnix.game
 
 		private int _damage = 0;
 		private int _cooldown = 0;
+		private int _playerHitCount = 0;
+
 		private GameObject _enemyGO;
 
 		private bool _battleMode;
@@ -54,6 +56,7 @@ namespace strangeetnix.game
 		//Constructor. Do all your startup stuff here
 		public override void OnRegister ()
 		{
+			_playerHitCount = 0;
 			gameInputSignal.AddListener (onGameInput);
 
 			_battleMode = gameModel.levelModel.hasEnemy;
@@ -150,12 +153,42 @@ namespace strangeetnix.game
 		//Receive a signal updating GameInput
 		private void onGameInput(int input)
 		{
-			//view.SetAction (input);
+			//SetAction (input);
 
 			/*if ((input & GameInputEvent.FIRE) > 0)
 			{
 				//fireMissileSignal.Dispatch (gameObject, GameElement.MISSILE_POOL);
 			}*/
+		}
+
+		//keyboard event!
+		//Set the IME value
+		internal void SetAction(int evt)
+		{
+			int input = evt;
+			bool left = (input & GameInputEvent.LEFT) > 0;
+			bool right = (input & GameInputEvent.RIGHT) > 0;
+			bool hit = (input & GameInputEvent.HIT) > 0;
+			if (input == 0) {
+				view.stopWalk ();
+			}
+
+			if (left) {
+				view.startLeftWalk ();
+			}
+
+			if (right) {
+				view.startRightWalk ();
+			}
+
+			if (hit) {
+				_playerHitCount++;
+				if (_playerHitCount % 2 == 0) {
+					view.startHit2 ();
+				} else {
+					view.startHit1 ();
+				}
+			}
 		}
 	}
 }
