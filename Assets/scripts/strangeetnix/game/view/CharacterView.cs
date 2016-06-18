@@ -36,7 +36,7 @@ namespace strangeetnix.game
 			Destroy (this.gameObject, time);
 		}
 
-		protected bool isPlayAnimation (string type)
+		virtual protected bool isPlayAnimation (string type)
 		{
 			return _anim.GetBool(type);
 		}

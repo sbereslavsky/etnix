@@ -123,11 +123,11 @@ namespace strangeetnix.game
 
 		private void hitEnemy()
 		{
-			if (_enemyGO) {
+			if (_enemyGO != null) {
 				EnemyView enemyView = _enemyGO.GetComponent<EnemyView> ();
 				if (enemyView != null) {
 					updateHudItemSignal.Dispatch (UpdateHudItemType.COOLDOWN, _cooldown);
-					hitEnemySignal.Dispatch (enemyView, _damage);
+					enemyView.hitByPlayerSignal.Dispatch (_damage);
 				}
 			}
 		}

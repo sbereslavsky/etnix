@@ -53,6 +53,21 @@ namespace strangeetnix.game
 			_anim.SetInteger(PlayerAnimatorTypes.INT_BATTLE, battleVal);
 		}
 
+		void OnTriggerEnter2D(Collider2D other)
+		{
+			Debug.Log("Something has entered this zone.");    
+		} 
+
+		void OnTriggerStay2D(Collider2D other)
+		{
+			Debug.Log("Something has entered this zone.");    
+		} 
+
+		void OnTriggerExit2D(Collider2D other)
+		{
+			Debug.Log("Something has entered this zone.");    
+		}
+
 		void FixedUpdate ()
 		{
 			bool isEnemy = false;

@@ -24,9 +24,6 @@ namespace strangeetnix.game
 		public MoveEnemySignal moveEnemySignal{ get; set; }
 
 		[Inject]
-		public HitEnemySignal hitEnemySignal{ get; set; }
-
-		[Inject]
 		public HitPlayerSignal hitPlayerSignal{ get; set; }
 
 		[Inject]
@@ -53,6 +50,8 @@ namespace strangeetnix.game
 
 		private int _startHp = 0;
 
+		private bool _canToHit = false;
+
 		public override void OnRegister ()
 		{
 			_enemyModel = gameModel.levelModel.getEnemyModelById (gameModel.createEnemyId);
@@ -64,49 +63,66 @@ namespace strangeetnix.game
 
 			view.init ();
 			view.moveSpeed = _enemyModel.speed;
-			view.collisionSignal.AddListener (onPlayerCollision);
+
 			view.updateHp (_hp, _startHp);
 
-			hitEnemySignal.AddListener (onHitByPlayer);
-			moveEnemySignal.AddListener (onMoveEnemy);
-
-			/*int enemyCount = gameModel.levelModel.enemyCount;
-			Collider2D collider = view.GetComponent<Collider2D> ();
-			if (collider != null) {
-				collider.offset = new Vector2 (0, collider.offset.y*enemyCount);
-			}*/
+			UpdateListeners (true);
 		}
 
 		public override void OnRemove ()
 		{
 			_enemyModel = null;
 			StopAllCoroutines ();
-			hitEnemySignal.RemoveListener (onHitByPlayer);
-			moveEnemySignal.RemoveListener (onMoveEnemy);
 
-			view.collisionSignal.RemoveListener (onPlayerCollision);
+			UpdateListeners (false);
+		}
+
+		private void UpdateListeners(bool value)
+		{
+			if (value) {
+				view.enterCollisionSignal.AddListener (onEnterCollision);
+				view.exitCollisionSignal.AddListener (onExitCollision);
+				view.hitByPlayerSignal.AddListener (onHitByPlayer);
+
+				moveEnemySignal.AddListener (onMoveEnemy);
+			} else {
+				view.enterCollisionSignal.RemoveListener (onEnterCollision);
+				view.exitCollisionSignal.RemoveListener (onExitCollision);
+				view.hitByPlayerSignal.RemoveListener (onHitByPlayer);
+
+				moveEnemySignal.RemoveListener (onMoveEnemy);
+			}	
 		}
 
 		private void onMoveEnemy(bool canMove)
 		{
-			view.SetCanMove (canMove);
+			view.setCanMove (canMove);
 		}
 
-		private void onPlayerCollision()
+		private void onEnterCollision()
 		{
 			if (view.canHit) {
-				view.canHit = false;
+				view.setCanHit (false);
+				_canToHit = true;
 				StartCoroutine (hitPlayer());
 			}
+		}
+
+		private void onExitCollision()
+		{
+			_canToHit = false;
 		}
 
 		private IEnumerator hitPlayer()
 		{
 			yield return new WaitForSeconds (_enemyModel.assetVO.delayToHit);
-			if (_enemyModel.assetVO.hasExplosion) {
-				addExplosionSignal.Dispatch (view.explosionPos);
+			if (_canToHit) {
+				_canToHit = false;
+				if (_enemyModel.assetVO.hasExplosion) {
+					addExplosionSignal.Dispatch (view.explosionPos);
+				}
+				hitPlayerSignal.Dispatch (transform, _damage);
 			}
-			hitPlayerSignal.Dispatch (transform, _damage);
 			StartCoroutine (setCanHit());
 			StopCoroutine (hitPlayer());
 		}
@@ -114,13 +130,13 @@ namespace strangeetnix.game
 		private IEnumerator setCanHit()
 		{
 			yield return new WaitForSeconds (_cooldown);
-			view.canHit = true;
+			view.setCanHit (true);
 			StopCoroutine (setCanHit());
 		}
 
-		private void onHitByPlayer(EnemyView enemyView, int decHp)
+		private void onHitByPlayer(int decHp)
 		{
-			if (view.Equals(enemyView) && !_isDeath) {
+			if (!_isDeath) {
 				_hp = Mathf.Max (0, _hp - decHp);
 				view.updateHp (_hp, _startHp);
 				// If the enemy has zero or fewer hit points and isn't dead yet...
