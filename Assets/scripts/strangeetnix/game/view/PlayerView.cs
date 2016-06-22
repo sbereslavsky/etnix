@@ -1,6 +1,7 @@
 ﻿//The "View" for the player's ship. This MonoBehaviour is attached to the player_ship prefab inside Unity.
 
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -14,9 +15,10 @@ namespace strangeetnix.game
 		public static string ID = "Player";
 
 		// Setting up references.
-		private string FRONT_CHECK 	= "frontCheck";
 		private string EXPLOSION1 	= "explosion1";
 		private string EXPLOSION2 	= "explosion2";
+
+		private float TIME_TO_ATTACK	= 1.5f;
 
 		internal Signal<GameObject> hitEnemySignal = new Signal<GameObject> ();
 
@@ -30,22 +32,27 @@ namespace strangeetnix.game
 		private Transform _explosion2;
 
 		private int _hitNum = 0;
-		private string _hitEnemyName;
 
 		private float _moveSpeed = 0f;
 
 		private bool _pressedButton = false;
 		private bool _battleMode;
 
+		private List<Collider2D> _colliderList;
+		private List<string> _hitEnemyNames;
+
 		public override void init (bool battleMode)
 		{
 			_battleMode = battleMode;
+			int listLength = 0;
 			if (_battleMode) {
-				_hitEnemyName = "";
+				listLength = 10;
 				_explosion = transform.Find (EXPLOSION1).transform;
 				_explosion2 = transform.Find (EXPLOSION2).transform;
-				_frontCheck = transform.Find (FRONT_CHECK).transform;
 			}
+
+			_hitEnemyNames = new List<string> (listLength);
+			_colliderList = new List<Collider2D> (listLength);
 
 			base.init (battleMode);
 
@@ -55,37 +62,60 @@ namespace strangeetnix.game
 
 		void OnTriggerEnter2D(Collider2D other)
 		{
-			Debug.Log("Something has entered this zone.");    
+			if (other.tag.Contains(EnemyView.ID) && !_colliderList.Contains(other)) {
+				_colliderList.Add (other);
+			}
 		} 
 
-		void OnTriggerStay2D(Collider2D other)
+		/*void OnTriggerStay2D(Collider2D other)
 		{
-			Debug.Log("Something has entered this zone.");    
-		} 
+			
+		} */
 
 		void OnTriggerExit2D(Collider2D other)
 		{
-			Debug.Log("Something has entered this zone.");    
+			if (other.tag.Contains(EnemyView.ID)) {
+				removeCollder (other);
+			}
+		}
+
+		private void removeCollder(Collider2D other)
+		{
+			int id = _colliderList.IndexOf (other);
+			if (id >= 0) {
+				_colliderList.RemoveAt (id);
+			}
+		}
+
+		internal void onExitTrigger(Collider2D other)
+		{
+			removeCollder (other);
 		}
 
 		void FixedUpdate ()
 		{
 			bool isEnemy = false;
-			if (_battleMode && isHit && _hitEnemyName.Length == 0) {
-				// Create an array of all the colliders in front of the enemy.
-				Collider2D[] frontHits = Physics2D.OverlapPointAll(_frontCheck.position);
 
+			foreach (Collider2D c in _colliderList) {
+				if (c == null) {
+					_colliderList.Remove (c);
+					return;
+				}
+			}
+
+			if (_battleMode && isHit && _hitEnemyNames.Count == 0 && _colliderList.Count > 0) {
+				isEnemy = true;
 				// Check each of the colliders.
-				foreach(Collider2D c in frontHits)
+				foreach(Collider2D c in _colliderList)
 				{
 					// If any of the colliders is an Obstacle...
-					isEnemy = c.tag.Contains(EnemyView.ID);
-					if (isEnemy && c.gameObject.name != _hitEnemyName)
+					//isEnemy = c.tag.Contains(EnemyView.ID);
+					if (!_hitEnemyNames.Contains(c.gameObject.name))
 					{
 						if (gameObject.transform.localScale.x > 0 && c.gameObject.transform.localScale.x > 0 ||
 							gameObject.transform.localScale.x < 0 && c.gameObject.transform.localScale.x < 0) {
 							postHitEnemy (c.gameObject);
-							break;
+							//break;
 						}
 					}
 				}
@@ -126,7 +156,7 @@ namespace strangeetnix.game
 
 		private void postHitEnemy(GameObject enemyGO)
 		{
-			_hitEnemyName = enemyGO.name;
+			_hitEnemyNames.Add(enemyGO.name);
 			hitEnemySignal.Dispatch (enemyGO);
 		}
 
@@ -175,8 +205,9 @@ namespace strangeetnix.game
 			if (!_isDead && !isHit && canHit) {
 				_pressedButton = false;
 				_hitNum = 1;
+				startWait (onAttackComplete(), TIME_TO_ATTACK);
 				playAnimation (PlayerAnimatorTypes.TRIGGER_HIT);
-				_hitEnemyName = "";
+				_hitEnemyNames.Clear ();
 			}
 		}
 
@@ -185,14 +216,21 @@ namespace strangeetnix.game
 			if (!_isDead && !isHit && canHit) {
 				_pressedButton = false;
 				_hitNum = 2;
+				startWait (onAttackComplete(), TIME_TO_ATTACK);
 				playAnimation (PlayerAnimatorTypes.TRIGGER_SUPER_HIT);
-				_hitEnemyName = "";
+				_hitEnemyNames.Clear ();
 			}
 		}
 
 		internal bool isHit
 		{
-			get { return isPlayAnimation (PlayerAnimatorTypes.TRIGGER_HIT) || isPlayAnimation (PlayerAnimatorTypes.TRIGGER_SUPER_HIT); }
+			get { return _isWait; }// isPlayAnimation (PlayerAnimatorTypes.TRIGGER_HIT) || isPlayAnimation (PlayerAnimatorTypes.TRIGGER_SUPER_HIT); }
+		}
+
+		IEnumerator onAttackComplete () 
+		{
+			yield return new WaitForSeconds (_waitTime);
+			_isWait = false;
 		}
 
 		override public void setDeath()
