@@ -5,6 +5,7 @@ using UnityEngine;
 using strange.extensions.mediation.impl;
 using strange.extensions.signal.impl;
 using System.Collections;
+using System.Collections.Generic;
 
 namespace strangeetnix.game
 {
@@ -35,7 +36,7 @@ namespace strangeetnix.game
 
 		private bool _canMove = true;
 		private Collider2D _playerTrigger = null;
-		private Collider2D _enemyTrigger = null;
+		private List<Collider2D> _enemyTriggerList = null;
 		public bool canHit { get; private set; }
 
 		private float _speed = 0;
@@ -50,6 +51,8 @@ namespace strangeetnix.game
 			_hpBgTransform = transform.Find (HEALTH_BG).transform;
 			_hpScale = _hpTransform.localScale;
 			canHit = true;
+
+			_enemyTriggerList = new List<Collider2D> (10);
 
 			base.init ();
 			_state = EnemyStates.NULL;
@@ -101,10 +104,12 @@ namespace strangeetnix.game
 			if (otherName == WALL_LEFT || otherName == WALL_RIGHT) {
 				flip ();
 			}
-			else if (isOtherEnemy (other) && isEqualsScaleX(other.gameObject)) {
-				_enemyTrigger = other;
-				setState (EnemyStates.IDLE);
-				setState (EnemyStates.BEFORE_ENEMY);
+			else if (isOtherEnemy (other) && isEqualsScaleX(other.gameObject) && !_enemyTriggerList.Contains(other)) {
+				_enemyTriggerList.Add (other);
+				if (_state == EnemyStates.MOVE) {
+					setState (EnemyStates.IDLE);
+					setState (EnemyStates.BEFORE_ENEMY);
+				}
 			}
 			else if (isPlayerObject(other.tag)) {
 				if (canHit) {
@@ -141,9 +146,21 @@ namespace strangeetnix.game
 			if (isPlayerObject (other.tag)) {
 				_playerTrigger = null;
 				setState(EnemyStates.MOVE);
-			} else if (isOtherEnemy (other)) {
-				_enemyTrigger = null;
-				setState(EnemyStates.MOVE);
+			}
+
+			if (isOtherEnemy (other)) {
+				if (_enemyTriggerList.Contains (other)) {
+					_enemyTriggerList.Remove (other);
+				}
+
+				if (_isWait) {
+					_isWait = false;
+					StopAllCoroutines ();
+				}
+
+				if (_state != EnemyStates.MOVE) {
+					setState (EnemyStates.MOVE);
+				}
 			}
 		}
 
@@ -156,10 +173,10 @@ namespace strangeetnix.game
 		{
 			yield return new WaitForSeconds (_waitTime);
 			_isWait = false;
-			if (_enemyTrigger != null) {
+			if (_enemyTriggerList.Count > 0) {
 				startWait (waitToMove(), TIME_TO_MOVE);
 			} else {
-				setState(EnemyStates.MOVE);
+				doAfterHit ();
 			}
 		}
 
@@ -167,6 +184,11 @@ namespace strangeetnix.game
 		{
 			yield return new WaitForSeconds (_waitTime);
 			_isWait = false;
+			doAfterHit ();
+		}
+
+		private void doAfterHit()
+		{
 			if (_playerTrigger) {
 				if (canHit) {
 					setState (EnemyStates.HIT);
@@ -330,11 +352,16 @@ namespace strangeetnix.game
 				}
 			}
 
-			if (_enemyTrigger) {
-				EnemyView enemyView = _enemyTrigger.gameObject.GetComponent<EnemyView> ();
-				if (enemyView) {
-					enemyView.onExitTrigger (_collider2d);
+			if (_enemyTriggerList.Count > 0) {
+				foreach (Collider2D c in _enemyTriggerList) {
+					if (c != null) {
+						EnemyView enemyView = c.gameObject.GetComponent<EnemyView> ();
+						if (enemyView) {
+							enemyView.onExitTrigger (_collider2d);
+						}
+					}
 				}
+				_enemyTriggerList.Clear ();
 			}
 
 			/*if (_rigidBody != null) {
