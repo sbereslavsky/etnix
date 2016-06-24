@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using UnityEngine;
 using strange.extensions.mediation.impl;
 
@@ -8,8 +9,14 @@ namespace strangeetnix.game
 	{
 		protected Animator _anim; 
 		protected bool _isDead;					// Whether or not the enemy is dead.
-		protected Transform _frontCheck;			// Reference to the position of the gameobject used for checking if something is in front.
+		//protected Transform _frontCheck;		// Reference to the position of the gameobject used for checking if something is in front.
 		protected Transform _explosion;
+
+		protected Rigidbody2D _rigidBody;
+		protected BoxCollider2D _collider2d;
+
+		protected bool _isWait = false;
+		protected float _waitTime = 0f;
 
 		virtual public void init () 
 		{ 
@@ -24,6 +31,16 @@ namespace strangeetnix.game
 		{
 			_isDead = false;
 			_anim = GetComponent<Animator>();
+
+			_rigidBody = GetComponent<Rigidbody2D> ();
+			_collider2d = GetComponent<BoxCollider2D> ();
+		}
+
+		protected bool checkCollision(Collider2D other)
+		{
+			float dist1 = other.bounds.SqrDistance (_collider2d.bounds.center);
+			float width = (other as BoxCollider2D).size.x + _collider2d.size.x;
+			return (width * 0.4f > dist1 || dist1 > width * 1.4f);
 		}
 
 		virtual public void setDeath () 
@@ -34,6 +51,15 @@ namespace strangeetnix.game
 		public void destroyView(float time)
 		{
 			Destroy (this.gameObject, time);
+		}
+
+		protected void startWait(IEnumerator routine, float time)
+		{
+			if (!_isWait) {
+				_waitTime = time;
+				_isWait = true;
+				StartCoroutine (routine);
+			}
 		}
 
 		virtual protected bool isPlayAnimation (string type)
