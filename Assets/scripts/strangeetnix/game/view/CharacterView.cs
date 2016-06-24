@@ -40,7 +40,8 @@ namespace strangeetnix.game
 		{
 			float dist1 = other.bounds.SqrDistance (_collider2d.bounds.center);
 			float width = (other as BoxCollider2D).size.x + _collider2d.size.x;
-			return (width * 0.4f > dist1 || dist1 > width * 1.4f);
+			bool result = (width * 0.3f > dist1 || dist1 > width * 1.2f);
+			return result;
 		}
 
 		virtual public void setDeath () 
@@ -82,6 +83,26 @@ namespace strangeetnix.game
 			} else {
 				Debug.Log ("playAnimation(" + animationId + "). anim = null!");
 			}
+		}
+
+		protected bool isEqualsNames(GameObject go)
+		{
+			return gameObject.name.Equals (go.name);
+		}
+
+		protected bool isEqualsScaleX(GameObject go)
+		{
+			return gameObject.transform.localScale.x == go.transform.localScale.x;
+		}
+
+		protected bool isPlayerObject(string tag)
+		{
+			return tag.Contains(PlayerView.ID);
+		}
+
+		protected bool isOtherEnemy(Collider2D other)
+		{
+			return (other.tag.Contains(EnemyView.ID) && !isEqualsNames(other.gameObject));
 		}
 	}
 }

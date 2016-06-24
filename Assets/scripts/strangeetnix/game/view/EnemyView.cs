@@ -153,15 +153,31 @@ namespace strangeetnix.game
 					_enemyTriggerList.Remove (other);
 				}
 
-				if (_isWait) {
-					_isWait = false;
-					StopAllCoroutines ();
-				}
+				if (_playerTrigger == null) {// && !isBeforeEnemyTrigger()) {
+					if (_isWait) {
+						_isWait = false;
+						StopAllCoroutines ();
+					}
 
-				if (_state != EnemyStates.MOVE) {
-					setState (EnemyStates.MOVE);
+					if (_state != EnemyStates.MOVE) {
+						setState (EnemyStates.MOVE);
+					}
 				}
 			}
+		}
+
+		private bool isBeforeEnemyTrigger()
+		{
+			if (_enemyTriggerList.Count > 0) {
+				bool scaleTurn = this.gameObject.transform.localScale.x > 0;
+				GameObject enemyGO = _enemyTriggerList [0].gameObject;
+				if (scaleTurn && enemyGO.transform.position.x > gameObject.transform.position.x ||
+				    !scaleTurn && enemyGO.transform.position.x < gameObject.transform.position.x) {
+					return true;
+				}
+			}
+
+			return false;
 		}
 
 		internal void onExitTrigger(Collider2D other)
@@ -294,26 +310,6 @@ namespace strangeetnix.game
 			}
 		}
 
-		private bool isEqualsNames(GameObject go)
-		{
-			return gameObject.name.Equals (go.name);
-		}
-
-		private bool isEqualsScaleX(GameObject go)
-		{
-			return gameObject.transform.localScale.x == go.transform.localScale.x;
-		}
-
-		private bool isPlayerObject(string tag)
-		{
-			return tag.Contains(PlayerView.ID);
-		}
-
-		private bool isOtherEnemy(Collider2D other)
-		{
-			return (other.tag.Contains(EnemyView.ID) && !isEqualsNames(other.gameObject));
-		}
-
 		internal void stopMove()
 		{
 			if (_speed > 0) {
@@ -371,6 +367,22 @@ namespace strangeetnix.game
 			if (_collider2d != null) {
 				_collider2d.enabled = false;
 			}*/
+		}
+
+		private PlayerView getPlayerView(Collider2D collider2d)
+		{
+			PlayerView playerView = collider2d.gameObject.GetComponent<PlayerView> ();
+			return playerView;
+		}
+
+		private bool isPlayerWalk(Collider2D collider2d)
+		{
+			PlayerView playerView = collider2d.gameObject.GetComponent<PlayerView> ();
+			if (playerView) {
+				return playerView.isWalk;
+			}
+
+			return false;
 		}
 	}
 }

@@ -245,7 +245,7 @@ namespace strangeetnix.game
 
 		internal void checkToFlip (Transform enemyTransform)
 		{
-			if (!isHit || !isPlayAnimation(PlayerAnimatorTypes.TRIGGER_DEFEAT)) {
+			if (!isHit && !isPlayAnimation(PlayerAnimatorTypes.TRIGGER_DEFEAT)) {
 				if (enemyTransform.position.x < gameObject.transform.position.x && facingRight ||
 				    enemyTransform.position.x > gameObject.transform.position.x && !facingRight) {
 					flip ();
