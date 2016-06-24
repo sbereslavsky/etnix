@@ -1,27 +1,57 @@
 [
     {
         "waveid": 1,
-        "enemyencounteridlist": "1,1,1,1,1,1",
-        "encounterspeed": 10,
+        "enemyencounteridlist": "1,1,1",
+        "encounterspeed": 5,
         "timersec": 600,
         "defencehp": 100
     },
     {
         "waveid": 2,
-        "enemyencounteridlist": "2,2,2,2,2,2,2,2",
+        "enemyencounteridlist": "1,2,1,2",
         "encounterspeed": 5,
         "defencehp": 200,
         "defencespeed": 5
     },
     {
         "waveid": 3,
-        "enemyencounteridlist": "1,1,1,1,1,2,2,2,2,2,2",
-        "encounterspeed": 15
+        "enemyencounteridlist": "1,1,1,1,1,1",
+        "encounterspeed": 1
     },
     {
         "waveid": 4,
-        "enemyencounteridlist": "1,1,1,1,1,2,2,2,2,2,2,3,3,3,3,3,4",
-        "encounterspeed": 10,
+        "enemyencounteridlist": "2,2,2,2",
+        "encounterspeed": 3,
         "timersec": 1200
+    },
+    {
+        "waveid": 5,
+        "enemyencounteridlist": "2,2,2,2,2,2,2,2",
+        "encounterspeed": 5
+    },
+    {
+        "waveid": 6,
+        "enemyencounteridlist": "2,2,2,2,3,3",
+        "encounterspeed": 5
+    },
+    {
+        "waveid": 7,
+        "enemyencounteridlist": "3,3,3,3",
+        "encounterspeed": 7
+    },
+    {
+        "waveid": 8,
+        "enemyencounteridlist": "1,1,1,1,1,2,2,2,2,3,2,3,2",
+        "encounterspeed": 5
+    },
+    {
+        "waveid": 9,
+        "enemyencounteridlist": "3,3,3,3,3,3,3,3",
+        "encounterspeed": 3
+    },
+    {
+        "waveid": 10,
+        "enemyencounteridlist": "1,1,1,1,1,2,2,2,2,2,2,3,3,3,3,3,4",
+        "encounterspeed": 1
     }
 ]

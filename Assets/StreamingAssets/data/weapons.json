@@ -4,43 +4,109 @@
         "ownerid": 1,
         "requirestr": 10,
         "requiredex": 10,
-        "dmg": 100,
+        "dmg": 30,
         "cooldown": 10,
         "cost": 100,
         "assetid": 1,
-        "info": "Sabli iron"
+        "info": "Sabli wood"
     },
     {
         "weaponid": 2,
         "ownerid": 1,
         "requirestr": 20,
-        "requiredex": 20,
-        "dmg": 200,
-        "cooldown": 35,
+        "requiredex": 15,
+        "dmg": 40,
+        "cooldown": 16,
         "cost": 200,
         "assetid": 2,
-        "info": "Sabli gold"
+        "info": "Sabli tin"
     },
     {
         "weaponid": 3,
-        "ownerid": 2,
-        "requirestr": 10,
-        "requiredex": 10,
-        "dmg": 150,
-        "cooldown": 13,
-        "cost": 100,
+        "ownerid": 1,
+        "requirestr": 30,
+        "requiredex": 20,
+        "dmg": 50,
+        "cooldown": 21,
+        "cost": 350,
         "assetid": 3,
-        "info": "Wood fist"
+        "info": "Sabli iron"
     },
     {
         "weaponid": 4,
+        "ownerid": 1,
+        "requirestr": 40,
+        "requiredex": 25,
+        "dmg": 60,
+        "cooldown": 27,
+        "cost": 500,
+        "assetid": 4,
+        "info": "Sabli gold"
+    },
+    {
+        "weaponid": 5,
+        "ownerid": 1,
+        "requirestr": 50,
+        "requiredex": 30,
+        "dmg": 80,
+        "cooldown": 35,
+        "cost": 1000,
+        "assetid": 5,
+        "info": "Sabli platinum"
+    },
+    {
+        "weaponid": 6,
+        "ownerid": 2,
+        "requirestr": 10,
+        "requiredex": 10,
+        "dmg": 50,
+        "cooldown": 12,
+        "cost": 100,
+        "assetid": 6,
+        "info": "Wood fist"
+    },
+    {
+        "weaponid": 7,
+        "ownerid": 2,
+        "requirestr": 15,
+        "requiredex": 20,
+        "dmg": 60,
+        "cooldown": 23,
+        "cost": 200,
+        "assetid": 7,
+        "info": "Tin fist"
+    },
+    {
+        "weaponid": 8,
         "ownerid": 2,
         "requirestr": 20,
-        "requiredex": 20,
-        "dmg": 300,
-        "cooldown": 40,
-        "cost": 200,
-        "assetid": 4,
+        "requiredex": 30,
+        "dmg": 70,
+        "cooldown": 33,
+        "cost": 350,
+        "assetid": 8,
         "info": "Iron fist"
+    },
+    {
+        "weaponid": 9,
+        "ownerid": 2,
+        "requirestr": 25,
+        "requiredex": 40,
+        "dmg": 80,
+        "cooldown": 44,
+        "cost": 500,
+        "assetid": 9,
+        "info": "Gold fist"
+    },
+    {
+        "weaponid": 10,
+        "ownerid": 2,
+        "requirestr": 30,
+        "requiredex": 50,
+        "dmg": 100,
+        "cooldown": 55,
+        "cost": 1000,
+        "assetid": 10,
+        "info": "Platinum fist"
     }
 ]

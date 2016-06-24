@@ -6,17 +6,17 @@
         "damage": 10,
         "cooldown": 3,
         "hp": 100,
-        "expgive": 10,
+        "expgive": 30,
         "info": "dickens"
     },
     {
         "enemyid": 2,
         "assetid": 2,
-        "speed": 1,
-        "damage": 20,
-        "cooldown": 2,
-        "hp": 200,
-        "expgive": 15,
+        "speed": 2.5,
+        "damage": 5,
+        "cooldown": 1,
+        "hp": 50,
+        "expgive": 45,
         "dropidlist": 7,
         "dropratelist": 50,
         "info": "mavka"
@@ -24,11 +24,11 @@
     {
         "enemyid": 3,
         "assetid": 3,
-        "speed": 1.5,
+        "speed": 1,
         "damage": 30,
-        "cooldown": 2,
+        "cooldown": 5,
         "hp": 500,
-        "expgive": 20,
+        "expgive": 60,
         "dropidlist": 8,
         "dropratelist": 70,
         "info": "vodyanoj"
@@ -36,11 +36,11 @@
     {
         "enemyid": 4,
         "assetid": 4,
-        "speed": 1.5,
+        "speed": 0.5,
         "damage": 50,
         "cooldown": 4,
         "hp": 1000,
-        "expgive": 300,
+        "expgive": 1000,
         "dropidlist": "7,7,7,8",
         "dropratelist": "80,80,100100",
         "info": "didko"

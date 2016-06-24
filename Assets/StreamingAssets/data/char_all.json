@@ -10,7 +10,8 @@
         "ch1dex": 9,
         "ch2hp": 100,
         "ch2str": 9,
-        "ch2dex": 10
+        "ch2dex": 10,
+        "exphelp": 0
     },
     {
         "lvl": 2,
@@ -23,11 +24,12 @@
         "ch1dex": 10,
         "ch2hp": 110,
         "ch2str": 10,
-        "ch2dex": 11
+        "ch2dex": 11,
+        "exphelp": 100
     },
     {
         "lvl": 3,
-        "expnext": 150,
+        "expnext": 250,
         "ab1next": 1,
         "ab2next": 0,
         "ab3next": 0,
@@ -36,11 +38,12 @@
         "ch1dex": 11,
         "ch2hp": 125,
         "ch2str": 11,
-        "ch2dex": 13
+        "ch2dex": 13,
+        "exphelp": 150
     },
     {
         "lvl": 4,
-        "expnext": 200,
+        "expnext": 450,
         "ab1next": 1,
         "ab2next": 1,
         "ab3next": 0,
@@ -49,11 +52,12 @@
         "ch1dex": 12,
         "ch2hp": 140,
         "ch2str": 12,
-        "ch2dex": 15
+        "ch2dex": 15,
+        "exphelp": 200
     },
     {
         "lvl": 5,
-        "expnext": 250,
+        "expnext": 700,
         "ab1next": 1,
         "ab2next": 1,
         "ab3next": 0,
@@ -62,11 +66,12 @@
         "ch1dex": 13,
         "ch2hp": 155,
         "ch2str": 13,
-        "ch2dex": 17
+        "ch2dex": 17,
+        "exphelp": 250
     },
     {
         "lvl": 6,
-        "expnext": 300,
+        "expnext": 1000,
         "ab1next": 1,
         "ab2next": 1,
         "ab3next": 1,
@@ -75,11 +80,12 @@
         "ch1dex": 14,
         "ch2hp": 170,
         "ch2str": 14,
-        "ch2dex": 19
+        "ch2dex": 19,
+        "exphelp": 300
     },
     {
         "lvl": 7,
-        "expnext": 350,
+        "expnext": 1350,
         "ab1next": 1,
         "ab2next": 1,
         "ab3next": 1,
@@ -88,11 +94,12 @@
         "ch1dex": 15,
         "ch2hp": 185,
         "ch2str": 15,
-        "ch2dex": 21
+        "ch2dex": 21,
+        "exphelp": 350
     },
     {
         "lvl": 8,
-        "expnext": 400,
+        "expnext": 1750,
         "ab1next": 2,
         "ab2next": 1,
         "ab3next": 1,
@@ -101,11 +108,12 @@
         "ch1dex": 16,
         "ch2hp": 200,
         "ch2str": 16,
-        "ch2dex": 23
+        "ch2dex": 23,
+        "exphelp": 400
     },
     {
         "lvl": 9,
-        "expnext": 450,
+        "expnext": 2200,
         "ab1next": 2,
         "ab2next": 1,
         "ab3next": 1,
@@ -114,11 +122,12 @@
         "ch1dex": 17,
         "ch2hp": 215,
         "ch2str": 17,
-        "ch2dex": 25
+        "ch2dex": 25,
+        "exphelp": 450
     },
     {
         "lvl": 10,
-        "expnext": 500,
+        "expnext": 2700,
         "ab1next": 2,
         "ab2next": 2,
         "ab3next": 1,
@@ -127,11 +136,12 @@
         "ch1dex": 18,
         "ch2hp": 230,
         "ch2str": 18,
-        "ch2dex": 27
+        "ch2dex": 27,
+        "exphelp": 500
     },
     {
         "lvl": 11,
-        "expnext": 550,
+        "expnext": 3250,
         "ab1next": 2,
         "ab2next": 2,
         "ab3next": 1,
@@ -140,11 +150,12 @@
         "ch1dex": 19,
         "ch2hp": 245,
         "ch2str": 19,
-        "ch2dex": 29
+        "ch2dex": 29,
+        "exphelp": 550
     },
     {
         "lvl": 12,
-        "expnext": 600,
+        "expnext": 3850,
         "ab1next": 2,
         "ab2next": 2,
         "ab3next": 2,
@@ -153,11 +164,12 @@
         "ch1dex": 20,
         "ch2hp": 260,
         "ch2str": 20,
-        "ch2dex": 31
+        "ch2dex": 31,
+        "exphelp": 600
     },
     {
         "lvl": 13,
-        "expnext": 650,
+        "expnext": 4500,
         "ab1next": 2,
         "ab2next": 2,
         "ab3next": 2,
@@ -166,11 +178,12 @@
         "ch1dex": 21,
         "ch2hp": 275,
         "ch2str": 21,
-        "ch2dex": 33
+        "ch2dex": 33,
+        "exphelp": 650
     },
     {
         "lvl": 14,
-        "expnext": 700,
+        "expnext": 5200,
         "ab1next": 3,
         "ab2next": 2,
         "ab3next": 2,
@@ -179,11 +192,12 @@
         "ch1dex": 22,
         "ch2hp": 290,
         "ch2str": 22,
-        "ch2dex": 35
+        "ch2dex": 35,
+        "exphelp": 700
     },
     {
         "lvl": 15,
-        "expnext": 750,
+        "expnext": 5950,
         "ab1next": 3,
         "ab2next": 2,
         "ab3next": 2,
@@ -192,11 +206,12 @@
         "ch1dex": 23,
         "ch2hp": 305,
         "ch2str": 23,
-        "ch2dex": 37
+        "ch2dex": 37,
+        "exphelp": 750
     },
     {
         "lvl": 16,
-        "expnext": 800,
+        "expnext": 6750,
         "ab1next": 3,
         "ab2next": 3,
         "ab3next": 2,
@@ -205,11 +220,12 @@
         "ch1dex": 24,
         "ch2hp": 320,
         "ch2str": 24,
-        "ch2dex": 39
+        "ch2dex": 39,
+        "exphelp": 800
     },
     {
         "lvl": 17,
-        "expnext": 850,
+        "expnext": 7600,
         "ab1next": 3,
         "ab2next": 3,
         "ab3next": 2,
@@ -218,11 +234,12 @@
         "ch1dex": 25,
         "ch2hp": 335,
         "ch2str": 25,
-        "ch2dex": 41
+        "ch2dex": 41,
+        "exphelp": 850
     },
     {
         "lvl": 18,
-        "expnext": 900,
+        "expnext": 8500,
         "ab1next": 3,
         "ab2next": 3,
         "ab3next": 3,
@@ -231,11 +248,12 @@
         "ch1dex": 26,
         "ch2hp": 350,
         "ch2str": 26,
-        "ch2dex": 43
+        "ch2dex": 43,
+        "exphelp": 900
     },
     {
         "lvl": 19,
-        "expnext": 950,
+        "expnext": 9450,
         "ab1next": 3,
         "ab2next": 3,
         "ab3next": 3,
@@ -244,11 +262,12 @@
         "ch1dex": 27,
         "ch2hp": 365,
         "ch2str": 27,
-        "ch2dex": 45
+        "ch2dex": 45,
+        "exphelp": 950
     },
     {
         "lvl": 20,
-        "expnext": 1000,
+        "expnext": 10450,
         "ab1next": 4,
         "ab2next": 3,
         "ab3next": 3,
@@ -257,11 +276,12 @@
         "ch1dex": 28,
         "ch2hp": 380,
         "ch2str": 28,
-        "ch2dex": 47
+        "ch2dex": 47,
+        "exphelp": 1000
     },
     {
         "lvl": 21,
-        "expnext": 1050,
+        "expnext": 11500,
         "ab1next": 4,
         "ab2next": 3,
         "ab3next": 3,
@@ -270,11 +290,12 @@
         "ch1dex": 29,
         "ch2hp": 395,
         "ch2str": 29,
-        "ch2dex": 49
+        "ch2dex": 49,
+        "exphelp": 1050
     },
     {
         "lvl": 22,
-        "expnext": 1100,
+        "expnext": 12600,
         "ab1next": 4,
         "ab2next": 4,
         "ab3next": 3,
@@ -283,11 +304,12 @@
         "ch1dex": 30,
         "ch2hp": 410,
         "ch2str": 30,
-        "ch2dex": 51
+        "ch2dex": 51,
+        "exphelp": 1100
     },
     {
         "lvl": 23,
-        "expnext": 1150,
+        "expnext": 13750,
         "ab1next": 4,
         "ab2next": 4,
         "ab3next": 3,
@@ -296,11 +318,12 @@
         "ch1dex": 31,
         "ch2hp": 425,
         "ch2str": 31,
-        "ch2dex": 53
+        "ch2dex": 53,
+        "exphelp": 1150
     },
     {
         "lvl": 24,
-        "expnext": 1200,
+        "expnext": 14950,
         "ab1next": 4,
         "ab2next": 4,
         "ab3next": 4,
@@ -309,11 +332,12 @@
         "ch1dex": 32,
         "ch2hp": 440,
         "ch2str": 32,
-        "ch2dex": 55
+        "ch2dex": 55,
+        "exphelp": 1200
     },
     {
         "lvl": 25,
-        "expnext": 1250,
+        "expnext": 16200,
         "ab1next": 4,
         "ab2next": 4,
         "ab3next": 4,
@@ -322,11 +346,12 @@
         "ch1dex": 33,
         "ch2hp": 455,
         "ch2str": 33,
-        "ch2dex": 57
+        "ch2dex": 57,
+        "exphelp": 1250
     },
     {
         "lvl": 26,
-        "expnext": 1300,
+        "expnext": 17500,
         "ab1next": 5,
         "ab2next": 4,
         "ab3next": 4,
@@ -335,11 +360,12 @@
         "ch1dex": 34,
         "ch2hp": 470,
         "ch2str": 34,
-        "ch2dex": 59
+        "ch2dex": 59,
+        "exphelp": 1300
     },
     {
         "lvl": 27,
-        "expnext": 1350,
+        "expnext": 18850,
         "ab1next": 5,
         "ab2next": 4,
         "ab3next": 4,
@@ -348,11 +374,12 @@
         "ch1dex": 35,
         "ch2hp": 485,
         "ch2str": 35,
-        "ch2dex": 61
+        "ch2dex": 61,
+        "exphelp": 1350
     },
     {
         "lvl": 28,
-        "expnext": 1400,
+        "expnext": 20250,
         "ab1next": 5,
         "ab2next": 5,
         "ab3next": 4,
@@ -361,11 +388,12 @@
         "ch1dex": 36,
         "ch2hp": 500,
         "ch2str": 36,
-        "ch2dex": 63
+        "ch2dex": 63,
+        "exphelp": 1400
     },
     {
         "lvl": 29,
-        "expnext": 1450,
+        "expnext": 21700,
         "ab1next": 5,
         "ab2next": 5,
         "ab3next": 4,
@@ -374,11 +402,12 @@
         "ch1dex": 37,
         "ch2hp": 515,
         "ch2str": 37,
-        "ch2dex": 65
+        "ch2dex": 65,
+        "exphelp": 1450
     },
     {
         "lvl": 30,
-        "expnext": 1500,
+        "expnext": 23200,
         "ab1next": 5,
         "ab2next": 5,
         "ab3next": 5,
@@ -387,6 +416,7 @@
         "ch1dex": 38,
         "ch2hp": 530,
         "ch2str": 38,
-        "ch2dex": 67
+        "ch2dex": 67,
+        "exphelp": 1500
     }
 ]
