@@ -374,15 +374,5 @@ namespace strangeetnix.game
 			PlayerView playerView = collider2d.gameObject.GetComponent<PlayerView> ();
 			return playerView;
 		}
-
-		private bool isPlayerWalk(Collider2D collider2d)
-		{
-			PlayerView playerView = collider2d.gameObject.GetComponent<PlayerView> ();
-			if (playerView) {
-				return playerView.isWalk;
-			}
-
-			return false;
-		}
 	}
 }
