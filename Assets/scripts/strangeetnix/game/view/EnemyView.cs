@@ -20,15 +20,22 @@ namespace strangeetnix.game
 		private string WALL_LEFT 	= "wallLeft";
 		private string WALL_RIGHT 	= "wallRight";
 
-		private float TIME_TO_HIT		= 0.5f;
+		private float TIME_BEFORE_HIT		= 0.5f;
 		private float TIME_TO_MOVE		= 1.1f;
 		private float TIME_TO_ATTACK	= 1.5f;
 
+		internal Signal<GameObject> triggerEnterSignal = new Signal<GameObject> ();
+		internal Signal<GameObject> triggerExitSignal = new Signal<GameObject> ();
+
+		internal Signal<GameObject> forceExitTriggerSignal = new Signal<GameObject> ();
+
 		internal Signal<int> hitByPlayerSignal = new Signal<int> ();
 		internal Signal enterCollisionSignal = new Signal ();
-		internal Signal exitCollisionSignal = new Signal ();
 
 		public float moveSpeed = 2f;			// The speed the enemy moves at.
+		public bool canHit { get; private set; }
+		public bool isMove { get { return (_speed > 0); }}
+		public EnemyStates currentState { get { return _state; } }
 
 		private Vector3 _hpScale;
 		private Transform _hpTransform;
@@ -37,7 +44,7 @@ namespace strangeetnix.game
 		private bool _canMove = true;
 		private Collider2D _playerTrigger = null;
 		private List<Collider2D> _enemyTriggerList = null;
-		public bool canHit { get; private set; }
+
 
 		private float _speed = 0;
 
@@ -52,7 +59,7 @@ namespace strangeetnix.game
 			_hpScale = _hpTransform.localScale;
 			canHit = true;
 
-			_enemyTriggerList = new List<Collider2D> (10);
+			_enemyTriggerList = new List<Collider2D> (3);
 
 			base.init ();
 			_state = EnemyStates.NULL;
@@ -104,80 +111,61 @@ namespace strangeetnix.game
 			if (otherName == WALL_LEFT || otherName == WALL_RIGHT) {
 				flip ();
 			}
-			else if (isOtherEnemy (other) && isEqualsScaleX(other.gameObject) && !_enemyTriggerList.Contains(other)) {
-				_enemyTriggerList.Add (other);
-				if (_state == EnemyStates.MOVE) {
-					setState (EnemyStates.IDLE);
-					setState (EnemyStates.BEFORE_ENEMY);
+			else { 
+				bool isPlayer = isPlayerObject (other.tag);
+				if (isPlayer || (isOtherEnemy (other) && isEqualsScaleX (other.gameObject))) {
+					GameObject otherGO = (isPlayer) ? null : other.gameObject;
+					triggerEnterSignal.Dispatch (otherGO);
 				}
 			}
-			else if (isPlayerObject(other.tag)) {
-				if (canHit) {
-					_playerTrigger = other;
-					setState (EnemyStates.IDLE);
-					setState (EnemyStates.HIT);
-				} else if (!_isWait) {
-					setState (EnemyStates.WAIT_TO_HIT);
-				}
-			}
+
 			//Debug.Log("Something has entered this zone.");    
 		}  
 
 		void OnTriggerStay2D(Collider2D other)
 		{
 			//Debug.Log ("OnTriggerStay2D. name = " + other.gameObject.name + ", state = " + _state.ToString());
-			if (_speed == 0 && _isWait) {
-				if (isPlayerObject (other.tag) && _playerTrigger) {
-					if (checkCollision(other)) {
-						_playerTrigger = null;
-						exitCollisionSignal.Dispatch ();
-						startWait (waitToMove(), TIME_TO_MOVE);
-					}
-				}
-				/*else if (isEqualsNames(other.gameObject) && _state == EnemyStates.BEFORE_ENEMY) {
-					//playMove ();
-				}*/
+			if (_speed == 0 && _isWait && isCollisionOut(other) && isPlayerObject (other.tag)) {
+				_playerTrigger = null;
+				forceExitTriggerSignal.Dispatch (other.gameObject);
 			}
+			/*else if (isEqualsNames(other.gameObject) && _state == EnemyStates.BEFORE_ENEMY) {
+				//playMove ();
+			}*/
 		}
 
 		void OnTriggerExit2D(Collider2D other)
 		{
 			//Debug.Log ("OnTriggerExit2D. name = " + other.gameObject.name + ", _speed = " + _speed + ", state = " + _state.ToString ());
-			if (isPlayerObject (other.tag)) {
+			bool isPlayer = isPlayerObject (other.tag);
+			if (isPlayer || isOtherEnemy (other)) {
+				GameObject otherGO = (isPlayer) ? null : other.gameObject;
+				triggerExitSignal.Dispatch (otherGO);
+			}
+
+			if (_enemyTriggerList.Contains (other)) {
+				_enemyTriggerList.Remove (other);
+			}
+
+			if (_playerTrigger == other) {
+				if (_isWait) {
+					_isWait = false;
+					StopAllCoroutines ();
+				}
 				_playerTrigger = null;
 				setState(EnemyStates.MOVE);
 			}
 
 			if (isOtherEnemy (other)) {
-				if (_enemyTriggerList.Contains (other)) {
-					_enemyTriggerList.Remove (other);
+				if (_isWait) {
+					_isWait = false;
+					StopAllCoroutines ();
 				}
 
-				if (_playerTrigger == null) {// && !isBeforeEnemyTrigger()) {
-					if (_isWait) {
-						_isWait = false;
-						StopAllCoroutines ();
-					}
-
-					if (_state != EnemyStates.MOVE) {
-						setState (EnemyStates.MOVE);
-					}
+				if (_state != EnemyStates.MOVE) {
+					setState (EnemyStates.MOVE);
 				}
 			}
-		}
-
-		private bool isBeforeEnemyTrigger()
-		{
-			if (_enemyTriggerList.Count > 0) {
-				bool scaleTurn = this.gameObject.transform.localScale.x > 0;
-				GameObject enemyGO = _enemyTriggerList [0].gameObject;
-				if (scaleTurn && enemyGO.transform.position.x > gameObject.transform.position.x ||
-				    !scaleTurn && enemyGO.transform.position.x < gameObject.transform.position.x) {
-					return true;
-				}
-			}
-
-			return false;
 		}
 
 		internal void onExitTrigger(Collider2D other)
@@ -227,7 +215,7 @@ namespace strangeetnix.game
 			}
 		}
 
-		private void setState(EnemyStates value, bool isForce=false)
+		internal void setState(EnemyStates value, bool isForce=false)
 		{
 			if (_state != value || isForce) {
 				switch (value) {
@@ -252,7 +240,7 @@ namespace strangeetnix.game
 					break;
 
 				case EnemyStates.WAIT_TO_HIT:
-					startWait (waitToHit(), TIME_TO_HIT);
+					startWait (waitToHit(), TIME_BEFORE_HIT);
 					break;
 
 				case EnemyStates.BEFORE_ENEMY:
@@ -267,7 +255,7 @@ namespace strangeetnix.game
 		void FixedUpdate ()
 		{
 			if (_canMove && !isPlayAnimation (EnemyAnimatorTypes.TRIGGER_DEFEAT)) {
-				if (_isWait || _playerTrigger) {
+				if (_isWait || _playerTrigger || _state == EnemyStates.BEFORE_ENEMY) {
 					return;
 				}
 
@@ -292,21 +280,8 @@ namespace strangeetnix.game
 		{
 			// Reduce the number of hit points by one.
 			if (_anim && !isPlayAnimation(EnemyAnimatorTypes.TRIGGER_DEFEAT) && !isPlayAnimation(EnemyAnimatorTypes.TRIGGER_HIT)) {
-				stopMove ();
 				playAnimation (EnemyAnimatorTypes.TRIGGER_DEFEAT);
-			}
-		}
-
-		internal void updateHp(int currentHp, int startHp)
-		{
-			if (startHp > 0) {
-				int hpKoef = 100 * currentHp / startHp;
-				_hpTransform.localScale = new Vector3(_hpScale.x * hpKoef * 0.01f, _hpScale.y, 1);
-				if (hpKoef == 0) {
-					_hpBgTransform.localScale = new Vector3(0, _hpScale.y, 1);
-				}
-			} else {
-				Debug.LogError ("updateEnemyHp.startHP=0!");
+				stopMove ();
 			}
 		}
 
@@ -320,7 +295,7 @@ namespace strangeetnix.game
 		private void playMove()
 		{
 			if (_speed == 0) {
-				exitCollisionSignal.Dispatch ();
+				forceExitTriggerSignal.Dispatch (null);
 				setSpeed (true);
 			}
 		}
@@ -351,28 +326,38 @@ namespace strangeetnix.game
 			if (_enemyTriggerList.Count > 0) {
 				foreach (Collider2D c in _enemyTriggerList) {
 					if (c != null) {
-						EnemyView enemyView = c.gameObject.GetComponent<EnemyView> ();
-						if (enemyView) {
-							enemyView.onExitTrigger (_collider2d);
-						}
+						exitFromEnemyTrigger (c);
 					}
 				}
 				_enemyTriggerList.Clear ();
 			}
+		}
 
-			/*if (_rigidBody != null) {
-				_rigidBody.isKinematic = true;
+		private void exitFromEnemyTrigger(Collider2D enemyCollider)
+		{
+			EnemyView enemyView = enemyCollider.gameObject.GetComponent<EnemyView> ();
+			if (enemyView) {
+				enemyView.onExitTrigger (_collider2d);
 			}
-
-			if (_collider2d != null) {
-				_collider2d.enabled = false;
-			}*/
 		}
 
 		private PlayerView getPlayerView(Collider2D collider2d)
 		{
 			PlayerView playerView = collider2d.gameObject.GetComponent<PlayerView> ();
 			return playerView;
+		}
+
+		internal void updateHp(int currentHp, int startHp)
+		{
+			if (startHp > 0) {
+				int hpKoef = 100 * currentHp / startHp;
+				_hpTransform.localScale = new Vector3(_hpScale.x * hpKoef * 0.01f, _hpScale.y, 1);
+				if (hpKoef == 0) {
+					_hpBgTransform.localScale = new Vector3(0, _hpScale.y, 1);
+				}
+			} else {
+				Debug.LogError ("updateEnemyHp.startHP=0!");
+			}
 		}
 	}
 }

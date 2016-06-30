@@ -45,8 +45,8 @@ namespace strangeetnix.game
 			playerGO.transform.SetParent(gameField.transform, false);
 			playerGO.AddComponent<PlayerView> ();
 			PlayerView playerView = playerGO.GetComponent<PlayerView> ();
-			playerView.moveForce = 400;
-			playerView.maxSpeed = gameModel.playerModel.moveSpeed;//2f;
+			playerView.moveForce = gameModel.playerModel.moveForce;
+			playerView.maxSpeed = gameModel.playerModel.moveSpeed;
 
 			injectionBinder.Bind<PlayerView> ().ToValue (playerView).ToName (GameElement.PLAYER);
 

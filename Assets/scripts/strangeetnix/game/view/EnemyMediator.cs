@@ -80,14 +80,20 @@ namespace strangeetnix.game
 		private void UpdateListeners(bool value)
 		{
 			if (value) {
+				view.triggerEnterSignal.AddListener (onTriggerEnter);
+				view.forceExitTriggerSignal.AddListener (onForceExitTrigger);
+				view.triggerExitSignal.AddListener (onTriggerExit);
+
 				view.enterCollisionSignal.AddListener (onEnterCollision);
-				view.exitCollisionSignal.AddListener (onExitCollision);
 				view.hitByPlayerSignal.AddListener (onHitByPlayer);
 
 				moveEnemySignal.AddListener (onMoveEnemy);
 			} else {
+				view.triggerEnterSignal.RemoveListener (onTriggerEnter);
+				view.forceExitTriggerSignal.RemoveListener (onForceExitTrigger);
+				view.triggerExitSignal.RemoveListener (onTriggerExit);
+
 				view.enterCollisionSignal.RemoveListener (onEnterCollision);
-				view.exitCollisionSignal.RemoveListener (onExitCollision);
 				view.hitByPlayerSignal.RemoveListener (onHitByPlayer);
 
 				moveEnemySignal.RemoveListener (onMoveEnemy);
@@ -106,11 +112,6 @@ namespace strangeetnix.game
 				_canToHit = true;
 				StartCoroutine (hitPlayer());
 			}
-		}
-
-		private void onExitCollision()
-		{
-			_canToHit = false;
 		}
 
 		private IEnumerator hitPlayer()
@@ -152,6 +153,33 @@ namespace strangeetnix.game
 					view.setDeath ();
 					destroyEnemySignal.Dispatch (view, _enemyModel.assetVO.delayToDestroy, false);
 				}
+			}
+		}
+
+		private void onForceExitTrigger(GameObject enemyGO = null)
+		{
+			_canToHit = false;
+			if (enemyGO) {
+				view.setState (EnemyStates.BEFORE_ENEMY);
+			}
+		}
+
+		private void onTriggerEnter(GameObject enemyGO = null)
+		{
+			string otherName = (enemyGO != null) ? enemyGO.name : null;
+			gameModel.levelModel.enemyManager.addTrigger (viewName, otherName);
+		}
+
+		private void onTriggerExit(GameObject enemyGO = null)
+		{
+			string otherName = (enemyGO != null) ? enemyGO.name : null;
+			gameModel.levelModel.enemyManager.exitTrigger (viewName, otherName);
+		}
+
+		private string viewName
+		{
+			get {
+				return view.gameObject.name;
 			}
 		}
 	}

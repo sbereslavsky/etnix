@@ -85,6 +85,7 @@ namespace strangeetnix.game
 
 			//enemyView.gameObject.SetActive (false);
 			enemyView.destroyView(delayToDestroy);
+			gameModel.levelModel.enemyManager.removeEnemy (enemyView);
 
 			if (delayToDestroy > 0) {
 				Retain ();

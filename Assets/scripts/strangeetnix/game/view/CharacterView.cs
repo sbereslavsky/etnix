@@ -36,7 +36,7 @@ namespace strangeetnix.game
 			_collider2d = GetComponent<BoxCollider2D> ();
 		}
 
-		protected bool checkCollision(Collider2D other)
+		protected bool isCollisionOut(Collider2D other)
 		{
 			float dist1 = other.bounds.SqrDistance (_collider2d.bounds.center);
 			float width = (other as BoxCollider2D).size.x + _collider2d.size.x;

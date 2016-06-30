@@ -12,6 +12,8 @@ namespace strangeetnix.game
 
 		int enemyCount { get; set; }
 
+		EnemyManager enemyManager { get; }
+
 		IBgAssetVO bgAssetInfo { get; set; }
 
 		IWaveVO waveVO { get; }

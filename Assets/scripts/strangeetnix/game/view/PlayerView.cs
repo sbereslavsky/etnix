@@ -20,7 +20,7 @@ namespace strangeetnix.game
 
 		private float TIME_TO_ATTACK	= 1.5f;
 
-		internal Signal<GameObject> hitEnemySignal = new Signal<GameObject> ();
+		internal Signal<List<GameObject>> hitEnemySignal = new Signal<List<GameObject>> ();
 
 		internal bool facingRight = true;			// For determining which way the player is currently facing.
 		internal bool canHit = true;
@@ -65,12 +65,7 @@ namespace strangeetnix.game
 			if (other.tag.Contains(EnemyView.ID) && !_colliderList.Contains(other)) {
 				_colliderList.Add (other);
 			}
-		} 
-
-		/*void OnTriggerStay2D(Collider2D other)
-		{
-			
-		} */
+		}
 
 		void OnTriggerExit2D(Collider2D other)
 		{
@@ -96,27 +91,28 @@ namespace strangeetnix.game
 		{
 			bool isEnemy = false;
 
-			foreach (Collider2D c in _colliderList) {
-				if (c == null) {
-					_colliderList.Remove (c);
-					return;
-				}
-			}
+			removeNullFromList ();
 
 			if (_battleMode && isHit && _hitEnemyNames.Count == 0 && _colliderList.Count > 0) {
 				isEnemy = true;
 				// Check each of the colliders.
+				List<GameObject> items = new List<GameObject>();
+
 				foreach(Collider2D c in _colliderList)
 				{
 					// If any of the colliders is an Obstacle...
 					//isEnemy = c.tag.Contains(EnemyView.ID);
-					if (!_hitEnemyNames.Contains(c.gameObject.name))
+					if (!_hitEnemyNames.Contains(c.gameObject.name) && !isCollisionOut(c))
 					{
 						if (gameObject.transform.localScale.x > 0 && c.gameObject.transform.localScale.x > 0 ||
 							gameObject.transform.localScale.x < 0 && c.gameObject.transform.localScale.x < 0) {
-							postHitEnemy (c.gameObject);
-							//break;
+							items.Add (c.gameObject);
+							_hitEnemyNames.Add(c.gameObject.name);
 						}
+					}
+
+					if (items.Count > 0) {
+						hitEnemySignal.Dispatch (items);
 					}
 				}
 			}
@@ -154,10 +150,13 @@ namespace strangeetnix.game
 				flip();
 		}
 
-		private void postHitEnemy(GameObject enemyGO)
+		private void removeNullFromList()
 		{
-			_hitEnemyNames.Add(enemyGO.name);
-			hitEnemySignal.Dispatch (enemyGO);
+			for(var i = _colliderList.Count - 1; i > -1; i--) {
+				if (_colliderList [i] == null) {
+					_colliderList.RemoveAt (i);
+				}
+			}
 		}
 
 		internal Vector2 explosionPos

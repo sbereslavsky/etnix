@@ -45,7 +45,10 @@ namespace strangeetnix.game
 				enemyGO.tag = EnemyView.ID;
 				//enemyGO.transform.localPosition = pos;
 				enemyGO.transform.SetParent(gameField.transform, false);
-				enemyGO.AddComponent<EnemyView> ();
+				EnemyView enemyView = enemyGO.AddComponent<EnemyView> ();
+				if (enemyView) {
+					gameModel.levelModel.enemyManager.addEnemy (enemyView);
+				}
 			}
 		}
 	}

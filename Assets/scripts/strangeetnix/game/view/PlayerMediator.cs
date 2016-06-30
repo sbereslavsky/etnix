@@ -6,6 +6,7 @@
 
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using strange.extensions.mediation.impl;
 
@@ -47,7 +48,7 @@ namespace strangeetnix.game
 		private int _cooldown = 0;
 		private int _playerHitCount = 0;
 
-		private GameObject _enemyGO;
+		private List<GameObject> _enemyList;
 
 		private bool _battleMode;
 
@@ -89,11 +90,11 @@ namespace strangeetnix.game
 			//gameInputSignal.RemoveListener (onGameInput);
 		}
 
-		private void onHitEnemy(GameObject enemyGO)
+		private void onHitEnemy(List<GameObject> enemyList)
 		{
 			if (view.canHit) {
 				view.canHit = false;
-				_enemyGO = enemyGO;
+				_enemyList = enemyList;
 				StartCoroutine (pauseBeforeHit());
 			}
 		}
@@ -123,11 +124,13 @@ namespace strangeetnix.game
 
 		private void hitEnemy()
 		{
-			if (_enemyGO != null) {
-				EnemyView enemyView = _enemyGO.GetComponent<EnemyView> ();
-				if (enemyView != null) {
-					updateHudItemSignal.Dispatch (UpdateHudItemType.COOLDOWN, _cooldown);
-					enemyView.hitByPlayerSignal.Dispatch (_damage);
+			if (_enemyList != null) {
+				foreach (GameObject enemyGO in _enemyList) {
+					EnemyView enemyView = enemyGO.GetComponent<EnemyView> ();
+					if (enemyView != null) {
+						updateHudItemSignal.Dispatch (UpdateHudItemType.COOLDOWN, _cooldown);
+						enemyView.hitByPlayerSignal.Dispatch (_damage);
+					}
 				}
 			}
 		}
@@ -141,6 +144,10 @@ namespace strangeetnix.game
 
 			//gameModel.playerModel.hp = Mathf.Max (0, gameModel.playerModel.hp - decHp);
 			//updatePlayerHpSignal.Dispatch (gameModel.playerModel.hp);
+
+			if (gameModel.playerModel.hp == 0) {
+				gameModel.playerModel.resetHp ();
+			}
 
 			if (gameModel.playerModel.hp == 0) {
 				view.setDeath ();

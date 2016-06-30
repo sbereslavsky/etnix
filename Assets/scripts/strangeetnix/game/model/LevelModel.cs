@@ -6,11 +6,14 @@ namespace strangeetnix.game
 	public class LevelModel : ILevelModel
 	{
 		//public IScoreModel scoreModel { get; set;}
+
 		public int score { get; set; }
 
 		public bool hasEnemy { get; set; }
 
 		public int enemyCount { get; set; }
+
+		public EnemyManager enemyManager { get; private set; }
 
 		public IBgAssetVO bgAssetInfo { get; set; }
 
@@ -20,17 +23,18 @@ namespace strangeetnix.game
 		private List<IEnemyModel> _enemyModelList;
 
 		public LevelModel ()
-		{				
+		{
+			enemyManager = new EnemyManager ();
 		}
 
 		public void Reset ()
 		{
 			score = 0;
 			enemyCount = 0;
-			//waveVO = null;
 
-			//enemyIdList = new List<int> ();
-			//_enemyModelList = new List<IEnemyModel> ();
+			if (enemyManager != null) {
+				enemyManager.reset ();
+			}
 		}
 
 		public void setWaveVO(IGameConfig gameConfig, IWaveVO waveVO1)
@@ -56,6 +60,10 @@ namespace strangeetnix.game
 						enemyModel = new EnemyModel (enemyId, gameConfig);
 						_enemyModelList.Add (enemyModel);
 					}
+				}
+
+				if (enemyManager != null) {
+					enemyManager.reset ();
 				}
 			}
 		}
