@@ -15,6 +15,7 @@ namespace strangeetnix.game
 		public int expStart { get; private set; }
 		public int expEnd { get; private set; }
 		public float moveSpeed { get; private set; }
+		public float moveForce { get; private set; }
 		public int level { get; set; }
 
 		public int damage { get { return Mathf.Max (0, _damage + char_str);}}
@@ -40,7 +41,10 @@ namespace strangeetnix.game
 			assetVO = gameConfig.assetConfig.getPlayerAssetById (id);
 			name = assetVO.name;
 			levelUp = false;
-			moveSpeed = gameConfig.charInfoConfig.getSpeedById (id);
+
+			ICharInfoVO charInfoVO = gameConfig.charInfoConfig.getCharInfoVOById (id);
+			moveSpeed = charInfoVO.speed;
+			moveForce = charInfoVO.moveForce;
 			
 			parseData (gameConfig);
 		}

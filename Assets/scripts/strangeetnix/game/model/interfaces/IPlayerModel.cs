@@ -15,6 +15,7 @@ namespace strangeetnix.game
 		int expEnd { get; }
 		int level { get; set; }
 		float moveSpeed { get; }
+		float moveForce { get; }
 
 		int damage { get; }
 		int cooldown { get; }

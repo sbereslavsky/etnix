@@ -40,16 +40,16 @@ namespace strangeetnix.game
 
 			_bgAssetList = new List<IBgAssetVO> ();
 			IBgAssetVO bgAssetVO = new BgAssetVO (1, BACKGROUND_LEVEL1, BACKGROUND_FOLDER + BACKGROUND_LEVEL1);
-			bgAssetVO.startPosY = -3.1f;
+			bgAssetVO.startPosY = -1.24f;
 			bgAssetVO.width = 97f;
 			bgAssetVO.margin = Vector2.zero;
 			bgAssetVO.smooth = new Vector2 (4, 0);
-			bgAssetVO.minXAndY = new Vector2 (-18.5f, 0f); //-25
-			bgAssetVO.maxXAndY = new Vector2 (23f, 0f); //25
+			bgAssetVO.minXAndY = new Vector2 (-7.7f, 0f); //-25
+			bgAssetVO.maxXAndY = new Vector2 (9.5f, 0f); //25
 			_bgAssetList.Add (bgAssetVO);
 
 			bgAssetVO = new BgAssetVO (1001, BACKGROUND_CHURCH, BACKGROUND_FOLDER + BACKGROUND_CHURCH);
-			bgAssetVO.startPosY = -4.2f;
+			bgAssetVO.startPosY = -1.68f;
 			bgAssetVO.width = 28.4f;
 			bgAssetVO.margin = Vector2.zero;
 			bgAssetVO.smooth = new Vector2 (4, 0);

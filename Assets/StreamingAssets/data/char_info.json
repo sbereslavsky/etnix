@@ -2,11 +2,13 @@
     {
         "id": 1,
         "name": "Harakternik",
-        "speed": 2
+        "speed": 1,
+        "force": 150
     },
     {
         "id": 2,
         "name": "Nelya Gantelya",
-        "speed": 1.5
+        "speed": 0.75,
+        "force": 150
     }
 ]

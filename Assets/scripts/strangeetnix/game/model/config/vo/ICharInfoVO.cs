@@ -7,5 +7,6 @@ namespace strangeetnix.game
 		int id { get;}
 		string name { get;}
 		float speed { get;}
+		int moveForce { get;}
 	}
 }
