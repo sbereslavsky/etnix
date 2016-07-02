@@ -52,6 +52,9 @@ namespace strangeetnix.game
 
 		private bool _canToHit = false;
 
+		private EnemyManager _enemyManager;
+		private string _viewKey;
+
 		public override void OnRegister ()
 		{
 			_enemyModel = gameModel.levelModel.getEnemyModelById (gameModel.createEnemyId);
@@ -60,11 +63,14 @@ namespace strangeetnix.game
 			_damage = _enemyModel.damage;
 			_cooldown = _enemyModel.cooldown;
 			_expGive = _enemyModel.exp_give;
+			_enemyManager = gameModel.levelModel.enemyManager;
+			_viewKey = view.gameObject.name;
 
 			view.init ();
 			view.moveSpeed = _enemyModel.speed;
-
 			view.updateHp (_hp, _startHp);
+
+			//_enemyManager.setState (_viewKey, EnemyStates.MOVE);
 
 			UpdateListeners (true);
 		}
@@ -84,8 +90,8 @@ namespace strangeetnix.game
 				view.forceExitTriggerSignal.AddListener (onForceExitTrigger);
 				view.triggerExitSignal.AddListener (onTriggerExit);
 
-				view.enterCollisionSignal.AddListener (onEnterCollision);
-				view.hitByPlayerSignal.AddListener (onHitByPlayer);
+				view.hitPlayerSignal.AddListener (onStartHitPlayer);
+				view.hitEnemySignal.AddListener (onHitByPlayer);
 
 				moveEnemySignal.AddListener (onMoveEnemy);
 			} else {
@@ -93,19 +99,27 @@ namespace strangeetnix.game
 				view.forceExitTriggerSignal.RemoveListener (onForceExitTrigger);
 				view.triggerExitSignal.RemoveListener (onTriggerExit);
 
-				view.enterCollisionSignal.RemoveListener (onEnterCollision);
-				view.hitByPlayerSignal.RemoveListener (onHitByPlayer);
+				view.hitPlayerSignal.RemoveListener (onStartHitPlayer);
+				view.hitEnemySignal.RemoveListener (onHitByPlayer);
 
 				moveEnemySignal.RemoveListener (onMoveEnemy);
 			}	
 		}
 
+		void OnTriggerEnter2D(Collider2D other)
+		{
+			Debug.Log ("something!");
+		}
+
 		private void onMoveEnemy(bool canMove)
 		{
 			view.setCanMove (canMove);
+			if (canMove) {
+				_enemyManager.setState (_viewKey, EnemyStates.MOVE);
+			}
 		}
 
-		private void onEnterCollision()
+		private void onStartHitPlayer()
 		{
 			if (view.canHit) {
 				view.setCanHit (false);
@@ -142,7 +156,9 @@ namespace strangeetnix.game
 				view.updateHp (_hp, _startHp);
 				// If the enemy has zero or fewer hit points and isn't dead yet...
 				if (_hp > 0) {
-					view.hitByPlayer ();
+					if (view.canToDefeat ()) {
+						_enemyManager.setState (_viewKey, EnemyStates.DEFEAT);
+					}
 				} else  {
 					//addExpSignal.Dispatch (_expGive);
 					gameModel.playerModel.addExp(_expGive);
@@ -160,27 +176,19 @@ namespace strangeetnix.game
 		{
 			_canToHit = false;
 			if (enemyGO) {
-				view.setState (EnemyStates.BEFORE_ENEMY);
+				_enemyManager.setState (_viewKey, EnemyStates.BEFORE_ENEMY);
 			}
 		}
 
 		private void onTriggerEnter(GameObject enemyGO = null)
 		{
 			string otherName = (enemyGO != null) ? enemyGO.name : null;
-			gameModel.levelModel.enemyManager.addTrigger (viewName, otherName);
+			_enemyManager.addTrigger (_viewKey, otherName);
 		}
 
-		private void onTriggerExit(GameObject enemyGO = null)
+		private void onTriggerExit(GameObject enemyGO)
 		{
-			string otherName = (enemyGO != null) ? enemyGO.name : null;
-			gameModel.levelModel.enemyManager.exitTrigger (viewName, otherName);
-		}
-
-		private string viewName
-		{
-			get {
-				return view.gameObject.name;
-			}
+			_enemyManager.exitTrigger (_viewKey, enemyGO);
 		}
 	}
 }

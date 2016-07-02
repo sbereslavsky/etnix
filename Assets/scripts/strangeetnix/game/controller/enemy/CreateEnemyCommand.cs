@@ -29,6 +29,9 @@ namespace strangeetnix.game
 		[Inject]
 		public float posX{ get; set; }
 
+		[Inject]
+		public IRoutineRunner routineRunner { get; set; }
+
 		public override void Execute ()
 		{
 			if (injectionBinder.GetBinding<PlayerView> (GameElement.PLAYER) != null) {
@@ -47,7 +50,7 @@ namespace strangeetnix.game
 				enemyGO.transform.SetParent(gameField.transform, false);
 				EnemyView enemyView = enemyGO.AddComponent<EnemyView> ();
 				if (enemyView) {
-					gameModel.levelModel.enemyManager.addEnemy (enemyView);
+					gameModel.levelModel.enemyManager.addEnemyView (enemyView, routineRunner);
 				}
 			}
 		}

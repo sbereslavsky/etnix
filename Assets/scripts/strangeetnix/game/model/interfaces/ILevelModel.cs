@@ -8,9 +8,12 @@ namespace strangeetnix.game
 		//IScoreModel scoreModel { get; set;}
 		int score { get; set; }
 
-		bool hasEnemy { get; set; }
+		bool hasEnemy { get; }
 
 		int enemyCount { get; set; }
+
+		//maybe use only enemyTriggerManager
+		PlayerTriggerManager playerTriggerManager { get; } 
 
 		EnemyManager enemyManager { get; }
 
@@ -25,6 +28,7 @@ namespace strangeetnix.game
 		IEnemyModel getEnemyModelById (int id);
 
 		void Reset ();
+		void setHasEnemy (bool value);
 	}
 }
 

@@ -24,16 +24,25 @@ namespace strangeetnix.game
 			}
 		}
 
-		public void addEnemy(EnemyView enemyView)
+		public void addEnemyView (EnemyView enemyView, IRoutineRunner routineRunner)
 		{
 			EnemyColliderModel colliderModel = new EnemyColliderModel (enemyView);
-			colliderModel.state = EnemyStates.MOVE;
-			_list.Add (colliderModel.name, colliderModel);
+			if (colliderModel != null && _list.ContainsKey (colliderModel.name)) {
+				colliderModel.setState (EnemyStates.MOVE);
+				colliderModel.routineRunner = routineRunner;
+				_list.Add (colliderModel.name, colliderModel);
+			} else {
+				Debug.LogWarning ("EnemyManager.addEnemyView. An element with the same key already exists in the dictionary!");
+			}
 		}
 
-		public void removeEnemy(EnemyView enemyView)
+		public void removeEnemy(string enemyKey)
 		{
-			string enemyKey = enemyView.gameObject.name;
+			EnemyColliderModel mainColliderModel = getColliderModel (enemyKey);
+			if (mainColliderModel != null) {
+				removeTriggerKey (mainColliderModel, enemyKey);
+			}
+
 			if (_list.ContainsKey (enemyKey)) {
 				_list.Remove(enemyKey);
 			}
@@ -42,65 +51,119 @@ namespace strangeetnix.game
 		public void addTrigger(string mainKey, string colliderKey = null)
 		{
 			bool isPlayer = (colliderKey == null);
-			if (_list.ContainsKey(mainKey)) {
-				EnemyColliderModel mainColliderModel = _list [mainKey];
+			EnemyColliderModel mainColliderModel = getColliderModel (mainKey);
+			if (mainColliderModel != null) {
 				EnemyView enemyView = mainColliderModel.view;
+				if (enemyView) {
+					mainColliderModel.setState (EnemyStates.IDLE);
 
-				if (enemyView.isMove) {
-					enemyView.setState (EnemyStates.IDLE);
+					if (isPlayer) {
+						mainColliderModel.setState (EnemyStates.HIT);
+					} else {
+						EnemyColliderModel otherColliderModel = getColliderModel (colliderKey);
+						if (otherColliderModel != null) {
+							bool isMainBefore = isFirstBefore (mainColliderModel.view, otherColliderModel.view);
+							if (isMainBefore) {
+								mainColliderModel.triggerKeyAfter = colliderKey;
+							} else {
+								otherColliderModel.triggerKeyBefore = mainKey;
+							}
+
+							mainColliderModel.setState (EnemyStates.BEFORE_ENEMY);
+						}
+					}
 				}
+			}
+		}
 
+		public void exitTrigger(string mainKey, GameObject enemyGO)
+		{
+			bool isPlayer = false; 
+			string colliderKey = null;
+			if (enemyGO != null) {
+				if (enemyGO.tag == PlayerView.ID) {
+					isPlayer = true;
+				} else {
+					colliderKey = enemyGO.name;
+				}
+			}
+
+			EnemyColliderModel mainColliderModel = getColliderModel (mainKey);
+			if (mainColliderModel != null && mainColliderModel.view != null) {
 				if (isPlayer) {
-					mainColliderModel.isPlayerTrigger = true;
-
-					if (enemyView.canHit) {
-						enemyView.setState (EnemyStates.HIT);
-					} else {
-						enemyView.setState (EnemyStates.WAIT_TO_HIT);
-					}
+					mainColliderModel.isPlayerTrigger = false;
+					mainColliderModel.setState (EnemyStates.MOVE);
 				} else {
-					EnemyColliderModel otherColliderModel = _list [colliderKey];
-					bool isMainBefore = isFirstBefore (mainColliderModel.view, otherColliderModel.view);
-					if (isMainBefore) {
-						mainColliderModel.triggerKeyAfter = colliderKey;
-					} else {
-						otherColliderModel.triggerKeyBefore = mainKey;
+					mainColliderModel.isPlayerTrigger = false;
+
+					removeTriggerKey (mainColliderModel, mainKey);
+
+					/*EnemyColliderModel colliderModel = getColliderModel (colliderKey);
+					if (colliderModel != null) {
+						removeTriggerKey (colliderModel, mainKey);
+					}*/
+				}
+				/*if (_playerTrigger == other) {
+					if (_isWait) {
+						_isWait = false;
+						StopAllCoroutines ();
+					}
+					_playerTrigger = null;
+					setState(EnemyStates.MOVE);
+				}
+
+				if (isOtherEnemy (other)) {
+					if (_isWait) {
+						_isWait = false;
+						StopAllCoroutines ();
 					}
 
-					if (enemyView.currentState != EnemyStates.BEFORE_ENEMY) {
-						enemyView.setState (EnemyStates.BEFORE_ENEMY);
+					if (_state != EnemyStates.MOVE) {
+						setState (EnemyStates.MOVE);
 					}
-				}
-			}
-			else {
-				Debug.LogError ("EnemyManager. Dictionary not contains key = " + mainKey);
+				}*/
 			}
 		}
 
-		public void exitTrigger(string mainKey, string colliderKey = null)
+		public void setState(string mainKey, EnemyStates state)
 		{
-			
+			EnemyColliderModel mainColliderModel = getColliderModel (mainKey);
+			if (mainColliderModel != null) {
+				mainColliderModel.setState (state);
+			}
 		}
 
-		public void setEnemyState(EnemyView enemyView, EnemyStates state)
+		private void removeTriggerKey(EnemyColliderModel mainColliderModel, string key)
 		{
-			switch (state) {
-			case EnemyStates.HIT:
-				if (enemyView.canHit) {
-					enemyView.setState (state);
-				} else {
-					enemyView.setState (EnemyStates.WAIT_TO_HIT);
+			if (mainColliderModel != null) {
+				EnemyColliderModel colliderModel;
+				if (mainColliderModel.triggerKeyAfter != null) {
+					colliderModel = getColliderModel (mainColliderModel.triggerKeyAfter);
+					if (colliderModel != null) {
+						colliderModel.removeKey (key);
+						colliderModel.setState (EnemyStates.MOVE);
+					}
 				}
-				break;
-			case EnemyStates.IDLE:
-				if (enemyView.isMove) {
-					enemyView.setState (state);
+
+				//that never not run!
+				if (mainColliderModel.triggerKeyBefore != null) {
+					colliderModel = getColliderModel (mainColliderModel.triggerKeyBefore);
+					if (colliderModel != null) {
+						colliderModel.removeKey (key);
+					}
 				}
-				break;
-			case EnemyStates.BEFORE_ENEMY:
-				enemyView.setState (state);
-				break;
 			}
+		}
+
+		internal EnemyColliderModel getColliderModel(string key)
+		{
+			if (_list.ContainsKey (key)) {
+				return _list [key];
+			} else {
+				Debug.LogWarning ("EnemyManager. Dictionary not contains key = " + key);
+			}
+
+			return null;
 		}
 
 		private bool isFirstBefore(EnemyView enemyView1, EnemyView enemyView2)

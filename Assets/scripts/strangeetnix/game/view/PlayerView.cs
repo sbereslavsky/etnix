@@ -20,7 +20,10 @@ namespace strangeetnix.game
 
 		private float TIME_TO_ATTACK	= 1.5f;
 
-		internal Signal<List<GameObject>> hitEnemySignal = new Signal<List<GameObject>> ();
+		internal Signal<Collider2D> triggerEnterSignal = new Signal<Collider2D> ();
+		internal Signal<string> triggerExitSignal = new Signal<string> ();
+
+		internal Signal hitEnemySignal = new Signal ();
 
 		internal bool facingRight = true;			// For determining which way the player is currently facing.
 		internal bool canHit = true;
@@ -38,21 +41,13 @@ namespace strangeetnix.game
 		private bool _pressedButton = false;
 		private bool _battleMode;
 
-		private List<Collider2D> _colliderList;
-		private List<string> _hitEnemyNames;
-
 		public override void init (bool battleMode)
 		{
 			_battleMode = battleMode;
-			int listLength = 0;
 			if (_battleMode) {
-				listLength = 10;
 				_explosion = transform.Find (EXPLOSION1).transform;
 				_explosion2 = transform.Find (EXPLOSION2).transform;
 			}
-
-			_hitEnemyNames = new List<string> (listLength);
-			_colliderList = new List<Collider2D> (listLength);
 
 			base.init (battleMode);
 
@@ -62,60 +57,21 @@ namespace strangeetnix.game
 
 		void OnTriggerEnter2D(Collider2D other)
 		{
-			if (other.tag.Contains(EnemyView.ID) && !_colliderList.Contains(other)) {
-				_colliderList.Add (other);
+			if (other.tag.Contains(EnemyView.ID)) {
+				triggerEnterSignal.Dispatch (other);
 			}
 		}
 
 		void OnTriggerExit2D(Collider2D other)
 		{
 			if (other.tag.Contains(EnemyView.ID)) {
-				removeCollder (other);
+				triggerExitSignal.Dispatch (other.gameObject.name);
 			}
-		}
-
-		private void removeCollder(Collider2D other)
-		{
-			int id = _colliderList.IndexOf (other);
-			if (id >= 0) {
-				_colliderList.RemoveAt (id);
-			}
-		}
-
-		internal void onExitTrigger(Collider2D other)
-		{
-			removeCollder (other);
 		}
 
 		void FixedUpdate ()
 		{
-			bool isEnemy = false;
-
-			removeNullFromList ();
-
-			if (_battleMode && isHit && _hitEnemyNames.Count == 0 && _colliderList.Count > 0) {
-				isEnemy = true;
-				// Check each of the colliders.
-				List<GameObject> items = new List<GameObject>();
-
-				foreach(Collider2D c in _colliderList)
-				{
-					// If any of the colliders is an Obstacle...
-					//isEnemy = c.tag.Contains(EnemyView.ID);
-					if (!_hitEnemyNames.Contains(c.gameObject.name) && !isCollisionOut(c))
-					{
-						if (gameObject.transform.localScale.x > 0 && c.gameObject.transform.localScale.x > 0 ||
-							gameObject.transform.localScale.x < 0 && c.gameObject.transform.localScale.x < 0) {
-							items.Add (c.gameObject);
-							_hitEnemyNames.Add(c.gameObject.name);
-						}
-					}
-
-					if (items.Count > 0) {
-						hitEnemySignal.Dispatch (items);
-					}
-				}
-			}
+			bool isEnemy = (_battleMode && isHit);
 
 			// Cache the horizontal input.
 			float h = _moveSpeed;//Input.GetAxis("Horizontal");
@@ -148,15 +104,6 @@ namespace strangeetnix.game
 			else if(h < 0 && facingRight)
 				// ... flip the player.
 				flip();
-		}
-
-		private void removeNullFromList()
-		{
-			for(var i = _colliderList.Count - 1; i > -1; i--) {
-				if (_colliderList [i] == null) {
-					_colliderList.RemoveAt (i);
-				}
-			}
 		}
 
 		internal Vector2 explosionPos
@@ -204,9 +151,10 @@ namespace strangeetnix.game
 			if (!_isDead && !isHit && canHit) {
 				_pressedButton = false;
 				_hitNum = 1;
-				startWait (onAttackComplete(), TIME_TO_ATTACK);
+				startWait (onHitComplete(), TIME_TO_ATTACK);
 				playAnimation (PlayerAnimatorTypes.TRIGGER_HIT);
-				_hitEnemyNames.Clear ();
+
+				hitEnemySignal.Dispatch ();
 			}
 		}
 
@@ -215,9 +163,10 @@ namespace strangeetnix.game
 			if (!_isDead && !isHit && canHit) {
 				_pressedButton = false;
 				_hitNum = 2;
-				startWait (onAttackComplete(), TIME_TO_ATTACK);
+				startWait (onHitComplete(), TIME_TO_ATTACK);
 				playAnimation (PlayerAnimatorTypes.TRIGGER_SUPER_HIT);
-				_hitEnemyNames.Clear ();
+
+				hitEnemySignal.Dispatch ();
 			}
 		}
 
@@ -226,7 +175,7 @@ namespace strangeetnix.game
 			get { return _isWait; }// isPlayAnimation (PlayerAnimatorTypes.TRIGGER_HIT) || isPlayAnimation (PlayerAnimatorTypes.TRIGGER_SUPER_HIT); }
 		}
 
-		IEnumerator onAttackComplete () 
+		IEnumerator onHitComplete () 
 		{
 			yield return new WaitForSeconds (_waitTime);
 			_isWait = false;
@@ -237,8 +186,12 @@ namespace strangeetnix.game
 			if (!_isDead) {
 				// Set dead to true.
 				_isDead = true;
-
-				playAnimation (PlayerAnimatorTypes.TRIGGER_DEATH1);
+				if (UnityEngine.Random.Range (1, 1000) % 2 == 0) {
+					playAnimation (PlayerAnimatorTypes.TRIGGER_DEATH1);
+				}
+				else {
+					playAnimation (PlayerAnimatorTypes.TRIGGER_DEATH2);
+				}
 			}
 		}
 

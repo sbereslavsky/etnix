@@ -72,7 +72,7 @@ namespace strangeetnix.game
 		{
 			levelModel = new LevelModel();
 			ILevelConfigVO levelConfigVO = gameConfig.levelConfig.getConfigById (levelId);
-			levelModel.hasEnemy = levelConfigVO.hasEnemy;
+			levelModel.setHasEnemy (levelConfigVO.hasEnemy);
 
 			levelModel.bgAssetInfo = gameConfig.assetConfig.getBgAssetById (levelId).clone();
 			if (isRoomLevel) {

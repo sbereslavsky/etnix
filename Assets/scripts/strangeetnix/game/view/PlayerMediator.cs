@@ -52,12 +52,15 @@ namespace strangeetnix.game
 
 		private bool _battleMode;
 
+		private PlayerTriggerManager _playerTriggerManager;
+
 		//This is the first (important) thing to happen in the Mediator. It tells
 		//you that your mediator has been attached, so it's like Start() or a
 		//Constructor. Do all your startup stuff here
 		public override void OnRegister ()
 		{
 			_playerHitCount = 0;
+
 			gameInputSignal.AddListener (onGameInput);
 
 			_battleMode = gameModel.levelModel.hasEnemy;
@@ -65,14 +68,13 @@ namespace strangeetnix.game
 				_damage = gameModel.playerModel.damage;
 				_cooldown = gameModel.playerModel.cooldown;
 
-				hitPlayerSignal.AddListener (onHitPlayer);
+				_playerTriggerManager = gameModel.levelModel.playerTriggerManager;
+				_playerTriggerManager.playerView = view;
 
-				view.hitEnemySignal.AddListener (onHitEnemy);
+				updateListeners (true);
 			}
 
 			view.init (_battleMode);
-
-			//view.collisionSignal.AddListener (onCollision);
 		}
 
 		//OnRemove() is like a destructor/OnDestroy. Use it to clean up.
@@ -81,17 +83,49 @@ namespace strangeetnix.game
 			gameInputSignal.RemoveListener (onGameInput);
 
 			if (_battleMode) {
+				updateListeners (false);
+
 				hitPlayerSignal.RemoveListener (onHitPlayer);
 				view.hitEnemySignal.RemoveListener (onHitEnemy);
 			}
 
 			StopAllCoroutines ();
-			//view.collisionSignal.RemoveListener (onCollision);
 			//gameInputSignal.RemoveListener (onGameInput);
 		}
 
-		private void onHitEnemy(List<GameObject> enemyList)
+		private void updateListeners(bool value)
 		{
+			if (value) {
+				view.triggerEnterSignal.AddListener (onTriggerEnter);
+				view.triggerExitSignal.AddListener (onTriggerExit);
+
+				view.hitEnemySignal.AddListener (onHitEnemy);
+
+				hitPlayerSignal.AddListener (onHitPlayer);
+			} else {
+				view.triggerEnterSignal.RemoveListener (onTriggerEnter);
+				view.triggerExitSignal.RemoveListener (onTriggerExit);
+
+				view.hitEnemySignal.RemoveListener (onHitEnemy);
+
+				hitPlayerSignal.RemoveListener (onHitPlayer);
+			}	
+		}
+
+		private void onTriggerEnter(Collider2D enemyCollider)
+		{
+			_playerTriggerManager.addTrigger (enemyCollider);
+		}
+
+		private void onTriggerExit(string enemyName)
+		{
+			_playerTriggerManager.removeTriggerByKey (enemyName);
+		}
+
+		private void onHitEnemy()
+		{
+			List<GameObject> enemyList = _playerTriggerManager.getEnemyToHit ();
+
 			if (view.canHit) {
 				view.canHit = false;
 				_enemyList = enemyList;
@@ -129,7 +163,7 @@ namespace strangeetnix.game
 					EnemyView enemyView = enemyGO.GetComponent<EnemyView> ();
 					if (enemyView != null) {
 						updateHudItemSignal.Dispatch (UpdateHudItemType.COOLDOWN, _cooldown);
-						enemyView.hitByPlayerSignal.Dispatch (_damage);
+						enemyView.hitEnemySignal.Dispatch (_damage);
 					}
 				}
 			}
