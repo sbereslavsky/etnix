@@ -198,7 +198,7 @@ namespace strangeetnix.game
 
 		internal void playDefeatAnimation()
 		{
-			if (!isPlayAnimation(PlayerAnimatorTypes.TRIGGER_DEFEAT) && !isHit)
+			if (!isPlayAnimation(PlayerAnimatorTypes.TRIGGER_DEFEAT) && !isHit && _moveSpeed == 0)
 			{
 				playAnimation (PlayerAnimatorTypes.TRIGGER_DEFEAT);
 			}
