@@ -20,9 +20,6 @@ namespace strangeetnix.game
 
 		private float TIME_TO_ATTACK	= 1.5f;
 
-		internal Signal<Collider2D> triggerEnterSignal = new Signal<Collider2D> ();
-		internal Signal<string> triggerExitSignal = new Signal<string> ();
-
 		internal Signal hitEnemySignal = new Signal ();
 
 		internal bool facingRight = true;			// For determining which way the player is currently facing.
@@ -53,20 +50,6 @@ namespace strangeetnix.game
 
 			int battleVal = (_battleMode) ? 1 : 0;
 			_anim.SetInteger(PlayerAnimatorTypes.INT_BATTLE, battleVal);
-		}
-
-		void OnTriggerEnter2D(Collider2D other)
-		{
-			if (other.tag.Contains(EnemyView.ID)) {
-				triggerEnterSignal.Dispatch (other);
-			}
-		}
-
-		void OnTriggerExit2D(Collider2D other)
-		{
-			if (other.tag.Contains(EnemyView.ID)) {
-				triggerExitSignal.Dispatch (other.gameObject.name);
-			}
 		}
 
 		void FixedUpdate ()
@@ -172,7 +155,7 @@ namespace strangeetnix.game
 
 		internal bool isHit
 		{
-			get { return _isWait; }// isPlayAnimation (PlayerAnimatorTypes.TRIGGER_HIT) || isPlayAnimation (PlayerAnimatorTypes.TRIGGER_SUPER_HIT); }
+			get { return _isWait; }
 		}
 
 		IEnumerator onHitComplete () 

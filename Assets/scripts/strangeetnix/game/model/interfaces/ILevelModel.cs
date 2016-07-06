@@ -12,10 +12,7 @@ namespace strangeetnix.game
 
 		int enemyCount { get; set; }
 
-		//maybe use only enemyTriggerManager
-		PlayerTriggerManager playerTriggerManager { get; } 
-
-		EnemyManager enemyManager { get; }
+		EnemyTriggerManager enemyManager { get; }
 
 		IBgAssetVO bgAssetInfo { get; set; }
 

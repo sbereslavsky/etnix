@@ -13,8 +13,7 @@ namespace strangeetnix.game
 
 		public int enemyCount { get; set; }
 
-		public PlayerTriggerManager playerTriggerManager { get; private set; }
-		public EnemyManager enemyManager { get; private set; }
+		public EnemyTriggerManager enemyManager { get; private set; }
 
 		public IBgAssetVO bgAssetInfo { get; set; }
 
@@ -37,8 +36,7 @@ namespace strangeetnix.game
 		{
 			hasEnemy = value;
 			if (hasEnemy) {
-				enemyManager = new EnemyManager ();
-				playerTriggerManager = new PlayerTriggerManager ();
+				enemyManager = new EnemyTriggerManager ();
 			}
 		}
 
@@ -69,10 +67,6 @@ namespace strangeetnix.game
 
 				if (enemyManager != null) {
 					enemyManager.reset ();
-				}
-
-				if (playerTriggerManager != null) {
-					playerTriggerManager.reset ();
 				}
 			}
 		}

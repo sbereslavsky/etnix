@@ -22,5 +22,9 @@ namespace strangeetnix
 		Vector3 GetAnchorPosition(ScreenAnchor horizontal, ScreenAnchor vertical);
 
 		void setButtonText (Button button, string textValue);
+
+		bool isEqualsScaleX (GameObject go1, GameObject go2);
+
+		bool isCollisionOut (BoxCollider2D collider1, BoxCollider2D collider2, float minKoef, float maxKoef);
 	}
 }

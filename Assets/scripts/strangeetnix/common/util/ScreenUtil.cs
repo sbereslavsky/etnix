@@ -149,5 +149,19 @@ namespace strangeetnix
 				Debug.LogWarning ("Can't find text field in button "+button.name);
 			}
 		}
+
+		public bool isEqualsScaleX(GameObject go1, GameObject go2)
+		{
+			return go1.transform.localScale.x == go2.transform.localScale.x;
+		}
+
+		public bool isCollisionOut(BoxCollider2D collider1, BoxCollider2D collider2, float minKoef, float maxKoef)
+		{
+			bool result = false;
+			float dist1 = Math.Abs(collider1.bounds.center.x - collider2.bounds.center.x);
+			float width = collider1.size.x + collider2.size.x;
+			result = (width * minKoef > dist1 || dist1 > width * maxKoef);
+			return result;
+		}
 	}
 }

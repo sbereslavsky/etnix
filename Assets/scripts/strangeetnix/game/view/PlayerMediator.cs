@@ -52,8 +52,6 @@ namespace strangeetnix.game
 
 		private bool _battleMode;
 
-		private PlayerTriggerManager _playerTriggerManager;
-
 		//This is the first (important) thing to happen in the Mediator. It tells
 		//you that your mediator has been attached, so it's like Start() or a
 		//Constructor. Do all your startup stuff here
@@ -68,8 +66,7 @@ namespace strangeetnix.game
 				_damage = gameModel.playerModel.damage;
 				_cooldown = gameModel.playerModel.cooldown;
 
-				_playerTriggerManager = gameModel.levelModel.playerTriggerManager;
-				_playerTriggerManager.playerView = view;
+				gameModel.levelModel.enemyManager.setPlayerView (view);
 
 				updateListeners (true);
 			}
@@ -96,35 +93,19 @@ namespace strangeetnix.game
 		private void updateListeners(bool value)
 		{
 			if (value) {
-				view.triggerEnterSignal.AddListener (onTriggerEnter);
-				view.triggerExitSignal.AddListener (onTriggerExit);
-
 				view.hitEnemySignal.AddListener (onHitEnemy);
 
 				hitPlayerSignal.AddListener (onHitPlayer);
 			} else {
-				view.triggerEnterSignal.RemoveListener (onTriggerEnter);
-				view.triggerExitSignal.RemoveListener (onTriggerExit);
-
 				view.hitEnemySignal.RemoveListener (onHitEnemy);
 
 				hitPlayerSignal.RemoveListener (onHitPlayer);
 			}	
 		}
 
-		private void onTriggerEnter(Collider2D enemyCollider)
-		{
-			_playerTriggerManager.addTrigger (enemyCollider);
-		}
-
-		private void onTriggerExit(string enemyName)
-		{
-			_playerTriggerManager.removeTriggerByKey (enemyName);
-		}
-
 		private void onHitEnemy()
 		{
-			List<GameObject> enemyList = _playerTriggerManager.getEnemyToHit ();
+			List<GameObject> enemyList = gameModel.levelModel.enemyManager.getEnemyToHit ();
 
 			if (view.canHit) {
 				view.canHit = false;
@@ -179,6 +160,7 @@ namespace strangeetnix.game
 			//gameModel.playerModel.hp = Mathf.Max (0, gameModel.playerModel.hp - decHp);
 			//updatePlayerHpSignal.Dispatch (gameModel.playerModel.hp);
 
+			//temporary, after to remove!
 			if (gameModel.playerModel.hp == 0) {
 				gameModel.playerModel.resetHp ();
 			}

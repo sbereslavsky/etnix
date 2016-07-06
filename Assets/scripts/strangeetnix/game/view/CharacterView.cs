@@ -38,7 +38,7 @@ namespace strangeetnix.game
 
 		protected bool isCollisionOut(Collider2D other)
 		{
-			float dist1 = other.bounds.SqrDistance (_collider2d.bounds.center);
+			float dist1 = Math.Abs(other.bounds.center.x - _collider2d.bounds.center.x);
 			float width = (other as BoxCollider2D).size.x + _collider2d.size.x;
 			bool result = (width * 0.3f > dist1 || dist1 > width * 1.2f);
 			return result;

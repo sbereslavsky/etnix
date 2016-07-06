@@ -84,8 +84,8 @@ namespace strangeetnix.game
 			//pool.ReturnInstance (enemyView.gameObject);
 
 			//enemyView.gameObject.SetActive (false);
-			gameModel.levelModel.playerTriggerManager.removeTriggerByKey (enemyView.gameObject.name);
-			gameModel.levelModel.enemyManager.removeEnemy (enemyView.gameObject.name);
+			string enemyName = enemyView.gameObject.name;
+			gameModel.levelModel.enemyManager.removeEnemy (enemyName);
 			enemyView.destroyView(delayToDestroy);
 
 			if (delayToDestroy > 0) {

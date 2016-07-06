@@ -23,13 +23,14 @@ namespace strangeetnix.game
 		internal Signal<GameObject> triggerEnterSignal = new Signal<GameObject> ();
 		internal Signal<GameObject> triggerExitSignal = new Signal<GameObject> ();
 
-		internal Signal<GameObject> forceExitTriggerSignal = new Signal<GameObject> ();
+		internal Signal<bool> forceExitTriggerSignal = new Signal<bool> ();
+		internal Signal checkTriggerSignal = new Signal();
 
 		internal Signal<int> hitEnemySignal = new Signal<int> ();
 		internal Signal hitPlayerSignal = new Signal ();
 
 		public float moveSpeed = 2f;			// The speed the enemy moves at.
-		public bool canHit { get; private set; }
+		public bool canHit { get; set; }
 		public bool isMove { get { return (_speed > 0); }}
 		public EnemyStates currentState { get { return _state; } }
 
@@ -55,8 +56,7 @@ namespace strangeetnix.game
 			canHit = true;
 
 			base.init ();
-			_state = EnemyStates.NULL;
-			//setState (EnemyStates.MOVE);
+			setState (EnemyStates.IDLE);
 
 			checkToFlip ();
 		}
@@ -84,29 +84,18 @@ namespace strangeetnix.game
 			_canMove = value;
 			if (_canMove) {
 				checkToFlip ();
-				//setState(EnemyStates.MOVE);
-			}
-		}
-
-		internal void setCanHit(bool value) 
-		{
-			canHit = value;
-
-			if (canHit && _speed == 0) {
-				setState(EnemyStates.HIT);
 			}
 		}
 
 		void OnTriggerEnter2D(Collider2D other)
 		{
-			//Debug.Log ("OnTriggerEnter2D. name = " + other.gameObject.name + ", state = " + _state.ToString());
 			string otherName = other.gameObject.name;
 			if (otherName == WALL_LEFT || otherName == WALL_RIGHT) {
 				flip ();
 			}
 			else { 
 				bool isPlayer = isPlayerObject (other.tag);
-				if (isPlayer || (isOtherEnemy (other) && isEqualsScaleX (other.gameObject))) {
+				if (this.enabled && (isPlayer || (isOtherEnemy (other) && isEqualsScaleX (other.gameObject)))) {
 					GameObject otherGO = (isPlayer) ? null : other.gameObject;
 					triggerEnterSignal.Dispatch (otherGO);
 				}
@@ -115,25 +104,19 @@ namespace strangeetnix.game
 
 		void OnTriggerStay2D(Collider2D other)
 		{
-			//Debug.Log ("OnTriggerStay2D. name = " + other.gameObject.name + ", state = " + _state.ToString());
-			//if trigger 
-			if (_speed == 0 && isCollisionOut(other) && isPlayerObject (other.tag)) {
-				forceExitTriggerSignal.Dispatch (other.gameObject);
+			if (_speed == 0 && canHit && isPlayerObject (other.tag)) {
+				if (isCollisionOut (other)) {
+					forceExitTriggerSignal.Dispatch (true);
+				}
 			}
 		}
 
 		void OnTriggerExit2D(Collider2D other)
 		{
-			//Debug.Log ("OnTriggerExit2D. name = " + other.gameObject.name + ", _speed = " + _speed + ", state = " + _state.ToString ());
 			bool isPlayer = isPlayerObject (other.tag);
 			if (isPlayer || isOtherEnemy (other)) {
 				triggerExitSignal.Dispatch (other.gameObject);
 			}
-		}
-
-		internal void onExitTrigger(Collider2D other)
-		{
-			OnTriggerExit2D (other);
 		}
 
 		internal void setState(EnemyStates value, bool isForce=false)
@@ -155,6 +138,7 @@ namespace strangeetnix.game
 					break;
 
 				case EnemyStates.DEATH:
+					setDeath ();
 					setState (EnemyStates.IDLE);
 					playAnimation (EnemyAnimatorTypes.TRIGGER_DEATH);
 					break;
@@ -170,13 +154,7 @@ namespace strangeetnix.game
 
 		void FixedUpdate ()
 		{
-			if (_canMove && !isPlayAnimation (EnemyAnimatorTypes.TRIGGER_DEFEAT)) {
-				if (_state != EnemyStates.MOVE) {
-					return;
-				}
-
-				//playMove ();
-
+			if (_canMove && _state == EnemyStates.MOVE && _state != EnemyStates.DEFEAT) {
 				// Set the enemy's velocity to moveSpeed in the x direction.
 				if (_speed > 0) {
 					_rigidBody.velocity = new Vector2(-transform.localScale.x * moveSpeed, _rigidBody.velocity.y);	
@@ -200,7 +178,10 @@ namespace strangeetnix.game
 		private void playMove()
 		{
 			if (_speed == 0) {
-				forceExitTriggerSignal.Dispatch (null);
+				if (_state == EnemyStates.HIT || _state == EnemyStates.BEFORE_ENEMY) {
+					forceExitTriggerSignal.Dispatch (_state == EnemyStates.HIT);
+					_state = EnemyStates.MOVE;
+				}
 				setSpeed (true);
 			}
 		}
@@ -213,12 +194,6 @@ namespace strangeetnix.game
 			if (_speed == 0) {				
 				_rigidBody.velocity = Vector2.zero;
 			}
-		}
-
-		override public void setDeath()
-		{
-			base.setDeath ();
-			setState (EnemyStates.DEATH);
 		}
 
 		internal void updateHp(int currentHp, int startHp)
