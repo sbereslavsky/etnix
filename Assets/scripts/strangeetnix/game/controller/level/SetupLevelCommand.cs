@@ -41,8 +41,6 @@ namespace strangeetnix.game
 
 			if (gameModel != null && gameModel.levelModel.hasEnemy) {
 				createEnemySpawnerSignal.Dispatch ();
-			} else {
-				Debug.LogWarning ("SetupLevelCommand. This level without enemies!");
 			}
 		}
 	}

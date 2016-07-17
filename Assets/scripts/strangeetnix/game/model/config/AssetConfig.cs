@@ -53,8 +53,8 @@ namespace strangeetnix.game
 			bgAssetVO.width = 28.4f;
 			bgAssetVO.margin = Vector2.zero;
 			bgAssetVO.smooth = new Vector2 (4, 0);
-			bgAssetVO.minXAndY = new Vector2 (-5.5f, 0f); //-25
-			bgAssetVO.maxXAndY = new Vector2 (5.5f, 0f); //25
+			bgAssetVO.minXAndY = new Vector2 (-2.25f, 0f); //-25
+			bgAssetVO.maxXAndY = new Vector2 (2.25f, 0f); //25
 
 			_bgAssetList.Add (bgAssetVO);
 		}

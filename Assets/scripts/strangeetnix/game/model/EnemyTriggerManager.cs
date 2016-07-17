@@ -59,7 +59,7 @@ namespace strangeetnix.game
 				colliderModel.setState (EnemyStates.MOVE);
 				_list.Add (colliderModel.name, colliderModel);
 			} else {
-				Debug.LogWarning ("EnemyManager.addEnemyView. An element with the same key already exists in the dictionary!");
+				Debug.LogWarning ("EnemyManager.addEnemyView. An element with the same key = " + colliderModel.name + " already exists in the dictionary!");
 			}
 		}
 
@@ -249,7 +249,7 @@ namespace strangeetnix.game
 		public bool isCollisionOut(BoxCollider2D other)
 		{
 			bool result = false;
-			if (_playerCollider != null) {
+			if (_playerCollider != null && other) {
 				float dist1 = Math.Abs(other.bounds.center.x - _playerCollider.bounds.center.x);
 				float width = other.size.x + _playerCollider.size.x;
 				result = (width * 0.3f > dist1 || dist1 > width + 0.1f);
