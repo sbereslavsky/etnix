@@ -36,7 +36,7 @@ namespace strangeetnix.game
 
 		public void resetPlayerPosX ()
 		{
-			playerPosX = 5;
+			playerPosX = 4;
 		}
 
 		public int playerId { get; set; }
