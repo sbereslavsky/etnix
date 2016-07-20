@@ -105,7 +105,7 @@ namespace strangeetnix.game
 		private void onCoroutineComplete()
 		{
 			if (gameModel != null) {
-				//gameModel.levelModel.enemyCount--;
+				gameModel.levelModel.enemyCount--;
 
 				if (enemySpawner != null && enemySpawner.isNobodyToSpawn && gameModel.levelModel.enemyCount == 0) {
 					addDialogSignal.Dispatch (DialogType.WIN_GAME);

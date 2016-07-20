@@ -1,9 +1,11 @@
 ﻿//Utility class providing Camera/GameObject mapping capabilities
 
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using strange.extensions.injector.api;
+using strangeetnix.game;
 
 namespace strangeetnix
 {
@@ -79,12 +81,21 @@ namespace strangeetnix
 		}
 
 		//Calculates entry positions for the enemy
-		public float RandomPositionX(float minX, float maxX)
+		public SpawnPosition getSpawnPosition(float minX, float maxX, bool canSpawnLeft, bool canSpawnRight)
 		{
+			bool bothSides = false;
 			int side = 1;
 			float gameCameraX = gameCamera.transform.position.x;
 			if (gameCameraX > minX && gameCameraX < maxX) {
 				side = (UnityEngine.Random.Range (1, 1000) % 2 == 0) ? 1 : -1;
+				bothSides = true;
+
+				if (side > 0 && !canSpawnRight) {
+					side = -1;
+				} else if (side < 0 && !canSpawnLeft) {
+					side = 1;
+				}
+
 			} else if (gameCameraX < minX) {
 				side = 1;
 			} else if (gameCameraX > maxX) {
@@ -92,7 +103,7 @@ namespace strangeetnix
 			}
 
 			float halfWidth = gameCamera.orthographicSize * gameCamera.aspect * side;
-			return gameCamera.transform.localPosition.x + halfWidth;
+			return new SpawnPosition (gameCamera.transform.localPosition.x + halfWidth, bothSides);
 		}
 
 		public float cameraAspectRatio 

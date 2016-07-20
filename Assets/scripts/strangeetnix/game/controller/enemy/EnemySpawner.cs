@@ -36,6 +36,8 @@ namespace strangeetnix.game
 
 		private IBgAssetVO _bgAssetInfo;
 
+		private int _maxBothSides = 4;
+		private int _maxOneSide = 2;
 
 		//PostConstruct methods fire automatically after Construction
 		//and after all injections are satisfied. It's a safe place
@@ -90,10 +92,19 @@ namespace strangeetnix.game
 		private void spawnEnemy()
 		{
 			if (_enemyIdList.Count > 0) {
-				const int offset = 3;
-				float startPosX = screenUtil.RandomPositionX (_bgAssetInfo.minXAndY.x + offset, _bgAssetInfo.maxXAndY.x - offset);
-				createEnemySignal.Dispatch (_enemyIdList [0], startPosX);
-				_enemyIdList.RemoveAt (0);
+				const int offset = 1;
+				int enemyId = _enemyIdList [0];
+				List<int> enemySideCount = gameModel.levelModel.enemyManager.getEnemyBothSideCount ();
+
+				bool isSpawnLeft = enemySideCount[0] < _maxOneSide;
+				bool isSpawnRight = enemySideCount[1] < _maxOneSide;
+				SpawnPosition position = screenUtil.getSpawnPosition (_bgAssetInfo.minXAndY.x + offset, _bgAssetInfo.maxXAndY.x - offset, isSpawnLeft, isSpawnRight);
+				int currentCount = gameModel.levelModel.enemyCount;
+				int maxEnemies = (position.bothSides) ? _maxBothSides : _maxOneSide;
+				if (currentCount < maxEnemies) {
+					createEnemySignal.Dispatch (enemyId, position.position);
+					_enemyIdList.RemoveAt (0);
+				}
 			} else {
 				stop ();
 			}

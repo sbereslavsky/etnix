@@ -2,6 +2,7 @@
 //(See DestroyEnemyCommand for the bit where they're returned to their pool)
 
 using System;
+using System.Collections.Generic;
 using strange.extensions.command.impl;
 using UnityEngine;
 using strange.extensions.pool.api;
@@ -27,7 +28,7 @@ namespace strangeetnix.game
 
 		//The position to place the blighter.
 		[Inject]
-		public float posX{ get; set; }
+		public float position{ get; set; }
 
 		[Inject]
 		public IRoutineRunner routineRunner { get; set; }
@@ -35,6 +36,7 @@ namespace strangeetnix.game
 		public override void Execute ()
 		{
 			if (injectionBinder.GetBinding<PlayerView> (GameElement.PLAYER) != null) {
+				gameModel.levelModel.enemyId++;
 				gameModel.levelModel.enemyCount++;
 				gameModel.createEnemyId = id;
 
@@ -42,9 +44,9 @@ namespace strangeetnix.game
 				IAssetVO enemyAssetVO = enemyModel.assetVO;
 
 				GameObject enemyStyle = Resources.Load<GameObject> (enemyAssetVO.path);
-				enemyStyle.transform.localPosition = new Vector3(posX, gameModel.levelModel.bgAssetInfo.startPosY, 0f);
+				enemyStyle.transform.localPosition = new Vector3(position, gameModel.levelModel.bgAssetInfo.startPosY, 0f);
 				GameObject enemyGO = GameObject.Instantiate (enemyStyle) as GameObject;
-				enemyGO.name = enemyAssetVO.name + gameModel.levelModel.enemyCount;
+				enemyGO.name = enemyAssetVO.name + gameModel.levelModel.enemyId;
 				enemyGO.tag = EnemyView.ID;
 				//enemyGO.transform.localPosition = pos;
 				enemyGO.transform.SetParent(gameField.transform, false);

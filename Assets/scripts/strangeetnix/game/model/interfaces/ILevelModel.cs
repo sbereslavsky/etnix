@@ -10,6 +10,7 @@ namespace strangeetnix.game
 
 		bool hasEnemy { get; }
 
+		int enemyId { get; set; }
 		int enemyCount { get; set; }
 
 		EnemyTriggerManager enemyManager { get; }

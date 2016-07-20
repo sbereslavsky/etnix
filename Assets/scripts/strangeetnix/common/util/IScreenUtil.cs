@@ -2,8 +2,10 @@
 //(see ScreenUtil)
 
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using strangeetnix.game;
 
 namespace strangeetnix
 {
@@ -15,7 +17,7 @@ namespace strangeetnix
 
 		void TranslateToFarSide(GameObject go);
 
-		float RandomPositionX (float minX, float maxX);
+		SpawnPosition getSpawnPosition (float minX, float maxX, bool canSpawnLeft, bool canSpawnRight);
 
 		float cameraAspectRatio { get; }
 

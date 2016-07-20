@@ -257,6 +257,29 @@ namespace strangeetnix.game
 
 			return result;
 		}
+
+		//first item - left, second - right
+		public List<int> getEnemyBothSideCount ()
+		{
+			List<int> result = new List<int> {0, 0};
+			float playerX = playerView.gameObject.transform.position.x;
+			List<GameObject> list = new List<GameObject> (10);
+			List<EnemyColliderModel> values = new List<EnemyColliderModel> (_list.Values);
+			if (values.Count > 0) {
+				foreach (EnemyColliderModel model in values) {
+					if (model != null && model.state != EnemyStates.DEATH) {
+						float enemyX = model.view.gameObject.transform.position.x;
+						if (enemyX < playerX) {
+							result[0]++;
+						} else {
+							result[1]++;
+						}
+					}
+				}
+			}
+
+			return result;
+		}
 	}
 }
 

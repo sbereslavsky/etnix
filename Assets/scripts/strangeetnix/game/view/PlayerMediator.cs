@@ -161,9 +161,9 @@ namespace strangeetnix.game
 			//updatePlayerHpSignal.Dispatch (gameModel.playerModel.hp);
 
 			//temporary, after to remove!
-			if (gameModel.playerModel.hp == 0) {
+			/*if (gameModel.playerModel.hp == 0) {
 				gameModel.playerModel.resetHp ();
-			}
+			}*/
 
 			if (gameModel.playerModel.hp == 0) {
 				view.setDeath ();

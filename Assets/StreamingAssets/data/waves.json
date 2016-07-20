@@ -27,7 +27,7 @@
     {
         "waveid": 5,
         "enemyencounteridlist": "2,2,2,2,2,2,2,2",
-        "encounterspeed": 5
+        "encounterspeed": 1
     },
     {
         "waveid": 6,

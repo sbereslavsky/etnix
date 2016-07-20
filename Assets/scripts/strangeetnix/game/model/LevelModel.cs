@@ -11,6 +11,7 @@ namespace strangeetnix.game
 
 		public bool hasEnemy { get; private set; }
 
+		public int enemyId { get; set; }
 		public int enemyCount { get; set; }
 
 		public EnemyTriggerManager enemyManager { get; private set; }
@@ -30,6 +31,7 @@ namespace strangeetnix.game
 		{
 			score = 0;
 			enemyCount = 0;
+			enemyId = 0;
 		}
 
 		public void setHasEnemy(bool value)
