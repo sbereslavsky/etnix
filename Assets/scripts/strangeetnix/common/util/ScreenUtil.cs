@@ -151,6 +151,16 @@ namespace strangeetnix
 			return retv;
 		}
 
+		public void setUIButtonText(UIButton button, string textValue)
+		{
+			UILabel buttonText = button.GetComponentInChildren<UILabel> ();
+			if (buttonText != null) {
+				buttonText.text = textValue;
+			} else {
+				Debug.LogWarning ("Can't find text field in button "+button.name);
+			}
+		}
+
 		public void setButtonText(Button button, string textValue)
 		{
 			Text buttonText = button.GetComponentInChildren<Text> ();

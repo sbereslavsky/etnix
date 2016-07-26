@@ -70,7 +70,7 @@ namespace strangeetnix.game
 			view.moveSpeed = _enemyModel.speed;
 			view.updateHp (_hp, _startHp);
 
-			//_enemyManager.setState (_viewKey, EnemyStates.MOVE);
+			//_enemyManager.setState (_viewKey, CharacterStates.MOVE);
 
 			UpdateListeners (true);
 		}
@@ -114,7 +114,7 @@ namespace strangeetnix.game
 				// If the enemy has zero or fewer hit points and isn't dead yet...
 				if (_hp > 0) {
 					if (view.canToDefeat ()) {
-						_enemyManager.setState (_viewKey, EnemyStates.DEFEAT);
+						_enemyManager.setState (_viewKey, CharacterStates.DEFEAT);
 					}
 				} else  {
 					StopAllCoroutines ();
@@ -123,7 +123,7 @@ namespace strangeetnix.game
 					updateHudItemSignal.Dispatch (UpdateHudItemType.EXP, gameModel.playerModel.exp);
 
 					_isDeath = true;
-					_enemyManager.setState (_viewKey, EnemyStates.DEATH);
+					_enemyManager.setState (_viewKey, CharacterStates.DEATH);
 					destroyEnemySignal.Dispatch (view, _enemyModel.assetVO.delayToDestroy, false);
 				}
 			}
@@ -133,9 +133,9 @@ namespace strangeetnix.game
 		{
 			view.setCanMove (canMove);
 			if (canMove) {
-				_enemyManager.setState (_viewKey, EnemyStates.MOVE);
+				_enemyManager.setState (_viewKey, CharacterStates.MOVE);
 			} else {
-				_enemyManager.setState (_viewKey, EnemyStates.IDLE);
+				_enemyManager.setState (_viewKey, CharacterStates.IDLE);
 			}
 		}
 
@@ -147,7 +147,7 @@ namespace strangeetnix.game
 				_canToHit = true;
 				StartCoroutine (hitPlayer ());
 			} else {
-				_enemyManager.setState (_viewKey, EnemyStates.MOVE);
+				_enemyManager.setState (_viewKey, CharacterStates.MOVE);
 			}
 		}
 
@@ -172,7 +172,7 @@ namespace strangeetnix.game
 			view.canHit = true;
 
 			if (_enemyManager.checkBeforeHit (_viewKey)) {
-				_enemyManager.setState (_viewKey, EnemyStates.HIT);
+				_enemyManager.setState (_viewKey, CharacterStates.HIT);
 			} else {
 				onForceExitTrigger (false);
 			}

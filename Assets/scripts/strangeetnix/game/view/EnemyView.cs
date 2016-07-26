@@ -32,7 +32,7 @@ namespace strangeetnix.game
 		public float moveSpeed = 2f;			// The speed the enemy moves at.
 		public bool canHit { get; set; }
 		public bool isMove { get { return (_speed > 0); }}
-		public EnemyStates currentState { get { return _state; } }
+		public CharacterStates currentState { get { return _state; } }
 
 		private Vector3 _hpScale;
 		private Transform _hpTransform;
@@ -42,7 +42,7 @@ namespace strangeetnix.game
 
 		private float _speed = 0;
 
-		private EnemyStates _state;
+		private CharacterStates _state;
 
 		public override void init()
 		{
@@ -56,7 +56,7 @@ namespace strangeetnix.game
 			canHit = true;
 
 			base.init ();
-			setState (EnemyStates.IDLE);
+			setState (CharacterStates.IDLE);
 
 			checkToFlip ();
 		}
@@ -119,31 +119,31 @@ namespace strangeetnix.game
 			}
 		}
 
-		internal void setState(EnemyStates value, bool isForce=false)
+		internal void setState(CharacterStates value, bool isForce=false)
 		{
 			if (_state != value || isForce) {
 				switch (value) {
-				case EnemyStates.MOVE:
+				case CharacterStates.MOVE:
 					playMove ();
 					break;
 
-				case EnemyStates.HIT:
+				case CharacterStates.HIT:
 					playAnimation (EnemyAnimatorTypes.TRIGGER_HIT);
 					hitPlayerSignal.Dispatch();
 					break;
 
-				case EnemyStates.DEFEAT:
-					setState (EnemyStates.IDLE);
+				case CharacterStates.DEFEAT:
+					setState (CharacterStates.IDLE);
 					playAnimation (EnemyAnimatorTypes.TRIGGER_DEFEAT);
 					break;
 
-				case EnemyStates.DEATH:
+				case CharacterStates.DEATH:
 					setDeath ();
-					setState (EnemyStates.IDLE);
+					setState (CharacterStates.IDLE);
 					playAnimation (EnemyAnimatorTypes.TRIGGER_DEATH);
 					break;
 
-				case EnemyStates.IDLE:
+				case CharacterStates.IDLE:
 					stopMove ();
 					break;
 				}
@@ -154,7 +154,7 @@ namespace strangeetnix.game
 
 		void FixedUpdate ()
 		{
-			if (_canMove && _state == EnemyStates.MOVE && _state != EnemyStates.DEFEAT) {
+			if (_canMove && _state == CharacterStates.MOVE && _state != CharacterStates.DEFEAT) {
 				// Set the enemy's velocity to moveSpeed in the x direction.
 				if (_speed > 0) {
 					_rigidBody.velocity = new Vector2(-transform.localScale.x * moveSpeed, _rigidBody.velocity.y);	
@@ -165,7 +165,7 @@ namespace strangeetnix.game
 		internal bool canToDefeat()
 		{
 			// Reduce the number of hit points by one.
-			return (_anim && _state != EnemyStates.HIT && _state != EnemyStates.DEFEAT);
+			return (_anim && _state != CharacterStates.HIT && _state != CharacterStates.DEFEAT);
 		}
 
 		internal void stopMove()
@@ -178,9 +178,9 @@ namespace strangeetnix.game
 		private void playMove()
 		{
 			if (_speed == 0) {
-				if (_state == EnemyStates.HIT || _state == EnemyStates.BEFORE_ENEMY) {
-					forceExitTriggerSignal.Dispatch (_state == EnemyStates.HIT);
-					_state = EnemyStates.MOVE;
+				if (_state == CharacterStates.HIT || _state == CharacterStates.BEFORE_ENEMY) {
+					forceExitTriggerSignal.Dispatch (_state == CharacterStates.HIT);
+					_state = CharacterStates.MOVE;
 				}
 				setSpeed (true);
 			}

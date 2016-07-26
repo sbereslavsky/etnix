@@ -56,7 +56,7 @@ namespace strangeetnix.game
 			EnemyColliderModel colliderModel = new EnemyColliderModel (enemyView, this);
 			if (colliderModel != null && !_list.ContainsKey (colliderModel.name)) {
 				colliderModel.routineRunner = routineRunner;
-				colliderModel.setState (EnemyStates.MOVE);
+				colliderModel.setState (CharacterStates.MOVE);
 				_list.Add (colliderModel.name, colliderModel);
 			} else {
 				Debug.LogWarning ("EnemyManager.addEnemyView. An element with the same key = " + colliderModel.name + " already exists in the dictionary!");
@@ -85,7 +85,7 @@ namespace strangeetnix.game
 				if (isPlayer) {
 					stopCharacter (mainColliderModel);
 					mainColliderModel.isPlayerTrigger = true;
-					mainColliderModel.setState (EnemyStates.HIT);
+					mainColliderModel.setState (CharacterStates.HIT);
 				} else {
 					EnemyColliderModel otherColliderModel = getColliderModel (colliderKey);
 					if (otherColliderModel != null) {
@@ -98,7 +98,7 @@ namespace strangeetnix.game
 						}
 
 						if (!mainColliderModel.isPlayerTrigger) {
-							mainColliderModel.setState (EnemyStates.BEFORE_ENEMY);
+							mainColliderModel.setState (CharacterStates.BEFORE_ENEMY);
 						}
 					}
 				}
@@ -108,7 +108,7 @@ namespace strangeetnix.game
 		private void stopCharacter(EnemyColliderModel mainColliderModel)
 		{
 			if (mainColliderModel != null && mainColliderModel.view.isMove) {
-				mainColliderModel.setState (EnemyStates.IDLE);
+				mainColliderModel.setState (CharacterStates.IDLE);
 			}
 		}
 
@@ -150,7 +150,7 @@ namespace strangeetnix.game
 				if (isPlayer) {
 					mainColliderModel.isPlayerTrigger = false;
 					if (!mainColliderModel.view.isMove) {
-						mainColliderModel.setState (EnemyStates.MOVE);
+						mainColliderModel.setState (CharacterStates.MOVE);
 					}
 				} else if (colliderKey != null) {
 					EnemyColliderModel colliderModel = getColliderModel (colliderKey);
@@ -168,7 +168,7 @@ namespace strangeetnix.game
 			EnemyColliderModel mainColliderModel = getColliderModel (mainKey);
 			if (mainColliderModel != null) {
 				mainColliderModel.isPlayerTrigger = false;
-				mainColliderModel.setState (EnemyStates.MOVE);
+				mainColliderModel.setState (CharacterStates.MOVE);
 			}
 		}
 
@@ -176,11 +176,11 @@ namespace strangeetnix.game
 		{
 			 if (mainColliderModel != null) {
 				mainColliderModel.isPlayerTrigger = false;
-				mainColliderModel.setState (EnemyStates.MOVE);
+				mainColliderModel.setState (CharacterStates.MOVE);
 			}
 		}
 
-		public void setState(string mainKey, EnemyStates state)
+		public void setState(string mainKey, CharacterStates state)
 		{
 			EnemyColliderModel mainColliderModel = getColliderModel (mainKey);
 			if (mainColliderModel != null) {
@@ -188,14 +188,14 @@ namespace strangeetnix.game
 			}
 		}
 
-		public EnemyStates getState(string mainKey)
+		public CharacterStates getState(string mainKey)
 		{
 			EnemyColliderModel mainColliderModel = getColliderModel (mainKey);
 			if (mainColliderModel != null) {
 				return mainColliderModel.state;
 			}
 
-			return EnemyStates.NULL;
+			return CharacterStates.NUL;
 		}
 
 		private void removeKey(string colliderKey, string deleteKey)
@@ -267,7 +267,7 @@ namespace strangeetnix.game
 			List<EnemyColliderModel> values = new List<EnemyColliderModel> (_list.Values);
 			if (values.Count > 0) {
 				foreach (EnemyColliderModel model in values) {
-					if (model != null && model.state != EnemyStates.DEATH) {
+					if (model != null && model.state != CharacterStates.DEATH) {
 						float enemyX = model.view.gameObject.transform.position.x;
 						if (enemyX < playerX) {
 							result[0]++;

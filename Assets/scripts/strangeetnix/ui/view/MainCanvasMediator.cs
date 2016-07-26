@@ -106,7 +106,7 @@ namespace strangeetnix.ui
 
 		private void onLoadedGameData()
 		{
-			for (byte i = 0; i < gameConfig.userCharConfig.list.Count; i++) {               
+			for (byte i = 0; i < gameConfig.userCharConfig.list.Count; i++) {
 				IUserCharVO userCharVO = gameConfig.userCharConfig.list[i];
 				if (userCharVO.classId > 0 && i < MAX_ITEMS_COUNT) {
 					initDialogCharInfo (i + 1, userCharVO);

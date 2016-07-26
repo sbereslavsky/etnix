@@ -2,9 +2,10 @@
 
 namespace strangeetnix.game
 {
-	public enum EnemyStates
+	public enum CharacterStates
 	{
-		NULL,
+		NUL,
+		CREATE,
 		IDLE,
 		DEFEAT,
 		DEATH,

@@ -23,6 +23,7 @@ namespace strangeetnix
 
 		Vector3 GetAnchorPosition(ScreenAnchor horizontal, ScreenAnchor vertical);
 
+		void setUIButtonText (UIButton button, string textValue);
 		void setButtonText (Button button, string textValue);
 
 		bool isEqualsScaleX (GameObject go1, GameObject go2);

@@ -127,7 +127,9 @@ namespace strangeetnix.ui
 			{
 				//Disable the AudioListener
 				AudioListener listener = (contextView as GameObject).GetComponentInChildren<AudioListener> ();
-				listener.enabled = false;
+				if (listener != null) {
+					listener.enabled = false;
+				}
 			}
 		}
 	}

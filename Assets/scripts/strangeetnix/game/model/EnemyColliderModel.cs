@@ -24,10 +24,10 @@ namespace strangeetnix.game
 		protected bool _isWait = false;
 		protected float _waitTime = 0f;
 
-		private EnemyStates _state;
+		private CharacterStates _state;
 
 		public BoxCollider2D collider { get; set; }
-		public EnemyStates state { get { return _state; }}
+		public CharacterStates state { get { return _state; }}
 
 		private EnemyTriggerManager _manager;
 
@@ -37,7 +37,7 @@ namespace strangeetnix.game
 			name = view.gameObject.name;
 			collider = view.GetComponent<BoxCollider2D> ();
 
-			_state = EnemyStates.NULL;
+			_state = CharacterStates.CREATE;
 			_manager = manager;
 
 			isPlayerTrigger = false;
@@ -52,56 +52,56 @@ namespace strangeetnix.game
 			}
 			else if (triggerKeyBefore == key) {
 				triggerKeyBefore = null;
-				setState (EnemyStates.MOVE);
+				setState (CharacterStates.MOVE);
 			}
 		}
 
-		public void setState(EnemyStates state, bool isForce=false)
+		public void setState(CharacterStates state, bool isForce=false)
 		{
 			Debug.Log ("EnemyColliderModel. id = " + name + ". state = " + state.ToString());
 			if (_state != state || isForce) {
 				stopWait ();
 				_state = state;
 				switch (state) {
-				case EnemyStates.MOVE:
+				case CharacterStates.MOVE:
 					//view.canHit = true;
 					isPlayerTrigger = false;
 					view.setState (state);
 					break;
 
-				case EnemyStates.HIT:
+				case CharacterStates.HIT:
 					isPlayerTrigger = true;
 					if (view.isMove) {
-						setState (EnemyStates.IDLE);
+						setState (CharacterStates.IDLE);
 					}
 					if (view.canHit) {
 						view.setState (state, true);
 						startWait (waitToAction(), TIME_TO_ATTACK);
 					} else {
-						setState (EnemyStates.WAIT_TO_HIT);
+						setState (CharacterStates.WAIT_TO_HIT);
 					}
 					break;
 
-				case EnemyStates.IDLE:
+				case CharacterStates.IDLE:
 					if (view.isMove) {
 						view.setState (state);
 					}
 					break;
 
-				case EnemyStates.BEFORE_ENEMY:
+				case CharacterStates.BEFORE_ENEMY:
 					startWait (waitBeforeEnemy(), TIME_TO_MOVE);
 					break;
 
-				case EnemyStates.DEATH:
+				case CharacterStates.DEATH:
 					view.setState (state);
 					break;
 
-				case EnemyStates.DEFEAT:
+				case CharacterStates.DEFEAT:
 					view.setState (state);
 					startWait (waitToAction(), TIME_TO_DEFEAT);
 					break;
 
-				case EnemyStates.WAIT_TO_HIT:
+				case CharacterStates.WAIT_TO_HIT:
 					startWait (waitToAction(), TIME_BEFORE_HIT);
 					break;
 				}
@@ -122,11 +122,11 @@ namespace strangeetnix.game
 			if (_isWait) {
 				IEnumerator routine = null;
 				switch (_state) {
-				case EnemyStates.HIT:
-				case EnemyStates.WAIT_TO_HIT:
+				case CharacterStates.HIT:
+				case CharacterStates.WAIT_TO_HIT:
 					routine = waitToAction ();
 					break;
-				case EnemyStates.BEFORE_ENEMY:
+				case CharacterStates.BEFORE_ENEMY:
 					routine = waitBeforeEnemy ();
 					break;
 				}
@@ -150,10 +150,10 @@ namespace strangeetnix.game
 			if (triggerKeyBefore != null) {
 				//bug!
 				if (view.isMove) {
-					setState (EnemyStates.IDLE);
+					setState (CharacterStates.IDLE);
 				}
 
-				setState (EnemyStates.BEFORE_ENEMY, true);
+				setState (CharacterStates.BEFORE_ENEMY, true);
 			} else {
 				doAfterWait ();
 			}
@@ -170,21 +170,21 @@ namespace strangeetnix.game
 		private void doAfterWait()
 		{
 			if (isPlayerTrigger) {
-				if (view.canHit && _state != EnemyStates.HIT) {
-					setState (EnemyStates.HIT);
+				if (view.canHit && _state != CharacterStates.HIT) {
+					setState (CharacterStates.HIT);
 				} else {
-					if (_state == EnemyStates.BEFORE_ENEMY) {
+					if (_state == CharacterStates.BEFORE_ENEMY) {
 						Debug.Log ("fuck!");
 					}
 					if (_manager.isCollisionOut(collider)) {
 						isPlayerTrigger = false;
-						setState (EnemyStates.MOVE);
+						setState (CharacterStates.MOVE);
 					} else {
-						setState (EnemyStates.WAIT_TO_HIT);
+						setState (CharacterStates.WAIT_TO_HIT);
 					}
 				}
 			} else {
-				setState (EnemyStates.MOVE);
+				setState (CharacterStates.MOVE);
 			}
 		}
 	}

@@ -19,6 +19,7 @@ namespace strangeetnix.game
 		private string EXPLOSION2 	= "explosion2";
 
 		private float TIME_TO_ATTACK	= 1.5f;
+		private float TIME_TO_DEFEAT	= 1.5f;
 
 		internal Signal hitEnemySignal = new Signal ();
 
@@ -38,6 +39,8 @@ namespace strangeetnix.game
 		private bool _pressedButton = false;
 		private bool _battleMode;
 
+		private CharacterStates _state;
+
 		public override void init (bool battleMode)
 		{
 			_battleMode = battleMode;
@@ -45,6 +48,8 @@ namespace strangeetnix.game
 				_explosion = transform.Find (EXPLOSION1).transform;
 				_explosion2 = transform.Find (EXPLOSION2).transform;
 			}
+
+			_state = CharacterStates.IDLE;
 
 			base.init (battleMode);
 
@@ -102,30 +107,27 @@ namespace strangeetnix.game
 			_pressedButton = pressedButton;
 			if (_moveSpeed != 0 && !_pressedButton) {
 				_moveSpeed = 0;
+				setState (CharacterStates.IDLE);
 			}
 		}
 
 		internal void startLeftWalk(bool pressedButton=false)
 		{
-			if (!_isDead) {			
+			if (!_isDead && !_isWait) {			
 				_pressedButton = pressedButton;
 				_moveSpeed = -0.5f;
 
-				if (facingRight) {
-					flip ();
-				}
+				setState (CharacterStates.MOVE, true);
 			}
 		}
 
 		internal void startRightWalk(bool pressedButton=false)
 		{
-			if (!_isDead) {
+			if (!_isDead && !_isWait) {
 				_pressedButton = pressedButton;
 				_moveSpeed = 0.5f;
 
-				if (!facingRight) {
-					flip ();
-				}
+				setState (CharacterStates.MOVE, true);
 			}
 		}
 
@@ -134,10 +136,7 @@ namespace strangeetnix.game
 			if (!_isDead && !isHit && canHit) {
 				_pressedButton = false;
 				_hitNum = 1;
-				startWait (onHitComplete(), TIME_TO_ATTACK);
-				playAnimation (PlayerAnimatorTypes.TRIGGER_HIT);
-
-				hitEnemySignal.Dispatch ();
+				setState (CharacterStates.HIT, true);
 			}
 		}
 
@@ -146,41 +145,32 @@ namespace strangeetnix.game
 			if (!_isDead && !isHit && canHit) {
 				_pressedButton = false;
 				_hitNum = 2;
-				startWait (onHitComplete(), TIME_TO_ATTACK);
-				playAnimation (PlayerAnimatorTypes.TRIGGER_SUPER_HIT);
-
-				hitEnemySignal.Dispatch ();
+				setState (CharacterStates.HIT, true);
 			}
 		}
 
 		internal bool isHit
 		{
-			get { return _isWait; }
+			get { return _state == CharacterStates.HIT; }
 		}
 
-		IEnumerator onHitComplete () 
+		IEnumerator onWaitComplete () 
 		{
 			yield return new WaitForSeconds (_waitTime);
 			_isWait = false;
+			_state = CharacterStates.IDLE;
 		}
 
 		override public void setDeath()
 		{
 			if (!_isDead) {
-				// Set dead to true.
-				_isDead = true;
-				if (UnityEngine.Random.Range (1, 1000) % 2 == 0) {
-					playAnimation (PlayerAnimatorTypes.TRIGGER_DEATH1);
-				}
-				else {
-					playAnimation (PlayerAnimatorTypes.TRIGGER_DEATH2);
-				}
+				setState (CharacterStates.DEATH);
 			}
 		}
 
 		internal void checkToFlip (Transform enemyTransform)
 		{
-			if (!isHit && !isPlayAnimation(PlayerAnimatorTypes.TRIGGER_DEFEAT)) {
+			if (!_isWait) {
 				if (enemyTransform.position.x < gameObject.transform.position.x && facingRight ||
 				    enemyTransform.position.x > gameObject.transform.position.x && !facingRight) {
 					flip ();
@@ -198,9 +188,61 @@ namespace strangeetnix.game
 
 		internal void playDefeatAnimation()
 		{
-			if (!isPlayAnimation(PlayerAnimatorTypes.TRIGGER_DEFEAT) && !isHit && _moveSpeed == 0)
-			{
-				playAnimation (PlayerAnimatorTypes.TRIGGER_DEFEAT);
+			if (!_isWait) {
+				setState (CharacterStates.DEFEAT);
+			}
+		}
+
+		public void setState(CharacterStates state, bool isForce=false)
+		{
+			string animationType;
+			Debug.Log ("PlayerView. state = " + state.ToString());
+			if (_state != state || isForce) {
+				if (_isWait) {
+					StopCoroutine (onWaitComplete());
+					onWaitComplete ();
+				}
+				_state = state;
+
+				switch (state) {
+				case CharacterStates.MOVE:
+					if (_moveSpeed > 0) {
+						if (!facingRight) {
+							flip ();
+						}
+					} else {
+						if (facingRight) {
+							flip ();
+						}
+					}
+					break;
+
+				case CharacterStates.HIT:
+					animationType = (_hitNum == 1) ? PlayerAnimatorTypes.TRIGGER_HIT : PlayerAnimatorTypes.TRIGGER_SUPER_HIT;
+					playAnimation (animationType);
+					startWait (onWaitComplete (), TIME_TO_ATTACK);
+					hitEnemySignal.Dispatch ();
+					break;
+
+				case CharacterStates.IDLE:
+					break;
+
+				case CharacterStates.DEATH:
+					// Set dead to true.
+					_isDead = true;
+					animationType = (UnityEngine.Random.Range (1, 1000) % 2 == 0) ? PlayerAnimatorTypes.TRIGGER_DEATH1 : PlayerAnimatorTypes.TRIGGER_DEATH2;
+					playAnimation (animationType);
+					break;
+
+				case CharacterStates.DEFEAT:
+					if (_moveSpeed > 0) {
+						stopWalk ();
+					}
+
+					startWait (onWaitComplete(), TIME_TO_DEFEAT);
+					playAnimation (PlayerAnimatorTypes.TRIGGER_DEFEAT);
+					break;
+				}
 			}
 		}
 	}
