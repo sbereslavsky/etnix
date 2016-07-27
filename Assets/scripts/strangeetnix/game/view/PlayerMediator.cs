@@ -118,9 +118,6 @@ namespace strangeetnix.game
 		{
 			yield return new WaitForSeconds (gameModel.playerModel.assetVO.delayToHit);
 			hitEnemy ();
-			if (gameModel.playerModel.assetVO.hasExplosion) {
-				addExplosionSignal.Dispatch (view.explosionPos);
-			}
 			/*if (_cooldown > 0) {
 				StartCoroutine (startCooldown());
 			} else {
@@ -139,14 +136,20 @@ namespace strangeetnix.game
 
 		private void hitEnemy()
 		{
+			Vector2 explosionPos = view.explosionPos;
 			if (_enemyList != null) {
 				foreach (GameObject enemyGO in _enemyList) {
 					EnemyView enemyView = enemyGO.GetComponent<EnemyView> ();
 					if (enemyView != null) {
+						explosionPos = new Vector2 (enemyView.collider.bounds.center.x, explosionPos.y);
 						updateHudItemSignal.Dispatch (UpdateHudItemType.COOLDOWN, _cooldown);
 						enemyView.hitEnemySignal.Dispatch (_damage);
 					}
 				}
+			}
+
+			if (gameModel.playerModel.assetVO.hasExplosion) {
+				addExplosionSignal.Dispatch (explosionPos);
 			}
 		}
 
