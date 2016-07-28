@@ -43,8 +43,7 @@ namespace strangeetnix.game
 	//int - dec hp
 	public class HitPlayerSignal : Signal<Transform, int>{}
 
-	//bool - can move
-	public class MoveEnemySignal : Signal<bool>{}
+	public class StopEnemySignal : Signal{}
 
 	//Vector2 - explosion position 
 	public class AddExplosionSignal : Signal<Vector2>{}

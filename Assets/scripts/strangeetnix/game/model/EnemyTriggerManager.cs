@@ -83,9 +83,15 @@ namespace strangeetnix.game
 			EnemyColliderModel mainColliderModel = getColliderModel (mainKey);
 			if (mainColliderModel != null && mainColliderModel.view) {
 				if (isPlayer) {
-					stopCharacter (mainColliderModel);
-					mainColliderModel.isPlayerTrigger = true;
-					mainColliderModel.setState (CharacterStates.HIT);
+					/*if (mainColliderModel.triggerKeyAfter != null || mainColliderModel.triggerKeyBefore != null && mainColliderModel.state != CharacterStates.MOVE) {
+						mainColliderModel.view.flip ();
+						mainColliderModel.setState (CharacterStates.MOVE);
+					} else {*/
+						stopCharacter (mainColliderModel);
+						mainColliderModel.isPlayerTrigger = true;
+						mainColliderModel.setState (CharacterStates.HIT);
+					//}
+
 				} else {
 					EnemyColliderModel otherColliderModel = getColliderModel (colliderKey);
 					if (otherColliderModel != null) {
@@ -279,6 +285,19 @@ namespace strangeetnix.game
 			}
 
 			return result;
+		}
+
+		public void stopEnemies ()
+		{
+			List<GameObject> list = new List<GameObject> (10);
+			List<EnemyColliderModel> values = new List<EnemyColliderModel> (_list.Values);
+			if (values.Count > 0) {
+				foreach (EnemyColliderModel model in values) {
+					if (model != null && model.state != CharacterStates.DEATH) {
+						model.setState (CharacterStates.IDLE);
+					}
+				}
+			}
 		}
 	}
 }

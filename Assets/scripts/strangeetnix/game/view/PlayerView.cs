@@ -178,7 +178,7 @@ namespace strangeetnix.game
 			}
 		}
 
-		protected override void flip ()
+		public override void flip ()
 		{
 			// Switch the way the player is labelled as facing.
 			facingRight = !facingRight;

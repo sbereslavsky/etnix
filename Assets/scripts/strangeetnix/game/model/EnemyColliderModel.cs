@@ -31,6 +31,9 @@ namespace strangeetnix.game
 
 		private EnemyTriggerManager _manager;
 
+		private IEnumerator _waitToAction = null;
+		private IEnumerator _waitBeforeEnemy = null;
+
 		public EnemyColliderModel (EnemyView view1, EnemyTriggerManager manager)
 		{
 			view = view1;
@@ -76,7 +79,8 @@ namespace strangeetnix.game
 					}
 					if (view.canHit) {
 						view.setState (state, true);
-						startWait (waitToAction(), TIME_TO_ATTACK);
+						_waitToAction = waitToAction ();
+						startWait (_waitToAction, TIME_TO_ATTACK);
 					} else {
 						setState (CharacterStates.WAIT_TO_HIT);
 					}
@@ -89,22 +93,37 @@ namespace strangeetnix.game
 					break;
 
 				case CharacterStates.BEFORE_ENEMY:
-					startWait (waitBeforeEnemy(), TIME_TO_MOVE);
+					_waitBeforeEnemy = waitBeforeEnemy ();
+					startWait (_waitBeforeEnemy, TIME_TO_MOVE);
 					break;
 
 				case CharacterStates.DEATH:
+					stopCoroutines ();
 					view.setState (state);
 					break;
 
 				case CharacterStates.DEFEAT:
 					view.setState (state);
-					startWait (waitToAction(), TIME_TO_DEFEAT);
+					_waitToAction = waitToAction ();
+					startWait (_waitToAction, TIME_TO_DEFEAT);
 					break;
 
 				case CharacterStates.WAIT_TO_HIT:
-					startWait (waitToAction(), TIME_BEFORE_HIT);
+					_waitToAction = waitToAction ();
+					startWait (_waitToAction, TIME_BEFORE_HIT);
 					break;
 				}
+			}
+		}
+
+		private void stopCoroutines()
+		{
+			if (_waitToAction != null) {
+				routineRunner.StopCoroutine (_waitToAction);
+			}
+
+			if (_waitBeforeEnemy != null) {
+				routineRunner.StopCoroutine (_waitBeforeEnemy);
 			}
 		}
 
@@ -124,13 +143,15 @@ namespace strangeetnix.game
 				switch (_state) {
 				case CharacterStates.HIT:
 				case CharacterStates.WAIT_TO_HIT:
-					routine = waitToAction ();
+					routine = _waitToAction;
 					break;
 				case CharacterStates.BEFORE_ENEMY:
-					routine = waitBeforeEnemy ();
+					routine = _waitBeforeEnemy;
 					break;
 				}
 
+				_isWait = false;
+				_waitTime = 0;
 				if (routine != null) {
 					routineRunner.StopCoroutine (routine);
 				}
@@ -140,9 +161,11 @@ namespace strangeetnix.game
 		IEnumerator waitBeforeEnemy()
 		{
 			yield return new WaitForSeconds (_waitTime);
-			Debug.Log ("EnemyColliderModel.waitBeforeEnemy id = " + name);
-			_isWait = false;
-			doBeforeEnemy ();
+			Debug.Log ("EnemyColliderModel.waitBeforeEnemy id = " + name + ".isWait = " + _isWait.ToString() + ". state = " + _state.ToString ());
+			if (_isWait) {				
+				_isWait = false;
+				doBeforeEnemy ();
+			}
 		}
 
 		private void doBeforeEnemy()
@@ -162,9 +185,11 @@ namespace strangeetnix.game
 		IEnumerator waitToAction()
 		{
 			yield return new WaitForSeconds (_waitTime);
-			Debug.Log ("EnemyColliderModel.waitToAction, id = " + name + ". state = " + _state.ToString());
-			_isWait = false;
-			doAfterWait ();
+			Debug.Log ("EnemyColliderModel.waitToAction, id = " + name + ".isWait = " + _isWait.ToString() + ". state = " + _state.ToString ());
+			if (_isWait) {
+				_isWait = false;
+				doAfterWait ();
+			}
 		}
 
 		private void doAfterWait()

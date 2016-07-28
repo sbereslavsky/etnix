@@ -21,7 +21,7 @@ namespace strangeetnix.game
 		public DestroyEnemySignal destroyEnemySignal{ get; set; }
 
 		[Inject]
-		public MoveEnemySignal moveEnemySignal{ get; set; }
+		public StopEnemySignal stopEnemySignal{ get; set; }
 
 		[Inject]
 		public HitPlayerSignal hitPlayerSignal{ get; set; }
@@ -55,6 +55,11 @@ namespace strangeetnix.game
 		private EnemyTriggerManager _enemyManager;
 		private string _viewKey;
 
+		private bool _canAction = true;
+
+		private IEnumerator _hitPlayer;
+		private IEnumerator _setCanHit;
+
 		public override void OnRegister ()
 		{
 			_enemyModel = gameModel.levelModel.getEnemyModelById (gameModel.createEnemyId);
@@ -78,7 +83,7 @@ namespace strangeetnix.game
 		public override void OnRemove ()
 		{
 			_enemyModel = null;
-			StopAllCoroutines ();
+			stopMediatorCorutines ();
 
 			UpdateListeners (false);
 		}
@@ -93,7 +98,7 @@ namespace strangeetnix.game
 				view.hitPlayerSignal.AddListener (onStartHitPlayer);
 				view.hitEnemySignal.AddListener (onHitByPlayer);
 
-				moveEnemySignal.AddListener (onMoveEnemy);
+				stopEnemySignal.AddListener (onStopEnemy);
 			} else {
 				view.triggerEnterSignal.RemoveListener (onTriggerEnter);
 				view.forceExitTriggerSignal.RemoveListener (onForceExitTrigger);
@@ -102,7 +107,7 @@ namespace strangeetnix.game
 				view.hitPlayerSignal.RemoveListener (onStartHitPlayer);
 				view.hitEnemySignal.RemoveListener (onHitByPlayer);
 
-				moveEnemySignal.RemoveListener (onMoveEnemy);
+				stopEnemySignal.RemoveListener (onStopEnemy);
 			}	
 		}
 
@@ -129,52 +134,79 @@ namespace strangeetnix.game
 			}
 		}
 
-		private void onMoveEnemy(bool canMove)
+		private void onStopEnemy()
 		{
-			view.setCanMove (canMove);
-			if (canMove) {
-				_enemyManager.setState (_viewKey, CharacterStates.MOVE);
-			} else {
-				_enemyManager.setState (_viewKey, CharacterStates.IDLE);
-			}
+			_canAction = false;
+			view.disableCanMove ();
+			stopMediatorCorutines ();
+			//_enemyManager.setState (_viewKey, CharacterStates.IDLE);
 		}
 
 		private void onStartHitPlayer()
 		{
-			if (view.canHit) {
-				StopAllCoroutines ();
-				view.canHit = false;
-				_canToHit = true;
-				StartCoroutine (hitPlayer ());
-			} else {
-				_enemyManager.setState (_viewKey, CharacterStates.MOVE);
+			if (_canAction) {
+				if (view.canHit) {
+					StopAllCoroutines ();
+					view.canHit = false;
+					_canToHit = true;
+					_hitPlayer = hitPlayer ();
+					StartCoroutine (_hitPlayer);
+				} else {
+					_enemyManager.setState (_viewKey, CharacterStates.MOVE);
+				}
 			}
 		}
 
 		private IEnumerator hitPlayer()
 		{
 			yield return new WaitForSeconds (_enemyModel.assetVO.delayToHit);
-			if (_canToHit) {
-				_canToHit = false;
-				if (_enemyModel.assetVO.hasExplosion) {
-					addExplosionSignal.Dispatch (view.explosionPos);
+			Debug.Log ("EnemyMediator.hitPlayer. id = " + view.name + ". _canAction = " + _canAction.ToString());
+			if (_canAction) {
+				if (_canToHit) {
+					StopAllCoroutines ();
+					// check to hit player, other exit trigger
+					if (_enemyManager.checkBeforeHit (_viewKey)) {
+						_canToHit = false;
+						if (_enemyModel.assetVO.hasExplosion) {
+							addExplosionSignal.Dispatch (view.explosionPos);
+						}
+						hitPlayerSignal.Dispatch (transform, _damage);
+
+						_setCanHit = setCanHit ();
+						StartCoroutine (_setCanHit);
+					} else {
+						_canToHit = true;
+						view.canHit = true;
+						onForceExitTrigger (false);
+					}
 				}
-				hitPlayerSignal.Dispatch (transform, _damage);
 			}
-			StopAllCoroutines ();
-			StartCoroutine (setCanHit());
 		}
 
 		private IEnumerator setCanHit()
 		{
 			yield return new WaitForSeconds (_cooldown);
-			_canToHit = true;
-			view.canHit = true;
+			Debug.Log ("EnemyMediator.setCanHit. id = " + view.name + ". _canAction = " + _canAction.ToString());
+			if (_canAction) {
+				_canToHit = true;
+				view.canHit = true;
 
-			if (_enemyManager.checkBeforeHit (_viewKey)) {
-				_enemyManager.setState (_viewKey, CharacterStates.HIT);
-			} else {
-				onForceExitTrigger (false);
+				if (_enemyManager.checkBeforeHit (_viewKey)) {
+					_enemyManager.setState (_viewKey, CharacterStates.HIT);
+				} else {
+					onForceExitTrigger (false);
+				}
+			}
+		}
+
+		private void stopMediatorCorutines()
+		{
+			if (_hitPlayer != null) {
+				StopCoroutine (_hitPlayer);
+			}
+
+			if (_setCanHit != null) {
+				StopCoroutine (_setCanHit);
 			}
 		}
 

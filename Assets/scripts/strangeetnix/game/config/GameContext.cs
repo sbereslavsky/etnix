@@ -64,7 +64,7 @@ namespace strangeetnix.game
 			injectionBinder.Bind<LevelStartedSignal> ().ToSingleton ();
 			injectionBinder.Bind<HitEnemySignal> ().ToSingleton ();
 			injectionBinder.Bind<HitPlayerSignal> ().ToSingleton ();
-			injectionBinder.Bind<MoveEnemySignal> ().ToSingleton ();
+			injectionBinder.Bind<StopEnemySignal> ().ToSingleton ();
 			injectionBinder.Bind<CameraEnabledSignal> ().ToSingleton ().CrossContext();
 
 			if (Context.firstContext == this)

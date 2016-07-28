@@ -34,7 +34,7 @@ namespace strangeetnix.game
 		public AddDialogSignal addDialogSignal{ get; set; }
 
 		[Inject]
-		public MoveEnemySignal moveEnemySignal { get; set; }
+		public StopEnemySignal stopEnemySignal { get; set; }
 
 		[Inject]
 		public CameraEnabledSignal cameraEnabledSignal { get; set; }
@@ -67,7 +67,8 @@ namespace strangeetnix.game
 				if (gameModel.playerModel.hp <= 0)
 				{
 					cameraEnabledSignal.Dispatch (false);
-					moveEnemySignal.Dispatch (false);
+					stopEnemySignal.Dispatch ();
+					gameModel.levelModel.enemyManager.stopEnemies ();
 					stopEnemySpawnerSignal.Dispatch ();
 					//gameModel.playerModel.resetHp();
 				}

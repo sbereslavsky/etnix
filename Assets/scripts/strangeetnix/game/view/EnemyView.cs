@@ -44,6 +44,8 @@ namespace strangeetnix.game
 
 		private CharacterStates _state;
 
+		internal BoxCollider2D collider { get; private set; }
+
 		public override void init()
 		{
 			// Setting up the references.
@@ -51,6 +53,7 @@ namespace strangeetnix.game
 			_hpTransform = transform.Find (HEALTH).transform;
 			_hpBgTransform = transform.Find (HEALTH_BG).transform;
 			_hpScale = _hpTransform.localScale;
+			collider = gameObject.GetComponent<BoxCollider2D> ();
 
 			_canMove = true;
 			canHit = true;
@@ -79,12 +82,9 @@ namespace strangeetnix.game
 			}
 		}
 			
-		internal void setCanMove(bool value) 
+		internal void disableCanMove() 
 		{
-			_canMove = value;
-			if (_canMove) {
-				checkToFlip ();
-			}
+			_canMove = false;
 		}
 
 		void OnTriggerEnter2D(Collider2D other)
@@ -145,6 +145,7 @@ namespace strangeetnix.game
 
 				case CharacterStates.IDLE:
 					stopMove ();
+					playAnimation (EnemyAnimatorTypes.TRIGGER_IDLE);
 					break;
 				}
 

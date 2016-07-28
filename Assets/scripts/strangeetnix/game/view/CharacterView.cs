@@ -68,7 +68,7 @@ namespace strangeetnix.game
 			return _anim.GetBool(type);
 		}
 
-		virtual protected void flip()
+		virtual public void flip()
 		{
 			// Multiply the x component of localScale by -1.
 			Vector3 transformScale = transform.localScale;
