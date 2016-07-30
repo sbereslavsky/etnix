@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using strange.extensions.dispatcher.eventdispatcher.api;
 using strange.extensions.mediation.impl;
 using strange.extensions.signal.impl;
+using strangeetnix.game;
 
 namespace strangeetnix.ui
 {
@@ -13,6 +14,8 @@ namespace strangeetnix.ui
 		private string TITLE_NAME = "Name: ";
 		private string TITLE_HP = "Hp: ";
 		private string TITLE_EXP = "Exp: ";
+		private string TITLE_DAMAGE = "Damage: ";
+		private string TITLE_COOLDOWN = "Cooldown: ";
 		private string TITLE_WEAPON = "Weapon: ";
 		private string TITLE_ITEM1 = "Item1: ";
 		private string TITLE_ITEM2 = "Item2: ";
@@ -21,6 +24,8 @@ namespace strangeetnix.ui
 		public Text textName;
 		public Text textHp;
 		public Text textExp;
+		public Text textDamage;
+		public Text textCooldown;
 		public Text textWeapon;
 		public Text textItem1;
 		public Text textItem2;
@@ -37,7 +42,7 @@ namespace strangeetnix.ui
 		internal Signal<int> removeCharPanelSignal = new Signal<int>();
 		internal Signal<int> startGameSceneSignal = new Signal<int>();
 
-		internal void init(strangeetnix.game.IUserCharInfoVO userCharInfoVO, int panelId1)
+		internal void init(strangeetnix.game.IUserCharInfoVO userCharInfoVO, IPlayerModel playerModel, int panelId1)
 		{
 			_panelId = panelId1;
 			_charId = userCharInfoVO.id;
@@ -45,6 +50,8 @@ namespace strangeetnix.ui
 			textName.text = (userCharInfoVO != null) ? TITLE_NAME + userCharInfoVO.name + ": " + userCharInfoVO.level + " level": TITLE_NAME;
 			textHp.text = (userCharInfoVO != null) ? TITLE_HP + userCharInfoVO.hp : TITLE_HP;
 			textExp.text = (userCharInfoVO != null) ? TITLE_EXP + userCharInfoVO.exp : TITLE_EXP;
+			textDamage.text = (playerModel != null) ? TITLE_DAMAGE + playerModel.damage : TITLE_DAMAGE;
+			textCooldown.text = (playerModel != null) ? TITLE_COOLDOWN + playerModel.cooldown : TITLE_COOLDOWN;
 			textWeapon.text = (userCharInfoVO != null) ? TITLE_WEAPON + userCharInfoVO.weapon : TITLE_WEAPON;
 			textItem1.text = (userCharInfoVO != null) ? TITLE_ITEM1 + userCharInfoVO.item2 : TITLE_ITEM1;
 			textItem2.text = (userCharInfoVO != null) ? TITLE_ITEM2 + userCharInfoVO.item3 : TITLE_ITEM2;
@@ -53,6 +60,12 @@ namespace strangeetnix.ui
 			buttonEdit.onClick.AddListener (editItem);
 			buttonRemove.onClick.AddListener (removeItem);
 			buttonPlay.onClick.AddListener (play);
+		}
+
+		internal void initTooltipText(string text)
+		{
+			TooltipTrigger trigger = this.gameObject.AddComponent<TooltipTrigger> ();
+			trigger.text = text;
 		}
 
 		private void editItem()

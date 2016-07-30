@@ -17,6 +17,7 @@ namespace strangeetnix.ui
 		public Text textName;
 		public Text textLevel;
 		public Text textExp;
+		public Text textPlayerInfo;
 
 		public Dropdown dropDownEquiped;
 		public Dropdown dropDownWeapon;
@@ -34,18 +35,46 @@ namespace strangeetnix.ui
 
 		public int charId { get; set; }
 
+		private IUserCharVO _userCharVO;	
+		private IGameConfig _gameConfig;
+		private int _oldWeaponId;
+
 		internal void init(IUserCharVO userCharVO, IGameConfig gameConfig)
 		{
+			_userCharVO = userCharVO;
+			_gameConfig = gameConfig;
+			_oldWeaponId = _userCharVO.weaponId;
+
 			List<string> info_names = gameConfig.weaponConfig.getInfoListByOwnerId (userCharVO.classId);
+
 			int weaponId = (info_names.Count < userCharVO.weaponId) ? userCharVO.weaponId / info_names.Count : userCharVO.weaponId;
 			initDropDown (dropDownWeapon, info_names, weaponId-1);
 			initDropDown (dropDownItem2, gameConfig.itemConfig.info_names, userCharVO.itemId2-1);
 			initDropDown (dropDownItem3, gameConfig.itemConfig.info_names, userCharVO.itemId3-1);
 			initDropDown (dropDownEquiped, gameConfig.equipedConfig.info_names, userCharVO.equipedId-1);
 
+			dropDownWeapon.onValueChanged.AddListener(delegate {
+				myDropdownValueChangedHandler(dropDownWeapon);
+			});
+
+			updatePlayerInfo ();
+
 			buttonAddExp.onClick.AddListener (addExp);
 			buttonSaveAndExit.onClick.AddListener (saveAndExit);
 			buttonExit.onClick.AddListener (exit);
+		}
+
+		private void myDropdownValueChangedHandler(Dropdown target) 
+		{
+			string value = getDropDownText (target);
+			_userCharVO.weaponId = _gameConfig.weaponConfig.getIdByInfo (value);
+			updatePlayerInfo ();
+		}
+
+		public void updatePlayerInfo()
+		{
+			IPlayerModel playerModel = new PlayerModel (_userCharVO.id, _gameConfig);
+			textPlayerInfo.text = "Weapon dmg = " + playerModel.weaponVO.damage + ", cldwn = " + playerModel.weaponVO.cooldown + ". player dmg = " + playerModel.damage + ", cldwn = " + playerModel.cooldown;
 		}
 
 		public void updateInfo(IUserCharInfoVO userCharInfoVO)
@@ -86,6 +115,7 @@ namespace strangeetnix.ui
 
 		private void exit()
 		{
+			_userCharVO.weaponId = _oldWeaponId;
 			closeDialogSignal.Dispatch (false);
 		}
 
@@ -94,6 +124,7 @@ namespace strangeetnix.ui
 			int addValue = Convert.ToInt32 (inputField.text);
 			if (addValue != 0) {
 				addExpSignal.Dispatch (addValue);
+				updatePlayerInfo ();
 			}
 		}
 

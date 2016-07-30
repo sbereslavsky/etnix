@@ -175,7 +175,8 @@ namespace strangeetnix.ui
 			DialogCharInfoView charInfoView = userDialog.GetComponent<DialogCharInfoView> ();
 			if (charInfoView) {
 				IUserCharInfoVO userCharInfoVO = userCharVO.getUserCharInfoVO (gameConfig);
-				charInfoView.init (userCharInfoVO, dialogId);
+				IPlayerModel playerModel = new PlayerModel (userCharVO.id, gameConfig);
+				charInfoView.init (userCharInfoVO, playerModel, dialogId);
 			}
 		}
 
