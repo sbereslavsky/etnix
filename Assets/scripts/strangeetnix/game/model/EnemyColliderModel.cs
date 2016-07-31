@@ -61,7 +61,7 @@ namespace strangeetnix.game
 
 		public void setState(CharacterStates state, bool isForce=false)
 		{
-			Debug.Log ("EnemyColliderModel. id = " + name + ". state = " + state.ToString());
+			Debug.Log ("EnemyColliderModel. id = " + name + ". state = " + state.ToString() + ", oldState = " + _state.ToString());
 			if (_state != state || isForce) {
 				stopWait ();
 				_state = state;
@@ -198,9 +198,6 @@ namespace strangeetnix.game
 				if (view.canHit && _state != CharacterStates.HIT) {
 					setState (CharacterStates.HIT);
 				} else {
-					if (_state == CharacterStates.BEFORE_ENEMY) {
-						Debug.Log ("fuck!");
-					}
 					if (_manager.isCollisionOut(collider)) {
 						isPlayerTrigger = false;
 						setState (CharacterStates.MOVE);

@@ -155,7 +155,7 @@ namespace strangeetnix.game
 			if (mainColliderModel != null && mainColliderModel.view != null) {				
 				if (isPlayer) {
 					mainColliderModel.isPlayerTrigger = false;
-					if (!mainColliderModel.view.isMove) {
+					if (!mainColliderModel.view.isMove && mainColliderModel.view.currentState != CharacterStates.HIT) {
 						mainColliderModel.setState (CharacterStates.MOVE);
 					}
 				} else if (colliderKey != null) {

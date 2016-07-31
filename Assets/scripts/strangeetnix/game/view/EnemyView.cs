@@ -94,6 +94,7 @@ namespace strangeetnix.game
 				flip ();
 			}
 			else { 
+				Debug.Log ("OnTriggerEnter2D. other.tag = " + other.tag + ", name = " + other.gameObject.name);
 				bool isPlayer = isPlayerObject (other.tag);
 				if (this.enabled && (isPlayer || (isOtherEnemy (other) && isEqualsScaleX (other.gameObject)))) {
 					GameObject otherGO = (isPlayer) ? null : other.gameObject;

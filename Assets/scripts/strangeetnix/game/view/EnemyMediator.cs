@@ -160,6 +160,10 @@ namespace strangeetnix.game
 		private IEnumerator hitPlayer()
 		{
 			yield return new WaitForSeconds (_enemyModel.assetVO.delayToHit);
+			if (_hitPlayer != null) {
+				StopCoroutine (_hitPlayer);
+				_hitPlayer = null;
+			}
 			Debug.Log ("EnemyMediator.hitPlayer. id = " + view.name + ". _canAction = " + _canAction.ToString());
 			if (_canAction) {
 				if (_canToHit) {
@@ -186,6 +190,11 @@ namespace strangeetnix.game
 		private IEnumerator setCanHit()
 		{
 			yield return new WaitForSeconds (_cooldown);
+			if (_setCanHit != null) {
+				StopCoroutine (_setCanHit);
+				_setCanHit = null;
+			}
+
 			Debug.Log ("EnemyMediator.setCanHit. id = " + view.name + ". _canAction = " + _canAction.ToString());
 			if (_canAction) {
 				_canToHit = true;
@@ -203,21 +212,23 @@ namespace strangeetnix.game
 		{
 			if (_hitPlayer != null) {
 				StopCoroutine (_hitPlayer);
+				_hitPlayer = null;
 			}
 
 			if (_setCanHit != null) {
 				StopCoroutine (_setCanHit);
+				_setCanHit = null;
 			}
 		}
 
 		private void onForceExitTrigger(bool isPlayer)
 		{
-			/*if (_canToHit) {
-				StopAllCoroutines ();
-			}
-			view.canHit = true;*/
 			if (_canToHit) {
 				_canToHit = false;
+			}
+
+			if (!view.canHit && _setCanHit == null) {
+				view.canHit = true;
 			}
 
 			if (isPlayer) {
