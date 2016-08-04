@@ -17,6 +17,9 @@ namespace strangeetnix.ui
 		public IGameConfig gameConfig { get; set;}
 
 		[Inject]
+		public CloseDialogSignal closeDialogSignal{ get; set; }
+
+		[Inject]
 		public RestartGameSignal restartGameSignal{ get; set; }
 
 		[Inject]
@@ -59,6 +62,7 @@ namespace strangeetnix.ui
 
 		private void onCloseDialog()
 		{
+			closeDialogSignal.Dispatch ();
 			Destroy (view.gameObject);
 			gameOverSignal.Dispatch ();
 		}

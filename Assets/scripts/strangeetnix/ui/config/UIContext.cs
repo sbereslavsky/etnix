@@ -53,6 +53,8 @@ namespace strangeetnix.ui
 			injectionBinder.Bind<CloseEditPanelSignal> ().ToSingleton ();
 
 			injectionBinder.Bind<AddDialogSignal> ().ToSingleton ().CrossContext();
+			injectionBinder.Bind<CloseDialogSignal> ().ToSingleton ().CrossContext();
+
 			injectionBinder.Bind<ShowRoomButtonSignal> ().ToSingleton ().CrossContext();
 
 			injectionBinder.Bind<SwitchCanvasSignal> ().ToSingleton ().CrossContext();

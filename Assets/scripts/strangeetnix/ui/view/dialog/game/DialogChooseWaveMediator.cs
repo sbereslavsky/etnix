@@ -14,6 +14,9 @@ namespace strangeetnix.ui
 		public DialogChooseWaveView view { get; set;}
 
 		[Inject]
+		public CloseDialogSignal closeDialogSignal{ get; set; }
+
+		[Inject]
 		public IGameConfig gameConfig { get; set;}
 
 		[Inject]
@@ -53,6 +56,7 @@ namespace strangeetnix.ui
 
 		private void onCloseDialog()
 		{
+			closeDialogSignal.Dispatch ();
 			view.destroy ();
 			Destroy (view.gameObject);
 		}

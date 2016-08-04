@@ -29,6 +29,9 @@ namespace strangeetnix.ui
 		public AddDialogSignal addDialogSignal{ get; set; }
 
 		[Inject]
+		public CloseDialogSignal closeDialogSignal{ get; set; }
+
+		[Inject]
 		public ShowRoomButtonSignal showRoomButtonSignal{ get; set; }
 
 		[Inject]
@@ -43,6 +46,8 @@ namespace strangeetnix.ui
 		private int _level = 0;
 
 		private int _playerHitCount = 0;
+
+		private int _openDialog = 0;
 
 		private const string DIALOG_PAUSE_GAME = "DialogPauseGame";
 		private const string DIALOG_WIN_GAME = "DialogWinGame";
@@ -92,6 +97,7 @@ namespace strangeetnix.ui
 				gameInputSignal.AddListener (onGameInput);
 
 				addDialogSignal.AddListener (onAddDialog);
+				closeDialogSignal.AddListener (onCloseDialog);
 				showRoomButtonSignal.AddListener (onShowRoomButton);
 
 				view.clickButtonSignal.AddListener (onClickButton);
@@ -109,6 +115,7 @@ namespace strangeetnix.ui
 				}
 
 				addDialogSignal.RemoveListener (onAddDialog);
+				closeDialogSignal.RemoveListener (onCloseDialog);
 				showRoomButtonSignal.RemoveListener (onShowRoomButton);
 
 				view.clickButtonSignal.RemoveListener (onClickButton);
@@ -127,8 +134,19 @@ namespace strangeetnix.ui
 			}
 		}
 
+		private void onCloseDialog()//DialogType type)
+		{
+			if (_openDialog > 0) {
+				_openDialog--;
+			}
+		}
+
 		private void onAddDialog(DialogType type)
 		{
+			if (_openDialog > 0) {
+				return;
+			}
+
 			GameObject dialogGO = null;
 			switch (type) {
 			case DialogType.WIN_GAME:
@@ -148,6 +166,7 @@ namespace strangeetnix.ui
 			if (dialogGO != null) {
 				ITransformDialogView dialogView = dialogGO.GetComponent<TransformDialogView> ();
 				dialogView.updateBgTransform(_rectTransform);
+				_openDialog++;
 			}
 		}
 

@@ -26,6 +26,8 @@ namespace strangeetnix.ui
 
 	public class AddDialogSignal : Signal<DialogType>{}
 
+	public class CloseDialogSignal : Signal{}
+
 	//bool - show/hide value
 	//int - number of room
 	public class ShowRoomButtonSignal : Signal<bool, int>{}

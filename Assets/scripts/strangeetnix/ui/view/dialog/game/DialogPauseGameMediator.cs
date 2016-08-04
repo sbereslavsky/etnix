@@ -20,6 +20,9 @@ namespace strangeetnix.ui
 		public IGameConfig gameConfig { get; set; }
 
 		[Inject]
+		public CloseDialogSignal closeDialogSignal{ get; set; }
+
+		[Inject]
 		public ExitRoomSignal exitRoomSignal{ get; set; }
 
 		[Inject]
@@ -83,6 +86,7 @@ namespace strangeetnix.ui
 		private void destroyView()
 		{
 			pauseGameSignal.Dispatch (false);
+			closeDialogSignal.Dispatch ();
 			Destroy (view.gameObject);
 		}
 	}

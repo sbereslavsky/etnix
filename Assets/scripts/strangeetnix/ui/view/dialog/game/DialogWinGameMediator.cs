@@ -20,6 +20,9 @@ namespace strangeetnix.ui
 		public IGameModel gameModel { get; set;}
 
 		[Inject]
+		public CloseDialogSignal closeDialogSignal{ get; set; }
+
+		[Inject]
 		public GameOverSignal gameOverSignal{ get; set; }
 
 		[Inject]
@@ -59,6 +62,7 @@ namespace strangeetnix.ui
 		private void onCloseDialog()
 		{
 			Destroy (view.gameObject);
+			closeDialogSignal.Dispatch ();
 			if (gameModel.isRoomLevel) {
 				exitRoomSignal.Dispatch ();
 			} else {
