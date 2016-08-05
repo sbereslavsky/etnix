@@ -4,6 +4,7 @@ using System;
 using UnityEngine;
 using strange.extensions.mediation.impl;
 using strange.extensions.signal.impl;
+using strange.extensions.pool.api;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -19,6 +20,8 @@ namespace strangeetnix.game
 
 		private string WALL_LEFT 	= "wallLeft";
 		private string WALL_RIGHT 	= "wallRight";
+
+		internal string poolKey{ get; set; }
 
 		internal Signal<GameObject> triggerEnterSignal = new Signal<GameObject> ();
 		internal Signal<GameObject> triggerExitSignal = new Signal<GameObject> ();
@@ -44,7 +47,9 @@ namespace strangeetnix.game
 
 		private CharacterStates _state;
 
-		internal BoxCollider2D collider { get; private set; }
+		private float _hpScaleX;
+
+		internal BoxCollider2D boxCollider { get; private set; }
 
 		public override void init()
 		{
@@ -53,10 +58,11 @@ namespace strangeetnix.game
 			_hpTransform = transform.Find (HEALTH).transform;
 			_hpBgTransform = transform.Find (HEALTH_BG).transform;
 			_hpScale = _hpTransform.localScale;
-			collider = gameObject.GetComponent<BoxCollider2D> ();
-
+			boxCollider = gameObject.GetComponent<BoxCollider2D> ();
 			_canMove = true;
 			canHit = true;
+
+			_hpScaleX = _hpTransform.localScale.x;
 
 			base.init ();
 			setState (CharacterStates.IDLE);
@@ -85,6 +91,13 @@ namespace strangeetnix.game
 		internal void disableCanMove() 
 		{
 			_canMove = false;
+		}
+
+		internal void destroyComponent()
+		{
+			Destroy (this);
+			_hpTransform.localScale = new Vector3(_hpScaleX, _hpScale.y, 1);
+			_hpBgTransform.localScale = new Vector3(_hpScaleX, _hpScale.y, 1);
 		}
 
 		void OnTriggerEnter2D(Collider2D other)

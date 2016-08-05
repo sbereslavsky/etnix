@@ -16,8 +16,8 @@ namespace strangeetnix.game
 		public GameObject gameField{ get; set; }
 
 		//The pool from which we draw Enemies (see also the GameContext's use of ResourceInstanceProvider).
-		//[Inject(GameElement.ENEMY_POOL)]
-		//public IPool<GameObject> pool{ get; set; }
+		[Inject]
+		public IEnemyPoolManager enemyPoolManager{ get; set; }
 
 		[Inject]
 		public IGameModel gameModel{ get; set; }
@@ -43,17 +43,32 @@ namespace strangeetnix.game
 				IEnemyModel enemyModel = gameModel.levelModel.getEnemyModelById (id);
 				IAssetVO enemyAssetVO = enemyModel.assetVO;
 
-				GameObject enemyStyle = Resources.Load<GameObject> (enemyAssetVO.path);
-				enemyStyle.transform.localPosition = new Vector3(position, gameModel.levelModel.bgAssetInfo.startPosY, 0f);
-				GameObject enemyGO = GameObject.Instantiate (enemyStyle) as GameObject;
-				enemyGO.name = enemyAssetVO.name + gameModel.levelModel.enemyId;
-				enemyGO.tag = EnemyView.ID;
-				//enemyGO.transform.localPosition = pos;
-				enemyGO.transform.SetParent(gameField.transform, false);
-				enemyGO.AddComponent<EnemyView> ();
-				EnemyView enemyView = enemyGO.GetComponent<EnemyView> ();
-				if (enemyView != null) {
-					gameModel.levelModel.enemyManager.addEnemyView (enemyView, routineRunner);
+				GameObject enemyGO = null;
+				IPool<GameObject> pool = enemyPoolManager.getPoolByKey (enemyAssetVO.name);
+				if (pool != null) {
+					enemyGO = pool.GetInstance ();
+					//GameObject enemyStyle = Resources.Load<GameObject> (enemyAssetVO.path);
+					//enemyStyle.transform.localPosition = new Vector3(position, gameModel.levelModel.bgAssetInfo.startPosY, 0f);
+					//GameObject enemyGO = GameObject.Instantiate (enemyStyle) as GameObject;
+
+					enemyGO.transform.localPosition = new Vector3 (position, gameModel.levelModel.bgAssetInfo.startPosY, 0f);
+					enemyGO.name = enemyAssetVO.name + gameModel.levelModel.enemyId;
+					enemyGO.tag = EnemyView.ID;
+					enemyGO.SetActive (true);
+					if (enemyGO.transform.parent == null) {
+						enemyGO.transform.SetParent (gameField.transform, false);
+					}
+
+					if (enemyGO.GetComponent <EnemyView> () == null) {
+						enemyGO.AddComponent<EnemyView> ();
+					}
+					EnemyView enemyView = enemyGO.GetComponent<EnemyView> ();
+					if (enemyView != null) {
+						enemyView.poolKey = enemyAssetVO.name;
+						gameModel.levelModel.enemyManager.addEnemyView (enemyView, routineRunner);
+					}
+				} else {
+					Debug.LogError ("CreateEnemyCommand. pool is null!");
 				}
 			}
 		}

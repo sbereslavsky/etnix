@@ -19,12 +19,13 @@ namespace strangeetnix.game
 	public class DestroyEnemyCommand : Command
 	{
 		//The pool to which we return the enemies
-		//[Inject(GameElement.ENEMY_POOL)]
-		//public IPool<GameObject> pool{ get; set; }
 
 		//The specific enemy being destroyed
 		[Inject]
 		public EnemyView enemyView{get;set;}
+
+		[Inject]
+		public IEnemyPoolManager enemyPoolManager{ get; set; }
 
 		//True if this destruction earns the player points (False if it flew offscreen
 		//or was cleaned up at end of level)
@@ -50,6 +51,8 @@ namespace strangeetnix.game
 
 		[Inject]
 		public IRoutineRunner routineRunner{ get; set; }
+
+		private static Vector3 PARKED_POS = new Vector3(1000f, 0f, 1000f);
 		
 		//An offscreen location to place the recycled Enemies.
 		//Arguably this value should be in a config somewhere.
@@ -73,30 +76,31 @@ namespace strangeetnix.game
 				//updateHudItemSignal.Dispatch (UpdateHudItemType.SCORE, gameModel.levelModel.score);
 			}
 
-			//We're pooling instances, not actually destroying them,
-			//So reset the instances to an appropriate state for reuse...
-			//enemyView.GetComponent<Rigidbody>().velocity = Vector3.zero;
-
-			//...store them offscreen...
-			//enemyView.transform.localPosition = PARKED_POS;
-
-			//...and RETURN THEM TO THE POOL!
-			//pool.ReturnInstance (enemyView.gameObject);
-
 			//enemyView.gameObject.SetActive (false);
 			string enemyName = enemyView.gameObject.name;
 			gameModel.levelModel.enemyManager.removeEnemy (enemyName);
-			enemyView.destroyView(delayToDestroy);
+			//enemyView.destroyView(delayToDestroy);
 
 			if (delayToDestroy > 0) {
 				Retain ();
 				routineRunner.StartCoroutine (decreaseCount ());
+			} else {
+				enemyView.transform.localPosition = PARKED_POS;
+				enemyView.gameObject.SetActive (false);
+				enemyPoolManager.returnInstance(enemyView.poolKey, enemyView.gameObject);
+				enemyView.destroyComponent ();
 			}
 		}
 
 		IEnumerator decreaseCount()
 		{
 			yield return new WaitForSeconds (delayToDestroy+0.1f);
+
+			//...and RETURN THEM TO THE POOL!
+			enemyView.gameObject.transform.localPosition = PARKED_POS;
+			enemyView.gameObject.SetActive (false);
+			enemyPoolManager.returnInstance(enemyView.poolKey, enemyView.gameObject);
+			enemyView.destroyComponent ();
 
 			onCoroutineComplete ();
 			Release ();

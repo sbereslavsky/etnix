@@ -2,6 +2,7 @@
 
 using System;
 using strange.extensions.command.impl;
+using strange.extensions.pool.api;
 using UnityEngine;
 
 namespace strangeetnix.game
@@ -10,6 +11,9 @@ namespace strangeetnix.game
 	{
 		[Inject(GameElement.GAME_FIELD)]
 		public GameObject gameField{ get; set; }
+
+		[Inject]
+		public IEnemyPoolManager enemyPoolManager{ get; set; }
 
 		[Inject]
 		public DestroyPlayerSignal destroyPlayerSignal{ get; set; }
@@ -39,6 +43,8 @@ namespace strangeetnix.game
 			{
 				destroyEnemySignal.Dispatch (enemy, 0, false);
 			}
+
+			enemyPoolManager.cleanPools ();
 		}
 	}
 }

@@ -141,7 +141,7 @@ namespace strangeetnix.game
 				foreach (GameObject enemyGO in _enemyList) {
 					EnemyView enemyView = enemyGO.GetComponent<EnemyView> ();
 					if (enemyView != null) {
-						explosionPos = new Vector2 (enemyView.collider.bounds.center.x, explosionPos.y);
+						explosionPos = new Vector2 (enemyView.boxCollider.bounds.center.x, explosionPos.y);
 						updateHudItemSignal.Dispatch (UpdateHudItemType.COOLDOWN, _cooldown);
 						enemyView.hitEnemySignal.Dispatch (_damage);
 					}

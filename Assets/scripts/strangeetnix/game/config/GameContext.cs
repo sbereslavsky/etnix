@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using strange.extensions.context.impl;
 using UnityEngine;
 using strange.extensions.command.api;
@@ -56,7 +57,7 @@ namespace strangeetnix.game
 			//from a pool, then return them when done.
 
 			//These bindings setup the necessary pools, each as a Named injection, so we can tell the pools apart.
-			//injectionBinder.Bind<IPool<GameObject>>().To<Pool<GameObject>>().ToSingleton().ToName(GameElement.ENEMY_POOL);
+			injectionBinder.Bind<IEnemyPoolManager>().To<EnemyPoolManager>().ToSingleton();
 
 			//Signals (not bound to Commands)
 			//When a Signal isn't bound to a Command, it needs to be mapped, just like any other injected instance
@@ -172,9 +173,17 @@ namespace strangeetnix.game
 			//   get one new GameObject whenever you need one. This minimizes the necessary management of
 			//   Views whenever the pool inflates.
 
-			//IPool<GameObject> enemyPool = injectionBinder.GetInstance<IPool<GameObject>> (GameElement.ENEMY_POOL);
-			//enemyPool.instanceProvider = new ResourceInstanceProvider ("enemy", LayerMask.NameToLayer ("enemy"));
-			//enemyPool.inflationType = PoolInflationType.INCREMENT;
+			IGameConfig gameConfig = (IGameConfig)injectionBinder.GetInstance<IGameConfig>();
+			IEnemyPoolManager enemyPoolManager = (IEnemyPoolManager)injectionBinder.GetInstance<IEnemyPoolManager>();
+			if (gameConfig != null && enemyPoolManager != null) {
+				IAssetConfig assectConfig = gameConfig.assetConfig;
+				for (int i = 0; i < assectConfig.enemyAssetList.Count; i++) {
+					ICharAssetVO charAssetVO = assectConfig.enemyAssetList [i];
+					if (charAssetVO != null) {
+						enemyPoolManager.addPool (charAssetVO);
+					}
+				}
+			}
 
 			//Don't forget to call the base version...important stuff happens there!!!
 			base.postBindings ();
