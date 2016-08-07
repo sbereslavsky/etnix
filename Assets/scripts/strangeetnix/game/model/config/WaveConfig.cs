@@ -18,14 +18,14 @@ namespace strangeetnix.game
 			info_names = new List<string> (value.Count);
 			for (byte i = 0; i < value.Count; i++) {
 				_list.Add(new WaveVO (value [i]));
-				info_names.Add (_list[i].enemy_encounter_id_list);
+				info_names.Add (_list[i].enemy_encounter_id_list_str);
 			}
 		}
 
 		public string getEncounterListById(int id)
 		{
 			IWaveVO waveVO = getWaveVOById (id);
-			string result = (waveVO != null) ? waveVO.enemy_encounter_id_list : "";
+			string result = (waveVO != null) ? waveVO.enemy_encounter_id_list_str : "";
 			return result;
 		}
 
@@ -50,7 +50,7 @@ namespace strangeetnix.game
 		public int getIdByEncounterList(string value)
 		{
 			for (byte i = 0; i < _list.Count; i++) {
-				if (_list [i].enemy_encounter_id_list == value) {
+				if (_list [i].enemy_encounter_id_list_str == value) {
 					return _list [i].id;
 				}
 			}
