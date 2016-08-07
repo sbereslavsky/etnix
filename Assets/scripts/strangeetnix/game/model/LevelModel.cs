@@ -47,7 +47,7 @@ namespace strangeetnix.game
 			enemyIdList = new List<int> ();
 			waveVO = waveVO1;
 			if (waveVO != null) {
-				enemyIdList = convertStringToList (waveVO.enemy_encounter_id_list);
+				enemyIdList = waveVO.enemy_encounter_id_list;
 			}
 
 			_enemyModelList = new List<IEnemyModel> ();
@@ -82,18 +82,6 @@ namespace strangeetnix.game
 			}
 
 			return null;
-		}
-
-		private List<int> convertStringToList(string value)
-		{
-			List<int> result = new List<int> ();
-			if (value != null && value.Length > 0) {
-				string[] ids = value.Split (',');
-				for (byte i = 0; i < ids.Length; i++) {
-					result.Add (Convert.ToInt32(ids.GetValue(i)));
-				}
-			}
-			return result;
 		}
 	}
 }
