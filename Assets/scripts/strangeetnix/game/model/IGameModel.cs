@@ -8,6 +8,7 @@ namespace strangeetnix.game
 	{
 		int playerId { get; set; }
 		int createEnemyId { get; set; }
+		int waveId { get; set; }
 		int levelId { get; set; }
 
 		int roomNum { get; set; }

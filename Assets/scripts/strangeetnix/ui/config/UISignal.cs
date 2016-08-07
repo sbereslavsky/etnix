@@ -28,6 +28,10 @@ namespace strangeetnix.ui
 
 	public class CloseDialogSignal : Signal{}
 
+	//PreloaderTypes - preloader type 
+	public class AddPreloaderSignal : Signal<PreloaderTypes>{}
+	public class DestroyPreloaderSignal : Signal{}
+
 	//bool - show/hide value
 	//int - number of room
 	public class ShowRoomButtonSignal : Signal<bool, int>{}

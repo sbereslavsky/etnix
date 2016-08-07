@@ -25,6 +25,9 @@ namespace strangeetnix.ui
 		[Inject]
 		public EnterRoomSignal enterRoomSignal{ get; set; }
 
+		[Inject]
+		public LoadResourcesSignal loadResourcesSignal { get; set; }
+
 		private string _viewName;
 
 		public override void OnRegister()
@@ -63,7 +66,14 @@ namespace strangeetnix.ui
 
 		private void onChooseWave(int waveId)
 		{
+			gameModel.waveId = waveId;
+
+			#if UNITY_EDITOR || UNITY_STANDALONE_WIN
 			enterRoomSignal.Dispatch (waveId);
+			#elif UNITY_ANDROID || UNITY_IPHONE
+			loadResourcesSignal.Dispatch (PreloaderTypes.GAME);
+			#endif
+
 			onCloseDialog ();
 		}
 	}

@@ -24,6 +24,14 @@ namespace strangeetnix.main
 				injectionBinder.Bind<IGameConfig> ().To<GameConfig> ().ToSingleton ().CrossContext ();
 				injectionBinder.Bind<IGameModel> ().To<GameModel> ().ToSingleton().CrossContext();
 
+				injectionBinder.Bind<IConfigManager> ().To<ConfigManager> ().ToSingleton ().CrossContext ();
+				injectionBinder.Bind<IResourceManager> ().To<ResourceManager> ().ToSingleton ().CrossContext ();
+
+				injectionBinder.Bind<AddPreloaderSignal> ().ToSingleton ().CrossContext ();
+				injectionBinder.Bind<DestroyPreloaderSignal> ().ToSingleton ().CrossContext ();
+				injectionBinder.Bind<UpdatePreloaderValueSignal> ().ToSingleton ().CrossContext();
+
+				injectionBinder.Bind<LoadResourcesSignal> ().ToSingleton ().CrossContext ();
 				injectionBinder.Bind<LoadDataSignal> ().ToSingleton ().CrossContext ();
 				injectionBinder.Bind<LoadedDataSignal> ().ToSingleton ().CrossContext ();
 				injectionBinder.Bind<AddHpSignal> ().ToSingleton ().CrossContext();
@@ -47,7 +55,6 @@ namespace strangeetnix.main
 
 			//commandBinder.Bind<SwitchCanvasSignal> ().To<SwitchCanvasCommand> ();
 			mediationBinder.Bind<PreloaderCanvasView> ().To<PreloaderCanvasMediator> ();
-
 
 			commandBinder.Bind <StartSignal> ()
 				.To<StartAppCommand> ()

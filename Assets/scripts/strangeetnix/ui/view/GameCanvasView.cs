@@ -35,11 +35,6 @@ namespace strangeetnix.ui
 		public RectTransform playerExpBar;
 		//public SpriteRenderer enemyHpBar;
 
-		private const string DIALOG_PAUSE_GAME = "DialogPauseGame";
-		private const string DIALOG_WIN_GAME = "DialogWinGame";
-		private const string DIALOG_LOSE_GAME = "DialogLoseGame";
-		private const string DIALOG_CHOOSE_WAVE = "DialogChooseWave";
-
 		private const string TITLE_EXP = "Exp: ";
 		private const string TITLE_HP = "Hp: ";
 		private const string TITLE_SCORE = "Score: ";
@@ -186,12 +181,13 @@ namespace strangeetnix.ui
 			}
 		}
 
-		internal GameObject addDialog (string dialogId)
+		internal GameObject addDialog (GameObject dialogStyle, string id)
 		{
-			GameObject dialog = (GameObject)Instantiate (Resources.Load ("ui/"+dialogId), Vector3.zero, Quaternion.identity);
-			dialog.name = dialogId;
-			dialog.transform.SetParent (gameObject.transform, false);
-			return dialog;
+			//GameObject dialogStyle = Resources.Load (assetData.path);
+			GameObject dialogGO = (GameObject)Instantiate (dialogStyle, Vector3.zero, Quaternion.identity);
+			dialogGO.name = id;
+			dialogGO.transform.SetParent (gameObject.transform, false);
+			return dialogGO;
 		}
 
 		private void onEnterInRoom()

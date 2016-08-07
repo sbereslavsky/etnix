@@ -17,6 +17,9 @@ namespace strangeetnix.ui
 		public IGameConfig gameConfig{ get; set; }
 
 		[Inject]
+		public IResourceManager resourceManager{ get; set; }
+
+		[Inject]
 		public GameOverSignal gameOverSignal{ get; set; }
 
 		[Inject]
@@ -48,11 +51,6 @@ namespace strangeetnix.ui
 		private int _playerHitCount = 0;
 
 		private int _openDialog = 0;
-
-		private const string DIALOG_PAUSE_GAME = "DialogPauseGame";
-		private const string DIALOG_WIN_GAME = "DialogWinGame";
-		private const string DIALOG_LOSE_GAME = "DialogLoseGame";
-		private const string DIALOG_CHOOSE_WAVE = "DialogChooseWave";
 
 		private RectTransform _rectTransform;
 
@@ -147,23 +145,26 @@ namespace strangeetnix.ui
 				return;
 			}
 
-			GameObject dialogGO = null;
+			AssetPathData dialogData = null;
+
 			switch (type) {
 			case DialogType.WIN_GAME:
-				dialogGO = view.addDialog (DIALOG_WIN_GAME);
+				dialogData = AssetConfig.DIALOG_WIN_GAME;
 				break;
 			case DialogType.PAUSE_GAME:
-				dialogGO = view.addDialog (DIALOG_PAUSE_GAME);
+				dialogData = AssetConfig.DIALOG_PAUSE_GAME;
 				break;
 			case DialogType.LOSE_GAME:
-				dialogGO = view.addDialog (DIALOG_LOSE_GAME);
+				dialogData = AssetConfig.DIALOG_LOSE_GAME;
 				break;
 			case DialogType.CHOOSE_WAVE:
-				dialogGO = view.addDialog (DIALOG_CHOOSE_WAVE);
+				dialogData = AssetConfig.DIALOG_CHOOSE_WAVE;
 				break;
 			}
 
-			if (dialogGO != null) {
+			if (dialogData != null) {				
+				GameObject dialogStyle = resourceManager.getResourceById (dialogData);
+				GameObject dialogGO = view.addDialog (dialogStyle, dialogData.id);
 				ITransformDialogView dialogView = dialogGO.GetComponent<TransformDialogView> ();
 				dialogView.updateBgTransform(_rectTransform);
 				_openDialog++;

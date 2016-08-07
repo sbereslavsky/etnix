@@ -8,8 +8,11 @@ namespace strangeetnix.ui
 	{
 		public RectTransform background;
 
+		internal RectTransform rectTransform;
+
 		public void updateBgTransform(RectTransform parentTransform)
 		{
+			rectTransform = this.GetComponent<RectTransform> ();
 			background.sizeDelta = new Vector2 (parentTransform.sizeDelta.x, parentTransform.sizeDelta.y);
 		}
 	}

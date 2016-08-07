@@ -20,6 +20,7 @@ namespace strangeetnix.game
 		{
 			levelId = 1;
 			playerId = 0;
+			waveId = 0;
 			createEnemyId = 0;
 			resetPlayerPosX ();
 			roomNum = 0;
@@ -42,6 +43,7 @@ namespace strangeetnix.game
 		public int playerId { get; set; }
 		public int createEnemyId { get; set; }
 		public int levelId { get; set; }
+		public int waveId { get; set; }
 		public int roomNum { get; set; }
 		public ILevelModel levelModel { get; private set; }
 		public IPlayerModel playerModel { get; set; }

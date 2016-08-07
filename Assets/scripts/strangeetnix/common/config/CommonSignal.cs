@@ -14,6 +14,9 @@ namespace strangeetnix
 	public class GameInputSignal : Signal<int>{};
 
 	//Game
+	//PreloaderTypes - preloader type 
+	public class LoadResourcesSignal : Signal<PreloaderTypes>{}
+
 	public class GameStartSignal : Signal{}
 	public class GameOverSignal : Signal{}
 	//public class GameEndSignal : Signal{}
@@ -24,6 +27,8 @@ namespace strangeetnix
 
 	public class UpdateHudItemSignal : Signal<UpdateHudItemType, int>{}
 	public class UpdateGameCanvasSignal : Signal{}
+
+	public class UpdatePreloaderValueSignal : Signal<int>{}
 
 	//int - add value
 	//bool - is positive

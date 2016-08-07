@@ -14,7 +14,7 @@ namespace strangeetnix.game
 
 		public override void Execute ()
 		{
-			GameObject explosionStyle = Resources.Load<GameObject> ("fx/explosion");
+			GameObject explosionStyle = Resources.Load<GameObject> (AssetConfig.EXPLOSION.path);
 			GameObject explosionGO = GameObject.Instantiate (explosionStyle) as GameObject;
 			explosionGO.transform.localPosition = new Vector3(position.x, position.y, 0);
 			explosionGO.transform.parent = gameField.transform;

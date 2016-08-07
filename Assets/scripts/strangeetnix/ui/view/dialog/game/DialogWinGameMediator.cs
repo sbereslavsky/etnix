@@ -37,7 +37,7 @@ namespace strangeetnix.ui
 
 			gameModel.playerModel.updateConfigExp ();
 
-			gameConfig.Save ();
+			gameConfig.save ();
 
 			UpdateListeners(true);
 

@@ -6,8 +6,7 @@ namespace strangeetnix.game
 	public class BgAssetVO : IBgAssetVO
 	{
 		public int id { get; private set; }
-		public string name { get; private set; }
-		public string path { get; private set; }
+		public AssetPathData assetData { get; private set; }
 
 		public float startPosY { get; set; }
 		public float width { get; set; }
@@ -18,16 +17,15 @@ namespace strangeetnix.game
 		public Vector2 minXAndY { get; set; }
 		public Vector2 maxXAndY { get; set; }
 
-		public BgAssetVO (int id1, string name1, string path1)
+		public BgAssetVO (int id1, AssetPathData assetData1)
 		{
 			id = id1;
-			name = name1;
-			path = path1;
+			assetData = assetData1;
 		}
 
 		public IBgAssetVO clone()
 		{
-			IBgAssetVO result = new BgAssetVO (id, name, path);
+			IBgAssetVO result = new BgAssetVO (id, assetData.clone());
 			result.startPosY = startPosY;
 			result.width = width;
 

@@ -68,7 +68,6 @@ namespace strangeetnix.game
 
 	//int - wave id
 	public class EnterRoomSignal : Signal<int>{}
-
 	public class ExitRoomSignal : Signal{}
 
 	//bool - disabled camera

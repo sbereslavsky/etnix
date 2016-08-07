@@ -39,7 +39,7 @@ namespace strangeetnix.game
 		{
 			id = setId;
 			assetVO = gameConfig.assetConfig.getPlayerAssetById (id);
-			name = assetVO.name;
+			name = assetVO.assetData.id;
 			levelUp = false;
 
 			ICharInfoVO charInfoVO = gameConfig.charInfoConfig.getCharInfoVOById (id);

@@ -20,6 +20,9 @@ namespace strangeetnix.game
 		public IGameModel gameModel { get; set; }
 
 		[Inject]
+		public IResourceManager resourceManager { get; set; }
+
+		[Inject]
 		public UpdateHudItemSignal updateHudItemSignal { get; set; }
 
 		[Inject]
@@ -36,9 +39,9 @@ namespace strangeetnix.game
 			IAssetVO playerAssetVO = gameModel.playerModel.assetVO;
 
 			//add the player's ship
-			GameObject playerStyle = Resources.Load<GameObject> (playerAssetVO.path);
+			GameObject playerStyle = resourceManager.getResourceById(playerAssetVO.assetData);// Resources.Load<GameObject> (playerAssetVO.assetData.path);
 			GameObject playerGO = GameObject.Instantiate (playerStyle) as GameObject;
-			playerGO.name = playerAssetVO.name;
+			playerGO.name = playerAssetVO.assetData.id;
 			playerGO.tag = PlayerView.ID;
 			playerGO.transform.localPosition = new Vector3(position, gameModel.levelModel.bgAssetInfo.startPosY, -0.05f);
 			//playerGO.layer = LayerMask.NameToLayer("player");

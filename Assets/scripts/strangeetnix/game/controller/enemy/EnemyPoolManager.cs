@@ -18,10 +18,10 @@ namespace strangeetnix.game
 		public void addPool(ICharAssetVO charAssetVO)
 		{
 			IPool<GameObject> enemyPool = new Pool<GameObject> ();
-			enemyPool.instanceProvider = new ResourceInstanceProvider (charAssetVO.path);
+			enemyPool.instanceProvider = new ResourceInstanceProvider (charAssetVO.assetData.path);
 			enemyPool.inflationType = PoolInflationType.INCREMENT;
 
-			_poolList.Add (charAssetVO.name, enemyPool);
+			_poolList.Add (charAssetVO.assetData.id, enemyPool);
 		}
 
 		public void returnInstance(string key, GameObject enemy)

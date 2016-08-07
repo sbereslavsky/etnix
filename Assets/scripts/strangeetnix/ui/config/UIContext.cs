@@ -59,6 +59,7 @@ namespace strangeetnix.ui
 
 			injectionBinder.Bind<SwitchCanvasSignal> ().ToSingleton ().CrossContext();
 
+			commandBinder.Bind<AddPreloaderSignal> ().To<AddPreloaderCommand> ();
 			commandBinder.Bind<LoadDataSignal> ().To<LoadGameDataCommand> ();
 			commandBinder.Bind<SwitchCanvasSignal> ().To<SwitchCanvasCommand> ();
 
@@ -74,6 +75,7 @@ namespace strangeetnix.ui
 			//The details of **why** mediation is a good thing can be read in the faq:
 			//http://thirdmotion.github.io/strangeioc/faq.html#why-mediator
 
+			mediationBinder.Bind<PreloaderView> ().To<PreloaderMediator> ();
 			mediationBinder.Bind<MainCanvasView> ().To<MainCanvasMediator> ();
 			mediationBinder.Bind<GameCanvasView> ().To<GameCanvasMediator> ();
 			mediationBinder.Bind<DialogCharEditView>().To<DialogCharEditMediator>();

@@ -6,15 +6,17 @@ using UnityEngine.SceneManagement;
 using System.Collections;
 using System.Collections.Generic;
 using strange.extensions.signal.impl;
+using strangeetnix.ui;
 
 namespace strangeetnix.game
 {
 	public class GameConfig : IGameConfig
 	{  
 		public Signal loadedDataSignal { get; private set; }
+		public string persistanceUserDataPath { get; private set; }
 
 		private string _dataPath;
-		private string _persistanceUserDataPath;
+
 		private string _userDataPath;
 
 		public ILevelConfig levelConfig { get; private set; }
@@ -38,17 +40,22 @@ namespace strangeetnix.game
 		public GameConfig()
 		{	
 			loadedDataSignal = new Signal ();
+
+			initPathes ();
+
+			levelConfig = new LevelConfig ();
+			assetConfig = new AssetConfig ();
 		}
 
 		private void initPathes()
 		{
 			#if UNITY_EDITOR || UNITY_STANDALONE_WIN
-			_dataPath = Application.dataPath + "/StreamingAssets/data/";
-			_userDataPath = Application.dataPath + "/StreamingAssets/userData/";
+			_dataPath = Application.streamingAssetsPath + "/data/";
+			_userDataPath = Application.streamingAssetsPath + "/userData/";
 			#endif
 
 			#if UNITY_ANDROID && !UNITY_EDITOR
-			_persistanceUserDataPath = Application.persistentDataPath + "/" + GameConfigTypes.USER_DATA + ".json";
+			persistanceUserDataPath = Application.persistentDataPath + "/" + GameConfigTypes.USER_DATA + ".json";
 			_dataPath =  "jar:file://" + Application.dataPath + "!/assets/data/";
 			_userDataPath = "jar:file://" + Application.dataPath + "!/assets/userData/";
 			#endif
@@ -59,78 +66,52 @@ namespace strangeetnix.game
 			#endif
 		}
 
-		public void Load(IRoutineRunner routineRunner)
+		public void loadLocalConfigs()
 		{
-			initPathes ();
+			for (int i = 0; i < GameConfigTypes.list.Count; i++) {
+				readConfigFrom (GameConfigTypes.list[i]);
+			}
 
-			levelConfig = new LevelConfig ();
-			assetConfig = new AssetConfig ();
-
-			#if UNITY_EDITOR || UNITY_STANDALONE_WIN
-				readConfigFrom(GameConfigTypes.CHAR_INFO);
-				readConfigFrom(GameConfigTypes.CHAR_AB);
-				readConfigFrom(GameConfigTypes.CHAR_ALL);
-				readConfigFrom(GameConfigTypes.ENEMY);
-				readConfigFrom(GameConfigTypes.ITEMS);
-				readConfigFrom(GameConfigTypes.WAVES);
-				readConfigFrom(GameConfigTypes.WEAPONS);
-				readConfigFrom(GameConfigTypes.EQUIPED);
-				readConfigFrom(GameConfigTypes.LOCALIZATION);
-				readConfigFrom(GameConfigTypes.USER_DATA);
-			#elif UNITY_ANDROID
-				routineRunner.StartCoroutine (loadConfigCoroutine (GameConfigTypes.CHAR_INFO));
-				routineRunner.StartCoroutine (loadConfigCoroutine (GameConfigTypes.CHAR_AB));
-				routineRunner.StartCoroutine (loadConfigCoroutine (GameConfigTypes.CHAR_ALL));
-				routineRunner.StartCoroutine (loadConfigCoroutine (GameConfigTypes.ENEMY));
-				routineRunner.StartCoroutine (loadConfigCoroutine (GameConfigTypes.ITEMS));
-				routineRunner.StartCoroutine (loadConfigCoroutine (GameConfigTypes.WAVES));
-				routineRunner.StartCoroutine (loadConfigCoroutine (GameConfigTypes.WEAPONS));
-				routineRunner.StartCoroutine (loadConfigCoroutine (GameConfigTypes.EQUIPED));
-				routineRunner.StartCoroutine (loadConfigCoroutine (GameConfigTypes.LOCALIZATION));
-				if (System.IO.File.Exists (_persistanceUserDataPath)) {
-					readConfigFrom(GameConfigTypes.USER_DATA, _persistanceUserDataPath);
-				}
-				else {
-					routineRunner.StartCoroutine (loadConfigCoroutine (GameConfigTypes.USER_DATA));
-				}
-				
-			#endif
+			readConfigFrom(GameConfigTypes.USER_DATA);
 		}
 
-		private string getConfigPath(string configName)
+		public string getConfigPath(string configName, bool throughWww=false)
 		{
 			string configPath = (configName == GameConfigTypes.USER_DATA) ? _userDataPath : _dataPath;
 			string resultPath = configPath + configName + ".json";
+			#if UNITY_EDITOR || UNITY_STANDALONE_WIN
+			if (throughWww) {
+				resultPath = "file:///" + resultPath;
+			}
+			#endif
+
 			return resultPath;
 		}
 
 		//создание обьекта с которым можем работать из файла json
-		private void readConfigFrom(string id, string path=null) 
+		public void readConfigFrom(string id, string path=null, bool throughWww=false) 
 		{
-			string configPath = (path != null) ? path : getConfigPath (id);
+			string configPath = (path != null) ? path : getConfigPath (id, throughWww);
 			if (System.IO.File.Exists (configPath)) {
 				string linkstream = System.IO.File.ReadAllText (configPath);
 				JSONObject jsonConfig = new JSONObject (linkstream);
-				initConfig (id, jsonConfig);
+				initConfig (id, jsonConfig, true);
 			} else {
 				Debug.LogError ("Can't read " + id + " config!");
 			}
 		}
 
-		IEnumerator loadConfigCoroutine(string id)
+		public void parseStreamToJSON(WWW stream, string id)
 		{
-			string resultPath = getConfigPath (id);
-			WWW linkstream = new WWW(resultPath);
-			yield return linkstream;
-			if (!string.IsNullOrEmpty (linkstream.error)) {
+			if (!string.IsNullOrEmpty (stream.error)) {
 				Debug.LogError ("Can't read " + id + " config!");
 			} else {
-				JSONObject jsonConfig = new JSONObject(linkstream.text);
-				initConfig (id, jsonConfig);
+				JSONObject jsonConfig = new JSONObject(stream.text);
+				initConfig (id, jsonConfig, false);
 			}
-		}
+		}			
 
-		private void initConfig(string id, JSONObject jsonConfig)
+		private void initConfig(string id, JSONObject jsonConfig, bool readFromFile)
 		{
 			switch (id) {
 			case GameConfigTypes.CHAR_INFO:
@@ -165,13 +146,15 @@ namespace strangeetnix.game
 				break;
 			}
 
-			_configNum++;
-			if (_configNum == MAX_CONFIG) {
-				loadedDataSignal.Dispatch();
+			if (readFromFile) {
+				_configNum++;
+				if (_configNum == MAX_CONFIG) {
+					loadedDataSignal.Dispatch ();
+				}
 			}
 		}
 
-		public void Save()
+		public void save()
 		{
 			JSONObject userData = userCharConfig.getJSONObject ();
 			string text = userData.Print (true);
@@ -179,7 +162,7 @@ namespace strangeetnix.game
 			System.IO.File.WriteAllText (getConfigPath(GameConfigTypes.USER_DATA), text);
 			#elif UNITY_ANDROID && !UNITY_EDITOR
 			try {
-				System.IO.File.WriteAllText (_persistanceUserDataPath, text);
+				System.IO.File.WriteAllText (persistanceUserDataPath, text);
 			}
 			catch(Exception error) {
 				Debug.LogError ("Can't save file!");

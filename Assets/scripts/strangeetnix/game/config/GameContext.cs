@@ -99,6 +99,8 @@ namespace strangeetnix.game
 			//2. Binding a Signal to a Command automatically maps the signal for injection.
 			//   So it's only necessary to explicitly injectionBind Signals if they are NOT
 			//   mapped to Commands.
+			commandBinder.Bind<LoadResourcesSignal> ().To<LoadResourcesCommand> ();
+
 			commandBinder.Bind<AddHpSignal> ().To<AddHpCommand> ();
 			commandBinder.Bind<EnterRoomSignal> ().To<EnterRoomCommand> ();
 			commandBinder.Bind<ExitRoomSignal> ().To<ExitRoomCommand> ();
@@ -177,10 +179,9 @@ namespace strangeetnix.game
 			IEnemyPoolManager enemyPoolManager = (IEnemyPoolManager)injectionBinder.GetInstance<IEnemyPoolManager>();
 			if (gameConfig != null && enemyPoolManager != null) {
 				IAssetConfig assectConfig = gameConfig.assetConfig;
-				for (int i = 0; i < assectConfig.enemyAssetList.Count; i++) {
-					ICharAssetVO charAssetVO = assectConfig.enemyAssetList [i];
-					if (charAssetVO != null) {
-						enemyPoolManager.addPool (charAssetVO);
+				foreach (KeyValuePair<int, ICharAssetVO> asset in assectConfig.enemyAssetList) {
+					if (asset.Value != null) {
+						enemyPoolManager.addPool (asset.Value);
 					}
 				}
 			}

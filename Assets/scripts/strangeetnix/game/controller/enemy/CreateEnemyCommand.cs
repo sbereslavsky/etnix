@@ -44,7 +44,7 @@ namespace strangeetnix.game
 				IAssetVO enemyAssetVO = enemyModel.assetVO;
 
 				GameObject enemyGO = null;
-				IPool<GameObject> pool = enemyPoolManager.getPoolByKey (enemyAssetVO.name);
+				IPool<GameObject> pool = enemyPoolManager.getPoolByKey (enemyAssetVO.assetData.id);
 				if (pool != null) {
 					enemyGO = pool.GetInstance ();
 					//GameObject enemyStyle = Resources.Load<GameObject> (enemyAssetVO.path);
@@ -52,7 +52,7 @@ namespace strangeetnix.game
 					//GameObject enemyGO = GameObject.Instantiate (enemyStyle) as GameObject;
 
 					enemyGO.transform.localPosition = new Vector3 (position, gameModel.levelModel.bgAssetInfo.startPosY, 0f);
-					enemyGO.name = enemyAssetVO.name + gameModel.levelModel.enemyId;
+					enemyGO.name = enemyAssetVO.assetData.id + gameModel.levelModel.enemyId;
 					enemyGO.tag = EnemyView.ID;
 					enemyGO.SetActive (true);
 					if (enemyGO.transform.parent == null) {
@@ -64,7 +64,7 @@ namespace strangeetnix.game
 					}
 					EnemyView enemyView = enemyGO.GetComponent<EnemyView> ();
 					if (enemyView != null) {
-						enemyView.poolKey = enemyAssetVO.name;
+						enemyView.poolKey = enemyAssetVO.assetData.id;
 						gameModel.levelModel.enemyManager.addEnemyView (enemyView, routineRunner);
 					}
 				} else {

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using strange.extensions.mediation.impl;
 using UnityEngine;
 
@@ -20,40 +21,35 @@ namespace strangeetnix.game
 		//Constructor. Do all your startup stuff here
 		public override void OnRegister ()
 		{
-			addBackground (gameModel.levelModel.bgAssetInfo);
-			if (gameModel.isRoomLevel) {
-				Vector3 bgPos = _bgGO.gameObject.transform.localPosition;
-				bgPos.x = gameModel.playerPosX;
-				_bgGO.gameObject.transform.localPosition = bgPos;
-			}
+			initBackground (gameModel.levelModel.bgAssetInfo);
 		}
 
 		//OnRemove() is like a destructor/OnDestroy. Use it to clean up.
 		public override void OnRemove ()
 		{
 			destroyBackground ();
-
-			//gameInputSignal.RemoveListener (onGameInput);
 		}
 
 		private void destroyBackground()
 		{
 			if (_bgGO != null) {
-				Destroy (_bgGO);
+				Destroy (_bgGO.gameObject);
+				_bgGO = null;
 			}
 		}
 
-		private void addBackground(IAssetVO bgAssetVO)
+		private void initBackground(IAssetVO bgAssetVO)
 		{
-			_bgGO = createObject (bgAssetVO.name, bgAssetVO.path, Vector3.zero);
-		}
+			GameObject bgStyle = Resources.Load<GameObject> (bgAssetVO.assetData.path);
+			_bgGO = (GameObject)Instantiate (bgStyle, Vector3.zero, Quaternion.identity);
+			_bgGO.name = name;
+			_bgGO.transform.SetParent (view.gameObject.transform, false);
 
-		private GameObject createObject(string name, string path, Vector3 position)
-		{
-			GameObject obj = (GameObject)Instantiate (Resources.Load (path), position, Quaternion.identity);
-			obj.name = name;
-			obj.transform.SetParent (view.gameObject.transform, false);
-			return obj;
+			if (gameModel.isRoomLevel) {
+				Vector3 bgPos = _bgGO.gameObject.transform.localPosition;
+				bgPos.x = gameModel.playerPosX;
+				_bgGO.gameObject.transform.localPosition = bgPos;
+			}
 		}
 	}
 }

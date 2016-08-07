@@ -5,8 +5,7 @@ namespace strangeetnix.game
 	public interface IAssetVO
 	{
 		int id { get; }
-		string name { get; }
-		string path { get; }
+		AssetPathData assetData { get; }
 	}
 }
 

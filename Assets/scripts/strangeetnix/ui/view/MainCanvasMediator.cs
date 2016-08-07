@@ -48,6 +48,9 @@ namespace strangeetnix.ui
 		public ChoosePlayerSignal choosePlayerSignal { get; set; }
 
 		[Inject]
+		public LoadResourcesSignal loadResourcesSignal { get; set; }
+
+		[Inject]
 		public GameInputSignal gameInputSignal{ get; set; }
 
 		private const int MAX_ITEMS_COUNT = 3;
@@ -56,9 +59,10 @@ namespace strangeetnix.ui
 		{
 			UpdateListeners(true);
 
-			for (int i = 1; i <= MAX_ITEMS_COUNT; i++) {
+			//disable show free dialogs
+			/*for (int i = 1; i <= MAX_ITEMS_COUNT; i++) {
 				initDialogCharList (i);
-			}
+			}*/
 
 			if (gameConfig.userCharConfig == null) {
 				loadDataSignal.Dispatch ();
@@ -106,6 +110,7 @@ namespace strangeetnix.ui
 
 		private void onLoadedGameData()
 		{
+			destroyPanels ();
 			for (byte i = 0; i < gameConfig.userCharConfig.list.Count; i++) {
 				IUserCharVO userCharVO = gameConfig.userCharConfig.list[i];
 				if (userCharVO.classId > 0 && i < MAX_ITEMS_COUNT) {
@@ -145,9 +150,13 @@ namespace strangeetnix.ui
 			destroyPanels ();
 			gameModel.playerId = playerId;
 			gameModel.initLevelData (gameConfig);
-			gameStartSignal.Dispatch ();
 
+			#if UNITY_EDITOR || UNITY_STANDALONE_WIN
+			gameStartSignal.Dispatch ();
 			switchCanvasSignal.Dispatch (UIStates.GAME);
+			#elif UNITY_ANDROID || UNITY_IPHONE
+			loadResourcesSignal.Dispatch(PreloaderTypes.MAIN);
+			#endif
 		}
 
 		private void onCloseDialogCharEdit()

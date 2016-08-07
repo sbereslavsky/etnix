@@ -74,7 +74,7 @@ namespace strangeetnix
 			if (www.error == null) {
 				//OK
 			} else {
-				//Error
+				Debug.LogError (www.error);
 			}
 			sema = false;
 		}

@@ -73,7 +73,7 @@ namespace strangeetnix.ui
 				value = view.getDropDownText (view.dropDownItem3);
 				_userCharVO.itemId3 = gameConfig.itemConfig.getIdByInfo (value);
 
-				gameConfig.Save ();
+				gameConfig.save ();
 			}
 
 			view.clearDropDowns ();

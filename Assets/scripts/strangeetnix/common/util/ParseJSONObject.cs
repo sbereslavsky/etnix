@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 public class ParseJSONObject
 {
@@ -83,6 +84,18 @@ public class ParseJSONObject
 		} else if (fieldData.IsNumber) {
 			fieldData.i = Convert.ToInt32 (value);
 		}
+	}
+
+	protected List<int> convertStringToList(string value)
+	{
+		List<int> result = new List<int> ();
+		if (value != null && value.Length > 0) {
+			string[] ids = value.Split (',');
+			for (byte i = 0; i < ids.Length; i++) {
+				result.Add (Convert.ToInt32(ids.GetValue(i)));
+			}
+		}
+		return result;
 	}
 }
 

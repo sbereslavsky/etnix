@@ -3,6 +3,8 @@ using UnityEngine;
 using strange.extensions.command.impl;
 using strange.extensions.context.api;
 
+using strangeetnix.game;
+
 namespace strangeetnix.ui
 {
 	public class SwitchCanvasCommand : Command
@@ -13,18 +15,14 @@ namespace strangeetnix.ui
 		[Inject]
 		public UIStates state{ get; set; }
 
-		private string CANVAS_GAME = "GameCanvas";
-		private string CANVAS_MAIN = "MainCanvas";
-		private string FOLDER_UI   = "ui/";
-
 		public override void Execute ()
 		{
 			if (state == UIStates.GAME) {
-				destroyCanvas (CANVAS_MAIN);
-				createCanvas (CANVAS_GAME);
+				destroyCanvas (AssetConfig.CANVAS_MAIN.id);
+				createCanvas (AssetConfig.CANVAS_GAME);
 			} else {
-				destroyCanvas (CANVAS_GAME);
-				createCanvas (CANVAS_MAIN);
+				destroyCanvas (AssetConfig.CANVAS_GAME.id);
+				createCanvas (AssetConfig.CANVAS_MAIN);
 			}
 		}
 
@@ -36,13 +34,13 @@ namespace strangeetnix.ui
 			}
 		}
 
-		private void createCanvas(string name)
+		private void createCanvas(AssetPathData assetPathData)
 		{
 			GameObject canvasStyle;
 			GameObject canvasGO;
-			canvasStyle = Resources.Load<GameObject> (FOLDER_UI+name);
+			canvasStyle = Resources.Load<GameObject> (assetPathData.path);
 			canvasGO = GameObject.Instantiate (canvasStyle) as GameObject;
-			canvasGO.name = name;
+			canvasGO.name = assetPathData.id;
 			canvasGO.transform.SetParent(contextView.transform, false);
 		}
 	}

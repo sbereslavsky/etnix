@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 namespace strangeetnix.game
 {
@@ -18,5 +19,7 @@ namespace strangeetnix.game
 		public const string LOCALIZATION 	= "localisation";
 
 		public const string USER_DATA	 	= "userData";
+
+		public static List<string> list = new List<string> { CHAR_AB, CHAR_ALL, CHAR_INFO, ENEMY, ITEMS, WAVES, WEAPONS, EQUIPED, LOCALIZATION };
 	}
 }
