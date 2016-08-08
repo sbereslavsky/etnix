@@ -7,9 +7,14 @@ namespace strangeetnix
 {
 	public interface IResourceManager
 	{
-		void addResorceToLoad (AssetPathData assetData);
-		GameObject getResourceById(AssetPathData assetData);
-		void startLoad (PreloaderTypes preloaderType);
+		int resourceLoadCount { get; }
+
+		void addAssetDataToLoad (AssetPathData assetData);
+		void initRequests (PreloaderTypes preloaderType);
+		void startLoad ();
+		void callbackAfterLoad ();
+
+		GameObject getResourceByAssetData (AssetPathData assetData);
 	}
 }
 

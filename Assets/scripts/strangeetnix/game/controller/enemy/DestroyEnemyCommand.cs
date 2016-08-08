@@ -97,12 +97,14 @@ namespace strangeetnix.game
 			yield return new WaitForSeconds (delayToDestroy+0.1f);
 
 			//...and RETURN THEM TO THE POOL!
-			enemyView.gameObject.transform.localPosition = PARKED_POS;
-			enemyView.gameObject.SetActive (false);
-			enemyPoolManager.returnInstance(enemyView.poolKey, enemyView.gameObject);
-			enemyView.destroyComponent ();
+			if (enemyView != null && enemyView.gameObject != null) {
+				enemyView.gameObject.transform.localPosition = PARKED_POS;
+				enemyView.gameObject.SetActive (false);
+				enemyPoolManager.returnInstance (enemyView.poolKey, enemyView.gameObject);
+				enemyView.destroyComponent ();
 
-			onCoroutineComplete ();
+				onCoroutineComplete ();
+			}
 			Release ();
 		}
 

@@ -51,56 +51,21 @@ namespace strangeetnix
 			foreach (KeyValuePair<string, WWW> configLoader in _configLoaderList) {
 				routineRunner.StartCoroutine (loadConfig (configLoader.Key, configLoader.Value));
 			}
-
-			//routineRunner.StartCoroutine (updateStatus());
 		}
 
 		private void initLoader(string id) 
 		{
-			string resultPath = gameConfig.getConfigPath (id);
+			string resultPath = gameConfig.getConfigPath (id, true);
 			WWW configLoader = new WWW(resultPath);
 			_configLoaderList.Add (id, configLoader);
 		}
 
-		IEnumerator updateStatus()
-		{
-			int percent = 0;
-			while (percent < PERCENT_COMPLETE) {
-				percent = getSumPercent ();
-				Debug.Log ("ConfigManager.updateStatus, percent = "+percent.ToString());
-				updatePreloaderValueSignal.Dispatch (percent); 
-				yield return 0;
-			}
-
-			yield return true;
-			Debug.Log ("ConfigManager.updateStatus, complete!!!");
-			foreach (KeyValuePair<string, WWW> configLoader in _configLoaderList) {
-				if (configLoader.Value.error == null) {
-					Debug.Log ("ConfigManager.updateStatus, parseToData, key = "+configLoader.Key);
-					gameConfig.parseStreamToJSON (configLoader.Value, configLoader.Key);
-				} else {
-					Debug.Log ("ConfigManager.updateStatus, error = " + configLoader.Value.error + ". load key = "+configLoader.Key);
-					gameConfig.readConfigFrom (configLoader.Key, null, true);
-				}
-			}
-
-			clear ();
-			destroyPreloaderSignal.Dispatch ();
-			gameConfig.loadedDataSignal.Dispatch ();
-		}
-
 		IEnumerator loadConfig(string id, WWW configLoader)
 		{
-			int percent = 0;
-			while (!configLoader.isDone)
-			{
-				percent = getSumPercent ();
-				updatePreloaderValueSignal.Dispatch (percent); 
-				yield return null;
-			}
+			yield return configLoader;
 
-			yield return true;
-			percent = getSumPercent ();
+			_count++;
+			int percent = (int) (_count*100/_listCount);
 			updatePreloaderValueSignal.Dispatch (percent); 
 
 			if (configLoader.error == null) {
@@ -109,29 +74,13 @@ namespace strangeetnix
 				gameConfig.readConfigFrom (id);
 			}
 
-			_count++;
 			if (_count == _listCount) {
+				yield return new WaitForSeconds (0.5f);
 				//close preloader
 				clear ();
 				destroyPreloaderSignal.Dispatch ();
 				gameConfig.loadedDataSignal.Dispatch ();
 			}
-		}
-
-		private int getSumPercent()
-		{
-			float sumPercent = 0;
-			int count = _configLoaderList.Count;
-			foreach (KeyValuePair<string, WWW> configLoader in _configLoaderList) {
-				if (configLoader.Value.error != null) {
-					count--;
-				} else {
-					sumPercent += configLoader.Value.progress;
-				}
-			}
-
-			float result = sumPercent / count;
-			return (int) result * 100;
 		}
 
 		private void clear()

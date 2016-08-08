@@ -12,7 +12,7 @@ namespace strangeetnix.ui
 		internal void setText(int value)
 		{
 			Debug.Log ("PreloaderView.setText - " + value.ToString ());
-			textTitle.text = "Loading: " + value.ToString ();
+			textTitle.text = "Loading: " + value.ToString ()+"%";
 		}
 	}
 }

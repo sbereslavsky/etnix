@@ -38,72 +38,61 @@ namespace strangeetnix
 		private Dictionary<string, ResourceRequest> _resourceDataList = new Dictionary<string, ResourceRequest>();
 
 		private int _count = 0;
+		public int resourceLoadCount { get; private set; }
 		private PreloaderTypes _preloaderType;
 
-		public void addResorceToLoad (AssetPathData assetData)
+		public void addAssetDataToLoad (AssetPathData assetData)
 		{
 			if (!_resourceDataList.ContainsKey (assetData.id)) {
 				_assetDataList.Add (assetData);
 			}
 		}
 
-		public GameObject getResourceById(AssetPathData assetData)
-		{
-			if (_resourceDataList.ContainsKey(assetData.id)) {
-				return (GameObject)_resourceDataList [assetData.id].asset;
-			}
-
-			return (GameObject) Resources.Load (assetData.path);
-		}
-
-		public void startLoad(PreloaderTypes preloaderType)
+		public void initRequests(PreloaderTypes preloaderType)
 		{
 			_preloaderType = preloaderType;
+			Debug.Log ("ResourceManager.initRequests, type = "+_preloaderType.ToString());
+			resourceLoadCount = 0;
+
 			for (int i = 0; i < _assetDataList.Count; i++) {
 				initType (_assetDataList[i]);
 			}
+		}
 
+		public void startLoad()
+		{
+			Debug.Log ("ResourceManager.startLoad");
+			_count = 0;
 			foreach (KeyValuePair<string, ResourceRequest> resourceData in _resourceDataList) {
-				routineRunner.StartCoroutine (loadResource (resourceData.Value));
+				if (!resourceData.Value.isDone) {					
+					routineRunner.StartCoroutine (loadResource (resourceData.Value));
+				}
 			}
-
-			//routineRunner.StartCoroutine (onLoading ());
 		}
 
 		private void initType(AssetPathData assetData)
 		{
 			ResourceRequest request = Resources.LoadAsync<GameObject> (assetData.path);
 			_resourceDataList.Add (assetData.id, request);
-		}
-
-		IEnumerator onLoading()
-		{
-			int percent = 0;
-			while (percent < 100) {
-				percent = getSumPercent ();
-				updatePreloaderValueSignal.Dispatch (percent);
-				yield return new WaitForSeconds(0.1f);
-			}
-
-			yield return true;
-			onComplete();
+			resourceLoadCount++;
 		}
 
 		IEnumerator loadResource(ResourceRequest resourceRequest)
 		{
-			int percent = 0;
-			while (!resourceRequest.isDone)
-			{
-				percent = getSumPercent ();
-				updatePreloaderValueSignal.Dispatch (percent);
-				yield return null;
-			}
+			yield return resourceRequest;
 
-			yield return true;
 			_count++;
-			if (_count == _assetDataList.Count) {
-				//close preloader
-				onComplete();
+			if (_assetDataList.Count > 0) {
+				int percent = (int)(_count * 100 / _assetDataList.Count);
+				updatePreloaderValueSignal.Dispatch (percent);
+
+				if (_count == resourceLoadCount) {
+					yield return new WaitForSeconds (0.5f);
+					//close preloader
+					onComplete ();
+				}
+			} else {
+				Debug.LogWarning ("ResourceManager.loadResource with null _assetDataList!");
 			}
 		}
 
@@ -112,6 +101,11 @@ namespace strangeetnix
 			clear ();
 			destroyPreloaderSignal.Dispatch ();
 
+			callbackAfterLoad ();
+		}
+
+		public void callbackAfterLoad()
+		{
 			switch (_preloaderType) {
 			case PreloaderTypes.MAIN:
 				gameStartSignal.Dispatch ();
@@ -123,21 +117,19 @@ namespace strangeetnix
 			}
 		}
 
-		private int getSumPercent()
+		public GameObject getResourceByAssetData(AssetPathData assetData)
 		{
-			float sumPercent = 0;
-			int count = _resourceDataList.Count;
-			foreach (KeyValuePair<string, ResourceRequest> resourceData in _resourceDataList) {
-				sumPercent += resourceData.Value.progress;
+			if (_resourceDataList.ContainsKey(assetData.id)) {
+				return (GameObject)_resourceDataList [assetData.id].asset;
 			}
 
-			float result = sumPercent / count;
-			return (int) result * 100;
+			return (GameObject) Resources.Load (assetData.path);
 		}
 
 		private void clear()
 		{
 			_count = 0;
+			resourceLoadCount = 0;
 			_assetDataList.Clear ();
 		}
 	}

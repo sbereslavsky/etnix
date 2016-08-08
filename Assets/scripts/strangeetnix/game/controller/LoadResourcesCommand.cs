@@ -28,24 +28,36 @@ namespace strangeetnix.game
 
 		public override void Execute()
 		{
-			addPreloaderSignal.Dispatch (preloaderType);
-
-			if (!gameModel.levelModel.hasEnemy) {
+			List<AssetPathData> assetDataList = null;
+			switch (preloaderType) {
+			case PreloaderTypes.MAIN:
 				gameConfig.assetConfig.initMainAssets (gameModel.playerId);
-			}
-			else {
+				assetDataList = gameConfig.assetConfig.villageAssetDataList;
+				break;
+			case PreloaderTypes.GAME:
 				int waveId = gameModel.waveId;
 				IWaveVO waveVO = gameConfig.waveConfig.getWaveVOById (waveId);
 
 				gameConfig.assetConfig.initGameAssets (waveVO.enemy_unique_id_list);
+				assetDataList = gameConfig.assetConfig.churchAssetDataList;
+				break;
+
 			}
 
-			List<AssetPathData> assetDataList = (gameModel.levelModel.hasEnemy) ? gameConfig.assetConfig.churchAssetDataList : gameConfig.assetConfig.villageAssetDataList;
-			for (int i = 0; i < assetDataList.Count; i++) {
-				resourceManager.addResorceToLoad (assetDataList [i]);
+			if (assetDataList != null) {
+				for (int i = 0; i < assetDataList.Count; i++) {
+					resourceManager.addAssetDataToLoad (assetDataList [i]);
+				}
+
+				resourceManager.initRequests (preloaderType);
 			}
 
-			resourceManager.startLoad (preloaderType);
+			if (resourceManager.resourceLoadCount > 0) {
+				addPreloaderSignal.Dispatch (preloaderType);
+				resourceManager.startLoad ();
+			} else {
+				resourceManager.callbackAfterLoad ();
+			}
 		}
 	}
 }

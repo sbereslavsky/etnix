@@ -120,8 +120,6 @@ namespace strangeetnix.game
 				}
 			}
 
-			churchAssetDataList.Add (EXPLOSION);
-
 			churchAssetDataList.Add (DIALOG_WIN_GAME);
 			churchAssetDataList.Add (DIALOG_LOSE_GAME);
 		}
