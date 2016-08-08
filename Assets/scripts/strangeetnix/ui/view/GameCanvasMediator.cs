@@ -163,7 +163,7 @@ namespace strangeetnix.ui
 			}
 
 			if (dialogData != null) {				
-				GameObject dialogStyle = resourceManager.getResourceById (dialogData);
+				GameObject dialogStyle = resourceManager.getResourceByAssetData (dialogData);
 				GameObject dialogGO = view.addDialog (dialogStyle, dialogData.id);
 				ITransformDialogView dialogView = dialogGO.GetComponent<TransformDialogView> ();
 				dialogView.updateBgTransform(_rectTransform);

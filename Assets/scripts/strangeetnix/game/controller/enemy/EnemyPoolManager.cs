@@ -8,6 +8,9 @@ namespace strangeetnix.game
 {
 	public class EnemyPoolManager : IEnemyPoolManager
 	{
+		[Inject]
+		public IResourceManager resourceManager { get; set; }
+
 		private Dictionary<string, IPool<GameObject>> _poolList;
 
 		public EnemyPoolManager ()
@@ -18,7 +21,7 @@ namespace strangeetnix.game
 		public void addPool(ICharAssetVO charAssetVO)
 		{
 			IPool<GameObject> enemyPool = new Pool<GameObject> ();
-			enemyPool.instanceProvider = new ResourceInstanceProvider (charAssetVO.assetData.path);
+			enemyPool.instanceProvider = new ResourceInstanceProvider (charAssetVO.assetData, resourceManager);
 			enemyPool.inflationType = PoolInflationType.INCREMENT;
 
 			_poolList.Add (charAssetVO.assetData.id, enemyPool);

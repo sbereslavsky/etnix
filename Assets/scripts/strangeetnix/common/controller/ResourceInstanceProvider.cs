@@ -7,6 +7,8 @@ using System;
 using strange.framework.api;
 using UnityEngine;
 
+using strangeetnix.game;
+
 namespace strangeetnix
 {
 	public class ResourceInstanceProvider : IInstanceProvider
@@ -15,7 +17,9 @@ namespace strangeetnix
 		GameObject prototype;
 
 		//The name of the resource in Unity's resources folder
-		private string resourcePath;
+		private AssetPathData _assetData;
+
+		private IResourceManager _resourceManager;
 		//The render layer to which the GameObjects will be assigned
 		//private int layer;
 		//An id tacked on to the name to make it easier to track individual instances
@@ -24,9 +28,10 @@ namespace strangeetnix
 		//Each time, we provide the name of the prefab we're loading from
 		//a resources folder, and the layer to which the resulting instance
 		//
-		public ResourceInstanceProvider(string path)
+		public ResourceInstanceProvider(AssetPathData assetData, IResourceManager resourceManager)
 		{
-			resourcePath = path;
+			_assetData = assetData;
+			_resourceManager = resourceManager;
 		}
 
 		#region IInstanceProvider implementation
@@ -44,7 +49,8 @@ namespace strangeetnix
 			if (prototype == null)
 			{
 				//Get the resource from Unity
-				prototype = Resources.Load<GameObject> (resourcePath);
+				//prototype = Resources.Load<GameObject> (resourcePath);
+				prototype = _resourceManager.getResourceByAssetData(_assetData);
 				prototype.transform.localScale = Vector3.one;
 			}
 
