@@ -11,7 +11,8 @@ namespace strangeetnix.ui
 		WIN_GAME,
 		LOSE_GAME,
 		PAUSE_GAME,
-		CHOOSE_WAVE
+		CHOOSE_WAVE,
+		WEAPON_EDIT
 	}
 }
 

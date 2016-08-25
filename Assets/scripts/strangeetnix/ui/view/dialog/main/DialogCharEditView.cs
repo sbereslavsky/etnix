@@ -19,11 +19,6 @@ namespace strangeetnix.ui
 		public Text textExp;
 		public Text textPlayerInfo;
 
-		public Dropdown dropDownEquiped;
-		public Dropdown dropDownWeapon;
-		public Dropdown dropDownItem2;
-		public Dropdown dropDownItem3;
-
 		public InputField inputField;
 
 		public Button buttonAddExp;
@@ -47,28 +42,11 @@ namespace strangeetnix.ui
 
 			List<string> info_names = gameConfig.weaponConfig.getInfoListByOwnerId (userCharVO.classId);
 
-			int weaponId = (info_names.Count < userCharVO.weaponId) ? userCharVO.weaponId / info_names.Count : userCharVO.weaponId;
-			initDropDown (dropDownWeapon, info_names, weaponId-1);
-			initDropDown (dropDownItem2, gameConfig.itemConfig.info_names, userCharVO.itemId2-1);
-			initDropDown (dropDownItem3, gameConfig.itemConfig.info_names, userCharVO.itemId3-1);
-			initDropDown (dropDownEquiped, gameConfig.equipedConfig.info_names, userCharVO.equipedId-1);
-
-			dropDownWeapon.onValueChanged.AddListener(delegate {
-				myDropdownValueChangedHandler(dropDownWeapon);
-			});
-
 			updatePlayerInfo ();
 
 			buttonAddExp.onClick.AddListener (addExp);
 			buttonSaveAndExit.onClick.AddListener (saveAndExit);
 			buttonExit.onClick.AddListener (exit);
-		}
-
-		private void myDropdownValueChangedHandler(Dropdown target) 
-		{
-			string value = getDropDownText (target);
-			_userCharVO.weaponId = _gameConfig.weaponConfig.getIdByInfo (value);
-			updatePlayerInfo ();
 		}
 
 		public void updatePlayerInfo()
@@ -82,30 +60,6 @@ namespace strangeetnix.ui
 			textName.text = userCharInfoVO.name;
 			textLevel.text = userCharInfoVO.level + " level. Hp: " + userCharInfoVO.hp;
 			textExp.text = TITLE_EXP + userCharInfoVO.exp;
-		}
-
-		private void initDropDown(Dropdown dropDown, List<string> values, int selectable = 0)
-		{
-			if (dropDown != null && values != null && values.Count > 0) {
-				dropDown.options.Clear ();
-
-				if (values != null && values.Count > 0) {
-					foreach (string c in values) {
-						dropDown.options.Add (new Dropdown.OptionData () { text = c });
-					}
-
-					if (selectable == 0 || dropDown.options.Count < selectable) {
-						int TempInt = dropDown.value;
-						dropDown.value = dropDown.value + 1;
-						dropDown.value = TempInt;
-					} else {
-						dropDown.value = selectable;
-					}
-
-				} else {
-					Destroy (dropDown);
-				}
-			}
 		}
 
 		private void saveAndExit()
@@ -126,21 +80,6 @@ namespace strangeetnix.ui
 				addExpSignal.Dispatch (addValue);
 				updatePlayerInfo ();
 			}
-		}
-
-		public void clearDropDowns()
-		{
-			dropDownEquiped.options.Clear ();
-			dropDownWeapon.options.Clear ();
-			dropDownItem2.options.Clear ();
-			dropDownItem3.options.Clear ();
-		}
-
-		public string getDropDownText(Dropdown dropDown)
-		{
-			int selectId = dropDown.value;
-			string result = dropDown.options [selectId].text;
-			return result;
 		}
 	}
 }

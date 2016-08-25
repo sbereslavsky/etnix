@@ -31,6 +31,7 @@ namespace strangeetnix.game
 		public static AssetPathData DIALOG_WIN_GAME 	= new AssetPathData ("DialogWinGame", FOLDER_UI);
 		public static AssetPathData DIALOG_LOSE_GAME 	= new AssetPathData ("DialogLoseGame", FOLDER_UI);
 		public static AssetPathData DIALOG_CHOOSE_WAVE 	= new AssetPathData ("DialogChooseWave", FOLDER_UI);
+		public static AssetPathData DIALOG_WEAPON_EDIT 	= new AssetPathData ("DialogWeaponEdit", FOLDER_UI);
 
 		public static AssetPathData PRELOADER		= new AssetPathData ("Preloader", FOLDER_UI);
 		public static AssetPathData EXPLOSION		= new AssetPathData ("explosion", FOLDER_FX);

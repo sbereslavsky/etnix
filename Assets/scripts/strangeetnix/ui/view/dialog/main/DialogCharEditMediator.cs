@@ -64,19 +64,9 @@ namespace strangeetnix.ui
 		private void onCloseDialog(bool isSave)
 		{
 			if (isSave) {
-				string value = view.getDropDownText (view.dropDownWeapon);
-				_userCharVO.weaponId = gameConfig.weaponConfig.getIdByInfo (value);
-				value = view.getDropDownText (view.dropDownEquiped);
-				_userCharVO.equipedId = gameConfig.equipedConfig.getIdByInfo (value);
-				value = view.getDropDownText (view.dropDownItem2);
-				_userCharVO.itemId2 = gameConfig.itemConfig.getIdByInfo (value);
-				value = view.getDropDownText (view.dropDownItem3);
-				_userCharVO.itemId3 = gameConfig.itemConfig.getIdByInfo (value);
-
 				gameConfig.save ();
 			}
 
-			view.clearDropDowns ();
 			closeEditPanelSignal.Dispatch ();
 		}
 	}

@@ -73,7 +73,7 @@ namespace strangeetnix.ui
 			updatePlayerHP (_startPlayerHp);
 			updatePlayerExp (gameModel.playerModel.exp);
 			updateLevel (_level);
-			//onUpdateCooldown (gameModel.playerModel.cooldown);
+			updateCoins ();
 			//onScoreUpdate (0);
 			//onEnemyHpUpdate (0, 1);
 		}
@@ -99,10 +99,9 @@ namespace strangeetnix.ui
 				showRoomButtonSignal.AddListener (onShowRoomButton);
 
 				view.clickButtonSignal.AddListener (onClickButton);
-				view.exitButtonSignal.AddListener (onExitButton);
-				view.restartButtonSignal.AddListener (onRestartGame);
 				view.pauseButtonSignal.AddListener (onPauseGame);
 				view.chooseWaveSignal.AddListener (onChooseWave);
+				view.weaponEditSignal.AddListener (onWeaponEdit);
 			} else {
 				//updateScoreSignal.RemoveListener (onScoreUpdate);
 				updateHudItemSignal.RemoveListener (onUpdateHudItem);
@@ -117,10 +116,9 @@ namespace strangeetnix.ui
 				showRoomButtonSignal.RemoveListener (onShowRoomButton);
 
 				view.clickButtonSignal.RemoveListener (onClickButton);
-				view.exitButtonSignal.RemoveListener (onExitButton);
-				view.restartButtonSignal.RemoveListener (onRestartGame);
 				view.pauseButtonSignal.RemoveListener (onPauseGame);
 				view.chooseWaveSignal.RemoveListener (onChooseWave);
+				view.weaponEditSignal.RemoveListener (onWeaponEdit);
 			}
 		}
 
@@ -160,6 +158,9 @@ namespace strangeetnix.ui
 			case DialogType.CHOOSE_WAVE:
 				dialogData = AssetConfig.DIALOG_CHOOSE_WAVE;
 				break;
+			case DialogType.WEAPON_EDIT:
+				dialogData = AssetConfig.DIALOG_WEAPON_EDIT;
+				break;
 			}
 
 			if (dialogData != null) {				
@@ -180,6 +181,11 @@ namespace strangeetnix.ui
 		private void onPauseGame()
 		{
 			onAddDialog (DialogType.PAUSE_GAME);
+		}
+
+		private void onWeaponEdit()
+		{
+			onAddDialog (DialogType.WEAPON_EDIT);
 		}
 
 		private void onChooseWave()
@@ -228,7 +234,6 @@ namespace strangeetnix.ui
 						} else {
 							_player.startHit1 ();
 						}
-						//onUpdateCooldown (gameModel.playerModel.cooldown);
 						break;
 					}
 				}
@@ -249,8 +254,8 @@ namespace strangeetnix.ui
 			case UpdateHudItemType.LEVEL:
 				updateLevel (value);
 				break;
-			case UpdateHudItemType.SCORE:
-				//view.SetScore (value);
+			case UpdateHudItemType.COIN:
+				updateCoins ();
 				break;
 			case UpdateHudItemType.HP:
 				updatePlayerHP (value);
@@ -259,6 +264,11 @@ namespace strangeetnix.ui
 				updatePlayerExp (value);
 				break;
 			}
+		}
+
+		private void updateCoins()
+		{
+			view.SetCoins (gameModel.coins);
 		}
 
 		private void updateLevel(int value)

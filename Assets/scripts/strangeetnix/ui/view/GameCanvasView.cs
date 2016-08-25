@@ -22,14 +22,14 @@ namespace strangeetnix.ui
 
 		public GameUIButton buttonAddHp;
 
-		public Button buttonExit;
-		public Button buttonRestart;
+		public Button buttonWeapon;
 
 		//public Text nameText;
 		public Text hpText;
 		public Text expText;
 		//public Text scoreText;
 		public Text levelText;
+		public Text coinText;
 
 		public RectTransform playerHpBar;
 		public RectTransform playerExpBar;
@@ -47,8 +47,7 @@ namespace strangeetnix.ui
 
 		internal Signal<ButtonType> clickButtonSignal = new Signal<ButtonType>();
 		internal Signal pauseButtonSignal = new Signal();
-		internal Signal exitButtonSignal = new Signal();
-		internal Signal restartButtonSignal = new Signal();
+		internal Signal weaponEditSignal = new Signal();
 		internal Signal chooseWaveSignal = new Signal();
 
 		internal void init(ILocalizationConfig localizationConfig)
@@ -92,8 +91,7 @@ namespace strangeetnix.ui
 				buttonAddHp.onClick.AddListener (onAddHp);
 
 				buttonPause.onClick.AddListener (onPauseGame);
-				buttonExit.onClick.AddListener (onExitGame);
-				buttonRestart.onClick.AddListener (onRestartGame);
+				buttonWeapon.onClick.AddListener (onShowWeapon);
 			} 
 			else {
 				buttonRight.pointerDownSignal.RemoveListener (onRightButtonDown);
@@ -108,8 +106,7 @@ namespace strangeetnix.ui
 				buttonAddHp.onClick.RemoveListener (onAddHp);
 
 				buttonPause.onClick.RemoveListener (onPauseGame);
-				buttonExit.onClick.RemoveListener (onExitGame);
-				buttonRestart.onClick.RemoveListener (onRestartGame);
+				buttonWeapon.onClick.RemoveListener (onShowWeapon);
 			}
 		}
 
@@ -138,6 +135,11 @@ namespace strangeetnix.ui
 			} else {
 				buttonHit.restart ();
 			}
+		}
+
+		internal void SetCoins(int value)
+		{
+			coinText.text = value.ToString();
 		}
 
 		internal void SetLevel(int value)
@@ -200,16 +202,6 @@ namespace strangeetnix.ui
 			pauseButtonSignal.Dispatch ();
 		}
 
-		private void onExitGame()
-		{
-			exitButtonSignal.Dispatch ();
-		}
-
-		private void onRestartGame()
-		{
-			restartButtonSignal.Dispatch ();
-		}
-
 		private void onAddHp()
 		{
 			clickButtonSignal.Dispatch (ButtonType.ADD_HP);
@@ -235,6 +227,11 @@ namespace strangeetnix.ui
 			if (buttonHit.isFilled) {
 				clickButtonSignal.Dispatch (ButtonType.HIT);
 			}
+		}
+
+		private void onShowWeapon()
+		{
+			weaponEditSignal.Dispatch ();
 		}
 
 		private void onShowChooseWave()

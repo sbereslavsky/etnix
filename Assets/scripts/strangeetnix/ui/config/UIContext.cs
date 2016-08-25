@@ -82,6 +82,7 @@ namespace strangeetnix.ui
 			mediationBinder.Bind<DialogCharInfoView>().To<DialogCharInfoMediator>();
 			mediationBinder.Bind<DialogCharListView>().To<DialogCharListMediator>();
 
+			mediationBinder.Bind<DialogWeaponEditView>().To<DialogWeaponEditMediator>();
 			mediationBinder.Bind<DialogPauseGameView>().To<DialogPauseGameMediator>();
 			mediationBinder.Bind<DialogWinGameView>().To<DialogWinGameMediator>();
 			mediationBinder.Bind<DialogLoseGameView>().To<DialogLoseGameMediator>();
