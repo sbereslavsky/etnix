@@ -1,13 +1,34 @@
 fileFormatVersion: 2
 guid: 8c219e8970b8fd8469b2dd5b0d4060e3
-timeCreated: 1470763300
+timeCreated: 1472042525
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: pickup_coin_0
+    21300002: pickup_coin_1
+    21300004: pickup_coin_2
+    21300006: pickup_coin_3
+    21300008: pickup_coin_4
+    21300010: pickup_coin_5
+    21300012: pickup_coin_6
+    21300014: pickup_coin_7
+    21300016: pickup_coin_8
+    21300018: pickup_coin_9
+    21300020: pickup_coin_10
+    21300022: pickup_coin_11
+    21300024: pickup_coin_12
+    21300026: pickup_coin_13
+    21300028: pickup_coin_14
+    21300030: pickup_coin_15
+    21300032: pickup_coin_16
+    21300034: pickup_coin_17
+    21300036: pickup_coin_18
+    21300038: pickup_coin_19
+    21300040: pickup_coin_20
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
@@ -30,7 +51,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -38,7 +59,7 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -46,10 +67,285 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
+  spriteTessellationDetail: -1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pickup_coin_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 136
+        width: 114
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pickup_coin_1
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 136
+        width: 115
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pickup_coin_2
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 136
+        width: 107
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pickup_coin_3
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 136
+        width: 90
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pickup_coin_4
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 136
+        width: 70
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pickup_coin_5
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 136
+        width: 40
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pickup_coin_6
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 136
+        width: 42
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pickup_coin_7
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 136
+        width: 76
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pickup_coin_8
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 136
+        width: 100
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pickup_coin_9
+      rect:
+        serializedVersion: 2
+        x: 1159
+        y: 136
+        width: 114
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pickup_coin_10
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 136
+        width: 114
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pickup_coin_11
+      rect:
+        serializedVersion: 2
+        x: 1415
+        y: 136
+        width: 115
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pickup_coin_12
+      rect:
+        serializedVersion: 2
+        x: 1547
+        y: 136
+        width: 107
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pickup_coin_13
+      rect:
+        serializedVersion: 2
+        x: 1683
+        y: 136
+        width: 90
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pickup_coin_14
+      rect:
+        serializedVersion: 2
+        x: 1822
+        y: 136
+        width: 70
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pickup_coin_15
+      rect:
+        serializedVersion: 2
+        x: 1964
+        y: 136
+        width: 40
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pickup_coin_16
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 8
+        width: 42
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pickup_coin_17
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 8
+        width: 76
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pickup_coin_18
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 8
+        width: 100
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pickup_coin_19
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 8
+        width: 114
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pickup_coin_20
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 8
+        width: 114
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
     outline: []
   spritePackingTag: 
   userData: 
