@@ -26,6 +26,7 @@ namespace strangeetnix
 		private Dictionary<string, WWW> _configLoaderList = new Dictionary<string, WWW>();
 
 		private const int PERCENT_COMPLETE = 100;
+		private const float DELAY_AFTER_LOAD = 0.5f;
 
 		private int _count = 0;
 		private int _listCount = 0;
@@ -65,7 +66,7 @@ namespace strangeetnix
 			yield return configLoader;
 
 			_count++;
-			int percent = (int) (_count*100/_listCount);
+			int percent = (int) (_count * PERCENT_COMPLETE / _listCount);
 			updatePreloaderValueSignal.Dispatch (percent); 
 
 			if (configLoader.error == null) {
@@ -75,7 +76,7 @@ namespace strangeetnix
 			}
 
 			if (_count == _listCount) {
-				yield return new WaitForSeconds (0.5f);
+				yield return new WaitForSeconds (DELAY_AFTER_LOAD);
 				//close preloader
 				clear ();
 				destroyPreloaderSignal.Dispatch ();

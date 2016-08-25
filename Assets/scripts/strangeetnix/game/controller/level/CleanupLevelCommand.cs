@@ -38,6 +38,13 @@ namespace strangeetnix.game
 			}*/
 
 			//Clean up enemies
+			DropCoinView[] coins = gameField.GetComponentsInChildren<DropCoinView> ();
+			foreach (DropCoinView coinView in coins)
+			{
+				coinView.forceDestroySignal.Dispatch ();
+			}
+
+			//Clean up enemies
 			EnemyView[] enemies = gameField.GetComponentsInChildren<EnemyView> ();
 			foreach (EnemyView enemy in enemies)
 			{

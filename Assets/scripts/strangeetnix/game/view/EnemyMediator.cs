@@ -32,6 +32,9 @@ namespace strangeetnix.game
 		[Inject]
 		public AddExplosionSignal addExplosionSignal{ get; set; }
 
+		[Inject]
+		public CreateCoinSignal createCoinSignal{ get; set; }
+
 		//[Inject]
 		//public AddExpSignal addExpSignal{ get; set; }
 
@@ -127,7 +130,10 @@ namespace strangeetnix.game
 					}
 				} else  {
 					StopAllCoroutines ();
-					//addExpSignal.Dispatch (_expGive);
+
+					Vector2 position = new Vector2 (view.gameObject.transform.position.x, view.gameObject.transform.position.y);
+					createCoinSignal.Dispatch (position, _goldDrop);
+
 					gameModel.playerModel.addExp(_expGive);
 					updateHudItemSignal.Dispatch (UpdateHudItemType.EXP, gameModel.playerModel.exp);
 

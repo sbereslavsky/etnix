@@ -29,7 +29,6 @@ namespace strangeetnix.ui
 		public Text expText;
 		//public Text scoreText;
 		public Text levelText;
-		public Text coinText;
 
 		public RectTransform playerHpBar;
 		public RectTransform playerExpBar;
@@ -135,11 +134,6 @@ namespace strangeetnix.ui
 			} else {
 				buttonHit.restart ();
 			}
-		}
-
-		internal void SetCoins(int value)
-		{
-			coinText.text = value.ToString();
 		}
 
 		internal void SetLevel(int value)

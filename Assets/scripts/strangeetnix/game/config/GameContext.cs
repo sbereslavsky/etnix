@@ -50,6 +50,7 @@ namespace strangeetnix.game
 			
 			mediationBinder.Bind<PlayerView>().To<PlayerMediator>();
 			mediationBinder.Bind<EnemyView>().To<EnemyMediator>();
+			mediationBinder.Bind<DropCoinView>().To<DropCoinMediator>();
 
 			//Pools
 			//Pools provide a recycling system that makes the game much more efficient. Instead of destroying instances
@@ -118,6 +119,8 @@ namespace strangeetnix.game
 			commandBinder.Bind<PauseGameSignal> ().To<PauseGameCommand> ();
 			commandBinder.Bind<RestartGameSignal> ().To<RestartGameCommand> ();
 			commandBinder.Bind<AddExplosionSignal> ().To<AddExplosionCommand> ();
+			commandBinder.Bind<CreateCoinSignal> ().To<CreateCoinsCommand> ();
+
 			//commandBinder.Bind<AddExpSignal> ().To<AddExpCommand> ();
 
 			commandBinder.Bind<DestroyGameFieldSignal> ().To<DestroyGameFieldCommand> ();

@@ -10,11 +10,15 @@ namespace strangeetnix.game
 		public GameObject gameField{ get; set; }
 
 		[Inject]
+		public IResourceManager resourceManager { get; set; }
+
+		[Inject]
 		public Vector2 position { get; set; }
 
 		public override void Execute ()
 		{
-			GameObject explosionStyle = Resources.Load<GameObject> (AssetConfig.EXPLOSION.path);
+			GameObject explosionStyle = resourceManager.getResourceByAssetData (AssetConfig.EXPLOSION);
+			//GameObject explosionStyle = Resources.Load<GameObject> (AssetConfig.EXPLOSION.path);
 			GameObject explosionGO = GameObject.Instantiate (explosionStyle) as GameObject;
 			explosionGO.transform.localPosition = new Vector3(position.x, position.y, 0);
 			explosionGO.transform.parent = gameField.transform;

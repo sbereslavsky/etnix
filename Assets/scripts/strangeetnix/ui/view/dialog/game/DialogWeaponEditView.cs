@@ -12,7 +12,8 @@ namespace strangeetnix.ui
 {
 	public class DialogWeaponEditView : TransformDialogView
 	{
-		public Text textPlayerInfo;
+		public Text textGoldValue;
+		public Text textWeaponInfo;
 
 		public Dropdown dropDownEquiped;
 		public Dropdown dropDownWeapon;
@@ -57,10 +58,15 @@ namespace strangeetnix.ui
 			updatePlayerInfo ();
 		}
 
+		public void updateGoldValue(int value)
+		{
+			textGoldValue.text = value.ToString ();
+		}
+
 		public void updatePlayerInfo()
 		{
 			IPlayerModel playerModel = new PlayerModel (_userCharVO.id, _gameConfig);
-			textPlayerInfo.text = "Weapon dmg = " + playerModel.weaponVO.damage + ", cldwn = " + playerModel.weaponVO.cooldown + ". player dmg = " + playerModel.damage + ", cldwn = " + playerModel.cooldown;
+			textWeaponInfo.text = "Weapon dmg = " + playerModel.weaponVO.damage + ", cldwn = " + playerModel.weaponVO.cooldown + ". player dmg = " + playerModel.damage + ", cldwn = " + playerModel.cooldown;
 		}
 
 		private void initDropDown(Dropdown dropDown, List<string> values, int selectable = 0)

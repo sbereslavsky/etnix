@@ -35,6 +35,7 @@ namespace strangeetnix.game
 
 		public static AssetPathData PRELOADER		= new AssetPathData ("Preloader", FOLDER_UI);
 		public static AssetPathData EXPLOSION		= new AssetPathData ("explosion", FOLDER_FX);
+		public static AssetPathData COIN			= new AssetPathData ("coin", FOLDER_FX);
 
 		public static AssetPathData CANVAS_MAIN		= new AssetPathData ("MainCanvas", FOLDER_UI);
 		public static AssetPathData CANVAS_GAME		= new AssetPathData ("GameCanvas", FOLDER_UI);
@@ -112,6 +113,7 @@ namespace strangeetnix.game
 
 			churchAssetDataList.Add (BACKGROUND_CHURCH);
 			churchAssetDataList.Add (EXPLOSION);
+			churchAssetDataList.Add (COIN);
 
 			for (int i = 0; i < enemyIds.Count; i++) {
 				int id = enemyIds [i];

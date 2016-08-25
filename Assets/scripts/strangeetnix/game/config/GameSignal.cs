@@ -48,6 +48,10 @@ namespace strangeetnix.game
 	//Vector2 - explosion position 
 	public class AddExplosionSignal : Signal<Vector2>{}
 
+	//Vector2 - coin position 
+	//int - coin value
+	public class CreateCoinSignal : Signal<Vector2, int>{}
+
 	//int - add value
 	//public class AddExpSignal : Signal<int>{}
 

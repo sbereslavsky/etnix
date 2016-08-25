@@ -6,7 +6,7 @@ namespace strangeetnix
 	{
 		HP,
 		COOLDOWN,
-		COIN,
+		//COIN,
 		EXP, 
 		LEVEL
 	}

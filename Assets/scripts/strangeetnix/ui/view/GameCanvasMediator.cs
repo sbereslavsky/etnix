@@ -73,7 +73,6 @@ namespace strangeetnix.ui
 			updatePlayerHP (_startPlayerHp);
 			updatePlayerExp (gameModel.playerModel.exp);
 			updateLevel (_level);
-			updateCoins ();
 			//onScoreUpdate (0);
 			//onEnemyHpUpdate (0, 1);
 		}
@@ -254,9 +253,6 @@ namespace strangeetnix.ui
 			case UpdateHudItemType.LEVEL:
 				updateLevel (value);
 				break;
-			case UpdateHudItemType.COIN:
-				updateCoins ();
-				break;
 			case UpdateHudItemType.HP:
 				updatePlayerHP (value);
 				break;
@@ -264,11 +260,6 @@ namespace strangeetnix.ui
 				updatePlayerExp (value);
 				break;
 			}
-		}
-
-		private void updateCoins()
-		{
-			view.SetCoins (gameModel.coins);
 		}
 
 		private void updateLevel(int value)
