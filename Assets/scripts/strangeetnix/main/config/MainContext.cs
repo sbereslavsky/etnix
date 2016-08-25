@@ -48,6 +48,7 @@ namespace strangeetnix.main
 				injectionBinder.Bind<RestartGameSignal> ().ToSingleton ().CrossContext ();
 				injectionBinder.Bind<LevelStartSignal> ().ToSingleton ().CrossContext();
 				injectionBinder.Bind<LevelEndSignal> ().ToSingleton ().CrossContext();
+				injectionBinder.Bind<UpdatePlayerInfoSignal> ().ToSingleton ().CrossContext();
 				injectionBinder.Bind<UpdateHudItemSignal> ().ToSingleton ().CrossContext();
 				injectionBinder.Bind<UpdateGameCanvasSignal> ().ToSingleton ().CrossContext();
 				injectionBinder.Bind<DestroyGameFieldSignal> ().ToSingleton ().CrossContext();

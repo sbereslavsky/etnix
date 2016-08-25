@@ -42,10 +42,15 @@ namespace strangeetnix.game
 			name = assetVO.assetData.id;
 			levelUp = false;
 
+			updateCharInfo (gameConfig);
+		}
+
+		public void updateCharInfo(IGameConfig gameConfig)
+		{
 			ICharInfoVO charInfoVO = gameConfig.charInfoConfig.getCharInfoVOById (id);
 			moveSpeed = charInfoVO.speed;
 			moveForce = charInfoVO.moveForce;
-			
+
 			parseData (gameConfig);
 		}
 

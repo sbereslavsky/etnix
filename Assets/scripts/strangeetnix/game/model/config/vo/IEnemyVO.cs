@@ -11,7 +11,8 @@ namespace strangeetnix.game
 		int cooldown { get; }
 		int hp { get; }
 		int exp_give { get; }
-		string drop_id_list { get; }
-		string drop_rate_list { get; }
+		int gold_drop_min { get; }
+		int gold_drop_max { get; }
+		string description { get; }
 	}
 }

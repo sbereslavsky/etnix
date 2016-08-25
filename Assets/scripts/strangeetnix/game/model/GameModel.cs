@@ -16,6 +16,8 @@ namespace strangeetnix.game
 
 		private int ROOM_LEVEL_TYPE = 1000;
 
+		private int _coins = 0;
+
 		public void Reset ()
 		{
 			levelId = 1;
@@ -41,6 +43,7 @@ namespace strangeetnix.game
 		}
 
 		public int playerId { get; set; }
+		public int coins { get { return _coins; } set { _coins = value; } }
 		public int createEnemyId { get; set; }
 		public int levelId { get; set; }
 		public int waveId { get; set; }
@@ -67,6 +70,11 @@ namespace strangeetnix.game
 		{
 			updateLevelModel (gameConfig);
 
+			updatePlayerModel (gameConfig);
+		}
+
+		public void updatePlayerModel (IGameConfig gameConfig)
+		{
 			playerModel = new PlayerModel (playerId, gameConfig);
 		}
 

@@ -12,6 +12,7 @@ namespace strangeetnix.game
 		private string CHAR_WEAPON_ID 	= "charweapon";
 		private string CHAR_ITEM_ID2 	= "charitem1";
 		private string CHAR_ITEM_ID3 	= "charitem2";
+		private string CHAR_COINS 		= "coins";
 		//private string CHAR_WAVE_ID 	= "charwave";
 
 		public int id { get; private set; }
@@ -22,6 +23,7 @@ namespace strangeetnix.game
 		public int weaponId { get; set; }
 		public int itemId2 { get; set; }
 		public int itemId3 { get; set; }
+		public int coins { get; set; }
 		//public int waveId { get; set; }
 
 		private JSONObject _value;
@@ -38,6 +40,7 @@ namespace strangeetnix.game
 			weaponId = getInt32(_value, CHAR_WEAPON_ID);
 			itemId2 = getInt32(_value, CHAR_ITEM_ID2);
 			itemId3 = getInt32(_value, CHAR_ITEM_ID3);
+			coins = getInt32(_value, CHAR_COINS);
 			//waveId = getInt32(_value, CHAR_WAVE_ID);
 		}
 
@@ -64,6 +67,7 @@ namespace strangeetnix.game
 			setIntToField (_value, CHAR_WEAPON_ID, weaponId);
 			setIntToField (_value, CHAR_ITEM_ID2, itemId2);
 			setIntToField (_value, CHAR_ITEM_ID3, itemId3);
+			setIntToField (_value, CHAR_COINS, coins);
 			//setIntToField (_value, CHAR_WAVE_ID, waveId);
 
 			int active = (classId > 0) ? 1 : 0;

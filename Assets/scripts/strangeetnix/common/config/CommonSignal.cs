@@ -25,6 +25,7 @@ namespace strangeetnix
 	public class PauseGameSignal : Signal<bool>{}
 	public class RestartGameSignal : Signal{}
 
+	public class UpdatePlayerInfoSignal : Signal{}
 	public class UpdateHudItemSignal : Signal<UpdateHudItemType, int>{}
 	public class UpdateGameCanvasSignal : Signal{}
 

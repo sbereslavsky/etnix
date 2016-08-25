@@ -35,5 +35,6 @@ namespace strangeetnix.game
 		void saveData();
 		void resetHp ();
 		void updateConfigExp ();
+		void updateCharInfo(IGameConfig gameConfig);
 	}
 }

@@ -12,6 +12,7 @@ namespace strangeetnix.game
 		int weaponId { get; set; }
 		int itemId2 { get; set; }
 		int itemId3 { get; set; }
+		int coins { get; set; }
 		//int waveId { get; set; }
 
 		IUserCharInfoVO getUserCharInfoVO(IGameConfig gameConfig);

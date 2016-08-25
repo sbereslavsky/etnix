@@ -7,6 +7,7 @@ namespace strangeetnix.game
 	public interface IGameModel
 	{
 		int playerId { get; set; }
+		int coins { get; set; }
 		int createEnemyId { get; set; }
 		int waveId { get; set; }
 		int levelId { get; set; }
@@ -26,6 +27,7 @@ namespace strangeetnix.game
 		void initLevelData (IGameConfig gameConfig);
 		void switchLevel (int roomNum);
 		void updateLevelModel (IGameConfig gameConfig);
+		void updatePlayerModel (IGameConfig gameConfig);
 	}
 }
 

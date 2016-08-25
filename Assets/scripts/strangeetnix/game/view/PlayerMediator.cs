@@ -29,6 +29,9 @@ namespace strangeetnix.game
 		public HitPlayerSignal hitPlayerSignal{ get; set; }
 
 		[Inject]
+		public UpdatePlayerInfoSignal updatePlayerInfoSignal{ get; set; }
+
+		[Inject]
 		public HitEnemySignal hitEnemySignal{ get; set; }
 
 		[Inject]
@@ -63,9 +66,7 @@ namespace strangeetnix.game
 
 			_battleMode = gameModel.levelModel.hasEnemy;
 			if (_battleMode) {
-				_damage = gameModel.playerModel.damage;
-				_cooldown = gameModel.playerModel.cooldown;
-
+				onUpdatePlayerInfo ();
 				gameModel.levelModel.enemyManager.setPlayerView (view);
 
 				updateListeners (true);
@@ -96,11 +97,20 @@ namespace strangeetnix.game
 				view.hitEnemySignal.AddListener (onHitEnemy);
 
 				hitPlayerSignal.AddListener (onHitPlayer);
+				updatePlayerInfoSignal.AddListener (onUpdatePlayerInfo);
 			} else {
 				view.hitEnemySignal.RemoveListener (onHitEnemy);
 
 				hitPlayerSignal.RemoveListener (onHitPlayer);
+				updatePlayerInfoSignal.RemoveListener (onUpdatePlayerInfo);
 			}	
+		}
+
+		private void onUpdatePlayerInfo()
+		{
+			_damage = gameModel.playerModel.damage;
+			_cooldown = gameModel.playerModel.cooldown;
+			updateHudItemSignal.Dispatch (UpdateHudItemType.COOLDOWN, 0);
 		}
 
 		private void onHitEnemy()

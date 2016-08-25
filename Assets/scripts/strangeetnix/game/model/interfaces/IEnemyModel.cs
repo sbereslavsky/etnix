@@ -11,8 +11,8 @@ namespace strangeetnix.game
 		int cooldown { get; }
 		int hp { get; }
 		int exp_give { get; }
-		List<int> drop_id_list { get; }
-		List<int> drop_rate_list { get; }
+		int gold_drop_min { get; }
+		int gold_drop_max { get; }
 
 		ICharAssetVO assetVO { get; }
 	}
