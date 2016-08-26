@@ -62,7 +62,7 @@ namespace strangeetnix.ui
 		{
 			cleanCoinsSignal.Dispatch ();
 
-			gameModel.playerModel.updateConfig ();
+			gameModel.playerModel.updateUserConfig ();
 			gameConfig.save ();
 
 			Destroy (view.gameObject);

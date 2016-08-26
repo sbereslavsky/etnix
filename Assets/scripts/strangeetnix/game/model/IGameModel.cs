@@ -26,7 +26,6 @@ namespace strangeetnix.game
 		void initLevelData (IGameConfig gameConfig);
 		void switchLevel (int roomNum);
 		void updateLevelModel (IGameConfig gameConfig);
-		void updatePlayerModel (IGameConfig gameConfig);
 	}
 }
 

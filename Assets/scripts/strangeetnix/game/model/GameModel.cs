@@ -67,11 +67,6 @@ namespace strangeetnix.game
 		{
 			updateLevelModel (gameConfig);
 
-			updatePlayerModel (gameConfig);
-		}
-
-		public void updatePlayerModel (IGameConfig gameConfig)
-		{
 			playerModel = new PlayerModel (playerId, gameConfig);
 		}
 

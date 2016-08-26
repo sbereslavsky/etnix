@@ -42,7 +42,7 @@ namespace strangeetnix.ui
 		internal Signal<int> removeCharPanelSignal = new Signal<int>();
 		internal Signal<int> startGameSceneSignal = new Signal<int>();
 
-		internal void init(strangeetnix.game.IUserCharInfoVO userCharInfoVO, IPlayerModel playerModel, int panelId1)
+		internal void init(strangeetnix.game.IUserCharInfoVO userCharInfoVO, IWeaponModel weaponModel, int panelId1)
 		{
 			_panelId = panelId1;
 			_charId = userCharInfoVO.id;
@@ -50,8 +50,8 @@ namespace strangeetnix.ui
 			textName.text = (userCharInfoVO != null) ? TITLE_NAME + userCharInfoVO.name + ": " + userCharInfoVO.level + " level": TITLE_NAME;
 			textHp.text = (userCharInfoVO != null) ? TITLE_HP + userCharInfoVO.hp : TITLE_HP;
 			textExp.text = (userCharInfoVO != null) ? TITLE_EXP + userCharInfoVO.exp : TITLE_EXP;
-			textDamage.text = (playerModel != null) ? TITLE_DAMAGE + playerModel.damage : TITLE_DAMAGE;
-			textCooldown.text = (playerModel != null) ? TITLE_COOLDOWN + playerModel.cooldown : TITLE_COOLDOWN;
+			textDamage.text = (weaponModel != null) ? TITLE_DAMAGE + weaponModel.damage : TITLE_DAMAGE;
+			textCooldown.text = (weaponModel != null) ? TITLE_COOLDOWN + weaponModel.cooldown : TITLE_COOLDOWN;
 			textWeapon.text = (userCharInfoVO != null) ? TITLE_WEAPON + userCharInfoVO.weapon : TITLE_WEAPON;
 			textItem1.text = (userCharInfoVO != null) ? TITLE_ITEM1 + userCharInfoVO.item2 : TITLE_ITEM1;
 			textItem2.text = (userCharInfoVO != null) ? TITLE_ITEM2 + userCharInfoVO.item3 : TITLE_ITEM2;

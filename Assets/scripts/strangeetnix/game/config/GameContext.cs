@@ -103,6 +103,7 @@ namespace strangeetnix.game
 			commandBinder.Bind<LoadResourcesSignal> ().To<LoadResourcesCommand> ();
 
 			commandBinder.Bind<AddHpSignal> ().To<AddHpCommand> ();
+			commandBinder.Bind<AddExpSignal> ().To<AddExpCommand> ();
 			commandBinder.Bind<EnterRoomSignal> ().To<EnterRoomCommand> ();
 			commandBinder.Bind<ExitRoomSignal> ().To<ExitRoomCommand> ();
 			commandBinder.Bind<SwitchLevelSignal> ().To<SwitchLevelCommand> ();
@@ -122,7 +123,6 @@ namespace strangeetnix.game
 			commandBinder.Bind<CreateCoinSignal> ().To<CreateCoinsCommand> ();
 			commandBinder.Bind<CleanCoinsSignal> ().To<CleanCoinsCommand> ();
 
-			//commandBinder.Bind<AddExpSignal> ().To<AddExpCommand> ();
 
 			commandBinder.Bind<DestroyGameFieldSignal> ().To<DestroyGameFieldCommand> ();
 

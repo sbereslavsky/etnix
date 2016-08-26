@@ -21,13 +21,13 @@ namespace strangeetnix.ui
 		public CloseEditPanelSignal closeEditPanelSignal{ get; set;}
 
 		private IUserCharVO _userCharVO;
-		private IUserCharInfoVO _userCharInfoVO;
 
 		public override void OnRegister()
 		{
 			int charId = view.charId;
 			_userCharVO = gameConfig.userCharConfig.getUserCharVOById(charId);
 			view.init (_userCharVO, gameConfig);
+
 			updateCharInfo ();
 
 			UpdateListeners(true);
@@ -41,24 +41,24 @@ namespace strangeetnix.ui
 		private void UpdateListeners(bool value)
 		{
 			if (value) {
-				view.closeDialogSignal.AddListener (onCloseDialog);
 				view.addExpSignal.AddListener (onAddExp);
+				view.closeDialogSignal.AddListener (onCloseDialog);
 			} else {
-				view.closeDialogSignal.RemoveListener (onCloseDialog);
 				view.addExpSignal.RemoveListener (onAddExp);
+				view.closeDialogSignal.RemoveListener (onCloseDialog);
 			}
-		}
-
-		private void updateCharInfo()
-		{
-			_userCharInfoVO = _userCharVO.getUserCharInfoVO (gameConfig);
-			view.updateInfo (_userCharInfoVO);
 		}
 
 		private void onAddExp(int value)
 		{
 			_userCharVO.exp = Mathf.Max(0, _userCharVO.exp + value);
 			updateCharInfo ();
+		}
+
+		private void updateCharInfo()
+		{
+			IUserCharInfoVO userCharInfoVO = _userCharVO.getUserCharInfoVO (gameConfig);
+			view.updateInfo (userCharInfoVO);
 		}
 
 		private void onCloseDialog(bool isSave)

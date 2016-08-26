@@ -275,7 +275,9 @@ namespace strangeetnix.ui
 		private void updatePlayerExp(int currentExp)
 		{
 			if (gameModel.playerModel.levelUp) {
-				gameModel.playerModel.updateNextExp (gameConfig);
+				gameModel.playerModel.levelUp = false;
+				gameModel.playerModel.setEndExp ();
+
 				_expStart = gameModel.playerModel.expStart;
 				_expEnd = gameModel.playerModel.expEnd;
 				_level = gameModel.playerModel.level;

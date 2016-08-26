@@ -21,12 +21,10 @@ namespace strangeetnix.game
 
 		public override void Execute ()
 		{
-			IPlayerModel playerModel = gameModel.playerModel;
+			gameModel.playerModel.addExp (addValue);
+			gameModel.playerModel.setEndExp ();
 
-			playerModel.addExp (addValue);
-			playerModel.updateNextExp (gameConfig);
-
-			updateHudItemSignal.Dispatch (UpdateHudItemType.EXP, playerModel.exp);
+			updateHudItemSignal.Dispatch (UpdateHudItemType.EXP, gameModel.playerModel.exp);
 		}
 	}
 }

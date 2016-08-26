@@ -29,19 +29,20 @@ namespace strangeetnix.ui
 		[Inject]
 		public UpdatePlayerInfoSignal updatePlayerInfoSignal{ get; set; }
 
-		private IUserCharVO _userCharVO;
-		private IUserCharInfoVO _userCharInfoVO;
+		private IPlayerModel _playerModel;
+
+		private bool _isChange = false;
 
 		public override void OnRegister()
 		{
 			pauseGameSignal.Dispatch (true);
 
-			int charId = gameModel.playerId;
-			_userCharVO = gameConfig.userCharConfig.getUserCharVOById(charId);
-			view.init (_userCharVO, gameConfig);
-			updateCharInfo();
+			_playerModel = gameModel.playerModel;
 
-			view.updateGoldValue (gameModel.playerModel.coins);
+			view.init (_playerModel.userCharVO, gameConfig);
+			view.updatePlayerInfo (_playerModel);
+
+			view.updateGoldValue (_playerModel.coins);
 
 			UpdateListeners(true);
 		}
@@ -54,36 +55,64 @@ namespace strangeetnix.ui
 		private void UpdateListeners(bool value)
 		{
 			if (value) {
+				view.changeWeaponSignal.AddListener (onChangeWeapon);
+				view.changeItem2Signal.AddListener (onChangeItem2);
+				view.changeItem3Signal.AddListener (onChangeItem3);
+				view.changeEquipedSignal.AddListener (onChangeEquiped);
 				view.closeDialogSignal.AddListener (onCloseDialog);
 			} else {
+				view.changeWeaponSignal.RemoveListener (onChangeWeapon);
+				view.changeItem2Signal.RemoveListener (onChangeItem2);
+				view.changeItem3Signal.RemoveListener (onChangeItem3);
+				view.changeEquipedSignal.RemoveListener (onChangeEquiped);
 				view.closeDialogSignal.RemoveListener (onCloseDialog);
 			}
 		}
 
-		private void updateCharInfo()
+		private void onChangeWeapon(int weaponId)
 		{
-			_userCharInfoVO = _userCharVO.getUserCharInfoVO (gameConfig);
+			_playerModel.userCharVO.weaponId = weaponId;
+			_playerModel.updateWeaponVO ();
+
+			view.updatePlayerInfo (_playerModel);
+
+			_isChange = true;
+		}
+
+		private void onChangeItem2(int itemId2)
+		{
+			_playerModel.userCharVO.itemId2 = itemId2;
+			_playerModel.updateItem2VO ();
+
+			_isChange = true;
+		}
+
+		private void onChangeItem3(int itemId3)
+		{
+			_playerModel.userCharVO.itemId3 = itemId3;
+			_playerModel.updateItem3VO ();
+
+			_isChange = true;
+		}
+
+		private void onChangeEquiped(int equipedId)
+		{
+			_playerModel.userCharVO.equipedId = equipedId;
+			_playerModel.updateEquipedVO ();
+
+			_isChange = true;
 		}
 
 		private void onCloseDialog()
 		{
-			string value = view.getDropDownText (view.dropDownWeapon);
-			_userCharVO.weaponId = gameConfig.weaponConfig.getIdByInfo (value);
+			if (_isChange) {
+				gameConfig.save ();
+			}
 
-			value = view.getDropDownText (view.dropDownEquiped);
-			_userCharVO.equipedId = gameConfig.equipedConfig.getIdByInfo (value);
-
-			value = view.getDropDownText (view.dropDownItem2);
-			_userCharVO.itemId2 = gameConfig.itemConfig.getIdByInfo (value);
-
-			value = view.getDropDownText (view.dropDownItem3);
-			_userCharVO.itemId3 = gameConfig.itemConfig.getIdByInfo (value);
-
-			view.clearDropDowns ();
-
-			gameConfig.save ();
-			gameModel.updatePlayerModel (gameConfig);
 			updatePlayerInfoSignal.Dispatch ();
+
+			view.removeEventListeners ();
+			view.clearDropDowns ();
 
 			closeDialogSignal.Dispatch ();
 			pauseGameSignal.Dispatch (false);

@@ -32,13 +32,11 @@ namespace strangeetnix.ui
 
 		private IUserCharVO _userCharVO;	
 		private IGameConfig _gameConfig;
-		private int _oldWeaponId;
 
 		internal void init(IUserCharVO userCharVO, IGameConfig gameConfig)
 		{
 			_userCharVO = userCharVO;
 			_gameConfig = gameConfig;
-			_oldWeaponId = _userCharVO.weaponId;
 
 			List<string> info_names = gameConfig.weaponConfig.getInfoListByOwnerId (userCharVO.classId);
 
@@ -51,8 +49,8 @@ namespace strangeetnix.ui
 
 		public void updatePlayerInfo()
 		{
-			IPlayerModel playerModel = new PlayerModel (_userCharVO.id, _gameConfig);
-			textPlayerInfo.text = "Weapon dmg = " + playerModel.weaponVO.damage + ", cldwn = " + playerModel.weaponVO.cooldown + ". player dmg = " + playerModel.damage + ", cldwn = " + playerModel.cooldown;
+			IWeaponModel weaponModel = new WeaponModel (_userCharVO.id, _gameConfig);
+			textPlayerInfo.text = "Weapon dmg = " + weaponModel.weaponVO.damage + ", cldwn = " + weaponModel.weaponVO.cooldown + ". player dmg = " + weaponModel.damage + ", cldwn = " + weaponModel.cooldown;
 		}
 
 		public void updateInfo(IUserCharInfoVO userCharInfoVO)
@@ -69,7 +67,6 @@ namespace strangeetnix.ui
 
 		private void exit()
 		{
-			_userCharVO.weaponId = _oldWeaponId;
 			closeDialogSignal.Dispatch (false);
 		}
 

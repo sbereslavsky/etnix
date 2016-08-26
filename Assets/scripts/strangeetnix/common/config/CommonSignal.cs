@@ -35,5 +35,8 @@ namespace strangeetnix
 	//bool - is positive
 	public class AddHpSignal : Signal<int, bool>{}
 
+	//int - add value
+	public class AddExpSignal : Signal<int>{}
+
 	public class DestroyGameFieldSignal : Signal{}
 }
