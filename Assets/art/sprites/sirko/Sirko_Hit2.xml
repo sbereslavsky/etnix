@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Sirko_Hit2.png">
+	<!-- Created with Adobe Flash Professional version 14.0.0.110 -->
+	<!-- http://www.adobe.com/products/flash.html -->
+	<SubTexture name="Sirko_battle_hit_2 instance 10000" x="0" y="0" width="162" height="203" pivotX="100.35" pivotY="192.3"/>
+	<SubTexture name="Sirko_battle_hit_2 instance 10001" x="162" y="0" width="162" height="203"/>
+	<SubTexture name="Sirko_battle_hit_2 instance 10002" x="324" y="0" width="162" height="203"/>
+	<SubTexture name="Sirko_battle_hit_2 instance 10003" x="0" y="203" width="162" height="203"/>
+	<SubTexture name="Sirko_battle_hit_2 instance 10004" x="162" y="203" width="162" height="203"/>
+	<SubTexture name="Sirko_battle_hit_2 instance 10005" x="324" y="203" width="162" height="203"/>
+	<SubTexture name="Sirko_battle_hit_2 instance 10006" x="0" y="406" width="162" height="203"/>
+	<SubTexture name="Sirko_battle_hit_2 instance 10007" x="162" y="406" width="162" height="203"/>
+	<SubTexture name="Sirko_battle_hit_2 instance 10008" x="324" y="406" width="162" height="203"/>
+	<SubTexture name="Sirko_battle_hit_2 instance 10009" x="0" y="609" width="162" height="203"/>
+	<SubTexture name="Sirko_battle_hit_2 instance 10010" x="0" y="812" width="162" height="203"/>
+	<SubTexture name="Sirko_battle_hit_2 instance 10011" x="162" y="609" width="162" height="203"/>
+	<SubTexture name="Sirko_battle_hit_2 instance 10012" x="162" y="812" width="162" height="203"/>
+	<SubTexture name="Sirko_battle_hit_2 instance 10013" x="324" y="609" width="162" height="203"/>
+	<SubTexture name="Sirko_battle_hit_2 instance 10014" x="324" y="812" width="162" height="203"/>
+</TextureAtlas>

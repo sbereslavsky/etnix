@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 2c08480f77dab0c428baf30dce92367b
-timeCreated: 1461233551
+timeCreated: 1472229615
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -71,6 +71,36 @@ TextureImporter:
     21300128: battle_hit instance 10034
     21300130: battle_hit instance 10035
     21300132: battle_hit instance 10036
+    21300134: "battle_hit_1 \u043E\u0431\u0440\u0430\u0437\u0435\u0446 10000"
+    21300136: "battle_hit_1 \u043E\u0431\u0440\u0430\u0437\u0435\u0446 10001"
+    21300138: "battle_hit_1 \u043E\u0431\u0440\u0430\u0437\u0435\u0446 10002"
+    21300140: "battle_hit_1 \u043E\u0431\u0440\u0430\u0437\u0435\u0446 10003"
+    21300142: "battle_hit_1 \u043E\u0431\u0440\u0430\u0437\u0435\u0446 10004"
+    21300144: "battle_hit_1 \u043E\u0431\u0440\u0430\u0437\u0435\u0446 10005"
+    21300146: "battle_hit_1 \u043E\u0431\u0440\u0430\u0437\u0435\u0446 10006"
+    21300148: "battle_hit_1 \u043E\u0431\u0440\u0430\u0437\u0435\u0446 10007"
+    21300150: "battle_hit_1 \u043E\u0431\u0440\u0430\u0437\u0435\u0446 10008"
+    21300152: "battle_hit_1 \u043E\u0431\u0440\u0430\u0437\u0435\u0446 10009"
+    21300154: "battle_hit_1 \u043E\u0431\u0440\u0430\u0437\u0435\u0446 10010"
+    21300156: "battle_hit_1 \u043E\u0431\u0440\u0430\u0437\u0435\u0446 10011"
+    21300158: "battle_hit_1 \u043E\u0431\u0440\u0430\u0437\u0435\u0446 10012"
+    21300160: "battle_hit_1 \u043E\u0431\u0440\u0430\u0437\u0435\u0446 10013"
+    21300162: "battle_hit_1 \u043E\u0431\u0440\u0430\u0437\u0435\u0446 10014"
+    21300164: battle_hit_1 instance 10000
+    21300166: battle_hit_1 instance 10001
+    21300168: battle_hit_1 instance 10002
+    21300170: battle_hit_1 instance 10003
+    21300172: battle_hit_1 instance 10004
+    21300174: battle_hit_1 instance 10005
+    21300176: battle_hit_1 instance 10006
+    21300178: battle_hit_1 instance 10007
+    21300180: battle_hit_1 instance 10008
+    21300182: battle_hit_1 instance 10009
+    21300184: battle_hit_1 instance 10010
+    21300186: battle_hit_1 instance 10011
+    21300188: battle_hit_1 instance 10012
+    21300190: battle_hit_1 instance 10013
+    21300192: battle_hit_1 instance 10014
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -113,907 +143,207 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
+  spriteTessellationDetail: -1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
+    serializedVersion: 2
     sprites:
-    - name: battle_hit instance 10000
+    - serializedVersion: 2
+      name: battle_hit instance 10000
       rect:
         serializedVersion: 2
         x: 0
-        y: 1850
-        width: 138
-        height: 198
+        y: 827
+        width: 140
+        height: 197
       alignment: 9
       pivot: {x: 0.53, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -2.1399994, y: 192}
-        - {x: -28.14, y: 187}
-        - {x: -45.14, y: 175}
-        - {x: -45.14, y: 31}
-        - {x: -29.14, y: 6}
-        - {x: -26.14, y: 5}
-        - {x: 33.86, y: 5}
-        - {x: 54.86, y: 124}
-        - {x: 54.86, y: 173}
-        - {x: 39.86, y: 192}
-    - name: battle_hit instance 10001
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: battle_hit instance 10001
       rect:
         serializedVersion: 2
-        x: 138
-        y: 1850
-        width: 138
-        height: 198
+        x: 140
+        y: 827
+        width: 140
+        height: 197
       alignment: 9
       pivot: {x: 0.53, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -23.14, y: 193}
-        - {x: -53.14, y: 169}
-        - {x: -53.14, y: 42}
-        - {x: -42.14, y: 5}
-        - {x: 34.86, y: 5}
-        - {x: 55.86, y: 31}
-        - {x: 55.86, y: 190}
-        - {x: 52.86, y: 193}
-    - name: battle_hit instance 10002
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: battle_hit instance 10002
       rect:
         serializedVersion: 2
-        x: 276
-        y: 1850
-        width: 138
-        height: 198
+        x: 280
+        y: 827
+        width: 140
+        height: 197
       alignment: 9
       pivot: {x: 0.53, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -19.140015, y: 194}
-        - {x: -46.140015, y: 183}
-        - {x: -61.140015, y: 160}
-        - {x: -61.140015, y: 125}
-        - {x: -52.140015, y: 118}
-        - {x: -40.140015, y: 51}
-        - {x: -31.140015, y: 5}
-        - {x: 26.859985, y: 5}
-        - {x: 56.859985, y: 91}
-        - {x: 56.859985, y: 187}
-        - {x: 42.859985, y: 194}
-    - name: battle_hit instance 10003
-      rect:
-        serializedVersion: 2
-        x: 414
-        y: 1850
-        width: 138
-        height: 198
-      alignment: 9
-      pivot: {x: 0.53, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 42.859985, y: 194}
-        - {x: 7.8599854, y: 194}
-        - {x: -48.140015, y: 185}
-        - {x: -68.140015, y: 167}
-        - {x: -68.140015, y: 90}
-        - {x: -31.140015, y: 5}
-        - {x: 28.859985, y: 5}
-        - {x: 44.859985, y: 35}
-        - {x: 56.859985, y: 90}
-        - {x: 56.859985, y: 184}
-    - name: battle_hit instance 10004
-      rect:
-        serializedVersion: 2
-        x: 552
-        y: 1850
-        width: 138
-        height: 198
-      alignment: 9
-      pivot: {x: 0.53, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -70.140015, y: 102}
-        - {x: -34.140015, y: 5}
-        - {x: 53.859985, y: 5}
-        - {x: 53.859985, y: 196}
-        - {x: -30.140015, y: 196}
-        - {x: -55.140015, y: 191}
-        - {x: -70.140015, y: 153}
-    - name: battle_hit instance 10005
-      rect:
-        serializedVersion: 2
-        x: 690
-        y: 1850
-        width: 138
-        height: 198
-      alignment: 9
-      pivot: {x: 0.53, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 53.859985, y: 168}
-        - {x: 45.859985, y: 197}
-        - {x: -2.1400146, y: 197}
-        - {x: -53.140015, y: 181}
-        - {x: -72.140015, y: 165}
-        - {x: -72.140015, y: 92}
-        - {x: -32.140015, y: 5}
-        - {x: 24.859985, y: 5}
-        - {x: 29.859985, y: 7}
-        - {x: 22.859985, y: 88}
-        - {x: 53.859985, y: 101}
-    - name: battle_hit instance 10006
-      rect:
-        serializedVersion: 2
-        x: 828
-        y: 1850
-        width: 138
-        height: 198
-      alignment: 9
-      pivot: {x: 0.53, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 24.859985, y: 198}
-        - {x: -31.140015, y: 198}
-        - {x: -73.140015, y: 166}
-        - {x: -73.140015, y: 93}
-        - {x: -35.140015, y: 5}
-        - {x: 53.859985, y: 5}
-        - {x: 53.859985, y: 177}
-        - {x: 27.859985, y: 196}
-    - name: battle_hit instance 10007
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: battle_hit instance 10003
       rect:
         serializedVersion: 2
         x: 0
-        y: 1652
-        width: 138
-        height: 198
+        y: 630
+        width: 140
+        height: 197
       alignment: 9
       pivot: {x: 0.53, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 52.86, y: 90}
-        - {x: 52.86, y: 175}
-        - {x: 39.86, y: 193}
-        - {x: 2.8600006, y: 193}
-        - {x: -45.14, y: 177}
-        - {x: -44.14, y: 161}
-        - {x: -42.14, y: 146}
-        - {x: -37.14, y: 143}
-        - {x: -53.14, y: 148}
-        - {x: -65.14, y: 147}
-        - {x: -68.14, y: 144}
-        - {x: -68.14, y: 133}
-        - {x: -67.14, y: 128}
-        - {x: -64.14, y: 126}
-        - {x: -44.14, y: 49}
-        - {x: -31.14, y: 4}
-        - {x: -22.14, y: 4}
-        - {x: -6.1399994, y: 9}
-        - {x: -4.1399994, y: 11}
-        - {x: 0.8600006, y: 4}
-        - {x: 18.86, y: 4}
-        - {x: 22.86, y: 5}
-        - {x: 27.86, y: 8}
-        - {x: 22.86, y: 80}
-        - {x: 17.86, y: 99}
-    - name: battle_hit instance 10008
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: battle_hit instance 10004
       rect:
         serializedVersion: 2
-        x: 138
-        y: 1652
-        width: 138
-        height: 198
+        x: 140
+        y: 630
+        width: 140
+        height: 197
       alignment: 9
       pivot: {x: 0.53, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -2.1399994, y: 188}
-        - {x: -45.14, y: 177}
-        - {x: -39.14, y: 149}
-        - {x: -37.14, y: 144}
-        - {x: -59.14, y: 170}
-        - {x: -59.14, y: 28}
-        - {x: -32.14, y: 6}
-        - {x: -21.14, y: 4}
-        - {x: -9.139999, y: 4}
-        - {x: -3.1399994, y: 11}
-        - {x: -3.1399994, y: 23}
-        - {x: 2.8600006, y: 4}
-        - {x: 34.86, y: 4}
-        - {x: 55.86, y: 44}
-        - {x: 55.86, y: 173}
-        - {x: 40.86, y: 188}
-    - name: battle_hit instance 10009
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: battle_hit instance 10005
       rect:
         serializedVersion: 2
-        x: 276
-        y: 1652
-        width: 138
-        height: 198
+        x: 280
+        y: 630
+        width: 140
+        height: 197
       alignment: 9
       pivot: {x: 0.53, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -19.140015, y: 183}
-        - {x: -49.140015, y: 169}
-        - {x: -49.140015, y: 24}
-        - {x: -32.140015, y: 4}
-        - {x: 37.859985, y: 4}
-        - {x: 58.859985, y: 79}
-        - {x: 58.859985, y: 183}
-    - name: battle_hit instance 10010
-      rect:
-        serializedVersion: 2
-        x: 414
-        y: 1652
-        width: 138
-        height: 198
-      alignment: 9
-      pivot: {x: 0.53, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 20.859985, y: 121}
-        - {x: 21.859985, y: 120}
-        - {x: 18.859985, y: 114}
-        - {x: 17.859985, y: 90}
-        - {x: 24.859985, y: 80}
-        - {x: 26.859985, y: 78}
-        - {x: 33.859985, y: 77}
-        - {x: 60.859985, y: 111}
-        - {x: 60.859985, y: 169}
-        - {x: 56.859985, y: 178}
-        - {x: -31.140015, y: 178}
-        - {x: -39.140015, y: 176}
-        - {x: -43.140015, y: 151}
-        - {x: -43.140015, y: 20}
-        - {x: -32.140015, y: 3}
-        - {x: 25.859985, y: 3}
-        - {x: 35.859985, y: 7}
-        - {x: 16.859985, y: 86}
-        - {x: 16.859985, y: 110}
-        - {x: 19.859985, y: 117}
-    - name: battle_hit instance 10011
-      rect:
-        serializedVersion: 2
-        x: 552
-        y: 1652
-        width: 138
-        height: 198
-      alignment: 9
-      pivot: {x: 0.53, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 60.859985, y: 176}
-        - {x: -37.140015, y: 176}
-        - {x: -45.140015, y: 111}
-        - {x: -45.140015, y: 33}
-        - {x: -27.140015, y: 3}
-        - {x: -16.140015, y: 3}
-        - {x: -3.1400146, y: 7}
-        - {x: -0.14001465, y: 11}
-        - {x: -1.1400146, y: 24}
-        - {x: -1.1400146, y: 23}
-        - {x: 2.8599854, y: 4}
-        - {x: 6.8599854, y: 3}
-        - {x: 18.859985, y: 3}
-        - {x: 30.859985, y: 9}
-        - {x: 62.859985, y: 86}
-        - {x: 62.859985, y: 170}
-    - name: battle_hit instance 10012
-      rect:
-        serializedVersion: 2
-        x: 690
-        y: 1652
-        width: 138
-        height: 198
-      alignment: 9
-      pivot: {x: 0.53, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 60.859985, y: 176}
-        - {x: -37.140015, y: 176}
-        - {x: -45.140015, y: 111}
-        - {x: -45.140015, y: 33}
-        - {x: -27.140015, y: 3}
-        - {x: -16.140015, y: 3}
-        - {x: -3.1400146, y: 7}
-        - {x: -0.14001465, y: 11}
-        - {x: -1.1400146, y: 24}
-        - {x: -1.1400146, y: 23}
-        - {x: 2.8599854, y: 4}
-        - {x: 6.8599854, y: 3}
-        - {x: 18.859985, y: 3}
-        - {x: 30.859985, y: 9}
-        - {x: 62.859985, y: 86}
-        - {x: 62.859985, y: 170}
-    - name: battle_hit instance 10013
-      rect:
-        serializedVersion: 2
-        x: 828
-        y: 1652
-        width: 138
-        height: 198
-      alignment: 9
-      pivot: {x: 0.53, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 60.859985, y: 176}
-        - {x: -37.140015, y: 176}
-        - {x: -45.140015, y: 111}
-        - {x: -45.140015, y: 33}
-        - {x: -27.140015, y: 3}
-        - {x: -16.140015, y: 3}
-        - {x: -3.1400146, y: 7}
-        - {x: -0.14001465, y: 11}
-        - {x: -1.1400146, y: 24}
-        - {x: -1.1400146, y: 23}
-        - {x: 2.8599854, y: 4}
-        - {x: 6.8599854, y: 3}
-        - {x: 18.859985, y: 3}
-        - {x: 30.859985, y: 9}
-        - {x: 62.859985, y: 86}
-        - {x: 62.859985, y: 170}
-    - name: battle_hit instance 10014
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: battle_hit instance 10006
       rect:
         serializedVersion: 2
         x: 0
-        y: 1454
-        width: 138
-        height: 198
+        y: 433
+        width: 140
+        height: 197
       alignment: 9
       pivot: {x: 0.53, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 60.86, y: 176}
-        - {x: -37.14, y: 176}
-        - {x: -45.14, y: 111}
-        - {x: -45.14, y: 33}
-        - {x: -27.14, y: 3}
-        - {x: -16.14, y: 3}
-        - {x: -3.1399994, y: 7}
-        - {x: -0.13999939, y: 11}
-        - {x: -1.1399994, y: 24}
-        - {x: -1.1399994, y: 23}
-        - {x: 2.8600006, y: 4}
-        - {x: 6.8600006, y: 3}
-        - {x: 18.86, y: 3}
-        - {x: 30.86, y: 9}
-        - {x: 62.86, y: 86}
-        - {x: 62.86, y: 170}
-    - name: battle_hit instance 10015
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: battle_hit instance 10007
       rect:
         serializedVersion: 2
-        x: 138
-        y: 1454
-        width: 138
-        height: 198
+        x: 140
+        y: 433
+        width: 140
+        height: 197
       alignment: 9
       pivot: {x: 0.53, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 60.86, y: 176}
-        - {x: -37.14, y: 176}
-        - {x: -45.14, y: 111}
-        - {x: -45.14, y: 33}
-        - {x: -27.14, y: 3}
-        - {x: -16.14, y: 3}
-        - {x: -3.1399994, y: 7}
-        - {x: -0.13999939, y: 11}
-        - {x: -1.1399994, y: 24}
-        - {x: -1.1399994, y: 23}
-        - {x: 2.8600006, y: 4}
-        - {x: 6.8600006, y: 3}
-        - {x: 18.86, y: 3}
-        - {x: 30.86, y: 9}
-        - {x: 62.86, y: 86}
-        - {x: 62.86, y: 170}
-    - name: battle_hit instance 10016
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: battle_hit instance 10008
       rect:
         serializedVersion: 2
-        x: 276
-        y: 1454
-        width: 138
-        height: 198
+        x: 280
+        y: 433
+        width: 140
+        height: 197
       alignment: 9
       pivot: {x: 0.53, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -31.140015, y: 185}
-        - {x: -42.140015, y: 164}
-        - {x: -42.140015, y: 40}
-        - {x: -34.140015, y: 4}
-        - {x: -11.140015, y: 4}
-        - {x: -1.1400146, y: 9}
-        - {x: -3.1400146, y: 33}
-        - {x: -5.1400146, y: 36}
-        - {x: -6.1400146, y: 38}
-        - {x: -2.1400146, y: 34}
-        - {x: -3.1400146, y: 32}
-        - {x: 0.85998535, y: 5}
-        - {x: 1.8599854, y: 4}
-        - {x: 40.859985, y: 4}
-        - {x: 61.859985, y: 41}
-        - {x: 61.859985, y: 185}
-    - name: battle_hit instance 10017
-      rect:
-        serializedVersion: 2
-        x: 414
-        y: 1454
-        width: 138
-        height: 198
-      alignment: 9
-      pivot: {x: 0.53, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -8.140015, y: 196}
-        - {x: -41.140015, y: 180}
-        - {x: -64.140015, y: 156}
-        - {x: -64.140015, y: 135}
-        - {x: -59.140015, y: 128}
-        - {x: -37.140015, y: 5}
-        - {x: 53.859985, y: 5}
-        - {x: 61.859985, y: 51}
-        - {x: 61.859985, y: 196}
-    - name: battle_hit instance 10018
-      rect:
-        serializedVersion: 2
-        x: 552
-        y: 1454
-        width: 138
-        height: 198
-      alignment: 9
-      pivot: {x: 0.53, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -41.140015, y: 164}
-        - {x: -63.140015, y: 154}
-        - {x: -66.140015, y: 147}
-        - {x: -66.140015, y: 107}
-        - {x: -38.140015, y: 16}
-        - {x: -34.140015, y: 5}
-        - {x: 61.859985, y: 5}
-        - {x: 61.859985, y: 179}
-        - {x: 43.859985, y: 197}
-        - {x: -3.1400146, y: 197}
-        - {x: -34.140015, y: 189}
-        - {x: -38.140015, y: 177}
-    - name: battle_hit instance 10019
-      rect:
-        serializedVersion: 2
-        x: 690
-        y: 1454
-        width: 138
-        height: 198
-      alignment: 9
-      pivot: {x: 0.53, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -20.140015, y: 197}
-        - {x: -68.140015, y: 175}
-        - {x: -68.140015, y: 75}
-        - {x: -38.140015, y: 5}
-        - {x: 50.859985, y: 5}
-        - {x: 61.859985, y: 77}
-        - {x: 61.859985, y: 188}
-        - {x: 42.859985, y: 197}
-    - name: battle_hit instance 10020
-      rect:
-        serializedVersion: 2
-        x: 828
-        y: 1454
-        width: 138
-        height: 198
-      alignment: 9
-      pivot: {x: 0.53, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 54.859985, y: 5}
-        - {x: 61.859985, y: 12}
-        - {x: 61.859985, y: 198}
-        - {x: -70.140015, y: 198}
-        - {x: -70.140015, y: 5}
-    - name: battle_hit instance 10021
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: battle_hit instance 10009
       rect:
         serializedVersion: 2
         x: 0
-        y: 1256
-        width: 138
-        height: 198
+        y: 236
+        width: 140
+        height: 197
       alignment: 9
       pivot: {x: 0.53, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -21.14, y: 198}
-        - {x: -53.14, y: 180}
-        - {x: -71.14, y: 164}
-        - {x: -71.14, y: 19}
-        - {x: -61.14, y: 5}
-        - {x: 36.86, y: 5}
-        - {x: 61.86, y: 75}
-        - {x: 61.86, y: 198}
-    - name: battle_hit instance 10022
-      rect:
-        serializedVersion: 2
-        x: 138
-        y: 1256
-        width: 138
-        height: 198
-      alignment: 9
-      pivot: {x: 0.53, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 7.8600006, y: 192}
-        - {x: -35.14, y: 184}
-        - {x: -60.14, y: 160}
-        - {x: -60.14, y: 100}
-        - {x: -31.14, y: 4}
-        - {x: -21.14, y: 4}
-        - {x: -16.14, y: 5}
-        - {x: -2.1399994, y: 10}
-        - {x: -4.1399994, y: 36}
-        - {x: -5.1399994, y: 38}
-        - {x: 0.8600006, y: 32}
-        - {x: 0.8600006, y: 6}
-        - {x: 4.8600006, y: 4}
-        - {x: 56.86, y: 4}
-        - {x: 56.86, y: 192}
-    - name: battle_hit instance 10023
-      rect:
-        serializedVersion: 2
-        x: 276
-        y: 1256
-        width: 138
-        height: 198
-      alignment: 9
-      pivot: {x: 0.53, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 48.859985, y: 186}
-        - {x: -46.140015, y: 186}
-        - {x: -47.140015, y: 179}
-        - {x: -47.140015, y: 19}
-        - {x: -30.140015, y: 4}
-        - {x: -22.140015, y: 4}
-        - {x: -5.1400146, y: 7}
-        - {x: -2.1400146, y: 11}
-        - {x: -3.1400146, y: 33}
-        - {x: -5.1400146, y: 36}
-        - {x: -6.1400146, y: 38}
-        - {x: -2.1400146, y: 34}
-        - {x: -3.1400146, y: 32}
-        - {x: 0.85998535, y: 5}
-        - {x: 4.8599854, y: 4}
-        - {x: 20.859985, y: 4}
-        - {x: 30.859985, y: 7}
-        - {x: 59.859985, y: 88}
-        - {x: 59.859985, y: 171}
-    - name: battle_hit instance 10024
-      rect:
-        serializedVersion: 2
-        x: 414
-        y: 1256
-        width: 138
-        height: 198
-      alignment: 9
-      pivot: {x: 0.53, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 54.859985, y: 179}
-        - {x: -43.140015, y: 179}
-        - {x: -43.140015, y: 3}
-        - {x: 21.859985, y: 3}
-        - {x: 28.859985, y: 9}
-        - {x: 24.859985, y: 36}
-        - {x: 61.859985, y: 118}
-        - {x: 61.859985, y: 157}
-    - name: battle_hit instance 10025
-      rect:
-        serializedVersion: 2
-        x: 552
-        y: 1256
-        width: 138
-        height: 198
-      alignment: 9
-      pivot: {x: 0.53, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 60.859985, y: 176}
-        - {x: -37.140015, y: 176}
-        - {x: -45.140015, y: 111}
-        - {x: -45.140015, y: 33}
-        - {x: -27.140015, y: 3}
-        - {x: -16.140015, y: 3}
-        - {x: -3.1400146, y: 7}
-        - {x: -0.14001465, y: 11}
-        - {x: -1.1400146, y: 24}
-        - {x: -1.1400146, y: 23}
-        - {x: 2.8599854, y: 4}
-        - {x: 6.8599854, y: 3}
-        - {x: 18.859985, y: 3}
-        - {x: 30.859985, y: 9}
-        - {x: 62.859985, y: 86}
-        - {x: 62.859985, y: 170}
-    - name: battle_hit instance 10026
-      rect:
-        serializedVersion: 2
-        x: 690
-        y: 1256
-        width: 138
-        height: 198
-      alignment: 9
-      pivot: {x: 0.53, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 60.859985, y: 176}
-        - {x: -37.140015, y: 176}
-        - {x: -45.140015, y: 111}
-        - {x: -45.140015, y: 33}
-        - {x: -27.140015, y: 3}
-        - {x: -16.140015, y: 3}
-        - {x: -3.1400146, y: 7}
-        - {x: -0.14001465, y: 11}
-        - {x: -1.1400146, y: 24}
-        - {x: -1.1400146, y: 23}
-        - {x: 2.8599854, y: 4}
-        - {x: 6.8599854, y: 3}
-        - {x: 18.859985, y: 3}
-        - {x: 30.859985, y: 9}
-        - {x: 62.859985, y: 86}
-        - {x: 62.859985, y: 170}
-    - name: battle_hit instance 10027
-      rect:
-        serializedVersion: 2
-        x: 828
-        y: 1256
-        width: 138
-        height: 198
-      alignment: 9
-      pivot: {x: 0.53, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 60.859985, y: 176}
-        - {x: -37.140015, y: 176}
-        - {x: -45.140015, y: 111}
-        - {x: -45.140015, y: 33}
-        - {x: -27.140015, y: 3}
-        - {x: -16.140015, y: 3}
-        - {x: -3.1400146, y: 7}
-        - {x: -0.14001465, y: 11}
-        - {x: -1.1400146, y: 24}
-        - {x: -1.1400146, y: 23}
-        - {x: 2.8599854, y: 4}
-        - {x: 6.8599854, y: 3}
-        - {x: 18.859985, y: 3}
-        - {x: 30.859985, y: 9}
-        - {x: 62.859985, y: 86}
-        - {x: 62.859985, y: 170}
-    - name: battle_hit instance 10028
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: battle_hit instance 10010
       rect:
         serializedVersion: 2
         x: 0
-        y: 1058
-        width: 138
-        height: 198
+        y: 39
+        width: 140
+        height: 197
       alignment: 9
       pivot: {x: 0.53, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 60.86, y: 176}
-        - {x: -37.14, y: 176}
-        - {x: -45.14, y: 111}
-        - {x: -45.14, y: 33}
-        - {x: -27.14, y: 3}
-        - {x: -16.14, y: 3}
-        - {x: -3.1399994, y: 7}
-        - {x: -0.13999939, y: 11}
-        - {x: -1.1399994, y: 24}
-        - {x: -1.1399994, y: 23}
-        - {x: 2.8600006, y: 4}
-        - {x: 6.8600006, y: 3}
-        - {x: 18.86, y: 3}
-        - {x: 30.86, y: 9}
-        - {x: 62.86, y: 86}
-        - {x: 62.86, y: 170}
-    - name: battle_hit instance 10029
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: battle_hit instance 10011
       rect:
         serializedVersion: 2
-        x: 138
-        y: 1058
-        width: 138
-        height: 198
+        x: 140
+        y: 236
+        width: 140
+        height: 197
       alignment: 9
       pivot: {x: 0.53, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 60.86, y: 176}
-        - {x: -37.14, y: 176}
-        - {x: -45.14, y: 111}
-        - {x: -45.14, y: 33}
-        - {x: -27.14, y: 3}
-        - {x: -16.14, y: 3}
-        - {x: -3.1399994, y: 7}
-        - {x: -0.13999939, y: 11}
-        - {x: -1.1399994, y: 24}
-        - {x: -1.1399994, y: 23}
-        - {x: 2.8600006, y: 4}
-        - {x: 6.8600006, y: 3}
-        - {x: 18.86, y: 3}
-        - {x: 30.86, y: 9}
-        - {x: 62.86, y: 86}
-        - {x: 62.86, y: 170}
-    - name: battle_hit instance 10030
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: battle_hit instance 10012
       rect:
         serializedVersion: 2
-        x: 276
-        y: 1058
-        width: 138
-        height: 198
+        x: 140
+        y: 39
+        width: 140
+        height: 197
       alignment: 9
       pivot: {x: 0.53, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 60.859985, y: 176}
-        - {x: -37.140015, y: 176}
-        - {x: -45.140015, y: 111}
-        - {x: -45.140015, y: 33}
-        - {x: -27.140015, y: 3}
-        - {x: -16.140015, y: 3}
-        - {x: -3.1400146, y: 7}
-        - {x: -0.14001465, y: 11}
-        - {x: -1.1400146, y: 24}
-        - {x: -1.1400146, y: 23}
-        - {x: 2.8599854, y: 4}
-        - {x: 6.8599854, y: 3}
-        - {x: 18.859985, y: 3}
-        - {x: 30.859985, y: 9}
-        - {x: 62.859985, y: 86}
-        - {x: 62.859985, y: 170}
-    - name: battle_hit instance 10031
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: battle_hit instance 10013
       rect:
         serializedVersion: 2
-        x: 414
-        y: 1058
-        width: 138
-        height: 198
+        x: 280
+        y: 236
+        width: 140
+        height: 197
       alignment: 9
       pivot: {x: 0.53, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 60.859985, y: 176}
-        - {x: -37.140015, y: 176}
-        - {x: -45.140015, y: 111}
-        - {x: -45.140015, y: 33}
-        - {x: -27.140015, y: 3}
-        - {x: -16.140015, y: 3}
-        - {x: -3.1400146, y: 7}
-        - {x: -0.14001465, y: 11}
-        - {x: -1.1400146, y: 24}
-        - {x: -1.1400146, y: 23}
-        - {x: 2.8599854, y: 4}
-        - {x: 6.8599854, y: 3}
-        - {x: 18.859985, y: 3}
-        - {x: 30.859985, y: 9}
-        - {x: 62.859985, y: 86}
-        - {x: 62.859985, y: 170}
-    - name: battle_hit instance 10032
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: battle_hit instance 10014
       rect:
         serializedVersion: 2
-        x: 552
-        y: 1058
-        width: 138
-        height: 198
+        x: 280
+        y: 39
+        width: 140
+        height: 197
       alignment: 9
       pivot: {x: 0.53, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 51.859985, y: 184}
-        - {x: -13.140015, y: 184}
-        - {x: -25.140015, y: 181}
-        - {x: -34.140015, y: 159}
-        - {x: -35.140015, y: 150}
-        - {x: -33.140015, y: 152}
-        - {x: -47.140015, y: 150}
-        - {x: -51.140015, y: 148}
-        - {x: -51.140015, y: 129}
-        - {x: -46.140015, y: 116}
-        - {x: -35.140015, y: 111}
-        - {x: -43.140015, y: 49}
-        - {x: -28.140015, y: 4}
-        - {x: -18.140015, y: 4}
-        - {x: -1.1400146, y: 9}
-        - {x: -3.1400146, y: 33}
-        - {x: -5.1400146, y: 36}
-        - {x: -6.1400146, y: 38}
-        - {x: -2.1400146, y: 34}
-        - {x: -3.1400146, y: 32}
-        - {x: 0.85998535, y: 5}
-        - {x: 4.8599854, y: 4}
-        - {x: 20.859985, y: 4}
-        - {x: 30.859985, y: 7}
-        - {x: 60.859985, y: 91}
-        - {x: 60.859985, y: 169}
-    - name: battle_hit instance 10033
-      rect:
-        serializedVersion: 2
-        x: 690
-        y: 1058
-        width: 138
-        height: 198
-      alignment: 9
-      pivot: {x: 0.53, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 42.859985, y: 194}
-        - {x: 7.8599854, y: 194}
-        - {x: -48.140015, y: 185}
-        - {x: -68.140015, y: 167}
-        - {x: -68.140015, y: 90}
-        - {x: -31.140015, y: 5}
-        - {x: 28.859985, y: 5}
-        - {x: 44.859985, y: 35}
-        - {x: 56.859985, y: 90}
-        - {x: 56.859985, y: 184}
-    - name: battle_hit instance 10034
-      rect:
-        serializedVersion: 2
-        x: 828
-        y: 1058
-        width: 138
-        height: 198
-      alignment: 9
-      pivot: {x: 0.53, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -19.140015, y: 194}
-        - {x: -46.140015, y: 183}
-        - {x: -61.140015, y: 160}
-        - {x: -61.140015, y: 125}
-        - {x: -52.140015, y: 118}
-        - {x: -40.140015, y: 51}
-        - {x: -31.140015, y: 5}
-        - {x: 26.859985, y: 5}
-        - {x: 56.859985, y: 91}
-        - {x: 56.859985, y: 187}
-        - {x: 42.859985, y: 194}
-    - name: battle_hit instance 10035
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 860
-        width: 138
-        height: 198
-      alignment: 9
-      pivot: {x: 0.53, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -23.14, y: 193}
-        - {x: -53.14, y: 169}
-        - {x: -53.14, y: 42}
-        - {x: -42.14, y: 5}
-        - {x: 34.86, y: 5}
-        - {x: 55.86, y: 31}
-        - {x: 55.86, y: 190}
-        - {x: 52.86, y: 193}
-    - name: battle_hit instance 10036
-      rect:
-        serializedVersion: 2
-        x: 138
-        y: 860
-        width: 138
-        height: 198
-      alignment: 9
-      pivot: {x: 0.53, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -32.14, y: 192}
-        - {x: -45.14, y: 185}
-        - {x: -45.14, y: 31}
-        - {x: -29.14, y: 6}
-        - {x: -6.1399994, y: 8}
-        - {x: -3.1399994, y: 13}
-        - {x: -1.1399994, y: 5}
-        - {x: 34.86, y: 5}
-        - {x: 54.86, y: 42}
-        - {x: 54.86, y: 192}
+      outline: []
+      tessellationDetail: -1
     outline: []
   spritePackingTag: 
   userData: 

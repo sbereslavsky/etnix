@@ -131,20 +131,16 @@ namespace strangeetnix.game
 			}
 		}
 
-		internal void startHit1()
+		internal bool canStartHit
 		{
-			if (!_isDead && !isHit && canHit) {
-				_pressedButton = false;
-				_hitNum = 1;
-				setState (CharacterStates.HIT, true);
-			}
+			get { return !_isDead && !isHit && canHit;}
 		}
 
-		internal void startHit2()
+		internal void startHit(int hitNum)
 		{
-			if (!_isDead && !isHit && canHit) {
+			if (canStartHit) {
 				_pressedButton = false;
-				_hitNum = 2;
+				_hitNum = hitNum;
 				setState (CharacterStates.HIT, true);
 			}
 		}
@@ -218,7 +214,18 @@ namespace strangeetnix.game
 					break;
 
 				case CharacterStates.HIT:
-					animationType = (_hitNum == 1) ? PlayerAnimatorTypes.TRIGGER_HIT : PlayerAnimatorTypes.TRIGGER_SUPER_HIT;
+					switch (_hitNum) {
+					case 1:
+						animationType = PlayerAnimatorTypes.TRIGGER_HIT;
+						break;
+					case 2:
+						animationType = PlayerAnimatorTypes.TRIGGER_HIT2;
+						break;
+					default:
+						animationType = PlayerAnimatorTypes.TRIGGER_SUPER_HIT;
+						break;
+					}
+
 					playAnimation (animationType);
 					startWait (onWaitComplete (), TIME_TO_ATTACK);
 					hitEnemySignal.Dispatch ();

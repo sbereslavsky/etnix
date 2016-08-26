@@ -227,11 +227,10 @@ namespace strangeetnix.ui
 						break;
 
 					case ButtonType.HIT:
-						_playerHitCount++;
-						if (_playerHitCount % 2 == 0) {
-							_player.startHit2 ();
-						} else {
-							_player.startHit1 ();
+						if (_player.canStartHit) {
+							_playerHitCount++;
+							int hitId = _playerHitCount % 3;
+							_player.startHit (hitId + 1);
 						}
 						break;
 					}

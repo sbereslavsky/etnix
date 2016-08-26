@@ -218,11 +218,10 @@ namespace strangeetnix.game
 			}
 
 			if (hit) {
-				_playerHitCount++;
-				if (_playerHitCount % 2 == 0) {
-					view.startHit2 ();
-				} else {
-					view.startHit1 ();
+				if (view.canStartHit) {
+					_playerHitCount++;
+					int hitId = _playerHitCount % 3;
+					view.startHit (hitId + 1);
 				}
 			}
 		}

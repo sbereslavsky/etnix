@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 1220f616d1f34fc48878ef6c264da456
-timeCreated: 1461062883
+timeCreated: 1472229775
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -226,1444 +226,207 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
+  spriteTessellationDetail: -1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
+    serializedVersion: 2
     sprites:
-    - name: battle_hit_super instance 10000
+    - serializedVersion: 2
+      name: battle_hit_super instance 10000
       rect:
         serializedVersion: 2
         x: 0
-        y: 1855
-        width: 148
-        height: 193
+        y: 830
+        width: 147
+        height: 194
       alignment: 9
       pivot: {x: 0.36, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -35.280003, y: 193}
-        - {x: -44.280003, y: 167}
-        - {x: -44.280003, y: 44}
-        - {x: -34.280003, y: 6}
-        - {x: 22.719997, y: 6}
-        - {x: 55.719997, y: 24}
-        - {x: 55.719997, y: 193}
-    - name: battle_hit_super instance 10001
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: battle_hit_super instance 10001
       rect:
         serializedVersion: 2
-        x: 148
-        y: 1855
-        width: 148
-        height: 193
+        x: 147
+        y: 830
+        width: 147
+        height: 194
       alignment: 9
       pivot: {x: 0.36, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -11.279999, y: 189}
-        - {x: -39.28, y: 182}
-        - {x: -39.28, y: 44}
-        - {x: -34.28, y: 6}
-        - {x: -3.2799988, y: 6}
-        - {x: -2.2799988, y: 13}
-        - {x: -2.2799988, y: 22}
-        - {x: -3.2799988, y: 35}
-        - {x: 3.7200012, y: 5}
-        - {x: 60.72, y: 5}
-        - {x: 60.72, y: 188}
-        - {x: 58.72, y: 189}
-    - name: battle_hit_super instance 10002
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: battle_hit_super instance 10002
       rect:
         serializedVersion: 2
-        x: 296
-        y: 1855
-        width: 148
-        height: 193
+        x: 294
+        y: 830
+        width: 147
+        height: 194
       alignment: 9
       pivot: {x: 0.36, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -37.28, y: 185}
-        - {x: -42.28, y: 182}
-        - {x: -42.28, y: 31}
-        - {x: -38.28, y: 5}
-        - {x: 24.720001, y: 5}
-        - {x: 32.72, y: 8}
-        - {x: 65.72, y: 111}
-        - {x: 65.72, y: 183}
-        - {x: 57.72, y: 185}
-    - name: battle_hit_super instance 10003
-      rect:
-        serializedVersion: 2
-        x: 444
-        y: 1855
-        width: 148
-        height: 193
-      alignment: 9
-      pivot: {x: 0.36, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 61.72, y: 181}
-        - {x: -44.28, y: 181}
-        - {x: -44.28, y: 4}
-        - {x: -16.279999, y: 4}
-        - {x: -5.279999, y: 7}
-        - {x: -0.27999878, y: 13}
-        - {x: -0.27999878, y: 21}
-        - {x: -2.2799988, y: 28}
-        - {x: 5.720001, y: 4}
-        - {x: 20.720001, y: 4}
-        - {x: 33.72, y: 11}
-        - {x: 69.72, y: 89}
-        - {x: 69.72, y: 168}
-    - name: battle_hit_super instance 10004
-      rect:
-        serializedVersion: 2
-        x: 592
-        y: 1855
-        width: 148
-        height: 193
-      alignment: 9
-      pivot: {x: 0.36, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -44.28003, y: 21}
-        - {x: -43.28003, y: 4}
-        - {x: 39.71997, y: 4}
-        - {x: 73.71997, y: 64}
-        - {x: 73.71997, y: 174}
-        - {x: 66.71997, y: 181}
-        - {x: -16.28003, y: 181}
-        - {x: -44.28003, y: 152}
-    - name: battle_hit_super instance 10005
-      rect:
-        serializedVersion: 2
-        x: 740
-        y: 1855
-        width: 148
-        height: 193
-      alignment: 9
-      pivot: {x: 0.36, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -11.280029, y: 181}
-        - {x: -43.28003, y: 97}
-        - {x: -43.28003, y: 31}
-        - {x: -31.28003, y: 7}
-        - {x: -11.280029, y: 14}
-        - {x: -5.2800293, y: 18}
-        - {x: -6.2800293, y: 25}
-        - {x: -7.2800293, y: 33}
-        - {x: 7.7199707, y: 4}
-        - {x: 16.71997, y: 4}
-        - {x: 67.71997, y: 25}
-        - {x: 76.71997, y: 89}
-        - {x: 76.71997, y: 181}
-    - name: battle_hit_super instance 10006
-      rect:
-        serializedVersion: 2
-        x: 888
-        y: 1855
-        width: 148
-        height: 193
-      alignment: 9
-      pivot: {x: 0.36, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 81.71997, y: 169}
-        - {x: 76.71997, y: 182}
-        - {x: -30.28003, y: 182}
-        - {x: -41.28003, y: 117}
-        - {x: -41.28003, y: 4}
-        - {x: 28.71997, y: 4}
-        - {x: 34.71997, y: 9}
-        - {x: 28.71997, y: 38}
-        - {x: 57.71997, y: 76}
-        - {x: 81.71997, y: 110}
-    - name: battle_hit_super instance 10007
-      rect:
-        serializedVersion: 2
-        x: 1036
-        y: 1855
-        width: 148
-        height: 193
-      alignment: 9
-      pivot: {x: 0.36, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -42.28003, y: 4}
-        - {x: 46.71997, y: 4}
-        - {x: 84.71997, y: 58}
-        - {x: 84.71997, y: 180}
-        - {x: 21.71997, y: 180}
-        - {x: -18.28003, y: 172}
-        - {x: -42.28003, y: 91}
-    - name: battle_hit_super instance 10008
-      rect:
-        serializedVersion: 2
-        x: 1184
-        y: 1855
-        width: 148
-        height: 193
-      alignment: 9
-      pivot: {x: 0.36, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 0.7199707, y: 179}
-        - {x: -48.28003, y: 102}
-        - {x: -48.28003, y: 16}
-        - {x: -47.28003, y: 9}
-        - {x: -21.28003, y: 4}
-        - {x: 69.71997, y: 4}
-        - {x: 87.71997, y: 76}
-        - {x: 87.71997, y: 174}
-        - {x: 84.71997, y: 179}
-    - name: battle_hit_super instance 10009
-      rect:
-        serializedVersion: 2
-        x: 1332
-        y: 1855
-        width: 148
-        height: 193
-      alignment: 9
-      pivot: {x: 0.36, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 50.71997, y: 87}
-        - {x: 57.71997, y: 76}
-        - {x: 66.71997, y: 71}
-        - {x: 91.71997, y: 112}
-        - {x: 91.71997, y: 161}
-        - {x: 86.71997, y: 177}
-        - {x: 37.71997, y: 177}
-        - {x: -2.2800293, y: 159}
-        - {x: -53.28003, y: 68}
-        - {x: -53.28003, y: 38}
-        - {x: 0.7199707, y: 4}
-        - {x: 33.71997, y: 4}
-        - {x: 38.71997, y: 7}
-        - {x: 50.71997, y: 116}
-        - {x: 50.71997, y: 124}
-    - name: battle_hit_super instance 10010
-      rect:
-        serializedVersion: 2
-        x: 1480
-        y: 1855
-        width: 148
-        height: 193
-      alignment: 9
-      pivot: {x: 0.36, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 12.719971, y: 181}
-        - {x: -30.28003, y: 159}
-        - {x: -51.28003, y: 81}
-        - {x: -51.28003, y: 27}
-        - {x: -39.28003, y: 21}
-        - {x: 8.719971, y: 4}
-        - {x: 58.71997, y: 4}
-        - {x: 82.71997, y: 82}
-        - {x: 82.71997, y: 181}
-    - name: battle_hit_super instance 10011
-      rect:
-        serializedVersion: 2
-        x: 1628
-        y: 1855
-        width: 148
-        height: 193
-      alignment: 9
-      pivot: {x: 0.36, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -48.28003, y: 4}
-        - {x: 55.71997, y: 4}
-        - {x: 74.71997, y: 22}
-        - {x: 74.71997, y: 184}
-        - {x: -11.280029, y: 184}
-        - {x: -19.28003, y: 181}
-        - {x: -48.28003, y: 73}
-    - name: battle_hit_super instance 10012
-      rect:
-        serializedVersion: 2
-        x: 1776
-        y: 1855
-        width: 148
-        height: 193
-      alignment: 9
-      pivot: {x: 0.36, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 13.719971, y: 188}
-        - {x: -27.28003, y: 183}
-        - {x: -33.28003, y: 148}
-        - {x: -12.280029, y: 134}
-        - {x: -9.280029, y: 134}
-        - {x: -29.28003, y: 134}
-        - {x: -45.28003, y: 104}
-        - {x: -45.28003, y: 9}
-        - {x: -32.28003, y: 5}
-        - {x: -20.28003, y: 6}
-        - {x: -13.280029, y: 24}
-        - {x: -3.2800293, y: 4}
-        - {x: 54.71997, y: 4}
-        - {x: 65.71997, y: 19}
-        - {x: 65.71997, y: 169}
-        - {x: 53.71997, y: 188}
-    - name: battle_hit_super instance 10013
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: battle_hit_super instance 10003
       rect:
         serializedVersion: 2
         x: 0
-        y: 1662
-        width: 148
-        height: 193
+        y: 636
+        width: 147
+        height: 194
       alignment: 9
       pivot: {x: 0.36, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -17.280003, y: 187}
-        - {x: -39.280003, y: 183}
-        - {x: -44.280003, y: 113}
-        - {x: -44.280003, y: 4}
-        - {x: 29.719997, y: 4}
-        - {x: 50.719997, y: 22}
-        - {x: 66.72, y: 101}
-        - {x: 66.72, y: 187}
-    - name: battle_hit_super instance 10014
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: battle_hit_super instance 10004
       rect:
         serializedVersion: 2
-        x: 148
-        y: 1662
-        width: 148
-        height: 193
+        x: 147
+        y: 636
+        width: 147
+        height: 194
       alignment: 9
       pivot: {x: 0.36, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 68.72, y: 185}
-        - {x: -24.279999, y: 185}
-        - {x: -43.28, y: 77}
-        - {x: -43.28, y: 4}
-        - {x: 32.72, y: 4}
-        - {x: 38.72, y: 18}
-        - {x: 68.72, y: 110}
-    - name: battle_hit_super instance 10015
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: battle_hit_super instance 10005
       rect:
         serializedVersion: 2
-        x: 296
-        y: 1662
-        width: 148
-        height: 193
+        x: 294
+        y: 636
+        width: 147
+        height: 194
       alignment: 9
       pivot: {x: 0.36, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 65.72, y: 184}
-        - {x: -25.279999, y: 184}
-        - {x: -42.28, y: 62}
-        - {x: -42.28, y: 8}
-        - {x: -30.279999, y: 4}
-        - {x: -15.279999, y: 8}
-        - {x: -12.279999, y: 26}
-        - {x: 2.7200012, y: 4}
-        - {x: 6.720001, y: 3}
-        - {x: 21.720001, y: 3}
-        - {x: 32.72, y: 6}
-        - {x: 69.72, y: 87}
-        - {x: 69.72, y: 176}
-    - name: battle_hit_super instance 10016
-      rect:
-        serializedVersion: 2
-        x: 444
-        y: 1662
-        width: 148
-        height: 193
-      alignment: 9
-      pivot: {x: 0.36, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -10.279999, y: 183}
-        - {x: -21.279999, y: 170}
-        - {x: -41.28, y: 67}
-        - {x: -41.28, y: 7}
-        - {x: -16.279999, y: 3}
-        - {x: -11.279999, y: 13}
-        - {x: -1.2799988, y: 3}
-        - {x: 32.72, y: 3}
-        - {x: 71.72, y: 97}
-        - {x: 71.72, y: 168}
-        - {x: 63.72, y: 183}
-    - name: battle_hit_super instance 10017
-      rect:
-        serializedVersion: 2
-        x: 592
-        y: 1662
-        width: 148
-        height: 193
-      alignment: 9
-      pivot: {x: 0.36, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 58.71997, y: 182}
-        - {x: 29.71997, y: 184}
-        - {x: -8.280029, y: 184}
-        - {x: -21.28003, y: 168}
-        - {x: -40.28003, y: 73}
-        - {x: -40.28003, y: 8}
-        - {x: -26.28003, y: 3}
-        - {x: 32.71997, y: 3}
-        - {x: 72.71997, y: 119}
-        - {x: 72.71997, y: 175}
-    - name: battle_hit_super instance 10018
-      rect:
-        serializedVersion: 2
-        x: 740
-        y: 1662
-        width: 148
-        height: 193
-      alignment: 9
-      pivot: {x: 0.36, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 58.71997, y: 182}
-        - {x: 29.71997, y: 184}
-        - {x: -8.280029, y: 184}
-        - {x: -21.28003, y: 168}
-        - {x: -40.28003, y: 73}
-        - {x: -40.28003, y: 8}
-        - {x: -26.28003, y: 3}
-        - {x: 32.71997, y: 3}
-        - {x: 72.71997, y: 119}
-        - {x: 72.71997, y: 175}
-    - name: battle_hit_super instance 10019
-      rect:
-        serializedVersion: 2
-        x: 888
-        y: 1662
-        width: 148
-        height: 193
-      alignment: 9
-      pivot: {x: 0.36, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 58.71997, y: 182}
-        - {x: 29.71997, y: 184}
-        - {x: -8.280029, y: 184}
-        - {x: -21.28003, y: 168}
-        - {x: -40.28003, y: 73}
-        - {x: -40.28003, y: 8}
-        - {x: -26.28003, y: 3}
-        - {x: 32.71997, y: 3}
-        - {x: 72.71997, y: 119}
-        - {x: 72.71997, y: 175}
-    - name: battle_hit_super instance 10020
-      rect:
-        serializedVersion: 2
-        x: 1036
-        y: 1662
-        width: 148
-        height: 193
-      alignment: 9
-      pivot: {x: 0.36, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 58.71997, y: 182}
-        - {x: 29.71997, y: 184}
-        - {x: -8.280029, y: 184}
-        - {x: -21.28003, y: 168}
-        - {x: -40.28003, y: 73}
-        - {x: -40.28003, y: 8}
-        - {x: -26.28003, y: 3}
-        - {x: 32.71997, y: 3}
-        - {x: 72.71997, y: 119}
-        - {x: 72.71997, y: 175}
-    - name: battle_hit_super instance 10021
-      rect:
-        serializedVersion: 2
-        x: 1184
-        y: 1662
-        width: 148
-        height: 193
-      alignment: 9
-      pivot: {x: 0.36, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 58.71997, y: 182}
-        - {x: 29.71997, y: 184}
-        - {x: -8.280029, y: 184}
-        - {x: -21.28003, y: 168}
-        - {x: -40.28003, y: 73}
-        - {x: -40.28003, y: 8}
-        - {x: -26.28003, y: 3}
-        - {x: 32.71997, y: 3}
-        - {x: 72.71997, y: 119}
-        - {x: 72.71997, y: 175}
-    - name: battle_hit_super instance 10022
-      rect:
-        serializedVersion: 2
-        x: 1332
-        y: 1662
-        width: 148
-        height: 193
-      alignment: 9
-      pivot: {x: 0.36, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -16.28003, y: 184}
-        - {x: -32.28003, y: 131}
-        - {x: -40.28003, y: 83}
-        - {x: -40.28003, y: 3}
-        - {x: 30.71997, y: 3}
-        - {x: 71.71997, y: 111}
-        - {x: 71.71997, y: 168}
-        - {x: 67.71997, y: 184}
-    - name: battle_hit_super instance 10023
-      rect:
-        serializedVersion: 2
-        x: 1480
-        y: 1662
-        width: 148
-        height: 193
-      alignment: 9
-      pivot: {x: 0.36, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18.28003, y: 184}
-        - {x: -26.28003, y: 154}
-        - {x: -39.28003, y: 50}
-        - {x: -40.28003, y: 17}
-        - {x: -40.28003, y: 10}
-        - {x: -36.28003, y: 8}
-        - {x: -14.280029, y: 5}
-        - {x: -8.280029, y: 3}
-        - {x: 21.71997, y: 3}
-        - {x: 31.71997, y: 5}
-        - {x: 70.71997, y: 123}
-        - {x: 70.71997, y: 161}
-        - {x: 66.71997, y: 184}
-    - name: battle_hit_super instance 10024
-      rect:
-        serializedVersion: 2
-        x: 1628
-        y: 1662
-        width: 148
-        height: 193
-      alignment: 9
-      pivot: {x: 0.36, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -13.280029, y: 184}
-        - {x: -29.28003, y: 169}
-        - {x: -40.28003, y: 93}
-        - {x: -40.28003, y: 3}
-        - {x: 33.71997, y: 3}
-        - {x: 69.71997, y: 107}
-        - {x: 69.71997, y: 168}
-        - {x: 64.71997, y: 184}
-    - name: battle_hit_super instance 10025
-      rect:
-        serializedVersion: 2
-        x: 1776
-        y: 1662
-        width: 148
-        height: 193
-      alignment: 9
-      pivot: {x: 0.36, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -40.28003, y: 3}
-        - {x: 37.71997, y: 3}
-        - {x: 68.71997, y: 61}
-        - {x: 68.71997, y: 183}
-        - {x: 66.71997, y: 185}
-        - {x: -30.28003, y: 185}
-        - {x: -40.28003, y: 144}
-    - name: battle_hit_super instance 10026
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: battle_hit_super instance 10006
       rect:
         serializedVersion: 2
         x: 0
-        y: 1469
-        width: 148
-        height: 193
+        y: 442
+        width: 147
+        height: 194
       alignment: 9
       pivot: {x: 0.36, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -35.280003, y: 187}
-        - {x: -40.280003, y: 104}
-        - {x: -40.280003, y: 9}
-        - {x: -37.280003, y: 4}
-        - {x: -15.280003, y: 7}
-        - {x: -13.280003, y: 11}
-        - {x: -0.2800026, y: 3}
-        - {x: 28.719997, y: 3}
-        - {x: 67.72, y: 130}
-        - {x: 67.72, y: 179}
-        - {x: 64.72, y: 187}
-    - name: battle_hit_super instance 10027
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: battle_hit_super instance 10007
       rect:
         serializedVersion: 2
-        x: 148
-        y: 1469
-        width: 148
-        height: 193
+        x: 147
+        y: 442
+        width: 147
+        height: 194
       alignment: 9
       pivot: {x: 0.36, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -19.279999, y: 188}
-        - {x: -31.279999, y: 166}
-        - {x: -40.28, y: 88}
-        - {x: -40.28, y: 4}
-        - {x: 30.720001, y: 4}
-        - {x: 66.72, y: 109}
-        - {x: 66.72, y: 177}
-        - {x: 57.72, y: 188}
-    - name: battle_hit_super instance 10028
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: battle_hit_super instance 10008
       rect:
         serializedVersion: 2
-        x: 296
-        y: 1469
-        width: 148
-        height: 193
+        x: 294
+        y: 442
+        width: 147
+        height: 194
       alignment: 9
       pivot: {x: 0.36, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -39.28, y: 117}
-        - {x: -39.28, y: 4}
-        - {x: 39.72, y: 4}
-        - {x: 65.72, y: 60}
-        - {x: 65.72, y: 189}
-        - {x: 0.7200012, y: 189}
-        - {x: -21.279999, y: 184}
-        - {x: -32.28, y: 167}
-    - name: battle_hit_super instance 10029
-      rect:
-        serializedVersion: 2
-        x: 444
-        y: 1469
-        width: 148
-        height: 193
-      alignment: 9
-      pivot: {x: 0.36, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 53.72, y: 188}
-        - {x: 42.72, y: 190}
-        - {x: 10.720001, y: 190}
-        - {x: -21.279999, y: 185}
-        - {x: -32.28, y: 168}
-        - {x: -29.279999, y: 155}
-        - {x: -39.28, y: 80}
-        - {x: -39.28, y: 11}
-        - {x: -35.28, y: 8}
-        - {x: -14.279999, y: 6}
-        - {x: -10.279999, y: 12}
-        - {x: 1.7200012, y: 4}
-        - {x: 15.720001, y: 4}
-        - {x: 23.720001, y: 5}
-        - {x: 25.720001, y: 9}
-        - {x: 63.72, y: 99}
-        - {x: 63.72, y: 173}
-    - name: battle_hit_super instance 10030
-      rect:
-        serializedVersion: 2
-        x: 592
-        y: 1469
-        width: 148
-        height: 193
-      alignment: 9
-      pivot: {x: 0.36, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 55.71997, y: 191}
-        - {x: -18.28003, y: 191}
-        - {x: -33.28003, y: 181}
-        - {x: -39.28003, y: 84}
-        - {x: -39.28003, y: 7}
-        - {x: -14.280029, y: 6}
-        - {x: -10.280029, y: 12}
-        - {x: -4.2800293, y: 4}
-        - {x: 24.71997, y: 4}
-        - {x: 27.71997, y: 8}
-        - {x: 62.71997, y: 102}
-        - {x: 62.71997, y: 184}
-    - name: battle_hit_super instance 10031
-      rect:
-        serializedVersion: 2
-        x: 740
-        y: 1469
-        width: 148
-        height: 193
-      alignment: 9
-      pivot: {x: 0.36, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -23.28003, y: 192}
-        - {x: -39.28003, y: 158}
-        - {x: -39.28003, y: 6}
-        - {x: -32.28003, y: 4}
-        - {x: 24.71997, y: 4}
-        - {x: 30.71997, y: 6}
-        - {x: 61.71997, y: 67}
-        - {x: 61.71997, y: 185}
-        - {x: 53.71997, y: 192}
-    - name: battle_hit_super instance 10032
-      rect:
-        serializedVersion: 2
-        x: 888
-        y: 1469
-        width: 148
-        height: 193
-      alignment: 9
-      pivot: {x: 0.36, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -30.28003, y: 191}
-        - {x: -39.28003, y: 165}
-        - {x: -39.28003, y: 9}
-        - {x: -26.28003, y: 4}
-        - {x: 24.71997, y: 4}
-        - {x: 30.71997, y: 6}
-        - {x: 62.71997, y: 74}
-        - {x: 62.71997, y: 191}
-    - name: battle_hit_super instance 10033
-      rect:
-        serializedVersion: 2
-        x: 1036
-        y: 1469
-        width: 148
-        height: 193
-      alignment: 9
-      pivot: {x: 0.36, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -27.28003, y: 191}
-        - {x: -39.28003, y: 186}
-        - {x: -39.28003, y: 8}
-        - {x: -27.28003, y: 4}
-        - {x: 24.71997, y: 4}
-        - {x: 30.71997, y: 6}
-        - {x: 63.71997, y: 64}
-        - {x: 63.71997, y: 191}
-    - name: battle_hit_super instance 10034
-      rect:
-        serializedVersion: 2
-        x: 1184
-        y: 1469
-        width: 148
-        height: 193
-      alignment: 9
-      pivot: {x: 0.36, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -33.28003, y: 190}
-        - {x: -39.28003, y: 157}
-        - {x: -39.28003, y: 4}
-        - {x: 24.71997, y: 4}
-        - {x: 30.71997, y: 6}
-        - {x: 51.71997, y: 80}
-        - {x: 63.71997, y: 140}
-        - {x: 63.71997, y: 190}
-    - name: battle_hit_super instance 10035
-      rect:
-        serializedVersion: 2
-        x: 1332
-        y: 1469
-        width: 148
-        height: 193
-      alignment: 9
-      pivot: {x: 0.36, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -28.28003, y: 189}
-        - {x: -35.28003, y: 158}
-        - {x: -39.28003, y: 134}
-        - {x: -39.28003, y: 6}
-        - {x: -38.28003, y: 4}
-        - {x: 59.71997, y: 4}
-        - {x: 64.71997, y: 10}
-        - {x: 64.71997, y: 189}
-    - name: battle_hit_super instance 10036
-      rect:
-        serializedVersion: 2
-        x: 1480
-        y: 1469
-        width: 148
-        height: 193
-      alignment: 9
-      pivot: {x: 0.36, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -28.28003, y: 188}
-        - {x: -39.28003, y: 137}
-        - {x: -39.28003, y: 6}
-        - {x: -32.28003, y: 4}
-        - {x: 24.71997, y: 4}
-        - {x: 30.71997, y: 6}
-        - {x: 65.71997, y: 71}
-        - {x: 65.71997, y: 184}
-        - {x: 61.71997, y: 188}
-    - name: battle_hit_super instance 10037
-      rect:
-        serializedVersion: 2
-        x: 1628
-        y: 1469
-        width: 148
-        height: 193
-      alignment: 9
-      pivot: {x: 0.36, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 65.71997, y: 171}
-        - {x: 58.71997, y: 187}
-        - {x: -26.28003, y: 187}
-        - {x: -39.28003, y: 142}
-        - {x: -39.28003, y: 7}
-        - {x: -30.28003, y: 4}
-        - {x: 24.71997, y: 4}
-        - {x: 30.71997, y: 6}
-        - {x: 23.71997, y: 73}
-        - {x: 50.71997, y: 80}
-        - {x: 65.71997, y: 112}
-    - name: battle_hit_super instance 10038
-      rect:
-        serializedVersion: 2
-        x: 1776
-        y: 1469
-        width: 148
-        height: 193
-      alignment: 9
-      pivot: {x: 0.36, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18.28003, y: 187}
-        - {x: -34.28003, y: 172}
-        - {x: -39.28003, y: 83}
-        - {x: -39.28003, y: 6}
-        - {x: -31.28003, y: 4}
-        - {x: 24.71997, y: 4}
-        - {x: 30.71997, y: 6}
-        - {x: 66.71997, y: 74}
-        - {x: 66.71997, y: 180}
-        - {x: 60.71997, y: 187}
-    - name: battle_hit_super instance 10039
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: battle_hit_super instance 10009
       rect:
         serializedVersion: 2
         x: 0
-        y: 1276
-        width: 148
-        height: 193
+        y: 248
+        width: 147
+        height: 194
       alignment: 9
       pivot: {x: 0.36, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -26.280003, y: 187}
-        - {x: -32.280003, y: 176}
-        - {x: -39.280003, y: 74}
-        - {x: -39.280003, y: 6}
-        - {x: -32.280003, y: 4}
-        - {x: 36.719997, y: 4}
-        - {x: 64.72, y: 82}
-        - {x: 65.72, y: 96}
-        - {x: 65.72, y: 187}
-    - name: battle_hit_super instance 10040
-      rect:
-        serializedVersion: 2
-        x: 148
-        y: 1276
-        width: 148
-        height: 193
-      alignment: 9
-      pivot: {x: 0.36, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -26.279999, y: 188}
-        - {x: -34.28, y: 169}
-        - {x: -39.28, y: 81}
-        - {x: -39.28, y: 7}
-        - {x: -30.279999, y: 4}
-        - {x: 44.72, y: 4}
-        - {x: 64.72, y: 99}
-        - {x: 64.72, y: 188}
-    - name: battle_hit_super instance 10041
-      rect:
-        serializedVersion: 2
-        x: 296
-        y: 1276
-        width: 148
-        height: 193
-      alignment: 9
-      pivot: {x: 0.36, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -36.28, y: 189}
-        - {x: -39.28, y: 161}
-        - {x: -39.28, y: 9}
-        - {x: -26.279999, y: 4}
-        - {x: 51.72, y: 4}
-        - {x: 63.72, y: 73}
-        - {x: 63.72, y: 189}
-    - name: battle_hit_super instance 10042
-      rect:
-        serializedVersion: 2
-        x: 444
-        y: 1276
-        width: 148
-        height: 193
-      alignment: 9
-      pivot: {x: 0.36, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -29.279999, y: 190}
-        - {x: -39.28, y: 157}
-        - {x: -39.28, y: 6}
-        - {x: -31.279999, y: 4}
-        - {x: 38.72, y: 4}
-        - {x: 63.72, y: 97}
-        - {x: 63.72, y: 173}
-        - {x: 53.72, y: 190}
-    - name: battle_hit_super instance 10043
-      rect:
-        serializedVersion: 2
-        x: 592
-        y: 1276
-        width: 148
-        height: 193
-      alignment: 9
-      pivot: {x: 0.36, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -39.28003, y: 4}
-        - {x: 38.71997, y: 4}
-        - {x: 62.71997, y: 47}
-        - {x: 62.71997, y: 191}
-        - {x: -37.28003, y: 191}
-        - {x: -39.28003, y: 172}
-    - name: battle_hit_super instance 10044
-      rect:
-        serializedVersion: 2
-        x: 740
-        y: 1276
-        width: 148
-        height: 193
-      alignment: 9
-      pivot: {x: 0.36, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -10.280029, y: 192}
-        - {x: -21.28003, y: 189}
-        - {x: -39.28003, y: 167}
-        - {x: -39.28003, y: 9}
-        - {x: -26.28003, y: 4}
-        - {x: 33.71997, y: 4}
-        - {x: 61.71997, y: 104}
-        - {x: 61.71997, y: 174}
-        - {x: 51.71997, y: 192}
-    - name: battle_hit_super instance 10045
-      rect:
-        serializedVersion: 2
-        x: 888
-        y: 1276
-        width: 148
-        height: 193
-      alignment: 9
-      pivot: {x: 0.36, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -10.280029, y: 192}
-        - {x: -30.28003, y: 190}
-        - {x: -39.28003, y: 166}
-        - {x: -39.28003, y: 6}
-        - {x: -31.28003, y: 4}
-        - {x: 33.71997, y: 4}
-        - {x: 61.71997, y: 126}
-        - {x: 61.71997, y: 179}
-        - {x: 54.71997, y: 192}
-    - name: battle_hit_super instance 10046
-      rect:
-        serializedVersion: 2
-        x: 1036
-        y: 1276
-        width: 148
-        height: 193
-      alignment: 9
-      pivot: {x: 0.36, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -11.280029, y: 191}
-        - {x: -25.28003, y: 189}
-        - {x: -35.28003, y: 166}
-        - {x: -39.28003, y: 154}
-        - {x: -39.28003, y: 7}
-        - {x: -37.28003, y: 4}
-        - {x: 34.71997, y: 4}
-        - {x: 62.71997, y: 117}
-        - {x: 62.71997, y: 169}
-        - {x: 54.71997, y: 191}
-    - name: battle_hit_super instance 10047
-      rect:
-        serializedVersion: 2
-        x: 1184
-        y: 1276
-        width: 148
-        height: 193
-      alignment: 9
-      pivot: {x: 0.36, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -39.28003, y: 4}
-        - {x: 52.71997, y: 4}
-        - {x: 62.71997, y: 15}
-        - {x: 62.71997, y: 174}
-        - {x: 53.71997, y: 190}
-        - {x: -31.28003, y: 190}
-        - {x: -39.28003, y: 114}
-    - name: battle_hit_super instance 10048
-      rect:
-        serializedVersion: 2
-        x: 1332
-        y: 1276
-        width: 148
-        height: 193
-      alignment: 9
-      pivot: {x: 0.36, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -11.280029, y: 190}
-        - {x: -21.28003, y: 188}
-        - {x: -35.28003, y: 168}
-        - {x: -39.28003, y: 86}
-        - {x: -39.28003, y: 6}
-        - {x: -31.28003, y: 4}
-        - {x: 28.71997, y: 4}
-        - {x: 31.71997, y: 5}
-        - {x: 63.71997, y: 129}
-        - {x: 63.71997, y: 174}
-        - {x: 50.71997, y: 190}
-    - name: battle_hit_super instance 10049
-      rect:
-        serializedVersion: 2
-        x: 1480
-        y: 1276
-        width: 148
-        height: 193
-      alignment: 9
-      pivot: {x: 0.36, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -29.28003, y: 189}
-        - {x: -36.28003, y: 153}
-        - {x: -39.28003, y: 87}
-        - {x: -39.28003, y: 6}
-        - {x: -31.28003, y: 4}
-        - {x: 24.71997, y: 4}
-        - {x: 30.71997, y: 6}
-        - {x: 63.71997, y: 112}
-        - {x: 63.71997, y: 168}
-        - {x: 55.71997, y: 189}
-    - name: battle_hit_super instance 10050
-      rect:
-        serializedVersion: 2
-        x: 1628
-        y: 1276
-        width: 148
-        height: 193
-      alignment: 9
-      pivot: {x: 0.36, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -26.28003, y: 188}
-        - {x: -34.28003, y: 169}
-        - {x: -39.28003, y: 77}
-        - {x: -39.28003, y: 4}
-        - {x: 38.71997, y: 4}
-        - {x: 64.71997, y: 43}
-        - {x: 64.71997, y: 188}
-    - name: battle_hit_super instance 10051
-      rect:
-        serializedVersion: 2
-        x: 1776
-        y: 1276
-        width: 148
-        height: 193
-      alignment: 9
-      pivot: {x: 0.36, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -29.28003, y: 187}
-        - {x: -39.28003, y: 161}
-        - {x: -39.28003, y: 6}
-        - {x: -31.28003, y: 4}
-        - {x: 56.71997, y: 4}
-        - {x: 65.71997, y: 67}
-        - {x: 65.71997, y: 187}
-    - name: battle_hit_super instance 10052
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: battle_hit_super instance 10010
       rect:
         serializedVersion: 2
         x: 0
-        y: 1083
-        width: 148
-        height: 193
+        y: 54
+        width: 147
+        height: 194
       alignment: 9
       pivot: {x: 0.36, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -30.280003, y: 187}
-        - {x: -32.280003, y: 176}
-        - {x: -38.280003, y: 99}
-        - {x: -39.280003, y: 76}
-        - {x: -39.280003, y: 7}
-        - {x: -30.280003, y: 4}
-        - {x: 40.719997, y: 4}
-        - {x: 65.72, y: 92}
-        - {x: 65.72, y: 187}
-    - name: battle_hit_super instance 10053
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: battle_hit_super instance 10011
       rect:
         serializedVersion: 2
-        x: 148
-        y: 1083
-        width: 148
-        height: 193
+        x: 147
+        y: 248
+        width: 147
+        height: 194
       alignment: 9
       pivot: {x: 0.36, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18.279999, y: 187}
-        - {x: -39.28, y: 176}
-        - {x: -39.28, y: 6}
-        - {x: -31.279999, y: 4}
-        - {x: 24.720001, y: 4}
-        - {x: 30.720001, y: 6}
-        - {x: 66.72, y: 125}
-        - {x: 66.72, y: 172}
-        - {x: 55.72, y: 187}
-    - name: battle_hit_super instance 10054
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: battle_hit_super instance 10012
       rect:
         serializedVersion: 2
-        x: 296
-        y: 1083
-        width: 148
-        height: 193
+        x: 147
+        y: 54
+        width: 147
+        height: 194
       alignment: 9
       pivot: {x: 0.36, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -28.279999, y: 187}
-        - {x: -38.28, y: 172}
-        - {x: -39.28, y: 124}
-        - {x: -39.28, y: 5}
-        - {x: -38.28, y: 4}
-        - {x: 37.72, y: 4}
-        - {x: 65.72, y: 33}
-        - {x: 65.72, y: 186}
-        - {x: 57.72, y: 187}
-    - name: battle_hit_super instance 10055
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: battle_hit_super instance 10013
       rect:
         serializedVersion: 2
-        x: 444
-        y: 1083
-        width: 148
-        height: 193
+        x: 294
+        y: 248
+        width: 147
+        height: 194
       alignment: 9
       pivot: {x: 0.36, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -19.279999, y: 189}
-        - {x: -33.28, y: 170}
-        - {x: -39.28, y: 73}
-        - {x: -39.28, y: 6}
-        - {x: -31.279999, y: 4}
-        - {x: 24.720001, y: 4}
-        - {x: 30.720001, y: 6}
-        - {x: 64.72, y: 117}
-        - {x: 64.72, y: 168}
-        - {x: 56.72, y: 189}
-    - name: battle_hit_super instance 10056
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: battle_hit_super instance 10014
       rect:
         serializedVersion: 2
-        x: 592
-        y: 1083
-        width: 148
-        height: 193
+        x: 294
+        y: 54
+        width: 147
+        height: 194
       alignment: 9
       pivot: {x: 0.36, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 51.71997, y: 190}
-        - {x: -15.280029, y: 190}
-        - {x: -21.28003, y: 189}
-        - {x: -39.28003, y: 170}
-        - {x: -39.28003, y: 6}
-        - {x: -31.28003, y: 4}
-        - {x: 24.71997, y: 4}
-        - {x: 30.71997, y: 6}
-        - {x: 59.71997, y: 80}
-        - {x: 63.71997, y: 98}
-        - {x: 63.71997, y: 174}
-    - name: battle_hit_super instance 10057
-      rect:
-        serializedVersion: 2
-        x: 740
-        y: 1083
-        width: 148
-        height: 193
-      alignment: 9
-      pivot: {x: 0.36, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 53.71997, y: 191}
-        - {x: -25.28003, y: 191}
-        - {x: -39.28003, y: 160}
-        - {x: -39.28003, y: 6}
-        - {x: -31.28003, y: 4}
-        - {x: 24.71997, y: 4}
-        - {x: 30.71997, y: 6}
-        - {x: 54.71997, y: 82}
-        - {x: 62.71997, y: 129}
-        - {x: 62.71997, y: 179}
-    - name: battle_hit_super instance 10058
-      rect:
-        serializedVersion: 2
-        x: 888
-        y: 1083
-        width: 148
-        height: 193
-      alignment: 9
-      pivot: {x: 0.36, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -10.280029, y: 192}
-        - {x: -21.28003, y: 189}
-        - {x: -39.28003, y: 167}
-        - {x: -39.28003, y: 9}
-        - {x: -26.28003, y: 4}
-        - {x: 33.71997, y: 4}
-        - {x: 61.71997, y: 104}
-        - {x: 61.71997, y: 174}
-        - {x: 51.71997, y: 192}
-    - name: battle_hit_super instance 10059
-      rect:
-        serializedVersion: 2
-        x: 1036
-        y: 1083
-        width: 148
-        height: 193
-      alignment: 9
-      pivot: {x: 0.36, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -10.280029, y: 192}
-        - {x: -21.28003, y: 189}
-        - {x: -39.28003, y: 167}
-        - {x: -39.28003, y: 9}
-        - {x: -26.28003, y: 4}
-        - {x: 33.71997, y: 4}
-        - {x: 61.71997, y: 104}
-        - {x: 61.71997, y: 174}
-        - {x: 51.71997, y: 192}
-    - name: battle_hit_super instance 10060
-      rect:
-        serializedVersion: 2
-        x: 1184
-        y: 1083
-        width: 148
-        height: 193
-      alignment: 9
-      pivot: {x: 0.36, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 55.71997, y: 192}
-        - {x: -25.28003, y: 192}
-        - {x: -39.28003, y: 161}
-        - {x: -39.28003, y: 9}
-        - {x: -26.28003, y: 4}
-        - {x: 24.71997, y: 4}
-        - {x: 30.71997, y: 6}
-        - {x: 56.71997, y: 88}
-        - {x: 61.71997, y: 115}
-        - {x: 61.71997, y: 170}
-    - name: battle_hit_super instance 10061
-      rect:
-        serializedVersion: 2
-        x: 1332
-        y: 1083
-        width: 148
-        height: 193
-      alignment: 9
-      pivot: {x: 0.36, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 55.71997, y: 192}
-        - {x: -25.28003, y: 192}
-        - {x: -39.28003, y: 161}
-        - {x: -39.28003, y: 9}
-        - {x: -26.28003, y: 4}
-        - {x: 24.71997, y: 4}
-        - {x: 30.71997, y: 6}
-        - {x: 56.71997, y: 88}
-        - {x: 61.71997, y: 115}
-        - {x: 61.71997, y: 170}
-    - name: battle_hit_super instance 10062
-      rect:
-        serializedVersion: 2
-        x: 1480
-        y: 1083
-        width: 148
-        height: 193
-      alignment: 9
-      pivot: {x: 0.36, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 55.71997, y: 192}
-        - {x: -25.28003, y: 192}
-        - {x: -39.28003, y: 161}
-        - {x: -39.28003, y: 9}
-        - {x: -26.28003, y: 4}
-        - {x: 24.71997, y: 4}
-        - {x: 30.71997, y: 6}
-        - {x: 56.71997, y: 88}
-        - {x: 61.71997, y: 115}
-        - {x: 61.71997, y: 170}
-    - name: battle_hit_super instance 10063
-      rect:
-        serializedVersion: 2
-        x: 1628
-        y: 1083
-        width: 148
-        height: 193
-      alignment: 9
-      pivot: {x: 0.36, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -23.28003, y: 192}
-        - {x: -39.28003, y: 158}
-        - {x: -39.28003, y: 6}
-        - {x: -32.28003, y: 4}
-        - {x: 24.71997, y: 4}
-        - {x: 30.71997, y: 6}
-        - {x: 61.71997, y: 67}
-        - {x: 61.71997, y: 185}
-        - {x: 53.71997, y: 192}
-    - name: battle_hit_super instance 10064
-      rect:
-        serializedVersion: 2
-        x: 1776
-        y: 1083
-        width: 148
-        height: 193
-      alignment: 9
-      pivot: {x: 0.36, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -23.28003, y: 192}
-        - {x: -39.28003, y: 158}
-        - {x: -39.28003, y: 6}
-        - {x: -32.28003, y: 4}
-        - {x: 24.71997, y: 4}
-        - {x: 30.71997, y: 6}
-        - {x: 61.71997, y: 67}
-        - {x: 61.71997, y: 185}
-        - {x: 53.71997, y: 192}
-    - name: battle_hit_super instance 10065
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 890
-        width: 148
-        height: 193
-      alignment: 9
-      pivot: {x: 0.36, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -37.280003, y: 193}
-        - {x: -37.280003, y: 4}
-        - {x: 44.719997, y: 4}
-        - {x: 60.719997, y: 42}
-        - {x: 60.719997, y: 193}
-    - name: battle_hit_super instance 10066
-      rect:
-        serializedVersion: 2
-        x: 148
-        y: 890
-        width: 148
-        height: 193
-      alignment: 9
-      pivot: {x: 0.36, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 24.720001, y: 101}
-        - {x: 38.72, y: 91}
-        - {x: 56.72, y: 86}
-        - {x: 59.72, y: 127}
-        - {x: 59.72, y: 193}
-        - {x: -3.2799988, y: 193}
-        - {x: -40.28, y: 184}
-        - {x: -40.28, y: 8}
-        - {x: -15.279999, y: 5}
-        - {x: -10.279999, y: 5}
-        - {x: -8.279999, y: 10}
-        - {x: -3.2799988, y: 5}
-        - {x: 26.720001, y: 5}
-        - {x: 29.720001, y: 7}
-        - {x: 22.720001, y: 75}
-        - {x: 26.720001, y: 107}
-    - name: battle_hit_super instance 10067
-      rect:
-        serializedVersion: 2
-        x: 296
-        y: 890
-        width: 148
-        height: 193
-      alignment: 9
-      pivot: {x: 0.36, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -31.279999, y: 193}
-        - {x: -43.28, y: 157}
-        - {x: -43.28, y: 46}
-        - {x: -35.28, y: 5}
-        - {x: 26.720001, y: 5}
-        - {x: 58.72, y: 109}
-        - {x: 58.72, y: 171}
-        - {x: 47.72, y: 193}
-    - name: battle_hit_super instance 10068
-      rect:
-        serializedVersion: 2
-        x: 444
-        y: 890
-        width: 148
-        height: 193
-      alignment: 9
-      pivot: {x: 0.36, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -31.279999, y: 193}
-        - {x: -44.28, y: 153}
-        - {x: -44.28, y: 25}
-        - {x: -42.28, y: 6}
-        - {x: 45.72, y: 6}
-        - {x: 57.72, y: 79}
-        - {x: 57.72, y: 178}
-        - {x: 45.72, y: 193}
-    - name: battle_hit_super instance 10069
-      rect:
-        serializedVersion: 2
-        x: 592
-        y: 890
-        width: 148
-        height: 193
-      alignment: 9
-      pivot: {x: 0.36, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -9.280029, y: 193}
-        - {x: -43.28003, y: 180}
-        - {x: -44.28003, y: 173}
-        - {x: -44.28003, y: 86}
-        - {x: -32.28003, y: 6}
-        - {x: 51.71997, y: 6}
-        - {x: 55.71997, y: 52}
-        - {x: 55.71997, y: 193}
+      outline: []
+      tessellationDetail: -1
     outline: []
   spritePackingTag: 
   userData: 

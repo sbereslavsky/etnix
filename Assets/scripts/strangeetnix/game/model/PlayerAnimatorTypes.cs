@@ -13,6 +13,7 @@ namespace strangeetnix.game
 		public static string TRIGGER_RUN 			= "playerRun";
 		public static string TRIGGER_WALK 			= "playerWalk";
 		public static string TRIGGER_HIT 			= "playerHit";
+		public static string TRIGGER_HIT2 			= "playerHit2";
 		public static string TRIGGER_SUPER_HIT		= "playerSuperhit";
 		public static string TRIGGER_DEATH1 		= "playerDeath1";
 		public static string TRIGGER_DEATH2 		= "playerDeath2";
