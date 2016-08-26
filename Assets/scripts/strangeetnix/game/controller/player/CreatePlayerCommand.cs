@@ -43,7 +43,7 @@ namespace strangeetnix.game
 			GameObject playerGO = GameObject.Instantiate (playerStyle) as GameObject;
 			playerGO.name = playerAssetVO.assetData.id;
 			playerGO.tag = PlayerView.ID;
-			playerGO.transform.localPosition = new Vector3(position, gameModel.levelModel.bgAssetInfo.startPosY, -0.05f);
+			playerGO.transform.localPosition = new Vector3(position, gameModel.roomModel.bgAssetInfo.startPosY, -0.05f);
 			//playerGO.layer = LayerMask.NameToLayer("player");
 			playerGO.transform.SetParent(gameField.transform, false);
 			playerGO.AddComponent<PlayerView> ();

@@ -49,14 +49,14 @@ namespace strangeetnix.game
 
 		public void init ()
 		{
-			_bgAssetInfo = gameModel.levelModel.bgAssetInfo;
+			_bgAssetInfo = gameModel.roomModel.bgAssetInfo;
 
-			spawnSeconds = gameModel.levelModel.waveVO.encounter_speed;
+			spawnSeconds = gameModel.roomModel.waveVO.encounter_speed;
 			if (spawnSeconds == 0) {
 				spawnSeconds = 10;
 			}
 
-			_enemyIdList = new List<int> (gameModel.levelModel.enemyIdList);
+			_enemyIdList = new List<int> (gameModel.roomModel.enemyIdList);
 			if (_enemyIdList == null || _enemyIdList.Count == 0) {
 				Debug.LogError ("EnemySpawner. Wave Encounter Id List is null!");
 			}
@@ -94,12 +94,12 @@ namespace strangeetnix.game
 			if (_enemyIdList.Count > 0) {
 				const int offset = 1;
 				int enemyId = _enemyIdList [0];
-				List<int> enemySideCount = gameModel.levelModel.enemyManager.getEnemyBothSideCount ();
+				List<int> enemySideCount = gameModel.roomModel.enemyManager.getEnemyBothSideCount ();
 
 				bool isSpawnLeft = enemySideCount[0] < _maxOneSide;
 				bool isSpawnRight = enemySideCount[1] < _maxOneSide;
 				SpawnPosition position = screenUtil.getSpawnPosition (_bgAssetInfo.minXAndY.x + offset, _bgAssetInfo.maxXAndY.x - offset, isSpawnLeft, isSpawnRight);
-				int currentCount = gameModel.levelModel.enemyCount;
+				int currentCount = gameModel.roomModel.enemyCount;
 				int maxEnemies = (position.bothSides) ? _maxBothSides : _maxOneSide;
 				if (currentCount < maxEnemies) {
 					createEnemySignal.Dispatch (enemyId, position.position);

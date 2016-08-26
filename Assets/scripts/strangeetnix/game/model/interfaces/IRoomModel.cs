@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace strangeetnix.game
 {
-	public interface ILevelModel
+	public interface IRoomModel
 	{
 		//IScoreModel scoreModel { get; set;}
 		int score { get; set; }

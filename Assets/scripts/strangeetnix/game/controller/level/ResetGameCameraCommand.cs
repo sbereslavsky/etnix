@@ -19,7 +19,7 @@ namespace strangeetnix.game
 			if (gameCamera) {
 				GameCameraView cameraView = gameCamera.GetComponent<GameCameraView> ();
 				if (cameraView != null) {
-					IBgAssetVO bgAssetVO = gameModel.levelModel.bgAssetInfo;
+					IBgAssetVO bgAssetVO = gameModel.roomModel.bgAssetInfo;
 					cameraView.xMargin = bgAssetVO.margin.x;
 					cameraView.yMargin = bgAssetVO.margin.y;
 					cameraView.xSmooth = bgAssetVO.smooth.x;

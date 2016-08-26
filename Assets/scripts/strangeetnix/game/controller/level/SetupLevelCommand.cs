@@ -39,7 +39,7 @@ namespace strangeetnix.game
 
 			createPlayerSignal.Dispatch (gameModel.playerPosX);
 
-			if (gameModel != null && gameModel.levelModel.hasEnemy) {
+			if (gameModel != null && gameModel.roomModel.hasEnemy) {
 				createEnemySpawnerSignal.Dispatch ();
 			}
 		}

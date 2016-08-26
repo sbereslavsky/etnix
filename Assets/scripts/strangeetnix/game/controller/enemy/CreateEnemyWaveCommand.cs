@@ -19,7 +19,7 @@ namespace strangeetnix.game
 		{
 			IWaveVO waveVO = gameConfig.waveConfig.getWaveVOById (waveId);
 			if (waveVO != null) {
-				gameModel.levelModel.setWaveVO (gameConfig, waveVO);
+				gameModel.roomModel.setWaveVO (gameConfig, waveVO);
 			} else {
 				Debug.LogError ("This is not wave id = " + waveId + " !!!");
 			}

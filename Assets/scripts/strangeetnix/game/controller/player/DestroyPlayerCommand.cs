@@ -68,7 +68,7 @@ namespace strangeetnix.game
 				{
 					cameraEnabledSignal.Dispatch (false);
 					stopEnemySignal.Dispatch ();
-					gameModel.levelModel.enemyManager.stopEnemies ();
+					gameModel.roomModel.enemyManager.stopEnemies ();
 					stopEnemySpawnerSignal.Dispatch ();
 					//gameModel.playerModel.resetHp();
 				}

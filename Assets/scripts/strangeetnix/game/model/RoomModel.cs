@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace strangeetnix.game
 {
-	public class LevelModel : ILevelModel
+	public class RoomModel : IRoomModel
 	{
 		//public IScoreModel scoreModel { get; set;}
 
@@ -23,7 +23,7 @@ namespace strangeetnix.game
 		public List<int> enemyIdList { get; private set; }
 		private List<IEnemyModel> _enemyModelList;
 
-		public LevelModel ()
+		public RoomModel ()
 		{			
 		}
 

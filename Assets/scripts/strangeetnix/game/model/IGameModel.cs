@@ -7,14 +7,13 @@ namespace strangeetnix.game
 	public interface IGameModel
 	{
 		int playerId { get; set; }
-		int coins { get; set; }
 		int createEnemyId { get; set; }
 		int waveId { get; set; }
 		int levelId { get; set; }
 
 		int roomNum { get; set; }
 
-		ILevelModel levelModel { get; }
+		IRoomModel roomModel { get; }
 		IPlayerModel playerModel { get; set; }
 
 		float playerPosX { get; set; }

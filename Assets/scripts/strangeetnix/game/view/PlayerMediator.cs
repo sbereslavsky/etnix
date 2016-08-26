@@ -64,10 +64,10 @@ namespace strangeetnix.game
 
 			gameInputSignal.AddListener (onGameInput);
 
-			_battleMode = gameModel.levelModel.hasEnemy;
+			_battleMode = gameModel.roomModel.hasEnemy;
 			if (_battleMode) {
 				onUpdatePlayerInfo ();
-				gameModel.levelModel.enemyManager.setPlayerView (view);
+				gameModel.roomModel.enemyManager.setPlayerView (view);
 
 				updateListeners (true);
 			}
@@ -115,7 +115,7 @@ namespace strangeetnix.game
 
 		private void onHitEnemy()
 		{
-			List<GameObject> enemyList = gameModel.levelModel.enemyManager.getEnemyToHit ();
+			List<GameObject> enemyList = gameModel.roomModel.enemyManager.getEnemyToHit ();
 
 			if (view.canHit) {
 				view.canHit = false;

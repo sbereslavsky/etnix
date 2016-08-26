@@ -16,8 +16,6 @@ namespace strangeetnix.game
 
 		private int ROOM_LEVEL_TYPE = 1000;
 
-		private int _coins = 0;
-
 		public void Reset ()
 		{
 			levelId = 1;
@@ -26,11 +24,11 @@ namespace strangeetnix.game
 			createEnemyId = 0;
 			resetPlayerPosX ();
 			roomNum = 0;
-			if (levelModel == null) {
-				levelModel = new LevelModel ();
+			if (roomModel == null) {
+				roomModel = new RoomModel ();
 			}
 
-			levelModel.Reset ();
+			roomModel.Reset ();
 
 			if (playerModel != null) {
 				playerModel.resetHp ();
@@ -43,12 +41,11 @@ namespace strangeetnix.game
 		}
 
 		public int playerId { get; set; }
-		public int coins { get { return _coins; } set { _coins = value; } }
 		public int createEnemyId { get; set; }
 		public int levelId { get; set; }
 		public int waveId { get; set; }
 		public int roomNum { get; set; }
-		public ILevelModel levelModel { get; private set; }
+		public IRoomModel roomModel { get; private set; }
 		public IPlayerModel playerModel { get; set; }
 
 		public float playerPosX { get; set; }
@@ -80,17 +77,17 @@ namespace strangeetnix.game
 
 		public void updateLevelModel(IGameConfig gameConfig)
 		{
-			levelModel = new LevelModel();
+			roomModel = new RoomModel();
 			ILevelConfigVO levelConfigVO = gameConfig.levelConfig.getConfigById (levelId);
-			levelModel.setHasEnemy (levelConfigVO.hasEnemy);
+			roomModel.setHasEnemy (levelConfigVO.hasEnemy);
 
-			levelModel.bgAssetInfo = gameConfig.assetConfig.getBgAssetById (levelId).clone();
+			roomModel.bgAssetInfo = gameConfig.assetConfig.getBgAssetById (levelId).clone();
 			if (isRoomLevel) {
-				Vector2 minXAndY = levelModel.bgAssetInfo.minXAndY;
-				levelModel.bgAssetInfo.minXAndY = new Vector2 (minXAndY.x + playerPosX, minXAndY.y);
+				Vector2 minXAndY = roomModel.bgAssetInfo.minXAndY;
+				roomModel.bgAssetInfo.minXAndY = new Vector2 (minXAndY.x + playerPosX, minXAndY.y);
 
-				Vector2 maxXAndY = levelModel.bgAssetInfo.maxXAndY;
-				levelModel.bgAssetInfo.maxXAndY = new Vector2 (maxXAndY.x + playerPosX, maxXAndY.y);
+				Vector2 maxXAndY = roomModel.bgAssetInfo.maxXAndY;
+				roomModel.bgAssetInfo.maxXAndY = new Vector2 (maxXAndY.x + playerPosX, maxXAndY.y);
 			}
 		}
 

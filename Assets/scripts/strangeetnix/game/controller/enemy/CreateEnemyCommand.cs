@@ -36,11 +36,11 @@ namespace strangeetnix.game
 		public override void Execute ()
 		{
 			if (injectionBinder.GetBinding<PlayerView> (GameElement.PLAYER) != null) {
-				gameModel.levelModel.enemyId++;
-				gameModel.levelModel.enemyCount++;
+				gameModel.roomModel.enemyId++;
+				gameModel.roomModel.enemyCount++;
 				gameModel.createEnemyId = id;
 
-				IEnemyModel enemyModel = gameModel.levelModel.getEnemyModelById (id);
+				IEnemyModel enemyModel = gameModel.roomModel.getEnemyModelById (id);
 				IAssetVO enemyAssetVO = enemyModel.assetVO;
 
 				GameObject enemyGO = null;
@@ -51,8 +51,8 @@ namespace strangeetnix.game
 					//enemyStyle.transform.localPosition = new Vector3(position, gameModel.levelModel.bgAssetInfo.startPosY, 0f);
 					//GameObject enemyGO = GameObject.Instantiate (enemyStyle) as GameObject;
 
-					enemyGO.transform.localPosition = new Vector3 (position, gameModel.levelModel.bgAssetInfo.startPosY, 0f);
-					enemyGO.name = enemyAssetVO.assetData.id + gameModel.levelModel.enemyId;
+					enemyGO.transform.localPosition = new Vector3 (position, gameModel.roomModel.bgAssetInfo.startPosY, 0f);
+					enemyGO.name = enemyAssetVO.assetData.id + gameModel.roomModel.enemyId;
 					enemyGO.tag = EnemyView.ID;
 					enemyGO.SetActive (true);
 					if (enemyGO.transform.parent == null) {
@@ -65,7 +65,7 @@ namespace strangeetnix.game
 					EnemyView enemyView = enemyGO.GetComponent<EnemyView> ();
 					if (enemyView != null) {
 						enemyView.poolKey = enemyAssetVO.assetData.id;
-						gameModel.levelModel.enemyManager.addEnemyView (enemyView, routineRunner);
+						gameModel.roomModel.enemyManager.addEnemyView (enemyView, routineRunner);
 					}
 				} else {
 					Debug.LogError ("CreateEnemyCommand. pool is null!");

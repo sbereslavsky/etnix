@@ -67,13 +67,13 @@ namespace strangeetnix.game
 
 		public override void OnRegister ()
 		{
-			_enemyModel = gameModel.levelModel.getEnemyModelById (gameModel.createEnemyId);
+			_enemyModel = gameModel.roomModel.getEnemyModelById (gameModel.createEnemyId);
 			_startHp = _enemyModel.hp;
 			_hp = _startHp;
 			_damage = _enemyModel.damage;
 			_cooldown = _enemyModel.cooldown;
 			_expGive = _enemyModel.exp_give;
-			_enemyManager = gameModel.levelModel.enemyManager;
+			_enemyManager = gameModel.roomModel.enemyManager;
 			_viewKey = view.gameObject.name;
 
 			_goldDrop = UnityEngine.Random.Range (_enemyModel.gold_drop_min, _enemyModel.gold_drop_max);

@@ -24,7 +24,7 @@ namespace strangeetnix.game
 		public override void Execute ()
 		{
 			//Reset level model
-			gameModel.levelModel.Reset ();
+			gameModel.roomModel.Reset ();
 
 			//Update all the model values
 			updateHudItemSignal.Dispatch (UpdateHudItemType.EXP, gameModel.playerModel.exp);

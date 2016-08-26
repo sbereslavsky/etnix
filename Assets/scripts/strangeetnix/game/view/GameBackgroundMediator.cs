@@ -22,7 +22,7 @@ namespace strangeetnix.game
 		//Constructor. Do all your startup stuff here
 		public override void OnRegister ()
 		{
-			view.init(gameModel.levelModel.bgAssetInfo);
+			view.init(gameModel.roomModel.bgAssetInfo);
 			view.showButtonEnter.AddListener (onShowButton);
 		}
 

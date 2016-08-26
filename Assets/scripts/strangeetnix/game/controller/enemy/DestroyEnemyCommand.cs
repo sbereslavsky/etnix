@@ -72,13 +72,13 @@ namespace strangeetnix.game
 				//You'd do yourself a favor by centralizing the tabulation of scores.
 
 				//gameModel.score += gameConfig.baseEnemyScore * level;
-				gameModel.levelModel.score += 10;
+				gameModel.roomModel.score += 10;
 				//updateHudItemSignal.Dispatch (UpdateHudItemType.SCORE, gameModel.levelModel.score);
 			}
 
 			//enemyView.gameObject.SetActive (false);
 			string enemyName = enemyView.gameObject.name;
-			gameModel.levelModel.enemyManager.removeEnemy (enemyName);
+			gameModel.roomModel.enemyManager.removeEnemy (enemyName);
 			//enemyView.destroyView(delayToDestroy);
 
 			if (delayToDestroy > 0) {
@@ -111,9 +111,9 @@ namespace strangeetnix.game
 		private void onCoroutineComplete()
 		{
 			if (gameModel != null) {
-				gameModel.levelModel.enemyCount--;
+				gameModel.roomModel.enemyCount--;
 
-				if (enemySpawner != null && enemySpawner.isNobodyToSpawn && gameModel.levelModel.enemyCount == 0) {
+				if (enemySpawner != null && enemySpawner.isNobodyToSpawn && gameModel.roomModel.enemyCount == 0) {
 					addDialogSignal.Dispatch (DialogType.WIN_GAME);
 				}
 			}

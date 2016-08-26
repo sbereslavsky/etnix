@@ -241,7 +241,7 @@ namespace strangeetnix.ui
 
 		private void onUpdateCanvas()
 		{
-			view.initButtonsView (gameModel.levelModel.hasEnemy);
+			view.initButtonsView (gameModel.roomModel.hasEnemy);
 		}
 
 		private void onUpdateHudItem(UpdateHudItemType type, int value)

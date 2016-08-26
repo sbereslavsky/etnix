@@ -21,7 +21,7 @@ namespace strangeetnix.game
 		//Constructor. Do all your startup stuff here
 		public override void OnRegister ()
 		{
-			initBackground (gameModel.levelModel.bgAssetInfo);
+			initBackground (gameModel.roomModel.bgAssetInfo);
 		}
 
 		//OnRemove() is like a destructor/OnDestroy. Use it to clean up.
