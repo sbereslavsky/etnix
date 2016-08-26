@@ -34,6 +34,9 @@ namespace strangeetnix.ui
 		public RectTransform playerExpBar;
 		//public SpriteRenderer enemyHpBar;
 
+		public Image imageButtonGo;
+		public Image imageButtonCombo;
+
 		private const string TITLE_EXP = "Exp: ";
 		private const string TITLE_HP = "Hp: ";
 		private const string TITLE_SCORE = "Score: ";
@@ -65,8 +68,12 @@ namespace strangeetnix.ui
 
 		internal void initButtonsView(bool battleMode)
 		{
+			imageButtonCombo.gameObject.SetActive (false);
+
 			buttonHit.gameObject.SetActive (battleMode);
 			buttonGo.gameObject.SetActive (false);
+
+			imageButtonGo.gameObject.SetActive (battleMode);
 
 			buttonAddHp.gameObject.SetActive (battleMode);
 			//buttonPause.gameObject.SetActive (battleMode);
