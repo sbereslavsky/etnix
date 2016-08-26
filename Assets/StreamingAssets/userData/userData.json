@@ -12,11 +12,12 @@
 			"charclass":1,
 			"charequeped":1,
 			"isactiv":1,
-			"charexp":440,
+			"charexp":1220,
 			"charweapon":1,
 			"charitem1":4,
 			"charitem2":1,
-			"charwave":1
+			"charwave":1,
+			"charcoins":24
 		},
 		{
 			"charid":2,
@@ -27,7 +28,8 @@
 			"charweapon":3,
 			"charitem1":1,
 			"charitem2":1,
-			"charwave":3
+			"charwave":3,
+			"charcoins":0
 		},
 		{
 			"charid":3,
@@ -38,7 +40,8 @@
 			"charitem1":0,
 			"charitem2":0,
 			"charequeped":0,
-			"isactiv":0
+			"isactiv":0,
+			"charcoins":0
 		}
 	]
 }

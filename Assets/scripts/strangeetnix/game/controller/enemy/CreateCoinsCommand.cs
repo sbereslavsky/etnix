@@ -28,9 +28,6 @@ namespace strangeetnix.game
 
 		public override void Execute ()
 		{
-			//add coins
-			gameModel.coins += coinValue;
-
 			//create coin gameobject
 			//GameObject coinStyle = Resources.Load<GameObject> (AssetConfig.COIN.path);
 			GameObject coinStyle = resourceManager.getResourceByAssetData (AssetConfig.COIN);

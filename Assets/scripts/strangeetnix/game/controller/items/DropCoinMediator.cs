@@ -59,7 +59,7 @@ namespace strangeetnix.game
 
 		private void onCompleteTween()
 		{
-			gameModel.coins += view.coinValue;
+			gameModel.playerModel.addCoins (view.coinValue);
 			Destroy (view.gameObject);
 		}
 

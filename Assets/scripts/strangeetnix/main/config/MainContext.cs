@@ -40,6 +40,7 @@ namespace strangeetnix.main
 				injectionBinder.Bind<EnterRoomSignal> ().ToSingleton ().CrossContext();
 				injectionBinder.Bind<ExitRoomSignal> ().ToSingleton ().CrossContext();
 				injectionBinder.Bind<SwitchLevelSignal> ().ToSingleton ().CrossContext();
+				injectionBinder.Bind<CleanCoinsSignal> ().ToSingleton ().CrossContext();
 				injectionBinder.Bind<CreateEnemyWaveSignal> ().ToSingleton ().CrossContext();
 				injectionBinder.Bind<CreateEnemySpawnerSignal> ().ToSingleton ().CrossContext();
 				injectionBinder.Bind<ResetGameCameraSignal> ().ToSingleton ().CrossContext();

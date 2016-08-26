@@ -21,6 +21,9 @@ namespace strangeetnix.game
 		[Inject]
 		public DestroyEnemySignal destroyEnemySignal{ get; set; }
 
+		[Inject]
+		public CleanCoinsSignal cleanCoinsSignal{ get; set; }
+
 		public override void Execute()
 		{
 			//Clean up the Player
@@ -30,19 +33,7 @@ namespace strangeetnix.game
 				destroyPlayerSignal.Dispatch (playerView, 0, true);
 			}
 
-			//Clean up rocks
-			/*RockView[] rocks = gameField.GetComponentsInChildren<RockView> ();
-			foreach (RockView rock in rocks)
-			{
-				destroyRockSignal.Dispatch (rock, false);
-			}*/
-
-			//Clean up enemies
-			DropCoinView[] coins = gameField.GetComponentsInChildren<DropCoinView> ();
-			foreach (DropCoinView coinView in coins)
-			{
-				coinView.forceDestroySignal.Dispatch ();
-			}
+			cleanCoinsSignal.Dispatch ();
 
 			//Clean up enemies
 			EnemyView[] enemies = gameField.GetComponentsInChildren<EnemyView> ();

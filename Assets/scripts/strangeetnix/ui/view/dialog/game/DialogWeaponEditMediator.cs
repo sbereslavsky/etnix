@@ -41,7 +41,7 @@ namespace strangeetnix.ui
 			view.init (_userCharVO, gameConfig);
 			updateCharInfo();
 
-			view.updateGoldValue (gameModel.coins);
+			view.updateGoldValue (gameModel.playerModel.coins);
 
 			UpdateListeners(true);
 		}

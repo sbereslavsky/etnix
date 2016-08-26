@@ -61,7 +61,7 @@ public class ParseJSONObject
 	protected void setIntToField(JSONObject jsonData, string id, int value)
 	{
 		if (!jsonData.HasField (id)) {
-			return;
+			jsonData.AddField (id, value);
 		}
 
 		JSONObject fieldData = jsonData.GetField (id);

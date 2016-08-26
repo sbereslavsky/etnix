@@ -19,7 +19,8 @@ namespace strangeetnix.game
 		public int level { get; set; }
 
 		public int damage { get { return Mathf.Max (0, _damage + char_str);}}
-		public int cooldown { get{ return Mathf.Max (0, _cooldown - char_dex);}}
+		public int cooldown { get { return Mathf.Max (0, _cooldown - char_dex);}}
+		public int coins { get { return _coins; }}
 
 		public bool levelUp { get; private set; }
 
@@ -31,9 +32,14 @@ namespace strangeetnix.game
 
 		private int _damage = 0;
 		private int _cooldown = 0;
+		private int _coins = 0;
 
 		private IUserCharVO _userCharVO;
 		private ICharAllVO _levelDataVO;
+
+		private int char_str { get { return (id == 1) ? _levelDataVO.ch1_str : _levelDataVO.ch2_str; } }
+		private int char_dex { get { return (id == 1) ? _levelDataVO.ch1_dex : _levelDataVO.ch2_dex; } }
+		private int char_hp { get { return (id == 1) ? _levelDataVO.ch1_hp : _levelDataVO.ch2_hp; } }
 
 		public PlayerModel(int setId, IGameConfig gameConfig)
 		{
@@ -54,15 +60,20 @@ namespace strangeetnix.game
 			parseData (gameConfig);
 		}
 
-		private int char_str { get { return (id == 1) ? _levelDataVO.ch1_str : _levelDataVO.ch2_str; } }
-		private int char_dex { get { return (id == 1) ? _levelDataVO.ch1_dex : _levelDataVO.ch2_dex; } }
-		private int char_hp { get { return (id == 1) ? _levelDataVO.ch1_hp : _levelDataVO.ch2_hp; } }
+		public void updateConfig()
+		{
+			if (_userCharVO != null) {
+				_userCharVO.exp = exp;
+				_userCharVO.coins = _coins;
+			}
+		}
 
 		private void parseData(IGameConfig gameConfig)
 		{
 			_userCharVO = gameConfig.userCharConfig.getUserCharVOById (id);
 
 			exp = _userCharVO.exp;
+			_coins = _userCharVO.coins;
 
 			updateNextExp (gameConfig);
 
@@ -76,8 +87,6 @@ namespace strangeetnix.game
 			item2VO = gameConfig.itemConfig.getItemVOById (_userCharVO.itemId2);
 			item3VO = gameConfig.itemConfig.getItemVOById (_userCharVO.itemId3);
 			//waveVO = gameConfig.waveConfig.getWaveVOById (_userCharVO.waveId);
-
-
 		}
 
 		public void addHp(int value)
@@ -99,18 +108,21 @@ namespace strangeetnix.game
 			}
 		}
 
-		public void updateConfigExp()
+		public void addCoins(int value)
 		{
-			if (_userCharVO != null) {
-				_userCharVO.exp = exp;
-			}
+			_coins += value;
 		}
 
-		public void updateNextExp(IGameConfig gameConfig)
+		private void initLevelDataVO(IGameConfig gameConfig)
 		{
 			_levelDataVO = gameConfig.charAllConfig.getCharAllVOByExp (exp);
 			level = _levelDataVO.level_id;
 			expStart = _levelDataVO.exp_next;
+		}
+
+		public void updateNextExp(IGameConfig gameConfig)
+		{
+			initLevelDataVO (gameConfig);
 
 			Debug.Log ("updateNextExp: level = " + level + ", expStart = expStart");
 
@@ -118,7 +130,8 @@ namespace strangeetnix.game
 			if (nextLevelDataVO != null) {
 				expEnd = nextLevelDataVO.exp_next;
 			} else {
-				expEnd += 500;
+				const int ADD_EXP = 1000;
+				expEnd += ADD_EXP;
 				Debug.Log ("updateNextExp: nextLevelDataVO = null!");
 			}
 
@@ -126,11 +139,6 @@ namespace strangeetnix.game
 			startHp = hp;
 
 			levelUp = false;
-		}
-
-		public void saveData()
-		{
-			_userCharVO.exp = exp;
 		}
 
 		public void resetHp ()

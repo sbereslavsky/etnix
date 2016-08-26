@@ -8,7 +8,7 @@ namespace strangeetnix.game
 {
 	public class DropCoinView : View
 	{
-		private const float DELAY_BEFORE_FLY = 2f;
+		private const float DELAY_BEFORE_FLY = 1f;
 
 		internal Signal endDelaySignal = new Signal(); 
 		internal Signal forceDestroySignal = new Signal(); 

@@ -28,16 +28,15 @@ namespace strangeetnix.ui
 		[Inject]
 		public ExitRoomSignal exitRoomSignal{ get; set; }
 
+		[Inject]
+		public CleanCoinsSignal cleanCoinsSignal{ get; set; }
+
 		private string _viewName;
 
 		public override void OnRegister()
 		{
 			_viewName = view.name;
 			view.init (gameConfig.localizationConfig);
-
-			gameModel.playerModel.updateConfigExp ();
-
-			gameConfig.save ();
 
 			UpdateListeners(true);
 
@@ -61,6 +60,11 @@ namespace strangeetnix.ui
 
 		private void onCloseDialog()
 		{
+			cleanCoinsSignal.Dispatch ();
+
+			gameModel.playerModel.updateConfig ();
+			gameConfig.save ();
+
 			Destroy (view.gameObject);
 			closeDialogSignal.Dispatch ();
 			if (gameModel.isRoomLevel) {

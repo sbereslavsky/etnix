@@ -14,6 +14,7 @@ namespace strangeetnix.game
 		int expStart { get; }
 		int expEnd { get; }
 		int level { get; set; }
+		int coins { get; }
 		float moveSpeed { get; }
 		float moveForce { get; }
 
@@ -30,11 +31,12 @@ namespace strangeetnix.game
 
 		void addExp (int value);
 		void addHp (int value);
+		void addCoins (int value);
 		void decHp (int value);
+
 		void updateNextExp(IGameConfig gameConfig);
-		void saveData();
 		void resetHp ();
-		void updateConfigExp ();
+		void updateConfig ();
 		void updateCharInfo(IGameConfig gameConfig);
 	}
 }

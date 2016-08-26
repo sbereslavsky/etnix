@@ -12,7 +12,7 @@ namespace strangeetnix.game
 		private string CHAR_WEAPON_ID 	= "charweapon";
 		private string CHAR_ITEM_ID2 	= "charitem1";
 		private string CHAR_ITEM_ID3 	= "charitem2";
-		private string CHAR_COINS 		= "coins";
+		private string CHAR_COINS 		= "charcoins";
 		//private string CHAR_WAVE_ID 	= "charwave";
 
 		public int id { get; private set; }

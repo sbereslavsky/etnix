@@ -120,6 +120,7 @@ namespace strangeetnix.game
 			commandBinder.Bind<RestartGameSignal> ().To<RestartGameCommand> ();
 			commandBinder.Bind<AddExplosionSignal> ().To<AddExplosionCommand> ();
 			commandBinder.Bind<CreateCoinSignal> ().To<CreateCoinsCommand> ();
+			commandBinder.Bind<CleanCoinsSignal> ().To<CleanCoinsCommand> ();
 
 			//commandBinder.Bind<AddExpSignal> ().To<AddExpCommand> ();
 
