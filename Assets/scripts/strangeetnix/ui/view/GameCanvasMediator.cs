@@ -275,6 +275,7 @@ namespace strangeetnix.ui
 		{
 			if (gameModel.playerModel.levelUp) {
 				gameModel.playerModel.levelUp = false;
+				gameModel.playerModel.setLevelDataVO ();
 				gameModel.playerModel.setEndExp ();
 
 				_expStart = gameModel.playerModel.expStart;
