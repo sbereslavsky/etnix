@@ -268,8 +268,8 @@ namespace strangeetnix.ui
 
 		private void updatePlayerHP(int currentHP)
 		{
-			if (_startPlayerHp != gameModel.playerModel.hp) {
-				_startPlayerHp = gameModel.playerModel.hp;
+			if (_startPlayerHp != gameModel.playerModel.startHp) {
+				_startPlayerHp = gameModel.playerModel.startHp;
 			}
 			view.SetPlayerHp (_startPlayerHp, currentHP);
 		}

@@ -21,6 +21,7 @@ namespace strangeetnix.ui
 		public GameUIButton buttonGo;
 
 		public GameUIButton buttonAddHp;
+		public GameUIButton buttonAddOther;
 
 		public Button buttonWeapon;
 
@@ -35,7 +36,6 @@ namespace strangeetnix.ui
 		//public SpriteRenderer enemyHpBar;
 
 		public Image imageButtonGo;
-		public Image imageButtonCombo;
 
 		private const string TITLE_EXP = "Exp: ";
 		private const string TITLE_HP = "Hp: ";
@@ -62,24 +62,19 @@ namespace strangeetnix.ui
 			string buttonText = "";
 			buttonText = localizationConfig.getTextByKey (LocalizationKeys.BUTTON_HIT);
 			screenUtil.setButtonText (buttonHit, buttonText);
-			buttonText = localizationConfig.getTextByKey (LocalizationKeys.BUTTON_GO);
-			screenUtil.setButtonText (buttonGo, buttonText);
+			//buttonText = localizationConfig.getTextByKey (LocalizationKeys.BUTTON_GO);
+			//screenUtil.setButtonText (buttonGo, buttonText);
 		}
 
 		internal void initButtonsView(bool battleMode)
 		{
-			imageButtonCombo.gameObject.SetActive (false);
-
 			buttonHit.gameObject.SetActive (battleMode);
 			buttonGo.gameObject.SetActive (false);
 
 			imageButtonGo.gameObject.SetActive (battleMode);
 
 			buttonAddHp.gameObject.SetActive (battleMode);
-			//buttonPause.gameObject.SetActive (battleMode);
-
-			//GameObject.Find ("itemsImage").SetActive (battleMode);
-			//GameObject.Find ("actionButtonsImage").SetActive (battleMode);
+			buttonAddOther.gameObject.SetActive (battleMode);
 		}
 
 		internal void addButtonEvents(bool value)
