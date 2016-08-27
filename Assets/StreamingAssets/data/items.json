@@ -34,19 +34,5 @@
         "assetid": 4,
         "cost": 100,
         "info": "Rocket"
-    },
-    {
-        "itemid": 7,
-        "type": "drop",
-        "assetid": 7,
-        "cost": 5,
-        "info": "Salo"
-    },
-    {
-        "itemid": 8,
-        "type": "drop",
-        "assetid": 8,
-        "cost": 10,
-        "info": "Bashmak"
     }
 ]
