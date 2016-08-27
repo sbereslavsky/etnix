@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:e317478b1e4d25f39acb3d5530af3670:c1314f706e94309c10ef75d8ff173b02:336e91466504ac11351905e0c428ebfd$ -->
+<TextureAtlas imagePath="gui.png" width="418" height="548">
+    <SubTexture name="arrow" x="0" y="313" width="205" height="158"/>
+    <SubTexture name="button_pause" x="0" y="0" width="77" height="69"/>
+    <SubTexture name="combo1_btn" x="0" y="90" width="110" height="108"/>
+    <SubTexture name="combo2_btn" x="219" y="90" width="109" height="110"/>
+    <SubTexture name="combo3_btn" x="0" y="200" width="111" height="113"/>
+    <SubTexture name="green_btn" x="111" y="200" width="306" height="113"/>
+    <SubTexture name="inventory" x="243" y="0" width="109" height="90"/>
+    <SubTexture name="item_slot1" x="160" y="0" width="83" height="84"/>
+    <SubTexture name="item_slot2" x="77" y="0" width="83" height="83"/>
+    <SubTexture name="play_btn" x="110" y="90" width="109" height="109"/>
+    <SubTexture name="uiButtonGo" x="205" y="313" width="213" height="235"/>
+</TextureAtlas>
