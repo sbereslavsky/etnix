@@ -29,6 +29,9 @@ namespace strangeetnix.ui
 		[Inject]
 		public UpdatePlayerInfoSignal updatePlayerInfoSignal{ get; set; }
 
+		[Inject]
+		public UpdateHudItemSignal updateHudItemSignal{ get; set; }
+
 		private IPlayerModel _playerModel;
 
 		private bool _isChange = false;
@@ -84,6 +87,8 @@ namespace strangeetnix.ui
 			_playerModel.userCharVO.itemId2 = itemId2;
 			_playerModel.updateItem2VO ();
 
+			view.updatePlayerInfo (_playerModel);
+
 			_isChange = true;
 		}
 
@@ -92,6 +97,8 @@ namespace strangeetnix.ui
 			_playerModel.userCharVO.itemId3 = itemId3;
 			_playerModel.updateItem3VO ();
 
+			view.updatePlayerInfo (_playerModel);
+
 			_isChange = true;
 		}
 
@@ -99,6 +106,12 @@ namespace strangeetnix.ui
 		{
 			_playerModel.userCharVO.equipedId = equipedId;
 			_playerModel.updateEquipedVO ();
+			if (_playerModel.equipedVO.hp > 0) {
+				_playerModel.updateHp ();
+				updateHudItemSignal.Dispatch (UpdateHudItemType.HP, _playerModel.hp);
+			}
+
+			view.updatePlayerInfo (_playerModel);
 
 			_isChange = true;
 		}

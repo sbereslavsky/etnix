@@ -48,8 +48,8 @@ namespace strangeetnix.ui
 			_charId = userCharInfoVO.id;
 
 			textName.text = (userCharInfoVO != null) ? TITLE_NAME + userCharInfoVO.name + ": " + userCharInfoVO.level + " level": TITLE_NAME;
-			textHp.text = (userCharInfoVO != null) ? TITLE_HP + userCharInfoVO.hp : TITLE_HP;
-			textExp.text = (userCharInfoVO != null) ? TITLE_EXP + userCharInfoVO.exp : TITLE_EXP;
+			textHp.text = (weaponModel != null) ? TITLE_HP + weaponModel.hp : TITLE_HP;
+			textExp.text = (weaponModel != null) ? TITLE_EXP + weaponModel.exp : TITLE_EXP;
 			textDamage.text = (weaponModel != null) ? TITLE_DAMAGE + weaponModel.damage : TITLE_DAMAGE;
 			textCooldown.text = (weaponModel != null) ? TITLE_COOLDOWN + weaponModel.cooldown : TITLE_COOLDOWN;
 			textWeapon.text = (userCharInfoVO != null) ? TITLE_WEAPON + userCharInfoVO.weapon : TITLE_WEAPON;

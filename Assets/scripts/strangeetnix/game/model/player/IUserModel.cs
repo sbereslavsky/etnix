@@ -26,8 +26,9 @@ namespace strangeetnix.game
 		void decHp (int value);
 		void resetHp ();
 
+		void updateHp();
+
 		void setLevelDataVO ();
-		void setEndExp ();
 	}
 }
 

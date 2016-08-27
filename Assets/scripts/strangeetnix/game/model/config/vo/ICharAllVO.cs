@@ -18,5 +18,7 @@ namespace strangeetnix.game
 		int ch2_hp { get; }
 		int ch2_str { get; }
 		int ch2_dex { get; }
+
+		int exp_help { get; }
 	}
 }

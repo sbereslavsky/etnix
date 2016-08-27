@@ -27,9 +27,6 @@ namespace strangeetnix.game
 			moveForce = charInfoVO.moveForce;
 
 			_coins = userCharVO.coins;
-
-			setLevelDataVO ();
-			setEndExp ();
 		}
 
 		public void updateUserConfig()

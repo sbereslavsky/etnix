@@ -18,17 +18,20 @@ namespace strangeetnix.game
 
 		public bool levelUp { get; set; }
 
-		public int char_str { get { return (id == 1) ? _levelDataVO.ch1_str : _levelDataVO.ch2_str; } }
-		public int char_dex { get { return (id == 1) ? _levelDataVO.ch1_dex : _levelDataVO.ch2_dex; } }
-		public int char_hp { get { return (id == 1) ? _levelDataVO.ch1_hp : _levelDataVO.ch2_hp; } }
+		virtual public int char_str { get { return _char_str; } }
+		virtual public int char_dex { get { return _char_dex; } }
+		virtual public int char_hp { get { return _char_hp; } }
 
 		public IUserCharVO userCharVO { get; private set; }
 
+		private IUserCharVO _userCharVO;
+		private ICharAllVO _levelDataVO;
+
 		protected IGameConfig gameConfig { get; private set; }
 
-		private IUserCharVO _userCharVO;
-
-		private ICharAllVO _levelDataVO;
+		protected int _char_str = 0;
+		protected int _char_dex = 0;
+		protected int _char_hp = 0;
 
 		public UserModel (int setId, IGameConfig gameConfig1)
 		{
@@ -46,15 +49,38 @@ namespace strangeetnix.game
 		public void setLevelDataVO()
 		{
 			_levelDataVO = gameConfig.charAllConfig.getCharAllVOByExp (exp);
+			if (id == 1) {
+				_char_str = _levelDataVO.ch1_str;
+				_char_dex = _levelDataVO.ch1_dex;
+				_char_hp = _levelDataVO.ch1_hp;
+			} else {
+				_char_str = _levelDataVO.ch2_str;
+				_char_dex = _levelDataVO.ch2_dex;
+				_char_hp = _levelDataVO.ch2_hp;
+			}
 
 			level = _levelDataVO.level_id;
 			expStart = _levelDataVO.exp_next;
 
-			hp = char_hp;
-			startHp = hp;
+			updateHp();
+
+			setEndExp ();
+
+			levelUp = false;
 		}
 
-		public void setEndExp()
+		public void updateHp()
+		{
+			hp = char_hp;
+			setStartHp (hp);
+		}
+
+		protected void setStartHp(int value)
+		{
+			startHp = value;
+		}
+
+		private void setEndExp()
 		{
 			Debug.Log ("updateNextExp: level = " + level + ", expStart = expStart");
 

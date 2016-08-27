@@ -15,6 +15,7 @@ namespace strangeetnix.game
 		private string CH2_HP   = "ch2hp";
 		private string CH2_STR  = "ch2str";
 		private string CH2_DEX  = "ch2dex";
+		private string EXP_HELP  = "exphelp";
 
 		public int level_id { get; private set;}
 		public int exp_next { get; private set;}
@@ -30,6 +31,8 @@ namespace strangeetnix.game
 		public int ch2_hp { get; private set;}
 		public int ch2_str { get; private set;}
 		public int ch2_dex { get; private set;}
+
+		public int exp_help { get; private set;}
 
 		public CharAllVO (JSONObject value)
 		{
@@ -47,6 +50,8 @@ namespace strangeetnix.game
 			ch2_hp = getInt32(value, CH2_HP);
 			ch2_str = getInt32(value, CH2_STR);
 			ch2_dex = getInt32(value, CH2_DEX);
+
+			exp_help = getInt32 (value, EXP_HELP);
 		}
 	}
 }

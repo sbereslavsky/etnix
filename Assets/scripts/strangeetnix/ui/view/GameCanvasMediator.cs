@@ -268,15 +268,16 @@ namespace strangeetnix.ui
 
 		private void updatePlayerHP(int currentHP)
 		{
+			if (_startPlayerHp != gameModel.playerModel.hp) {
+				_startPlayerHp = gameModel.playerModel.hp;
+			}
 			view.SetPlayerHp (_startPlayerHp, currentHP);
 		}
 
 		private void updatePlayerExp(int currentExp)
 		{
 			if (gameModel.playerModel.levelUp) {
-				gameModel.playerModel.levelUp = false;
 				gameModel.playerModel.setLevelDataVO ();
-				gameModel.playerModel.setEndExp ();
 
 				_expStart = gameModel.playerModel.expStart;
 				_expEnd = gameModel.playerModel.expEnd;

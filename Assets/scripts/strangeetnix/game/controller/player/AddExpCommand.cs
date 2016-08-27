@@ -22,7 +22,7 @@ namespace strangeetnix.game
 		public override void Execute ()
 		{
 			gameModel.playerModel.addExp (addValue);
-			gameModel.playerModel.setEndExp ();
+			//gameModel.playerModel.setEndExp ();
 
 			updateHudItemSignal.Dispatch (UpdateHudItemType.EXP, gameModel.playerModel.exp);
 		}
