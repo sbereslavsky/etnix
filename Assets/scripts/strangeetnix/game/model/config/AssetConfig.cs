@@ -71,7 +71,7 @@ namespace strangeetnix.game
 			_bgAssetList.Add (1, bgAssetVO);
 
 			bgAssetVO = new BgAssetVO (1001, BACKGROUND_CHURCH);
-			bgAssetVO.startPosY = -1.68f;
+			bgAssetVO.startPosY = -1.24f;
 			bgAssetVO.width = 28.4f;
 			bgAssetVO.margin = Vector2.zero;
 			bgAssetVO.smooth = new Vector2 (4, 0);
