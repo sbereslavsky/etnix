@@ -7,7 +7,8 @@ namespace strangeetnix
 		UP,
 		LEFT_DOWN,
 		RIGHT_DOWN, 
-		HIT,
+		HIT_DOWN,
+		HIT_UP,
 		ADD_HP,
 		RESTART,
 		EXIT

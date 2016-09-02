@@ -47,9 +47,19 @@ namespace strangeetnix.game
 		[Inject]
 		public IGameModel gameModel{ get; set; }
 
+		internal bool isCycleHit { get { return _isCycleHit;} set { _isCycleHit = value;}}
+
+		private const float SPEED_NULL = 0;
+		private const float SPEED_LEFT = -0.5f;
+		private const float SPEED_RIGHT = 0.5f;
+
 		private int _damage = 0;
 		private int _cooldown = 0;
-		private int _playerHitCount = 0;
+
+		private int _hitCount = 0;
+		private bool _isCycleHit = false;
+
+		private bool _pressedButton = false;
 
 		private List<GameObject> _enemyList;
 
@@ -60,7 +70,8 @@ namespace strangeetnix.game
 		//Constructor. Do all your startup stuff here
 		public override void OnRegister ()
 		{
-			_playerHitCount = 0;
+			_hitCount = 0;
+			_isCycleHit = false;
 
 			gameInputSignal.AddListener (onGameInput);
 
@@ -95,11 +106,13 @@ namespace strangeetnix.game
 		{
 			if (value) {
 				view.hitEnemySignal.AddListener (onHitEnemy);
+				view.stopWalkSignal.AddListener (onStopWalk);
 
 				hitPlayerSignal.AddListener (onHitPlayer);
 				updatePlayerInfoSignal.AddListener (onUpdatePlayerInfo);
 			} else {
 				view.hitEnemySignal.RemoveListener (onHitEnemy);
+				view.stopWalkSignal.RemoveListener (onStopWalk);
 
 				hitPlayerSignal.RemoveListener (onHitPlayer);
 				updatePlayerInfoSignal.RemoveListener (onUpdatePlayerInfo);
@@ -122,6 +135,11 @@ namespace strangeetnix.game
 				_enemyList = enemyList;
 				StartCoroutine (pauseBeforeHit());
 			}
+		}
+
+		private void onStopWalk()
+		{
+			stopWalk ();
 		}
 
 		private IEnumerator pauseBeforeHit()
@@ -186,6 +204,58 @@ namespace strangeetnix.game
 			}
 		}
 
+		internal void stopWalk(bool pressedButton=false)
+		{
+			_pressedButton = pressedButton;
+			if (!_pressedButton && !view.isStop) {
+				view.setMoveSpeed (SPEED_NULL);
+				view.setState (CharacterStates.IDLE);
+			}
+		}
+
+		internal void startLeftWalk(bool pressedButton=false)
+		{
+			if (view.canStartMove) {			
+				_pressedButton = pressedButton;
+				view.setMoveSpeed (SPEED_LEFT);
+
+				view.setState (CharacterStates.MOVE, true);
+			}
+		}
+
+		internal void startRightWalk(bool pressedButton=false)
+		{
+			if (view.canStartMove) {
+				_pressedButton = pressedButton;
+				view.setMoveSpeed (SPEED_RIGHT);
+
+				view.setState (CharacterStates.MOVE, true);
+			}
+		}
+
+		internal void startHit()
+		{
+			if (view.canStartHit) {
+				_pressedButton = false;
+
+				_hitCount++;
+				int hitId = _hitCount % 3;
+
+				view.setHitId (hitId);
+				view.setState (CharacterStates.HIT, true);
+			}
+
+			if (_cooldown == 0 && _isCycleHit) {
+				StartCoroutine (onWaitToNextHit ());
+			}
+		}
+
+		private IEnumerator onWaitToNextHit()
+		{
+			yield return new WaitForSeconds (0.5f);
+			startHit ();
+		}
+
 		//Receive a signal updating GameInput
 		private void onGameInput(int input)
 		{
@@ -206,23 +276,19 @@ namespace strangeetnix.game
 			bool right = (input & GameInputEvent.RIGHT) > 0;
 			bool hit = (input & GameInputEvent.HIT) > 0;
 			if (input == 0) {
-				view.stopWalk ();
+				stopWalk ();
 			}
 
 			if (left) {
-				view.startLeftWalk ();
+				startLeftWalk ();
 			}
 
 			if (right) {
-				view.startRightWalk ();
+				startRightWalk ();
 			}
 
 			if (hit) {
-				if (view.canStartHit) {
-					_playerHitCount++;
-					int hitId = _playerHitCount % 3;
-					view.startHit (hitId + 1);
-				}
+				startHit ();
 			}
 		}
 	}

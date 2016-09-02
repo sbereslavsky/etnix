@@ -19,6 +19,7 @@ namespace strangeetnix.game
 		private string EXPLOSION2 	= "explosion2";
 
 		internal Signal hitEnemySignal = new Signal ();
+		internal Signal stopWalkSignal = new Signal ();
 
 		internal bool facingRight = true;		// For determining which way the player is currently facing.
 		internal bool canHit = true;
@@ -34,7 +35,6 @@ namespace strangeetnix.game
 
 		private float _moveSpeed = 0f;
 
-		private bool _pressedButton = false;
 		private bool _battleMode;
 
 		private CharacterStates _state;
@@ -54,6 +54,22 @@ namespace strangeetnix.game
 			int battleVal = (_battleMode) ? 1 : 0;
 			_animator.SetInteger(PlayerAnimatorTypes.INT_BATTLE, battleVal);
 		}
+
+		internal Vector2 explosionPos 
+		{
+			get { 
+				Vector3 pos = (_hitNum == 1) ? _explosion.position : _explosion2.position;
+				return new Vector2 (pos.x, pos.y); 
+			}
+		}
+
+		internal bool isStop { get { return _moveSpeed == 0;}}
+
+		internal bool canStartMove { get { return !_isDead && !isHit && !isDefeat;}}
+		internal bool canStartHit { get { return !_isDead && !isHit && canHit;}}
+
+		internal bool isHit { get { return (_hitType.Length > 0 && isPlayAnimation(_hitType)); }}
+		private bool isDefeat { get { return isPlayAnimation(PlayerAnimatorTypes.TRIGGER_DEFEAT);}}
 
 		void FixedUpdate ()
 		{			
@@ -90,71 +106,6 @@ namespace strangeetnix.game
 				flip();
 		}
 
-		internal Vector2 explosionPos
-		{
-			get { 
-				Vector3 pos = (_hitNum == 1) ? _explosion.position : _explosion2.position;
-				return new Vector2 (pos.x, pos.y); 
-			}
-		}
-
-		internal void stopWalk(bool pressedButton=false)
-		{
-			_pressedButton = pressedButton;
-			if (_moveSpeed != 0 && !_pressedButton) {
-				_moveSpeed = 0;
-				setState (CharacterStates.IDLE);
-			}
-		}
-
-		internal void startLeftWalk(bool pressedButton=false)
-		{
-			if (!_isDead && !isDefeat && !isHit) {			
-				_pressedButton = pressedButton;
-				_moveSpeed = -0.5f;
-
-				setState (CharacterStates.MOVE, true);
-			}
-		}
-
-		internal void startRightWalk(bool pressedButton=false)
-		{
-			if (!_isDead && !isDefeat && !isHit) {
-				_pressedButton = pressedButton;
-				_moveSpeed = 0.5f;
-
-				setState (CharacterStates.MOVE, true);
-			}
-		}
-
-		internal bool canStartHit
-		{
-			get { return !_isDead && !isHit && canHit;}
-		}
-
-		internal void startHit(int hitNum)
-		{
-			if (canStartHit) {
-				_pressedButton = false;
-				_hitNum = hitNum;
-				setState (CharacterStates.HIT, true);
-			}
-		}
-
-		internal bool isHit
-		{
-			get { 
-				return (_hitType.Length > 0 && isPlayAnimation(_hitType));
-			}
-		}
-
-		private bool isDefeat
-		{
-			get { 
-				return isPlayAnimation(PlayerAnimatorTypes.TRIGGER_DEFEAT);
-			}
-		}
-
 		override public void setDeath()
 		{
 			if (!_isDead) {
@@ -187,6 +138,16 @@ namespace strangeetnix.game
 			}
 		}
 
+		internal void setMoveSpeed(float value)
+		{
+			_moveSpeed = value;
+		}
+
+		internal void setHitId(int id)
+		{
+			_hitNum = id;
+		}
+
 		public void setState(CharacterStates state, bool isForce=false)
 		{
 			string animationType;
@@ -208,20 +169,8 @@ namespace strangeetnix.game
 					break;
 
 				case CharacterStates.HIT:
-					switch (_hitNum) {
-					case 1:
-						animationType = PlayerAnimatorTypes.TRIGGER_HIT;
-						break;
-					case 2:
-						animationType = PlayerAnimatorTypes.TRIGGER_HIT2;
-						break;
-					default:
-						animationType = PlayerAnimatorTypes.TRIGGER_SUPER_HIT;
-						break;
-					}
-
-					_hitType = animationType;
-					playAnimation (animationType);
+					_hitType = getAnimationHitType();
+					playAnimation (_hitType);
 					hitEnemySignal.Dispatch ();
 					break;
 
@@ -236,14 +185,33 @@ namespace strangeetnix.game
 					break;
 
 				case CharacterStates.DEFEAT:
-					if (_moveSpeed > 0) {
-						stopWalk ();
+					if (!isStop) {
+						stopWalkSignal.Dispatch ();
+						//stopWalk ();
 					}
 
 					playAnimation (PlayerAnimatorTypes.TRIGGER_DEFEAT);
 					break;
 				}
 			}
+		}
+
+		private string getAnimationHitType()
+		{
+			string animationType;
+			switch (_hitNum) {
+			case 1:
+				animationType = PlayerAnimatorTypes.TRIGGER_HIT;
+				break;
+			case 2:
+				animationType = PlayerAnimatorTypes.TRIGGER_HIT2;
+				break;
+			default:
+				animationType = PlayerAnimatorTypes.TRIGGER_SUPER_HIT;
+				break;
+			}
+
+			return animationType;
 		}
 	}
 }

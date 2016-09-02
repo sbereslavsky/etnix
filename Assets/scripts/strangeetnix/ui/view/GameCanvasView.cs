@@ -86,8 +86,10 @@ namespace strangeetnix.ui
 				buttonRight.pointerDownSignal.AddListener (onRightButtonDown);
 				buttonRight.pointerUpSignal.AddListener (onButtonUp);
 
-				buttonHit.onClick.AddListener (onHitButton);
-				buttonGo.onClick.AddListener (onShowChooseWave);
+				buttonHit.pointerDownSignal.AddListener (onHitDownButton);
+				buttonHit.pointerUpSignal.AddListener (onHitUpButton);
+
+				buttonGo.pointerUpSignal.AddListener (onShowChooseWave);
 
 				buttonAddHp.onClick.AddListener (onAddHp);
 
@@ -101,7 +103,9 @@ namespace strangeetnix.ui
 				buttonLeft.pointerDownSignal.RemoveListener (onLeftButtonDown);
 				buttonRight.pointerUpSignal.RemoveListener (onButtonUp);
 
-				buttonHit.onClick.RemoveListener (onHitButton);
+				buttonHit.pointerDownSignal.RemoveListener (onHitDownButton);
+				buttonHit.pointerUpSignal.RemoveListener (onHitUpButton);
+
 				buttonGo.onClick.RemoveListener (onShowChooseWave);
 
 				buttonAddHp.onClick.RemoveListener (onAddHp);
@@ -218,11 +222,16 @@ namespace strangeetnix.ui
 			clickButtonSignal.Dispatch (ButtonType.RIGHT_DOWN);
 		}
 
-		private void onHitButton()
+		private void onHitDownButton()
 		{
 			if (buttonHit.isFilled) {
-				clickButtonSignal.Dispatch (ButtonType.HIT);
+				clickButtonSignal.Dispatch (ButtonType.HIT_DOWN);
 			}
+		}
+
+		private void onHitUpButton()
+		{
+			clickButtonSignal.Dispatch (ButtonType.HIT_UP);
 		}
 
 		private void onShowWeapon()

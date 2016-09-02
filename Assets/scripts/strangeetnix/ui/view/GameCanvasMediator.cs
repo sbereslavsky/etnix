@@ -48,11 +48,11 @@ namespace strangeetnix.ui
 		private int _expEnd = 0;
 		private int _level = 0;
 
-		private int _playerHitCount = 0;
-
 		private int _openDialog = 0;
 
 		private RectTransform _rectTransform;
+
+		private PlayerMediator _playerMediator;
 
 		public override void OnRegister ()
 		{
@@ -60,8 +60,6 @@ namespace strangeetnix.ui
 			_expStart = gameModel.playerModel.expStart;
 			_expEnd = gameModel.playerModel.expEnd;
 			_level = gameModel.playerModel.level;
-
-			_playerHitCount = 0;
 
 			_rectTransform = view.gameObject.GetComponent<RectTransform> ();
 
@@ -75,11 +73,23 @@ namespace strangeetnix.ui
 			updateLevel (_level);
 			//onScoreUpdate (0);
 			//onEnemyHpUpdate (0, 1);
+
+			updatePlayerMediator ();
 		}
 
 		public override void OnRemove ()
 		{
 			UpdateListeners (false);
+		}
+
+		private void updatePlayerMediator()
+		{
+			if (_playerMediator == null) {
+				GameObject playerGO = GameObject.FindGameObjectWithTag(PlayerView.ID);
+				if (playerGO != null) {
+					_playerMediator = playerGO.GetComponent<PlayerMediator> ();
+				}
+			}
 		}
 
 		private void UpdateListeners(bool value)
@@ -204,36 +214,35 @@ namespace strangeetnix.ui
 
 		private void onClickButton(ButtonType type)
 		{
-			GameObject playerGO = GameObject.FindGameObjectWithTag(PlayerView.ID);
-			if (playerGO) {
-				PlayerView _player = playerGO.GetComponent<PlayerView> ();
-
-				if (_player) {
-					switch (type)
-					{
+			updatePlayerMediator ();
+			if (_playerMediator) {
+				switch (type)
+				{
 					case ButtonType.ADD_HP:
 						addHpSignal.Dispatch (50, true);
 						break;
 
 					case ButtonType.UP:
-						_player.stopWalk (false);
+						_playerMediator.stopWalk (false);
 						break;
 					case ButtonType.LEFT_DOWN:
-						_player.startLeftWalk (true);
+						_playerMediator.startLeftWalk (true);
 						break;
 
 					case ButtonType.RIGHT_DOWN:
-						_player.startRightWalk (true);
+						_playerMediator.startRightWalk (true);
 						break;
 
-					case ButtonType.HIT:
-						if (_player.canStartHit) {
-							_playerHitCount++;
-							int hitId = _playerHitCount % 3;
-							_player.startHit (hitId + 1);
+					case ButtonType.HIT_DOWN:
+						if (!_playerMediator.isCycleHit) {
+							_playerMediator.isCycleHit = true;
+							_playerMediator.startHit ();
 						}
 						break;
-					}
+
+					case ButtonType.HIT_UP:
+						_playerMediator.isCycleHit = false;
+						break;
 				}
 			}
 		}
@@ -241,6 +250,7 @@ namespace strangeetnix.ui
 		private void onUpdateCanvas()
 		{
 			view.initButtonsView (gameModel.roomModel.hasEnemy);
+			updatePlayerMediator ();
 		}
 
 		private void onUpdateHudItem(UpdateHudItemType type, int value)
