@@ -18,12 +18,9 @@ namespace strangeetnix.game
 		private string EXPLOSION1 	= "explosion1";
 		private string EXPLOSION2 	= "explosion2";
 
-		private float TIME_TO_ATTACK	= 1.5f;
-		private float TIME_TO_DEFEAT	= 1.5f;
-
 		internal Signal hitEnemySignal = new Signal ();
 
-		internal bool facingRight = true;			// For determining which way the player is currently facing.
+		internal bool facingRight = true;		// For determining which way the player is currently facing.
 		internal bool canHit = true;
 
 		public float moveForce = 200f;			// Amount of force added to move the player left and right.
@@ -33,6 +30,7 @@ namespace strangeetnix.game
 		private Transform _explosion2;
 
 		private int _hitNum = 0;
+		private string _hitType = "";
 
 		private float _moveSpeed = 0f;
 
@@ -54,24 +52,22 @@ namespace strangeetnix.game
 			base.init (battleMode);
 
 			int battleVal = (_battleMode) ? 1 : 0;
-			_anim.SetInteger(PlayerAnimatorTypes.INT_BATTLE, battleVal);
+			_animator.SetInteger(PlayerAnimatorTypes.INT_BATTLE, battleVal);
 		}
 
 		void FixedUpdate ()
-		{
-			bool isEnemy = (_battleMode && isHit);
-
+		{			
 			// Cache the horizontal input.
 			float h = _moveSpeed;//Input.GetAxis("Horizontal");
 
 			// The Speed animator parameter is set to the absolute value of the horizontal input.
 			float speed = Mathf.Abs(h);
 
-			if (isEnemy) {// || isHit || isPlayAnimation(PlayerAnimatorTypes.TRIGGER_DEFEAT)) {
+			if (_battleMode && (isHit || isDefeat)) {// || isHit || isPlayAnimation(PlayerAnimatorTypes.TRIGGER_DEFEAT)) {
 				h = speed = 0;
 			}
 
-			_anim.SetFloat (PlayerAnimatorTypes.FLOAT_SPEED, speed);
+			_animator.SetFloat (PlayerAnimatorTypes.FLOAT_SPEED, speed);
 
 			Rigidbody2D rigidBody = GetComponent<Rigidbody2D> ();
 			// If the player is changing direction (h has a different sign to velocity.x) or hasn't reached maxSpeed yet...
@@ -113,7 +109,7 @@ namespace strangeetnix.game
 
 		internal void startLeftWalk(bool pressedButton=false)
 		{
-			if (!_isDead && !_isWait) {			
+			if (!_isDead && !isDefeat && !isHit) {			
 				_pressedButton = pressedButton;
 				_moveSpeed = -0.5f;
 
@@ -123,7 +119,7 @@ namespace strangeetnix.game
 
 		internal void startRightWalk(bool pressedButton=false)
 		{
-			if (!_isDead && !_isWait) {
+			if (!_isDead && !isDefeat && !isHit) {
 				_pressedButton = pressedButton;
 				_moveSpeed = 0.5f;
 
@@ -147,14 +143,16 @@ namespace strangeetnix.game
 
 		internal bool isHit
 		{
-			get { return _state == CharacterStates.HIT; }
+			get { 
+				return (_hitType.Length > 0 && isPlayAnimation(_hitType));
+			}
 		}
 
-		IEnumerator onWaitComplete () 
+		private bool isDefeat
 		{
-			yield return new WaitForSeconds (_waitTime);
-			_isWait = false;
-			_state = CharacterStates.IDLE;
+			get { 
+				return isPlayAnimation(PlayerAnimatorTypes.TRIGGER_DEFEAT);
+			}
 		}
 
 		override public void setDeath()
@@ -166,7 +164,7 @@ namespace strangeetnix.game
 
 		internal void checkToFlip (Transform enemyTransform)
 		{
-			if (!_isWait) {
+			if (!isDefeat && !isHit) {
 				if (enemyTransform.position.x < gameObject.transform.position.x && facingRight ||
 				    enemyTransform.position.x > gameObject.transform.position.x && !facingRight) {
 					flip ();
@@ -184,7 +182,7 @@ namespace strangeetnix.game
 
 		internal void playDefeatAnimation()
 		{
-			if (!_isWait) {
+			if (!isDefeat && !isHit) {
 				setState (CharacterStates.DEFEAT);
 			}
 		}
@@ -194,10 +192,6 @@ namespace strangeetnix.game
 			string animationType;
 			Debug.Log ("PlayerView. state = " + state.ToString());
 			if (_state != state || isForce) {
-				if (_isWait) {
-					StopCoroutine (onWaitComplete());
-					onWaitComplete ();
-				}
 				_state = state;
 
 				switch (state) {
@@ -226,8 +220,8 @@ namespace strangeetnix.game
 						break;
 					}
 
+					_hitType = animationType;
 					playAnimation (animationType);
-					startWait (onWaitComplete (), TIME_TO_ATTACK);
 					hitEnemySignal.Dispatch ();
 					break;
 
@@ -246,7 +240,6 @@ namespace strangeetnix.game
 						stopWalk ();
 					}
 
-					startWait (onWaitComplete(), TIME_TO_DEFEAT);
 					playAnimation (PlayerAnimatorTypes.TRIGGER_DEFEAT);
 					break;
 				}

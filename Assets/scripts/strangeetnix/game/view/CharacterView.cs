@@ -7,16 +7,13 @@ namespace strangeetnix.game
 {
 	public class CharacterView : View
 	{
-		protected Animator _anim; 
+		protected Animator _animator; 
 		protected bool _isDead;					// Whether or not the enemy is dead.
 		//protected Transform _frontCheck;		// Reference to the position of the gameobject used for checking if something is in front.
 		protected Transform _explosion;
 
 		protected Rigidbody2D _rigidBody;
 		protected BoxCollider2D _collider2d;
-
-		protected bool _isWait = false;
-		protected float _waitTime = 0f;
 
 		virtual public void init () 
 		{ 
@@ -30,7 +27,7 @@ namespace strangeetnix.game
 		private void init2()
 		{
 			_isDead = false;
-			_anim = GetComponent<Animator>();
+			_animator = GetComponent<Animator>();
 
 			_rigidBody = GetComponent<Rigidbody2D> ();
 			_collider2d = GetComponent<BoxCollider2D> ();
@@ -54,18 +51,9 @@ namespace strangeetnix.game
 			Destroy (this.gameObject, time);
 		}
 
-		protected void startWait(IEnumerator routine, float time)
-		{
-			if (!_isWait) {
-				_waitTime = time;
-				_isWait = true;
-				StartCoroutine (routine);
-			}
-		}
-
 		virtual protected bool isPlayAnimation (string type)
 		{
-			return _anim.GetBool(type);
+			return _animator.GetBool(type);
 		}
 
 		virtual public void flip()
@@ -78,8 +66,8 @@ namespace strangeetnix.game
 
 		protected void playAnimation (string animationId)
 		{
-			if (_anim) {
-				_anim.SetTrigger (animationId);
+			if (_animator) {
+				_animator.SetTrigger (animationId);
 			} else {
 				Debug.Log ("playAnimation(" + animationId + "). anim = null!");
 			}

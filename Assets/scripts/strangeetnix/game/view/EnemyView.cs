@@ -180,7 +180,7 @@ namespace strangeetnix.game
 		internal bool canToDefeat()
 		{
 			// Reduce the number of hit points by one.
-			return (_anim && _state != CharacterStates.HIT && _state != CharacterStates.DEFEAT);
+			return (_animator && !isHit && !isDefeat);// != CharacterStates.HIT && _state != CharacterStates.DEFEAT);
 		}
 
 		internal void stopMove()
@@ -188,6 +188,16 @@ namespace strangeetnix.game
 			if (_speed > 0) {
 				setSpeed (false);
 			}
+		}
+
+		private bool isHit
+		{
+			get { return _animator.GetBool (EnemyAnimatorTypes.TRIGGER_HIT); }
+		}
+
+		private bool isDefeat
+		{
+			get { return _animator.GetBool (EnemyAnimatorTypes.TRIGGER_DEFEAT); }
 		}
 
 		private void playMove()
@@ -204,7 +214,7 @@ namespace strangeetnix.game
 		private void setSpeed(bool isMove=false)
 		{
 			_speed = (isMove) ? 0.1f : 0f;
-			_anim.SetFloat(PlayerAnimatorTypes.FLOAT_SPEED, _speed);
+			_animator.SetFloat(PlayerAnimatorTypes.FLOAT_SPEED, _speed);
 
 			if (_speed == 0) {				
 				_rigidBody.velocity = Vector2.zero;
