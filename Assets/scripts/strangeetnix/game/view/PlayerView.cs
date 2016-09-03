@@ -207,7 +207,7 @@ namespace strangeetnix.game
 				animationType = PlayerAnimatorTypes.TRIGGER_HIT2;
 				break;
 			default:
-				animationType = PlayerAnimatorTypes.TRIGGER_SUPER_HIT;
+				animationType = PlayerAnimatorTypes.TRIGGER_HIT3;
 				break;
 			}
 
