@@ -83,7 +83,9 @@ namespace strangeetnix.game
 				updateListeners (true);
 			}
 
-			view.init (_battleMode);
+			view.id = gameModel.playerModel.id;
+			view.battleMode = _battleMode;
+			view.init ();
 		}
 
 		//OnRemove() is like a destructor/OnDestroy. Use it to clean up.
@@ -253,7 +255,9 @@ namespace strangeetnix.game
 		private IEnumerator onWaitToNextHit()
 		{
 			yield return new WaitForSeconds (0.5f);
-			startHit ();
+			if (_isCycleHit) {
+				startHit ();
+			}
 		}
 
 		//Receive a signal updating GameInput

@@ -17,14 +17,10 @@ namespace strangeetnix.game
 
 		virtual public void init () 
 		{ 
-			init2 ();
-		} 
-		virtual public void init (bool battleMode) 
-		{
-			init2 ();
+			initOthers ();
 		}
 
-		private void init2()
+		private void initOthers()
 		{
 			_isDead = false;
 			_animator = GetComponent<Animator>();

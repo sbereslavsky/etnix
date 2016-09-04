@@ -35,30 +35,36 @@ namespace strangeetnix.game
 
 		private float _moveSpeed = 0f;
 
-		private bool _battleMode;
-
 		private CharacterStates _state;
 
-		public override void init (bool battleMode)
+		internal int id { get; set; }
+		internal bool battleMode { get; set; }
+
+		public override void init ()
 		{
-			_battleMode = battleMode;
-			if (_battleMode) {
+			if (battleMode) {
 				_explosion = transform.Find (EXPLOSION1).transform;
 				_explosion2 = transform.Find (EXPLOSION2).transform;
 			}
 
 			_state = CharacterStates.IDLE;
 
-			base.init (battleMode);
+			base.init ();
 
-			int battleVal = (_battleMode) ? 1 : 0;
+			int battleVal = (battleMode) ? 1 : 0;
 			_animator.SetInteger(PlayerAnimatorTypes.INT_BATTLE, battleVal);
 		}
 
 		internal Vector2 explosionPos 
 		{
 			get { 
-				Vector3 pos = (_hitNum == 1) ? _explosion.position : _explosion2.position;
+				Vector3 pos = _explosion.position;
+				if (id == 1) {
+					pos = (_hitNum != 1) ? _explosion.position : _explosion2.position;
+				}
+				else if (_hitNum == 0) {
+					pos = _explosion2.position;
+				}
 				return new Vector2 (pos.x, pos.y); 
 			}
 		}
@@ -79,7 +85,7 @@ namespace strangeetnix.game
 			// The Speed animator parameter is set to the absolute value of the horizontal input.
 			float speed = Mathf.Abs(h);
 
-			if (_battleMode && (isHit || isDefeat)) {// || isHit || isPlayAnimation(PlayerAnimatorTypes.TRIGGER_DEFEAT)) {
+			if (battleMode && (isHit || isDefeat)) {// || isHit || isPlayAnimation(PlayerAnimatorTypes.TRIGGER_DEFEAT)) {
 				h = speed = 0;
 			}
 

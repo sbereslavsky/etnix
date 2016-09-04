@@ -236,8 +236,8 @@ namespace strangeetnix.ui
 					case ButtonType.HIT_DOWN:
 						if (!_playerMediator.isCycleHit) {
 							_playerMediator.isCycleHit = true;
-							_playerMediator.startHit ();
 						}
+						_playerMediator.startHit ();
 						break;
 
 					case ButtonType.HIT_UP:
